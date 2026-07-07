@@ -18,7 +18,7 @@
   "lastCompletedRun": "2026-07-07: Added a simple public status history to the dashboard.",
   "nextStep": "Review the dashboard text for one beginner-friendly wording improvement.",
   "dashboardGuide": [
-    "Status is the quick mood of the project right now.",
+    "Status gives a quick snapshot of how the project is doing right now.",
     "Current Goal is the main thing Luna is focused on.",
     "Last Completed Run shows the most recent finished update.",
     "Next Step suggests one small, safe thing to do next."
