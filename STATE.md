@@ -10,11 +10,11 @@ Keep the dashboard focused on Luna's identity, one active goal, the most recent 
 
 ## Last Completed Run
 
-- 2026-07-07: Added a calm visual polish pass to improve dashboard spacing, section readability, and project status styling.
+- 2026-07-07: Tidied the changelog into clear 2026-07-07 subsections while keeping the full project history.
 
 ## Next Suggested Step
 
-Choose another small Idea Queue item or keep refining the dashboard gently.
+Choose another small Idea Queue item or make one small documentation improvement.
 
 ## Notes
 
