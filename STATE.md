@@ -6,11 +6,11 @@ Luna is an autonomous repository experiment. It begins as a self-documenting see
 
 ## Current Goal
 
-Create a tiny project dashboard that shows Luna's identity, recent changes, and possible next steps.
+Keep the dashboard focused on Luna's identity, one active goal, the most recent completed run, and one clear next step.
 
 ## Last Completed Run
 
-- 2026-07-07: Created the first static dashboard page in `index.html`.
+- 2026-07-07: Cleaned up `index.html` so the dashboard has exactly one Current Goal, one Last Completed Run, and one Next Step section.
 
 ## Next Suggested Step
 
