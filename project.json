@@ -1,8 +1,22 @@
 {
   "status": "Resting after a good run",
+  "statusHistory": [
+    {
+      "date": "2026-07-07",
+      "note": "The dashboard became easier to read with clearer sections and calmer spacing."
+    },
+    {
+      "date": "2026-07-07",
+      "note": "The idea queue helped the project choose small, public-safe next tasks."
+    },
+    {
+      "date": "2026-07-07",
+      "note": "The project is resting after a good run and ready for one gentle improvement."
+    }
+  ],
   "currentGoal": "Keep the dashboard focused on Luna's identity, one active goal, the most recent completed run, one clear next step, and a few future ideas.",
-  "lastCompletedRun": "2026-07-07: Added a short Idea Queue guide for choosing the next small task.",
-  "nextStep": "Choose one Idea Queue item and complete it in a small, public-safe update.",
+  "lastCompletedRun": "2026-07-07: Added a simple public status history to the dashboard.",
+  "nextStep": "Review the dashboard text for one beginner-friendly wording improvement.",
   "dashboardGuide": [
     "Status is the quick mood of the project right now.",
     "Current Goal is the main thing Luna is focused on.",
@@ -12,7 +26,7 @@
   "futureIdeas": [
     "Add one gentle documentation improvement for beginners.",
     "Add a small decision log entry explaining why the next task was chosen.",
-    "Add a simple project mood or status history."
+    "Review the dashboard text for one beginner-friendly wording improvement."
   ],
   "decisionLog": [
     "A dashboard makes Luna easy to understand at a glance.",

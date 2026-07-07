@@ -159,6 +159,13 @@
       </ul>
     </section>
 
+    <section aria-labelledby="status-history">
+      <h2 id="status-history">Status History</h2>
+      <ul class="dashboard-list" id="status-history-list">
+        <li>Loading project data...</li>
+      </ul>
+    </section>
+
     <section aria-labelledby="local-setup">
       <h2 id="local-setup">Local Setup</h2>
       <p>Open Luna safely on your own computer with a tiny local web server.</p>
@@ -220,6 +227,17 @@
       });
     };
 
+    const showStatusHistory = (id, entries) => {
+      const list = document.getElementById(id);
+      list.innerHTML = '';
+
+      entries.forEach((entry) => {
+        const item = document.createElement('li');
+        item.textContent = `${entry.date}: ${entry.note}`;
+        list.appendChild(item);
+      });
+    };
+
     const showGlossary = (id, entries) => {
       const list = document.getElementById(id);
       list.innerHTML = '';
@@ -247,6 +265,7 @@
       showText('next-step-text', 'Check that project.json is next to index.html.');
       document.getElementById('dashboard-guide-list').innerHTML = '<li class="error">Dashboard guide notes are unavailable.</li>';
       document.getElementById('local-setup-list').innerHTML = '<li class="error">Local setup steps are unavailable.</li>';
+      document.getElementById('status-history-list').innerHTML = '<li class="error">Status history entries are unavailable.</li>';
       document.getElementById('future-ideas-list').innerHTML = '<li class="error">Future ideas are unavailable.</li>';
       document.getElementById('idea-queue-list').innerHTML = '<li class="error">Idea queue entries are unavailable.</li>';
       document.getElementById('idea-queue-guide-list').innerHTML = '<li class="error">Idea queue guide notes are unavailable.</li>';
@@ -269,6 +288,7 @@
         showText('next-step-text', project.nextStep);
         showList('dashboard-guide-list', project.dashboardGuide);
         showList('local-setup-list', project.localSetup);
+        showStatusHistory('status-history-list', project.statusHistory);
         showList('future-ideas-list', project.futureIdeas);
         showList('idea-queue-list', project.ideaQueue);
         showList('idea-queue-guide-list', project.ideaQueueGuide);
