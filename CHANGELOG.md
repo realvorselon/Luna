@@ -14,7 +14,10 @@
 - Added `project.json` with Luna's current goal, last completed run, next step, and future ideas.
 - Updated `index.html` to load dashboard sections from `project.json`.
 - Updated `STATE.md` to remember the project data run.
+- Added a `decisionLog` array to `project.json` explaining why Luna is growing as a dashboard first.
+- Updated `index.html` to show the decision log under Future Ideas.
+- Updated `STATE.md` to remember the decision log run.
 
 ## Next
 
-- Keep the project data and dashboard in sync as Luna's next small run is chosen.
+- Keep using small dashboard updates to make Luna easier to understand and maintain.
