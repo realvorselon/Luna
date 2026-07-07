@@ -3,6 +3,10 @@
   "statusHistory": [
     {
       "date": "2026-07-07",
+      "note": "Added a short decision log entry about why the Next Action card helps beginners choose one clear next move."
+    },
+    {
+      "date": "2026-07-07",
       "note": "The Next Action card gained a tiny action status."
     },
     {
@@ -27,8 +31,8 @@
     }
   ],
   "currentGoal": "Keep the dashboard focused on Luna's identity, one active goal, the most recent completed run, one clear next action, and a few future ideas.",
-  "lastCompletedRun": "2026-07-07: Added a tiny action status to the Next Action card.",
-  "nextStep": "Use the Next Action card to choose and finish one small public-safe update.",
+  "lastCompletedRun": "2026-07-07: Added a short decision log entry about why the Next Action card helps beginners choose one clear next move.",
+  "nextStep": "Choose one small public-safe dashboard wording or documentation improvement from the Next Action card.",
   "dashboardGuide": [
     "Status gives a quick snapshot of how the project is doing right now.",
     "Current Goal is the main thing Luna is focused on.",
@@ -44,7 +48,8 @@
     "A dashboard makes Luna easy to understand at a glance.",
     "Structured project data keeps updates small, safe, and beginner-friendly.",
     "Showing goals, ideas, and decisions first creates a clear trail before adding larger features.",
-    "The Next Action card helps beginners focus on one clear next move instead of sorting through every project note."
+    "The Next Action card helps beginners focus on one clear next move instead of sorting through every project note.",
+    "The Next Action card helps beginners choose one clear next move without reading every project note."
   ],
   "ideaQueue": [
     "Add one decision log entry explaining why the next action was chosen.",
