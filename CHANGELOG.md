@@ -71,6 +71,8 @@
 - Updated `STATE.md` to remember this status history run.
 - Improved one dashboard guide note so the Status section is easier for beginners to understand.
 - Updated `STATE.md` to remember this wording improvement run.
+- Improved the dashboard Next Step wording so it is clearer for beginners.
+- Updated `STATE.md` to remember this next-step wording improvement.
 
 ## Next
 
