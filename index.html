@@ -47,7 +47,8 @@
       margin: 0;
     }
 
-    .ideas {
+    .ideas,
+    .decision-log {
       margin-bottom: 0;
       padding-left: 24px;
     }
@@ -84,6 +85,11 @@
       <ul class="ideas" id="future-ideas-list">
         <li>Loading project data...</li>
       </ul>
+
+      <h3>Decision Log</h3>
+      <ul class="decision-log" id="decision-log-list">
+        <li>Loading project data...</li>
+      </ul>
     </section>
   </main>
 
@@ -92,13 +98,13 @@
       document.getElementById(id).textContent = text;
     };
 
-    const showIdeas = (ideas) => {
-      const list = document.getElementById('future-ideas-list');
+    const showList = (id, entries) => {
+      const list = document.getElementById(id);
       list.innerHTML = '';
 
-      ideas.forEach((idea) => {
+      entries.forEach((entry) => {
         const item = document.createElement('li');
-        item.textContent = idea;
+        item.textContent = entry;
         list.appendChild(item);
       });
     };
@@ -108,6 +114,7 @@
       showText('last-completed-run-text', 'Try opening this page from a local web server.');
       showText('next-step-text', 'Check that project.json is next to index.html.');
       document.getElementById('future-ideas-list').innerHTML = '<li class="error">Future ideas are unavailable.</li>';
+      document.getElementById('decision-log-list').innerHTML = '<li class="error">Decision log entries are unavailable.</li>';
     };
 
     fetch('project.json')
@@ -122,7 +129,8 @@
         showText('current-goal-text', project.currentGoal);
         showText('last-completed-run-text', project.lastCompletedRun);
         showText('next-step-text', project.nextStep);
-        showIdeas(project.futureIdeas);
+        showList('future-ideas-list', project.futureIdeas);
+        showList('decision-log-list', project.decisionLog);
       })
       .catch(showError);
   </script>

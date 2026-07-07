@@ -10,11 +10,11 @@ Keep the dashboard focused on Luna's identity, one active goal, the most recent 
 
 ## Last Completed Run
 
-- 2026-07-07: Added `project.json` and updated `index.html` so the dashboard loads its goal, last run, next step, and future ideas from project data.
+- 2026-07-07: Added a small decision log to `project.json` and displayed it on the dashboard under Future Ideas.
 
 ## Next Suggested Step
 
-Keep the project data and dashboard in sync as Luna's next small run is chosen.
+Keep using small dashboard updates to make Luna easier to understand and maintain.
 
 ## Notes
 
