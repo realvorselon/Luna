@@ -10,11 +10,11 @@ Keep the dashboard focused on Luna's identity, one active goal, the most recent 
 
 ## Last Completed Run
 
-- 2026-07-07: Added a tiny Glossary section for beginner-friendly project terms.
+- 2026-07-07: Added a beginner-friendly Local Setup section to the dashboard.
 
 ## Next Suggested Step
 
-Choose another small Idea Queue item or add a beginner-friendly local setup note.
+Choose another small Idea Queue item or add one calm visual polish improvement.
 
 ## Notes
 

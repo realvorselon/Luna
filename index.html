@@ -100,6 +100,14 @@
       <p id="next-step-text">Loading project data...</p>
     </section>
 
+    <section aria-labelledby="local-setup">
+      <h2 id="local-setup">Local Setup</h2>
+      <p>Open Luna safely on your own computer with a tiny local web server.</p>
+      <ol class="dashboard-list" id="local-setup-list">
+        <li>Loading project data...</li>
+      </ol>
+    </section>
+
     <section aria-labelledby="future-ideas">
       <h2 id="future-ideas">Future Ideas</h2>
       <ul class="dashboard-list" id="future-ideas-list">
@@ -174,6 +182,7 @@
       showText('current-goal-text', 'Project data could not be loaded yet.');
       showText('last-completed-run-text', 'Try opening this page from a local web server.');
       showText('next-step-text', 'Check that project.json is next to index.html.');
+      document.getElementById('local-setup-list').innerHTML = '<li class="error">Local setup steps are unavailable.</li>';
       document.getElementById('future-ideas-list').innerHTML = '<li class="error">Future ideas are unavailable.</li>';
       document.getElementById('idea-queue-list').innerHTML = '<li class="error">Idea queue entries are unavailable.</li>';
       document.getElementById('glossary-list').innerHTML = '<div><dt class="error">Glossary entries are unavailable.</dt></div>';
@@ -193,6 +202,7 @@
         showText('current-goal-text', project.currentGoal);
         showText('last-completed-run-text', project.lastCompletedRun);
         showText('next-step-text', project.nextStep);
+        showList('local-setup-list', project.localSetup);
         showList('future-ideas-list', project.futureIdeas);
         showList('idea-queue-list', project.ideaQueue);
         showGlossary('glossary-list', project.glossary);

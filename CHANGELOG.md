@@ -39,6 +39,10 @@
 - Updated `index.html` to show Glossary as its own dashboard section.
 - Updated `STATE.md` to remember this glossary run.
 
+- Added a `localSetup` array to `project.json` with beginner-friendly local server steps.
+- Updated `index.html` to show Local Setup as its own dashboard section.
+- Updated `STATE.md` to remember this local setup run.
+
 ## Next
 
-- Choose another small Idea Queue item or add a beginner-friendly local setup note.
+- Choose another small Idea Queue item or add one calm visual polish improvement.

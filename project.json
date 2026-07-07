@@ -1,8 +1,8 @@
 {
   "status": "Resting after a good run",
   "currentGoal": "Keep the dashboard focused on Luna's identity, one active goal, the most recent completed run, one clear next step, and a few future ideas.",
-  "lastCompletedRun": "2026-07-07: Added a tiny Glossary section for beginner-friendly project terms.",
-  "nextStep": "Choose another small Idea Queue item or add a beginner-friendly local setup note.",
+  "lastCompletedRun": "2026-07-07: Added a beginner-friendly Local Setup section to the dashboard.",
+  "nextStep": "Choose another small Idea Queue item or add one calm visual polish improvement.",
   "futureIdeas": [
     "Write a beginner-friendly local development guide.",
     "Add a small note explaining how to run the dashboard locally.",
@@ -35,5 +35,10 @@
       "term": "Merge",
       "meaning": "To combine approved changes from one branch into another branch."
     }
+  ],
+  "localSetup": [
+    "Open a terminal in the Luna project folder.",
+    "Start a simple local web server with python3 -m http.server 8000.",
+    "Visit http://localhost:8000 in a browser to view the dashboard."
   ]
 }
