@@ -28,6 +28,10 @@
 - Kept Future Ideas and Decision Log as separate dashboard sections with matching list styling.
 - Updated `project.json` and `STATE.md` to remember this visual consistency run.
 
+- Added an `ideaQueue` array to `project.json` with three small candidate next tasks.
+- Updated `index.html` to show Idea Queue as its own dashboard section.
+- Updated `STATE.md` to remember this idea queue run.
+
 ## Next
 
-- Keep using small dashboard updates to make Luna easier to understand and maintain.
+- Pick one small idea from the Idea Queue and complete it safely.
