@@ -3,6 +3,10 @@
   "statusHistory": [
     {
       "date": "2026-07-07",
+      "note": "A beginner-friendly Next Action card was added near the top of the dashboard."
+    },
+    {
+      "date": "2026-07-07",
       "note": "The idea queue was refreshed with fresh beginner-friendly next tasks."
     },
     {
@@ -18,19 +22,19 @@
       "note": "The project is resting after a good run and ready for one gentle improvement."
     }
   ],
-  "currentGoal": "Keep the dashboard focused on Luna's identity, one active goal, the most recent completed run, one clear next step, and a few future ideas.",
-  "lastCompletedRun": "2026-07-07: Refreshed the Idea Queue after completed tasks.",
-  "nextStep": "Choose one fresh Idea Queue item and finish it as a small public-safe update.",
+  "currentGoal": "Keep the dashboard focused on Luna's identity, one active goal, the most recent completed run, one clear next action, and a few future ideas.",
+  "lastCompletedRun": "2026-07-07: Added a beginner-friendly Next Action card to the dashboard.",
+  "nextStep": "Use the Next Action card to choose and finish one small public-safe update.",
   "dashboardGuide": [
     "Status gives a quick snapshot of how the project is doing right now.",
     "Current Goal is the main thing Luna is focused on.",
     "Last Completed Run shows the most recent finished update.",
-    "Next Step suggests one small, safe thing to do next."
+    "Next Action highlights the single safest action for a beginner to take next."
   ],
   "futureIdeas": [
-    "Add one gentle documentation improvement for beginners.",
-    "Add a small decision log entry explaining why the next task was chosen.",
-    "Review the dashboard text for one beginner-friendly wording improvement."
+    "Add one small decision log entry explaining why the next action was chosen.",
+    "Review the dashboard text for one beginner-friendly wording improvement.",
+    "Refresh the Idea Queue after the next completed action."
   ],
   "decisionLog": [
     "A dashboard makes Luna easy to understand at a glance.",
@@ -38,9 +42,9 @@
     "Showing goals, ideas, and decisions first creates a clear trail before adding larger features."
   ],
   "ideaQueue": [
-    "Add one short README note explaining how to read the dashboard sections.",
-    "Add one decision log entry explaining why the next small task was chosen.",
-    "Review future ideas against the roadmap and remove any completed or outdated idea."
+    "Add one decision log entry explaining why the next action was chosen.",
+    "Review future ideas against the roadmap and remove any completed or outdated idea.",
+    "Improve one dashboard label if it would make the page easier for beginners."
   ],
   "ideaQueueGuide": [
     "Choose one small task that can be finished clearly in a single update.",
@@ -69,5 +73,10 @@
     "Open a terminal in the Luna project folder.",
     "Start a simple local web server with python3 -m http.server 8000.",
     "Visit http://localhost:8000 in a browser to view the dashboard."
-  ]
+  ],
+  "nextAction": {
+    "title": "Pick one tiny dashboard improvement",
+    "description": "Choose one small public-safe dashboard wording or documentation improvement and finish it in a single run.",
+    "whyItMatters": "A single clear action helps beginners start without sorting through the full roadmap or idea queue."
+  }
 }

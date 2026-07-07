@@ -10,6 +10,7 @@ This roadmap is intentionally small. Each item should be doable as one careful r
 - Showed Luna's current identity, goal, last completed run, next suggested step, and future ideas.
 - Added structured project data in `project.json` for the dashboard to read.
 - Added a lightweight Idea Queue, Decision Log, Glossary, and Local Setup section.
+- Added a small Next Action card to help beginners choose one safe next task.
 - Tidied the changelog into clearer 2026-07-07 sections.
 
 ## Near Term
@@ -17,6 +18,7 @@ This roadmap is intentionally small. Each item should be doable as one careful r
 - Keep `project.json` aligned with the dashboard after each small content change.
 - Refresh the Idea Queue so completed items are replaced with realistic next tasks.
 - Add one gentle documentation improvement for beginners.
+- Keep the Next Action card aligned with the safest current task.
 
 ## Later Possibilities
 
