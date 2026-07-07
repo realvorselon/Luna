@@ -66,7 +66,10 @@
 - Added an `ideaQueueGuide` field to `project.json` with public-safe notes for choosing one small next task.
 - Updated `index.html` to show the Idea Queue guide near the Idea Queue.
 - Updated `STATE.md` to remember this Idea Queue guide run.
+- Added a `statusHistory` field to `project.json` with short public project mood notes.
+- Updated `index.html` to show Status History as a small dashboard section.
+- Updated `STATE.md` to remember this status history run.
 
 ## Next
 
-- Choose one Idea Queue item and complete it in a small, public-safe update.
+- Review the dashboard text for one beginner-friendly wording improvement.
