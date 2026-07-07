@@ -61,7 +61,9 @@
 - Synced `project.json` with the roadmap maintenance run and refreshed realistic next steps.
 - Updated `STATE.md` to remember this project data sync run.
 - Refreshed `README.md` to match the current Luna dashboard.
+- Refreshed the Idea Queue in `project.json` with three realistic small next tasks.
+- Updated `STATE.md` to remember this Idea Queue refresh run.
 
 ## Next
 
-- Refresh the Idea Queue with realistic small tasks, or add one small decision log entry explaining the next chosen task.
+- Choose one Idea Queue item and complete it in a small, public-safe update.
