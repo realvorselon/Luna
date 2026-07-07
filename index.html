@@ -63,6 +63,15 @@
       padding-left: 24px;
     }
 
+    .glossary-term {
+      font-weight: 700;
+    }
+
+    .glossary-meaning {
+      margin: 4px 0 12px;
+      color: #d9d1c3;
+    }
+
     .error {
       color: #ffd1d1;
     }
@@ -106,6 +115,16 @@
       </ul>
     </section>
 
+    <section aria-labelledby="glossary">
+      <h2 id="glossary">Glossary</h2>
+      <p>Beginner-friendly meanings for project terms used by Luna.</p>
+      <dl class="dashboard-list" id="glossary-list">
+        <div>
+          <dt>Loading project data...</dt>
+        </div>
+      </dl>
+    </section>
+
     <section aria-labelledby="decision-log">
       <h2 id="decision-log">Decision Log</h2>
       <ul class="dashboard-list" id="decision-log-list">
@@ -130,6 +149,26 @@
       });
     };
 
+    const showGlossary = (id, entries) => {
+      const list = document.getElementById(id);
+      list.innerHTML = '';
+
+      entries.forEach((entry) => {
+        const wrapper = document.createElement('div');
+        const term = document.createElement('dt');
+        const meaning = document.createElement('dd');
+
+        term.className = 'glossary-term';
+        meaning.className = 'glossary-meaning';
+        term.textContent = entry.term;
+        meaning.textContent = entry.meaning;
+
+        wrapper.appendChild(term);
+        wrapper.appendChild(meaning);
+        list.appendChild(wrapper);
+      });
+    };
+
     const showError = () => {
       showText('project-status-text', 'Unavailable');
       showText('current-goal-text', 'Project data could not be loaded yet.');
@@ -137,6 +176,7 @@
       showText('next-step-text', 'Check that project.json is next to index.html.');
       document.getElementById('future-ideas-list').innerHTML = '<li class="error">Future ideas are unavailable.</li>';
       document.getElementById('idea-queue-list').innerHTML = '<li class="error">Idea queue entries are unavailable.</li>';
+      document.getElementById('glossary-list').innerHTML = '<div><dt class="error">Glossary entries are unavailable.</dt></div>';
       document.getElementById('decision-log-list').innerHTML = '<li class="error">Decision log entries are unavailable.</li>';
     };
 
@@ -155,6 +195,7 @@
         showText('next-step-text', project.nextStep);
         showList('future-ideas-list', project.futureIdeas);
         showList('idea-queue-list', project.ideaQueue);
+        showGlossary('glossary-list', project.glossary);
         showList('decision-log-list', project.decisionLog);
       })
       .catch(showError);

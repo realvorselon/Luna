@@ -35,6 +35,10 @@
 - Refined the Idea Queue with a short dashboard description and three safe candidate next tasks.
 - Updated `STATE.md` to remember this Idea Queue refinement run.
 
+- Added a `glossary` array to `project.json` with four beginner-friendly project terms.
+- Updated `index.html` to show Glossary as its own dashboard section.
+- Updated `STATE.md` to remember this glossary run.
+
 ## Next
 
-- Choose one Idea Queue item and finish it as a small, beginner-friendly run.
+- Choose another small Idea Queue item or add a beginner-friendly local setup note.
