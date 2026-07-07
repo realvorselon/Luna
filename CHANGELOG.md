@@ -57,6 +57,7 @@
 - Updated `STATE.md` to remember this roadmap maintenance run.
 - Synced `project.json` with the roadmap maintenance run and refreshed realistic next steps.
 - Updated `STATE.md` to remember this project data sync run.
+- Refreshed `README.md` to match the current Luna dashboard.
 
 ## Next
 
