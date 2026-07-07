@@ -2,19 +2,26 @@
 
 This roadmap is intentionally small. Each item should be doable as one careful run.
 
+## Completed
+
+- Added `CHANGELOG.md` to keep a dated project history.
+- Created a minimal static dashboard page in `index.html`.
+- Added calm styling so the dashboard feels readable and welcoming.
+- Showed Luna's current identity, goal, last completed run, next suggested step, and future ideas.
+- Added structured project data in `project.json` for the dashboard to read.
+- Added a lightweight Idea Queue, Decision Log, Glossary, and Local Setup section.
+- Tidied the changelog into clearer 2026-07-07 sections.
+
 ## Near Term
 
-- Add CHANGELOG.md.
-- Create a minimal static dashboard page.
-- Add simple styling so the dashboard feels calm and readable.
-- Show current identity, last completed run, and next suggested step.
-- Add a lightweight task list or idea queue.
+- Keep `project.json` aligned with the dashboard after each small content change.
+- Refresh the Idea Queue so completed items are replaced with realistic next tasks.
+- Add one gentle documentation improvement for beginners.
 
 ## Later Possibilities
 
-- Let the dashboard read from structured project data.
-- Add a small decision log for why each next task was chosen.
-- Add a project mood/status indicator.
+- Add a small decision log entry for why each next task was chosen.
+- Add a project mood/status history.
 - Add a local development guide for beginners.
 - Evolve into a tiny creative tool, study helper, or self-documenting project manager.
 

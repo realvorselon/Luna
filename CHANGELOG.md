@@ -53,7 +53,9 @@
 - Updated `STATE.md` to remember this visual polish run.
 - Grouped the 2026-07-07 changelog entries into clear subsections without removing project history.
 - Updated `STATE.md` to remember this changelog maintenance run.
+- Tidied `ROADMAP.md` by moving completed early tasks into a Completed section and narrowing Near Term to realistic next steps.
+- Updated `STATE.md` to remember this roadmap maintenance run.
 
 ## Next
 
-- Choose another small Idea Queue item or keep refining the dashboard gently.
+- Refresh the Idea Queue or add one gentle beginner-friendly documentation improvement.
