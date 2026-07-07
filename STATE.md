@@ -10,11 +10,11 @@ Keep the dashboard focused on Luna's identity, one active goal, the most recent 
 
 ## Last Completed Run
 
-- 2026-07-07: Tidied the changelog into clear 2026-07-07 subsections while keeping the full project history.
+- 2026-07-07: Tidied ROADMAP.md so completed early tasks, near-term work, and later possibilities match the current project state.
 
 ## Next Suggested Step
 
-Choose another small Idea Queue item or make one small documentation improvement.
+Refresh the Idea Queue so completed items are replaced with realistic next tasks, or add one gentle documentation improvement for beginners.
 
 ## Notes
 
