@@ -43,7 +43,8 @@
   "decisionLog": [
     "A dashboard makes Luna easy to understand at a glance.",
     "Structured project data keeps updates small, safe, and beginner-friendly.",
-    "Showing goals, ideas, and decisions first creates a clear trail before adding larger features."
+    "Showing goals, ideas, and decisions first creates a clear trail before adding larger features.",
+    "The Next Action card helps beginners focus on one clear next move instead of sorting through every project note."
   ],
   "ideaQueue": [
     "Add one decision log entry explaining why the next action was chosen.",

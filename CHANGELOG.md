@@ -83,7 +83,9 @@
 - Added a beginner-friendly `status` field to the `nextAction` object in `project.json`.
 - Updated `index.html` to show the Next Action status gently inside the card.
 - Updated `STATE.md` to remember this Next Action status run.
+- Added a short `decisionLog` entry explaining why the Next Action card helps beginners focus on one clear next move.
+- Updated `STATE.md` to remember this Next Action decision log run.
 
 ## Next
 
-- Use the Next Action card status to finish one small public-safe update.
+- Choose one small public-safe dashboard wording or documentation improvement from the Next Action card.
