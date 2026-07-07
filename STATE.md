@@ -10,11 +10,11 @@ Keep the dashboard focused on Luna's identity, one active goal, the most recent 
 
 ## Last Completed Run
 
-- 2026-07-07: Added a tiny action status to the Next Action card.
+- 2026-07-07: Added a decision log entry explaining why the Next Action card exists.
 
 ## Next Suggested Step
 
-Use the Next Action card status to finish one small public-safe update.
+Choose one small public-safe dashboard wording or documentation improvement from the Next Action card.
 
 ## Notes
 
