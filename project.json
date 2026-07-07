@@ -1,8 +1,8 @@
 {
   "status": "Resting after a good run",
   "currentGoal": "Keep the dashboard focused on Luna's identity, one active goal, the most recent completed run, one clear next step, and a few future ideas.",
-  "lastCompletedRun": "2026-07-07: Added a tiny Idea Queue section to the dashboard.",
-  "nextStep": "Pick one small idea from the Idea Queue and complete it safely.",
+  "lastCompletedRun": "2026-07-07: Added a tiny Idea Queue section with three safe candidate next tasks.",
+  "nextStep": "Choose one Idea Queue item and finish it as a small, beginner-friendly run.",
   "futureIdeas": [
     "Write a beginner-friendly local development guide.",
     "Add a small note explaining how to run the dashboard locally.",
