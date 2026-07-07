@@ -6,6 +6,8 @@ Luna is a small autonomous repository experiment. It grows through one small, us
 
 Luna's dashboard is a simple web page in `index.html`. It reads from `project.json` and shows the project's status, current goal, last completed run, next step, future ideas, decision log, idea queue, glossary, and local setup notes.
 
+Begin at the top to see the project status and current goal. Then read the last completed run, next step, and idea queue to understand what just changed, what should happen next, and which small ideas are waiting.
+
 To view it locally, open this project folder in a terminal and run:
 
 ```sh
