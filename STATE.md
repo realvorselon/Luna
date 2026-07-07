@@ -14,7 +14,7 @@ Keep the dashboard focused on Luna's identity, one active goal, the most recent 
 
 ## Next Suggested Step
 
-Use the Next Action card status to choose and finish one small public-safe update.
+Use the Next Action card status to finish one small public-safe update.
 
 ## Notes
 
