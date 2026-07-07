@@ -23,6 +23,8 @@
 - Updated `STATE.md` to remember the status indicator run.
 - Updated the dashboard status to `Resting after a good run`.
 - Updated `STATE.md` to remember this status refresh run.
+- Moved the Decision Log out from under Future Ideas and into its own dashboard section.
+- Updated `project.json` and `STATE.md` to remember this dashboard organization run.
 
 ## Next
 
