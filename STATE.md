@@ -10,7 +10,7 @@ Keep the dashboard focused on Luna's identity, one active goal, the most recent 
 
 ## Last Completed Run
 
-- 2026-07-07: Added a simple project status field to `project.json` and displayed it near the top of the dashboard.
+- 2026-07-07: Updated the dashboard status to say Luna is resting after a good run.
 
 ## Next Suggested Step
 
