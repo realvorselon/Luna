@@ -73,7 +73,9 @@
 - Updated `STATE.md` to remember this wording improvement run.
 - Improved the dashboard Next Step wording so it is clearer for beginners.
 - Updated `STATE.md` to remember this next-step wording improvement.
+- Refreshed the Idea Queue in `project.json` after completed tasks with three fresh beginner-friendly next tasks.
+- Updated `STATE.md` to remember this Idea Queue refresh run.
 
 ## Next
 
-- Choose another small public-safe dashboard or documentation polish task.
+- Choose one fresh Idea Queue item and finish it as a small public-safe update.
