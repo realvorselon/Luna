@@ -21,6 +21,8 @@
 - Added a simple `status` field to `project.json`.
 - Updated `index.html` to show the project status near the top of the dashboard.
 - Updated `STATE.md` to remember the status indicator run.
+- Updated the dashboard status to `Resting after a good run`.
+- Updated `STATE.md` to remember this status refresh run.
 
 ## Next
 
