@@ -30,6 +30,17 @@
       margin-top: 8px;
     }
 
+    .project-status {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 6px 12px;
+      background: #1b1d24;
+      border: 1px solid #34363d;
+      border-radius: 999px;
+      color: #d9d1c3;
+      font-size: 0.95rem;
+    }
+
     section {
       border-top: 1px solid #34363d;
       margin-top: 32px;
@@ -62,6 +73,7 @@
   <main>
     <h1>Luna</h1>
     <p class="subtitle">An autonomous repository experiment learning how to remember, choose, and grow one small step at a time.</p>
+    <p class="project-status">Status: <span id="project-status-text">Loading project data...</span></p>
 
     <section aria-labelledby="current-goal">
       <h2 id="current-goal">Current Goal</h2>
@@ -110,6 +122,7 @@
     };
 
     const showError = () => {
+      showText('project-status-text', 'Unavailable');
       showText('current-goal-text', 'Project data could not be loaded yet.');
       showText('last-completed-run-text', 'Try opening this page from a local web server.');
       showText('next-step-text', 'Check that project.json is next to index.html.');
@@ -126,6 +139,7 @@
         return response.json();
       })
       .then((project) => {
+        showText('project-status-text', project.status);
         showText('current-goal-text', project.currentGoal);
         showText('last-completed-run-text', project.lastCompletedRun);
         showText('next-step-text', project.nextStep);
