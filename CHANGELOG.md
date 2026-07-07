@@ -16,6 +16,7 @@
 - Updated `STATE.md` to remember the project data run.
 - Added a `decisionLog` array to `project.json` explaining why Luna is growing as a dashboard first.
 - Updated `index.html` to show the decision log under Future Ideas.
+- Refreshed the future ideas list now that the decision log exists.
 - Updated `STATE.md` to remember the decision log run.
 
 ## Next
