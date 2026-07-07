@@ -10,7 +10,7 @@ Keep the dashboard focused on Luna's identity, one active goal, the most recent 
 
 ## Last Completed Run
 
-- 2026-07-07: Made one dashboard guide note more beginner-friendly.
+- 2026-07-07: Made the dashboard next step easier for beginners to understand.
 
 ## Next Suggested Step
 
