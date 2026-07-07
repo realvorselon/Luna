@@ -10,7 +10,7 @@ Keep the dashboard focused on Luna's identity, one active goal, the most recent 
 
 ## Last Completed Run
 
-- 2026-07-07: Moved the Decision Log into its own dashboard section.
+- 2026-07-07: Kept Future Ideas and Decision Log as separate, matching dashboard sections.
 
 ## Next Suggested Step
 

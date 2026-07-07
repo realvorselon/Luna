@@ -25,6 +25,8 @@
 - Updated `STATE.md` to remember this status refresh run.
 - Moved the Decision Log out from under Future Ideas and into its own dashboard section.
 - Updated `project.json` and `STATE.md` to remember this dashboard organization run.
+- Kept Future Ideas and Decision Log as separate dashboard sections with matching list styling.
+- Updated `project.json` and `STATE.md` to remember this visual consistency run.
 
 ## Next
 
