@@ -1,7 +1,7 @@
 {
   "status": "Resting after a good run",
   "currentGoal": "Keep the dashboard focused on Luna's identity, one active goal, the most recent completed run, one clear next step, and a few future ideas.",
-  "lastCompletedRun": "2026-07-07: Moved the Decision Log into its own dashboard section.",
+  "lastCompletedRun": "2026-07-07: Kept Future Ideas and Decision Log as separate, matching dashboard sections.",
   "nextStep": "Keep using small dashboard updates to make Luna easier to understand and maintain.",
   "futureIdeas": [
     "Add a tiny idea queue to the dashboard.",
