@@ -10,11 +10,11 @@ Create a tiny project dashboard that shows Luna's identity, recent changes, and 
 
 ## Last Completed Run
 
-- 2026-07-07: Repository was created and seeded with README.md and RULES.md.
+- 2026-07-07: Created the first static dashboard page in `index.html`.
 
 ## Next Suggested Step
 
-Add ROADMAP.md and CHANGELOG.md, then create a minimal static dashboard page.
+Add simple project data so the dashboard can eventually reflect Luna's state more directly.
 
 ## Notes
 
