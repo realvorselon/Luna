@@ -1,11 +1,12 @@
 {
+  "status": "Exploring steadily",
   "currentGoal": "Keep the dashboard focused on Luna's identity, one active goal, the most recent completed run, one clear next step, and a few future ideas.",
-  "lastCompletedRun": "2026-07-07: Added and checked a small decision log explaining why Luna is growing as a dashboard first.",
+  "lastCompletedRun": "2026-07-07: Added a simple project status indicator near the top of the dashboard.",
   "nextStep": "Keep using small dashboard updates to make Luna easier to understand and maintain.",
   "futureIdeas": [
     "Add a tiny idea queue to the dashboard.",
     "Write a beginner-friendly local development guide.",
-    "Add a simple project status or mood indicator."
+    "Add a small note explaining how to run the dashboard locally."
   ],
   "decisionLog": [
     "A dashboard makes Luna easy to understand at a glance.",

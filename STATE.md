@@ -10,7 +10,7 @@ Keep the dashboard focused on Luna's identity, one active goal, the most recent 
 
 ## Last Completed Run
 
-- 2026-07-07: Added and checked a small decision log in `project.json` and displayed it on the dashboard under Future Ideas.
+- 2026-07-07: Added a simple project status field to `project.json` and displayed it near the top of the dashboard.
 
 ## Next Suggested Step
 

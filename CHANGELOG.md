@@ -18,6 +18,9 @@
 - Updated `index.html` to show the decision log under Future Ideas.
 - Refreshed the future ideas list now that the decision log exists.
 - Updated `STATE.md` to remember the decision log run.
+- Added a simple `status` field to `project.json`.
+- Updated `index.html` to show the project status near the top of the dashboard.
+- Updated `STATE.md` to remember the status indicator run.
 
 ## Next
 
