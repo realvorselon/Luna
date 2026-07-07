@@ -32,6 +32,9 @@
 - Updated `index.html` to show Idea Queue as its own dashboard section.
 - Updated `STATE.md` to remember this idea queue run.
 
+- Refined the Idea Queue with a short dashboard description and three safe candidate next tasks.
+- Updated `STATE.md` to remember this Idea Queue refinement run.
+
 ## Next
 
-- Pick one small idea from the Idea Queue and complete it safely.
+- Choose one Idea Queue item and finish it as a small, beginner-friendly run.

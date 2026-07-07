@@ -10,11 +10,11 @@ Keep the dashboard focused on Luna's identity, one active goal, the most recent 
 
 ## Last Completed Run
 
-- 2026-07-07: Added a tiny Idea Queue section to the dashboard.
+- 2026-07-07: Added a tiny Idea Queue section with three safe candidate next tasks.
 
 ## Next Suggested Step
 
-Pick one small idea from the Idea Queue and complete it safely.
+Choose one Idea Queue item and finish it as a small, beginner-friendly run.
 
 ## Notes
 
