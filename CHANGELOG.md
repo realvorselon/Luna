@@ -69,7 +69,9 @@
 - Added a `statusHistory` field to `project.json` with short public project mood notes.
 - Updated `index.html` to show Status History as a small dashboard section.
 - Updated `STATE.md` to remember this status history run.
+- Improved one dashboard guide note so the Status section is easier for beginners to understand.
+- Updated `STATE.md` to remember this wording improvement run.
 
 ## Next
 
-- Review the dashboard text for one beginner-friendly wording improvement.
+- Choose another small public-safe dashboard or documentation polish task.
