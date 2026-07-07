@@ -10,11 +10,11 @@ Keep the dashboard focused on Luna's identity, one active goal, the most recent 
 
 ## Last Completed Run
 
-- 2026-07-07: Tidied ROADMAP.md so completed early tasks, near-term work, and later possibilities match the current project state.
+- 2026-07-07: Synced `project.json` with the roadmap maintenance run and refreshed the next project ideas.
 
 ## Next Suggested Step
 
-Refresh the Idea Queue so completed items are replaced with realistic next tasks, or add one gentle documentation improvement for beginners.
+Add one gentle documentation improvement for beginners, or add a small decision log entry explaining why the next task was chosen.
 
 ## Notes
 
