@@ -3,6 +3,10 @@
   "statusHistory": [
     {
       "date": "2026-07-07",
+      "note": "Refreshed the Next Action card to point at reviewing Future Ideas against the roadmap."
+    },
+    {
+      "date": "2026-07-07",
       "note": "Cleaned up duplicate Next Action decision log wording."
     },
     {
@@ -35,8 +39,8 @@
     }
   ],
   "currentGoal": "Keep the dashboard focused on Luna's identity, one active goal, the most recent completed run, one clear next action, and a few future ideas.",
-  "lastCompletedRun": "2026-07-07: Cleaned up duplicate Next Action decision log wording.",
-  "nextStep": "Choose one small public-safe dashboard wording or documentation improvement from the Next Action card.",
+  "lastCompletedRun": "2026-07-07: Refreshed the Next Action card to point at reviewing Future Ideas against the roadmap.",
+  "nextStep": "Review Future Ideas against the roadmap and remove any completed or outdated ideas.",
   "dashboardGuide": [
     "Status gives a quick snapshot of how the project is doing right now.",
     "Current Goal is the main thing Luna is focused on.",
@@ -88,9 +92,9 @@
     "Visit http://localhost:8000 in a browser to view the dashboard."
   ],
   "nextAction": {
-    "title": "Pick one tiny dashboard improvement",
-    "description": "Choose one small public-safe dashboard wording or documentation improvement and finish it in a single run.",
-    "whyItMatters": "A single clear action helps beginners start without sorting through the full roadmap or idea queue.",
-    "status": "Ready for one small update"
+    "title": "Review Future Ideas",
+    "description": "Compare the Future Ideas list with the roadmap, then remove any idea that is already finished or no longer fits.",
+    "whyItMatters": "Keeping the idea list current helps beginners see a short, useful set of possible next tasks.",
+    "status": "Ready for a careful review"
   }
 }

@@ -86,7 +86,9 @@
 - Added one clear `decisionLog` entry explaining why the Next Action card helps beginners choose one clear next move.
 - Cleaned up duplicate Next Action decision log wording in `project.json`.
 - Updated `STATE.md` to remember this small cleanup.
+- Refreshed the Next Action card in `project.json` so it points to reviewing Future Ideas against the roadmap.
+- Updated `STATE.md` to remember this Next Action refresh.
 
 ## Next
 
-- Choose one small public-safe dashboard wording or documentation improvement from the Next Action card.
+- Review Future Ideas against the roadmap and remove any completed or outdated ideas.

@@ -10,11 +10,11 @@ Keep the dashboard focused on Luna's identity, one active goal, the most recent 
 
 ## Last Completed Run
 
-- 2026-07-07: Cleaned up duplicate Next Action decision log wording.
+- 2026-07-07: Refreshed the Next Action card to point at reviewing Future Ideas against the roadmap.
 
 ## Next Suggested Step
 
-Choose one small public-safe dashboard wording or documentation improvement from the Next Action card.
+Review Future Ideas against the roadmap and remove any completed or outdated ideas.
 
 ## Notes
 
