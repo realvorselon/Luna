@@ -10,11 +10,11 @@ Keep the dashboard focused on Luna's identity, one active goal, the most recent 
 
 ## Last Completed Run
 
-- 2026-07-07: Added a beginner-friendly Local Setup section to the dashboard.
+- 2026-07-07: Added a calm visual polish pass to improve dashboard spacing, section readability, and project status styling.
 
 ## Next Suggested Step
 
-Choose another small Idea Queue item or add one calm visual polish improvement.
+Choose another small Idea Queue item or keep refining the dashboard gently.
 
 ## Notes
 
