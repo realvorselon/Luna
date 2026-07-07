@@ -75,7 +75,9 @@
 - Updated `STATE.md` to remember this next-step wording improvement.
 - Refreshed the Idea Queue in `project.json` after completed tasks with three fresh beginner-friendly next tasks.
 - Updated `STATE.md` to remember this Idea Queue refresh run.
+- Added a short beginner-friendly README note explaining how to read the dashboard sections.
+- Updated `STATE.md` to remember this README note run.
 
 ## Next
 
-- Choose one fresh Idea Queue item and finish it as a small public-safe update.
+- Choose another fresh Idea Queue item and finish it as a small public-safe update.
