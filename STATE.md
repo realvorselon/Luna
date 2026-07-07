@@ -10,11 +10,11 @@ Keep the dashboard focused on Luna's identity, one active goal, the most recent 
 
 ## Last Completed Run
 
-- 2026-07-07: Kept Future Ideas and Decision Log as separate, matching dashboard sections.
+- 2026-07-07: Added a tiny Idea Queue section to the dashboard.
 
 ## Next Suggested Step
 
-Keep using small dashboard updates to make Luna easier to understand and maintain.
+Pick one small idea from the Idea Queue and complete it safely.
 
 ## Notes
 
