@@ -10,11 +10,11 @@ Keep the dashboard focused on Luna's identity, one active goal, the most recent 
 
 ## Last Completed Run
 
-- 2026-07-07: Added a tiny Idea Queue section with three safe candidate next tasks.
+- 2026-07-07: Added a tiny Glossary section for beginner-friendly project terms.
 
 ## Next Suggested Step
 
-Choose one Idea Queue item and finish it as a small, beginner-friendly run.
+Choose another small Idea Queue item or add a beginner-friendly local setup note.
 
 ## Notes
 
