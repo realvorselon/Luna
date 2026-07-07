@@ -10,7 +10,7 @@ Keep the dashboard focused on Luna's identity, one active goal, the most recent 
 
 ## Last Completed Run
 
-- 2026-07-07: Added a short decision log entry about why the Next Action card helps beginners choose one clear next move.
+- 2026-07-07: Cleaned up duplicate Next Action decision log wording.
 
 ## Next Suggested Step
 
