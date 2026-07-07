@@ -90,6 +90,34 @@
       margin: 0;
     }
 
+    .next-action-card {
+      background: #20232b;
+      border: 1px solid #5b5361;
+      border-radius: 14px;
+      padding: 18px;
+      box-shadow: 0 14px 32px rgb(0 0 0 / 16%);
+    }
+
+    .next-action-card h3 {
+      margin: 0 0 8px;
+      color: #f7e3b5;
+      font-size: 1.05rem;
+    }
+
+    .next-action-card p {
+      margin: 0;
+    }
+
+    .next-action-card p + p {
+      margin-top: 10px;
+      color: #d9d1c3;
+    }
+
+    .next-action-label {
+      color: #f7e3b5;
+      font-weight: 700;
+    }
+
     .dashboard-list {
       margin: 10px 0 0;
       padding-left: 24px;
@@ -150,6 +178,15 @@
     <section aria-labelledby="next-step">
       <h2 id="next-step">Next Step</h2>
       <p id="next-step-text">Loading project data...</p>
+    </section>
+
+    <section aria-labelledby="next-action">
+      <h2 id="next-action">Next Action</h2>
+      <article class="next-action-card">
+        <h3 id="next-action-title">Loading project data...</h3>
+        <p id="next-action-description">Loading project data...</p>
+        <p><span class="next-action-label">Why it matters:</span> <span id="next-action-why">Loading project data...</span></p>
+      </article>
     </section>
 
     <section aria-labelledby="dashboard-guide">
@@ -263,6 +300,9 @@
       showText('current-goal-text', 'Project data could not be loaded yet.');
       showText('last-completed-run-text', 'Try opening this page from a local web server.');
       showText('next-step-text', 'Check that project.json is next to index.html.');
+      showText('next-action-title', 'Next action unavailable');
+      showText('next-action-description', 'Try opening this page from a local web server.');
+      showText('next-action-why', 'The dashboard needs project.json before it can suggest a focused action.');
       document.getElementById('dashboard-guide-list').innerHTML = '<li class="error">Dashboard guide notes are unavailable.</li>';
       document.getElementById('local-setup-list').innerHTML = '<li class="error">Local setup steps are unavailable.</li>';
       document.getElementById('status-history-list').innerHTML = '<li class="error">Status history entries are unavailable.</li>';
@@ -286,6 +326,9 @@
         showText('current-goal-text', project.currentGoal);
         showText('last-completed-run-text', project.lastCompletedRun);
         showText('next-step-text', project.nextStep);
+        showText('next-action-title', project.nextAction.title);
+        showText('next-action-description', project.nextAction.description);
+        showText('next-action-why', project.nextAction.whyItMatters);
         showList('dashboard-guide-list', project.dashboardGuide);
         showList('local-setup-list', project.localSetup);
         showStatusHistory('status-history-list', project.statusHistory);

@@ -77,7 +77,10 @@
 - Updated `STATE.md` to remember this Idea Queue refresh run.
 - Added a short beginner-friendly README note explaining how to read the dashboard sections.
 - Updated `STATE.md` to remember this README note run.
+- Added a `nextAction` object to `project.json` with a beginner-friendly title, description, and reason.
+- Updated `index.html` to show a small Next Action card near the top of the dashboard.
+- Updated `STATE.md` to remember this Next Action card run.
 
 ## Next
 
-- Choose another fresh Idea Queue item and finish it as a small public-safe update.
+- Use the Next Action card to choose and finish one small public-safe update.

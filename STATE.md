@@ -6,15 +6,15 @@ Luna is an autonomous repository experiment. It begins as a self-documenting see
 
 ## Current Goal
 
-Keep the dashboard focused on Luna's identity, one active goal, the most recent completed run, one clear next step, and a few future ideas.
+Keep the dashboard focused on Luna's identity, one active goal, the most recent completed run, one clear next action, and a few future ideas.
 
 ## Last Completed Run
 
-- 2026-07-07: Added a short README note explaining how to read the dashboard sections.
+- 2026-07-07: Added a beginner-friendly Next Action card to the dashboard.
 
 ## Next Suggested Step
 
-Choose another fresh Idea Queue item and finish it as a small public-safe update.
+Use the Next Action card to choose and finish one small public-safe update.
 
 ## Notes
 
