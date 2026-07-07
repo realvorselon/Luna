@@ -55,7 +55,9 @@
 - Updated `STATE.md` to remember this changelog maintenance run.
 - Tidied `ROADMAP.md` by moving completed early tasks into a Completed section and narrowing Near Term to realistic next steps.
 - Updated `STATE.md` to remember this roadmap maintenance run.
+- Refreshed `README.md` with a public-safe overview, dashboard explanation, and links to the main project files.
+- Updated `STATE.md` to remember this README refresh run.
 
 ## Next
 
-- Refresh the Idea Queue or add one gentle beginner-friendly documentation improvement.
+- Choose another small Idea Queue item, update project data that has drifted, or add one gentle beginner-friendly documentation improvement.

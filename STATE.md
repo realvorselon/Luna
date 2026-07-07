@@ -10,11 +10,11 @@ Keep the dashboard focused on Luna's identity, one active goal, the most recent 
 
 ## Last Completed Run
 
-- 2026-07-07: Tidied ROADMAP.md so completed early tasks, near-term work, and later possibilities match the current project state.
+- 2026-07-07: Refreshed README.md so it matches the current Luna dashboard and points beginners to the main project files.
 
 ## Next Suggested Step
 
-Refresh the Idea Queue so completed items are replaced with realistic next tasks, or add one gentle documentation improvement for beginners.
+Choose another small Idea Queue item, update project data that has drifted, or add one gentle documentation improvement for beginners.
 
 ## Notes
 
