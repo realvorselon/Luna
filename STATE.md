@@ -10,11 +10,11 @@ Keep the dashboard focused on Luna's identity, one active goal, the most recent 
 
 ## Last Completed Run
 
-- 2026-07-07: Added a beginner-friendly dashboard guide explaining how to read the main sections.
+- 2026-07-07: Refreshed the Idea Queue with three realistic small next tasks.
 
 ## Next Suggested Step
 
-Refresh the Idea Queue with realistic small tasks, or add one small decision log entry explaining the next chosen task.
+Choose one Idea Queue item and complete it in a small, public-safe update.
 
 ## Notes
 
