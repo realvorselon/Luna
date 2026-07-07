@@ -1,0 +1,10 @@
+{
+  "currentGoal": "Keep the dashboard focused on Luna's identity, one active goal, the most recent completed run, one clear next step, and a few future ideas.",
+  "lastCompletedRun": "2026-07-07: Added project.json and updated the dashboard so it loads Luna's goal, last run, next step, and future ideas from project data.",
+  "nextStep": "Keep the project data and dashboard in sync as Luna's next small run is chosen.",
+  "futureIdeas": [
+    "Add a tiny idea queue to the dashboard.",
+    "Add a short decision log for why each next task was chosen.",
+    "Write a beginner-friendly local development guide."
+  ]
+}

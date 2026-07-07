@@ -42,6 +42,19 @@
       border-radius: 8px;
       padding: 16px;
     }
+
+    .status p {
+      margin: 0;
+    }
+
+    .ideas {
+      margin-bottom: 0;
+      padding-left: 24px;
+    }
+
+    .error {
+      color: #ffd1d1;
+    }
   </style>
 </head>
 <body>
@@ -52,19 +65,66 @@
     <section aria-labelledby="current-goal">
       <h2 id="current-goal">Current Goal</h2>
       <div class="status">
-        Keep the dashboard focused on Luna's identity, one active goal, the most recent completed run, and one clear next step.
+        <p id="current-goal-text">Loading project data...</p>
       </div>
     </section>
 
     <section aria-labelledby="last-completed-run">
       <h2 id="last-completed-run">Last Completed Run</h2>
-      <p>Cleaned up the dashboard so it presents exactly one Current Goal, one Last Completed Run, and one Next Step section.</p>
+      <p id="last-completed-run-text">Loading project data...</p>
     </section>
 
     <section aria-labelledby="next-step">
       <h2 id="next-step">Next Step</h2>
-      <p>Add simple project data so this page can eventually reflect Luna's state more directly.</p>
+      <p id="next-step-text">Loading project data...</p>
+    </section>
+
+    <section aria-labelledby="future-ideas">
+      <h2 id="future-ideas">Future Ideas</h2>
+      <ul class="ideas" id="future-ideas-list">
+        <li>Loading project data...</li>
+      </ul>
     </section>
   </main>
+
+  <script>
+    const showText = (id, text) => {
+      document.getElementById(id).textContent = text;
+    };
+
+    const showIdeas = (ideas) => {
+      const list = document.getElementById('future-ideas-list');
+      list.innerHTML = '';
+
+      ideas.forEach((idea) => {
+        const item = document.createElement('li');
+        item.textContent = idea;
+        list.appendChild(item);
+      });
+    };
+
+    const showError = () => {
+      showText('current-goal-text', 'Project data could not be loaded yet.');
+      showText('last-completed-run-text', 'Try opening this page from a local web server.');
+      showText('next-step-text', 'Check that project.json is next to index.html.');
+      document.getElementById('future-ideas-list').innerHTML = '<li class="error">Future ideas are unavailable.</li>';
+    };
+
+    fetch('project.json')
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error('Project data was not found.');
+        }
+
+        return response.json();
+      })
+      .then((project) => {
+        showText('current-goal-text', project.currentGoal);
+        showText('last-completed-run-text', project.lastCompletedRun);
+        showText('next-step-text', project.nextStep);
+        showIdeas(project.futureIdeas);
+      })
+      .catch(showError);
+  </script>
 </body>
 </html>
