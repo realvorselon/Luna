@@ -46,6 +46,9 @@
 - Added a `localSetup` array to `project.json` with beginner-friendly local server steps.
 - Updated `index.html` to show Local Setup as its own dashboard section.
 - Updated `STATE.md` to remember this local setup run.
+- Added a `dashboardGuide` array to `project.json` with beginner-friendly notes for reading the dashboard.
+- Updated `index.html` to show How to Read This Dashboard as its own small section.
+- Updated `STATE.md` to remember this dashboard guide run.
 
 ### Polish/Maintenance
 
@@ -61,4 +64,4 @@
 
 ## Next
 
-- Add one gentle beginner-friendly documentation improvement or a small decision log entry for the next chosen task.
+- Refresh the Idea Queue with realistic small tasks, or add one small decision log entry explaining the next chosen task.

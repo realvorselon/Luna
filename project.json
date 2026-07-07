@@ -1,8 +1,14 @@
 {
   "status": "Resting after a good run",
   "currentGoal": "Keep the dashboard focused on Luna's identity, one active goal, the most recent completed run, one clear next step, and a few future ideas.",
-  "lastCompletedRun": "2026-07-07: Tidied ROADMAP.md so completed early tasks, near-term work, and later possibilities match the current project state.",
-  "nextStep": "Refresh the Idea Queue with realistic small tasks, or add one gentle beginner-friendly documentation improvement.",
+  "lastCompletedRun": "2026-07-07: Added a beginner-friendly dashboard guide explaining how to read the main sections.",
+  "nextStep": "Refresh the Idea Queue with realistic small tasks, or add one small decision log entry explaining the next chosen task.",
+  "dashboardGuide": [
+    "Status is the quick mood of the project right now.",
+    "Current Goal is the main thing Luna is focused on.",
+    "Last Completed Run shows the most recent finished update.",
+    "Next Step suggests one small, safe thing to do next."
+  ],
   "futureIdeas": [
     "Add one gentle documentation improvement for beginners.",
     "Add a small decision log entry explaining why the next task was chosen.",
