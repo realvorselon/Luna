@@ -86,4 +86,4 @@
 
 ## Next
 
-- Use the Next Action card status to choose and finish one small public-safe update.
+- Use the Next Action card status to finish one small public-safe update.
