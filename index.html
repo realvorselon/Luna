@@ -16,42 +16,74 @@
     main {
       max-width: 760px;
       margin: 0 auto;
-      padding: 48px 20px;
+      padding: 56px 20px;
     }
 
     h1 {
-      font-size: 3rem;
-      margin-bottom: 0;
+      font-size: clamp(2.5rem, 10vw, 3.5rem);
+      line-height: 1;
+      margin: 0;
+      letter-spacing: -0.04em;
+    }
+
+    h2 {
+      margin: 0 0 12px;
+      font-size: 1.2rem;
+      letter-spacing: -0.01em;
+    }
+
+    p {
+      margin-top: 0;
     }
 
     .subtitle {
+      max-width: 640px;
       color: #b9b3a7;
       font-size: 1.1rem;
-      margin-top: 8px;
+      margin: 14px 0 0;
     }
 
     .project-status {
-      display: inline-block;
-      margin-top: 12px;
-      padding: 6px 12px;
-      background: #1b1d24;
-      border: 1px solid #34363d;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      margin-top: 20px;
+      padding: 8px 14px;
+      background: #20232b;
+      border: 1px solid #4c4653;
       border-radius: 999px;
-      color: #d9d1c3;
+      box-shadow: 0 10px 28px rgb(0 0 0 / 18%);
+      color: #eadfcb;
       font-size: 0.95rem;
+      font-weight: 650;
+    }
+
+    .project-status::before {
+      content: "";
+      width: 0.6rem;
+      height: 0.6rem;
+      background: #a8d5ba;
+      border-radius: 50%;
+      box-shadow: 0 0 0 4px rgb(168 213 186 / 12%);
     }
 
     section {
       border-top: 1px solid #34363d;
-      margin-top: 32px;
-      padding-top: 24px;
+      margin-top: 36px;
+      padding-top: 28px;
+    }
+
+    section p:last-child,
+    section li:last-child,
+    section dd:last-child {
+      margin-bottom: 0;
     }
 
     .status {
       background: #1b1d24;
       border: 1px solid #34363d;
-      border-radius: 8px;
-      padding: 16px;
+      border-radius: 12px;
+      padding: 18px;
     }
 
     .status p {
@@ -59,8 +91,12 @@
     }
 
     .dashboard-list {
-      margin-bottom: 0;
+      margin: 10px 0 0;
       padding-left: 24px;
+    }
+
+    .dashboard-list li + li {
+      margin-top: 8px;
     }
 
     .glossary-term {
@@ -74,6 +110,22 @@
 
     .error {
       color: #ffd1d1;
+    }
+
+    @media (max-width: 520px) {
+      main {
+        padding: 36px 16px;
+      }
+
+      section {
+        margin-top: 30px;
+        padding-top: 22px;
+      }
+
+      .project-status {
+        align-items: flex-start;
+        border-radius: 16px;
+      }
     }
   </style>
 </head>

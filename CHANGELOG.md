@@ -43,6 +43,9 @@
 - Updated `index.html` to show Local Setup as its own dashboard section.
 - Updated `STATE.md` to remember this local setup run.
 
+- Added a calm visual polish pass to the dashboard spacing, section readability, and project status styling.
+- Updated `STATE.md` to remember this visual polish run.
+
 ## Next
 
-- Choose another small Idea Queue item or add one calm visual polish improvement.
+- Choose another small Idea Queue item or keep refining the dashboard gently.
