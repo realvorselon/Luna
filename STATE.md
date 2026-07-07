@@ -10,11 +10,11 @@ Keep the dashboard focused on Luna's identity, one active goal, the most recent 
 
 ## Last Completed Run
 
-- 2026-07-07: Refreshed `README.md` to match the current Luna dashboard.
+- 2026-07-07: Added a beginner-friendly dashboard guide explaining how to read the main sections.
 
 ## Next Suggested Step
 
-Add one beginner-friendly note that explains how to read the Luna dashboard.
+Refresh the Idea Queue with realistic small tasks, or add one small decision log entry explaining the next chosen task.
 
 ## Notes
 
