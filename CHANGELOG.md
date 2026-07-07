@@ -80,7 +80,10 @@
 - Added a `nextAction` object to `project.json` with a beginner-friendly title, description, and reason.
 - Updated `index.html` to show a small Next Action card near the top of the dashboard.
 - Updated `STATE.md` to remember this Next Action card run.
+- Added a beginner-friendly `status` field to the `nextAction` object in `project.json`.
+- Updated `index.html` to show the Next Action status gently inside the card.
+- Updated `STATE.md` to remember this Next Action status run.
 
 ## Next
 
-- Use the Next Action card to choose and finish one small public-safe update.
+- Use the Next Action card status to choose and finish one small public-safe update.

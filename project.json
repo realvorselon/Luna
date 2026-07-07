@@ -3,6 +3,10 @@
   "statusHistory": [
     {
       "date": "2026-07-07",
+      "note": "The Next Action card gained a tiny action status."
+    },
+    {
+      "date": "2026-07-07",
       "note": "A beginner-friendly Next Action card was added near the top of the dashboard."
     },
     {
@@ -23,7 +27,7 @@
     }
   ],
   "currentGoal": "Keep the dashboard focused on Luna's identity, one active goal, the most recent completed run, one clear next action, and a few future ideas.",
-  "lastCompletedRun": "2026-07-07: Added a beginner-friendly Next Action card to the dashboard.",
+  "lastCompletedRun": "2026-07-07: Added a tiny action status to the Next Action card.",
   "nextStep": "Use the Next Action card to choose and finish one small public-safe update.",
   "dashboardGuide": [
     "Status gives a quick snapshot of how the project is doing right now.",
@@ -77,6 +81,7 @@
   "nextAction": {
     "title": "Pick one tiny dashboard improvement",
     "description": "Choose one small public-safe dashboard wording or documentation improvement and finish it in a single run.",
-    "whyItMatters": "A single clear action helps beginners start without sorting through the full roadmap or idea queue."
+    "whyItMatters": "A single clear action helps beginners start without sorting through the full roadmap or idea queue.",
+    "status": "Ready to choose"
   }
 }
