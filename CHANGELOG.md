@@ -63,6 +63,9 @@
 - Refreshed `README.md` to match the current Luna dashboard.
 - Refreshed the Idea Queue in `project.json` with three realistic small next tasks.
 - Updated `STATE.md` to remember this Idea Queue refresh run.
+- Added an `ideaQueueGuide` field to `project.json` with public-safe notes for choosing one small next task.
+- Updated `index.html` to show the Idea Queue guide near the Idea Queue.
+- Updated `STATE.md` to remember this Idea Queue guide run.
 
 ## Next
 

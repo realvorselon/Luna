@@ -1,7 +1,7 @@
 {
   "status": "Resting after a good run",
   "currentGoal": "Keep the dashboard focused on Luna's identity, one active goal, the most recent completed run, one clear next step, and a few future ideas.",
-  "lastCompletedRun": "2026-07-07: Refreshed the Idea Queue with three realistic small next tasks.",
+  "lastCompletedRun": "2026-07-07: Added a short Idea Queue guide for choosing the next small task.",
   "nextStep": "Choose one Idea Queue item and complete it in a small, public-safe update.",
   "dashboardGuide": [
     "Status is the quick mood of the project right now.",
@@ -23,6 +23,11 @@
     "Add one short note explaining how to choose the next Idea Queue item.",
     "Add a simple project mood/status history note.",
     "Review the dashboard text for one beginner-friendly wording improvement."
+  ],
+  "ideaQueueGuide": [
+    "Choose one small task that can be finished clearly in a single update.",
+    "Prefer beginner-friendly changes that make Luna easier to understand.",
+    "Keep private details out of the public repo."
   ],
   "glossary": [
     {
