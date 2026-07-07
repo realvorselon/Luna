@@ -3,6 +3,10 @@
   "statusHistory": [
     {
       "date": "2026-07-07",
+      "note": "The idea queue was refreshed with fresh beginner-friendly next tasks."
+    },
+    {
+      "date": "2026-07-07",
       "note": "The dashboard became easier to read with clearer sections and calmer spacing."
     },
     {
@@ -15,8 +19,8 @@
     }
   ],
   "currentGoal": "Keep the dashboard focused on Luna's identity, one active goal, the most recent completed run, one clear next step, and a few future ideas.",
-  "lastCompletedRun": "2026-07-07: Added a simple public status history to the dashboard.",
-  "nextStep": "Read the dashboard and make one unclear phrase easier for beginners.",
+  "lastCompletedRun": "2026-07-07: Refreshed the Idea Queue after completed tasks.",
+  "nextStep": "Choose one fresh Idea Queue item and finish it as a small public-safe update.",
   "dashboardGuide": [
     "Status gives a quick snapshot of how the project is doing right now.",
     "Current Goal is the main thing Luna is focused on.",
@@ -34,9 +38,9 @@
     "Showing goals, ideas, and decisions first creates a clear trail before adding larger features."
   ],
   "ideaQueue": [
-    "Add one short note explaining how to choose the next Idea Queue item.",
-    "Add a simple project mood/status history note.",
-    "Review the dashboard text for one beginner-friendly wording improvement."
+    "Add one short README note explaining how to read the dashboard sections.",
+    "Add one decision log entry explaining why the next small task was chosen.",
+    "Review future ideas against the roadmap and remove any completed or outdated idea."
   ],
   "ideaQueueGuide": [
     "Choose one small task that can be finished clearly in a single update.",
