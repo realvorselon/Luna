@@ -125,6 +125,19 @@
       color: #d9d1c3;
     }
 
+    .creative-seed-card {
+      background: rgb(247 227 181 / 8%);
+      border: 1px solid rgb(247 227 181 / 24%);
+      border-radius: 12px;
+      padding: 16px;
+    }
+
+    .creative-seed-card h3 {
+      margin: 0 0 8px;
+      color: #f7e3b5;
+      font-size: 1.05rem;
+    }
+
     .choose-next-action {
       margin-top: 14px;
       padding: 9px 14px;
@@ -229,6 +242,17 @@
         <p><span class="next-action-label">Why it matters:</span> <span id="next-action-why">Loading project data...</span></p>
         <button class="choose-next-action" id="choose-next-action" type="button" disabled>Choose Next Action</button>
         <p class="chosen-next-action" id="chosen-next-action" aria-live="polite">Load project data, then choose a suggestion from the Idea Queue.</p>
+      </article>
+    </section>
+
+    <section aria-labelledby="creative-seed">
+      <h2 id="creative-seed">Creative Seed</h2>
+      <article class="creative-seed-card">
+        <h3 id="creative-seed-name">Loading project data...</h3>
+        <p id="creative-seed-description">Loading project data...</p>
+        <ul class="dashboard-list" id="creative-seed-ideas">
+          <li>Loading project data...</li>
+        </ul>
       </article>
     </section>
 
@@ -375,6 +399,9 @@
       showText('next-action-status', 'Unavailable');
       showText('next-action-description', 'Try opening this page from a local web server.');
       showText('next-action-why', 'The dashboard needs project.json before it can suggest a focused action.');
+      showText('creative-seed-name', 'Creative seed unavailable');
+      showText('creative-seed-description', 'Try opening this page from a local web server.');
+      document.getElementById('creative-seed-ideas').innerHTML = '<li class="error">Creative seed ideas are unavailable.</li>';
       document.getElementById('choose-next-action').disabled = true;
       showText('chosen-next-action', 'Idea Queue suggestions are unavailable until project data loads.');
       document.getElementById('dashboard-guide-list').innerHTML = '<li class="error">Dashboard guide notes are unavailable.</li>';
@@ -404,6 +431,9 @@
         showText('next-action-status', project.nextAction.status);
         showText('next-action-description', project.nextAction.description);
         showText('next-action-why', project.nextAction.whyItMatters);
+        showText('creative-seed-name', project.creativeSeed.name);
+        showText('creative-seed-description', project.creativeSeed.description);
+        showList('creative-seed-ideas', project.creativeSeed.ideas);
         showList('dashboard-guide-list', project.dashboardGuide);
         showList('local-setup-list', project.localSetup);
         showStatusHistory('status-history-list', project.statusHistory);
