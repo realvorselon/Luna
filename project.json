@@ -3,6 +3,10 @@
   "statusHistory": [
     {
       "date": "2026-07-08",
+      "note": "Prepared a tiny Next Garden Update from the Garden Review and Garden Path."
+    },
+    {
+      "date": "2026-07-08",
       "note": "Refocused the Next Step and Next Action on using the Garden Review before any new Philosophy Garden prompt or reflection card."
     },
     {
@@ -102,9 +106,9 @@
       "note": "The project is resting after a good run and ready for one gentle improvement."
     }
   ],
-  "currentGoal": "Keep the dashboard focused on Luna's identity, one active goal, the most recent completed run, one clear next action, one tiny creative seed, one reflection card with a public-safe note, a simple Garden Review, a Garden Path, and a few future ideas.",
-  "lastCompletedRun": "2026-07-08: Refocused the Next Step and Next Action on using the Garden Review before any new Philosophy Garden prompt or reflection card.",
-  "nextStep": "Use the Garden Review before adding any new Philosophy Garden prompt or reflection card.",
+  "currentGoal": "Keep the dashboard focused on Luna's identity, one active goal, the most recent completed run, one clear next action, one tiny creative seed, one reflection card with a public-safe note, a simple Garden Review, a Garden Path, one tiny Next Garden Update, and a few future ideas.",
+  "lastCompletedRun": "2026-07-08: Prepared a tiny Next Garden Update from the Garden Review and Garden Path.",
+  "nextStep": "Use the suggested Next Garden Update as one calm, public-safe Philosophy Garden action before adding another prompt.",
   "dashboardGuide": [
     "Status gives a quick snapshot of how the project is doing right now.",
     "Current Goal is the main thing Luna is focused on.",
@@ -114,7 +118,7 @@
   ],
   "futureIdeas": [
     "Keep the Next Action card aligned with the safest current task after each cleanup.",
-    "Use the Garden Review before adding any new Philosophy Garden prompt or reflection card.",
+    "Use the suggested Next Garden Update before adding another Philosophy Garden prompt or reflection card.",
     "Add another tiny glossary or dashboard guide improvement only after the current notes rest."
   ],
   "decisionLog": [
@@ -128,8 +132,8 @@
     "The Garden Review helps Luna learn from the first Reflection Card before choosing the next gentle public-safe update."
   ],
   "ideaQueue": [
-    "Use the Garden Review before adding any new Philosophy Garden prompt or reflection card.",
-    "Keep project.json, STATE.md, and CHANGELOG.md aligned after the newest Next Action refocus.",
+    "Use the suggested Next Garden Update before adding another Philosophy Garden prompt or reflection card.",
+    "Keep project.json, STATE.md, and CHANGELOG.md aligned after the Next Garden Update addition.",
     "Review the dashboard guide later for one more beginner-friendly wording improvement."
   ],
   "ideaQueueGuide": [
@@ -161,10 +165,10 @@
     "Visit http://localhost:8000 in a browser to view the dashboard."
   ],
   "nextAction": {
-    "title": "Use the Garden Review First",
-    "description": "Read the Garden Review before adding any new Philosophy Garden prompt or reflection card.",
-    "whyItMatters": "Using the review first keeps the Philosophy Garden slow, public-safe, and grounded in what the first Reflection Card already teaches.",
-    "status": "Ready before any new garden prompt"
+    "title": "Use the Next Garden Update",
+    "description": "Follow the suggested Next Garden Update as one calm, public-safe Philosophy Garden action before adding another prompt.",
+    "whyItMatters": "Using one suggested action keeps the Philosophy Garden grounded in the Garden Review and Garden Path instead of growing too quickly.",
+    "status": "Ready for one gentle garden action"
   },
   "creativeSeed": {
     "name": "Philosophy Garden",
@@ -191,5 +195,10 @@
     "Let the card rest before changing the garden again.",
     "Review what the card teaches in simple beginner-friendly words.",
     "Choose one gentle update for the next small growth step."
-  ]
+  ],
+  "nextGardenUpdate": {
+    "title": "Name One Gentle Growth Step",
+    "purpose": "Help visitors turn the Garden Review lesson into one small, kind project action without rushing the Philosophy Garden.",
+    "suggestedAction": "Choose one general, public-safe improvement that makes the dashboard easier for beginners to follow."
+  }
 }
