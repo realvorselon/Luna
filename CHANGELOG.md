@@ -2,6 +2,12 @@
 
 ## 2026-07-08
 
+### Creative Growth
+
+- Added a tiny `gardenPath` array to `project.json` so the Philosophy Garden can grow through a few slow, public-safe steps.
+- Updated `index.html` to show a small Garden Path section near the Creative Seed and Reflection Card sections.
+- Updated `STATE.md` and `ROADMAP.md` to remember Luna's simple creative growth path.
+
 ### Dashboard Sections
 
 - Added a tiny `reflectionCard` object for the first Philosophy Garden reflection card to `project.json`.
@@ -124,5 +130,5 @@
 
 ## Next
 
-- Let the first Reflection Card rest before adding another tiny Philosophy Garden prompt.
+- Follow the Garden Path before adding another tiny Philosophy Garden prompt.
 - Keep dashboard wording calm, public-safe, and beginner-friendly.
