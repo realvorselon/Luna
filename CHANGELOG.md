@@ -2,6 +2,12 @@
 
 ## 2026-07-08
 
+### Top Dashboard Flow
+
+- Moved the Next Action card directly after Last Completed Run in `index.html` so the top of the dashboard flows from Welcome to Status, Current Goal, Last Completed Run, and one clear action.
+- Added one Welcome note to the dashboard guide in `project.json` so first-time readers know why the page starts there.
+- Updated `project.json` and `STATE.md` to record this as the latest completed run.
+
 ### Welcome
 
 - Added a small `welcome` object to `project.json` with a plain-language title and sentence for first-time visitors.
