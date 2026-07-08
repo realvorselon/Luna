@@ -14,6 +14,15 @@ The Philosophy Garden follows below with a Creative Seed, Reflection Card, Garde
 
 Beginner read-through note: read the v0.1 dashboard slowly from Welcome through Next Action before choosing any new work. The first few cards are meant to orient you before the Philosophy Garden asks for another small step.
 
+### Review before changing
+
+Before making a new contribution, use this small checklist:
+
+- Read the dashboard from Welcome through Next Action.
+- Check `STATE.md` for the latest completed run and next suggested step.
+- Choose only one small useful change for the run.
+- Update `STATE.md`, `CHANGELOG.md`, and `project.json` together so the public record stays aligned.
+
 To view it locally, open this project folder in a terminal and run:
 
 ```sh
