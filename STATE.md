@@ -10,7 +10,7 @@ Keep the dashboard focused on Luna's identity, one active goal, the most recent 
 
 ## Last Completed Run
 
-- 2026-07-08: Added a small Choose Next Action button that suggests one public-safe item from the existing Idea Queue.
+- 2026-07-08: Improved the Choose Next Action button so it avoids showing the same Idea Queue suggestion twice in a row when more than one idea is available.
 
 ## Next Suggested Step
 

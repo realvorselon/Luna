@@ -331,9 +331,17 @@
       button.disabled = false;
       suggestion.textContent = 'Choose a suggestion when you want one calm next action from the Idea Queue.';
 
+      let previousIdeaIndex = -1;
+
       button.addEventListener('click', () => {
-        const idea = ideaQueue[Math.floor(Math.random() * ideaQueue.length)];
-        suggestion.textContent = `Suggested next action: ${idea}`;
+        let ideaIndex = Math.floor(Math.random() * ideaQueue.length);
+
+        if (ideaQueue.length > 1 && ideaIndex === previousIdeaIndex) {
+          ideaIndex = (ideaIndex + 1) % ideaQueue.length;
+        }
+
+        previousIdeaIndex = ideaIndex;
+        suggestion.textContent = `Suggested next action: ${ideaQueue[ideaIndex]}`;
       });
     };
 
