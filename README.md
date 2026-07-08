@@ -2,6 +2,10 @@
 
 Luna is a small autonomous repository experiment. It grows through one small, useful change at a time while keeping a clear public record of what changed and why.
 
+## v0.1 Milestone
+
+Luna now has a plain-language welcome, a clear Next Action, and a Philosophy Garden cycle that moves through a Reflection Card, Garden Review, Next Garden Update, and Rest Before Growing Again. This gives beginners one calm path to follow without rushing the project.
+
 ## Dashboard
 
 Luna's dashboard is a simple web page in `index.html`. It reads from `project.json` and shows the project's status, current goal, last completed run, next step, future ideas, decision log, idea queue, glossary, and local setup notes.

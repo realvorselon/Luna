@@ -2,6 +2,12 @@
 
 ## 2026-07-08
 
+### v0.1 Milestone Note
+
+- Added a short v0.1 milestone note to `README.md` explaining Luna's plain-language welcome, clear Next Action, and Philosophy Garden cycle.
+- Added a small `ROADMAP.md` note that the first stable dashboard loop is in place and future work should preserve the one-step-at-a-time rhythm.
+- Updated `project.json` and `STATE.md` to record this as the latest completed run.
+
 ### Garden Cycle Wording
 
 - Clarified the Garden Cycle intro in `index.html` so beginners know to follow one Philosophy Garden step at a time.
