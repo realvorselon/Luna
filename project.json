@@ -3,6 +3,10 @@
   "statusHistory": [
     {
       "date": "2026-07-08",
+      "note": "Refreshed the README dashboard description for v0.1 so it matches the current Welcome, Status, Current Goal, Last Completed Run, Next Action, and Philosophy Garden flow."
+    },
+    {
+      "date": "2026-07-08",
       "note": "Added a tiny v0.1 milestone note to the README and roadmap while preserving Luna's one-step-at-a-time rhythm."
     },
     {
@@ -135,8 +139,8 @@
     }
   ],
   "currentGoal": "Keep the dashboard and docs focused on Luna's plain-language welcome, one clear Next Action, the stable Philosophy Garden cycle, and a one-step-at-a-time rhythm for future public-safe updates.",
-  "lastCompletedRun": "2026-07-08: Added a tiny v0.1 milestone note to the README and roadmap while preserving Luna's one-step-at-a-time rhythm.",
-  "nextStep": "Let the v0.1 milestone note rest before making another small beginner-facing documentation update.",
+  "lastCompletedRun": "2026-07-08: Refreshed the README dashboard description for v0.1 so it matches the current Welcome, Status, Current Goal, Last Completed Run, Next Action, and Philosophy Garden flow.",
+  "nextStep": "Let the refreshed v0.1 README dashboard description rest before making another small beginner-facing documentation update.",
   "dashboardGuide": [
     "Welcome explains Luna in plain language before the project details begin.",
     "Status gives a quick snapshot of how the project is doing right now.",
@@ -146,7 +150,7 @@
     "Read the dashboard from top to bottom; if you only need one task, stop at Next Action."
   ],
   "futureIdeas": [
-    "Let the v0.1 milestone note rest before making another small beginner-facing documentation update.",
+    "Let the refreshed v0.1 README dashboard description rest before making another small beginner-facing documentation update.",
     "Keep the Next Action card aligned with the safest current task after each cleanup.",
     "Add another tiny glossary or dashboard guide improvement only after the current notes rest."
   ],
@@ -162,7 +166,7 @@
     "The Garden Cycle connects the Reflection Card, Garden Review, Next Garden Update, and rest step so beginners can see how Philosophy Garden pieces fit together."
   ],
   "ideaQueue": [
-    "Let the v0.1 milestone note rest before making another small beginner-facing documentation update.",
+    "Let the refreshed v0.1 README dashboard description rest before making another small beginner-facing documentation update.",
     "Keep project.json, STATE.md, and CHANGELOG.md aligned after each small documentation change.",
     "Review the dashboard guide later for one more beginner-friendly wording improvement."
   ],
@@ -195,10 +199,10 @@
     "Visit http://localhost:8000 in a browser to view the dashboard."
   ],
   "nextAction": {
-    "title": "Let v0.1 rest",
-    "description": "Pause after the tiny v0.1 milestone note before adding another beginner-facing documentation update.",
-    "whyItMatters": "Resting keeps Luna's first stable dashboard loop clear, calm, and easy to follow one step at a time.",
-    "status": "Resting after the v0.1 milestone note"
+    "title": "Let the README description rest",
+    "description": "Pause after refreshing the v0.1 dashboard description before adding another beginner-facing documentation update.",
+    "whyItMatters": "Resting keeps the public README aligned with the stable dashboard without rushing into extra features.",
+    "status": "Resting after the README dashboard description refresh"
   },
   "creativeSeed": {
     "name": "Philosophy Garden",

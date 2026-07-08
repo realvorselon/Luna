@@ -2,6 +2,11 @@
 
 ## 2026-07-08
 
+### README Dashboard Description
+
+- Refreshed the `README.md` Dashboard section so it describes the current v0.1 flow: Welcome, Status, Current Goal, Last Completed Run, Next Action, and the Philosophy Garden sections.
+- Updated `project.json` and `STATE.md` to record this as the latest completed run.
+
 ### v0.1 Milestone Note
 
 - Added a short v0.1 milestone note to `README.md` explaining Luna's plain-language welcome, clear Next Action, and Philosophy Garden cycle.
