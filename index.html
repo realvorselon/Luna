@@ -125,6 +125,34 @@
       color: #d9d1c3;
     }
 
+    .choose-next-action {
+      margin-top: 14px;
+      padding: 9px 14px;
+      background: #eadfcb;
+      border: 0;
+      border-radius: 999px;
+      color: #20232b;
+      cursor: pointer;
+      font: inherit;
+      font-weight: 700;
+    }
+
+    .choose-next-action:hover,
+    .choose-next-action:focus-visible {
+      background: #f7e3b5;
+      outline: 3px solid rgb(247 227 181 / 25%);
+      outline-offset: 2px;
+    }
+
+    .chosen-next-action {
+      margin-top: 12px;
+      padding: 12px;
+      background: rgb(168 213 186 / 10%);
+      border: 1px solid rgb(168 213 186 / 24%);
+      border-radius: 10px;
+      color: #d9d1c3;
+    }
+
     .next-action-label {
       color: #f7e3b5;
       font-weight: 700;
@@ -199,6 +227,8 @@
         <p class="next-action-status">Status: <span id="next-action-status">Loading project data...</span></p>
         <p id="next-action-description">Loading project data...</p>
         <p><span class="next-action-label">Why it matters:</span> <span id="next-action-why">Loading project data...</span></p>
+        <button class="choose-next-action" id="choose-next-action" type="button" disabled>Choose Next Action</button>
+        <p class="chosen-next-action" id="chosen-next-action" aria-live="polite">Load project data, then choose a suggestion from the Idea Queue.</p>
       </article>
     </section>
 
@@ -288,6 +318,25 @@
       });
     };
 
+    const setupNextActionChooser = (ideaQueue) => {
+      const button = document.getElementById('choose-next-action');
+      const suggestion = document.getElementById('chosen-next-action');
+
+      if (!Array.isArray(ideaQueue) || ideaQueue.length === 0) {
+        button.disabled = true;
+        suggestion.textContent = 'No Idea Queue suggestions are available yet.';
+        return;
+      }
+
+      button.disabled = false;
+      suggestion.textContent = 'Choose a suggestion when you want one calm next action from the Idea Queue.';
+
+      button.addEventListener('click', () => {
+        const idea = ideaQueue[Math.floor(Math.random() * ideaQueue.length)];
+        suggestion.textContent = `Suggested next action: ${idea}`;
+      });
+    };
+
     const showGlossary = (id, entries) => {
       const list = document.getElementById(id);
       list.innerHTML = '';
@@ -317,6 +366,8 @@
       showText('next-action-status', 'Unavailable');
       showText('next-action-description', 'Try opening this page from a local web server.');
       showText('next-action-why', 'The dashboard needs project.json before it can suggest a focused action.');
+      document.getElementById('choose-next-action').disabled = true;
+      showText('chosen-next-action', 'Idea Queue suggestions are unavailable until project data loads.');
       document.getElementById('dashboard-guide-list').innerHTML = '<li class="error">Dashboard guide notes are unavailable.</li>';
       document.getElementById('local-setup-list').innerHTML = '<li class="error">Local setup steps are unavailable.</li>';
       document.getElementById('status-history-list').innerHTML = '<li class="error">Status history entries are unavailable.</li>';
@@ -349,6 +400,7 @@
         showStatusHistory('status-history-list', project.statusHistory);
         showList('future-ideas-list', project.futureIdeas);
         showList('idea-queue-list', project.ideaQueue);
+        setupNextActionChooser(project.ideaQueue);
         showList('idea-queue-guide-list', project.ideaQueueGuide);
         showGlossary('glossary-list', project.glossary);
         showList('decision-log-list', project.decisionLog);

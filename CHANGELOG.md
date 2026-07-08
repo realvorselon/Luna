@@ -2,6 +2,11 @@
 
 ## 2026-07-08
 
+### Dashboard Sections
+
+- Added a small `Choose Next Action` button to `index.html` that suggests one item from the existing Idea Queue without saving changes back to `project.json`.
+- Updated `STATE.md` to remember this interactive dashboard feature.
+
 ### Polish/Maintenance
 
 - Added a beginner-friendly Near Term note to `ROADMAP.md` about choosing one small PR-sized task and keeping related project files aligned.
