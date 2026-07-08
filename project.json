@@ -3,6 +3,10 @@
   "statusHistory": [
     {
       "date": "2026-07-08",
+      "note": "Added a Garden Review so Luna can review the first Reflection Card before choosing the next gentle update."
+    },
+    {
+      "date": "2026-07-08",
       "note": "Improved the Garden Path display with small numbered path cards."
     },
     {
@@ -82,9 +86,9 @@
       "note": "The project is resting after a good run and ready for one gentle improvement."
     }
   ],
-  "currentGoal": "Keep the dashboard focused on Luna's identity, one active goal, the most recent completed run, one clear next action, one tiny creative seed, one reflection card, a simple Garden Path, and a few future ideas.",
-  "lastCompletedRun": "2026-07-08: Improved the Garden Path display with small numbered path cards.",
-  "nextStep": "Use the Garden Path to review the first Reflection Card, then choose one gentle public-safe update.",
+  "currentGoal": "Keep the dashboard focused on Luna's identity, one active goal, the most recent completed run, one clear next action, one tiny creative seed, one reflection card, a simple Garden Review, a Garden Path, and a few future ideas.",
+  "lastCompletedRun": "2026-07-08: Added a Garden Review so Luna can review the first Reflection Card before choosing the next gentle update.",
+  "nextStep": "Use the Garden Review and Garden Path to choose one gentle public-safe update.",
   "dashboardGuide": [
     "Status gives a quick snapshot of how the project is doing right now.",
     "Current Goal is the main thing Luna is focused on.",
@@ -92,7 +96,7 @@
     "Next Action highlights the single safest action for a beginner to take next."
   ],
   "futureIdeas": [
-    "Follow the Garden Path before adding another tiny Philosophy Garden prompt.",
+    "Use the Garden Review before adding another tiny Philosophy Garden prompt.",
     "Add one gentle documentation improvement that helps beginners understand the dashboard.",
     "Keep the Next Action card aligned with the safest current task after each cleanup."
   ],
@@ -103,10 +107,11 @@
     "The Next Action card helps beginners choose one clear next move without sorting through every project note.",
     "The Philosophy Garden seed gives Luna one tiny creative direction while staying public-safe and beginner-friendly.",
     "The first Reflection Card gives visitors one gentle question to consider without asking for private personal details.",
-    "The Garden Path keeps Philosophy Garden updates slow, public-safe, and easy for beginners to follow."
+    "The Garden Path keeps Philosophy Garden updates slow, public-safe, and easy for beginners to follow.",
+    "The Garden Review helps Luna learn from the first Reflection Card before choosing the next gentle public-safe update."
   ],
   "ideaQueue": [
-    "Review the first Reflection Card using the Garden Path before adding another prompt.",
+    "Use the Garden Review to choose one gentle public-safe update.",
     "Add one gentle documentation improvement for beginners.",
     "Keep project.json aligned with the dashboard after the next small content change."
   ],
@@ -139,10 +144,10 @@
     "Visit http://localhost:8000 in a browser to view the dashboard."
   ],
   "nextAction": {
-    "title": "Follow the Garden Path",
-    "description": "Review the first Reflection Card, then choose one tiny public-safe update that keeps the Philosophy Garden calm and beginner-friendly.",
-    "whyItMatters": "A simple path helps Luna grow creatively without rushing or collecting private details.",
-    "status": "Ready for a slow garden review"
+    "title": "Use the Garden Review",
+    "description": "Review what the first Reflection Card teaches, then choose one tiny public-safe update that keeps the Philosophy Garden calm and beginner-friendly.",
+    "whyItMatters": "A gentle review helps Luna learn from the current card before adding more ideas or prompts.",
+    "status": "Ready to review before growing"
   },
   "creativeSeed": {
     "name": "Philosophy Garden",
@@ -157,6 +162,11 @@
     "title": "Notice the Small Gate",
     "question": "What is one small, kind step that could help this project grow without rushing?",
     "whyItMatters": "This question matters because gentle growth helps Luna stay clear, welcoming, and easy for beginners to follow."
+  },
+  "gardenReview": {
+    "title": "Review the Small Gate",
+    "lesson": "The first Reflection Card teaches that Luna can grow through one small, kind step instead of rushing into bigger changes.",
+    "nextUpdate": "Next, choose one gentle public-safe update that keeps the Philosophy Garden easy for beginners to follow."
   },
   "gardenPath": [
     "Plant one small public-safe reflection card.",
