@@ -10,11 +10,11 @@ Keep the dashboard and docs focused on Luna's plain-language welcome, one clear 
 
 ## Last Completed Run
 
-- 2026-07-08: Added a dedicated Reflection Card renderer with calm fallback text when project.json has no reflection.
+- 2026-07-08: Moved Project Health below Recent Runs so first-time visitors reach Current Goal, Last Completed Run, and Next Action before the extra health summary.
 
 ## Next Suggested Step
 
-Let the dedicated Reflection Card rest, then review one Philosophy Garden sentence later if needed.
+Let the v0.2 dashboard polish burst rest before making another dashboard ordering change.
 
 ## Notes
 
@@ -30,3 +30,5 @@ The README now asks beginners to read the v0.1 dashboard slowly from Welcome thr
 The README now includes a small Review before changing checklist that asks beginners to read from Welcome through Next Action, check STATE.md, choose one small useful change, and update STATE.md, CHANGELOG.md, and project.json together. The glossary now explains Next Action as the one safest small task Luna suggests next so beginners do not have to choose from every idea at once. The dashboard now includes a tiny How to use Luna card near the top with four short steps for reading, stopping at Next Action, making one small useful change, and updating STATE.md, CHANGELOG.md, and project.json together after a completed run. The next session should let the Recent Runs section rest before making another tiny public-safe wording review of history guidance. The dashboard now shows the three newest statusHistory entries as a small Recent Runs card with a simple fallback if no entries are recorded. The dashboard also includes a Project Health card that summarizes current status, completed run count, latest run date, current goal, and Next Action from project.json with simple fallback text. Repeated dashboard card items now use one small helper so Project Health, Recent Runs, Garden Cycle, and Garden Path rendering stay consistent without changing the visible dashboard behavior.
 
 The dashboard Reflection Card now reads through a small dedicated renderer that uses the existing `project.json` reflection when available and shows calm fallback text if no reflection is recorded.
+
+The v0.2 dashboard polish burst was reviewed for a calm beginner-friendly flow. Project Health now rests below Recent Runs so new visitors can move from Welcome and How to use Luna into Status, Current Goal, Last Completed Run, and Next Action before reading the extra health summary.
