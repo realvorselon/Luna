@@ -3,6 +3,10 @@
   "statusHistory": [
     {
       "date": "2026-07-08",
+      "note": "Added a sync rule so future completed runs keep project.json, STATE.md, and CHANGELOG.md aligned."
+    },
+    {
+      "date": "2026-07-08",
       "note": "Added a Garden Review so Luna can review the first Reflection Card before choosing the next gentle update."
     },
     {
@@ -87,7 +91,7 @@
     }
   ],
   "currentGoal": "Keep the dashboard focused on Luna's identity, one active goal, the most recent completed run, one clear next action, one tiny creative seed, one reflection card, a simple Garden Review, a Garden Path, and a few future ideas.",
-  "lastCompletedRun": "2026-07-08: Added a Garden Review so Luna can review the first Reflection Card before choosing the next gentle update.",
+  "lastCompletedRun": "2026-07-08: Added a sync rule so future completed runs keep project.json, STATE.md, and CHANGELOG.md aligned.",
   "nextStep": "Use the Garden Review and Garden Path to choose one gentle public-safe update.",
   "dashboardGuide": [
     "Status gives a quick snapshot of how the project is doing right now.",
