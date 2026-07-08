@@ -10,7 +10,7 @@ Keep the dashboard focused on Luna's identity, one active goal, the most recent 
 
 ## Last Completed Run
 
-- 2026-07-08: Added a tiny Garden Path for slow Philosophy Garden growth.
+- 2026-07-08: Reviewed the Garden Path dashboard wording for public-safe clarity.
 
 ## Next Suggested Step
 
@@ -18,4 +18,4 @@ Use the Garden Path to review the first Reflection Card, then choose one gentle 
 
 ## Notes
 
-The project should stay friendly to non-technical readers. Each run should leave a clear trail of what changed and why. Creative seeds, reflection cards, and Garden Path steps should avoid private personal details and stay small enough for one careful update. The Garden Path now gives Luna a simple creative growth path: plant one public-safe card, let it rest, review it, and choose the next gentle update.
+The project should stay friendly to non-technical readers. Each run should leave a clear trail of what changed and why. Creative seeds, reflection cards, and Garden Path steps should avoid private personal details and stay small enough for one careful update. The Garden Path now explains that visitors can use simple steps to grow the Philosophy Garden slowly, safely, and without private details.
