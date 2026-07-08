@@ -29,6 +29,8 @@
 
 ### Polish/Maintenance
 
+- Added a sync rule to `RULES.md` so future completed runs keep `project.json`, `STATE.md`, and `CHANGELOG.md` aligned around the same newest completed run.
+- Updated `project.json` and `STATE.md` to record this rule addition as the latest completed run.
 - Reviewed the Garden Review dashboard display and added a short starting cue in `index.html` so new visitors understand it before reading the lesson.
 - Updated `STATE.md` to remember this Garden Review clarity pass.
 - Improved the Garden Path display in `index.html` so each step appears as a small numbered path card instead of a plain list.
