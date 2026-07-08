@@ -2,6 +2,12 @@
 
 ## 2026-07-08
 
+### Welcome
+
+- Added a small `welcome` object to `project.json` with a plain-language title and sentence for first-time visitors.
+- Updated `index.html` to show the welcome section near the top of the dashboard before the project status.
+- Updated `project.json` and `STATE.md` to record this as the latest completed run.
+
 ### Garden Cycle
 
 - Polished the Garden Cycle display in `index.html` so each cycle step reads as a small labeled card like the Garden Path.

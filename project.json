@@ -3,6 +3,10 @@
   "statusHistory": [
     {
       "date": "2026-07-08",
+      "note": "Added a plain-language welcome section near the top of the dashboard."
+    },
+    {
+      "date": "2026-07-08",
       "note": "Polished the Garden Cycle display so each cycle step reads as a small labeled card like the Garden Path."
     },
     {
@@ -114,8 +118,8 @@
       "note": "The project is resting after a good run and ready for one gentle improvement."
     }
   ],
-  "currentGoal": "Keep the dashboard focused on Luna's identity, one active goal, the most recent completed run, one clear next action, one tiny creative seed, one reflection card with a public-safe note, a simple Garden Review, one tiny Next Garden Update, polished Garden Cycle cards, a Garden Path, and a few future ideas.",
-  "lastCompletedRun": "2026-07-08: Polished the Garden Cycle display so each cycle step reads as a small labeled card like the Garden Path.",
+  "currentGoal": "Keep the dashboard focused on Luna's plain-language welcome, identity, one active goal, the most recent completed run, one clear next action, one tiny creative seed, one reflection card with a public-safe note, a simple Garden Review, one tiny Next Garden Update, polished Garden Cycle cards, a Garden Path, and a few future ideas.",
+  "lastCompletedRun": "2026-07-08: Added a plain-language welcome section near the top of the dashboard.",
   "nextStep": "Use the polished Garden Cycle cards as a calm map before choosing another public-safe Philosophy Garden action.",
   "dashboardGuide": [
     "Status gives a quick snapshot of how the project is doing right now.",
@@ -227,5 +231,9 @@
     "Let the card rest before changing the garden again.",
     "Review what the card teaches in simple beginner-friendly words.",
     "Choose one gentle update for the next small growth step."
-  ]
+  ],
+  "welcome": {
+    "title": "Welcome to Luna",
+    "sentence": "Luna is a small project dashboard that shows what changed, what matters now, and one safe next step."
+  }
 }
