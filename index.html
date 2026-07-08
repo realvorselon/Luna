@@ -152,6 +152,45 @@
       border-color: rgb(247 227 181 / 22%);
     }
 
+    .garden-path-list {
+      display: grid;
+      gap: 12px;
+      margin: 14px 0 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .garden-path-step {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 12px;
+      align-items: start;
+      padding: 12px;
+      background: rgb(16 17 20 / 36%);
+      border: 1px solid rgb(247 227 181 / 20%);
+      border-radius: 12px;
+      box-shadow: 0 10px 24px rgb(0 0 0 / 12%);
+    }
+
+    .garden-path-number {
+      display: inline-grid;
+      place-items: center;
+      width: 2rem;
+      height: 2rem;
+      background: rgb(247 227 181 / 16%);
+      border: 1px solid rgb(247 227 181 / 34%);
+      border-radius: 999px;
+      color: #f7e3b5;
+      font-size: 0.9rem;
+      font-weight: 800;
+      line-height: 1;
+    }
+
+    .garden-path-step-text {
+      margin: 0;
+      color: #eadfcb;
+    }
+
     .reflection-card h3 {
       margin: 0 0 8px;
       color: #cde8d7;
@@ -298,7 +337,7 @@
       <h2 id="garden-path">Garden Path</h2>
       <article class="garden-path-card">
         <p>Use these simple steps to grow the Philosophy Garden slowly, safely, and without private details.</p>
-        <ol class="dashboard-list" id="garden-path-list">
+        <ol class="garden-path-list" id="garden-path-list">
           <li>Loading project data...</li>
         </ol>
       </article>
@@ -386,6 +425,28 @@
       entries.forEach((entry) => {
         const item = document.createElement('li');
         item.textContent = `${entry.date}: ${entry.note}`;
+        list.appendChild(item);
+      });
+    };
+
+    const showGardenPath = (id, entries) => {
+      const list = document.getElementById(id);
+      list.innerHTML = '';
+
+      entries.forEach((entry, index) => {
+        const item = document.createElement('li');
+        const number = document.createElement('span');
+        const text = document.createElement('p');
+
+        item.className = 'garden-path-step';
+        number.className = 'garden-path-number';
+        text.className = 'garden-path-step-text';
+
+        number.textContent = index + 1;
+        text.textContent = entry;
+
+        item.appendChild(number);
+        item.appendChild(text);
         list.appendChild(item);
       });
     };
@@ -489,7 +550,7 @@
         showText('reflection-card-title', project.reflectionCard.title);
         showText('reflection-card-question', project.reflectionCard.question);
         showText('reflection-card-why', project.reflectionCard.whyItMatters);
-        showList('garden-path-list', project.gardenPath);
+        showGardenPath('garden-path-list', project.gardenPath);
         showList('dashboard-guide-list', project.dashboardGuide);
         showList('local-setup-list', project.localSetup);
         showStatusHistory('status-history-list', project.statusHistory);
