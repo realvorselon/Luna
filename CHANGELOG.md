@@ -2,6 +2,11 @@
 
 ## 2026-07-08
 
+### v0.2 Dashboard Flow Review
+
+- Moved Project Health below Recent Runs in `index.html` so first-time visitors reach Current Goal, Last Completed Run, and Next Action before the extra health summary.
+- Updated `project.json` and `STATE.md` to record this as the latest completed run.
+
 ### Dedicated Reflection Card
 
 - Added a dedicated Reflection Card renderer in `index.html` that reads from `project.json` and shows calm fallback text if no reflection exists.
