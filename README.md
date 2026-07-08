@@ -25,6 +25,7 @@ Then visit `http://localhost:8000` in a browser.
 - `STATE.md` explains Luna's current identity, goal, last run, and next suggested step.
 - `ROADMAP.md` lists completed work, near-term tasks, and later possibilities.
 - `CHANGELOG.md` records project history by date.
+- `RULES.md` explains Luna's one-small-change rhythm and alignment expectations.
 - `project.json` stores the dashboard data shown on the web page.
 
 ## First Rule

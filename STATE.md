@@ -10,11 +10,11 @@ Keep the dashboard and docs focused on Luna's plain-language welcome, one clear 
 
 ## Last Completed Run
 
-- 2026-07-08: Refreshed the README dashboard description for v0.1 so it matches the current Welcome, Status, Current Goal, Last Completed Run, Next Action, and Philosophy Garden flow.
+- 2026-07-08: Added RULES.md to the README Where to Look Next section so beginners can find Luna's one-small-change rhythm and alignment expectations.
 
 ## Next Suggested Step
 
-Let the refreshed v0.1 README dashboard description rest before making another small beginner-facing documentation update.
+Let the README Where to Look Next update rest before making another small beginner-facing documentation change.
 
 ## Notes
 
@@ -24,3 +24,5 @@ The Garden Cycle intro now reminds beginners to follow the Philosophy Garden one
 The v0.1 milestone note now records that Luna has a plain-language welcome, a clear Next Action, and a stable Philosophy Garden cycle of Reflection Card, Garden Review, Next Garden Update, and Rest Before Growing Again. The roadmap also notes that future work should preserve this one-step-at-a-time rhythm.
 
 The README dashboard description now matches the v0.1 dashboard flow: Welcome, Status, Current Goal, Last Completed Run, Next Action, and the current Philosophy Garden sections.
+
+The README Where to Look Next section now points beginners to RULES.md for Luna's one-small-change rhythm and alignment expectations.
