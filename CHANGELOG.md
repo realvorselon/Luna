@@ -2,6 +2,11 @@
 
 ## 2026-07-08
 
+### README Where to Look Next
+
+- Added `RULES.md` to the `README.md` Where to Look Next section so beginners can find Luna's one-small-change rhythm and alignment expectations.
+- Updated `project.json` and `STATE.md` to record this as the latest completed run.
+
 ### README Dashboard Description
 
 - Refreshed the `README.md` Dashboard section so it describes the current v0.1 flow: Welcome, Status, Current Goal, Last Completed Run, Next Action, and the Philosophy Garden sections.
