@@ -10,11 +10,11 @@ Keep the dashboard and docs focused on Luna's plain-language welcome, one clear 
 
 ## Last Completed Run
 
-- 2026-07-08: Added a beginner-friendly README checklist for reviewing Luna before making one small aligned change.
+- 2026-07-08: Added a beginner-friendly glossary entry explaining Next Action as Luna's single safest small suggested task.
 
 ## Next Suggested Step
 
-Let the review checklist rest, then consider one tiny glossary or dashboard guide wording improvement for beginners.
+Let the Next Action glossary entry rest, then consider one tiny public-safe wording review in the dashboard guide or glossary.
 
 ## Notes
 
@@ -27,4 +27,4 @@ The README dashboard description now matches the v0.1 dashboard flow: Welcome, S
 
 The README Where to Look Next section now points beginners to RULES.md for Luna's one-small-change rhythm and alignment expectations.
 The README now asks beginners to read the v0.1 dashboard slowly from Welcome through Next Action before choosing any new work.
-The README now includes a small Review before changing checklist that asks beginners to read from Welcome through Next Action, check STATE.md, choose one small useful change, and update STATE.md, CHANGELOG.md, and project.json together. The next session should let that checklist rest before making another tiny beginner-facing documentation change.
+The README now includes a small Review before changing checklist that asks beginners to read from Welcome through Next Action, check STATE.md, choose one small useful change, and update STATE.md, CHANGELOG.md, and project.json together. The glossary now explains Next Action as the one safest small task Luna suggests next so beginners do not have to choose from every idea at once. The next session should let that glossary entry rest before making another tiny public-safe wording review.

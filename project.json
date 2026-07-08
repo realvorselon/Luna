@@ -3,6 +3,10 @@
   "statusHistory": [
     {
       "date": "2026-07-08",
+      "note": "Added a beginner-friendly glossary entry explaining Next Action as Luna's single safest small suggested task."
+    },
+    {
+      "date": "2026-07-08",
       "note": "Added a beginner-friendly README checklist for reviewing Luna before making one small aligned change."
     },
     {
@@ -151,8 +155,8 @@
     }
   ],
   "currentGoal": "Keep the dashboard and docs focused on Luna's plain-language welcome, one clear Next Action, the stable Philosophy Garden cycle, and a one-step-at-a-time rhythm for future public-safe updates.",
-  "lastCompletedRun": "2026-07-08: Added a beginner-friendly README checklist for reviewing Luna before making one small aligned change.",
-  "nextStep": "Let the review checklist rest, then consider one tiny glossary or dashboard guide wording improvement for beginners.",
+  "lastCompletedRun": "2026-07-08: Added a beginner-friendly glossary entry explaining Next Action as Luna's single safest small suggested task.",
+  "nextStep": "Let the Next Action glossary entry rest, then consider one tiny public-safe wording review in the dashboard guide or glossary.",
   "dashboardGuide": [
     "Welcome explains Luna in plain language before the project details begin.",
     "Status gives a quick snapshot of how the project is doing right now.",
@@ -162,9 +166,9 @@
     "Read the dashboard from top to bottom; if you only need one task, stop at Next Action."
   ],
   "futureIdeas": [
-    "Let the review checklist rest before making another beginner-facing documentation change.",
-    "Review the glossary later for one tiny beginner-friendly wording improvement.",
-    "Keep the Next Action card aligned with the safest current task after each documentation cleanup."
+    "Let the Next Action glossary entry rest before changing more beginner-facing wording.",
+    "Review one dashboard guide sentence later to keep the top-to-bottom reading path clear.",
+    "Keep the Next Action card and glossary aligned when future documentation wording changes."
   ],
   "decisionLog": [
     "A dashboard makes Luna easy to understand at a glance.",
@@ -178,8 +182,8 @@
     "The Garden Cycle connects the Reflection Card, Garden Review, Next Garden Update, and rest step so beginners can see how Philosophy Garden pieces fit together."
   ],
   "ideaQueue": [
-    "Let the review checklist rest before making another beginner-facing documentation change.",
-    "Review the glossary later for one tiny beginner-friendly wording improvement.",
+    "Let the Next Action glossary entry rest before changing more beginner-facing wording.",
+    "Review one dashboard guide sentence later for beginner-friendly clarity.",
     "Keep project.json, STATE.md, and CHANGELOG.md aligned after each small documentation change."
   ],
   "ideaQueueGuide": [
@@ -203,6 +207,10 @@
     {
       "term": "Merge",
       "meaning": "To combine approved changes from one branch into another branch."
+    },
+    {
+      "term": "Next Action",
+      "meaning": "The one safest small task Luna suggests doing next, so beginners do not have to choose from every idea at once."
     }
   ],
   "localSetup": [
@@ -211,10 +219,10 @@
     "Visit http://localhost:8000 in a browser to view the dashboard."
   ],
   "nextAction": {
-    "title": "Let the review checklist rest",
-    "description": "Pause after adding the README checklist so beginners can review Luna from Welcome through Next Action before choosing one small change.",
-    "whyItMatters": "Resting keeps Luna focused on calm, public-safe documentation improvements with aligned project records.",
-    "status": "Resting after the review checklist update"
+    "title": "Let the Next Action glossary entry rest",
+    "description": "Pause after defining Next Action so beginners can use the glossary before Luna changes more wording.",
+    "whyItMatters": "Resting keeps the glossary improvement small, understandable, and aligned with Luna's one-change rhythm.",
+    "status": "Resting after the Next Action glossary update"
   },
   "creativeSeed": {
     "name": "Philosophy Garden",
