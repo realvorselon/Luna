@@ -2,6 +2,11 @@
 
 ## 2026-07-08
 
+### Project Health Dashboard
+
+- Added a beginner-friendly Project Health card to `index.html` that reads from `project.json` and shows current status, total completed runs, latest run date, current goal, and Next Action with simple fallback text.
+- Updated `project.json` and `STATE.md` to record this as the latest completed run.
+
 ### Recent Runs Dashboard
 
 - Added a small Recent Runs section to `index.html` that reads from `project.json` statusHistory, shows only the three newest entries, and includes a simple empty-state fallback.
