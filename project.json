@@ -3,6 +3,10 @@
   "statusHistory": [
     {
       "date": "2026-07-08",
+      "note": "Cleaned up Future Ideas so they match the roadmap's remaining direction."
+    },
+    {
+      "date": "2026-07-08",
       "note": "Refreshed the Next Action card with a concrete Future Ideas roadmap review."
     },
     {
@@ -43,8 +47,8 @@
     }
   ],
   "currentGoal": "Keep the dashboard focused on Luna's identity, one active goal, the most recent completed run, one clear next action, and a few future ideas.",
-  "lastCompletedRun": "2026-07-08: Refreshed the Next Action card with a concrete Future Ideas roadmap review.",
-  "nextStep": "Review Future Ideas against the roadmap and remove any completed or outdated ideas.",
+  "lastCompletedRun": "2026-07-08: Cleaned up Future Ideas so they match the roadmap's remaining direction.",
+  "nextStep": "Add one gentle documentation improvement for beginners.",
   "dashboardGuide": [
     "Status gives a quick snapshot of how the project is doing right now.",
     "Current Goal is the main thing Luna is focused on.",
@@ -52,9 +56,9 @@
     "Next Action highlights the single safest action for a beginner to take next."
   ],
   "futureIdeas": [
-    "Add one small decision log entry explaining why the next action was chosen.",
-    "Review the dashboard text for one beginner-friendly wording improvement.",
-    "Refresh the Idea Queue after the next completed action."
+    "Add one gentle documentation improvement that helps beginners understand the dashboard.",
+    "Keep the Next Action card aligned with the safest current task after each cleanup.",
+    "Explore one tiny creative-tool, study-helper, or self-documenting project-manager direction when the dashboard foundation feels steady."
   ],
   "decisionLog": [
     "A dashboard makes Luna easy to understand at a glance.",
@@ -63,8 +67,8 @@
     "The Next Action card helps beginners choose one clear next move without sorting through every project note."
   ],
   "ideaQueue": [
-    "Add one decision log entry explaining why the next action was chosen.",
-    "Review future ideas against the roadmap and remove any completed or outdated idea.",
+    "Add one gentle documentation improvement for beginners.",
+    "Keep project.json aligned with the dashboard after the next small content change.",
     "Improve one dashboard label if it would make the page easier for beginners."
   ],
   "ideaQueueGuide": [
@@ -96,9 +100,9 @@
     "Visit http://localhost:8000 in a browser to view the dashboard."
   ],
   "nextAction": {
-    "title": "Review Future Ideas Against the Roadmap",
-    "description": "Read each Future Ideas item next to the roadmap, then remove any idea that is already done or no longer fits Luna's near-term direction.",
-    "whyItMatters": "A short, current idea list helps beginners pick a useful next task without guessing what still matters.",
-    "status": "Ready for one careful cleanup pass"
+    "title": "Add a Gentle Beginner Documentation Improvement",
+    "description": "Choose one small README, roadmap, or dashboard wording improvement that helps a new visitor understand Luna without adding private details.",
+    "whyItMatters": "A small documentation improvement keeps Luna approachable while the project grows one safe step at a time.",
+    "status": "Ready for the next small documentation pass"
   }
 }

@@ -6,6 +6,9 @@
 
 - Refreshed the Next Action card in `project.json` with a concrete Future Ideas roadmap review task.
 - Updated `STATE.md` to remember this Next Action refresh.
+- Cleaned up Future Ideas in `project.json` so the list removes completed or outdated items and keeps three realistic growth directions.
+- Updated the Next Action and Idea Queue toward one gentle beginner documentation improvement.
+- Updated `STATE.md` to remember this Future Ideas cleanup.
 
 ## 2026-07-07
 
@@ -98,4 +101,4 @@
 
 ## Next
 
-- Review Future Ideas against the roadmap and remove any completed or outdated ideas.
+- Add one gentle documentation improvement for beginners.
