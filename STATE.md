@@ -10,11 +10,11 @@ Keep the dashboard and docs focused on Luna's plain-language welcome, one clear 
 
 ## Last Completed Run
 
-- 2026-07-08: Reviewed the README longer-term vision note and trimmed one wording mismatch so it points to small projects instead of implying a broader new project category.
+- 2026-07-08: Aligned the roadmap with README longer-term vision by keeping near-term work focused on the current dashboard, one clear Next Action, and one-small-change rhythm while naming the later calm companion direction for small projects.
 
 ## Next Suggested Step
 
-Let the reviewed README longer-term vision wording rest before adding any new direction or feature ideas.
+Rest and review the roadmap alignment before adding any new feature ideas or dashboard sections.
 
 ## Notes
 
@@ -37,3 +37,5 @@ The README now includes a short public-safe longer-term vision note that present
 
 
 The README longer-term vision note was reviewed against the dashboard, roadmap, rules, and one-small-change rhythm; one tiny wording mismatch now points to small projects instead of a broader new project category.
+
+The roadmap now gently matches the README longer-term vision: near-term work stays with the current dashboard, one clear Next Action, and the one-small-change rhythm, while the later direction may become a calm companion for small projects. The next step is to rest and review before adding any new feature idea or dashboard section.

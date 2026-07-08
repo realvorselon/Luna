@@ -1,6 +1,6 @@
 # Roadmap
 
-This roadmap is intentionally small. Each item should be doable as one careful run.
+This roadmap is intentionally small. Luna is a public dashboard prototype right now, so each item should stay calm, public-safe, beginner-friendly, and doable as one careful run.
 
 ## Completed
 
@@ -18,24 +18,21 @@ This roadmap is intentionally small. Each item should be doable as one careful r
 - Added a tiny Next Garden Update so the Garden Review can point to one public-safe action.
 - Added a Garden Cycle so the Philosophy Garden pieces connect in a clear beginner-friendly order.
 - The first stable dashboard loop is now in place; future work should preserve the one-step-at-a-time rhythm.
+- Aligned the roadmap with the README's longer-term vision for a calm project companion for small projects.
 
 ## Near Term
 
-Choose a Near Term task that is small enough to finish in one careful pull request. When a task changes project direction, dashboard data, or public history, keep `project.json`, `STATE.md`, and `CHANGELOG.md` aligned so the next person can see what changed.
+Near-term work should stay focused on the current dashboard, one clear Next Action, and Luna's one-small-change rhythm. Choose a task that is small enough to finish in one careful pull request. When a task changes project direction, dashboard data, or public history, keep `project.json`, `STATE.md`, and `CHANGELOG.md` aligned so the next person can see what changed.
 
 - Keep `project.json` aligned with the dashboard after each small content change.
-- Refresh the Idea Queue so completed items are replaced with realistic next tasks.
-- Add one gentle documentation improvement for beginners.
 - Keep the Next Action card aligned with the safest current task.
-- Use the Garden Cycle before adding another tiny Philosophy Garden prompt or reflection card without adding private details.
+- Review one existing dashboard or documentation sentence at a time for beginner-friendly clarity.
+- Let the current dashboard rest between changes so Luna does not grow too quickly.
+- Use the Garden Cycle before changing any Philosophy Garden wording, and keep any change public-safe and small.
 
-## Later Possibilities
+## Later Direction
 
-- Add a small decision log entry for why each next task was chosen.
-- Add a project mood/status history.
-- Add a local development guide for beginners.
-- Evolve the Philosophy Garden seed into a tiny creative tool only if it stays simple and public-safe.
-- Evolve into a tiny creative tool, study helper, or self-documenting project manager.
+Later, Luna may become a calm companion for small projects. That means helping people remember what they are making, see what changed last, choose one small next step, avoid overwhelm, and keep a clean public record. This is a direction to protect gently, not a big app roadmap.
 
 ## Parking Lot
 
