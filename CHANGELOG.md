@@ -4,6 +4,10 @@
 
 ### Dashboard Sections
 
+- Added a tiny `creativeSeed` object for Philosophy Garden to `project.json`.
+- Updated `index.html` to show a small Creative Seed section on the dashboard.
+- Updated `STATE.md` to remember this public-safe creative direction.
+
 - Improved the `Choose Next Action` button so it chooses from the other Idea Queue items before repeating the previous suggestion when more than one idea is available.
 - Updated `STATE.md` to remember this small interaction improvement.
 - Added a small `Choose Next Action` button to `index.html` that suggests one item from the existing Idea Queue without saving changes back to `project.json`.
@@ -112,4 +116,4 @@
 
 ## Next
 
-- Choose one tiny creative direction seed for Luna and keep it public-safe.
+- Try one tiny Philosophy Garden seed idea and keep it beginner-friendly and public-safe.

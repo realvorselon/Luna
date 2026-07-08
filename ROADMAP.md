@@ -11,6 +11,7 @@ This roadmap is intentionally small. Each item should be doable as one careful r
 - Added structured project data in `project.json` for the dashboard to read.
 - Added a lightweight Idea Queue, Decision Log, Glossary, and Local Setup section.
 - Added a small Next Action card to help beginners choose one safe next task.
+- Started exploring one tiny creative direction with a public-safe Philosophy Garden seed.
 - Tidied the changelog into clearer 2026-07-07 sections.
 
 ## Near Term
@@ -21,12 +22,14 @@ Choose a Near Term task that is small enough to finish in one careful pull reque
 - Refresh the Idea Queue so completed items are replaced with realistic next tasks.
 - Add one gentle documentation improvement for beginners.
 - Keep the Next Action card aligned with the safest current task.
+- Try one tiny Philosophy Garden prompt or reflection card without adding private details.
 
 ## Later Possibilities
 
 - Add a small decision log entry for why each next task was chosen.
 - Add a project mood/status history.
 - Add a local development guide for beginners.
+- Evolve the Philosophy Garden seed into a tiny creative tool only if it stays simple and public-safe.
 - Evolve into a tiny creative tool, study helper, or self-documenting project manager.
 
 ## Parking Lot
