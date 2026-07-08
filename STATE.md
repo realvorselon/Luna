@@ -26,3 +26,4 @@ The v0.1 milestone note now records that Luna has a plain-language welcome, a cl
 The README dashboard description now matches the v0.1 dashboard flow: Welcome, Status, Current Goal, Last Completed Run, Next Action, and the current Philosophy Garden sections.
 
 The README Where to Look Next section now points beginners to RULES.md for Luna's one-small-change rhythm and alignment expectations.
+The next session should start with a calm v0.1 read-through before adding new features.
