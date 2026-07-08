@@ -11,6 +11,8 @@
 
 ### Polish/Maintenance
 
+- Refreshed the Next Action card in `project.json` so it suggests choosing one tiny public-safe creative direction seed for Luna.
+- Updated `STATE.md` to remember this Next Action refresh.
 - Added a beginner-friendly Near Term note to `ROADMAP.md` about choosing one small PR-sized task and keeping related project files aligned.
 - Updated `STATE.md` to remember this roadmap documentation improvement.
 - Refreshed the Next Action card in `project.json` with a concrete Future Ideas roadmap review task.
@@ -110,4 +112,4 @@
 
 ## Next
 
-- Add one gentle documentation improvement for beginners.
+- Choose one tiny creative direction seed for Luna and keep it public-safe.

@@ -3,6 +3,10 @@
   "statusHistory": [
     {
       "date": "2026-07-08",
+      "note": "Refreshed the Next Action card to suggest choosing one tiny creative direction seed for Luna."
+    },
+    {
+      "date": "2026-07-08",
       "note": "Improved the Choose Next Action button so it avoids repeating the same suggestion twice in a row when more than one Idea Queue item is available."
     },
     {
@@ -55,8 +59,8 @@
     }
   ],
   "currentGoal": "Keep the dashboard focused on Luna's identity, one active goal, the most recent completed run, one clear next action, and a few future ideas.",
-  "lastCompletedRun": "2026-07-08: Improved the Choose Next Action button so it avoids repeating the same suggestion twice in a row when more than one Idea Queue item is available.",
-  "nextStep": "Keep the dashboard content aligned after the next small public-safe improvement.",
+  "lastCompletedRun": "2026-07-08: Refreshed the Next Action card to suggest choosing one tiny creative direction seed for Luna.",
+  "nextStep": "Choose one tiny creative direction seed for Luna and keep it public-safe.",
   "dashboardGuide": [
     "Status gives a quick snapshot of how the project is doing right now.",
     "Current Goal is the main thing Luna is focused on.",
@@ -108,9 +112,9 @@
     "Visit http://localhost:8000 in a browser to view the dashboard."
   ],
   "nextAction": {
-    "title": "Add a Gentle Beginner Documentation Improvement",
-    "description": "Choose one small README, roadmap, or dashboard wording improvement that helps a new visitor understand Luna without adding private details.",
-    "whyItMatters": "A small documentation improvement keeps Luna approachable while the project grows one safe step at a time.",
-    "status": "Ready for the next small documentation pass"
+    "title": "Choose One Tiny Creative Direction Seed",
+    "description": "Pick one small public-safe direction for Luna to try next, such as a sketch helper, Japanese study helper, philosophy garden, or tiny weird game.",
+    "whyItMatters": "Choosing one tiny seed gives Luna a playful direction without making the next step too large or too personal.",
+    "status": "Ready to choose one small creative seed"
   }
 }

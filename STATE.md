@@ -10,11 +10,11 @@ Keep the dashboard focused on Luna's identity, one active goal, the most recent 
 
 ## Last Completed Run
 
-- 2026-07-08: Improved the Choose Next Action button so it chooses from the other Idea Queue items before repeating the previous suggestion when more than one idea is available.
+- 2026-07-08: Refreshed the Next Action card so it suggests choosing one tiny public-safe creative direction seed for Luna.
 
 ## Next Suggested Step
 
-Keep the dashboard content aligned after the next small public-safe improvement.
+Choose one tiny creative direction seed for Luna, such as a sketch helper, Japanese study helper, philosophy garden, or tiny weird game, and keep it public-safe.
 
 ## Notes
 
