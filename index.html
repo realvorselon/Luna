@@ -334,11 +334,12 @@
       let previousIdeaIndex = -1;
 
       button.addEventListener('click', () => {
-        let ideaIndex = Math.floor(Math.random() * ideaQueue.length);
-
-        if (ideaQueue.length > 1 && ideaIndex === previousIdeaIndex) {
-          ideaIndex = (ideaIndex + 1) % ideaQueue.length;
-        }
+        const availableIdeaIndexes = ideaQueue
+          .map((idea, index) => index)
+          .filter((index) => index !== previousIdeaIndex);
+        const choices = availableIdeaIndexes.length > 0 ? availableIdeaIndexes : [0];
+        const choiceIndex = Math.floor(Math.random() * choices.length);
+        const ideaIndex = choices[choiceIndex];
 
         previousIdeaIndex = ideaIndex;
         suggestion.textContent = `Suggested next action: ${ideaQueue[ideaIndex]}`;
