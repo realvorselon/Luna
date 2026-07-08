@@ -2,6 +2,11 @@
 
 ## 2026-07-08
 
+### Review Before Changing Checklist
+
+- Added a small README checklist reminding new contributors to read the dashboard from Welcome through Next Action, check `STATE.md`, make one small useful change, and update `STATE.md`, `CHANGELOG.md`, and `project.json` together.
+- Updated `project.json` and `STATE.md` to record this as the latest completed run.
+
 ### v0.1 Read-through Note
 
 - Added a calm README note asking beginners to read the v0.1 dashboard slowly from Welcome through Next Action before choosing any new work.

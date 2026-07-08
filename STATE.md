@@ -10,11 +10,11 @@ Keep the dashboard and docs focused on Luna's plain-language welcome, one clear 
 
 ## Last Completed Run
 
-- 2026-07-08: Added a calm v0.1 README read-through note asking beginners to move slowly from Welcome through Next Action before choosing new work.
+- 2026-07-08: Added a beginner-friendly README checklist for reviewing Luna before making one small aligned change.
 
 ## Next Suggested Step
 
-Let the v0.1 read-through note rest, then consider one tiny glossary or dashboard guide wording improvement for beginners.
+Let the review checklist rest, then consider one tiny glossary or dashboard guide wording improvement for beginners.
 
 ## Notes
 
@@ -27,4 +27,4 @@ The README dashboard description now matches the v0.1 dashboard flow: Welcome, S
 
 The README Where to Look Next section now points beginners to RULES.md for Luna's one-small-change rhythm and alignment expectations.
 The README now asks beginners to read the v0.1 dashboard slowly from Welcome through Next Action before choosing any new work.
-The next session should let that read-through note rest before making another tiny beginner-facing documentation change.
+The README now includes a small Review before changing checklist that asks beginners to read from Welcome through Next Action, check STATE.md, choose one small useful change, and update STATE.md, CHANGELOG.md, and project.json together. The next session should let that checklist rest before making another tiny beginner-facing documentation change.

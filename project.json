@@ -3,6 +3,10 @@
   "statusHistory": [
     {
       "date": "2026-07-08",
+      "note": "Added a beginner-friendly README checklist for reviewing Luna before making one small aligned change."
+    },
+    {
+      "date": "2026-07-08",
       "note": "Added a calm v0.1 README read-through note asking beginners to move slowly from Welcome through Next Action before choosing new work."
     },
     {
@@ -147,8 +151,8 @@
     }
   ],
   "currentGoal": "Keep the dashboard and docs focused on Luna's plain-language welcome, one clear Next Action, the stable Philosophy Garden cycle, and a one-step-at-a-time rhythm for future public-safe updates.",
-  "lastCompletedRun": "2026-07-08: Added a calm v0.1 README read-through note asking beginners to move slowly from Welcome through Next Action before choosing new work.",
-  "nextStep": "Let the v0.1 read-through note rest, then consider one tiny glossary or dashboard guide wording improvement for beginners.",
+  "lastCompletedRun": "2026-07-08: Added a beginner-friendly README checklist for reviewing Luna before making one small aligned change.",
+  "nextStep": "Let the review checklist rest, then consider one tiny glossary or dashboard guide wording improvement for beginners.",
   "dashboardGuide": [
     "Welcome explains Luna in plain language before the project details begin.",
     "Status gives a quick snapshot of how the project is doing right now.",
@@ -158,7 +162,7 @@
     "Read the dashboard from top to bottom; if you only need one task, stop at Next Action."
   ],
   "futureIdeas": [
-    "Let the v0.1 read-through note rest before making another beginner-facing documentation change.",
+    "Let the review checklist rest before making another beginner-facing documentation change.",
     "Review the glossary later for one tiny beginner-friendly wording improvement.",
     "Keep the Next Action card aligned with the safest current task after each documentation cleanup."
   ],
@@ -174,7 +178,7 @@
     "The Garden Cycle connects the Reflection Card, Garden Review, Next Garden Update, and rest step so beginners can see how Philosophy Garden pieces fit together."
   ],
   "ideaQueue": [
-    "Let the v0.1 read-through note rest before making another beginner-facing documentation change.",
+    "Let the review checklist rest before making another beginner-facing documentation change.",
     "Review the glossary later for one tiny beginner-friendly wording improvement.",
     "Keep project.json, STATE.md, and CHANGELOG.md aligned after each small documentation change."
   ],
@@ -207,10 +211,10 @@
     "Visit http://localhost:8000 in a browser to view the dashboard."
   ],
   "nextAction": {
-    "title": "Let the read-through note rest",
-    "description": "Pause after adding the v0.1 README note so beginners can read slowly from Welcome through Next Action before choosing new work.",
-    "whyItMatters": "Resting keeps Luna focused on one small public-safe documentation improvement at a time.",
-    "status": "Resting after the v0.1 read-through note"
+    "title": "Let the review checklist rest",
+    "description": "Pause after adding the README checklist so beginners can review Luna from Welcome through Next Action before choosing one small change.",
+    "whyItMatters": "Resting keeps Luna focused on calm, public-safe documentation improvements with aligned project records.",
+    "status": "Resting after the review checklist update"
   },
   "creativeSeed": {
     "name": "Philosophy Garden",
