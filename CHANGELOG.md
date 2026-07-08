@@ -2,6 +2,12 @@
 
 ## 2026-07-08
 
+### Next Garden Update
+
+- Added a tiny `nextGardenUpdate` object to `project.json` with one public-safe Philosophy Garden title, purpose, and suggested action.
+- Updated `index.html` to show the Next Garden Update near the Garden Review and Garden Path sections.
+- Updated `project.json` and `STATE.md` to record this as the latest completed run.
+
 ### Beginner Documentation
 
 - Added a dashboard guide note in `project.json` so beginners know they can read from top to bottom and stop at Next Action if they only need one small step.

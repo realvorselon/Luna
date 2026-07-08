@@ -140,6 +140,7 @@
 
     .reflection-card,
     .garden-review-card,
+    .next-garden-update-card,
     .garden-path-card {
       margin-top: 16px;
       background: rgb(168 213 186 / 9%);
@@ -151,6 +152,11 @@
     .garden-review-card {
       background: rgb(247 227 181 / 7%);
       border-color: rgb(247 227 181 / 24%);
+    }
+
+    .next-garden-update-card {
+      background: rgb(168 213 186 / 8%);
+      border-color: rgb(168 213 186 / 24%);
     }
 
     .garden-path-card {
@@ -198,19 +204,22 @@
     }
 
     .reflection-card h3,
-    .garden-review-card h3 {
+    .garden-review-card h3,
+    .next-garden-update-card h3 {
       margin: 0 0 8px;
       color: #cde8d7;
       font-size: 1.05rem;
     }
 
     .reflection-card p,
-    .garden-review-card p {
+    .garden-review-card p,
+    .next-garden-update-card p {
       margin: 0;
     }
 
     .reflection-card p + p,
-    .garden-review-card p + p {
+    .garden-review-card p + p,
+    .next-garden-update-card p + p {
       margin-top: 10px;
       color: #d9d1c3;
     }
@@ -350,6 +359,17 @@
         <h3 id="garden-review-title">Loading project data...</h3>
         <p id="garden-review-lesson">Loading project data...</p>
         <p><span class="next-action-label">Next gentle update:</span> <span id="garden-review-next-update">Loading project data...</span></p>
+      </article>
+    </section>
+
+
+    <section aria-labelledby="next-garden-update">
+      <h2 id="next-garden-update">Next Garden Update</h2>
+      <article class="next-garden-update-card">
+        <p>A small public-safe update chosen from the Garden Review and Garden Path.</p>
+        <h3 id="next-garden-update-title">Loading project data...</h3>
+        <p><span class="next-action-label">Purpose:</span> <span id="next-garden-update-purpose">Loading project data...</span></p>
+        <p><span class="next-action-label">Suggested action:</span> <span id="next-garden-update-action">Loading project data...</span></p>
       </article>
     </section>
 
@@ -538,6 +558,9 @@
       showText('garden-review-title', 'Garden review unavailable');
       showText('garden-review-lesson', 'Try opening this page from a local web server.');
       showText('garden-review-next-update', 'The dashboard needs project.json before it can review the reflection card.');
+      showText('next-garden-update-title', 'Next garden update unavailable');
+      showText('next-garden-update-purpose', 'The dashboard needs project.json before it can suggest a garden update.');
+      showText('next-garden-update-action', 'Keep any next step general and public-safe.');
       document.getElementById('garden-path-list').innerHTML = '<li class="error">Garden Path steps are unavailable.</li>';
       document.getElementById('choose-next-action').disabled = true;
       showText('chosen-next-action', 'Idea Queue suggestions are unavailable until project data loads.');
@@ -578,6 +601,9 @@
         showText('garden-review-title', project.gardenReview.title);
         showText('garden-review-lesson', project.gardenReview.lesson);
         showText('garden-review-next-update', project.gardenReview.nextUpdate);
+        showText('next-garden-update-title', project.nextGardenUpdate.title);
+        showText('next-garden-update-purpose', project.nextGardenUpdate.purpose);
+        showText('next-garden-update-action', project.nextGardenUpdate.suggestedAction);
         showGardenPath('garden-path-list', project.gardenPath);
         showList('dashboard-guide-list', project.dashboardGuide);
         showList('local-setup-list', project.localSetup);
