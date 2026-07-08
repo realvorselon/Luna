@@ -25,6 +25,8 @@
 
 ### Polish/Maintenance
 
+- Improved the Garden Path display in `index.html` so each step appears as a small numbered path card instead of a plain list.
+- Updated `STATE.md` to remember this visual Garden Path improvement.
 - Improved the Garden Path dashboard note so new visitors understand it as simple, public-safe steps without private details.
 - Updated `STATE.md` to remember this clarity review.
 - Improved the Local Setup helper sentence in `index.html` so beginners know the local preview stays on their own computer and does not publish anything.
