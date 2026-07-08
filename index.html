@@ -76,14 +76,16 @@
       margin-bottom: 0;
     }
 
-    .recent-runs-card {
+    .recent-runs-card,
+    .project-health-card {
       background: #1b1d24;
       border: 1px solid #34363d;
       border-radius: 12px;
       padding: 18px;
     }
 
-    .recent-runs-list {
+    .recent-runs-list,
+    .project-health-list {
       display: grid;
       gap: 12px;
       margin: 0;
@@ -91,20 +93,23 @@
       list-style: none;
     }
 
-    .recent-run-item {
+    .recent-run-item,
+    .project-health-item {
       padding: 12px;
       background: rgb(16 17 20 / 36%);
       border: 1px solid rgb(247 227 181 / 20%);
       border-radius: 12px;
     }
 
-    .recent-run-date {
+    .recent-run-date,
+    .project-health-label {
       display: block;
       color: #f7e3b5;
       font-weight: 800;
     }
 
-    .recent-run-note {
+    .recent-run-note,
+    .project-health-value {
       display: block;
       margin-top: 4px;
       color: #d9d1c3;
@@ -421,6 +426,15 @@
 
     <p class="project-status">Project status: <span id="project-status-text">Loading project data...</span></p>
 
+    <section aria-labelledby="project-health">
+      <h2 id="project-health">Project Health</h2>
+      <article class="project-health-card">
+        <ul class="project-health-list" id="project-health-list">
+          <li>Loading project data...</li>
+        </ul>
+      </article>
+    </section>
+
     <section aria-labelledby="current-goal">
       <h2 id="current-goal">Current Goal</h2>
       <div class="status">
@@ -607,6 +621,50 @@
       });
     };
 
+    const formatHealthValue = (value, fallback) => {
+      if (typeof value === 'string' && value.trim() !== '') {
+        return value;
+      }
+
+      if (typeof value === 'number') {
+        return String(value);
+      }
+
+      return fallback;
+    };
+
+    const showProjectHealth = (id, project) => {
+      const list = document.getElementById(id);
+      const statusHistory = Array.isArray(project.statusHistory) ? project.statusHistory : [];
+      const latestRun = statusHistory[0];
+      const healthFacts = [
+        ['Current status', formatHealthValue(project.status, 'No status recorded yet.')],
+        ['Total completed runs', String(statusHistory.length)],
+        ['Latest run date', formatHealthValue(latestRun?.date, 'No run date recorded yet.')],
+        ['Current goal', formatHealthValue(project.currentGoal, 'No current goal recorded yet.')],
+        ['Next Action', formatHealthValue(project.nextAction?.title, 'No Next Action recorded yet.')]
+      ];
+
+      list.innerHTML = '';
+
+      healthFacts.forEach(([labelText, valueText]) => {
+        const item = document.createElement('li');
+        const label = document.createElement('span');
+        const value = document.createElement('span');
+
+        item.className = 'project-health-item';
+        label.className = 'project-health-label';
+        value.className = 'project-health-value';
+
+        label.textContent = labelText;
+        value.textContent = valueText;
+
+        item.appendChild(label);
+        item.appendChild(value);
+        list.appendChild(item);
+      });
+    };
+
     const showRecentRuns = (id, entries) => {
       const list = document.getElementById(id);
       list.innerHTML = '';
@@ -766,6 +824,7 @@
       showText('chosen-next-action', 'Idea Queue suggestions are unavailable until project data loads.');
       document.getElementById('dashboard-guide-list').innerHTML = '<li class="error">Dashboard guide notes are unavailable.</li>';
       document.getElementById('local-setup-list').innerHTML = '<li class="error">Local setup steps are unavailable.</li>';
+      document.getElementById('project-health-list').innerHTML = '<li class="error">Project health facts are unavailable.</li>';
       document.getElementById('recent-runs-list').innerHTML = '<li class="error">Recent runs are unavailable.</li>';
       document.getElementById('status-history-list').innerHTML = '<li class="error">Status history entries are unavailable.</li>';
       document.getElementById('future-ideas-list').innerHTML = '<li class="error">Future ideas are unavailable.</li>';
@@ -788,6 +847,7 @@
         showText('welcome-sentence', project.welcome.sentence);
         showText('project-status-text', project.status);
         showText('current-goal-text', project.currentGoal);
+        showProjectHealth('project-health-list', project);
         showText('last-completed-run-text', project.lastCompletedRun);
         showText('next-step-text', project.nextStep);
         showText('next-action-title', project.nextAction.title);
