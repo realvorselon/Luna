@@ -3,6 +3,10 @@
   "statusHistory": [
     {
       "date": "2026-07-08",
+      "note": "Added a tiny How to use Luna dashboard card with four beginner-friendly steps."
+    },
+    {
+      "date": "2026-07-08",
       "note": "Added a beginner-friendly glossary entry explaining Next Action as Luna's single safest small suggested task."
     },
     {
@@ -155,8 +159,8 @@
     }
   ],
   "currentGoal": "Keep the dashboard and docs focused on Luna's plain-language welcome, one clear Next Action, the stable Philosophy Garden cycle, and a one-step-at-a-time rhythm for future public-safe updates.",
-  "lastCompletedRun": "2026-07-08: Added a beginner-friendly glossary entry explaining Next Action as Luna's single safest small suggested task.",
-  "nextStep": "Let the Next Action glossary entry rest, then consider one tiny public-safe wording review in the dashboard guide or glossary.",
+  "lastCompletedRun": "2026-07-08: Added a tiny How to use Luna dashboard card with four beginner-friendly steps.",
+  "nextStep": "Let the How to use Luna card rest, then consider one tiny wording check to keep the top dashboard guidance clear.",
   "dashboardGuide": [
     "Welcome explains Luna in plain language before the project details begin.",
     "Status gives a quick snapshot of how the project is doing right now.",
@@ -166,9 +170,9 @@
     "Read the dashboard from top to bottom; if you only need one task, stop at Next Action."
   ],
   "futureIdeas": [
-    "Let the Next Action glossary entry rest before changing more beginner-facing wording.",
-    "Review one dashboard guide sentence later to keep the top-to-bottom reading path clear.",
-    "Keep the Next Action card and glossary aligned when future documentation wording changes."
+    "Let the How to use Luna card rest before changing more top-of-dashboard guidance.",
+    "Review one dashboard guide or glossary sentence later to keep beginner instructions consistent.",
+    "Keep project.json, STATE.md, and CHANGELOG.md aligned after each completed run."
   ],
   "decisionLog": [
     "A dashboard makes Luna easy to understand at a glance.",
@@ -182,9 +186,9 @@
     "The Garden Cycle connects the Reflection Card, Garden Review, Next Garden Update, and rest step so beginners can see how Philosophy Garden pieces fit together."
   ],
   "ideaQueue": [
-    "Let the Next Action glossary entry rest before changing more beginner-facing wording.",
+    "Let the How to use Luna card rest before changing more top-of-dashboard guidance.",
     "Review one dashboard guide sentence later for beginner-friendly clarity.",
-    "Keep project.json, STATE.md, and CHANGELOG.md aligned after each small documentation change."
+    "Keep project.json, STATE.md, and CHANGELOG.md aligned after each small dashboard or documentation change."
   ],
   "ideaQueueGuide": [
     "Choose one small task that can be finished clearly in a single update.",
@@ -219,10 +223,10 @@
     "Visit http://localhost:8000 in a browser to view the dashboard."
   ],
   "nextAction": {
-    "title": "Let the Next Action glossary entry rest",
-    "description": "Pause after defining Next Action so beginners can use the glossary before Luna changes more wording.",
-    "whyItMatters": "Resting keeps the glossary improvement small, understandable, and aligned with Luna's one-change rhythm.",
-    "status": "Resting after the Next Action glossary update"
+    "title": "Let the How to use Luna card rest",
+    "description": "Pause after adding the top dashboard usage card so beginners can follow it before Luna changes more guidance.",
+    "whyItMatters": "Resting keeps this dashboard improvement small, reviewable, and aligned with Luna's one-change rhythm.",
+    "status": "Resting after the How to use Luna card update"
   },
   "creativeSeed": {
     "name": "Philosophy Garden",

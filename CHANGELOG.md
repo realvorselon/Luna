@@ -2,6 +2,11 @@
 
 ## 2026-07-08
 
+### How to Use Luna Card
+
+- Added a tiny How to use Luna card near the top of `index.html` with four beginner-friendly steps.
+- Updated `project.json` and `STATE.md` to record this as the latest completed run.
+
 ### Next Action Glossary
 
 - Added a beginner-friendly glossary entry in `project.json` explaining Next Action as Luna's single safest small suggested task.
