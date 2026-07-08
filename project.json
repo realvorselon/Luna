@@ -47,8 +47,8 @@
     }
   ],
   "currentGoal": "Keep the dashboard focused on Luna's identity, one active goal, the most recent completed run, one clear next action, and a few future ideas.",
-  "lastCompletedRun": "2026-07-08: Cleaned up Future Ideas so they match the roadmap's remaining direction.",
-  "nextStep": "Add one gentle documentation improvement for beginners.",
+  "lastCompletedRun": "2026-07-08: Added a beginner-friendly Near Term roadmap note about choosing one small PR-sized task.",
+  "nextStep": "Keep the Next Action card aligned with the safest current task.",
   "dashboardGuide": [
     "Status gives a quick snapshot of how the project is doing right now.",
     "Current Goal is the main thing Luna is focused on.",

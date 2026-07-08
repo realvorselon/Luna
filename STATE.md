@@ -10,11 +10,11 @@ Keep the dashboard focused on Luna's identity, one active goal, the most recent 
 
 ## Last Completed Run
 
-- 2026-07-08: Cleaned up Future Ideas so they match the roadmap's remaining direction.
+- 2026-07-08: Added a beginner-friendly Near Term roadmap note about choosing one small PR-sized task.
 
 ## Next Suggested Step
 
-Add one gentle documentation improvement for beginners.
+Keep the Next Action card aligned with the safest current task.
 
 ## Notes
 
