@@ -2,6 +2,11 @@
 
 ## 2026-07-08
 
+### Garden Cycle Wording
+
+- Clarified the Garden Cycle intro in `index.html` so beginners know to follow one Philosophy Garden step at a time.
+- Updated `project.json` and `STATE.md` to record this as the latest completed run.
+
 ### Next Garden Update Wording
 
 - Clarified the Next Garden Update intro in `index.html` so beginners know to choose one general, public-safe action before adding anything bigger.
