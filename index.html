@@ -692,6 +692,26 @@
       });
     };
 
+    const getReflectionText = (reflection, key, fallback) => {
+      if (typeof reflection?.[key] === 'string' && reflection[key].trim() !== '') {
+        return reflection[key];
+      }
+
+      return fallback;
+    };
+
+    const showReflectionCard = (reflection) => {
+      const fallbackTitle = 'Reflection Card';
+      const fallbackQuestion = 'No reflection is recorded yet. Let this card rest until Luna adds one small, public-safe question.';
+      const fallbackBeginnerNote = 'Keep any future reflection general, calm, and free of private personal details.';
+      const fallbackWhy = 'A simple fallback keeps the dashboard readable even before a reflection exists.';
+
+      showText('reflection-card-title', getReflectionText(reflection, 'title', fallbackTitle));
+      showText('reflection-card-question', getReflectionText(reflection, 'question', fallbackQuestion));
+      showText('reflection-card-beginner-note', getReflectionText(reflection, 'beginnerNote', fallbackBeginnerNote));
+      showText('reflection-card-why', getReflectionText(reflection, 'whyItMatters', fallbackWhy));
+    };
+
     const showGardenCycle = (id, entries) => {
       const list = document.getElementById(id);
       list.innerHTML = '';
@@ -839,10 +859,7 @@
         showText('creative-seed-name', project.creativeSeed.name);
         showText('creative-seed-description', project.creativeSeed.description);
         showList('creative-seed-ideas', project.creativeSeed.ideas);
-        showText('reflection-card-title', project.reflectionCard.title);
-        showText('reflection-card-question', project.reflectionCard.question);
-        showText('reflection-card-beginner-note', project.reflectionCard.beginnerNote);
-        showText('reflection-card-why', project.reflectionCard.whyItMatters);
+        showReflectionCard(project.reflectionCard);
         showText('garden-review-title', project.gardenReview.title);
         showText('garden-review-lesson', project.gardenReview.lesson);
         showText('garden-review-next-update', project.gardenReview.nextUpdate);

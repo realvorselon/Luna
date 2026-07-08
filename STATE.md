@@ -10,11 +10,11 @@ Keep the dashboard and docs focused on Luna's plain-language welcome, one clear 
 
 ## Last Completed Run
 
-- 2026-07-08: Refactored repeated dashboard card rendering to use one small helper while preserving the current layout and behavior.
+- 2026-07-08: Added a dedicated Reflection Card renderer with calm fallback text when project.json has no reflection.
 
 ## Next Suggested Step
 
-Let the card rendering helper rest, then review one dashboard history sentence later if needed.
+Let the dedicated Reflection Card rest, then review one Philosophy Garden sentence later if needed.
 
 ## Notes
 
@@ -28,3 +28,5 @@ The README dashboard description now matches the v0.1 dashboard flow: Welcome, S
 The README Where to Look Next section now points beginners to RULES.md for Luna's one-small-change rhythm and alignment expectations.
 The README now asks beginners to read the v0.1 dashboard slowly from Welcome through Next Action before choosing any new work.
 The README now includes a small Review before changing checklist that asks beginners to read from Welcome through Next Action, check STATE.md, choose one small useful change, and update STATE.md, CHANGELOG.md, and project.json together. The glossary now explains Next Action as the one safest small task Luna suggests next so beginners do not have to choose from every idea at once. The dashboard now includes a tiny How to use Luna card near the top with four short steps for reading, stopping at Next Action, making one small useful change, and updating STATE.md, CHANGELOG.md, and project.json together after a completed run. The next session should let the Recent Runs section rest before making another tiny public-safe wording review of history guidance. The dashboard now shows the three newest statusHistory entries as a small Recent Runs card with a simple fallback if no entries are recorded. The dashboard also includes a Project Health card that summarizes current status, completed run count, latest run date, current goal, and Next Action from project.json with simple fallback text. Repeated dashboard card items now use one small helper so Project Health, Recent Runs, Garden Cycle, and Garden Path rendering stay consistent without changing the visible dashboard behavior.
+
+The dashboard Reflection Card now reads through a small dedicated renderer that uses the existing `project.json` reflection when available and shows calm fallback text if no reflection is recorded.

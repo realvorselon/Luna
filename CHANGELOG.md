@@ -2,6 +2,11 @@
 
 ## 2026-07-08
 
+### Dedicated Reflection Card
+
+- Added a dedicated Reflection Card renderer in `index.html` that reads from `project.json` and shows calm fallback text if no reflection exists.
+- Updated `project.json` and `STATE.md` to record this as the latest completed run.
+
 ### Dashboard Card Rendering Helper
 
 - Refactored repeated card item rendering in `index.html` to use one small helper for consistent dashboard cards without changing the current appearance or behavior.

@@ -1,6 +1,10 @@
 {
-  "status": "Resting after dashboard card helper refactor",
+  "status": "Resting after dedicated Reflection Card fallback",
   "statusHistory": [
+    {
+      "date": "2026-07-08",
+      "note": "Added a dedicated Reflection Card renderer with calm fallback text when project.json has no reflection."
+    },
     {
       "date": "2026-07-08",
       "note": "Refactored repeated dashboard card rendering to use one small helper while preserving the current layout and behavior."
@@ -171,8 +175,8 @@
     }
   ],
   "currentGoal": "Keep the dashboard and docs focused on Luna's plain-language welcome, one clear Next Action, the stable Philosophy Garden cycle, and a one-step-at-a-time rhythm for future public-safe updates.",
-  "lastCompletedRun": "2026-07-08: Refactored repeated dashboard card rendering to use one small helper while preserving the current layout and behavior.",
-  "nextStep": "Let the card rendering helper rest, then review one dashboard history sentence later if needed.",
+  "lastCompletedRun": "2026-07-08: Added a dedicated Reflection Card renderer with calm fallback text when project.json has no reflection.",
+  "nextStep": "Let the dedicated Reflection Card rest, then review one Philosophy Garden sentence later if needed.",
   "dashboardGuide": [
     "Welcome explains Luna in plain language before the project details begin.",
     "Status gives a quick snapshot of how the project is doing right now.",
@@ -182,7 +186,7 @@
     "Read the dashboard from top to bottom; if you only need one task, stop at Next Action."
   ],
   "futureIdeas": [
-    "Let the dashboard card rendering helper rest before adding more display helpers.",
+    "Let the dedicated Reflection Card fallback rest before adding more Philosophy Garden display changes.",
     "Review one Status History or dashboard guide sentence later to keep history wording beginner-friendly.",
     "Keep project.json, STATE.md, and CHANGELOG.md aligned after each completed run."
   ],
@@ -198,7 +202,7 @@
     "The Garden Cycle connects the Reflection Card, Garden Review, Next Garden Update, and rest step so beginners can see how Philosophy Garden pieces fit together."
   ],
   "ideaQueue": [
-    "Let the dashboard card rendering helper rest before adding more display helpers.",
+    "Let the dedicated Reflection Card fallback rest before adding more Philosophy Garden display changes.",
     "Review one Status History sentence later for beginner-friendly clarity.",
     "Keep project.json, STATE.md, and CHANGELOG.md aligned after each small dashboard or documentation change."
   ],
@@ -235,10 +239,10 @@
     "Visit http://localhost:8000 in a browser to view the dashboard."
   ],
   "nextAction": {
-    "title": "Let the card helper rest",
-    "description": "Pause after refactoring repeated dashboard card rendering so Luna can confirm the helper stays simple and beginner-friendly before adding more display changes.",
-    "whyItMatters": "Resting keeps the refactor small, readable, and aligned with Luna's one-change rhythm.",
-    "status": "Resting after the card helper refactor"
+    "title": "Let the Reflection Card rest",
+    "description": "Pause after giving the Reflection Card its own calm fallback path so Luna can keep the dashboard readable before adding more garden changes.",
+    "whyItMatters": "Resting keeps the dashboard simple and protects Luna\u2019s one-small-change rhythm.",
+    "status": "Resting after Reflection Card fallback update"
   },
   "creativeSeed": {
     "name": "Philosophy Garden",
