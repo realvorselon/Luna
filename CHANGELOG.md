@@ -2,6 +2,11 @@
 
 ## 2026-07-08
 
+### v0.1 Read-through Note
+
+- Added a calm README note asking beginners to read the v0.1 dashboard slowly from Welcome through Next Action before choosing any new work.
+- Updated `project.json` and `STATE.md` to record this as the latest completed run.
+
 ### README Where to Look Next
 
 - Added `RULES.md` to the `README.md` Where to Look Next section so beginners can find Luna's one-small-change rhythm and alignment expectations.
