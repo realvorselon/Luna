@@ -4,6 +4,8 @@
 
 ### Polish/Maintenance
 
+- Added a beginner-friendly Near Term note to `ROADMAP.md` about choosing one small PR-sized task and keeping related project files aligned.
+- Updated `STATE.md` to remember this roadmap documentation improvement.
 - Refreshed the Next Action card in `project.json` with a concrete Future Ideas roadmap review task.
 - Updated `STATE.md` to remember this Next Action refresh.
 - Cleaned up Future Ideas in `project.json` so the list removes completed or outdated items and keeps three realistic growth directions.

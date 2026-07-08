@@ -15,6 +15,8 @@ This roadmap is intentionally small. Each item should be doable as one careful r
 
 ## Near Term
 
+Choose a Near Term task that is small enough to finish in one careful pull request. When a task changes project direction, dashboard data, or public history, keep `project.json`, `STATE.md`, and `CHANGELOG.md` aligned so the next person can see what changed.
+
 - Keep `project.json` aligned with the dashboard after each small content change.
 - Refresh the Idea Queue so completed items are replaced with realistic next tasks.
 - Add one gentle documentation improvement for beginners.
