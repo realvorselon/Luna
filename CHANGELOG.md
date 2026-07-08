@@ -4,6 +4,10 @@
 
 ### Dashboard Sections
 
+- Added a tiny `reflectionCard` object for the first Philosophy Garden reflection card to `project.json`.
+- Updated `index.html` to show a small Reflection Card section near the Creative Seed section.
+- Updated `STATE.md` to remember this public-safe reflection card.
+
 - Added a tiny `creativeSeed` object for Philosophy Garden to `project.json`.
 - Updated `index.html` to show a small Creative Seed section on the dashboard.
 - Updated `STATE.md` to remember this public-safe creative direction.
@@ -116,4 +120,4 @@
 
 ## Next
 
-- Try one tiny Philosophy Garden seed idea and keep it beginner-friendly and public-safe.
+- Let the first Reflection Card rest before adding another tiny Philosophy Garden prompt.

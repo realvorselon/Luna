@@ -3,6 +3,10 @@
   "statusHistory": [
     {
       "date": "2026-07-08",
+      "note": "Added the first tiny public-safe Philosophy Garden reflection card to the dashboard."
+    },
+    {
+      "date": "2026-07-08",
       "note": "Added a tiny public-safe Philosophy Garden creative seed to the dashboard."
     },
     {
@@ -62,9 +66,9 @@
       "note": "The project is resting after a good run and ready for one gentle improvement."
     }
   ],
-  "currentGoal": "Keep the dashboard focused on Luna's identity, one active goal, the most recent completed run, one clear next action, one tiny creative seed, and a few future ideas.",
-  "lastCompletedRun": "2026-07-08: Added a tiny public-safe Philosophy Garden creative seed to the dashboard.",
-  "nextStep": "Try one tiny Philosophy Garden seed idea and keep it beginner-friendly.",
+  "currentGoal": "Keep the dashboard focused on Luna's identity, one active goal, the most recent completed run, one clear next action, one tiny creative seed, one reflection card, and a few future ideas.",
+  "lastCompletedRun": "2026-07-08: Added the first tiny public-safe Philosophy Garden reflection card to the dashboard.",
+  "nextStep": "Read the first Reflection Card and choose one gentle, public-safe thought to carry into the next small update.",
   "dashboardGuide": [
     "Status gives a quick snapshot of how the project is doing right now.",
     "Current Goal is the main thing Luna is focused on.",
@@ -72,7 +76,7 @@
     "Next Action highlights the single safest action for a beginner to take next."
   ],
   "futureIdeas": [
-    "Try one tiny Philosophy Garden prompt or reflection card on the dashboard.",
+    "Try one more tiny Philosophy Garden prompt after the first reflection card has had time to rest.",
     "Add one gentle documentation improvement that helps beginners understand the dashboard.",
     "Keep the Next Action card aligned with the safest current task after each cleanup."
   ],
@@ -81,10 +85,11 @@
     "Structured project data keeps updates small, safe, and beginner-friendly.",
     "Showing goals, ideas, and decisions first creates a clear trail before adding larger features.",
     "The Next Action card helps beginners choose one clear next move without sorting through every project note.",
-    "The Philosophy Garden seed gives Luna one tiny creative direction while staying public-safe and beginner-friendly."
+    "The Philosophy Garden seed gives Luna one tiny creative direction while staying public-safe and beginner-friendly.",
+    "The first Reflection Card gives visitors one gentle question to consider without asking for private personal details."
   ],
   "ideaQueue": [
-    "Try one tiny Philosophy Garden prompt or reflection card.",
+    "Let the first Reflection Card rest before adding another tiny Philosophy Garden prompt.",
     "Add one gentle documentation improvement for beginners.",
     "Keep project.json aligned with the dashboard after the next small content change."
   ],
@@ -130,5 +135,10 @@
       "Add a tiny reflection card about choosing the next kind action.",
       "Collect one beginner-friendly thought experiment with no personal details."
     ]
+  },
+  "reflectionCard": {
+    "title": "Notice the Small Gate",
+    "question": "What is one small, kind step that could help this project grow without rushing?",
+    "whyItMatters": "This question matters because gentle growth helps Luna stay clear, welcoming, and easy for beginners to follow."
   }
 }

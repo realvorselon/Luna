@@ -138,6 +138,29 @@
       font-size: 1.05rem;
     }
 
+    .reflection-card {
+      margin-top: 16px;
+      background: rgb(168 213 186 / 9%);
+      border: 1px solid rgb(168 213 186 / 24%);
+      border-radius: 12px;
+      padding: 16px;
+    }
+
+    .reflection-card h3 {
+      margin: 0 0 8px;
+      color: #cde8d7;
+      font-size: 1.05rem;
+    }
+
+    .reflection-card p {
+      margin: 0;
+    }
+
+    .reflection-card p + p {
+      margin-top: 10px;
+      color: #d9d1c3;
+    }
+
     .choose-next-action {
       margin-top: 14px;
       padding: 9px 14px;
@@ -253,6 +276,15 @@
         <ul class="dashboard-list" id="creative-seed-ideas">
           <li>Loading project data...</li>
         </ul>
+      </article>
+    </section>
+
+    <section aria-labelledby="reflection-card">
+      <h2 id="reflection-card">Reflection Card</h2>
+      <article class="reflection-card">
+        <h3 id="reflection-card-title">Loading project data...</h3>
+        <p id="reflection-card-question">Loading project data...</p>
+        <p><span class="next-action-label">Why it matters:</span> <span id="reflection-card-why">Loading project data...</span></p>
       </article>
     </section>
 
@@ -402,6 +434,9 @@
       showText('creative-seed-name', 'Creative seed unavailable');
       showText('creative-seed-description', 'Try opening this page from a local web server.');
       document.getElementById('creative-seed-ideas').innerHTML = '<li class="error">Creative seed ideas are unavailable.</li>';
+      showText('reflection-card-title', 'Reflection card unavailable');
+      showText('reflection-card-question', 'Try opening this page from a local web server.');
+      showText('reflection-card-why', 'The dashboard needs project.json before it can show the reflection card.');
       document.getElementById('choose-next-action').disabled = true;
       showText('chosen-next-action', 'Idea Queue suggestions are unavailable until project data loads.');
       document.getElementById('dashboard-guide-list').innerHTML = '<li class="error">Dashboard guide notes are unavailable.</li>';
@@ -434,6 +469,9 @@
         showText('creative-seed-name', project.creativeSeed.name);
         showText('creative-seed-description', project.creativeSeed.description);
         showList('creative-seed-ideas', project.creativeSeed.ideas);
+        showText('reflection-card-title', project.reflectionCard.title);
+        showText('reflection-card-question', project.reflectionCard.question);
+        showText('reflection-card-why', project.reflectionCard.whyItMatters);
         showList('dashboard-guide-list', project.dashboardGuide);
         showList('local-setup-list', project.localSetup);
         showStatusHistory('status-history-list', project.statusHistory);
