@@ -621,6 +621,24 @@
       });
     };
 
+    const createDashboardCardItem = (itemClass, parts) => {
+      const item = document.createElement('li');
+      item.className = itemClass;
+
+      parts.forEach(({ tag = 'span', className, text }) => {
+        const part = document.createElement(tag);
+
+        if (className) {
+          part.className = className;
+        }
+
+        part.textContent = text;
+        item.appendChild(part);
+      });
+
+      return item;
+    };
+
     const formatHealthValue = (value, fallback) => {
       if (typeof value === 'string' && value.trim() !== '') {
         return value;
@@ -648,20 +666,10 @@
       list.innerHTML = '';
 
       healthFacts.forEach(([labelText, valueText]) => {
-        const item = document.createElement('li');
-        const label = document.createElement('span');
-        const value = document.createElement('span');
-
-        item.className = 'project-health-item';
-        label.className = 'project-health-label';
-        value.className = 'project-health-value';
-
-        label.textContent = labelText;
-        value.textContent = valueText;
-
-        item.appendChild(label);
-        item.appendChild(value);
-        list.appendChild(item);
+        list.appendChild(createDashboardCardItem('project-health-item', [
+          { className: 'project-health-label', text: labelText },
+          { className: 'project-health-value', text: valueText }
+        ]));
       });
     };
 
@@ -677,20 +685,10 @@
       }
 
       entries.slice(0, 3).forEach((entry) => {
-        const item = document.createElement('li');
-        const date = document.createElement('span');
-        const note = document.createElement('span');
-
-        item.className = 'recent-run-item';
-        date.className = 'recent-run-date';
-        note.className = 'recent-run-note';
-
-        date.textContent = entry.date;
-        note.textContent = entry.note;
-
-        item.appendChild(date);
-        item.appendChild(note);
-        list.appendChild(item);
+        list.appendChild(createDashboardCardItem('recent-run-item', [
+          { className: 'recent-run-date', text: entry.date },
+          { className: 'recent-run-note', text: entry.note }
+        ]));
       });
     };
 
@@ -699,27 +697,21 @@
       list.innerHTML = '';
 
       entries.forEach((entry, index) => {
-        const item = document.createElement('li');
-        const number = document.createElement('span');
-        const text = document.createElement('p');
+        const item = createDashboardCardItem('garden-cycle-step', [
+          { className: 'garden-cycle-number', text: index + 1 },
+          { tag: 'p', className: 'garden-cycle-step-text', text: '' }
+        ]);
+        const text = item.querySelector('.garden-cycle-step-text');
         const title = document.createElement('strong');
         const sentence = document.createElement('span');
 
-        item.className = 'garden-cycle-step';
-        number.className = 'garden-cycle-number';
-        text.className = 'garden-cycle-step-text';
-
-        number.textContent = index + 1;
         title.className = 'garden-cycle-step-title';
         sentence.className = 'garden-cycle-step-sentence';
-
         title.textContent = entry.title;
         sentence.textContent = entry.sentence;
 
         text.appendChild(title);
         text.appendChild(sentence);
-        item.appendChild(number);
-        item.appendChild(text);
         list.appendChild(item);
       });
     };
@@ -729,20 +721,10 @@
       list.innerHTML = '';
 
       entries.forEach((entry, index) => {
-        const item = document.createElement('li');
-        const number = document.createElement('span');
-        const text = document.createElement('p');
-
-        item.className = 'garden-path-step';
-        number.className = 'garden-path-number';
-        text.className = 'garden-path-step-text';
-
-        number.textContent = index + 1;
-        text.textContent = entry;
-
-        item.appendChild(number);
-        item.appendChild(text);
-        list.appendChild(item);
+        list.appendChild(createDashboardCardItem('garden-path-step', [
+          { className: 'garden-path-number', text: index + 1 },
+          { tag: 'p', className: 'garden-path-step-text', text: entry }
+        ]));
       });
     };
 

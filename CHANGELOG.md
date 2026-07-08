@@ -2,6 +2,11 @@
 
 ## 2026-07-08
 
+### Dashboard Card Rendering Helper
+
+- Refactored repeated card item rendering in `index.html` to use one small helper for consistent dashboard cards without changing the current appearance or behavior.
+- Updated `project.json` and `STATE.md` to record this as the latest completed run.
+
 ### Project Health Dashboard
 
 - Added a beginner-friendly Project Health card to `index.html` that reads from `project.json` and shows current status, total completed runs, latest run date, current goal, and Next Action with simple fallback text.
