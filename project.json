@@ -3,6 +3,10 @@
   "statusHistory": [
     {
       "date": "2026-07-08",
+      "note": "Improved the Garden Path display with small numbered path cards."
+    },
+    {
+      "date": "2026-07-08",
       "note": "Reviewed the Garden Path dashboard wording for public-safe clarity."
     },
     {
@@ -79,7 +83,7 @@
     }
   ],
   "currentGoal": "Keep the dashboard focused on Luna's identity, one active goal, the most recent completed run, one clear next action, one tiny creative seed, one reflection card, a simple Garden Path, and a few future ideas.",
-  "lastCompletedRun": "2026-07-08: Reviewed the Garden Path dashboard wording for public-safe clarity.",
+  "lastCompletedRun": "2026-07-08: Improved the Garden Path display with small numbered path cards.",
   "nextStep": "Use the Garden Path to review the first Reflection Card, then choose one gentle public-safe update.",
   "dashboardGuide": [
     "Status gives a quick snapshot of how the project is doing right now.",
