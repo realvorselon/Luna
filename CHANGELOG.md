@@ -2,6 +2,11 @@
 
 ## 2026-07-08
 
+### Recent Runs Dashboard
+
+- Added a small Recent Runs section to `index.html` that reads from `project.json` statusHistory, shows only the three newest entries, and includes a simple empty-state fallback.
+- Updated `project.json` and `STATE.md` to record this as the latest completed run.
+
 ### How to Use Luna Card
 
 - Added a tiny How to use Luna card near the top of `index.html` with four beginner-friendly steps.

@@ -10,11 +10,11 @@ Keep the dashboard and docs focused on Luna's plain-language welcome, one clear 
 
 ## Last Completed Run
 
-- 2026-07-08: Added a tiny How to use Luna dashboard card with four beginner-friendly steps.
+- 2026-07-08: Added a small Recent Runs dashboard section that shows the three newest statusHistory entries.
 
 ## Next Suggested Step
 
-Let the How to use Luna card rest, then consider one tiny wording check to keep the top dashboard guidance clear.
+Let the Recent Runs section rest, then consider one tiny wording check for the older Status History section.
 
 ## Notes
 
@@ -27,4 +27,4 @@ The README dashboard description now matches the v0.1 dashboard flow: Welcome, S
 
 The README Where to Look Next section now points beginners to RULES.md for Luna's one-small-change rhythm and alignment expectations.
 The README now asks beginners to read the v0.1 dashboard slowly from Welcome through Next Action before choosing any new work.
-The README now includes a small Review before changing checklist that asks beginners to read from Welcome through Next Action, check STATE.md, choose one small useful change, and update STATE.md, CHANGELOG.md, and project.json together. The glossary now explains Next Action as the one safest small task Luna suggests next so beginners do not have to choose from every idea at once. The dashboard now includes a tiny How to use Luna card near the top with four short steps for reading, stopping at Next Action, making one small useful change, and updating STATE.md, CHANGELOG.md, and project.json together after a completed run. The next session should let that top guidance rest before making another tiny public-safe wording review.
+The README now includes a small Review before changing checklist that asks beginners to read from Welcome through Next Action, check STATE.md, choose one small useful change, and update STATE.md, CHANGELOG.md, and project.json together. The glossary now explains Next Action as the one safest small task Luna suggests next so beginners do not have to choose from every idea at once. The dashboard now includes a tiny How to use Luna card near the top with four short steps for reading, stopping at Next Action, making one small useful change, and updating STATE.md, CHANGELOG.md, and project.json together after a completed run. The next session should let the Recent Runs section rest before making another tiny public-safe wording review of history guidance. The dashboard now shows the three newest statusHistory entries as a small Recent Runs card with a simple fallback if no entries are recorded.
