@@ -3,6 +3,10 @@
   "statusHistory": [
     {
       "date": "2026-07-08",
+      "note": "Refocused the Next Step and Next Action on using the Garden Review before any new Philosophy Garden prompt or reflection card."
+    },
+    {
+      "date": "2026-07-08",
       "note": "Added a dashboard guide note that tells beginners to read the page from top to bottom and stop after the Next Action if they only need one small step."
     },
     {
@@ -99,8 +103,8 @@
     }
   ],
   "currentGoal": "Keep the dashboard focused on Luna's identity, one active goal, the most recent completed run, one clear next action, one tiny creative seed, one reflection card with a public-safe note, a simple Garden Review, a Garden Path, and a few future ideas.",
-  "lastCompletedRun": "2026-07-08: Added a dashboard guide note that tells beginners to read the page from top to bottom and stop after the Next Action if they only need one small step.",
-  "nextStep": "Keep the dashboard aligned after the newest beginner documentation note.",
+  "lastCompletedRun": "2026-07-08: Refocused the Next Step and Next Action on using the Garden Review before any new Philosophy Garden prompt or reflection card.",
+  "nextStep": "Use the Garden Review before adding any new Philosophy Garden prompt or reflection card.",
   "dashboardGuide": [
     "Status gives a quick snapshot of how the project is doing right now.",
     "Current Goal is the main thing Luna is focused on.",
@@ -124,8 +128,8 @@
     "The Garden Review helps Luna learn from the first Reflection Card before choosing the next gentle public-safe update."
   ],
   "ideaQueue": [
-    "Keep project.json, STATE.md, and CHANGELOG.md aligned after the newest dashboard guide note.",
     "Use the Garden Review before adding any new Philosophy Garden prompt or reflection card.",
+    "Keep project.json, STATE.md, and CHANGELOG.md aligned after the newest Next Action refocus.",
     "Review the dashboard guide later for one more beginner-friendly wording improvement."
   ],
   "ideaQueueGuide": [
@@ -157,10 +161,10 @@
     "Visit http://localhost:8000 in a browser to view the dashboard."
   ],
   "nextAction": {
-    "title": "Keep Dashboard Records Aligned",
-    "description": "Make sure the newest completed run appears the same way in project.json, STATE.md, and CHANGELOG.md.",
-    "whyItMatters": "Aligned records help beginners trust the dashboard history after each small update.",
-    "status": "Ready for a calm consistency check"
+    "title": "Use the Garden Review First",
+    "description": "Read the Garden Review before adding any new Philosophy Garden prompt or reflection card.",
+    "whyItMatters": "Using the review first keeps the Philosophy Garden slow, public-safe, and grounded in what the first Reflection Card already teaches.",
+    "status": "Ready before any new garden prompt"
   },
   "creativeSeed": {
     "name": "Philosophy Garden",

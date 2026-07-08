@@ -38,6 +38,8 @@
 
 ### Polish/Maintenance
 
+- Refocused the Next Step and Next Action in `project.json` toward using the Garden Review before any new Philosophy Garden prompt or reflection card.
+- Updated `STATE.md` and `project.json` to record this as the latest completed run.
 - Added a sync rule to `RULES.md` so future completed runs keep `project.json`, `STATE.md`, and `CHANGELOG.md` aligned around the same newest completed run.
 - Updated `project.json` and `STATE.md` to record this rule addition as the latest completed run.
 - Reviewed the Garden Review dashboard display and added a short starting cue in `index.html` so new visitors understand it before reading the lesson.
