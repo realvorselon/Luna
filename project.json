@@ -3,6 +3,10 @@
   "statusHistory": [
     {
       "date": "2026-07-08",
+      "note": "Added a dashboard guide note that tells beginners to read the page from top to bottom and stop after the Next Action if they only need one small step."
+    },
+    {
+      "date": "2026-07-08",
       "note": "Added a public-safe reflection card note so beginners know they can answer with a general project idea instead of private details."
     },
     {
@@ -95,18 +99,19 @@
     }
   ],
   "currentGoal": "Keep the dashboard focused on Luna's identity, one active goal, the most recent completed run, one clear next action, one tiny creative seed, one reflection card with a public-safe note, a simple Garden Review, a Garden Path, and a few future ideas.",
-  "lastCompletedRun": "2026-07-08: Added a public-safe reflection card note so beginners know they can answer with a general project idea instead of private details.",
-  "nextStep": "Add one gentle documentation improvement for beginners.",
+  "lastCompletedRun": "2026-07-08: Added a dashboard guide note that tells beginners to read the page from top to bottom and stop after the Next Action if they only need one small step.",
+  "nextStep": "Keep the dashboard aligned after the newest beginner documentation note.",
   "dashboardGuide": [
     "Status gives a quick snapshot of how the project is doing right now.",
     "Current Goal is the main thing Luna is focused on.",
     "Last Completed Run shows the most recent finished update.",
-    "Next Action highlights the single safest action for a beginner to take next."
+    "Next Action highlights the single safest action for a beginner to take next.",
+    "Read the dashboard from top to bottom; if you only need one task, stop at Next Action."
   ],
   "futureIdeas": [
-    "Add one gentle documentation improvement that helps beginners understand the dashboard.",
     "Keep the Next Action card aligned with the safest current task after each cleanup.",
-    "Use the Garden Review before adding any new Philosophy Garden prompt or reflection card."
+    "Use the Garden Review before adding any new Philosophy Garden prompt or reflection card.",
+    "Add another tiny glossary or dashboard guide improvement only after the current notes rest."
   ],
   "decisionLog": [
     "A dashboard makes Luna easy to understand at a glance.",
@@ -119,9 +124,9 @@
     "The Garden Review helps Luna learn from the first Reflection Card before choosing the next gentle public-safe update."
   ],
   "ideaQueue": [
-    "Add one gentle documentation improvement for beginners.",
-    "Keep project.json aligned with the dashboard after the next small content change.",
-    "Use the Garden Review before adding any new Philosophy Garden prompt or reflection card."
+    "Keep project.json, STATE.md, and CHANGELOG.md aligned after the newest dashboard guide note.",
+    "Use the Garden Review before adding any new Philosophy Garden prompt or reflection card.",
+    "Review the dashboard guide later for one more beginner-friendly wording improvement."
   ],
   "ideaQueueGuide": [
     "Choose one small task that can be finished clearly in a single update.",
@@ -152,10 +157,10 @@
     "Visit http://localhost:8000 in a browser to view the dashboard."
   ],
   "nextAction": {
-    "title": "Add a Beginner Note",
-    "description": "Choose one tiny documentation improvement that helps a new visitor understand Luna without adding private details.",
-    "whyItMatters": "A small note keeps the project welcoming while the Philosophy Garden rests after its latest safe update.",
-    "status": "Ready for one gentle documentation step"
+    "title": "Keep Dashboard Records Aligned",
+    "description": "Make sure the newest completed run appears the same way in project.json, STATE.md, and CHANGELOG.md.",
+    "whyItMatters": "Aligned records help beginners trust the dashboard history after each small update.",
+    "status": "Ready for a calm consistency check"
   },
   "creativeSeed": {
     "name": "Philosophy Garden",
