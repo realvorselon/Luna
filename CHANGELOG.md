@@ -4,6 +4,8 @@
 
 ### Dashboard Sections
 
+- Improved the `Choose Next Action` button so it avoids repeating the same Idea Queue suggestion twice in a row when more than one idea is available.
+- Updated `STATE.md` to remember this small interaction improvement.
 - Added a small `Choose Next Action` button to `index.html` that suggests one item from the existing Idea Queue without saving changes back to `project.json`.
 - Updated `STATE.md` to remember this interactive dashboard feature.
 
