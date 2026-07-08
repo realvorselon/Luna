@@ -1,6 +1,10 @@
 {
-  "status": "Resting after README vision note",
+  "status": "Resting after README vision wording review",
   "statusHistory": [
+    {
+      "date": "2026-07-08",
+      "note": "Reviewed the README longer-term vision note and trimmed one wording mismatch so it points to small projects instead of implying a broader new project category."
+    },
     {
       "date": "2026-07-08",
       "note": "Added a small README longer-term vision note that explains Luna as a public dashboard prototype growing toward a calm project companion."
@@ -183,8 +187,8 @@
     }
   ],
   "currentGoal": "Keep the dashboard and docs focused on Luna's plain-language welcome, one clear Next Action, the stable Philosophy Garden cycle, and a one-step-at-a-time rhythm for future public-safe updates.",
-  "lastCompletedRun": "2026-07-08: Added a small README longer-term vision note that explains Luna as a public dashboard prototype growing toward a calm project companion.",
-  "nextStep": "Let the README longer-term vision note rest before adding any new direction or feature ideas.",
+  "lastCompletedRun": "2026-07-08: Reviewed the README longer-term vision note and trimmed one wording mismatch so it points to small projects instead of implying a broader new project category.",
+  "nextStep": "Let the reviewed README longer-term vision wording rest before adding any new direction or feature ideas.",
   "dashboardGuide": [
     "Welcome explains Luna in plain language before the project details begin.",
     "Status gives a quick snapshot of how the project is doing right now.",
@@ -247,10 +251,10 @@
     "Visit http://localhost:8000 in a browser to view the dashboard."
   ],
   "nextAction": {
-    "title": "Let the vision note rest",
-    "description": "Pause after adding the small README longer-term vision note so Luna can keep future direction calm, public-safe, and beginner-friendly.",
-    "whyItMatters": "Resting protects Luna from turning a simple vision note into a larger roadmap or new dashboard feature too quickly.",
-    "status": "Resting after README vision note"
+    "title": "Let the vision wording rest",
+    "description": "Pause after the tiny README longer-term vision wording review so Luna can keep future direction calm, public-safe, and beginner-friendly.",
+    "whyItMatters": "Resting protects Luna from turning a simple consistency check into a larger roadmap or new dashboard feature too quickly.",
+    "status": "Resting after README vision wording review"
   },
   "creativeSeed": {
     "name": "Philosophy Garden",

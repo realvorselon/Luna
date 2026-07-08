@@ -2,6 +2,12 @@
 
 ## 2026-07-08
 
+### README Vision Wording Review
+
+- Reviewed the README longer-term vision note against the current dashboard, roadmap, rules, and one-small-change rhythm.
+- Trimmed one tiny wording mismatch in `README.md` so the note points to small projects instead of implying a broader new project category.
+- Updated `project.json` and `STATE.md` to record this as the latest completed run.
+
 ### README Longer-Term Vision
 
 - Added a short public-safe longer-term vision note to `README.md` that describes Luna as a small dashboard prototype with a calm project companion direction.

@@ -8,7 +8,7 @@ Luna now has a plain-language welcome, a clear Next Action, and a Philosophy Gar
 
 ## Longer-Term Vision
 
-Luna is currently a small public dashboard prototype. Over time, the idea is for Luna to become a calm project companion that helps people with creative or coding projects remember what they are making, see what changed last, choose one small next step, avoid overwhelm, and keep a clean public record.
+Luna is currently a small public dashboard prototype. Over time, the idea is for Luna to become a calm project companion that helps people with small projects remember what they are making, see what changed last, choose one small next step, avoid overwhelm, and keep a clean public record.
 
 ## Dashboard
 

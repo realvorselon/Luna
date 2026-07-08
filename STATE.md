@@ -10,11 +10,11 @@ Keep the dashboard and docs focused on Luna's plain-language welcome, one clear 
 
 ## Last Completed Run
 
-- 2026-07-08: Added a small README longer-term vision note that explains Luna as a public dashboard prototype growing toward a calm project companion.
+- 2026-07-08: Reviewed the README longer-term vision note and trimmed one wording mismatch so it points to small projects instead of implying a broader new project category.
 
 ## Next Suggested Step
 
-Let the README longer-term vision note rest before adding any new direction or feature ideas.
+Let the reviewed README longer-term vision wording rest before adding any new direction or feature ideas.
 
 ## Notes
 
@@ -33,4 +33,7 @@ The dashboard Reflection Card now reads through a small dedicated renderer that 
 
 The v0.2 dashboard polish burst was reviewed for a calm beginner-friendly flow. Project Health now rests below Recent Runs so new visitors can move from Welcome and How to use Luna into Status, Current Goal, Last Completed Run, and Next Action before reading the extra health summary.
 
-The README now includes a short public-safe longer-term vision note that presents Luna as a small dashboard prototype that may grow into a calm project companion for creative or coding projects.
+The README now includes a short public-safe longer-term vision note that presents Luna as a small dashboard prototype that may grow into a calm project companion for small projects.
+
+
+The README longer-term vision note was reviewed against the dashboard, roadmap, rules, and one-small-change rhythm; one tiny wording mismatch now points to small projects instead of a broader new project category.
