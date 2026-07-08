@@ -10,12 +10,12 @@ Keep the dashboard focused on Luna's identity, one active goal, the most recent 
 
 ## Last Completed Run
 
-- 2026-07-08: Added the first tiny public-safe Philosophy Garden reflection card to the dashboard.
+- 2026-07-08: Refreshed the Next Action card after the first Reflection Card.
 
 ## Next Suggested Step
 
-Read the first Reflection Card and choose one gentle, public-safe thought to carry into the next small update.
+Let the first Reflection Card rest, then review the dashboard for one gentle clarity improvement.
 
 ## Notes
 
-The project should stay friendly to non-technical readers. Each run should leave a clear trail of what changed and why. Creative seeds and reflection cards should avoid private personal details and stay small enough for one careful update.
+The project should stay friendly to non-technical readers. Each run should leave a clear trail of what changed and why. Creative seeds and reflection cards should avoid private personal details and stay small enough for one careful update. The refreshed Next Action now favors resting, reviewing clarity, and making at most one gentle beginner-friendly wording improvement.

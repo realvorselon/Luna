@@ -19,6 +19,8 @@
 
 ### Polish/Maintenance
 
+- Refreshed the Next Action card in `project.json` after the first Reflection Card so it recommends a calm clarity review before adding more.
+- Updated `STATE.md` to remember this Next Action refresh.
 - Refreshed the Next Action card in `project.json` so it suggests choosing one tiny public-safe creative direction seed for Luna.
 - Updated `STATE.md` to remember this Next Action refresh.
 - Added a beginner-friendly Near Term note to `ROADMAP.md` about choosing one small PR-sized task and keeping related project files aligned.
