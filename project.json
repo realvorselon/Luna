@@ -3,6 +3,10 @@
   "statusHistory": [
     {
       "date": "2026-07-08",
+      "note": "Added a Garden Cycle section that connects the Philosophy Garden pieces in order."
+    },
+    {
+      "date": "2026-07-08",
       "note": "Prepared a tiny Next Garden Update from the Garden Review and Garden Path."
     },
     {
@@ -106,9 +110,9 @@
       "note": "The project is resting after a good run and ready for one gentle improvement."
     }
   ],
-  "currentGoal": "Keep the dashboard focused on Luna's identity, one active goal, the most recent completed run, one clear next action, one tiny creative seed, one reflection card with a public-safe note, a simple Garden Review, a Garden Path, one tiny Next Garden Update, and a few future ideas.",
-  "lastCompletedRun": "2026-07-08: Prepared a tiny Next Garden Update from the Garden Review and Garden Path.",
-  "nextStep": "Use the suggested Next Garden Update as one calm, public-safe Philosophy Garden action before adding another prompt.",
+  "currentGoal": "Keep the dashboard focused on Luna's identity, one active goal, the most recent completed run, one clear next action, one tiny creative seed, one reflection card with a public-safe note, a simple Garden Review, one tiny Next Garden Update, a Garden Cycle, a Garden Path, and a few future ideas.",
+  "lastCompletedRun": "2026-07-08: Added a Garden Cycle section that connects the Philosophy Garden pieces in order.",
+  "nextStep": "Use the Garden Cycle as a calm map before choosing another public-safe Philosophy Garden action.",
   "dashboardGuide": [
     "Status gives a quick snapshot of how the project is doing right now.",
     "Current Goal is the main thing Luna is focused on.",
@@ -118,7 +122,7 @@
   ],
   "futureIdeas": [
     "Keep the Next Action card aligned with the safest current task after each cleanup.",
-    "Use the suggested Next Garden Update before adding another Philosophy Garden prompt or reflection card.",
+    "Use the Garden Cycle as a calm map before choosing another public-safe Philosophy Garden action.",
     "Add another tiny glossary or dashboard guide improvement only after the current notes rest."
   ],
   "decisionLog": [
@@ -129,11 +133,12 @@
     "The Philosophy Garden seed gives Luna one tiny creative direction while staying public-safe and beginner-friendly.",
     "The first Reflection Card gives visitors one gentle question to consider without asking for private personal details.",
     "The Garden Path keeps Philosophy Garden updates slow, public-safe, and easy for beginners to follow.",
-    "The Garden Review helps Luna learn from the first Reflection Card before choosing the next gentle public-safe update."
+    "The Garden Review helps Luna learn from the first Reflection Card before choosing the next gentle public-safe update.",
+    "The Garden Cycle connects the Reflection Card, Garden Review, Next Garden Update, and rest step so beginners can see how Philosophy Garden pieces fit together."
   ],
   "ideaQueue": [
-    "Use the suggested Next Garden Update before adding another Philosophy Garden prompt or reflection card.",
-    "Keep project.json, STATE.md, and CHANGELOG.md aligned after the Next Garden Update addition.",
+    "Use the Garden Cycle as a calm map before choosing another public-safe Philosophy Garden action.",
+    "Keep project.json, STATE.md, and CHANGELOG.md aligned after the Garden Cycle addition.",
     "Review the dashboard guide later for one more beginner-friendly wording improvement."
   ],
   "ideaQueueGuide": [
@@ -165,10 +170,10 @@
     "Visit http://localhost:8000 in a browser to view the dashboard."
   ],
   "nextAction": {
-    "title": "Use the Next Garden Update",
-    "description": "Follow the suggested Next Garden Update as one calm, public-safe Philosophy Garden action before adding another prompt.",
-    "whyItMatters": "Using one suggested action keeps the Philosophy Garden grounded in the Garden Review and Garden Path instead of growing too quickly.",
-    "status": "Ready for one gentle garden action"
+    "title": "Use the Garden Cycle",
+    "description": "Read the Garden Cycle as a calm map before choosing another public-safe Philosophy Garden action.",
+    "whyItMatters": "Following the cycle keeps each Philosophy Garden update connected, simple, and safe for beginners.",
+    "status": "Ready to follow the garden cycle"
   },
   "creativeSeed": {
     "name": "Philosophy Garden",
@@ -190,15 +195,33 @@
     "lesson": "The first Reflection Card teaches that Luna can grow through one small, kind step instead of rushing into bigger changes.",
     "nextUpdate": "Next, choose one gentle public-safe update that keeps the Philosophy Garden easy for beginners to follow."
   },
+  "nextGardenUpdate": {
+    "title": "Name One Gentle Growth Step",
+    "purpose": "Help visitors turn the Garden Review lesson into one small, kind project action without rushing the Philosophy Garden.",
+    "suggestedAction": "Choose one general, public-safe improvement that makes the dashboard easier for beginners to follow."
+  },
+  "gardenCycle": [
+    {
+      "title": "Reflection Card",
+      "sentence": "Start with one gentle public-safe question for the project."
+    },
+    {
+      "title": "Garden Review",
+      "sentence": "Review what the reflection card teaches in simple beginner-friendly words."
+    },
+    {
+      "title": "Next Garden Update",
+      "sentence": "Choose one small public-safe action that grows from the review."
+    },
+    {
+      "title": "Rest Before Growing Again",
+      "sentence": "Let the garden rest before adding another prompt or reflection card."
+    }
+  ],
   "gardenPath": [
     "Plant one small public-safe reflection card.",
     "Let the card rest before changing the garden again.",
     "Review what the card teaches in simple beginner-friendly words.",
     "Choose one gentle update for the next small growth step."
-  ],
-  "nextGardenUpdate": {
-    "title": "Name One Gentle Growth Step",
-    "purpose": "Help visitors turn the Garden Review lesson into one small, kind project action without rushing the Philosophy Garden.",
-    "suggestedAction": "Choose one general, public-safe improvement that makes the dashboard easier for beginners to follow."
-  }
+  ]
 }

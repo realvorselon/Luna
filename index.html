@@ -141,6 +141,7 @@
     .reflection-card,
     .garden-review-card,
     .next-garden-update-card,
+    .garden-cycle-card,
     .garden-path-card {
       margin-top: 16px;
       background: rgb(168 213 186 / 9%);
@@ -159,11 +160,17 @@
       border-color: rgb(168 213 186 / 24%);
     }
 
+    .garden-cycle-card {
+      background: rgb(168 213 186 / 7%);
+      border-color: rgb(168 213 186 / 22%);
+    }
+
     .garden-path-card {
       background: rgb(247 227 181 / 6%);
       border-color: rgb(247 227 181 / 22%);
     }
 
+    .garden-cycle-list,
     .garden-path-list {
       display: grid;
       gap: 12px;
@@ -172,6 +179,7 @@
       list-style: none;
     }
 
+    .garden-cycle-step,
     .garden-path-step {
       display: grid;
       grid-template-columns: auto 1fr;
@@ -184,6 +192,7 @@
       box-shadow: 0 10px 24px rgb(0 0 0 / 12%);
     }
 
+    .garden-cycle-number,
     .garden-path-number {
       display: inline-grid;
       place-items: center;
@@ -198,6 +207,7 @@
       line-height: 1;
     }
 
+    .garden-cycle-step-text,
     .garden-path-step-text {
       margin: 0;
       color: #eadfcb;
@@ -205,7 +215,8 @@
 
     .reflection-card h3,
     .garden-review-card h3,
-    .next-garden-update-card h3 {
+    .next-garden-update-card h3,
+    .garden-cycle-card h3 {
       margin: 0 0 8px;
       color: #cde8d7;
       font-size: 1.05rem;
@@ -213,13 +224,15 @@
 
     .reflection-card p,
     .garden-review-card p,
-    .next-garden-update-card p {
+    .next-garden-update-card p,
+    .garden-cycle-card p {
       margin: 0;
     }
 
     .reflection-card p + p,
     .garden-review-card p + p,
-    .next-garden-update-card p + p {
+    .next-garden-update-card p + p,
+    .garden-cycle-card p + p {
       margin-top: 10px;
       color: #d9d1c3;
     }
@@ -373,6 +386,16 @@
       </article>
     </section>
 
+    <section aria-labelledby="garden-cycle">
+      <h2 id="garden-cycle">Garden Cycle</h2>
+      <article class="garden-cycle-card">
+        <p>Follow this calm cycle to see how the Philosophy Garden pieces connect before another growth step.</p>
+        <ol class="garden-cycle-list" id="garden-cycle-list">
+          <li>Loading project data...</li>
+        </ol>
+      </article>
+    </section>
+
     <section aria-labelledby="garden-path">
       <h2 id="garden-path">Garden Path</h2>
       <article class="garden-path-card">
@@ -469,6 +492,33 @@
       });
     };
 
+    const showGardenCycle = (id, entries) => {
+      const list = document.getElementById(id);
+      list.innerHTML = '';
+
+      entries.forEach((entry, index) => {
+        const item = document.createElement('li');
+        const number = document.createElement('span');
+        const text = document.createElement('p');
+        const title = document.createElement('strong');
+        const sentence = document.createElement('span');
+
+        item.className = 'garden-cycle-step';
+        number.className = 'garden-cycle-number';
+        text.className = 'garden-cycle-step-text';
+
+        number.textContent = index + 1;
+        title.textContent = entry.title;
+        sentence.textContent = `: ${entry.sentence}`;
+
+        text.appendChild(title);
+        text.appendChild(sentence);
+        item.appendChild(number);
+        item.appendChild(text);
+        list.appendChild(item);
+      });
+    };
+
     const showGardenPath = (id, entries) => {
       const list = document.getElementById(id);
       list.innerHTML = '';
@@ -561,6 +611,7 @@
       showText('next-garden-update-title', 'Next garden update unavailable');
       showText('next-garden-update-purpose', 'The dashboard needs project.json before it can suggest a garden update.');
       showText('next-garden-update-action', 'Keep any next step general and public-safe.');
+      document.getElementById('garden-cycle-list').innerHTML = '<li class="error">Garden Cycle steps are unavailable.</li>';
       document.getElementById('garden-path-list').innerHTML = '<li class="error">Garden Path steps are unavailable.</li>';
       document.getElementById('choose-next-action').disabled = true;
       showText('chosen-next-action', 'Idea Queue suggestions are unavailable until project data loads.');
@@ -604,6 +655,7 @@
         showText('next-garden-update-title', project.nextGardenUpdate.title);
         showText('next-garden-update-purpose', project.nextGardenUpdate.purpose);
         showText('next-garden-update-action', project.nextGardenUpdate.suggestedAction);
+        showGardenCycle('garden-cycle-list', project.gardenCycle);
         showGardenPath('garden-path-list', project.gardenPath);
         showList('dashboard-guide-list', project.dashboardGuide);
         showList('local-setup-list', project.localSetup);

@@ -2,6 +2,12 @@
 
 ## 2026-07-08
 
+### Garden Cycle
+
+- Added a small `gardenCycle` array to `project.json` with the current Philosophy Garden flow in order.
+- Updated `index.html` to show a Garden Cycle section after Next Garden Update and before Garden Path.
+- Updated `project.json` and `STATE.md` to record this as the latest completed run.
+
 ### Next Garden Update
 
 - Added a tiny `nextGardenUpdate` object to `project.json` with one public-safe Philosophy Garden title, purpose, and suggested action.
