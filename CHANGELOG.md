@@ -2,6 +2,11 @@
 
 ## 2026-07-08
 
+### Next Garden Update Wording
+
+- Clarified the Next Garden Update intro in `index.html` so beginners know to choose one general, public-safe action before adding anything bigger.
+- Updated `project.json` and `STATE.md` to record this as the latest completed run.
+
 ### Top Dashboard Flow
 
 - Moved the Next Action card directly after Last Completed Run in `index.html` so the top of the dashboard flows from Welcome to Status, Current Goal, Last Completed Run, and one clear action.

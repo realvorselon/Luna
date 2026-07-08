@@ -3,6 +3,10 @@
   "statusHistory": [
     {
       "date": "2026-07-08",
+      "note": "Clarified the Next Garden Update intro so beginners know to choose one general public-safe action."
+    },
+    {
+      "date": "2026-07-08",
       "note": "Reviewed the top dashboard flow and moved Next Action directly after Last Completed Run."
     },
     {
@@ -122,9 +126,9 @@
       "note": "The project is resting after a good run and ready for one gentle improvement."
     }
   ],
-  "currentGoal": "Keep the dashboard focused on Luna's plain-language welcome, identity, one active goal, the most recent completed run, one clear next action, one tiny creative seed, one reflection card with a public-safe note, a simple Garden Review, one tiny Next Garden Update, polished Garden Cycle cards, a Garden Path, and a few future ideas.",
-  "lastCompletedRun": "2026-07-08: Reviewed the top dashboard flow and moved Next Action directly after Last Completed Run.",
-  "nextStep": "Use the polished Garden Cycle cards as a calm map before choosing another public-safe Philosophy Garden action.",
+  "currentGoal": "Keep the dashboard focused on Luna's plain-language welcome, identity, one active goal, the most recent completed run, one clear next action, one tiny creative seed, one reflection card with a public-safe note, a simple Garden Review, a clearer tiny Next Garden Update, polished Garden Cycle cards, a Garden Path, and a few future ideas.",
+  "lastCompletedRun": "2026-07-08: Clarified the Next Garden Update intro so beginners know to choose one general public-safe action.",
+  "nextStep": "Let the clearer Next Garden Update wording rest before adding another Philosophy Garden prompt or reflection card.",
   "dashboardGuide": [
     "Welcome explains Luna in plain language before the project details begin.",
     "Status gives a quick snapshot of how the project is doing right now.",
@@ -135,7 +139,7 @@
   ],
   "futureIdeas": [
     "Keep the Next Action card aligned with the safest current task after each cleanup.",
-    "Use the polished Garden Cycle cards as a calm map before choosing another public-safe Philosophy Garden action.",
+    "Let the clearer Next Garden Update wording rest before adding another Philosophy Garden prompt or reflection card.",
     "Add another tiny glossary or dashboard guide improvement only after the current notes rest."
   ],
   "decisionLog": [
@@ -150,8 +154,8 @@
     "The Garden Cycle connects the Reflection Card, Garden Review, Next Garden Update, and rest step so beginners can see how Philosophy Garden pieces fit together."
   ],
   "ideaQueue": [
-    "Use the polished Garden Cycle cards as a calm map before choosing another public-safe Philosophy Garden action.",
-    "Keep project.json, STATE.md, and CHANGELOG.md aligned after the Garden Cycle addition.",
+    "Let the clearer Next Garden Update wording rest before adding another Philosophy Garden prompt or reflection card.",
+    "Keep project.json, STATE.md, and CHANGELOG.md aligned after each small Philosophy Garden wording change.",
     "Review the dashboard guide later for one more beginner-friendly wording improvement."
   ],
   "ideaQueueGuide": [
@@ -183,10 +187,10 @@
     "Visit http://localhost:8000 in a browser to view the dashboard."
   ],
   "nextAction": {
-    "title": "Use the Garden Cycle",
-    "description": "Read the polished Garden Cycle cards as a calm map before choosing another public-safe Philosophy Garden action.",
-    "whyItMatters": "Following the cycle keeps each Philosophy Garden update connected, simple, and safe for beginners.",
-    "status": "Ready to follow the garden cycle"
+    "title": "Let the garden rest",
+    "description": "Pause after the clearer Next Garden Update wording before adding another Philosophy Garden prompt or reflection card.",
+    "whyItMatters": "Resting keeps the Philosophy Garden slow, simple, and easier for beginners to follow.",
+    "status": "Resting after the wording improvement"
   },
   "creativeSeed": {
     "name": "Philosophy Garden",
