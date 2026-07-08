@@ -60,6 +60,22 @@
       color: #eadfcb;
     }
 
+    .how-to-use-card {
+      margin-top: 18px;
+      background: #1b1d24;
+      border: 1px solid #34363d;
+      border-radius: 14px;
+      padding: 18px;
+    }
+
+    .how-to-use-card h2 {
+      color: #f7e3b5;
+    }
+
+    .how-to-use-card ul {
+      margin-bottom: 0;
+    }
+
     .project-status {
       display: inline-flex;
       align-items: center;
@@ -358,6 +374,17 @@
       <h2 id="welcome-title">Loading project data...</h2>
       <p id="welcome-sentence">Loading project data...</p>
     </section>
+
+    <section class="how-to-use-card" aria-labelledby="how-to-use-luna">
+      <h2 id="how-to-use-luna">How to use Luna</h2>
+      <ul class="dashboard-list">
+        <li>Read from top to bottom.</li>
+        <li>Stop at Next Action if you only want one task.</li>
+        <li>Make one small useful change.</li>
+        <li>After a completed run, update STATE.md, CHANGELOG.md, and project.json together.</li>
+      </ul>
+    </section>
+
     <p class="project-status">Project status: <span id="project-status-text">Loading project data...</span></p>
 
     <section aria-labelledby="current-goal">
