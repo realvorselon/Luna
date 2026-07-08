@@ -192,6 +192,10 @@
       box-shadow: 0 10px 24px rgb(0 0 0 / 12%);
     }
 
+    .garden-cycle-step {
+      border-color: rgb(168 213 186 / 26%);
+    }
+
     .garden-cycle-number,
     .garden-path-number {
       display: inline-grid;
@@ -211,6 +215,21 @@
     .garden-path-step-text {
       margin: 0;
       color: #eadfcb;
+    }
+
+    .garden-cycle-step-text {
+      display: grid;
+      gap: 4px;
+    }
+
+    .garden-cycle-step-title {
+      color: #cde8d7;
+      font-size: 0.95rem;
+    }
+
+    .garden-cycle-step-sentence {
+      color: #d9d1c3;
+      font-size: 0.95rem;
     }
 
     .reflection-card h3,
@@ -508,8 +527,11 @@
         text.className = 'garden-cycle-step-text';
 
         number.textContent = index + 1;
+        title.className = 'garden-cycle-step-title';
+        sentence.className = 'garden-cycle-step-sentence';
+
         title.textContent = entry.title;
-        sentence.textContent = `: ${entry.sentence}`;
+        sentence.textContent = entry.sentence;
 
         text.appendChild(title);
         text.appendChild(sentence);
