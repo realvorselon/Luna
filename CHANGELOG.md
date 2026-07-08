@@ -4,6 +4,9 @@
 
 ### Garden Cycle
 
+- Polished the Garden Cycle display in `index.html` so each cycle step reads as a small labeled card like the Garden Path.
+- Updated `project.json` and `STATE.md` to record this as the latest completed run.
+
 - Added a small `gardenCycle` array to `project.json` with the current Philosophy Garden flow in order.
 - Updated `index.html` to show a Garden Cycle section after Next Garden Update and before Garden Path.
 - Updated `project.json` and `STATE.md` to record this as the latest completed run.
