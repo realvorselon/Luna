@@ -10,11 +10,11 @@ Keep the dashboard focused on Luna's identity, one active goal, the most recent 
 
 ## Last Completed Run
 
-- 2026-07-08: Added a beginner-friendly Near Term roadmap note about choosing one small PR-sized task.
+- 2026-07-08: Added a small Choose Next Action button that suggests one public-safe item from the existing Idea Queue.
 
 ## Next Suggested Step
 
-Keep the Next Action card aligned with the safest current task.
+Keep the dashboard content aligned after the next small public-safe improvement.
 
 ## Notes
 
