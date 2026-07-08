@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-07-08
+
+### Polish/Maintenance
+
+- Refreshed the Next Action card in `project.json` with a concrete Future Ideas roadmap review task.
+- Updated `STATE.md` to remember this Next Action refresh.
+
 ## 2026-07-07
 
 ### Foundation

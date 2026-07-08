@@ -10,7 +10,7 @@ Keep the dashboard focused on Luna's identity, one active goal, the most recent 
 
 ## Last Completed Run
 
-- 2026-07-07: Refreshed the Next Action card to point at reviewing Future Ideas against the roadmap.
+- 2026-07-08: Refreshed the Next Action card with a concrete Future Ideas roadmap review.
 
 ## Next Suggested Step
 
