@@ -2,6 +2,12 @@
 
 ## 2026-07-08
 
+### Roadmap Vision Alignment
+
+- Aligned `ROADMAP.md` with the README longer-term vision for Luna as a small public dashboard prototype that may later become a calm companion for small projects.
+- Kept the near-term roadmap focused on the current dashboard, one clear Next Action, and the one-small-change rhythm instead of adding a larger app plan.
+- Updated `project.json` and `STATE.md` to record this as the latest completed run and set the next step to rest and review.
+
 ### README Vision Wording Review
 
 - Reviewed the README longer-term vision note against the current dashboard, roadmap, rules, and one-small-change rhythm.

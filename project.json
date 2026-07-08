@@ -1,6 +1,10 @@
 {
-  "status": "Resting after README vision wording review",
+  "status": "Resting after roadmap vision alignment",
   "statusHistory": [
+    {
+      "date": "2026-07-08",
+      "note": "Aligned the roadmap with README longer-term vision by keeping near-term work focused on the current dashboard, one clear Next Action, and one-small-change rhythm while naming the later calm companion direction for small projects."
+    },
     {
       "date": "2026-07-08",
       "note": "Reviewed the README longer-term vision note and trimmed one wording mismatch so it points to small projects instead of implying a broader new project category."
@@ -187,8 +191,8 @@
     }
   ],
   "currentGoal": "Keep the dashboard and docs focused on Luna's plain-language welcome, one clear Next Action, the stable Philosophy Garden cycle, and a one-step-at-a-time rhythm for future public-safe updates.",
-  "lastCompletedRun": "2026-07-08: Reviewed the README longer-term vision note and trimmed one wording mismatch so it points to small projects instead of implying a broader new project category.",
-  "nextStep": "Let the reviewed README longer-term vision wording rest before adding any new direction or feature ideas.",
+  "lastCompletedRun": "2026-07-08: Aligned the roadmap with README longer-term vision by keeping near-term work focused on the current dashboard, one clear Next Action, and one-small-change rhythm while naming the later calm companion direction for small projects.",
+  "nextStep": "Rest and review the roadmap alignment before adding any new feature ideas or dashboard sections.",
   "dashboardGuide": [
     "Welcome explains Luna in plain language before the project details begin.",
     "Status gives a quick snapshot of how the project is doing right now.",
@@ -198,9 +202,9 @@
     "Read the dashboard from top to bottom; if you only need one task, stop at Next Action."
   ],
   "futureIdeas": [
-    "Let the v0.2 dashboard polish burst rest before adding more dashboard display changes.",
-    "Review one Status History or dashboard guide sentence later to keep history wording beginner-friendly.",
-    "Keep project.json, STATE.md, and CHANGELOG.md aligned after each completed run."
+    "Let the roadmap vision alignment rest before adding any new direction or feature ideas.",
+    "Review one existing guidance sentence later for beginner-friendly clarity.",
+    "Keep project.json, STATE.md, and CHANGELOG.md aligned after each small dashboard or documentation change."
   ],
   "decisionLog": [
     "A dashboard makes Luna easy to understand at a glance.",
@@ -214,8 +218,8 @@
     "The Garden Cycle connects the Reflection Card, Garden Review, Next Garden Update, and rest step so beginners can see how Philosophy Garden pieces fit together."
   ],
   "ideaQueue": [
-    "Let the v0.2 dashboard polish burst rest before adding more dashboard display changes.",
-    "Review one Status History sentence later for beginner-friendly clarity.",
+    "Let the roadmap vision alignment rest before adding any new direction or feature ideas.",
+    "Review one existing guidance sentence later for beginner-friendly clarity.",
     "Keep project.json, STATE.md, and CHANGELOG.md aligned after each small dashboard or documentation change."
   ],
   "ideaQueueGuide": [
@@ -251,10 +255,10 @@
     "Visit http://localhost:8000 in a browser to view the dashboard."
   ],
   "nextAction": {
-    "title": "Let the vision wording rest",
-    "description": "Pause after the tiny README longer-term vision wording review so Luna can keep future direction calm, public-safe, and beginner-friendly.",
-    "whyItMatters": "Resting protects Luna from turning a simple consistency check into a larger roadmap or new dashboard feature too quickly.",
-    "status": "Resting after README vision wording review"
+    "title": "Rest after roadmap alignment",
+    "description": "Pause after the small roadmap wording pass so Luna can keep its longer-term direction calm, public-safe, and beginner-friendly.",
+    "whyItMatters": "Resting keeps the roadmap from turning a small alignment note into a feature list, timeline, or bigger app plan.",
+    "status": "Resting after roadmap vision alignment"
   },
   "creativeSeed": {
     "name": "Philosophy Garden",
