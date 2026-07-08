@@ -8,9 +8,9 @@ Luna now has a plain-language welcome, a clear Next Action, and a Philosophy Gar
 
 ## Dashboard
 
-Luna's dashboard is a simple web page in `index.html`. It reads from `project.json` and shows the project's status, current goal, last completed run, next step, future ideas, decision log, idea queue, glossary, and local setup notes.
+Luna's v0.1 dashboard is a simple web page in `index.html`. It reads from `project.json` and starts with a plain-language Welcome, Status, Current Goal, Last Completed Run, and one clear Next Action.
 
-Begin at the top to see the project status and current goal. Then read the last completed run, next step, and idea queue to understand what just changed, what should happen next, and which small ideas are waiting.
+The Philosophy Garden follows below with a Creative Seed, Reflection Card, Garden Review, Next Garden Update, Garden Cycle, and Garden Path. These sections keep the project gentle, public-safe, and easy for beginners to follow one small step at a time.
 
 To view it locally, open this project folder in a terminal and run:
 
