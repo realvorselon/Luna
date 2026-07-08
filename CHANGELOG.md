@@ -2,6 +2,11 @@
 
 ## 2026-07-08
 
+### Beginner Documentation
+
+- Added a dashboard guide note in `project.json` so beginners know they can read from top to bottom and stop at Next Action if they only need one small step.
+- Updated `STATE.md` and `project.json` to record this as the latest completed run.
+
 ### Creative Growth
 
 - Added a public-safe beginner note to the Reflection Card so visitors know they can answer with a general project idea instead of private details.
