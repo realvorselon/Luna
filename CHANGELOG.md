@@ -29,6 +29,8 @@
 
 ### Polish/Maintenance
 
+- Reviewed the Garden Review dashboard display and added a short starting cue in `index.html` so new visitors understand it before reading the lesson.
+- Updated `STATE.md` to remember this Garden Review clarity pass.
 - Improved the Garden Path display in `index.html` so each step appears as a small numbered path card instead of a plain list.
 - Updated `STATE.md` to remember this visual Garden Path improvement.
 - Improved the Garden Path dashboard note so new visitors understand it as simple, public-safe steps without private details.
