@@ -76,6 +76,40 @@
       margin-bottom: 0;
     }
 
+    .recent-runs-card {
+      background: #1b1d24;
+      border: 1px solid #34363d;
+      border-radius: 12px;
+      padding: 18px;
+    }
+
+    .recent-runs-list {
+      display: grid;
+      gap: 12px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .recent-run-item {
+      padding: 12px;
+      background: rgb(16 17 20 / 36%);
+      border: 1px solid rgb(247 227 181 / 20%);
+      border-radius: 12px;
+    }
+
+    .recent-run-date {
+      display: block;
+      color: #f7e3b5;
+      font-weight: 800;
+    }
+
+    .recent-run-note {
+      display: block;
+      margin-top: 4px;
+      color: #d9d1c3;
+    }
+
     .project-status {
       display: inline-flex;
       align-items: center;
@@ -411,6 +445,15 @@
       </article>
     </section>
 
+    <section aria-labelledby="recent-runs">
+      <h2 id="recent-runs">Recent Runs</h2>
+      <article class="recent-runs-card">
+        <ul class="recent-runs-list" id="recent-runs-list">
+          <li>Loading project data...</li>
+        </ul>
+      </article>
+    </section>
+
     <section aria-labelledby="next-step">
       <h2 id="next-step">Next Step</h2>
       <p id="next-step-text">Loading project data...</p>
@@ -564,6 +607,35 @@
       });
     };
 
+    const showRecentRuns = (id, entries) => {
+      const list = document.getElementById(id);
+      list.innerHTML = '';
+
+      if (!Array.isArray(entries) || entries.length === 0) {
+        const item = document.createElement('li');
+        item.textContent = 'No recent runs are recorded yet.';
+        list.appendChild(item);
+        return;
+      }
+
+      entries.slice(0, 3).forEach((entry) => {
+        const item = document.createElement('li');
+        const date = document.createElement('span');
+        const note = document.createElement('span');
+
+        item.className = 'recent-run-item';
+        date.className = 'recent-run-date';
+        note.className = 'recent-run-note';
+
+        date.textContent = entry.date;
+        note.textContent = entry.note;
+
+        item.appendChild(date);
+        item.appendChild(note);
+        list.appendChild(item);
+      });
+    };
+
     const showGardenCycle = (id, entries) => {
       const list = document.getElementById(id);
       list.innerHTML = '';
@@ -694,6 +766,7 @@
       showText('chosen-next-action', 'Idea Queue suggestions are unavailable until project data loads.');
       document.getElementById('dashboard-guide-list').innerHTML = '<li class="error">Dashboard guide notes are unavailable.</li>';
       document.getElementById('local-setup-list').innerHTML = '<li class="error">Local setup steps are unavailable.</li>';
+      document.getElementById('recent-runs-list').innerHTML = '<li class="error">Recent runs are unavailable.</li>';
       document.getElementById('status-history-list').innerHTML = '<li class="error">Status history entries are unavailable.</li>';
       document.getElementById('future-ideas-list').innerHTML = '<li class="error">Future ideas are unavailable.</li>';
       document.getElementById('idea-queue-list').innerHTML = '<li class="error">Idea queue entries are unavailable.</li>';
@@ -738,6 +811,7 @@
         showGardenPath('garden-path-list', project.gardenPath);
         showList('dashboard-guide-list', project.dashboardGuide);
         showList('local-setup-list', project.localSetup);
+        showRecentRuns('recent-runs-list', project.statusHistory);
         showStatusHistory('status-history-list', project.statusHistory);
         showList('future-ideas-list', project.futureIdeas);
         showList('idea-queue-list', project.ideaQueue);

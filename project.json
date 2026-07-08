@@ -1,6 +1,10 @@
 {
-  "status": "Resting after a good run",
+  "status": "Resting after adding Recent Runs",
   "statusHistory": [
+    {
+      "date": "2026-07-08",
+      "note": "Added a small Recent Runs dashboard section that shows the three newest statusHistory entries."
+    },
     {
       "date": "2026-07-08",
       "note": "Added a tiny How to use Luna dashboard card with four beginner-friendly steps."
@@ -159,8 +163,8 @@
     }
   ],
   "currentGoal": "Keep the dashboard and docs focused on Luna's plain-language welcome, one clear Next Action, the stable Philosophy Garden cycle, and a one-step-at-a-time rhythm for future public-safe updates.",
-  "lastCompletedRun": "2026-07-08: Added a tiny How to use Luna dashboard card with four beginner-friendly steps.",
-  "nextStep": "Let the How to use Luna card rest, then consider one tiny wording check to keep the top dashboard guidance clear.",
+  "lastCompletedRun": "2026-07-08: Added a small Recent Runs dashboard section that shows the three newest statusHistory entries.",
+  "nextStep": "Let the Recent Runs section rest, then consider one tiny wording check for the older Status History section.",
   "dashboardGuide": [
     "Welcome explains Luna in plain language before the project details begin.",
     "Status gives a quick snapshot of how the project is doing right now.",
@@ -170,8 +174,8 @@
     "Read the dashboard from top to bottom; if you only need one task, stop at Next Action."
   ],
   "futureIdeas": [
-    "Let the How to use Luna card rest before changing more top-of-dashboard guidance.",
-    "Review one dashboard guide or glossary sentence later to keep beginner instructions consistent.",
+    "Let the Recent Runs section rest before adding more history display changes.",
+    "Review one Status History or dashboard guide sentence later to keep history wording beginner-friendly.",
     "Keep project.json, STATE.md, and CHANGELOG.md aligned after each completed run."
   ],
   "decisionLog": [
@@ -186,8 +190,8 @@
     "The Garden Cycle connects the Reflection Card, Garden Review, Next Garden Update, and rest step so beginners can see how Philosophy Garden pieces fit together."
   ],
   "ideaQueue": [
-    "Let the How to use Luna card rest before changing more top-of-dashboard guidance.",
-    "Review one dashboard guide sentence later for beginner-friendly clarity.",
+    "Let the Recent Runs section rest before changing more history display guidance.",
+    "Review one Status History sentence later for beginner-friendly clarity.",
     "Keep project.json, STATE.md, and CHANGELOG.md aligned after each small dashboard or documentation change."
   ],
   "ideaQueueGuide": [
@@ -223,10 +227,10 @@
     "Visit http://localhost:8000 in a browser to view the dashboard."
   ],
   "nextAction": {
-    "title": "Let the How to use Luna card rest",
-    "description": "Pause after adding the top dashboard usage card so beginners can follow it before Luna changes more guidance.",
+    "title": "Let Recent Runs rest",
+    "description": "Pause after adding the small Recent Runs dashboard card so visitors can use the short history before Luna changes more history guidance.",
     "whyItMatters": "Resting keeps this dashboard improvement small, reviewable, and aligned with Luna's one-change rhythm.",
-    "status": "Resting after the How to use Luna card update"
+    "status": "Resting after the Recent Runs update"
   },
   "creativeSeed": {
     "name": "Philosophy Garden",
