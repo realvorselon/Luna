@@ -3,6 +3,10 @@
   "statusHistory": [
     {
       "date": "2026-07-08",
+      "note": "Reviewed the top dashboard flow and moved Next Action directly after Last Completed Run."
+    },
+    {
+      "date": "2026-07-08",
       "note": "Added a plain-language welcome section near the top of the dashboard."
     },
     {
@@ -119,9 +123,10 @@
     }
   ],
   "currentGoal": "Keep the dashboard focused on Luna's plain-language welcome, identity, one active goal, the most recent completed run, one clear next action, one tiny creative seed, one reflection card with a public-safe note, a simple Garden Review, one tiny Next Garden Update, polished Garden Cycle cards, a Garden Path, and a few future ideas.",
-  "lastCompletedRun": "2026-07-08: Added a plain-language welcome section near the top of the dashboard.",
+  "lastCompletedRun": "2026-07-08: Reviewed the top dashboard flow and moved Next Action directly after Last Completed Run.",
   "nextStep": "Use the polished Garden Cycle cards as a calm map before choosing another public-safe Philosophy Garden action.",
   "dashboardGuide": [
+    "Welcome explains Luna in plain language before the project details begin.",
     "Status gives a quick snapshot of how the project is doing right now.",
     "Current Goal is the main thing Luna is focused on.",
     "Last Completed Run shows the most recent finished update.",
