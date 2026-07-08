@@ -19,6 +19,8 @@
 
 ### Polish/Maintenance
 
+- Improved the Local Setup helper sentence in `index.html` so beginners know the local preview stays on their own computer and does not publish anything.
+- Updated `STATE.md` to remember this wording improvement.
 - Refreshed the Next Action card in `project.json` after the first Reflection Card so it recommends a calm clarity review before adding more.
 - Updated `STATE.md` to remember this Next Action refresh.
 - Refreshed the Next Action card in `project.json` so it suggests choosing one tiny public-safe creative direction seed for Luna.
@@ -123,3 +125,4 @@
 ## Next
 
 - Let the first Reflection Card rest before adding another tiny Philosophy Garden prompt.
+- Keep dashboard wording calm, public-safe, and beginner-friendly.
