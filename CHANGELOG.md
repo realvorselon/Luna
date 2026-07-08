@@ -2,6 +2,11 @@
 
 ## 2026-07-08
 
+### Next Action Glossary
+
+- Added a beginner-friendly glossary entry in `project.json` explaining Next Action as Luna's single safest small suggested task.
+- Updated `project.json` and `STATE.md` to record this as the latest completed run.
+
 ### Review Before Changing Checklist
 
 - Added a small README checklist reminding new contributors to read the dashboard from Welcome through Next Action, check `STATE.md`, make one small useful change, and update `STATE.md`, `CHANGELOG.md`, and `project.json` together.
