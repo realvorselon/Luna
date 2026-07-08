@@ -1,6 +1,10 @@
 {
-  "status": "Resting after roadmap vision alignment",
+  "status": "Resting after stewardship note",
   "statusHistory": [
+    {
+      "date": "2026-07-08",
+      "note": "Added a short public-safe stewardship design note that describes a future small-project loop without adding a dashboard feature, data object, roadmap, or app plan."
+    },
     {
       "date": "2026-07-08",
       "note": "Aligned the roadmap with README longer-term vision by keeping near-term work focused on the current dashboard, one clear Next Action, and one-small-change rhythm while naming the later calm companion direction for small projects."
@@ -190,9 +194,9 @@
       "note": "The project is resting after a good run and ready for one gentle improvement."
     }
   ],
-  "currentGoal": "Keep the dashboard and docs focused on Luna's plain-language welcome, one clear Next Action, the stable Philosophy Garden cycle, and a one-step-at-a-time rhythm for future public-safe updates.",
-  "lastCompletedRun": "2026-07-08: Aligned the roadmap with README longer-term vision by keeping near-term work focused on the current dashboard, one clear Next Action, and one-small-change rhythm while naming the later calm companion direction for small projects.",
-  "nextStep": "Rest and review the roadmap alignment before adding any new feature ideas or dashboard sections.",
+  "currentGoal": "Keep the dashboard and docs focused on Luna's plain-language welcome, one clear Next Action, the stable Philosophy Garden cycle, and a calm stewardship note for future public-safe updates.",
+  "lastCompletedRun": "2026-07-08: Added a short public-safe stewardship design note that describes a future small-project loop without adding a dashboard feature, data object, roadmap, or app plan.",
+  "nextStep": "Rest or review docs/STEWARDSHIP.md before building any stewardship feature.",
   "dashboardGuide": [
     "Welcome explains Luna in plain language before the project details begin.",
     "Status gives a quick snapshot of how the project is doing right now.",
@@ -202,7 +206,7 @@
     "Read the dashboard from top to bottom; if you only need one task, stop at Next Action."
   ],
   "futureIdeas": [
-    "Let the roadmap vision alignment rest before adding any new direction or feature ideas.",
+    "Rest or review docs/STEWARDSHIP.md before building any stewardship feature.",
     "Review one existing guidance sentence later for beginner-friendly clarity.",
     "Keep project.json, STATE.md, and CHANGELOG.md aligned after each small dashboard or documentation change."
   ],
@@ -218,7 +222,7 @@
     "The Garden Cycle connects the Reflection Card, Garden Review, Next Garden Update, and rest step so beginners can see how Philosophy Garden pieces fit together."
   ],
   "ideaQueue": [
-    "Let the roadmap vision alignment rest before adding any new direction or feature ideas.",
+    "Rest or review docs/STEWARDSHIP.md before building any stewardship feature.",
     "Review one existing guidance sentence later for beginner-friendly clarity.",
     "Keep project.json, STATE.md, and CHANGELOG.md aligned after each small dashboard or documentation change."
   ],
@@ -255,10 +259,10 @@
     "Visit http://localhost:8000 in a browser to view the dashboard."
   ],
   "nextAction": {
-    "title": "Rest after roadmap alignment",
-    "description": "Pause after the small roadmap wording pass so Luna can keep its longer-term direction calm, public-safe, and beginner-friendly.",
-    "whyItMatters": "Resting keeps the roadmap from turning a small alignment note into a feature list, timeline, or bigger app plan.",
-    "status": "Resting after roadmap vision alignment"
+    "title": "Rest after stewardship note",
+    "description": "Pause or review the short stewardship note before turning it into any dashboard section, data object, or feature.",
+    "whyItMatters": "Resting keeps stewardship as calm guidance instead of letting it become a larger app plan too soon.",
+    "status": "Resting after stewardship note"
   },
   "creativeSeed": {
     "name": "Philosophy Garden",

@@ -2,6 +2,12 @@
 
 ## 2026-07-08
 
+### Stewardship Note
+
+- Added `docs/STEWARDSHIP.md` as a short, public-safe design note for a possible future small-project stewardship loop.
+- Described the loop as Project State -> Mode -> Reason -> One Next Action -> Record -> Rest, with calm beginner-friendly mode descriptions.
+- Updated `README.md`, `project.json`, and `STATE.md` so the newest completed run and next step stay aligned around resting or reviewing the stewardship note before any stewardship feature.
+
 ### Roadmap Vision Alignment
 
 - Aligned `ROADMAP.md` with the README longer-term vision for Luna as a small public dashboard prototype that may later become a calm companion for small projects.
