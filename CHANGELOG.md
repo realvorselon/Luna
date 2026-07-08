@@ -4,6 +4,10 @@
 
 ### Creative Growth
 
+- Added a public-safe beginner note to the Reflection Card so visitors know they can answer with a general project idea instead of private details.
+- Updated `index.html` to show the new Reflection Card beginner note.
+- Updated `project.json` and `STATE.md` to record this as the latest completed run.
+
 - Added a tiny `gardenReview` object to `project.json` so Luna can review what the first Reflection Card teaches before choosing the next gentle update.
 - Updated `index.html` to show a small Garden Review section near the Reflection Card and Garden Path sections.
 - Updated `STATE.md` and `ROADMAP.md` to remember that Luna can review a reflection card before choosing the next gentle update.

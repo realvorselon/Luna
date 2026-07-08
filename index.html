@@ -338,6 +338,7 @@
       <article class="reflection-card">
         <h3 id="reflection-card-title">Loading project data...</h3>
         <p id="reflection-card-question">Loading project data...</p>
+        <p><span class="next-action-label">Beginner note:</span> <span id="reflection-card-beginner-note">Loading project data...</span></p>
         <p><span class="next-action-label">Why it matters:</span> <span id="reflection-card-why">Loading project data...</span></p>
       </article>
     </section>
@@ -532,6 +533,7 @@
       document.getElementById('creative-seed-ideas').innerHTML = '<li class="error">Creative seed ideas are unavailable.</li>';
       showText('reflection-card-title', 'Reflection card unavailable');
       showText('reflection-card-question', 'Try opening this page from a local web server.');
+      showText('reflection-card-beginner-note', 'Keep reflection answers general and public-safe.');
       showText('reflection-card-why', 'The dashboard needs project.json before it can show the reflection card.');
       showText('garden-review-title', 'Garden review unavailable');
       showText('garden-review-lesson', 'Try opening this page from a local web server.');
@@ -571,6 +573,7 @@
         showList('creative-seed-ideas', project.creativeSeed.ideas);
         showText('reflection-card-title', project.reflectionCard.title);
         showText('reflection-card-question', project.reflectionCard.question);
+        showText('reflection-card-beginner-note', project.reflectionCard.beginnerNote);
         showText('reflection-card-why', project.reflectionCard.whyItMatters);
         showText('garden-review-title', project.gardenReview.title);
         showText('garden-review-lesson', project.gardenReview.lesson);
