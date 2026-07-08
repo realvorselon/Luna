@@ -25,6 +25,8 @@
 
 ### Polish/Maintenance
 
+- Improved the Garden Path dashboard note so new visitors understand it as simple, public-safe steps without private details.
+- Updated `STATE.md` to remember this clarity review.
 - Improved the Local Setup helper sentence in `index.html` so beginners know the local preview stays on their own computer and does not publish anything.
 - Updated `STATE.md` to remember this wording improvement.
 - Refreshed the Next Action card in `project.json` after the first Reflection Card so it recommends a calm clarity review before adding more.
