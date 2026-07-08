@@ -17,6 +17,7 @@ This roadmap is intentionally small. Each item should be doable as one careful r
 - Added a Garden Review so Luna can review a reflection card before choosing the next gentle update.
 - Added a tiny Next Garden Update so the Garden Review can point to one public-safe action.
 - Added a Garden Cycle so the Philosophy Garden pieces connect in a clear beginner-friendly order.
+- The first stable dashboard loop is now in place; future work should preserve the one-step-at-a-time rhythm.
 
 ## Near Term
 
