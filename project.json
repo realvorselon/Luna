@@ -3,6 +3,10 @@
   "statusHistory": [
     {
       "date": "2026-07-08",
+      "note": "Reviewed the Garden Path dashboard wording for public-safe clarity."
+    },
+    {
+      "date": "2026-07-08",
       "note": "Added a tiny Garden Path so the Philosophy Garden can grow through slow, public-safe steps."
     },
     {
@@ -75,7 +79,7 @@
     }
   ],
   "currentGoal": "Keep the dashboard focused on Luna's identity, one active goal, the most recent completed run, one clear next action, one tiny creative seed, one reflection card, a simple Garden Path, and a few future ideas.",
-  "lastCompletedRun": "2026-07-08: Added a tiny Garden Path for slow Philosophy Garden growth.",
+  "lastCompletedRun": "2026-07-08: Reviewed the Garden Path dashboard wording for public-safe clarity.",
   "nextStep": "Use the Garden Path to review the first Reflection Card, then choose one gentle public-safe update.",
   "dashboardGuide": [
     "Status gives a quick snapshot of how the project is doing right now.",
