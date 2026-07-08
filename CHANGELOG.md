@@ -4,6 +4,10 @@
 
 ### Creative Growth
 
+- Added a tiny `gardenReview` object to `project.json` so Luna can review what the first Reflection Card teaches before choosing the next gentle update.
+- Updated `index.html` to show a small Garden Review section near the Reflection Card and Garden Path sections.
+- Updated `STATE.md` and `ROADMAP.md` to remember that Luna can review a reflection card before choosing the next gentle update.
+
 - Added a tiny `gardenPath` array to `project.json` so the Philosophy Garden can grow through a few slow, public-safe steps.
 - Updated `index.html` to show a small Garden Path section near the Creative Seed and Reflection Card sections.
 - Updated `STATE.md` and `ROADMAP.md` to remember Luna's simple creative growth path.
@@ -134,5 +138,5 @@
 
 ## Next
 
-- Follow the Garden Path before adding another tiny Philosophy Garden prompt.
+- Use the Garden Review before adding another tiny Philosophy Garden prompt.
 - Keep dashboard wording calm, public-safe, and beginner-friendly.
