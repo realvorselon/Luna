@@ -2,6 +2,11 @@
 
 ## 2026-07-08
 
+### README Longer-Term Vision
+
+- Added a short public-safe longer-term vision note to `README.md` that describes Luna as a small dashboard prototype with a calm project companion direction.
+- Updated `project.json` and `STATE.md` to record this as the latest completed run.
+
 ### v0.2 Dashboard Flow Review
 
 - Moved Project Health below Recent Runs in `index.html` so first-time visitors reach Current Goal, Last Completed Run, and Next Action before the extra health summary.
