@@ -138,12 +138,18 @@
       font-size: 1.05rem;
     }
 
-    .reflection-card {
+    .reflection-card,
+    .garden-path-card {
       margin-top: 16px;
       background: rgb(168 213 186 / 9%);
       border: 1px solid rgb(168 213 186 / 24%);
       border-radius: 12px;
       padding: 16px;
+    }
+
+    .garden-path-card {
+      background: rgb(247 227 181 / 6%);
+      border-color: rgb(247 227 181 / 22%);
     }
 
     .reflection-card h3 {
@@ -285,6 +291,16 @@
         <h3 id="reflection-card-title">Loading project data...</h3>
         <p id="reflection-card-question">Loading project data...</p>
         <p><span class="next-action-label">Why it matters:</span> <span id="reflection-card-why">Loading project data...</span></p>
+      </article>
+    </section>
+
+    <section aria-labelledby="garden-path">
+      <h2 id="garden-path">Garden Path</h2>
+      <article class="garden-path-card">
+        <p>A tiny path for helping the Philosophy Garden grow slowly and safely.</p>
+        <ol class="dashboard-list" id="garden-path-list">
+          <li>Loading project data...</li>
+        </ol>
       </article>
     </section>
 
@@ -437,6 +453,7 @@
       showText('reflection-card-title', 'Reflection card unavailable');
       showText('reflection-card-question', 'Try opening this page from a local web server.');
       showText('reflection-card-why', 'The dashboard needs project.json before it can show the reflection card.');
+      document.getElementById('garden-path-list').innerHTML = '<li class="error">Garden Path steps are unavailable.</li>';
       document.getElementById('choose-next-action').disabled = true;
       showText('chosen-next-action', 'Idea Queue suggestions are unavailable until project data loads.');
       document.getElementById('dashboard-guide-list').innerHTML = '<li class="error">Dashboard guide notes are unavailable.</li>';
@@ -472,6 +489,7 @@
         showText('reflection-card-title', project.reflectionCard.title);
         showText('reflection-card-question', project.reflectionCard.question);
         showText('reflection-card-why', project.reflectionCard.whyItMatters);
+        showList('garden-path-list', project.gardenPath);
         showList('dashboard-guide-list', project.dashboardGuide);
         showList('local-setup-list', project.localSetup);
         showStatusHistory('status-history-list', project.statusHistory);

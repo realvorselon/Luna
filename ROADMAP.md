@@ -13,6 +13,7 @@ This roadmap is intentionally small. Each item should be doable as one careful r
 - Added a small Next Action card to help beginners choose one safe next task.
 - Started exploring one tiny creative direction with a public-safe Philosophy Garden seed.
 - Tidied the changelog into clearer 2026-07-07 sections.
+- Added a simple Garden Path so Philosophy Garden updates can grow slowly from a reflection card to a gentle next update.
 
 ## Near Term
 
@@ -22,7 +23,7 @@ Choose a Near Term task that is small enough to finish in one careful pull reque
 - Refresh the Idea Queue so completed items are replaced with realistic next tasks.
 - Add one gentle documentation improvement for beginners.
 - Keep the Next Action card aligned with the safest current task.
-- Try one tiny Philosophy Garden prompt or reflection card without adding private details.
+- Follow the Garden Path before adding another tiny Philosophy Garden prompt or reflection card without adding private details.
 
 ## Later Possibilities
 
