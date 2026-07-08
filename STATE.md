@@ -10,11 +10,11 @@ Keep the dashboard and docs focused on Luna's plain-language welcome, one clear 
 
 ## Last Completed Run
 
-- 2026-07-08: Added RULES.md to the README Where to Look Next section so beginners can find Luna's one-small-change rhythm and alignment expectations.
+- 2026-07-08: Added a calm v0.1 README read-through note asking beginners to move slowly from Welcome through Next Action before choosing new work.
 
 ## Next Suggested Step
 
-Let the README Where to Look Next update rest before making another small beginner-facing documentation change.
+Let the v0.1 read-through note rest, then consider one tiny glossary or dashboard guide wording improvement for beginners.
 
 ## Notes
 
@@ -26,4 +26,5 @@ The v0.1 milestone note now records that Luna has a plain-language welcome, a cl
 The README dashboard description now matches the v0.1 dashboard flow: Welcome, Status, Current Goal, Last Completed Run, Next Action, and the current Philosophy Garden sections.
 
 The README Where to Look Next section now points beginners to RULES.md for Luna's one-small-change rhythm and alignment expectations.
-The next session should start with a calm v0.1 read-through before adding new features.
+The README now asks beginners to read the v0.1 dashboard slowly from Welcome through Next Action before choosing any new work.
+The next session should let that read-through note rest before making another tiny beginner-facing documentation change.

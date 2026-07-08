@@ -12,6 +12,8 @@ Luna's v0.1 dashboard is a simple web page in `index.html`. It reads from `proje
 
 The Philosophy Garden follows below with a Creative Seed, Reflection Card, Garden Review, Next Garden Update, Garden Cycle, and Garden Path. These sections keep the project gentle, public-safe, and easy for beginners to follow one small step at a time.
 
+Beginner read-through note: read the v0.1 dashboard slowly from Welcome through Next Action before choosing any new work. The first few cards are meant to orient you before the Philosophy Garden asks for another small step.
+
 To view it locally, open this project folder in a terminal and run:
 
 ```sh
