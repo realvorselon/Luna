@@ -2,6 +2,12 @@
 
 ## 2026-07-09
 
+### Visual Identity Note
+
+- Added `docs/VISUAL_IDENTITY.md` as a short, public-safe note about Luna's future calm, warm visual and interface personality direction.
+- Clarified desired visual qualities, what to avoid, and how interface voice can be gentle while staying practical and useful.
+- Updated `README.md`, `project.json`, and `STATE.md` so the newest completed run and next step stay aligned around resting or reviewing the visual identity note before any visual identity feature or CSS polish.
+
 ### User Guidance Clarity Review
 
 - Reviewed `docs/USER_GUIDANCE.md` against Luna's current direction as a small public dashboard prototype that may later become a calm companion for small projects.

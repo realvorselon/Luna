@@ -1,6 +1,10 @@
 {
-  "status": "Resting after user guidance clarity review",
+  "status": "Resting after visual identity note",
   "statusHistory": [
+    {
+      "date": "2026-07-09",
+      "note": "Added a small visual identity note for Luna that keeps future visual and interface personality direction calm, warm, beginner-friendly, and focused on one safe next step."
+    },
     {
       "date": "2026-07-09",
       "note": "Reviewed and lightly clarified the user guidance note so it stays aligned with Luna as a small public dashboard prototype that may later become a calm companion for small projects."
@@ -202,9 +206,9 @@
       "note": "The project is resting after a good run and ready for one gentle improvement."
     }
   ],
-  "currentGoal": "Keep the dashboard and docs focused on Luna's plain-language welcome, one clear Next Action, the stable Philosophy Garden cycle, and calm guidance for future public-safe updates.",
-  "lastCompletedRun": "2026-07-09: Reviewed and lightly clarified the user guidance note so it stays aligned with Luna as a small public dashboard prototype that may later become a calm companion for small projects.",
-  "nextStep": "Rest or review documentation clarity before adding any user-guidance feature.",
+  "currentGoal": "Keep the dashboard and docs focused on Luna's plain-language welcome, one clear Next Action, the stable Philosophy Garden cycle, calm guidance, and public-safe visual identity direction.",
+  "lastCompletedRun": "2026-07-09: Added a small visual identity note for Luna that keeps future visual and interface personality direction calm, warm, beginner-friendly, and focused on one safe next step.",
+  "nextStep": "Rest or review docs/VISUAL_IDENTITY.md before adding any visual identity feature or CSS polish.",
   "dashboardGuide": [
     "Welcome explains Luna in plain language before the project details begin.",
     "Status gives a quick snapshot of how the project is doing right now.",
@@ -214,8 +218,8 @@
     "Read the dashboard from top to bottom; if you only need one task, stop at Next Action."
   ],
   "futureIdeas": [
-    "Rest or review documentation clarity before adding any user-guidance feature.",
-    "Review one existing guidance sentence later for beginner-friendly clarity.",
+    "Rest or review docs/VISUAL_IDENTITY.md before adding any visual identity feature or CSS polish.",
+    "Review one existing visual or interface sentence later for beginner-friendly clarity.",
     "Keep project.json, STATE.md, and CHANGELOG.md aligned after each small dashboard or documentation change."
   ],
   "decisionLog": [
@@ -230,8 +234,8 @@
     "The Garden Cycle connects the Reflection Card, Garden Review, Next Garden Update, and rest step so beginners can see how Philosophy Garden pieces fit together."
   ],
   "ideaQueue": [
-    "Rest or review docs/USER_GUIDANCE.md before adding any user-guidance feature.",
-    "Review one existing guidance sentence later for beginner-friendly clarity.",
+    "Rest or review docs/VISUAL_IDENTITY.md before adding any visual identity feature or CSS polish.",
+    "Review one existing visual or interface sentence later for beginner-friendly clarity.",
     "Keep project.json, STATE.md, and CHANGELOG.md aligned after each small dashboard or documentation change."
   ],
   "ideaQueueGuide": [
@@ -267,10 +271,10 @@
     "Visit http://localhost:8000 in a browser to view the dashboard."
   ],
   "nextAction": {
-    "title": "Rest after user guidance note",
-    "description": "Pause or review the short user guidance note before turning it into any dashboard section, data object, or feature.",
-    "whyItMatters": "Resting keeps user guidance as calm documentation instead of letting it become a larger product plan too soon.",
-    "status": "Resting after user guidance note"
+    "title": "Rest after visual identity note",
+    "description": "Pause or review docs/VISUAL_IDENTITY.md before turning visual identity guidance into any CSS polish, dashboard feature, image, icon, or larger design plan.",
+    "whyItMatters": "Resting keeps Luna's visual direction calm and useful instead of letting polish become clutter or a productivity command center.",
+    "status": "Resting after visual identity note"
   },
   "creativeSeed": {
     "name": "Philosophy Garden",
