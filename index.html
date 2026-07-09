@@ -5,14 +5,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Luna</title>
   <style>
+    :root {
+      --night-deep: #0b1022;
+      --night-indigo: #111832;
+      --night-violet: #1b2244;
+      --card: rgb(31 40 68 / 82%);
+      --card-strong: rgb(38 48 80 / 88%);
+      --card-soft: rgb(25 34 60 / 78%);
+      --line: rgb(174 190 226 / 24%);
+      --line-strong: rgb(196 205 238 / 34%);
+      --moon: #f5eedb;
+      --moon-soft: #dfe6f4;
+      --periwinkle: #bdc8ee;
+      --silver: #c9d2e8;
+      --lantern: #f1d793;
+      --lantern-soft: rgb(241 215 147 / 16%);
+      --shadow: rgb(0 0 0 / 28%);
+    }
+
     body {
       margin: 0;
       font-family: system-ui, sans-serif;
       background:
-        radial-gradient(circle at top left, rgb(183 198 232 / 12%), transparent 34rem),
-        radial-gradient(circle at 85% 8%, rgb(242 219 160 / 8%), transparent 22rem),
-        #0d1324;
-      color: #f4ecd7;
+        radial-gradient(circle at 18% -8%, rgb(196 205 238 / 18%), transparent 30rem),
+        radial-gradient(circle at 86% 6%, rgb(126 139 207 / 16%), transparent 24rem),
+        radial-gradient(circle at 50% 48%, rgb(66 78 129 / 18%), transparent 42rem),
+        linear-gradient(145deg, var(--night-deep) 0%, var(--night-indigo) 46%, #151b38 72%, #0d1429 100%);
+      color: var(--moon);
       line-height: 1.6;
     }
 
@@ -26,11 +45,14 @@
       font-size: clamp(2.5rem, 10vw, 3.5rem);
       line-height: 1;
       margin: 0;
+      color: #fbf4e2;
       letter-spacing: -0.04em;
+      text-shadow: 0 0 28px rgb(196 205 238 / 16%);
     }
 
     h2 {
       margin: 0 0 12px;
+      color: var(--moon);
       font-size: 1.2rem;
       letter-spacing: -0.01em;
     }
@@ -41,39 +63,41 @@
 
     .subtitle {
       max-width: 640px;
-      color: #b8c0d6;
+      color: var(--silver);
       font-size: 1.1rem;
       margin: 14px 0 0;
     }
 
     .welcome-card {
       margin-top: 28px;
-      background: rgb(41 52 78 / 72%);
-      border: 1px solid rgb(187 199 226 / 24%);
+      background:
+        linear-gradient(145deg, rgb(48 58 91 / 82%), rgb(28 38 68 / 86%));
+      border: 1px solid var(--line-strong);
       border-radius: 16px;
       padding: 20px;
-      box-shadow: 0 18px 42px rgb(0 0 0 / 12%);
+      box-shadow: 0 20px 48px var(--shadow), inset 0 1px 0 rgb(255 255 255 / 5%);
     }
 
     .welcome-card h2 {
-      color: #f4ecd7;
+      color: var(--moon);
     }
 
     .welcome-card p {
       margin: 0;
-      color: #dce3f3;
+      color: var(--moon-soft);
     }
 
     .how-to-use-card {
       margin-top: 20px;
-      background: #182034;
-      border: 1px solid #303b58;
+      background: var(--card-soft);
+      border: 1px solid var(--line);
       border-radius: 16px;
       padding: 20px;
+      box-shadow: 0 14px 34px rgb(0 0 0 / 18%);
     }
 
     .how-to-use-card h2 {
-      color: #f4ecd7;
+      color: var(--moon);
     }
 
     .how-to-use-card ul {
@@ -83,10 +107,11 @@
     .recent-runs-card,
     .project-health-card,
     .current-mode-card {
-      background: #182034;
-      border: 1px solid #303b58;
+      background: var(--card-soft);
+      border: 1px solid var(--line);
       border-radius: 14px;
       padding: 20px;
+      box-shadow: 0 14px 34px rgb(0 0 0 / 16%);
     }
 
     .recent-runs-list,
@@ -101,15 +126,15 @@
     .recent-run-item,
     .project-health-item {
       padding: 12px;
-      background: rgb(11 18 34 / 42%);
-      border: 1px solid rgb(187 199 226 / 18%);
+      background: rgb(10 17 34 / 42%);
+      border: 1px solid rgb(196 205 238 / 18%);
       border-radius: 12px;
     }
 
     .recent-run-date,
     .project-health-label {
       display: block;
-      color: #f4ecd7;
+      color: var(--moon);
       font-weight: 800;
     }
 
@@ -117,7 +142,7 @@
     .project-health-value {
       display: block;
       margin-top: 4px;
-      color: #c7d0e6;
+      color: var(--silver);
     }
 
     .project-status {
@@ -126,11 +151,11 @@
       gap: 6px;
       margin-top: 20px;
       padding: 8px 14px;
-      background: #202a44;
-      border: 1px solid #52607f;
+      background: rgb(32 42 72 / 84%);
+      border: 1px solid rgb(174 190 226 / 42%);
       border-radius: 999px;
-      box-shadow: 0 10px 28px rgb(0 0 0 / 18%);
-      color: #dce3f3;
+      box-shadow: 0 12px 30px rgb(0 0 0 / 24%);
+      color: var(--moon-soft);
       font-size: 0.95rem;
       font-weight: 650;
     }
@@ -139,19 +164,19 @@
       content: "";
       width: 0.6rem;
       height: 0.6rem;
-      background: #c8c4ee;
+      background: var(--periwinkle);
       border-radius: 50%;
-      box-shadow: 0 0 0 4px rgb(200 196 238 / 14%);
+      box-shadow: 0 0 0 4px rgb(189 200 238 / 14%);
     }
 
     section {
-      border-top: 1px solid rgb(187 199 226 / 16%);
+      border-top: 1px solid rgb(174 190 226 / 17%);
       margin-top: 42px;
       padding-top: 32px;
     }
 
     .welcome-card {
-      border-top-color: rgb(187 199 226 / 24%);
+      border-top-color: var(--line-strong);
       padding-top: 18px;
     }
 
@@ -162,10 +187,11 @@
     }
 
     .status {
-      background: #182034;
-      border: 1px solid #303b58;
+      background: var(--card);
+      border: 1px solid var(--line);
       border-radius: 14px;
       padding: 20px;
+      box-shadow: 0 14px 34px rgb(0 0 0 / 16%);
     }
 
     .status p {
@@ -174,36 +200,36 @@
 
     .next-action-card {
       background:
-        radial-gradient(circle at top right, rgb(242 219 160 / 14%), transparent 18rem),
-        #202a44;
-      border: 1px solid rgb(242 219 160 / 30%);
+        radial-gradient(circle at top right, var(--lantern-soft), transparent 18rem),
+        linear-gradient(145deg, rgb(45 51 82 / 96%), rgb(28 37 68 / 96%));
+      border: 1px solid rgb(241 215 147 / 38%);
       border-radius: 18px;
       padding: 22px;
       box-shadow:
-        0 0 0 1px rgb(242 219 160 / 5%),
-        0 18px 40px rgb(0 0 0 / 20%),
-        0 0 34px rgb(242 219 160 / 8%);
+        0 0 0 1px rgb(241 215 147 / 7%),
+        0 20px 46px rgb(0 0 0 / 26%),
+        0 0 38px rgb(241 215 147 / 10%);
     }
 
     .current-mode-card h3 {
       margin: 0 0 8px;
-      color: #f4ecd7;
+      color: var(--moon);
       font-size: 1.05rem;
     }
 
     .current-mode-card p {
       margin: 0;
-      color: #dce3f3;
+      color: var(--moon-soft);
     }
 
     .current-mode-card p + p {
       margin-top: 10px;
-      color: #c7d0e6;
+      color: var(--silver);
     }
 
     .next-action-card h3 {
       margin: 0 0 8px;
-      color: #f4ecd7;
+      color: var(--moon);
       font-size: 1.05rem;
     }
 
@@ -211,10 +237,10 @@
       display: inline-block;
       margin: 0 0 10px;
       padding: 4px 10px;
-      background: rgb(200 196 238 / 13%);
-      border: 1px solid rgb(200 196 238 / 34%);
+      background: rgb(189 200 238 / 14%);
+      border: 1px solid rgb(189 200 238 / 34%);
       border-radius: 999px;
-      color: #e1def8;
+      color: #e8e7fb;
       font-size: 0.9rem;
       font-weight: 650;
     }
@@ -225,19 +251,20 @@
 
     .next-action-card p + p {
       margin-top: 10px;
-      color: #c7d0e6;
+      color: var(--silver);
     }
 
     .reflection-card {
-      background: rgb(38 48 75 / 68%);
-      border: 1px solid rgb(200 196 238 / 22%);
+      background: var(--card-strong);
+      border: 1px solid rgb(189 200 238 / 26%);
       border-radius: 14px;
       padding: 18px;
+      box-shadow: 0 14px 34px rgb(0 0 0 / 16%);
     }
 
     .reflection-card h3 {
       margin: 0 0 8px;
-      color: #e1def8;
+      color: #e8e7fb;
       font-size: 1.05rem;
     }
 
@@ -247,11 +274,11 @@
 
     .reflection-card p + p {
       margin-top: 10px;
-      color: #c7d0e6;
+      color: var(--silver);
     }
 
     .next-action-label {
-      color: #f4ecd7;
+      color: var(--moon);
       font-weight: 700;
     }
 

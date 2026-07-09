@@ -1,6 +1,10 @@
 {
-  "status": "Resting after moonlit dashboard palette alignment",
+  "status": "Resting after moonlit palette depth pass",
   "statusHistory": [
+    {
+      "date": "2026-07-09",
+      "note": "Deepened the public dashboard CSS with a more atmospheric moonlit indigo, blue-violet, periwinkle, silver, and small lantern-gold palette while keeping the existing structure unchanged."
+    },
     {
       "date": "2026-07-09",
       "note": "Aligned the public dashboard CSS with a restrained moonlit night palette while keeping the existing structure and core return loop unchanged."
@@ -323,7 +327,7 @@
     }
   ],
   "currentGoal": "Help someone return to one small project, see where they left off and what changed last, choose one clear Next Action, know what to ignore for now, record the change, and rest before adding more while keeping Philosophy Garden clearly optional.",
-  "lastCompletedRun": "2026-07-09: Aligned the public dashboard CSS with a restrained moonlit night palette while keeping the existing structure and core return loop unchanged.",
+  "lastCompletedRun": "2026-07-09: Deepened the public dashboard CSS with a more atmospheric moonlit indigo, blue-violet, periwinkle, silver, and small lantern-gold palette while keeping the existing structure unchanged.",
   "nextStep": "Rest before starting a usable app prototype, editable UI, local storage, backend, account system, dashboard expansion, mode workflow, more public-page pruning, or another visual redesign.",
   "dashboardGuide": [
     "Welcome starts the path to read through Record the Change before choosing more work.",
@@ -392,8 +396,8 @@
   "nextAction": {
     "title": "Rest before starting the usable prototype",
     "description": "Rest before starting a usable app prototype, editable UI, local storage, backend, account system, dashboard expansion, mode workflow, more public-page pruning, or another visual redesign.",
-    "whyItMatters": "Resting keeps the moonlit self-demo dashboard calm and prevents Luna from turning this visual alignment into more dashboard redesign, app architecture, editable UI, storage, accounts, backend, database, or a multi-project system.",
-    "status": "Resting after moonlit dashboard palette alignment"
+    "whyItMatters": "Resting keeps the deeper moonlit self-demo dashboard calm and prevents Luna from turning this palette depth pass into more dashboard redesign, app architecture, editable UI, storage, accounts, backend, database, or a multi-project system.",
+    "status": "Resting after moonlit palette depth pass"
   },
   "creativeSeed": {
     "name": "Philosophy Garden",
@@ -461,7 +465,7 @@
   ],
   "currentMode": {
     "name": "Rest",
-    "description": "The project is pausing after a restrained moonlit dashboard palette alignment so the public dashboard can stay calm before any prototype work.",
-    "whyItMatters": "Rest keeps Luna from turning a small visual mood pass into another redesign, dashboard expansion, or app build."
+    "description": "The project is pausing after a moonlit palette depth pass so the public dashboard can stay calm before any prototype work.",
+    "whyItMatters": "Rest keeps Luna from turning a small atmospheric CSS pass into another redesign, dashboard expansion, or app build."
   }
 }
