@@ -2,6 +2,12 @@
 
 ## 2026-07-09
 
+### Static Prototype Page
+
+- Added `prototype.html` as a separate static, non-editable preview of the first one-project Luna slice.
+- Used public-safe placeholder project data to show project name, current status, Current Mode, current goal, last completed run, one Next Action, Ignore For Now, Record the Change, and rest / next step.
+- Updated `README.md`, `project.json`, `STATE.md`, and `ROADMAP.md` so the public trail rests before editable UI, forms, local storage, backend, account system, database, dashboard expansion, visual redesign, mode workflow, or multi-project system.
+
 ### First Usable Prototype Slice Note
 
 - Added `docs/FIRST_USABLE_PROTOTYPE_SLICE.md` as a concise public-safe boundary note for the first tiny usable Luna prototype slice.
