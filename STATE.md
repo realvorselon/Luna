@@ -10,7 +10,7 @@ Help someone return to one small project, see where they left off and what chang
 
 ## Last Completed Run
 
-- 2026-07-09: Aligned the dashboard guidance with the Ignore For Now return path so beginners read from Welcome through Ignore For Now, use Next Action as the one clear task, see what can wait, and rest before adding more.
+- 2026-07-09: Aligned the first visible dashboard wording with Luna's return path: return to one small project, see what changed, choose one clear Next Action, see what can wait, and rest before adding more.
 
 ## Next Suggested Step
 
@@ -81,4 +81,4 @@ The foundation map now foregrounds Luna's current return-to-one-small-project sh
 
 The roadmap now more clearly frames Luna as a calm return path for one small project: see where the project left off, see what changed last, choose one clear Next Action, know what to ignore for now, record the change, and rest. The Philosophy Garden remains a gentle supporting reflection layer, and future app direction stays small and separate from any build plan. The next step is to rest before adding a dashboard section, app feature, visual styling, backend, account system, roadmap expansion, new planning note, additional example, or future visual idea.
 
-The dashboard now includes a small Ignore For Now card near Next Action. It names what can wait so the current return path stays focused on one clear Next Action without becoming a backlog, roadmap, feature board, or task manager. The existing dashboard guidance now matches that return path: read from Welcome through Ignore For Now, use Next Action as the one clear task, use Ignore For Now to see what can wait, and rest before adding more. The next step is to rest before adding another dashboard section, app feature, visual styling, backend, account system, roadmap expansion, new planning note, additional example, future visual idea, or second medium dashboard step.
+The dashboard now includes a small Ignore For Now card near Next Action. It names what can wait so the current return path stays focused on one clear Next Action without becoming a backlog, roadmap, feature board, or task manager. The existing dashboard guidance now matches that return path: read from Welcome through Ignore For Now, use Next Action as the one clear task, use Ignore For Now to see what can wait, and rest before adding more. The first visible dashboard wording now matches the return path too: return to one small project, see what changed, choose one clear Next Action, see what can wait, and rest before adding more. The next step is to rest before adding another dashboard section, app feature, visual styling, backend, account system, roadmap expansion, new planning note, additional example, future visual idea, or second medium dashboard step.

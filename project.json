@@ -1,6 +1,10 @@
 {
-  "status": "Resting after Ignore For Now guidance alignment",
+  "status": "Resting after first dashboard wording alignment",
   "statusHistory": [
+    {
+      "date": "2026-07-09",
+      "note": "Aligned the first visible dashboard wording with Luna's return path: return to one small project, see what changed, choose one clear Next Action, see what can wait, and rest before adding more."
+    },
     {
       "date": "2026-07-09",
       "note": "Aligned the dashboard guidance with the Ignore For Now return path so beginners read from Welcome through Ignore For Now, use Next Action as the one clear task, see what can wait, and rest before adding more."
@@ -283,7 +287,7 @@
     }
   ],
   "currentGoal": "Help someone return to one small project, see where they left off and what changed last, choose one clear Next Action, know what to ignore for now, record the change, and rest before adding more while preserving Luna's v0.1 dashboard and Philosophy Garden.",
-  "lastCompletedRun": "2026-07-09: Aligned the dashboard guidance with the Ignore For Now return path so beginners read from Welcome through Ignore For Now, use Next Action as the one clear task, see what can wait, and rest before adding more.",
+  "lastCompletedRun": "2026-07-09: Aligned the first visible dashboard wording with Luna's return path: return to one small project, see what changed, choose one clear Next Action, see what can wait, and rest before adding more.",
   "nextStep": "Rest before adding another dashboard section, app feature, visual styling, backend, account system, roadmap expansion, new planning note, additional example, future visual idea, or second medium dashboard step.",
   "dashboardGuide": [
     "Welcome explains Luna in plain language before the project details begin.",
@@ -352,7 +356,7 @@
     "title": "Rest before adding more dashboard structure or features",
     "description": "Rest before adding another dashboard section, app feature, visual styling, backend, account system, roadmap expansion, new planning note, additional example, future visual idea, or second medium dashboard step.",
     "whyItMatters": "Resting keeps the new Ignore For Now card small and prevents it from turning into a backlog, roadmap, feature board, styling pass, backend plan, account system, or second medium dashboard step.",
-    "status": "Resting after Ignore For Now dashboard card"
+    "status": "Resting after first dashboard wording alignment"
   },
   "creativeSeed": {
     "name": "Philosophy Garden",
@@ -405,7 +409,7 @@
   ],
   "welcome": {
     "title": "Welcome to Luna",
-    "sentence": "Luna is a small project dashboard that shows what changed, what matters now, and one safe next step."
+    "sentence": "Return to one small project, see what changed, choose one clear Next Action, and use Ignore For Now to see what can wait."
   },
   "ignoreForNow": [
     "Do not add another dashboard section until this return path still feels calm.",
