@@ -464,6 +464,15 @@
       </article>
     </section>
 
+    <section aria-labelledby="ignore-for-now">
+      <h2 id="ignore-for-now">Ignore For Now</h2>
+      <article class="status">
+        <ul class="dashboard-list" id="ignore-for-now-list">
+          <li>Loading project data...</li>
+        </ul>
+      </article>
+    </section>
+
     <section aria-labelledby="recent-runs">
       <h2 id="recent-runs">Recent Runs</h2>
       <article class="recent-runs-card">
@@ -838,6 +847,7 @@
       document.getElementById('garden-path-list').innerHTML = '<li class="error">Garden Path steps are unavailable.</li>';
       document.getElementById('choose-next-action').disabled = true;
       showText('chosen-next-action', 'Idea Queue suggestions are unavailable until project data loads.');
+      document.getElementById('ignore-for-now-list').innerHTML = '<li class="error">Ignore For Now notes are unavailable.</li>';
       document.getElementById('dashboard-guide-list').innerHTML = '<li class="error">Dashboard guide notes are unavailable.</li>';
       document.getElementById('local-setup-list').innerHTML = '<li class="error">Local setup steps are unavailable.</li>';
       document.getElementById('project-health-list').innerHTML = '<li class="error">Project health facts are unavailable.</li>';
@@ -870,6 +880,7 @@
         showText('next-action-status', project.nextAction.status);
         showText('next-action-description', project.nextAction.description);
         showText('next-action-why', project.nextAction.whyItMatters);
+        showList('ignore-for-now-list', project.ignoreForNow);
         showText('creative-seed-name', project.creativeSeed.name);
         showText('creative-seed-description', project.creativeSeed.description);
         showList('creative-seed-ideas', project.creativeSeed.ideas);

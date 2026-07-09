@@ -2,6 +2,12 @@
 
 ## 2026-07-09
 
+### Ignore For Now Dashboard Card
+
+- Added a small public-safe Ignore For Now card near Next Action in `index.html`.
+- Added short `project.json.ignoreForNow` guidance so returners can see what can wait without turning it into a backlog, roadmap, feature board, priority matrix, or task manager.
+- Updated `README.md`, `ROADMAP.md`, `project.json`, and `STATE.md` so the newest completed run and next step stay aligned around resting before any second medium dashboard step or larger expansion.
+
 ### Roadmap Return-Path Alignment Review
 
 - Reviewed `ROADMAP.md` against Luna's current framing as a calm return path for one small project.
