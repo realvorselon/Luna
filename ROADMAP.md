@@ -13,6 +13,7 @@ This roadmap is intentionally small. Luna is a public dashboard prototype right 
 - Added a small Next Action card to help beginners choose one clear safe next task.
 - Added a small Ignore For Now card near Next Action so returners can see what can wait without turning it into a backlog or feature board.
 - Added a small Record the Change card near Next Action and Ignore For Now so returners know how to update the public project trail without starting a logging system or task tracker.
+- Added a small Current Mode card set to Rest near the top dashboard flow so beginners can see Luna is pausing without turning modes into a workflow engine.
 - Started a public-safe Philosophy Garden seed as a gentle supporting reflection layer.
 - Tidied the changelog into clearer 2026-07-07 sections.
 - Added a simple Garden Path so Philosophy Garden updates can grow slowly from a reflection card to a gentle next update.
@@ -29,7 +30,7 @@ Near-term work should stay focused on the current return path: help someone see 
 - Keep `project.json` aligned with the dashboard after each small content change.
 - Keep the Next Action card aligned with the safest current task.
 - Review one existing dashboard or documentation sentence at a time for beginner-friendly return-path clarity.
-- Let the current dashboard rest between changes so Luna does not grow too quickly.
+- Let the current dashboard rest between changes so Luna does not grow too quickly, especially before adding another dashboard section, mode workflow, or fourth medium dashboard step.
 - Keep the Philosophy Garden as a gentle supporting reflection layer; use the Garden Cycle before changing its wording, and keep any change public-safe and small.
 
 ## Later Direction
