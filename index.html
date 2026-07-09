@@ -8,7 +8,9 @@
     body {
       margin: 0;
       font-family: system-ui, sans-serif;
-      background: #101114;
+      background:
+        radial-gradient(circle at top left, rgb(247 227 181 / 10%), transparent 32rem),
+        #101114;
       color: #f4f1ea;
       line-height: 1.6;
     }
@@ -16,7 +18,7 @@
     main {
       max-width: 760px;
       margin: 0 auto;
-      padding: 56px 20px;
+      padding: 64px 22px 72px;
     }
 
     h1 {
@@ -44,11 +46,12 @@
     }
 
     .welcome-card {
-      margin-top: 24px;
+      margin-top: 28px;
       background: rgb(247 227 181 / 8%);
       border: 1px solid rgb(247 227 181 / 24%);
-      border-radius: 14px;
-      padding: 18px;
+      border-radius: 16px;
+      padding: 20px;
+      box-shadow: 0 18px 42px rgb(0 0 0 / 12%);
     }
 
     .welcome-card h2 {
@@ -61,11 +64,11 @@
     }
 
     .how-to-use-card {
-      margin-top: 18px;
+      margin-top: 20px;
       background: #1b1d24;
       border: 1px solid #34363d;
-      border-radius: 14px;
-      padding: 18px;
+      border-radius: 16px;
+      padding: 20px;
     }
 
     .how-to-use-card h2 {
@@ -80,8 +83,8 @@
     .project-health-card {
       background: #1b1d24;
       border: 1px solid #34363d;
-      border-radius: 12px;
-      padding: 18px;
+      border-radius: 14px;
+      padding: 20px;
     }
 
     .recent-runs-list,
@@ -140,9 +143,9 @@
     }
 
     section {
-      border-top: 1px solid #34363d;
-      margin-top: 36px;
-      padding-top: 28px;
+      border-top: 1px solid rgb(247 227 181 / 16%);
+      margin-top: 42px;
+      padding-top: 32px;
     }
 
     .welcome-card {
@@ -159,8 +162,8 @@
     .status {
       background: #1b1d24;
       border: 1px solid #34363d;
-      border-radius: 12px;
-      padding: 18px;
+      border-radius: 14px;
+      padding: 20px;
     }
 
     .status p {
@@ -168,11 +171,16 @@
     }
 
     .next-action-card {
-      background: #20232b;
-      border: 1px solid #5b5361;
-      border-radius: 14px;
-      padding: 18px;
-      box-shadow: 0 14px 32px rgb(0 0 0 / 16%);
+      background:
+        radial-gradient(circle at top right, rgb(247 227 181 / 14%), transparent 18rem),
+        #20232b;
+      border: 1px solid rgb(247 227 181 / 34%);
+      border-radius: 18px;
+      padding: 22px;
+      box-shadow:
+        0 0 0 1px rgb(247 227 181 / 5%),
+        0 18px 40px rgb(0 0 0 / 18%),
+        0 0 34px rgb(247 227 181 / 8%);
     }
 
     .next-action-card h3 {
@@ -205,8 +213,8 @@
     .creative-seed-card {
       background: rgb(247 227 181 / 8%);
       border: 1px solid rgb(247 227 181 / 24%);
-      border-radius: 12px;
-      padding: 16px;
+      border-radius: 14px;
+      padding: 18px;
     }
 
     .creative-seed-card h3 {
@@ -223,8 +231,8 @@
       margin-top: 16px;
       background: rgb(168 213 186 / 9%);
       border: 1px solid rgb(168 213 186 / 24%);
-      border-radius: 12px;
-      padding: 16px;
+      border-radius: 14px;
+      padding: 18px;
     }
 
     .garden-review-card {
@@ -390,12 +398,12 @@
 
     @media (max-width: 520px) {
       main {
-        padding: 36px 16px;
+        padding: 40px 16px 52px;
       }
 
       section {
-        margin-top: 30px;
-        padding-top: 22px;
+        margin-top: 34px;
+        padding-top: 24px;
       }
 
       .project-status {

@@ -2,6 +2,12 @@
 
 ## 2026-07-09
 
+### Restrained Dashboard Visual Polish
+
+- Applied a small CSS-only polish to `index.html` so the dashboard feels calmer and warmer without adding new sections, content, images, icons, animations, or JavaScript behavior.
+- Gave the existing Next Action card a subtle lantern-like focus while keeping cards clear and readable.
+- Updated `project.json` and `STATE.md` so the newest completed run and next step stay aligned around resting or reviewing the CSS polish before adding any additional visual styling.
+
 ### Visual Identity Clarity Review
 
 - Reviewed `docs/VISUAL_IDENTITY.md` against Luna's current direction as a small public dashboard prototype that may later become a calm companion for small projects.
