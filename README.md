@@ -59,6 +59,7 @@ These links are grouped so a new visitor can start with the most useful front do
 - `docs/VISUAL_IDENTITY.md` — Luna's calm, warm visual and interface personality direction.
 - `docs/APP_SEED.md` — the smallest honest future app shape Luna may grow toward.
 - `docs/MINIMAL_APP_SHAPE.md` — a review of that smallest possible future app shape before any app feature exists.
+- `docs/PROTOTYPE_READINESS.md` — a short boundary note that the self-demo dashboard can rest before a tiny local usable prototype for one project.
 
 ## First Rule
 

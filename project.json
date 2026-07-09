@@ -1,6 +1,10 @@
 {
-  "status": "Resting with Current Mode visible",
+  "status": "Resting before usable prototype",
   "statusHistory": [
+    {
+      "date": "2026-07-09",
+      "note": "Added a short prototype readiness note marking the self-demo dashboard as coherent enough for the core return loop and setting the next phase as a tiny local usable prototype for one project after rest."
+    },
     {
       "date": "2026-07-09",
       "note": "Added a small Current Mode dashboard card set to Rest so beginners can see Luna is pausing after the Record the Change wording cleanup without turning modes into a workflow."
@@ -307,8 +311,8 @@
     }
   ],
   "currentGoal": "Help someone return to one small project, see where they left off and what changed last, choose one clear Next Action, know what to ignore for now, record the change, and rest before adding more while preserving Luna's v0.1 dashboard and Philosophy Garden.",
-  "lastCompletedRun": "2026-07-09: Added a small Current Mode dashboard card set to Rest so beginners can see Luna is pausing after the Record the Change wording cleanup without turning modes into a workflow.",
-  "nextStep": "Rest before adding another dashboard section, app feature, visual styling, backend, account system, roadmap expansion, new planning note, additional example, future visual idea, usable app prototype, local storage, fourth medium dashboard step, or mode workflow.",
+  "lastCompletedRun": "2026-07-09: Added a short prototype readiness note marking the self-demo dashboard as coherent enough for the core return loop and setting the next phase as a tiny local usable prototype for one project after rest.",
+  "nextStep": "Rest before starting a usable app prototype, editable UI, local storage, backend, account system, roadmap expansion, dashboard expansion, mode workflow, or fourth medium dashboard step.",
   "dashboardGuide": [
     "Welcome starts the path to read through Record the Change before choosing more work.",
     "Status gives a quick snapshot of how the project is doing right now.",
@@ -319,7 +323,7 @@
     "Record the Change explains how to update the public project trail after one small useful change, then rest."
   ],
   "futureIdeas": [
-    "Rest before adding more structure; keep the current return path calm before considering another dashboard section or feature.",
+    "Rest before starting a tiny local usable prototype for one project; do not add more dashboard cards by default.",
     "Review one existing sentence or section for beginner clarity, especially around returning to one small project and choosing one clear Next Action.",
     "Keep README.md, STATE.md, CHANGELOG.md, and project.json aligned whenever the public record changes.",
     "Only later consider surfacing an existing quiet item on the dashboard after the front door and current goal still feel calm."
@@ -336,7 +340,7 @@
     "The Garden Cycle connects the Reflection Card, Garden Review, Next Garden Update, and rest step so beginners can see how Philosophy Garden pieces fit together."
   ],
   "ideaQueue": [
-    "Rest before adding more structure; keep the current return path calm before considering another dashboard section, feature, mode workflow, or fourth medium dashboard step.",
+    "Rest before starting a tiny local usable prototype for one project; do not add editable UI, local storage, backend, account system, mode workflow, dashboard expansion, or fourth medium dashboard step yet.",
     "Review one existing sentence or section for beginner clarity, especially around returning to one small project and choosing one clear Next Action.",
     "Keep README.md, STATE.md, CHANGELOG.md, and project.json aligned whenever the public record changes.",
     "Only later consider surfacing an existing quiet item on the dashboard after the front door and current goal still feel calm."
@@ -374,10 +378,10 @@
     "Visit http://localhost:8000 in a browser to view the dashboard."
   ],
   "nextAction": {
-    "title": "Rest before adding more dashboard structure or features",
-    "description": "Rest before adding another dashboard section, app feature, visual styling, backend, account system, roadmap expansion, new planning note, additional example, future visual idea, usable app prototype, local storage, fourth medium dashboard step, or mode workflow.",
-    "whyItMatters": "Resting keeps this dashboard addition small and prevents Luna from turning modes into a selector, workflow engine, task manager, finished product, SaaS app, backend plan, account system, or fourth medium dashboard step.",
-    "status": "Resting with Current Mode visible"
+    "title": "Rest before starting the usable prototype",
+    "description": "Rest before starting a usable app prototype, editable UI, local storage, backend, account system, roadmap expansion, dashboard expansion, mode workflow, or fourth medium dashboard step.",
+    "whyItMatters": "Resting keeps the readiness note as a boundary marker and prevents Luna from turning the next phase into more dashboard cards, app architecture, a SaaS structure, accounts, a backend, a database, or a multi-project system.",
+    "status": "Resting before usable prototype"
   },
   "creativeSeed": {
     "name": "Philosophy Garden",
