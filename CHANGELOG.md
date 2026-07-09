@@ -2,6 +2,12 @@
 
 ## 2026-07-09
 
+### Current Goal Alignment Cleanup
+
+- Updated `project.json.currentGoal` and `STATE.md` Current Goal so they foreground Luna's core return shape while preserving the existing v0.1 dashboard and Philosophy Garden.
+- Kept the cleanup to wording only, without adding a new feature, dashboard section, planning note, example, styling, backend, account system, roadmap expansion, or future visual idea.
+- Updated `project.json` and `STATE.md` so the newest completed run and next step stay aligned around resting before adding more structure, features, styling, planning, examples, or visual ideas.
+
 ### README Front-Door Hierarchy Cleanup
 
 - Reorganized the README Where to Look Next section into Start here, Understand the foundation, and Deeper design notes groups.
