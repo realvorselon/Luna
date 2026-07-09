@@ -10,11 +10,11 @@ Help someone return to one small project, see where they left off and what chang
 
 ## Last Completed Run
 
-- 2026-07-09: Reviewed ROADMAP.md so it reflects Luna's return-to-one-small-project framing while keeping the Philosophy Garden supporting and future app direction separate from any build plan.
+- 2026-07-09: Added a small Ignore For Now dashboard card near Next Action so returners can see what can wait without turning it into a backlog or feature board.
 
 ## Next Suggested Step
 
-Rest before adding a dashboard section, app feature, visual styling, backend, account system, roadmap expansion, new planning note, additional example, or future visual idea.
+Rest before adding another dashboard section, app feature, visual styling, backend, account system, roadmap expansion, new planning note, additional example, future visual idea, or second medium dashboard step.
 
 ## Notes
 
@@ -80,3 +80,5 @@ The README beginner read-through note now says the first dashboard cards orient 
 The foundation map now foregrounds Luna's current return-to-one-small-project shape: README.md as the front door, STATE.md and project.json as the current state and next-action record, index.html as the public dashboard, docs/EXAMPLE_RETURN.md as Luna in motion, and the Philosophy Garden as a gentle supporting reflection layer rather than the main engine. The next step is to rest before adding a dashboard section, app feature, visual styling, backend, account system, roadmap expansion, new planning note, additional example, or future visual idea.
 
 The roadmap now more clearly frames Luna as a calm return path for one small project: see where the project left off, see what changed last, choose one clear Next Action, know what to ignore for now, record the change, and rest. The Philosophy Garden remains a gentle supporting reflection layer, and future app direction stays small and separate from any build plan. The next step is to rest before adding a dashboard section, app feature, visual styling, backend, account system, roadmap expansion, new planning note, additional example, or future visual idea.
+
+The dashboard now includes a small Ignore For Now card near Next Action. It names what can wait so the current return path stays focused on one clear Next Action without becoming a backlog, roadmap, feature board, or task manager. The next step is to rest before adding another dashboard section, app feature, visual styling, backend, account system, roadmap expansion, new planning note, additional example, future visual idea, or second medium dashboard step.

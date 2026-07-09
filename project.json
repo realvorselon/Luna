@@ -1,6 +1,10 @@
 {
-  "status": "Resting after roadmap return-path alignment review",
+  "status": "Resting after Ignore For Now dashboard card",
   "statusHistory": [
+    {
+      "date": "2026-07-09",
+      "note": "Added a small Ignore For Now dashboard card near Next Action so returners can see what can wait without turning it into a backlog or feature board."
+    },
     {
       "date": "2026-07-09",
       "note": "Reviewed ROADMAP.md so it reflects Luna's return-to-one-small-project framing while keeping the Philosophy Garden supporting and future app direction separate from any build plan."
@@ -275,8 +279,8 @@
     }
   ],
   "currentGoal": "Help someone return to one small project, see where they left off and what changed last, choose one clear Next Action, know what to ignore for now, record the change, and rest before adding more while preserving Luna's v0.1 dashboard and Philosophy Garden.",
-  "lastCompletedRun": "2026-07-09: Reviewed ROADMAP.md so it reflects Luna's return-to-one-small-project framing while keeping the Philosophy Garden supporting and future app direction separate from any build plan.",
-  "nextStep": "Rest before adding a dashboard section, app feature, visual styling, backend, account system, roadmap expansion, new planning note, additional example, or future visual idea.",
+  "lastCompletedRun": "2026-07-09: Added a small Ignore For Now dashboard card near Next Action so returners can see what can wait without turning it into a backlog or feature board.",
+  "nextStep": "Rest before adding another dashboard section, app feature, visual styling, backend, account system, roadmap expansion, new planning note, additional example, future visual idea, or second medium dashboard step.",
   "dashboardGuide": [
     "Welcome explains Luna in plain language before the project details begin.",
     "Status gives a quick snapshot of how the project is doing right now.",
@@ -341,10 +345,10 @@
     "Visit http://localhost:8000 in a browser to view the dashboard."
   ],
   "nextAction": {
-    "title": "Rest before adding more structure or features",
-    "description": "Rest before adding a dashboard section, app feature, visual styling, backend, account system, roadmap expansion, new planning note, additional example, or future visual idea.",
-    "whyItMatters": "Resting keeps the roadmap alignment review from turning into a dashboard section, feature, styling pass, backend plan, account system, roadmap expansion, new note, example, or future visual idea.",
-    "status": "Resting after roadmap return-path alignment review"
+    "title": "Rest before adding more dashboard structure or features",
+    "description": "Rest before adding another dashboard section, app feature, visual styling, backend, account system, roadmap expansion, new planning note, additional example, future visual idea, or second medium dashboard step.",
+    "whyItMatters": "Resting keeps the new Ignore For Now card small and prevents it from turning into a backlog, roadmap, feature board, styling pass, backend plan, account system, or second medium dashboard step.",
+    "status": "Resting after Ignore For Now dashboard card"
   },
   "creativeSeed": {
     "name": "Philosophy Garden",
@@ -398,5 +402,10 @@
   "welcome": {
     "title": "Welcome to Luna",
     "sentence": "Luna is a small project dashboard that shows what changed, what matters now, and one safe next step."
-  }
+  },
+  "ignoreForNow": [
+    "Do not add another dashboard section until this return path still feels calm.",
+    "Do not start backend, accounts, pricing, authentication, database, or app architecture yet.",
+    "Do not add future visual ideas, additional examples, or new planning notes until the current dashboard rests."
+  ]
 }

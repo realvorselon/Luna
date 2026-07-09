@@ -11,6 +11,7 @@ This roadmap is intentionally small. Luna is a public dashboard prototype right 
 - Added structured project data in `project.json` for the dashboard to read.
 - Added a lightweight Idea Queue, Decision Log, Glossary, and Local Setup section.
 - Added a small Next Action card to help beginners choose one clear safe next task.
+- Added a small Ignore For Now card near Next Action so returners can see what can wait without turning it into a backlog or feature board.
 - Started a public-safe Philosophy Garden seed as a gentle supporting reflection layer.
 - Tidied the changelog into clearer 2026-07-07 sections.
 - Added a simple Garden Path so Philosophy Garden updates can grow slowly from a reflection card to a gentle next update.
@@ -22,7 +23,7 @@ This roadmap is intentionally small. Luna is a public dashboard prototype right 
 
 ## Near Term
 
-Near-term work should stay focused on the current return path: help someone see where they left off and what changed last, guide them toward one clear Next Action, name what can be ignored for now, record the change, and rest. Choose a task that is small enough to finish in one careful pull request. When a task changes project direction, dashboard data, or public history, keep `project.json`, `STATE.md`, and `CHANGELOG.md` aligned so the next person can see what changed.
+Near-term work should stay focused on the current return path: help someone see where they left off and what changed last, guide them toward one clear Next Action, name what can be ignored for now without making a backlog, record the change, and rest. Choose a task that is small enough to finish in one careful pull request. When a task changes project direction, dashboard data, or public history, keep `project.json`, `STATE.md`, and `CHANGELOG.md` aligned so the next person can see what changed.
 
 - Keep `project.json` aligned with the dashboard after each small content change.
 - Keep the Next Action card aligned with the safest current task.
