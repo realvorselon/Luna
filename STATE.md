@@ -10,11 +10,11 @@ Keep the dashboard and docs focused on Luna's plain-language welcome, one clear 
 
 ## Last Completed Run
 
-- 2026-07-09: Added a minimal app shape review note that reviews the smallest possible future Luna app shape from the app seed without starting a build plan.
+- 2026-07-09: Added a short example return walkthrough that shows Luna helping one fictional person return to one small creative project without starting an app build.
 
 ## Next Suggested Step
 
-Rest before adding any app feature, dashboard feature, visual styling, backend, account system, roadmap expansion, or additional planning note.
+Rest before adding any app feature, dashboard feature, visual styling, backend, account system, roadmap expansion, additional planning note, or second example.
 
 ## Notes
 
@@ -63,3 +63,6 @@ The app seed note was reviewed for clarity and restraint. Two tiny wording clari
 
 
 The minimal app shape review note now reviews the smallest possible future Luna app shape from the app seed: one small project, one gentle setup question, current state, current mode, what changed last, one next action, a choice to do or skip it, a record of what changed, and rest. It stays separate from building so no app feature, dashboard feature, technical architecture, or roadmap expansion starts yet.
+
+
+The example return walkthrough now shows Luna in motion through one fictional, public-safe small project: returning after time away, reading saved state, naming the current mode, seeing what changed last, choosing or skipping one next action, recording the change, and resting before adding more. The next step is to rest before adding any app feature, dashboard feature, visual styling, backend, account system, roadmap expansion, additional planning note, or second example.
