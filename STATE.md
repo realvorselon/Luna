@@ -10,11 +10,11 @@ Help someone return to one small project, see where they left off and what chang
 
 ## Last Completed Run
 
-- 2026-07-09: Clarified the first visible dashboard wording so strangers can see Luna is a gentle return dashboard prototype, currently using the Luna repo as its first example project.
+- 2026-07-09: Added a small Record the Change dashboard card near Next Action and Ignore For Now so the return loop explains updating the public project trail after one useful change.
 
 ## Next Suggested Step
 
-Rest before adding another dashboard section, app feature, visual styling, backend, account system, roadmap expansion, new planning note, additional example, future visual idea, or second medium dashboard step.
+Rest before adding another dashboard section, app feature, visual styling, backend, account system, roadmap expansion, new planning note, additional example, future visual idea, or third medium dashboard step.
 
 ## Notes
 
@@ -82,3 +82,5 @@ The foundation map now foregrounds Luna's current return-to-one-small-project sh
 The roadmap now more clearly frames Luna as a calm return path for one small project: see where the project left off, see what changed last, choose one clear Next Action, know what to ignore for now, record the change, and rest. The Philosophy Garden remains a gentle supporting reflection layer, and future app direction stays small and separate from any build plan. The next step is to rest before adding a dashboard section, app feature, visual styling, backend, account system, roadmap expansion, new planning note, additional example, or future visual idea.
 
 The dashboard now includes a small Ignore For Now card near Next Action. It names what can wait so the current return path stays focused on one clear Next Action without becoming a backlog, roadmap, feature board, or task manager. The existing dashboard guidance now matches that return path: read from Welcome through Ignore For Now, use Next Action as the one clear task, use Ignore For Now to see what can wait, and rest before adding more. The first visible dashboard wording now matches the return path too: return to one small project, see what changed, choose one clear Next Action, see what can wait, and rest before adding more. The next step is to rest before adding another dashboard section, app feature, visual styling, backend, account system, roadmap expansion, new planning note, additional example, future visual idea, or second medium dashboard step.
+
+The dashboard now includes a small Record the Change card after Ignore For Now. It explains that recording a change means updating the public project trail in STATE.md, CHANGELOG.md, and project.json after one small useful change, not starting a logging system, database, changelog editor, task tracker, automation, backend, or app feature. The top return flow now reads as Next Action, Ignore For Now, Record the Change, then rest before adding more. The next step is to rest before adding another dashboard section, app feature, visual styling, backend, account system, roadmap expansion, new planning note, additional example, future visual idea, or third medium dashboard step.

@@ -4,7 +4,7 @@ Luna is a small public dashboard prototype and autonomous repository experiment 
 
 ## v0.1 Milestone
 
-Luna now has a plain-language welcome, a clear Next Action, a small Ignore For Now card, and a quiet Philosophy Garden cycle that supports the core return path with a Reflection Card, Garden Review, Next Garden Update, and Rest Before Growing Again. This gives beginners one calm path for seeing what changed last, choosing what to do next, knowing what to ignore for now, and stopping before the project grows too quickly.
+Luna now has a plain-language welcome, a clear Next Action, small Ignore For Now and Record the Change cards, and a quiet Philosophy Garden cycle that supports the core return path with a Reflection Card, Garden Review, Next Garden Update, and Rest Before Growing Again. This gives beginners one calm path for seeing what changed last, choosing what to do next, knowing what to ignore for now, and stopping before the project grows too quickly.
 
 ## Longer-Term Vision
 
@@ -12,17 +12,17 @@ Luna is currently a small public dashboard prototype. Over time, the idea is for
 
 ## Dashboard
 
-Luna's v0.1 dashboard is a simple web page in `index.html`, and it currently uses the Luna repo itself as the first example project. It reads from `project.json` and starts with a plain-language Welcome, Status, Current Goal, Last Completed Run, one clear Next Action, and a small Ignore For Now card so someone can quickly see where the project left off and what changed last.
+Luna's v0.1 dashboard is a simple web page in `index.html`, and it currently uses the Luna repo itself as the first example project. It reads from `project.json` and starts with a plain-language Welcome, Status, Current Goal, Last Completed Run, one clear Next Action, a small Ignore For Now card, and a small Record the Change card so someone can quickly see where the project left off, what changed last, what to do next, what can wait, and how to update the public project trail.
 
 The Philosophy Garden follows below with a Creative Seed, Reflection Card, Garden Review, Next Garden Update, Garden Cycle, and Garden Path. These sections are a gentle supporting reflection layer around the return path, not the whole project or main engine.
 
-Beginner read-through note: read the v0.1 dashboard slowly from Welcome through Ignore For Now before choosing any new work. The first dashboard cards are meant to orient you around the current project state, the last completed run, one clear Next Action, and what can wait; the Philosophy Garden can wait as a gentle supporting reflection layer.
+Beginner read-through note: read the v0.1 dashboard slowly from Welcome through Record the Change before choosing any new work. The first dashboard cards are meant to orient you around the current project state, the last completed run, one clear Next Action, and what can wait; the Philosophy Garden can wait as a gentle supporting reflection layer.
 
 ### Review before changing
 
 Before making a new contribution, use this small checklist:
 
-- Read the dashboard from Welcome through Ignore For Now.
+- Read the dashboard from Welcome through Record the Change.
 - Check `STATE.md` for the latest completed run and next suggested step.
 - Choose only one small useful change for the run.
 - Update `STATE.md`, `CHANGELOG.md`, and `project.json` together so the public record stays aligned.
