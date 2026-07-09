@@ -2,6 +2,12 @@
 
 ## 2026-07-09
 
+### Supporting Sections Prune
+
+- Removed the rendered Dashboard Guide, Status History, Local Setup, Future Ideas, Idea Queue, Glossary, and Decision Log sections from `index.html` so the public front page feels less like a repo maintenance control panel.
+- Kept Recent Runs, Project Health, and one quiet Project Trail note on the dashboard so visitors can still see that the project is alive and coherent.
+- Left the underlying `project.json` reference data available for README/docs use, and updated `README.md`, `project.json`, `STATE.md`, and `ROADMAP.md` to rest before prototype work or more public-page pruning.
+
 ### Medium Dashboard Prune
 
 - Pruned the live dashboard Philosophy Garden area into one smaller Optional Reflection section.

@@ -4,13 +4,14 @@ This roadmap is intentionally small. Luna is a public dashboard prototype right 
 
 ## Completed
 
+- Pruned the lower public dashboard support sections so builder/reference material stays off the front page while Recent Runs, Project Health, and one quiet Project Trail note keep a small public trail.
 - Pruned the live dashboard Philosophy Garden area into one optional Reflection section so the main page stays focused on the core return loop.
 - Added `CHANGELOG.md` to keep a dated project history.
 - Created a minimal static dashboard page in `index.html`.
 - Added calm styling so the dashboard feels readable and welcoming.
 - Showed Luna's current identity, goal, last completed run, next suggested step, and quiet shelves for what can wait.
 - Added structured project data in `project.json` for the dashboard to read.
-- Added a lightweight Idea Queue, Decision Log, Glossary, and Local Setup section.
+- Kept Idea Queue, Decision Log, Glossary, and Local Setup as reference material in project data/docs instead of making them dominate the public dashboard.
 - Added a small Next Action card to help beginners choose one clear safe next task.
 - Added a small Ignore For Now card near Next Action so returners can see what can wait without turning it into a backlog or feature board.
 - Added a small Record the Change card near Next Action and Ignore For Now so returners know how to update the public project trail without starting a logging system or task tracker.
@@ -32,7 +33,7 @@ Near-term work should stay focused on the current return path: help someone see 
 - Keep `project.json` aligned with the dashboard after each small content change.
 - Keep the Next Action card aligned with the safest current task.
 - Review one existing dashboard or documentation sentence at a time for beginner-friendly return-path clarity.
-- Let the current dashboard rest between changes so Luna does not grow too quickly, especially before adding another dashboard section, mode workflow, or fourth medium dashboard step.
+- Let the current dashboard rest between changes so Luna does not grow too quickly, especially before adding another dashboard section, mode workflow, fifth medium dashboard step, or more public-page pruning.
 - Keep Philosophy Garden as an optional supporting reflection layer; avoid adding more garden dashboard sections unless there is a clear, small reason.
 
 ## Later Direction
