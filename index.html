@@ -249,34 +249,6 @@
       color: #d9d1c3;
     }
 
-    .choose-next-action {
-      margin-top: 14px;
-      padding: 9px 14px;
-      background: #eadfcb;
-      border: 0;
-      border-radius: 999px;
-      color: #20232b;
-      cursor: pointer;
-      font: inherit;
-      font-weight: 700;
-    }
-
-    .choose-next-action:hover,
-    .choose-next-action:focus-visible {
-      background: #f7e3b5;
-      outline: 3px solid rgb(247 227 181 / 25%);
-      outline-offset: 2px;
-    }
-
-    .chosen-next-action {
-      margin-top: 12px;
-      padding: 12px;
-      background: rgb(168 213 186 / 10%);
-      border: 1px solid rgb(168 213 186 / 24%);
-      border-radius: 10px;
-      color: #d9d1c3;
-    }
-
     .next-action-label {
       color: #f7e3b5;
       font-weight: 700;
@@ -289,15 +261,6 @@
 
     .dashboard-list li + li {
       margin-top: 8px;
-    }
-
-    .glossary-term {
-      font-weight: 700;
-    }
-
-    .glossary-meaning {
-      margin: 4px 0 12px;
-      color: #d9d1c3;
     }
 
     .error {
@@ -371,8 +334,6 @@
         <p class="next-action-status">Status: <span id="next-action-status">Loading project data...</span></p>
         <p id="next-action-description">Loading project data...</p>
         <p><span class="next-action-label">Why it matters:</span> <span id="next-action-why">Loading project data...</span></p>
-        <button class="choose-next-action" id="choose-next-action" type="button" disabled>Choose Next Action</button>
-        <p class="chosen-next-action" id="chosen-next-action" aria-live="polite">Load project data, then choose a suggestion from the Idea Queue.</p>
       </article>
     </section>
 
@@ -429,62 +390,9 @@
       </article>
     </section>
 
-    <section aria-labelledby="dashboard-guide">
-      <h2 id="dashboard-guide">How to Read This Dashboard</h2>
-      <ul class="dashboard-list" id="dashboard-guide-list">
-        <li>Loading project data...</li>
-      </ul>
-    </section>
-
-    <section aria-labelledby="status-history">
-      <h2 id="status-history">Status History</h2>
-      <ul class="dashboard-list" id="status-history-list">
-        <li>Loading project data...</li>
-      </ul>
-    </section>
-
-    <section aria-labelledby="local-setup">
-      <h2 id="local-setup">Local Setup</h2>
-      <p>Use these steps to preview Luna safely on your own computer without publishing anything.</p>
-      <ol class="dashboard-list" id="local-setup-list">
-        <li>Loading project data...</li>
-      </ol>
-    </section>
-
-    <section aria-labelledby="future-ideas">
-      <h2 id="future-ideas">Future Ideas</h2>
-      <ul class="dashboard-list" id="future-ideas-list">
-        <li>Loading project data...</li>
-      </ul>
-    </section>
-
-    <section aria-labelledby="idea-queue">
-      <h2 id="idea-queue">Idea Queue</h2>
-      <p>Small candidate tasks Luna can choose from next.</p>
-      <ul class="dashboard-list" id="idea-queue-list">
-        <li>Loading project data...</li>
-      </ul>
-      <h3>How to Choose</h3>
-      <ul class="dashboard-list" id="idea-queue-guide-list">
-        <li>Loading project data...</li>
-      </ul>
-    </section>
-
-    <section aria-labelledby="glossary">
-      <h2 id="glossary">Glossary</h2>
-      <p>Beginner-friendly meanings for project terms used by Luna.</p>
-      <dl class="dashboard-list" id="glossary-list">
-        <div>
-          <dt>Loading project data...</dt>
-        </div>
-      </dl>
-    </section>
-
-    <section aria-labelledby="decision-log">
-      <h2 id="decision-log">Decision Log</h2>
-      <ul class="dashboard-list" id="decision-log-list">
-        <li>Loading project data...</li>
-      </ul>
+    <section aria-labelledby="project-trail">
+      <h2 id="project-trail">Project Trail</h2>
+      <p>Recent Runs and Project Health keep a small public trail here. Builder notes such as local setup, glossary, idea queue, future ideas, and decision log stay in README.md, docs, and project.json instead of filling the front page.</p>
     </section>
   </main>
 
@@ -504,16 +412,6 @@
       });
     };
 
-    const showStatusHistory = (id, entries) => {
-      const list = document.getElementById(id);
-      list.innerHTML = '';
-
-      entries.forEach((entry) => {
-        const item = document.createElement('li');
-        item.textContent = `${entry.date}: ${entry.note}`;
-        list.appendChild(item);
-      });
-    };
 
     const createDashboardCardItem = (itemClass, parts) => {
       const item = document.createElement('li');
@@ -607,53 +505,7 @@
     };
 
 
-    const setupNextActionChooser = (ideaQueue) => {
-      const button = document.getElementById('choose-next-action');
-      const suggestion = document.getElementById('chosen-next-action');
 
-      if (!Array.isArray(ideaQueue) || ideaQueue.length === 0) {
-        button.disabled = true;
-        suggestion.textContent = 'No Idea Queue suggestions are available yet.';
-        return;
-      }
-
-      button.disabled = false;
-      suggestion.textContent = 'Choose a suggestion when you want one calm next action from the Idea Queue.';
-
-      let previousIdeaIndex = -1;
-
-      button.addEventListener('click', () => {
-        const availableIdeaIndexes = ideaQueue
-          .map((idea, index) => index)
-          .filter((index) => index !== previousIdeaIndex);
-        const choices = availableIdeaIndexes.length > 0 ? availableIdeaIndexes : [0];
-        const choiceIndex = Math.floor(Math.random() * choices.length);
-        const ideaIndex = choices[choiceIndex];
-
-        previousIdeaIndex = ideaIndex;
-        suggestion.textContent = `Suggested next action: ${ideaQueue[ideaIndex]}`;
-      });
-    };
-
-    const showGlossary = (id, entries) => {
-      const list = document.getElementById(id);
-      list.innerHTML = '';
-
-      entries.forEach((entry) => {
-        const wrapper = document.createElement('div');
-        const term = document.createElement('dt');
-        const meaning = document.createElement('dd');
-
-        term.className = 'glossary-term';
-        meaning.className = 'glossary-meaning';
-        term.textContent = entry.term;
-        meaning.textContent = entry.meaning;
-
-        wrapper.appendChild(term);
-        wrapper.appendChild(meaning);
-        list.appendChild(wrapper);
-      });
-    };
 
     const showError = () => {
       showText('welcome-title', 'Welcome unavailable');
@@ -673,20 +525,10 @@
       showText('reflection-card-question', 'Try opening this page from a local web server.');
       showText('reflection-card-beginner-note', 'Keep reflection answers general and public-safe.');
       showText('reflection-card-why', 'The dashboard needs project.json before it can show the reflection card.');
-      document.getElementById('choose-next-action').disabled = true;
-      showText('chosen-next-action', 'Idea Queue suggestions are unavailable until project data loads.');
       document.getElementById('ignore-for-now-list').innerHTML = '<li class="error">Ignore For Now notes are unavailable.</li>';
       document.getElementById('record-the-change-list').innerHTML = '<li class="error">Record the Change notes are unavailable.</li>';
-      document.getElementById('dashboard-guide-list').innerHTML = '<li class="error">Dashboard guide notes are unavailable.</li>';
-      document.getElementById('local-setup-list').innerHTML = '<li class="error">Local setup steps are unavailable.</li>';
       document.getElementById('project-health-list').innerHTML = '<li class="error">Project health facts are unavailable.</li>';
       document.getElementById('recent-runs-list').innerHTML = '<li class="error">Recent runs are unavailable.</li>';
-      document.getElementById('status-history-list').innerHTML = '<li class="error">Status history entries are unavailable.</li>';
-      document.getElementById('future-ideas-list').innerHTML = '<li class="error">Future ideas are unavailable.</li>';
-      document.getElementById('idea-queue-list').innerHTML = '<li class="error">Idea queue entries are unavailable.</li>';
-      document.getElementById('idea-queue-guide-list').innerHTML = '<li class="error">Idea queue guide notes are unavailable.</li>';
-      document.getElementById('glossary-list').innerHTML = '<div><dt class="error">Glossary entries are unavailable.</dt></div>';
-      document.getElementById('decision-log-list').innerHTML = '<li class="error">Decision log entries are unavailable.</li>';
     };
 
     fetch('project.json')
@@ -715,16 +557,7 @@
         showList('ignore-for-now-list', project.ignoreForNow);
         showList('record-the-change-list', project.recordTheChange);
         showReflectionCard(project.reflectionCard);
-        showList('dashboard-guide-list', project.dashboardGuide);
-        showList('local-setup-list', project.localSetup);
         showRecentRuns('recent-runs-list', project.statusHistory);
-        showStatusHistory('status-history-list', project.statusHistory);
-        showList('future-ideas-list', project.futureIdeas);
-        showList('idea-queue-list', project.ideaQueue);
-        setupNextActionChooser(project.ideaQueue);
-        showList('idea-queue-guide-list', project.ideaQueueGuide);
-        showGlossary('glossary-list', project.glossary);
-        showList('decision-log-list', project.decisionLog);
       })
       .catch(showError);
   </script>

@@ -10,15 +10,15 @@ Help someone return to one small project, see where they left off and what chang
 
 ## Last Completed Run
 
-- 2026-07-09: Pruned the live dashboard Philosophy Garden area into one optional Reflection section so the front page stays focused on Luna's core return loop before any usable prototype work.
+- 2026-07-09: Pruned the lower public dashboard support sections so builder/reference material stays in README, docs, and project.json while the front page keeps the core return loop, Recent Runs, Project Health, and one quiet Project Trail note.
 
 ## Next Suggested Step
 
-Rest before starting a usable app prototype, editable UI, local storage, backend, account system, dashboard expansion, mode workflow, fourth medium dashboard step, or more Philosophy Garden dashboard work.
+Rest before starting a usable app prototype, editable UI, local storage, backend, account system, dashboard expansion, mode workflow, fifth medium dashboard step, or more public-page pruning.
 
 ## Notes
 
-The live dashboard now keeps Philosophy Garden quiet by showing one Optional Reflection section instead of separate Creative Seed, Garden Review, Next Garden Update, Garden Cycle, and Garden Path sections. The front page should stay focused on the core return loop before any usable prototype work.
+The live dashboard now keeps lower support material quiet by removing the rendered Dashboard Guide, Status History, Local Setup, Future Ideas, Idea Queue, Glossary, and Decision Log sections from the public front page. Recent Runs, Project Health, and one quiet Project Trail note keep a small public trail, while builder/reference material stays available in README.md, docs, and project.json. The front page should stay focused on the core return loop before any usable prototype work.
 
 The prototype readiness note now records that Luna's self-demo dashboard is coherent enough to show the core return loop: return, see status and Current Mode, see what changed last, choose one clear Next Action, see what can wait with Ignore For Now, Record the Change, and rest. The next phase is not more dashboard cards by default; after rest, it should be a tiny local usable prototype for one project, without accounts, backend, database, SaaS structure, or a multi-project system.
 
