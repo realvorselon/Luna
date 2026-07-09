@@ -2,6 +2,12 @@
 
 ## 2026-07-09
 
+### Moonlit Dashboard Palette Alignment
+
+- Updated the existing `index.html` CSS with a restrained moonlit night palette: deep navy background, slate cards, moon-cream text, muted periwinkle/silver accents, and tiny lantern-gold highlights only where useful.
+- Kept the dashboard structure and core content unchanged so this stays a visual mood alignment pass rather than a redesign or usable prototype.
+- Updated `README.md`, `project.json`, `STATE.md`, and `ROADMAP.md` so the public trail rests before prototype work, dashboard expansion, more pruning, or another visual redesign.
+
 ### Supporting Sections Prune
 
 - Removed the rendered Dashboard Guide, Status History, Local Setup, Future Ideas, Idea Queue, Glossary, and Decision Log sections from `index.html` so the public front page feels less like a repo maintenance control panel.

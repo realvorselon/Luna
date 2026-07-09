@@ -1,6 +1,10 @@
 {
-  "status": "Resting after supporting sections prune",
+  "status": "Resting after moonlit dashboard palette alignment",
   "statusHistory": [
+    {
+      "date": "2026-07-09",
+      "note": "Aligned the public dashboard CSS with a restrained moonlit night palette while keeping the existing structure and core return loop unchanged."
+    },
     {
       "date": "2026-07-09",
       "note": "Pruned the lower public dashboard support sections so builder/reference material stays in README, docs, and project.json while the front page keeps the core return loop, Recent Runs, Project Health, and one quiet Project Trail note."
@@ -319,8 +323,8 @@
     }
   ],
   "currentGoal": "Help someone return to one small project, see where they left off and what changed last, choose one clear Next Action, know what to ignore for now, record the change, and rest before adding more while keeping Philosophy Garden clearly optional.",
-  "lastCompletedRun": "2026-07-09: Pruned the lower public dashboard support sections so builder/reference material stays in README, docs, and project.json while the front page keeps the core return loop, Recent Runs, Project Health, and one quiet Project Trail note.",
-  "nextStep": "Rest before starting a usable app prototype, editable UI, local storage, backend, account system, dashboard expansion, mode workflow, fifth medium dashboard step, or more public-page pruning.",
+  "lastCompletedRun": "2026-07-09: Aligned the public dashboard CSS with a restrained moonlit night palette while keeping the existing structure and core return loop unchanged.",
+  "nextStep": "Rest before starting a usable app prototype, editable UI, local storage, backend, account system, dashboard expansion, mode workflow, more public-page pruning, or another visual redesign.",
   "dashboardGuide": [
     "Welcome starts the path to read through Record the Change before choosing more work.",
     "Status gives a quick snapshot of how the project is doing right now.",
@@ -331,7 +335,7 @@
     "Optional Reflection can wait; Philosophy Garden is a gentle reflection layer, not Luna's main engine."
   ],
   "futureIdeas": [
-    "Rest before starting a tiny local usable prototype for one project; do not add more dashboard cards or public-page pruning by default.",
+    "Rest before starting a tiny local usable prototype for one project; do not add more dashboard cards, public-page pruning, or another visual redesign by default.",
     "Review one existing sentence or section for beginner clarity, especially around returning to one small project and choosing one clear Next Action.",
     "Keep README.md, STATE.md, CHANGELOG.md, and project.json aligned whenever the public record changes.",
     "Only later consider surfacing an existing quiet item on the dashboard after the front door and current goal still feel calm."
@@ -348,7 +352,7 @@
     "The Garden Cycle connects the Reflection Card, Garden Review, Next Garden Update, and rest step so beginners can see how Philosophy Garden pieces fit together."
   ],
   "ideaQueue": [
-    "Rest before starting a tiny local usable prototype for one project; do not add editable UI, local storage, backend, account system, mode workflow, dashboard expansion, fifth medium dashboard step, or more public-page pruning yet.",
+    "Rest before starting a tiny local usable prototype for one project; do not add editable UI, local storage, backend, account system, mode workflow, dashboard expansion, more public-page pruning, or another visual redesign yet.",
     "Review one existing sentence or section for beginner clarity, especially around returning to one small project and choosing one clear Next Action.",
     "Keep README.md, STATE.md, CHANGELOG.md, and project.json aligned whenever the public record changes.",
     "Only later consider surfacing an existing quiet item on the dashboard after the front door and current goal still feel calm."
@@ -387,9 +391,9 @@
   ],
   "nextAction": {
     "title": "Rest before starting the usable prototype",
-    "description": "Rest before starting a usable app prototype, editable UI, local storage, backend, account system, dashboard expansion, mode workflow, fifth medium dashboard step, or more public-page pruning.",
-    "whyItMatters": "Resting keeps the pruned self-demo dashboard coherent and prevents Luna from turning the next phase into more dashboard cards, app architecture, a SaaS structure, accounts, a backend, a database, or a multi-project system.",
-    "status": "Resting after supporting sections prune"
+    "description": "Rest before starting a usable app prototype, editable UI, local storage, backend, account system, dashboard expansion, mode workflow, more public-page pruning, or another visual redesign.",
+    "whyItMatters": "Resting keeps the moonlit self-demo dashboard calm and prevents Luna from turning this visual alignment into more dashboard redesign, app architecture, editable UI, storage, accounts, backend, database, or a multi-project system.",
+    "status": "Resting after moonlit dashboard palette alignment"
   },
   "creativeSeed": {
     "name": "Philosophy Garden",
@@ -457,7 +461,7 @@
   ],
   "currentMode": {
     "name": "Rest",
-    "description": "The project is pausing after pruning lower support sections so the public dashboard can stay calm before any prototype work.",
-    "whyItMatters": "Rest keeps Luna from turning useful reference material into front-page clutter or another dashboard expansion."
+    "description": "The project is pausing after a restrained moonlit dashboard palette alignment so the public dashboard can stay calm before any prototype work.",
+    "whyItMatters": "Rest keeps Luna from turning a small visual mood pass into another redesign, dashboard expansion, or app build."
   }
 }

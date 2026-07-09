@@ -10,13 +10,15 @@ Help someone return to one small project, see where they left off and what chang
 
 ## Last Completed Run
 
-- 2026-07-09: Pruned the lower public dashboard support sections so builder/reference material stays in README, docs, and project.json while the front page keeps the core return loop, Recent Runs, Project Health, and one quiet Project Trail note.
+- 2026-07-09: Aligned the public dashboard CSS with a restrained moonlit night palette while keeping the existing structure and core return loop unchanged.
 
 ## Next Suggested Step
 
-Rest before starting a usable app prototype, editable UI, local storage, backend, account system, dashboard expansion, mode workflow, fifth medium dashboard step, or more public-page pruning.
+Rest before starting a usable app prototype, editable UI, local storage, backend, account system, dashboard expansion, mode workflow, more public-page pruning, or another visual redesign.
 
 ## Notes
+
+The dashboard now uses a restrained moonlit night palette: deep navy background, soft slate cards, moon-cream primary text, muted periwinkle and silver accents, and tiny lantern-gold highlights only around the existing Next Action focus. The structure and core content stayed the same so the public front page remains a calm return loop rather than a new redesign or usable prototype.
 
 The live dashboard now keeps lower support material quiet by removing the rendered Dashboard Guide, Status History, Local Setup, Future Ideas, Idea Queue, Glossary, and Decision Log sections from the public front page. Recent Runs, Project Health, and one quiet Project Trail note keep a small public trail, while builder/reference material stays available in README.md, docs, and project.json. The front page should stay focused on the core return loop before any usable prototype work.
 
