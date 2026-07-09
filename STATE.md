@@ -6,15 +6,15 @@ Luna is an autonomous repository experiment. It begins as a self-documenting see
 
 ## Current Goal
 
-Keep the dashboard and docs focused on Luna's plain-language welcome, one clear Next Action, the stable Philosophy Garden cycle, and a calm stewardship note for future public-safe updates.
+Keep the dashboard and docs focused on Luna's plain-language welcome, one clear Next Action, the stable Philosophy Garden cycle, and calm guidance for future public-safe updates.
 
 ## Last Completed Run
 
-- 2026-07-08: Added a short public-safe stewardship design note that describes a future small-project loop without adding a dashboard feature, data object, roadmap, or app plan.
+- 2026-07-09: Added a beginner-friendly user guidance note that explains how people can approach Luna without needing to be good at prompting.
 
 ## Next Suggested Step
 
-Rest or review docs/STEWARDSHIP.md before building any stewardship feature.
+Rest or review docs/USER_GUIDANCE.md before adding any user-guidance feature.
 
 ## Notes
 
@@ -41,3 +41,5 @@ The README longer-term vision note was reviewed against the dashboard, roadmap, 
 The roadmap now gently matches the README longer-term vision: near-term work stays with the current dashboard, one clear Next Action, and the one-small-change rhythm, while the later direction may become a calm companion for small projects. The next step is to rest and review before adding any new feature idea or dashboard section.
 
 The stewardship note now describes a future small-project loop in plain language: Project State, Mode, Reason, One Next Action, Record, and Rest. It should stay as guidance for now; the next step is to rest or review it before building any stewardship feature.
+
+The user guidance note now explains that people should not need to be good at prompting to use Luna. Luna should help users return to a small project, choose what kind of help is needed, continue with one calm next step, and avoid turning the project into an overwhelming blank chatbot exchange. The next step is to rest or review `docs/USER_GUIDANCE.md` before adding any user-guidance feature.
