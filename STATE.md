@@ -10,7 +10,7 @@ Help someone return to one small project, see where they left off and what chang
 
 ## Last Completed Run
 
-- 2026-07-09: Clarified the README beginner read-through note so the first dashboard cards orient around current project state, last completed run, and one clear Next Action before the Philosophy Garden.
+- 2026-07-09: Clarified the foundation map so it reflects Luna's current return-to-one-small-project shape and keeps the Philosophy Garden as a supporting reflection layer.
 
 ## Next Suggested Step
 
@@ -76,3 +76,5 @@ The Future Ideas and Idea Queue shelves now stay short, calm, and aligned with L
 The README top framing now foregrounds Luna's return-to-one-small-project shape: seeing where the project left off, seeing what changed last, choosing one clear Next Action, knowing what to ignore for now, recording the change, and resting before adding more. The Philosophy Garden remains as a gentle supporting reflection layer around that core return path rather than the whole project or main engine. The next step is to rest before adding a dashboard section, app feature, visual styling, backend, account system, roadmap expansion, new planning note, additional example, or future visual idea.
 
 The README beginner read-through note now says the first dashboard cards orient around the current project state, last completed run, and one clear Next Action before the Philosophy Garden, which remains a gentle supporting reflection layer. The next step is to rest before adding a dashboard section, app feature, visual styling, backend, account system, roadmap expansion, new planning note, additional example, or future visual idea.
+
+The foundation map now foregrounds Luna's current return-to-one-small-project shape: README.md as the front door, STATE.md and project.json as the current state and next-action record, index.html as the public dashboard, docs/EXAMPLE_RETURN.md as Luna in motion, and the Philosophy Garden as a gentle supporting reflection layer rather than the main engine. The next step is to rest before adding a dashboard section, app feature, visual styling, backend, account system, roadmap expansion, new planning note, additional example, or future visual idea.

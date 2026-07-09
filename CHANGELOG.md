@@ -2,6 +2,12 @@
 
 ## 2026-07-09
 
+### Foundation Map Return-Path Clarity Review
+
+- Clarified `docs/FOUNDATION.md` so it points new visitors toward Luna's current return-to-one-small-project shape instead of reading like a Philosophy Garden dashboard plan.
+- Named `README.md` as the front door, `STATE.md` and `project.json` as the current state and next-action record, `index.html` as the public dashboard, and `docs/EXAMPLE_RETURN.md` as Luna in motion.
+- Kept the Philosophy Garden framed as a gentle supporting reflection layer and updated `project.json` and `STATE.md` so the newest completed run and next step stay aligned around resting before new structure, features, styling, planning, examples, or visual ideas.
+
 ### README Beginner Read-Through Note Clarity Review
 
 - Clarified the README beginner read-through note so the first dashboard cards orient beginners around the current project state, last completed run, and one clear Next Action before the Philosophy Garden.
