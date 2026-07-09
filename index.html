@@ -80,7 +80,8 @@
     }
 
     .recent-runs-card,
-    .project-health-card {
+    .project-health-card,
+    .current-mode-card {
       background: #1b1d24;
       border: 1px solid #34363d;
       border-radius: 14px;
@@ -181,6 +182,22 @@
         0 0 0 1px rgb(247 227 181 / 5%),
         0 18px 40px rgb(0 0 0 / 18%),
         0 0 34px rgb(247 227 181 / 8%);
+    }
+
+    .current-mode-card h3 {
+      margin: 0 0 8px;
+      color: #f7e3b5;
+      font-size: 1.05rem;
+    }
+
+    .current-mode-card p {
+      margin: 0;
+      color: #eadfcb;
+    }
+
+    .current-mode-card p + p {
+      margin-top: 10px;
+      color: #d9d1c3;
     }
 
     .next-action-card h3 {
@@ -439,6 +456,15 @@
     </section>
 
     <p class="project-status">Project status: <span id="project-status-text">Loading project data...</span></p>
+
+    <section aria-labelledby="current-mode">
+      <h2 id="current-mode">Current Mode</h2>
+      <article class="current-mode-card">
+        <h3 id="current-mode-name">Loading project data...</h3>
+        <p id="current-mode-description">Loading project data...</p>
+        <p><span class="next-action-label">Why it matters:</span> <span id="current-mode-why">Loading project data...</span></p>
+      </article>
+    </section>
 
     <section aria-labelledby="current-goal">
       <h2 id="current-goal">Current Goal</h2>
@@ -834,6 +860,9 @@
       showText('welcome-sentence', 'Try opening this page from a local web server.');
       showText('project-status-text', 'Unavailable');
       showText('current-goal-text', 'Project data could not be loaded yet.');
+      showText('current-mode-name', 'Mode unavailable');
+      showText('current-mode-description', 'Try opening this page from a local web server.');
+      showText('current-mode-why', 'The dashboard needs project.json before it can show the current mode.');
       showText('last-completed-run-text', 'Try opening this page from a local web server.');
       showText('next-step-text', 'Check that project.json is next to index.html.');
       showText('next-action-title', 'Next action unavailable');
@@ -884,6 +913,9 @@
         showText('welcome-sentence', project.welcome.sentence);
         showText('project-status-text', project.status);
         showText('current-goal-text', project.currentGoal);
+        showText('current-mode-name', project.currentMode.name);
+        showText('current-mode-description', project.currentMode.description);
+        showText('current-mode-why', project.currentMode.whyItMatters);
         showProjectHealth('project-health-list', project);
         showText('last-completed-run-text', project.lastCompletedRun);
         showText('next-step-text', project.nextStep);
