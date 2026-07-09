@@ -1,6 +1,10 @@
 {
-  "status": "Resting after Future Ideas and Idea Queue shelf cleanup",
+  "status": "Resting after README top-framing clarity review",
   "statusHistory": [
+    {
+      "date": "2026-07-09",
+      "note": "Clarified the top README framing so Luna foregrounds returning to one small project while keeping the Philosophy Garden as a supporting reflection layer."
+    },
     {
       "date": "2026-07-09",
       "note": "Cleaned up the Future Ideas and Idea Queue shelves so they match Luna's current return-to-one-small-project direction without adding features or new notes."
@@ -259,7 +263,7 @@
     }
   ],
   "currentGoal": "Help someone return to one small project, see where they left off and what changed last, choose one clear Next Action, know what to ignore for now, record the change, and rest before adding more while preserving Luna's v0.1 dashboard and Philosophy Garden.",
-  "lastCompletedRun": "2026-07-09: Cleaned up the Future Ideas and Idea Queue shelves so they match Luna's current return-to-one-small-project direction without adding features or new notes.",
+  "lastCompletedRun": "2026-07-09: Clarified the top README framing so Luna foregrounds returning to one small project while keeping the Philosophy Garden as a supporting reflection layer.",
   "nextStep": "Rest before adding a dashboard section, app feature, visual styling, backend, account system, roadmap expansion, new planning note, additional example, or future visual idea.",
   "dashboardGuide": [
     "Welcome explains Luna in plain language before the project details begin.",
@@ -327,8 +331,8 @@
   "nextAction": {
     "title": "Rest before adding more structure or features",
     "description": "Rest before adding a dashboard section, app feature, visual styling, backend, account system, roadmap expansion, new planning note, additional example, or future visual idea.",
-    "whyItMatters": "Resting keeps the Future Ideas and Idea Queue shelf cleanup from turning into a dashboard section, feature, styling pass, backend plan, account system, roadmap expansion, new note, example, or future visual idea.",
-    "status": "Resting after Future Ideas and Idea Queue shelf cleanup"
+    "whyItMatters": "Resting keeps the README top-framing clarity review from turning into a dashboard section, feature, styling pass, backend plan, account system, roadmap expansion, new note, example, or future visual idea.",
+    "status": "Resting after README top-framing clarity review"
   },
   "creativeSeed": {
     "name": "Philosophy Garden",

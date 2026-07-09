@@ -1,20 +1,20 @@
 # Luna
 
-Luna is a small autonomous repository experiment. It grows through one small, useful change at a time while keeping a clear public record of what changed and why.
+Luna is a small autonomous repository experiment for helping someone return to one small project, see where they left off, choose one clear Next Action, record what changed, and rest before adding more.
 
 ## v0.1 Milestone
 
-Luna now has a plain-language welcome, a clear Next Action, and a Philosophy Garden cycle that moves through a Reflection Card, Garden Review, Next Garden Update, and Rest Before Growing Again. This gives beginners one calm path to follow without rushing the project.
+Luna now has a plain-language welcome, a clear Next Action, and a quiet Philosophy Garden cycle that supports the core return path with a Reflection Card, Garden Review, Next Garden Update, and Rest Before Growing Again. This gives beginners one calm path for seeing what changed last, choosing what to do next, knowing what to ignore for now, and stopping before the project grows too quickly.
 
 ## Longer-Term Vision
 
-Luna is currently a small public dashboard prototype. Over time, the idea is for Luna to become a calm project companion that helps people with small projects remember what they are making, see what changed last, choose one small next step, avoid overwhelm, and keep a clean public record.
+Luna is currently a small public dashboard prototype. Over time, the idea is for Luna to become a calm project companion that helps people return to one small project, remember where they left off, see what changed last, choose one small next step, know what to ignore for now, record the change, and rest before adding more.
 
 ## Dashboard
 
-Luna's v0.1 dashboard is a simple web page in `index.html`. It reads from `project.json` and starts with a plain-language Welcome, Status, Current Goal, Last Completed Run, and one clear Next Action.
+Luna's v0.1 dashboard is a simple web page in `index.html`. It reads from `project.json` and starts with a plain-language Welcome, Status, Current Goal, Last Completed Run, and one clear Next Action so someone can quickly see where the project left off and what changed last.
 
-The Philosophy Garden follows below with a Creative Seed, Reflection Card, Garden Review, Next Garden Update, Garden Cycle, and Garden Path. These sections keep the project gentle, public-safe, and easy for beginners to follow one small step at a time.
+The Philosophy Garden follows below with a Creative Seed, Reflection Card, Garden Review, Next Garden Update, Garden Cycle, and Garden Path. These sections are a gentle supporting reflection layer around the return path, not the whole project or main engine.
 
 Beginner read-through note: read the v0.1 dashboard slowly from Welcome through Next Action before choosing any new work. The first few cards are meant to orient you before the Philosophy Garden asks for another small step.
 
