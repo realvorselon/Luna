@@ -1,6 +1,10 @@
 {
-  "status": "Resting after Record the Change dashboard card",
+  "status": "Resting after Record the Change guidance alignment",
   "statusHistory": [
+    {
+      "date": "2026-07-09",
+      "note": "Aligned existing dashboard guidance with the Record the Change return path so beginners read from Welcome through Record the Change, use Next Action, see what can wait, record one useful change, and rest."
+    },
     {
       "date": "2026-07-09",
       "note": "Added a small Record the Change dashboard card near Next Action and Ignore For Now so the return loop explains updating the public project trail after one useful change."
@@ -295,10 +299,10 @@
     }
   ],
   "currentGoal": "Help someone return to one small project, see where they left off and what changed last, choose one clear Next Action, know what to ignore for now, record the change, and rest before adding more while preserving Luna's v0.1 dashboard and Philosophy Garden.",
-  "lastCompletedRun": "2026-07-09: Added a small Record the Change dashboard card near Next Action and Ignore For Now so the return loop explains updating the public project trail after one useful change.",
-  "nextStep": "Rest before adding another dashboard section, app feature, visual styling, backend, account system, roadmap expansion, new planning note, additional example, future visual idea, or third medium dashboard step.",
+  "lastCompletedRun": "2026-07-09: Aligned existing dashboard guidance with the Record the Change return path so beginners read from Welcome through Record the Change, use Next Action, see what can wait, record one useful change, and rest.",
+  "nextStep": "Rest before adding another dashboard section, app feature, visual styling, backend, account system, roadmap expansion, new planning note, additional example, future visual idea, Current Mode card, or third medium dashboard step.",
   "dashboardGuide": [
-    "Welcome explains Luna in plain language before the project details begin.",
+    "Welcome starts the path to read through Record the Change before choosing more work.",
     "Status gives a quick snapshot of how the project is doing right now.",
     "Current Goal is the main thing Luna is focused on.",
     "Last Completed Run shows the most recent finished update.",
