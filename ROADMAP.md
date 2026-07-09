@@ -1,17 +1,17 @@
 # Roadmap
 
-This roadmap is intentionally small. Luna is a public dashboard prototype right now, so each item should stay calm, public-safe, beginner-friendly, and doable as one careful run.
+This roadmap is intentionally small. Luna is a public dashboard prototype right now, and its core is helping someone return to one small project, see where they left off, see what changed last, choose one clear Next Action, know what to ignore for now, record the change, and rest before adding more.
 
 ## Completed
 
 - Added `CHANGELOG.md` to keep a dated project history.
 - Created a minimal static dashboard page in `index.html`.
 - Added calm styling so the dashboard feels readable and welcoming.
-- Showed Luna's current identity, goal, last completed run, next suggested step, and future ideas.
+- Showed Luna's current identity, goal, last completed run, next suggested step, and quiet shelves for what can wait.
 - Added structured project data in `project.json` for the dashboard to read.
 - Added a lightweight Idea Queue, Decision Log, Glossary, and Local Setup section.
-- Added a small Next Action card to help beginners choose one safe next task.
-- Started exploring one tiny creative direction with a public-safe Philosophy Garden seed.
+- Added a small Next Action card to help beginners choose one clear safe next task.
+- Started a public-safe Philosophy Garden seed as a gentle supporting reflection layer.
 - Tidied the changelog into clearer 2026-07-07 sections.
 - Added a simple Garden Path so Philosophy Garden updates can grow slowly from a reflection card to a gentle next update.
 - Added a Garden Review so Luna can review a reflection card before choosing the next gentle update.
@@ -22,17 +22,17 @@ This roadmap is intentionally small. Luna is a public dashboard prototype right 
 
 ## Near Term
 
-Near-term work should stay focused on the current dashboard, one clear Next Action, and Luna's one-small-change rhythm. Choose a task that is small enough to finish in one careful pull request. When a task changes project direction, dashboard data, or public history, keep `project.json`, `STATE.md`, and `CHANGELOG.md` aligned so the next person can see what changed.
+Near-term work should stay focused on the current return path: help someone see where they left off and what changed last, guide them toward one clear Next Action, name what can be ignored for now, record the change, and rest. Choose a task that is small enough to finish in one careful pull request. When a task changes project direction, dashboard data, or public history, keep `project.json`, `STATE.md`, and `CHANGELOG.md` aligned so the next person can see what changed.
 
 - Keep `project.json` aligned with the dashboard after each small content change.
 - Keep the Next Action card aligned with the safest current task.
-- Review one existing dashboard or documentation sentence at a time for beginner-friendly clarity.
+- Review one existing dashboard or documentation sentence at a time for beginner-friendly return-path clarity.
 - Let the current dashboard rest between changes so Luna does not grow too quickly.
-- Use the Garden Cycle before changing any Philosophy Garden wording, and keep any change public-safe and small.
+- Keep the Philosophy Garden as a gentle supporting reflection layer; use the Garden Cycle before changing its wording, and keep any change public-safe and small.
 
 ## Later Direction
 
-Later, Luna may become a calm companion for small projects. That means helping people remember what they are making, see what changed last, choose one small next step, avoid overwhelm, and keep a clean public record. This is a direction to protect gently, not a big app roadmap.
+Later, Luna may become a calm companion for small projects. That means helping one person return to one small project, remember what is already there, see what changed last, choose one small next step, know what can wait, record the change, and rest. This future app direction should stay small and separate from any build plan; it is a direction to protect gently, not a big app roadmap.
 
 ## Parking Lot
 

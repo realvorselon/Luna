@@ -2,6 +2,12 @@
 
 ## 2026-07-09
 
+### Roadmap Return-Path Alignment Review
+
+- Reviewed `ROADMAP.md` against Luna's current framing as a calm return path for one small project.
+- Made small wording edits so the roadmap foregrounds seeing where the project left off, seeing what changed last, choosing one clear Next Action, knowing what to ignore for now, recording the change, and resting before adding more.
+- Kept the Philosophy Garden framed as a gentle supporting reflection layer and kept future app direction small and separate from any build plan. Updated `project.json` and `STATE.md` so the newest completed run and next step stay aligned around resting before new structure, features, styling, planning, examples, or visual ideas.
+
 ### Foundation Map Return-Path Clarity Review
 
 - Clarified `docs/FOUNDATION.md` so it points new visitors toward Luna's current return-to-one-small-project shape instead of reading like a Philosophy Garden dashboard plan.
