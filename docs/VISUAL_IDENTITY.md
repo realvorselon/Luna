@@ -1,12 +1,12 @@
 # Visual Identity Note
 
-Luna should feel calm, warm, and easy to return to. Her future visual direction should support the project's purpose: helping people remember where they left off, choose one safe next step, and avoid overwhelm.
+Luna should feel calm, warm, and easy to return to. As a small public dashboard prototype that may later become a calm companion for small projects, her future visual direction should support the project's purpose: helping people return to a project, remember where they left off, choose one safe next step, and avoid overwhelm.
 
 This note is guidance only. It is not a request to add code, CSS, images, icons, a dashboard section, a data object, a roadmap, or a larger product plan.
 
 ## Desired Visual Qualities
 
-- A soft dashboard personality that feels like a quiet place to return.
+- A soft dashboard personality that feels like a quiet place to return to a small project.
 - Clear, readable cards that make the current goal, last completed run, and Next Action easy to find.
 - Gentle colors that feel warm without becoming distracting.
 - Calm spacing that gives each idea enough room to breathe.
