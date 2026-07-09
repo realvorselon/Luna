@@ -2,6 +2,12 @@
 
 ## 2026-07-09
 
+### First Dashboard Wording Alignment
+
+- Updated the hard-coded dashboard subtitle in `index.html` so the first visible wording points to returning to one small project, seeing what changed, choosing one clear Next Action, and resting before adding more.
+- Updated the existing `project.json.welcome.sentence` so Welcome also mentions Ignore For Now as what can wait.
+- Updated `README.md`, `project.json`, and `STATE.md` so the newest completed run and next step stay aligned around resting before another dashboard section, feature, styling pass, backend, account system, roadmap expansion, planning note, example, future visual idea, or second medium dashboard step.
+
 ### Ignore For Now Guidance Alignment
 
 - Updated the existing `index.html` How to use Luna list so beginners read from Welcome through Ignore For Now, use Next Action as the one clear thing to do, use Ignore For Now to see what can wait, and rest before adding more.

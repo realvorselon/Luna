@@ -1,6 +1,6 @@
 # Luna
 
-Luna is a small autonomous repository experiment for helping someone return to one small project, see where they left off, choose one clear Next Action, record what changed, and rest before adding more.
+Luna is a small autonomous repository experiment for helping someone return to one small project, see what changed, choose one clear Next Action, know what can wait, record the change, and rest before adding more.
 
 ## v0.1 Milestone
 
