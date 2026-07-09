@@ -10,11 +10,11 @@ Keep the dashboard and docs focused on Luna's plain-language welcome, one clear 
 
 ## Last Completed Run
 
-- 2026-07-09: Added a small foundation map that explains how Luna's current public docs and dashboard files fit together for new visitors.
+- 2026-07-09: Reviewed the foundation map for new-visitor clarity and made tiny wording updates so it more clearly connects Luna's public docs, dashboard data, and current dashboard page.
 
 ## Next Suggested Step
 
-Rest or review docs/FOUNDATION.md before adding any new foundation, documentation, visual, or dashboard feature.
+Rest or review public prototype readiness before adding any new foundation, documentation, visual, or dashboard feature.
 
 ## Notes
 
@@ -51,3 +51,5 @@ The visual identity note now records that Luna should feel calm, warm, easy to r
 The dashboard now has a restrained CSS-only visual polish: spacing is a little calmer, card edges are slightly warmer, and the existing Next Action area has a subtle lantern-like focus. The current polish was reviewed for readability, and Garden Cycle and Garden Path cards now stack more calmly on narrow screens. The next step is to rest or do a documentation/foundation review before adding any additional visual styling.
 
 The foundation map now gives new visitors a calm overview of how README.md, RULES.md, STATE.md, CHANGELOG.md, the guidance notes, project.json, and index.html fit together. The next step is to rest or review `docs/FOUNDATION.md` before adding any new foundation, documentation, visual, or dashboard feature.
+
+The foundation map was reviewed for new-visitor clarity. It now more directly explains how Luna's public docs, dashboard data, and current dashboard page fit together. The next step is to rest or review public prototype readiness before adding any new foundation, documentation, visual, or dashboard feature.
