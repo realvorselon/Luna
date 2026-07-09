@@ -10,11 +10,11 @@ Keep the dashboard and docs focused on Luna's plain-language welcome, one clear 
 
 ## Last Completed Run
 
-- 2026-07-09: Added a short example return walkthrough that shows Luna helping one fictional person return to one small creative project without starting an app build.
+- 2026-07-09: Reorganized the README Where to Look Next section into a calmer hierarchy so beginners know where to start while keeping all useful links available.
 
 ## Next Suggested Step
 
-Rest before adding any app feature, dashboard feature, visual styling, backend, account system, roadmap expansion, additional planning note, or second example.
+Rest before adding a dashboard section, app feature, visual styling, backend, account system, roadmap expansion, new planning note, or additional example.
 
 ## Notes
 
@@ -66,3 +66,5 @@ The minimal app shape review note now reviews the smallest possible future Luna 
 
 
 The example return walkthrough now shows Luna in motion through one fictional, public-safe small project: returning after time away, reading saved state, naming the current mode, seeing what changed last, choosing or skipping one next action, recording the change, and resting before adding more. The next step is to rest before adding any app feature, dashboard feature, visual styling, backend, account system, roadmap expansion, additional planning note, or second example.
+
+The README Where to Look Next section now groups the same useful links into Start here, Understand the foundation, and Deeper design notes so new visitors have a clearer entrance without treating deeper notes as unimportant. The next step is to rest before adding a dashboard section, app feature, visual styling, backend, account system, roadmap expansion, new planning note, or additional example.

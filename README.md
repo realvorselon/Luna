@@ -37,18 +37,28 @@ Then visit `http://localhost:8000` in a browser.
 
 ## Where to Look Next
 
-- `STATE.md` explains Luna's current identity, goal, last run, and next suggested step.
-- `docs/FOUNDATION.md` maps how Luna's current foundation docs and dashboard files fit together.
-- `ROADMAP.md` lists completed work, near-term tasks, and later possibilities.
-- `CHANGELOG.md` records project history by date.
-- `RULES.md` explains Luna's one-small-change rhythm and alignment expectations.
-- `docs/STEWARDSHIP.md` describes a calm future stewardship loop for small projects without adding a feature yet.
-- `docs/APP_SEED.md` describes the smallest honest future app shape Luna may grow toward without starting a build plan.
-- `docs/MINIMAL_APP_SHAPE.md` reviews the smallest possible future Luna app shape before any app feature exists.
-- `docs/EXAMPLE_RETURN.md` shows a short public-safe walkthrough of Luna helping one person return to one small project.
-- `docs/USER_GUIDANCE.md` explains how people can approach Luna without needing to be good at prompting.
-- `docs/VISUAL_IDENTITY.md` describes Luna's calm, warm visual and interface personality direction.
-- `project.json` stores the dashboard data shown on the web page.
+These links are grouped so a new visitor can start with the most useful front doors first, then keep reading when they want more context. The deeper notes still matter; they are just better after the first orientation pieces.
+
+### Start here
+
+- `STATE.md` — current project state, last completed run, and next suggested step.
+- `docs/EXAMPLE_RETURN.md` — a concrete walkthrough showing Luna in motion.
+- `RULES.md` — the one-small-change rhythm and alignment expectations.
+- `project.json` — the dashboard data shown on the web page.
+
+### Understand the foundation
+
+- `docs/FOUNDATION.md` — how Luna's current foundation docs and dashboard files fit together.
+- `ROADMAP.md` — completed work, near-term care, and later direction.
+- `CHANGELOG.md` — dated public history of completed runs.
+
+### Deeper design notes
+
+- `docs/STEWARDSHIP.md` — a calm future stewardship loop for small projects.
+- `docs/USER_GUIDANCE.md` — how people can approach Luna without needing to be good at prompting.
+- `docs/VISUAL_IDENTITY.md` — Luna's calm, warm visual and interface personality direction.
+- `docs/APP_SEED.md` — the smallest honest future app shape Luna may grow toward.
+- `docs/MINIMAL_APP_SHAPE.md` — a review of that smallest possible future app shape before any app feature exists.
 
 ## First Rule
 
