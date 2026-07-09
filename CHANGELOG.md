@@ -2,6 +2,12 @@
 
 ## 2026-07-09
 
+### Prototype Readiness Note
+
+- Added `docs/PROTOTYPE_READINESS.md` as a short public-safe boundary note that Luna's self-demo dashboard is coherent enough to show the core return loop.
+- Clarified that the next phase is not more dashboard cards by default; after rest, it should be a tiny local usable prototype for one project.
+- Updated `README.md`, `ROADMAP.md`, `project.json`, and `STATE.md` so the newest completed run and next step stay aligned around resting before starting a usable app prototype, editable UI, local storage, backend, account system, roadmap expansion, dashboard expansion, mode workflow, or fourth medium dashboard step.
+
 ### Current Mode Dashboard Card
 
 - Added a small Current Mode dashboard card set to Rest so beginners can see Luna is pausing after the Record the Change wording cleanup without turning modes into a workflow.

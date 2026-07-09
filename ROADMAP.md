@@ -14,6 +14,7 @@ This roadmap is intentionally small. Luna is a public dashboard prototype right 
 - Added a small Ignore For Now card near Next Action so returners can see what can wait without turning it into a backlog or feature board.
 - Added a small Record the Change card near Next Action and Ignore For Now so returners know how to update the public project trail without starting a logging system or task tracker.
 - Added a small Current Mode card set to Rest near the top dashboard flow so beginners can see Luna is pausing without turning modes into a workflow engine.
+- Added a prototype readiness note marking the self-demo dashboard as coherent enough for the core return loop before a tiny local usable prototype for one project.
 - Started a public-safe Philosophy Garden seed as a gentle supporting reflection layer.
 - Tidied the changelog into clearer 2026-07-07 sections.
 - Added a simple Garden Path so Philosophy Garden updates can grow slowly from a reflection card to a gentle next update.
@@ -34,6 +35,8 @@ Near-term work should stay focused on the current return path: help someone see 
 - Keep the Philosophy Garden as a gentle supporting reflection layer; use the Garden Cycle before changing its wording, and keep any change public-safe and small.
 
 ## Later Direction
+
+The next phase is not more dashboard cards by default. After rest, Luna may explore a tiny usable prototype for one project that stays local and simple at first: no accounts, backend, database, SaaS structure, or multi-project system.
 
 Later, Luna may become a calm companion for small projects. That means helping one person return to one small project, remember what is already there, see what changed last, choose one small next step, know what can wait, record the change, and rest. This future app direction should stay small and separate from any build plan; it is a direction to protect gently, not a big app roadmap.
 

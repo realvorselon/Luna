@@ -10,13 +10,15 @@ Help someone return to one small project, see where they left off and what chang
 
 ## Last Completed Run
 
-- 2026-07-09: Added a small Current Mode dashboard card set to Rest so beginners can see Luna is pausing after the Record the Change wording cleanup without turning modes into a workflow.
+- 2026-07-09: Added a short prototype readiness note marking the self-demo dashboard as coherent enough for the core return loop and setting the next phase as a tiny local usable prototype for one project after rest.
 
 ## Next Suggested Step
 
-Rest before adding another dashboard section, app feature, visual styling, backend, account system, roadmap expansion, new planning note, additional example, future visual idea, usable app prototype, local storage, fourth medium dashboard step, or mode workflow.
+Rest before starting a usable app prototype, editable UI, local storage, backend, account system, roadmap expansion, dashboard expansion, mode workflow, or fourth medium dashboard step.
 
 ## Notes
+
+The prototype readiness note now records that Luna's self-demo dashboard is coherent enough to show the core return loop: return, see status and Current Mode, see what changed last, choose one clear Next Action, see what can wait with Ignore For Now, Record the Change, and rest. The next phase is not more dashboard cards by default; after rest, it should be a tiny local usable prototype for one project, without accounts, backend, database, SaaS structure, or a multi-project system.
 
 The dashboard now includes a small Current Mode card set to Rest near the top flow, after Project status and before Current Goal. It uses existing mode language to explain that Luna is pausing after the Record the Change wording cleanup, without adding a selector, workflow engine, task tracker, or app architecture. The next step is to rest before adding another dashboard section, app feature, visual styling, backend, account system, roadmap expansion, new planning note, additional example, future visual idea, usable app prototype, local storage, fourth medium dashboard step, or mode workflow.
 
