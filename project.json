@@ -1,6 +1,10 @@
 {
-  "status": "Resting after Current Goal alignment cleanup",
+  "status": "Resting after Future Ideas and Idea Queue shelf cleanup",
   "statusHistory": [
+    {
+      "date": "2026-07-09",
+      "note": "Cleaned up the Future Ideas and Idea Queue shelves so they match Luna's current return-to-one-small-project direction without adding features or new notes."
+    },
     {
       "date": "2026-07-09",
       "note": "Aligned the Current Goal wording around Luna's core return shape while preserving the v0.1 dashboard and Philosophy Garden."
@@ -255,7 +259,7 @@
     }
   ],
   "currentGoal": "Help someone return to one small project, see where they left off and what changed last, choose one clear Next Action, know what to ignore for now, record the change, and rest before adding more while preserving Luna's v0.1 dashboard and Philosophy Garden.",
-  "lastCompletedRun": "2026-07-09: Aligned the Current Goal wording around Luna's core return shape while preserving the v0.1 dashboard and Philosophy Garden.",
+  "lastCompletedRun": "2026-07-09: Cleaned up the Future Ideas and Idea Queue shelves so they match Luna's current return-to-one-small-project direction without adding features or new notes.",
   "nextStep": "Rest before adding a dashboard section, app feature, visual styling, backend, account system, roadmap expansion, new planning note, additional example, or future visual idea.",
   "dashboardGuide": [
     "Welcome explains Luna in plain language before the project details begin.",
@@ -266,9 +270,10 @@
     "Read the dashboard from top to bottom; if you only need one task, stop at Next Action."
   ],
   "futureIdeas": [
-    "Rest before adding any app feature, dashboard feature, visual styling, backend, account system, roadmap expansion, or additional planning note.",
-    "Review one existing dashboard or documentation sentence at a time for beginner-friendly clarity.",
-    "Keep project.json, STATE.md, and CHANGELOG.md aligned after each small dashboard or documentation change."
+    "Rest before adding more structure; keep the current return path calm before considering another dashboard section or feature.",
+    "Review one existing sentence or section for beginner clarity, especially around returning to one small project and choosing one clear Next Action.",
+    "Keep README.md, STATE.md, CHANGELOG.md, and project.json aligned whenever the public record changes.",
+    "Only later consider surfacing an existing quiet item on the dashboard after the front door and current goal still feel calm."
   ],
   "decisionLog": [
     "A dashboard makes Luna easy to understand at a glance.",
@@ -282,9 +287,10 @@
     "The Garden Cycle connects the Reflection Card, Garden Review, Next Garden Update, and rest step so beginners can see how Philosophy Garden pieces fit together."
   ],
   "ideaQueue": [
-    "Rest before adding any app feature, dashboard feature, visual styling, backend, account system, roadmap expansion, or additional planning note.",
-    "Review one existing dashboard or documentation sentence at a time for beginner-friendly clarity.",
-    "Keep project.json, STATE.md, and CHANGELOG.md aligned after each small dashboard or documentation change."
+    "Rest before adding more structure; keep the current return path calm before considering another dashboard section or feature.",
+    "Review one existing sentence or section for beginner clarity, especially around returning to one small project and choosing one clear Next Action.",
+    "Keep README.md, STATE.md, CHANGELOG.md, and project.json aligned whenever the public record changes.",
+    "Only later consider surfacing an existing quiet item on the dashboard after the front door and current goal still feel calm."
   ],
   "ideaQueueGuide": [
     "Choose one small task that can be finished clearly in a single update.",
@@ -321,8 +327,8 @@
   "nextAction": {
     "title": "Rest before adding more structure or features",
     "description": "Rest before adding a dashboard section, app feature, visual styling, backend, account system, roadmap expansion, new planning note, additional example, or future visual idea.",
-    "whyItMatters": "Resting keeps the Current Goal alignment cleanup from turning into a new dashboard section, feature, styling pass, plan, example, or visual idea.",
-    "status": "Resting after Current Goal alignment cleanup"
+    "whyItMatters": "Resting keeps the Future Ideas and Idea Queue shelf cleanup from turning into a dashboard section, feature, styling pass, backend plan, account system, roadmap expansion, new note, example, or future visual idea.",
+    "status": "Resting after Future Ideas and Idea Queue shelf cleanup"
   },
   "creativeSeed": {
     "name": "Philosophy Garden",

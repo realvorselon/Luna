@@ -2,6 +2,12 @@
 
 ## 2026-07-09
 
+### Future Ideas and Idea Queue Shelf Cleanup
+
+- Cleaned up `project.json.futureIdeas` and `project.json.ideaQueue` so both lists read like a short, quiet shelf aligned with Luna's current return-to-one-small-project direction.
+- Kept the cleanup to existing dashboard data, without adding a dashboard section, app feature, styling, backend, account system, roadmap expansion, new planning note, additional example, or future visual idea.
+- Updated `project.json` and `STATE.md` so the newest completed run and next step stay aligned around resting before adding more structure or features.
+
 ### Current Goal Alignment Cleanup
 
 - Updated `project.json.currentGoal` and `STATE.md` Current Goal so they foreground Luna's core return shape while preserving the existing v0.1 dashboard and Philosophy Garden.
