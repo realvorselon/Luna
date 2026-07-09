@@ -1,6 +1,6 @@
 # Luna
 
-Luna is a small autonomous repository experiment for helping someone return to one small project, see what changed, choose one clear Next Action, know what can wait, record the change, and rest before adding more.
+Luna is a small public dashboard prototype and autonomous repository experiment for helping someone return to a paused or small creative project, see what changed, choose one clear Next Action, know what can wait, record the change, and rest before adding more.
 
 ## v0.1 Milestone
 
@@ -12,7 +12,7 @@ Luna is currently a small public dashboard prototype. Over time, the idea is for
 
 ## Dashboard
 
-Luna's v0.1 dashboard is a simple web page in `index.html`. It reads from `project.json` and starts with a plain-language Welcome, Status, Current Goal, Last Completed Run, one clear Next Action, and a small Ignore For Now card so someone can quickly see where the project left off and what changed last.
+Luna's v0.1 dashboard is a simple web page in `index.html`, and it currently uses the Luna repo itself as the first example project. It reads from `project.json` and starts with a plain-language Welcome, Status, Current Goal, Last Completed Run, one clear Next Action, and a small Ignore For Now card so someone can quickly see where the project left off and what changed last.
 
 The Philosophy Garden follows below with a Creative Seed, Reflection Card, Garden Review, Next Garden Update, Garden Cycle, and Garden Path. These sections are a gentle supporting reflection layer around the return path, not the whole project or main engine.
 
