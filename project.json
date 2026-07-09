@@ -1,6 +1,10 @@
 {
-  "status": "Resting before usable prototype",
+  "status": "Resting after dashboard prune",
   "statusHistory": [
+    {
+      "date": "2026-07-09",
+      "note": "Pruned the live dashboard Philosophy Garden area into one optional Reflection section so the front page stays focused on Luna's core return loop before any usable prototype work."
+    },
     {
       "date": "2026-07-09",
       "note": "Added a short prototype readiness note marking the self-demo dashboard as coherent enough for the core return loop and setting the next phase as a tiny local usable prototype for one project after rest."
@@ -310,17 +314,17 @@
       "note": "The project is resting after a good run and ready for one gentle improvement."
     }
   ],
-  "currentGoal": "Help someone return to one small project, see where they left off and what changed last, choose one clear Next Action, know what to ignore for now, record the change, and rest before adding more while preserving Luna's v0.1 dashboard and Philosophy Garden.",
-  "lastCompletedRun": "2026-07-09: Added a short prototype readiness note marking the self-demo dashboard as coherent enough for the core return loop and setting the next phase as a tiny local usable prototype for one project after rest.",
-  "nextStep": "Rest before starting a usable app prototype, editable UI, local storage, backend, account system, roadmap expansion, dashboard expansion, mode workflow, or fourth medium dashboard step.",
+  "currentGoal": "Help someone return to one small project, see where they left off and what changed last, choose one clear Next Action, know what to ignore for now, record the change, and rest before adding more while keeping Philosophy Garden clearly optional.",
+  "lastCompletedRun": "2026-07-09: Pruned the live dashboard Philosophy Garden area into one optional Reflection section so the front page stays focused on Luna's core return loop before any usable prototype work.",
+  "nextStep": "Rest before starting a usable app prototype, editable UI, local storage, backend, account system, dashboard expansion, mode workflow, fourth medium dashboard step, or more Philosophy Garden dashboard work.",
   "dashboardGuide": [
     "Welcome starts the path to read through Record the Change before choosing more work.",
     "Status gives a quick snapshot of how the project is doing right now.",
-    "Current Goal is the main thing Luna is focused on.",
-    "Last Completed Run shows the most recent finished update.",
+    "Current Mode, Current Goal, and Last Completed Run explain where Luna is paused.",
     "Next Action highlights the one clear thing to do next.",
     "Ignore For Now names what can wait.",
-    "Record the Change explains how to update the public project trail after one small useful change, then rest."
+    "Record the Change explains how to update the public project trail after one small useful change, then rest.",
+    "Optional Reflection can wait; Philosophy Garden is a gentle reflection layer, not Luna's main engine."
   ],
   "futureIdeas": [
     "Rest before starting a tiny local usable prototype for one project; do not add more dashboard cards by default.",
@@ -379,9 +383,9 @@
   ],
   "nextAction": {
     "title": "Rest before starting the usable prototype",
-    "description": "Rest before starting a usable app prototype, editable UI, local storage, backend, account system, roadmap expansion, dashboard expansion, mode workflow, or fourth medium dashboard step.",
-    "whyItMatters": "Resting keeps the readiness note as a boundary marker and prevents Luna from turning the next phase into more dashboard cards, app architecture, a SaaS structure, accounts, a backend, a database, or a multi-project system.",
-    "status": "Resting before usable prototype"
+    "description": "Rest before starting a usable app prototype, editable UI, local storage, backend, account system, dashboard expansion, mode workflow, fourth medium dashboard step, or more Philosophy Garden dashboard work.",
+    "whyItMatters": "Resting keeps the pruned self-demo dashboard coherent and prevents Luna from turning the next phase into more dashboard cards, app architecture, a SaaS structure, accounts, a backend, a database, or a multi-project system.",
+    "status": "Resting after dashboard prune"
   },
   "creativeSeed": {
     "name": "Philosophy Garden",

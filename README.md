@@ -4,7 +4,7 @@ Luna is a small public dashboard prototype and autonomous repository experiment 
 
 ## v0.1 Milestone
 
-Luna now has a plain-language welcome, a clear Next Action, small Ignore For Now and Record the Change cards, and a quiet Philosophy Garden cycle that supports the core return path with a Reflection Card, Garden Review, Next Garden Update, and Rest Before Growing Again. This gives beginners one calm path for seeing what changed last, choosing what to do next, knowing what to ignore for now, and stopping before the project grows too quickly.
+Luna now has a plain-language welcome, a clear Next Action, small Ignore For Now and Record the Change cards, and a quieter optional Philosophy Garden reflection area. This gives beginners one calm path for seeing what changed last, choosing what to do next, knowing what to ignore for now, and stopping before the project grows too quickly without making reflection content feel like the main engine.
 
 ## Longer-Term Vision
 
@@ -14,9 +14,9 @@ Luna is currently a small public dashboard prototype. Over time, the idea is for
 
 Luna's v0.1 dashboard is a simple web page in `index.html`, and it currently uses the Luna repo itself as the first example project. It reads from `project.json` and starts with a plain-language Welcome, Status, Current Mode, Current Goal, Last Completed Run, one clear Next Action, a small Ignore For Now card, and a small Record the Change card so someone can quickly see where the project left off, what changed last, what to do next, what can wait, and how to update the public project trail.
 
-The Philosophy Garden follows below with a Creative Seed, Reflection Card, Garden Review, Next Garden Update, Garden Cycle, and Garden Path. These sections are a gentle supporting reflection layer around the return path, not the whole project or main engine.
+Philosophy Garden now appears only as a small Optional Reflection section. It is a gentle supporting layer for occasional reflection, not the whole project or Luna's main engine.
 
-Beginner read-through note: read the v0.1 dashboard slowly from Welcome through Record the Change before choosing any new work. The first dashboard cards are meant to orient you around the current project state, current mode, the last completed run, one clear Next Action, what can wait, and how to record one small useful change; the Philosophy Garden can wait as a gentle supporting reflection layer.
+Beginner read-through note: read the v0.1 dashboard slowly from Welcome through Record the Change before choosing any new work. The first dashboard cards are meant to orient you around the current project state, current mode, the last completed run, one clear Next Action, what can wait, and how to record one small useful change; Optional Reflection can wait because Philosophy Garden is only a gentle supporting layer.
 
 ### Review before changing
 
