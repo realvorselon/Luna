@@ -16,7 +16,7 @@ Luna's v0.1 dashboard is a simple web page in `index.html`, and it currently use
 
 The Philosophy Garden follows below with a Creative Seed, Reflection Card, Garden Review, Next Garden Update, Garden Cycle, and Garden Path. These sections are a gentle supporting reflection layer around the return path, not the whole project or main engine.
 
-Beginner read-through note: read the v0.1 dashboard slowly from Welcome through Record the Change before choosing any new work. The first dashboard cards are meant to orient you around the current project state, the last completed run, one clear Next Action, and what can wait; the Philosophy Garden can wait as a gentle supporting reflection layer.
+Beginner read-through note: read the v0.1 dashboard slowly from Welcome through Record the Change before choosing any new work. The first dashboard cards are meant to orient you around the current project state, the last completed run, one clear Next Action, what can wait, and how to record one small useful change; the Philosophy Garden can wait as a gentle supporting reflection layer.
 
 ### Review before changing
 
@@ -25,7 +25,7 @@ Before making a new contribution, use this small checklist:
 - Read the dashboard from Welcome through Record the Change.
 - Check `STATE.md` for the latest completed run and next suggested step.
 - Choose only one small useful change for the run.
-- Update `STATE.md`, `CHANGELOG.md`, and `project.json` together so the public record stays aligned.
+- Use Record the Change to update `STATE.md`, `CHANGELOG.md`, and `project.json` together after one small useful change, then rest before adding more.
 
 To view it locally, open this project folder in a terminal and run:
 
