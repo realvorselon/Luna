@@ -2,6 +2,12 @@
 
 ## 2026-07-09
 
+### App Seed Clarity Review
+
+- Reviewed `docs/APP_SEED.md` for clarity and restraint against Luna's smallest honest future app direction.
+- Made two tiny wording clarifications so the note stays calm, short, directional, and separate from a roadmap, build plan, feature list, technical architecture, or promise.
+- Updated `project.json` and `STATE.md` so the newest completed run and next step stay aligned around rest or planning the first minimal app shape review before any feature growth.
+
 ### Tiny App Seed Note
 
 - Added `docs/APP_SEED.md` as a short public-safe direction marker for the smallest honest future app shape Luna may grow toward.
