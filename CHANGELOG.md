@@ -2,6 +2,12 @@
 
 ## 2026-07-09
 
+### README Beginner Read-Through Note Clarity Review
+
+- Clarified the README beginner read-through note so the first dashboard cards orient beginners around the current project state, last completed run, and one clear Next Action before the Philosophy Garden.
+- Kept the Philosophy Garden framed as a gentle supporting reflection layer, not Luna's main engine.
+- Updated `project.json` and `STATE.md` so the newest completed run and next step stay aligned around resting before adding any dashboard section, app feature, visual styling, backend, account system, roadmap expansion, new planning note, additional example, or future visual idea.
+
 ### README Top-Framing Clarity Review
 
 - Clarified the README opening, v0.1 milestone, longer-term vision, and dashboard wording so Luna foregrounds helping someone return to one small project.
