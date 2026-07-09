@@ -1,6 +1,10 @@
 {
-  "status": "Resting after README front-door hierarchy cleanup",
+  "status": "Resting after Current Goal alignment cleanup",
   "statusHistory": [
+    {
+      "date": "2026-07-09",
+      "note": "Aligned the Current Goal wording around Luna's core return shape while preserving the v0.1 dashboard and Philosophy Garden."
+    },
     {
       "date": "2026-07-09",
       "note": "Reorganized the README Where to Look Next section into a calmer hierarchy so beginners know where to start while keeping all useful links available."
@@ -250,9 +254,9 @@
       "note": "The project is resting after a good run and ready for one gentle improvement."
     }
   ],
-  "currentGoal": "Keep the dashboard and docs focused on Luna's plain-language welcome, one clear Next Action, the stable Philosophy Garden cycle, calm guidance, and restrained public-safe visual polish.",
-  "lastCompletedRun": "2026-07-09: Reorganized the README Where to Look Next section into a calmer hierarchy so beginners know where to start while keeping all useful links available.",
-  "nextStep": "Rest before adding a dashboard section, app feature, visual styling, backend, account system, roadmap expansion, new planning note, or additional example.",
+  "currentGoal": "Help someone return to one small project, see where they left off and what changed last, choose one clear Next Action, know what to ignore for now, record the change, and rest before adding more while preserving Luna's v0.1 dashboard and Philosophy Garden.",
+  "lastCompletedRun": "2026-07-09: Aligned the Current Goal wording around Luna's core return shape while preserving the v0.1 dashboard and Philosophy Garden.",
+  "nextStep": "Rest before adding a dashboard section, app feature, visual styling, backend, account system, roadmap expansion, new planning note, additional example, or future visual idea.",
   "dashboardGuide": [
     "Welcome explains Luna in plain language before the project details begin.",
     "Status gives a quick snapshot of how the project is doing right now.",
@@ -316,9 +320,9 @@
   ],
   "nextAction": {
     "title": "Rest before adding more structure or features",
-    "description": "Rest before adding a dashboard section, app feature, visual styling, backend, account system, roadmap expansion, new planning note, or additional example.",
-    "whyItMatters": "Resting keeps the README front door clearer without turning the cleanup into new sections, features, or planning material.",
-    "status": "Resting after README front-door hierarchy cleanup"
+    "description": "Rest before adding a dashboard section, app feature, visual styling, backend, account system, roadmap expansion, new planning note, additional example, or future visual idea.",
+    "whyItMatters": "Resting keeps the Current Goal alignment cleanup from turning into a new dashboard section, feature, styling pass, plan, example, or visual idea.",
+    "status": "Resting after Current Goal alignment cleanup"
   },
   "creativeSeed": {
     "name": "Philosophy Garden",
