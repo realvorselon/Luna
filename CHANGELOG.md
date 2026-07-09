@@ -2,6 +2,12 @@
 
 ## 2026-07-09
 
+### Foundation Map
+
+- Added `docs/FOUNDATION.md` as a short public-safe guide to how Luna's current foundation docs and dashboard files fit together.
+- Updated the README Where to Look Next section so new visitors can find the foundation map.
+- Updated `project.json` and `STATE.md` so the newest completed run and next step stay aligned around resting or reviewing `docs/FOUNDATION.md` before adding another foundation, documentation, visual, or dashboard feature.
+
 ### Mobile Readability Review
 
 - Reviewed the restrained dashboard CSS against the visual identity note for calm warmth, readable cards, subtle Next Action focus, uncluttered visual warmth, and mobile readability.

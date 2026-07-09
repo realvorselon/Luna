@@ -1,6 +1,10 @@
 {
-  "status": "Resting after mobile readability review",
+  "status": "Resting after foundation map",
   "statusHistory": [
+    {
+      "date": "2026-07-09",
+      "note": "Added a small foundation map that explains how Luna's current public docs and dashboard files fit together for new visitors."
+    },
     {
       "date": "2026-07-09",
       "note": "Reviewed the restrained CSS polish and added a tiny mobile readability adjustment so Garden Cycle and Garden Path cards stack more calmly on narrow screens."
@@ -219,8 +223,8 @@
     }
   ],
   "currentGoal": "Keep the dashboard and docs focused on Luna's plain-language welcome, one clear Next Action, the stable Philosophy Garden cycle, calm guidance, and restrained public-safe visual polish.",
-  "lastCompletedRun": "2026-07-09: Reviewed the restrained CSS polish and added a tiny mobile readability adjustment so Garden Cycle and Garden Path cards stack more calmly on narrow screens.",
-  "nextStep": "Rest or do a documentation/foundation review before adding any additional visual styling.",
+  "lastCompletedRun": "2026-07-09: Added a small foundation map that explains how Luna's current public docs and dashboard files fit together for new visitors.",
+  "nextStep": "Rest or review docs/FOUNDATION.md before adding any new foundation, documentation, visual, or dashboard feature.",
   "dashboardGuide": [
     "Welcome explains Luna in plain language before the project details begin.",
     "Status gives a quick snapshot of how the project is doing right now.",
@@ -283,10 +287,10 @@
     "Visit http://localhost:8000 in a browser to view the dashboard."
   ],
   "nextAction": {
-    "title": "Rest or review the foundation docs",
-    "description": "Pause after the mobile readability review, or review documentation and project foundations before adding any additional visual styling.",
-    "whyItMatters": "Resting keeps Luna warm and calm without turning visual identity into clutter or a larger design plan.",
-    "status": "Resting after mobile readability review"
+    "title": "Rest or review the foundation map",
+    "description": "Pause after adding docs/FOUNDATION.md, or review the foundation map before adding any new foundation, documentation, visual, or dashboard feature.",
+    "whyItMatters": "Resting keeps Luna beginner-friendly and prevents a simple documentation map from turning into a larger plan.",
+    "status": "Resting after foundation map"
   },
   "creativeSeed": {
     "name": "Philosophy Garden",

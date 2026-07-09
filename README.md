@@ -38,6 +38,7 @@ Then visit `http://localhost:8000` in a browser.
 ## Where to Look Next
 
 - `STATE.md` explains Luna's current identity, goal, last run, and next suggested step.
+- `docs/FOUNDATION.md` maps how Luna's current foundation docs and dashboard files fit together.
 - `ROADMAP.md` lists completed work, near-term tasks, and later possibilities.
 - `CHANGELOG.md` records project history by date.
 - `RULES.md` explains Luna's one-small-change rhythm and alignment expectations.
