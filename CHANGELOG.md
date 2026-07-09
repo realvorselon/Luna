@@ -2,6 +2,12 @@
 
 ## 2026-07-09
 
+### Record the Change Dashboard Card
+
+- Added a small public-safe Record the Change card after Ignore For Now in `index.html`.
+- Added short `project.json.recordTheChange` guidance that explains recording means updating the public project trail, not starting a logging system, database, changelog editor, task tracker, automation, backend, or app feature.
+- Updated `README.md`, `ROADMAP.md`, `project.json`, and `STATE.md` so the newest completed run and next step stay aligned around resting before any third medium dashboard step or larger expansion.
+
 ### Dashboard Purpose Wording Clarity Pass
 
 - Updated the hard-coded dashboard subtitle in `index.html` so the first visible text calls Luna a gentle return dashboard prototype for a paused or small creative project and notes that the Luna repo is the first example project.
