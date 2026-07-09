@@ -1,6 +1,10 @@
 {
-  "status": "Resting after user guidance note",
+  "status": "Resting after user guidance clarity review",
   "statusHistory": [
+    {
+      "date": "2026-07-09",
+      "note": "Reviewed and lightly clarified the user guidance note so it stays aligned with Luna as a small public dashboard prototype that may later become a calm companion for small projects."
+    },
     {
       "date": "2026-07-09",
       "note": "Added a beginner-friendly user guidance note that explains how people can approach Luna without needing to be good at prompting."
@@ -199,8 +203,8 @@
     }
   ],
   "currentGoal": "Keep the dashboard and docs focused on Luna's plain-language welcome, one clear Next Action, the stable Philosophy Garden cycle, and calm guidance for future public-safe updates.",
-  "lastCompletedRun": "2026-07-09: Added a beginner-friendly user guidance note that explains how people can approach Luna without needing to be good at prompting.",
-  "nextStep": "Rest or review docs/USER_GUIDANCE.md before adding any user-guidance feature.",
+  "lastCompletedRun": "2026-07-09: Reviewed and lightly clarified the user guidance note so it stays aligned with Luna as a small public dashboard prototype that may later become a calm companion for small projects.",
+  "nextStep": "Rest or review documentation clarity before adding any user-guidance feature.",
   "dashboardGuide": [
     "Welcome explains Luna in plain language before the project details begin.",
     "Status gives a quick snapshot of how the project is doing right now.",
@@ -210,7 +214,7 @@
     "Read the dashboard from top to bottom; if you only need one task, stop at Next Action."
   ],
   "futureIdeas": [
-    "Rest or review docs/USER_GUIDANCE.md before adding any user-guidance feature.",
+    "Rest or review documentation clarity before adding any user-guidance feature.",
     "Review one existing guidance sentence later for beginner-friendly clarity.",
     "Keep project.json, STATE.md, and CHANGELOG.md aligned after each small dashboard or documentation change."
   ],

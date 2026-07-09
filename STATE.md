@@ -10,11 +10,11 @@ Keep the dashboard and docs focused on Luna's plain-language welcome, one clear 
 
 ## Last Completed Run
 
-- 2026-07-09: Added a beginner-friendly user guidance note that explains how people can approach Luna without needing to be good at prompting.
+- 2026-07-09: Reviewed and lightly clarified the user guidance note so it stays aligned with Luna as a small public dashboard prototype that may later become a calm companion for small projects.
 
 ## Next Suggested Step
 
-Rest or review docs/USER_GUIDANCE.md before adding any user-guidance feature.
+Rest or review documentation clarity before adding any user-guidance feature.
 
 ## Notes
 
@@ -43,3 +43,5 @@ The roadmap now gently matches the README longer-term vision: near-term work sta
 The stewardship note now describes a future small-project loop in plain language: Project State, Mode, Reason, One Next Action, Record, and Rest. It should stay as guidance for now; the next step is to rest or review it before building any stewardship feature.
 
 The user guidance note now explains that people should not need to be good at prompting to use Luna. Luna should help users return to a small project, choose what kind of help is needed, continue with one calm next step, and avoid turning the project into an overwhelming blank chatbot exchange. The next step is to rest or review `docs/USER_GUIDANCE.md` before adding any user-guidance feature.
+
+The user guidance note was lightly reviewed for alignment with Luna's current direction as a small public dashboard prototype that may later become a calm companion for small projects. The next step is to rest or review documentation clarity before adding any user-guidance feature.
