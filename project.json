@@ -1,6 +1,10 @@
 {
-  "status": "Resting after README beginner read-through note clarity review",
+  "status": "Resting after foundation map return-path clarity review",
   "statusHistory": [
+    {
+      "date": "2026-07-09",
+      "note": "Clarified the foundation map so it reflects Luna's current return-to-one-small-project shape and keeps the Philosophy Garden as a supporting reflection layer."
+    },
     {
       "date": "2026-07-09",
       "note": "Clarified the README beginner read-through note so the first dashboard cards orient around current project state, last completed run, and one clear Next Action before the Philosophy Garden."
@@ -267,7 +271,7 @@
     }
   ],
   "currentGoal": "Help someone return to one small project, see where they left off and what changed last, choose one clear Next Action, know what to ignore for now, record the change, and rest before adding more while preserving Luna's v0.1 dashboard and Philosophy Garden.",
-  "lastCompletedRun": "2026-07-09: Clarified the README beginner read-through note so the first dashboard cards orient around current project state, last completed run, and one clear Next Action before the Philosophy Garden.",
+  "lastCompletedRun": "2026-07-09: Clarified the foundation map so it reflects Luna's current return-to-one-small-project shape and keeps the Philosophy Garden as a supporting reflection layer.",
   "nextStep": "Rest before adding a dashboard section, app feature, visual styling, backend, account system, roadmap expansion, new planning note, additional example, or future visual idea.",
   "dashboardGuide": [
     "Welcome explains Luna in plain language before the project details begin.",
@@ -335,8 +339,8 @@
   "nextAction": {
     "title": "Rest before adding more structure or features",
     "description": "Rest before adding a dashboard section, app feature, visual styling, backend, account system, roadmap expansion, new planning note, additional example, or future visual idea.",
-    "whyItMatters": "Resting keeps the README beginner read-through note clarity review from turning into a dashboard section, feature, styling pass, backend plan, account system, roadmap expansion, new note, example, or future visual idea.",
-    "status": "Resting after README beginner read-through note clarity review"
+    "whyItMatters": "Resting keeps the foundation map clarity review from turning into a dashboard section, feature, styling pass, backend plan, account system, roadmap expansion, new note, example, or future visual idea.",
+    "status": "Resting after foundation map return-path clarity review"
   },
   "creativeSeed": {
     "name": "Philosophy Garden",
