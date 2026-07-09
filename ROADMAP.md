@@ -4,6 +4,7 @@ This roadmap is intentionally small. Luna is a public dashboard prototype right 
 
 ## Completed
 
+- Added a first usable prototype slice note defining one local/simple project, the essential project state fields, and the same return loop before any prototype build starts.
 - Deepened the dashboard CSS with a more atmospheric moonlit indigo, blue-violet, periwinkle, silver, and small lantern-gold palette while keeping the existing structure and core return loop unchanged.
 - Pruned the lower public dashboard support sections so builder/reference material stays off the front page while Recent Runs, Project Health, and one quiet Project Trail note keep a small public trail.
 - Pruned the live dashboard Philosophy Garden area into one optional Reflection section so the main page stays focused on the core return loop.
@@ -39,7 +40,7 @@ Near-term work should stay focused on the current return path: help someone see 
 
 ## Later Direction
 
-The next phase is not more dashboard cards by default. After rest, and not as part of another visual redesign, Luna may explore a tiny usable prototype for one project that stays local and simple at first: no accounts, backend, database, SaaS structure, or multi-project system.
+The next phase is not more dashboard cards by default. After rest, and not as part of another visual redesign, Luna may explore a tiny usable prototype for one project that stays local and simple at first. The first slice is defined in `docs/FIRST_USABLE_PROTOTYPE_SLICE.md`; no prototype page, editable UI, local storage, backend, accounts, database, SaaS structure, mode workflow, or multi-project system should start before that rest.
 
 Later, Luna may become a calm companion for small projects. That means helping one person return to one small project, remember what is already there, see what changed last, choose one small next step, know what can wait, record the change, and rest. This future app direction should stay small and separate from any build plan; it is a direction to protect gently, not a big app roadmap.
 
