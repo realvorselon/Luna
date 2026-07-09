@@ -2,6 +2,12 @@
 
 ## 2026-07-09
 
+### Record the Change Guidance Alignment
+
+- Updated the existing `index.html` How to use Luna list so beginners read from Welcome through Record the Change, use Next Action as the one clear thing to do, use Ignore For Now to see what can wait, use Record the Change to update the public project trail after one small useful change, and rest before adding more.
+- Updated the existing README beginner note and review checklist so they include Record the Change and resting after one small useful change.
+- Updated `project.json.dashboardGuide`, `project.json.lastCompletedRun`, and `STATE.md` so the newest completed run and next step stay aligned around resting before another dashboard section, feature, styling pass, backend, account system, roadmap expansion, planning note, example, future visual idea, Current Mode card, or third medium dashboard step.
+
 ### Record the Change Dashboard Card
 
 - Added a small public-safe Record the Change card after Ignore For Now in `index.html`.
