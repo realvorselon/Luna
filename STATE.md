@@ -6,15 +6,15 @@ Luna is an autonomous repository experiment. It begins as a self-documenting see
 
 ## Current Goal
 
-Keep the dashboard and docs focused on Luna's plain-language welcome, one clear Next Action, the stable Philosophy Garden cycle, and calm guidance for future public-safe updates.
+Keep the dashboard and docs focused on Luna's plain-language welcome, one clear Next Action, the stable Philosophy Garden cycle, calm guidance, and public-safe visual identity direction.
 
 ## Last Completed Run
 
-- 2026-07-09: Reviewed and lightly clarified the user guidance note so it stays aligned with Luna as a small public dashboard prototype that may later become a calm companion for small projects.
+- 2026-07-09: Added a small visual identity note for Luna that keeps future visual and interface personality direction calm, warm, beginner-friendly, and focused on one safe next step.
 
 ## Next Suggested Step
 
-Rest or review documentation clarity before adding any user-guidance feature.
+Rest or review docs/VISUAL_IDENTITY.md before adding any visual identity feature or CSS polish.
 
 ## Notes
 
@@ -45,3 +45,5 @@ The stewardship note now describes a future small-project loop in plain language
 The user guidance note now explains that people should not need to be good at prompting to use Luna. Luna should help users return to a small project, choose what kind of help is needed, continue with one calm next step, and avoid turning the project into an overwhelming blank chatbot exchange. The next step is to rest or review `docs/USER_GUIDANCE.md` before adding any user-guidance feature.
 
 The user guidance note was lightly reviewed for alignment with Luna's current direction as a small public dashboard prototype that may later become a calm companion for small projects. The next step is to rest or review documentation clarity before adding any user-guidance feature.
+
+The visual identity note now records that Luna should feel calm, warm, easy to return to, and focused on helping people find one safe next step without overwhelm. The next step is to rest or review `docs/VISUAL_IDENTITY.md` before adding any visual identity feature or CSS polish.
