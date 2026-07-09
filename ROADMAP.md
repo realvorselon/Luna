@@ -4,6 +4,7 @@ This roadmap is intentionally small. Luna is a public dashboard prototype right 
 
 ## Completed
 
+- Aligned the dashboard CSS with a restrained moonlit night palette while keeping the existing structure and core return loop unchanged.
 - Pruned the lower public dashboard support sections so builder/reference material stays off the front page while Recent Runs, Project Health, and one quiet Project Trail note keep a small public trail.
 - Pruned the live dashboard Philosophy Garden area into one optional Reflection section so the main page stays focused on the core return loop.
 - Added `CHANGELOG.md` to keep a dated project history.
@@ -33,12 +34,12 @@ Near-term work should stay focused on the current return path: help someone see 
 - Keep `project.json` aligned with the dashboard after each small content change.
 - Keep the Next Action card aligned with the safest current task.
 - Review one existing dashboard or documentation sentence at a time for beginner-friendly return-path clarity.
-- Let the current dashboard rest between changes so Luna does not grow too quickly, especially before adding another dashboard section, mode workflow, fifth medium dashboard step, or more public-page pruning.
+- Let the current dashboard rest between changes so Luna does not grow too quickly, especially before adding another dashboard section, mode workflow, more public-page pruning, or another visual redesign.
 - Keep Philosophy Garden as an optional supporting reflection layer; avoid adding more garden dashboard sections unless there is a clear, small reason.
 
 ## Later Direction
 
-The next phase is not more dashboard cards by default. After rest, Luna may explore a tiny usable prototype for one project that stays local and simple at first: no accounts, backend, database, SaaS structure, or multi-project system.
+The next phase is not more dashboard cards by default. After rest, and not as part of another visual redesign, Luna may explore a tiny usable prototype for one project that stays local and simple at first: no accounts, backend, database, SaaS structure, or multi-project system.
 
 Later, Luna may become a calm companion for small projects. That means helping one person return to one small project, remember what is already there, see what changed last, choose one small next step, know what can wait, record the change, and rest. This future app direction should stay small and separate from any build plan; it is a direction to protect gently, not a big app roadmap.
 
