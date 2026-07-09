@@ -1,6 +1,10 @@
 {
-  "status": "Resting after first dashboard wording alignment",
+  "status": "Resting after dashboard purpose wording clarity pass",
   "statusHistory": [
+    {
+      "date": "2026-07-09",
+      "note": "Clarified the first visible dashboard wording so strangers can see Luna is a gentle return dashboard prototype, currently using the Luna repo as its first example project."
+    },
     {
       "date": "2026-07-09",
       "note": "Aligned the first visible dashboard wording with Luna's return path: return to one small project, see what changed, choose one clear Next Action, see what can wait, and rest before adding more."
@@ -287,7 +291,7 @@
     }
   ],
   "currentGoal": "Help someone return to one small project, see where they left off and what changed last, choose one clear Next Action, know what to ignore for now, record the change, and rest before adding more while preserving Luna's v0.1 dashboard and Philosophy Garden.",
-  "lastCompletedRun": "2026-07-09: Aligned the first visible dashboard wording with Luna's return path: return to one small project, see what changed, choose one clear Next Action, see what can wait, and rest before adding more.",
+  "lastCompletedRun": "2026-07-09: Clarified the first visible dashboard wording so strangers can see Luna is a gentle return dashboard prototype, currently using the Luna repo as its first example project.",
   "nextStep": "Rest before adding another dashboard section, app feature, visual styling, backend, account system, roadmap expansion, new planning note, additional example, future visual idea, or second medium dashboard step.",
   "dashboardGuide": [
     "Welcome explains Luna in plain language before the project details begin.",
@@ -355,8 +359,8 @@
   "nextAction": {
     "title": "Rest before adding more dashboard structure or features",
     "description": "Rest before adding another dashboard section, app feature, visual styling, backend, account system, roadmap expansion, new planning note, additional example, future visual idea, or second medium dashboard step.",
-    "whyItMatters": "Resting keeps the new Ignore For Now card small and prevents it from turning into a backlog, roadmap, feature board, styling pass, backend plan, account system, or second medium dashboard step.",
-    "status": "Resting after first dashboard wording alignment"
+    "whyItMatters": "Resting keeps this prototype clarity pass small and prevents Luna from turning into a finished product, SaaS app, task manager, backlog, roadmap, styling pass, backend plan, account system, or second medium dashboard step.",
+    "status": "Resting after dashboard purpose wording clarity pass"
   },
   "creativeSeed": {
     "name": "Philosophy Garden",
@@ -408,8 +412,8 @@
     "Choose one gentle update for the next small growth step."
   ],
   "welcome": {
-    "title": "Welcome to Luna",
-    "sentence": "Return to one small project, see what changed, choose one clear Next Action, and use Ignore For Now to see what can wait."
+    "title": "Welcome to the Luna prototype",
+    "sentence": "This dashboard uses the Luna repo as its first example project: see what changed, choose one clear Next Action, notice what can wait, and rest before adding more."
   },
   "ignoreForNow": [
     "Do not add another dashboard section until this return path still feels calm.",

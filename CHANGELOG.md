@@ -2,6 +2,12 @@
 
 ## 2026-07-09
 
+### Dashboard Purpose Wording Clarity Pass
+
+- Updated the hard-coded dashboard subtitle in `index.html` so the first visible text calls Luna a gentle return dashboard prototype for a paused or small creative project and notes that the Luna repo is the first example project.
+- Updated `project.json.welcome.title` and `project.json.welcome.sentence` so the Welcome card gives the same short prototype context before naming the return loop.
+- Updated `README.md`, `project.json`, and `STATE.md` so the newest completed run and next step stay aligned around resting before another dashboard section, feature, styling pass, backend, account system, roadmap expansion, planning note, example, future visual idea, or second medium dashboard step.
+
 ### First Dashboard Wording Alignment
 
 - Updated the hard-coded dashboard subtitle in `index.html` so the first visible wording points to returning to one small project, seeing what changed, choosing one clear Next Action, and resting before adding more.
