@@ -1,6 +1,10 @@
 {
-  "status": "Resting after foundation map return-path clarity review",
+  "status": "Resting after roadmap return-path alignment review",
   "statusHistory": [
+    {
+      "date": "2026-07-09",
+      "note": "Reviewed ROADMAP.md so it reflects Luna's return-to-one-small-project framing while keeping the Philosophy Garden supporting and future app direction separate from any build plan."
+    },
     {
       "date": "2026-07-09",
       "note": "Clarified the foundation map so it reflects Luna's current return-to-one-small-project shape and keeps the Philosophy Garden as a supporting reflection layer."
@@ -271,7 +275,7 @@
     }
   ],
   "currentGoal": "Help someone return to one small project, see where they left off and what changed last, choose one clear Next Action, know what to ignore for now, record the change, and rest before adding more while preserving Luna's v0.1 dashboard and Philosophy Garden.",
-  "lastCompletedRun": "2026-07-09: Clarified the foundation map so it reflects Luna's current return-to-one-small-project shape and keeps the Philosophy Garden as a supporting reflection layer.",
+  "lastCompletedRun": "2026-07-09: Reviewed ROADMAP.md so it reflects Luna's return-to-one-small-project framing while keeping the Philosophy Garden supporting and future app direction separate from any build plan.",
   "nextStep": "Rest before adding a dashboard section, app feature, visual styling, backend, account system, roadmap expansion, new planning note, additional example, or future visual idea.",
   "dashboardGuide": [
     "Welcome explains Luna in plain language before the project details begin.",
@@ -339,8 +343,8 @@
   "nextAction": {
     "title": "Rest before adding more structure or features",
     "description": "Rest before adding a dashboard section, app feature, visual styling, backend, account system, roadmap expansion, new planning note, additional example, or future visual idea.",
-    "whyItMatters": "Resting keeps the foundation map clarity review from turning into a dashboard section, feature, styling pass, backend plan, account system, roadmap expansion, new note, example, or future visual idea.",
-    "status": "Resting after foundation map return-path clarity review"
+    "whyItMatters": "Resting keeps the roadmap alignment review from turning into a dashboard section, feature, styling pass, backend plan, account system, roadmap expansion, new note, example, or future visual idea.",
+    "status": "Resting after roadmap return-path alignment review"
   },
   "creativeSeed": {
     "name": "Philosophy Garden",
