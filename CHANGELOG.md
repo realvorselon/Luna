@@ -2,6 +2,12 @@
 
 ## 2026-07-09
 
+### Medium Dashboard Prune
+
+- Pruned the live dashboard Philosophy Garden area into one smaller Optional Reflection section.
+- Kept the underlying garden data in `project.json` for now while removing the extra Garden Review, Next Garden Update, Garden Cycle, Garden Path, and Creative Seed sections from the public front page.
+- Updated `README.md`, `project.json`, `STATE.md`, and `ROADMAP.md` so the current public trail emphasizes Luna's core return loop and rest before prototype work.
+
 ### Prototype Readiness Note
 
 - Added `docs/PROTOTYPE_READINESS.md` as a short public-safe boundary note that Luna's self-demo dashboard is coherent enough to show the core return loop.

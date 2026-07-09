@@ -4,6 +4,7 @@ This roadmap is intentionally small. Luna is a public dashboard prototype right 
 
 ## Completed
 
+- Pruned the live dashboard Philosophy Garden area into one optional Reflection section so the main page stays focused on the core return loop.
 - Added `CHANGELOG.md` to keep a dated project history.
 - Created a minimal static dashboard page in `index.html`.
 - Added calm styling so the dashboard feels readable and welcoming.
@@ -32,7 +33,7 @@ Near-term work should stay focused on the current return path: help someone see 
 - Keep the Next Action card aligned with the safest current task.
 - Review one existing dashboard or documentation sentence at a time for beginner-friendly return-path clarity.
 - Let the current dashboard rest between changes so Luna does not grow too quickly, especially before adding another dashboard section, mode workflow, or fourth medium dashboard step.
-- Keep the Philosophy Garden as a gentle supporting reflection layer; use the Garden Cycle before changing its wording, and keep any change public-safe and small.
+- Keep Philosophy Garden as an optional supporting reflection layer; avoid adding more garden dashboard sections unless there is a clear, small reason.
 
 ## Later Direction
 
