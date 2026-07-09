@@ -2,6 +2,12 @@
 
 ## 2026-07-09
 
+### User Guidance Clarity Review
+
+- Reviewed `docs/USER_GUIDANCE.md` against Luna's current direction as a small public dashboard prototype that may later become a calm companion for small projects.
+- Made two tiny wording clarifications so the note stays beginner-friendly and emphasizes returning, choosing, and continuing without requiring skill at prompting.
+- Updated `project.json` and `STATE.md` so the newest completed run and next step stay aligned around resting or documentation clarity before any user-guidance feature.
+
 ### User Guidance Note
 
 - Added `docs/USER_GUIDANCE.md` as a short, public-safe note about approaching Luna without needing to be good at prompting.
