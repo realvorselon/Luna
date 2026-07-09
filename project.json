@@ -1,6 +1,10 @@
 {
-  "status": "Resting after example return walkthrough",
+  "status": "Resting after README front-door hierarchy cleanup",
   "statusHistory": [
+    {
+      "date": "2026-07-09",
+      "note": "Reorganized the README Where to Look Next section into a calmer hierarchy so beginners know where to start while keeping all useful links available."
+    },
     {
       "date": "2026-07-09",
       "note": "Added a short example return walkthrough that shows Luna helping one fictional person return to one small creative project without starting an app build."
@@ -247,8 +251,8 @@
     }
   ],
   "currentGoal": "Keep the dashboard and docs focused on Luna's plain-language welcome, one clear Next Action, the stable Philosophy Garden cycle, calm guidance, and restrained public-safe visual polish.",
-  "lastCompletedRun": "2026-07-09: Added a short example return walkthrough that shows Luna helping one fictional person return to one small creative project without starting an app build.",
-  "nextStep": "Rest before adding any app feature, dashboard feature, visual styling, backend, account system, roadmap expansion, additional planning note, or second example.",
+  "lastCompletedRun": "2026-07-09: Reorganized the README Where to Look Next section into a calmer hierarchy so beginners know where to start while keeping all useful links available.",
+  "nextStep": "Rest before adding a dashboard section, app feature, visual styling, backend, account system, roadmap expansion, new planning note, or additional example.",
   "dashboardGuide": [
     "Welcome explains Luna in plain language before the project details begin.",
     "Status gives a quick snapshot of how the project is doing right now.",
@@ -311,10 +315,10 @@
     "Visit http://localhost:8000 in a browser to view the dashboard."
   ],
   "nextAction": {
-    "title": "Rest before adding more examples or features",
-    "description": "Rest before adding any app feature, dashboard feature, visual styling, backend, account system, roadmap expansion, additional planning note, or second example.",
-    "whyItMatters": "Resting keeps the example walkthrough as one small concrete product moment without turning it into a feature plan or larger example library.",
-    "status": "Resting after example return walkthrough"
+    "title": "Rest before adding more structure or features",
+    "description": "Rest before adding a dashboard section, app feature, visual styling, backend, account system, roadmap expansion, new planning note, or additional example.",
+    "whyItMatters": "Resting keeps the README front door clearer without turning the cleanup into new sections, features, or planning material.",
+    "status": "Resting after README front-door hierarchy cleanup"
   },
   "creativeSeed": {
     "name": "Philosophy Garden",

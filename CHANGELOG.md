@@ -2,6 +2,12 @@
 
 ## 2026-07-09
 
+### README Front-Door Hierarchy Cleanup
+
+- Reorganized the README Where to Look Next section into Start here, Understand the foundation, and Deeper design notes groups.
+- Kept all useful links available while making the first reading path calmer and less overwhelming for beginners.
+- Updated `project.json` and `STATE.md` so the newest completed run and next step stay aligned around resting before adding a dashboard section, app feature, visual styling, backend, account system, roadmap expansion, new planning note, or additional example.
+
 ### Example Return Walkthrough
 
 - Added `docs/EXAMPLE_RETURN.md` as a short public-safe walkthrough of Luna helping one fictional person return to one tiny browser game.
