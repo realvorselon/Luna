@@ -2,6 +2,12 @@
 
 ## 2026-07-09
 
+### Tiny App Seed Note
+
+- Added `docs/APP_SEED.md` as a short public-safe direction marker for the smallest honest future app shape Luna may grow toward.
+- Kept the note clear that it is not a roadmap, build plan, promise, feature list, dashboard change, or technical architecture.
+- Updated `README.md`, `project.json`, and `STATE.md` so the newest completed run and next step stay aligned around resting or reviewing `docs/APP_SEED.md` before any feature growth.
+
 ### Public Prototype Readiness Review
 
 - Reviewed Luna's README, foundation docs, state, roadmap, dashboard order, and public record alignment for early public prototype clarity.

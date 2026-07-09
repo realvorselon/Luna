@@ -10,11 +10,11 @@ Keep the dashboard and docs focused on Luna's plain-language welcome, one clear 
 
 ## Last Completed Run
 
-- 2026-07-09: Reviewed Luna's public prototype readiness and made a tiny foundation-map wording update so the next step points to rest or a future app seed note before any feature growth.
+- 2026-07-09: Added a tiny app seed note that names the smallest honest future app shape without starting an app plan, feature build, roadmap expansion, or technical architecture.
 
 ## Next Suggested Step
 
-Rest or write a tiny future app seed note before adding any app feature, dashboard feature, visual styling, backend, account system, or roadmap expansion.
+Rest or review docs/APP_SEED.md before adding any app feature, dashboard feature, visual styling, backend, account system, or roadmap expansion.
 
 ## Notes
 
@@ -55,3 +55,5 @@ The foundation map now gives new visitors a calm overview of how README.md, RULE
 The foundation map was reviewed for new-visitor clarity. It now more directly explains how Luna's public docs, dashboard data, and current dashboard page fit together. The next step is to rest or review public prototype readiness before adding any new foundation, documentation, visual, or dashboard feature.
 
 The public prototype readiness review found the current README, foundation map, state, roadmap, dashboard order, and public history understandable for an early public prototype. One tiny foundation-map wording update now points the next step toward rest or a future app seed note before any feature growth.
+
+The app seed note now names the smallest honest future app shape Luna may grow toward: one small project at a time, gentle setup, saved project state, a current mode, one next action, a short change history, and one reminder about what not to worry about yet. It is not a roadmap, build plan, promise, feature list, or technical architecture.
