@@ -1,6 +1,10 @@
 {
-  "status": "Resting after README top-framing clarity review",
+  "status": "Resting after README beginner read-through note clarity review",
   "statusHistory": [
+    {
+      "date": "2026-07-09",
+      "note": "Clarified the README beginner read-through note so the first dashboard cards orient around current project state, last completed run, and one clear Next Action before the Philosophy Garden."
+    },
     {
       "date": "2026-07-09",
       "note": "Clarified the top README framing so Luna foregrounds returning to one small project while keeping the Philosophy Garden as a supporting reflection layer."
@@ -263,7 +267,7 @@
     }
   ],
   "currentGoal": "Help someone return to one small project, see where they left off and what changed last, choose one clear Next Action, know what to ignore for now, record the change, and rest before adding more while preserving Luna's v0.1 dashboard and Philosophy Garden.",
-  "lastCompletedRun": "2026-07-09: Clarified the top README framing so Luna foregrounds returning to one small project while keeping the Philosophy Garden as a supporting reflection layer.",
+  "lastCompletedRun": "2026-07-09: Clarified the README beginner read-through note so the first dashboard cards orient around current project state, last completed run, and one clear Next Action before the Philosophy Garden.",
   "nextStep": "Rest before adding a dashboard section, app feature, visual styling, backend, account system, roadmap expansion, new planning note, additional example, or future visual idea.",
   "dashboardGuide": [
     "Welcome explains Luna in plain language before the project details begin.",
@@ -331,8 +335,8 @@
   "nextAction": {
     "title": "Rest before adding more structure or features",
     "description": "Rest before adding a dashboard section, app feature, visual styling, backend, account system, roadmap expansion, new planning note, additional example, or future visual idea.",
-    "whyItMatters": "Resting keeps the README top-framing clarity review from turning into a dashboard section, feature, styling pass, backend plan, account system, roadmap expansion, new note, example, or future visual idea.",
-    "status": "Resting after README top-framing clarity review"
+    "whyItMatters": "Resting keeps the README beginner read-through note clarity review from turning into a dashboard section, feature, styling pass, backend plan, account system, roadmap expansion, new note, example, or future visual idea.",
+    "status": "Resting after README beginner read-through note clarity review"
   },
   "creativeSeed": {
     "name": "Philosophy Garden",

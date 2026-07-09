@@ -10,7 +10,7 @@ Help someone return to one small project, see where they left off and what chang
 
 ## Last Completed Run
 
-- 2026-07-09: Clarified the top README framing so Luna foregrounds returning to one small project while keeping the Philosophy Garden as a supporting reflection layer.
+- 2026-07-09: Clarified the README beginner read-through note so the first dashboard cards orient around current project state, last completed run, and one clear Next Action before the Philosophy Garden.
 
 ## Next Suggested Step
 
@@ -74,3 +74,5 @@ The Current Goal now foregrounds Luna's core return shape: helping someone retur
 The Future Ideas and Idea Queue shelves now stay short, calm, and aligned with Luna's current return shape: return to one small project, see what changed last, choose one clear Next Action, know what to ignore for now, record the change, and rest before adding more. The next step is to rest before adding a dashboard section, app feature, visual styling, backend, account system, roadmap expansion, new planning note, additional example, or future visual idea.
 
 The README top framing now foregrounds Luna's return-to-one-small-project shape: seeing where the project left off, seeing what changed last, choosing one clear Next Action, knowing what to ignore for now, recording the change, and resting before adding more. The Philosophy Garden remains as a gentle supporting reflection layer around that core return path rather than the whole project or main engine. The next step is to rest before adding a dashboard section, app feature, visual styling, backend, account system, roadmap expansion, new planning note, additional example, or future visual idea.
+
+The README beginner read-through note now says the first dashboard cards orient around the current project state, last completed run, and one clear Next Action before the Philosophy Garden, which remains a gentle supporting reflection layer. The next step is to rest before adding a dashboard section, app feature, visual styling, backend, account system, roadmap expansion, new planning note, additional example, or future visual idea.
