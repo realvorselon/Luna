@@ -2,6 +2,8 @@
 
 ## 2026-07-09
 
+### Current Mode Dashboard Card
+
 - Added a small Current Mode dashboard card set to Rest so beginners can see Luna is pausing after the Record the Change wording cleanup without turning modes into a workflow.
 
 ### Record the Change Wording Cleanup
