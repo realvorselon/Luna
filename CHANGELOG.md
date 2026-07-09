@@ -2,6 +2,12 @@
 
 ## 2026-07-09
 
+### Moonlit Palette Depth Pass
+
+- Deepened the existing `index.html` CSS with a more intentional moonlit background gradient, indigo and blue-violet depth, muted periwinkle and soft silver accents, and readable moon-cream text.
+- Made cards feel more distinct from the background while keeping the dashboard structure exactly the same.
+- Kept the Next Action card as the only small warm lantern-gold focus, and updated `README.md`, `project.json`, `STATE.md`, and `ROADMAP.md` so the public trail rests before prototype work, dashboard expansion, more pruning, or another visual redesign.
+
 ### Moonlit Dashboard Palette Alignment
 
 - Updated the existing `index.html` CSS with a restrained moonlit night palette: deep navy background, slate cards, moon-cream text, muted periwinkle/silver accents, and tiny lantern-gold highlights only where useful.

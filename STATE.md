@@ -10,7 +10,7 @@ Help someone return to one small project, see where they left off and what chang
 
 ## Last Completed Run
 
-- 2026-07-09: Aligned the public dashboard CSS with a restrained moonlit night palette while keeping the existing structure and core return loop unchanged.
+- 2026-07-09: Deepened the public dashboard CSS with a more atmospheric moonlit indigo, blue-violet, periwinkle, silver, and small lantern-gold palette while keeping the existing structure unchanged.
 
 ## Next Suggested Step
 
@@ -18,7 +18,7 @@ Rest before starting a usable app prototype, editable UI, local storage, backend
 
 ## Notes
 
-The dashboard now uses a restrained moonlit night palette: deep navy background, soft slate cards, moon-cream primary text, muted periwinkle and silver accents, and tiny lantern-gold highlights only around the existing Next Action focus. The structure and core content stayed the same so the public front page remains a calm return loop rather than a new redesign or usable prototype.
+The dashboard now uses a deeper moonlit night palette: intentional indigo gradients, blue-violet depth, softly distinct cards, moon-cream primary text, muted periwinkle and silver accents, and tiny lantern-gold highlights only around the existing Next Action focus. The structure and core content stayed the same so the public front page remains a calm return loop rather than a new redesign or usable prototype.
 
 The live dashboard now keeps lower support material quiet by removing the rendered Dashboard Guide, Status History, Local Setup, Future Ideas, Idea Queue, Glossary, and Decision Log sections from the public front page. Recent Runs, Project Health, and one quiet Project Trail note keep a small public trail, while builder/reference material stays available in README.md, docs, and project.json. The front page should stay focused on the core return loop before any usable prototype work.
 

@@ -4,7 +4,7 @@ This roadmap is intentionally small. Luna is a public dashboard prototype right 
 
 ## Completed
 
-- Aligned the dashboard CSS with a restrained moonlit night palette while keeping the existing structure and core return loop unchanged.
+- Deepened the dashboard CSS with a more atmospheric moonlit indigo, blue-violet, periwinkle, silver, and small lantern-gold palette while keeping the existing structure and core return loop unchanged.
 - Pruned the lower public dashboard support sections so builder/reference material stays off the front page while Recent Runs, Project Health, and one quiet Project Trail note keep a small public trail.
 - Pruned the live dashboard Philosophy Garden area into one optional Reflection section so the main page stays focused on the core return loop.
 - Added `CHANGELOG.md` to keep a dated project history.
