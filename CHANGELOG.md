@@ -2,6 +2,11 @@
 
 ## 2026-07-09
 
+### Ignore For Now Guidance Alignment
+
+- Updated the existing `index.html` How to use Luna list so beginners read from Welcome through Ignore For Now, use Next Action as the one clear thing to do, use Ignore For Now to see what can wait, and rest before adding more.
+- Updated `project.json.dashboardGuide`, `project.json.lastCompletedRun`, and `STATE.md` so the newest completed run and next step stay aligned around resting before any second medium dashboard step or larger expansion.
+
 ### Ignore For Now Dashboard Card
 
 - Added a small public-safe Ignore For Now card near Next Action in `index.html`.
