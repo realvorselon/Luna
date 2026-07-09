@@ -1,6 +1,10 @@
 {
-  "status": "Resting after Record the Change guidance alignment",
+  "status": "Resting after Record the Change wording cleanup",
   "statusHistory": [
+    {
+      "date": "2026-07-09",
+      "note": "Cleaned up stale wording so the public trail consistently says the current guidance reads from Welcome through Record the Change, with Next Action, Ignore For Now, and Record the Change as the top return path before resting."
+    },
     {
       "date": "2026-07-09",
       "note": "Aligned existing dashboard guidance with the Record the Change return path so beginners read from Welcome through Record the Change, use Next Action, see what can wait, record one useful change, and rest."
@@ -299,7 +303,7 @@
     }
   ],
   "currentGoal": "Help someone return to one small project, see where they left off and what changed last, choose one clear Next Action, know what to ignore for now, record the change, and rest before adding more while preserving Luna's v0.1 dashboard and Philosophy Garden.",
-  "lastCompletedRun": "2026-07-09: Aligned existing dashboard guidance with the Record the Change return path so beginners read from Welcome through Record the Change, use Next Action, see what can wait, record one useful change, and rest.",
+  "lastCompletedRun": "2026-07-09: Cleaned up stale wording so the public trail consistently says the current guidance reads from Welcome through Record the Change, with Next Action, Ignore For Now, and Record the Change as the top return path before resting.",
   "nextStep": "Rest before adding another dashboard section, app feature, visual styling, backend, account system, roadmap expansion, new planning note, additional example, future visual idea, Current Mode card, or third medium dashboard step.",
   "dashboardGuide": [
     "Welcome starts the path to read through Record the Change before choosing more work.",
@@ -369,7 +373,7 @@
     "title": "Rest before adding more dashboard structure or features",
     "description": "Rest before adding another dashboard section, app feature, visual styling, backend, account system, roadmap expansion, new planning note, additional example, future visual idea, or third medium dashboard step.",
     "whyItMatters": "Resting keeps this dashboard addition small and prevents Luna from turning into a finished product, SaaS app, logging system, changelog editor, task manager, backlog, roadmap, styling pass, backend plan, account system, or third medium dashboard step.",
-    "status": "Resting after Record the Change dashboard card"
+    "status": "Resting after Record the Change wording cleanup"
   },
   "creativeSeed": {
     "name": "Philosophy Garden",

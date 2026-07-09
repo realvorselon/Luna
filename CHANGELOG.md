@@ -2,6 +2,12 @@
 
 ## 2026-07-09
 
+### Record the Change Wording Cleanup
+
+- Cleaned up stale `STATE.md` wording that still described the dashboard guide as reading only through Ignore For Now or Next Action.
+- Updated `project.json.nextAction.status`, `project.json.lastCompletedRun`, and the newest `project.json.statusHistory` entry so the public trail rests after the Record the Change wording cleanup.
+- Kept the next step focused on resting before another dashboard section, app feature, visual styling, backend, account system, roadmap expansion, planning note, example, future visual idea, Current Mode card, or third medium dashboard step.
+
 ### Record the Change Guidance Alignment
 
 - Updated the existing `index.html` How to use Luna list so beginners read from Welcome through Record the Change, use Next Action as the one clear thing to do, use Ignore For Now to see what can wait, use Record the Change to update the public project trail after one small useful change, and rest before adding more.
