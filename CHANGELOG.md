@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-07-09
+
+### User Guidance Note
+
+- Added `docs/USER_GUIDANCE.md` as a short, public-safe note about approaching Luna without needing to be good at prompting.
+- Explained that Luna should guide users with simple questions, quick-return options, and one safe next action instead of acting like a blank "ask me anything" chatbot.
+- Updated `README.md`, `project.json`, and `STATE.md` so the newest completed run and next step stay aligned around resting or reviewing the user guidance note before any user-guidance feature.
+
 ## 2026-07-08
 
 ### Stewardship Note

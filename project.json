@@ -1,6 +1,10 @@
 {
-  "status": "Resting after stewardship note",
+  "status": "Resting after user guidance note",
   "statusHistory": [
+    {
+      "date": "2026-07-09",
+      "note": "Added a beginner-friendly user guidance note that explains how people can approach Luna without needing to be good at prompting."
+    },
     {
       "date": "2026-07-08",
       "note": "Added a short public-safe stewardship design note that describes a future small-project loop without adding a dashboard feature, data object, roadmap, or app plan."
@@ -194,9 +198,9 @@
       "note": "The project is resting after a good run and ready for one gentle improvement."
     }
   ],
-  "currentGoal": "Keep the dashboard and docs focused on Luna's plain-language welcome, one clear Next Action, the stable Philosophy Garden cycle, and a calm stewardship note for future public-safe updates.",
-  "lastCompletedRun": "2026-07-08: Added a short public-safe stewardship design note that describes a future small-project loop without adding a dashboard feature, data object, roadmap, or app plan.",
-  "nextStep": "Rest or review docs/STEWARDSHIP.md before building any stewardship feature.",
+  "currentGoal": "Keep the dashboard and docs focused on Luna's plain-language welcome, one clear Next Action, the stable Philosophy Garden cycle, and calm guidance for future public-safe updates.",
+  "lastCompletedRun": "2026-07-09: Added a beginner-friendly user guidance note that explains how people can approach Luna without needing to be good at prompting.",
+  "nextStep": "Rest or review docs/USER_GUIDANCE.md before adding any user-guidance feature.",
   "dashboardGuide": [
     "Welcome explains Luna in plain language before the project details begin.",
     "Status gives a quick snapshot of how the project is doing right now.",
@@ -206,7 +210,7 @@
     "Read the dashboard from top to bottom; if you only need one task, stop at Next Action."
   ],
   "futureIdeas": [
-    "Rest or review docs/STEWARDSHIP.md before building any stewardship feature.",
+    "Rest or review docs/USER_GUIDANCE.md before adding any user-guidance feature.",
     "Review one existing guidance sentence later for beginner-friendly clarity.",
     "Keep project.json, STATE.md, and CHANGELOG.md aligned after each small dashboard or documentation change."
   ],
@@ -222,7 +226,7 @@
     "The Garden Cycle connects the Reflection Card, Garden Review, Next Garden Update, and rest step so beginners can see how Philosophy Garden pieces fit together."
   ],
   "ideaQueue": [
-    "Rest or review docs/STEWARDSHIP.md before building any stewardship feature.",
+    "Rest or review docs/USER_GUIDANCE.md before adding any user-guidance feature.",
     "Review one existing guidance sentence later for beginner-friendly clarity.",
     "Keep project.json, STATE.md, and CHANGELOG.md aligned after each small dashboard or documentation change."
   ],
@@ -259,10 +263,10 @@
     "Visit http://localhost:8000 in a browser to view the dashboard."
   ],
   "nextAction": {
-    "title": "Rest after stewardship note",
-    "description": "Pause or review the short stewardship note before turning it into any dashboard section, data object, or feature.",
-    "whyItMatters": "Resting keeps stewardship as calm guidance instead of letting it become a larger app plan too soon.",
-    "status": "Resting after stewardship note"
+    "title": "Rest after user guidance note",
+    "description": "Pause or review the short user guidance note before turning it into any dashboard section, data object, or feature.",
+    "whyItMatters": "Resting keeps user guidance as calm documentation instead of letting it become a larger product plan too soon.",
+    "status": "Resting after user guidance note"
   },
   "creativeSeed": {
     "name": "Philosophy Garden",
