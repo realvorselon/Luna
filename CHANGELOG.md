@@ -2,6 +2,12 @@
 
 ## 2026-07-09
 
+### Minimal App Shape Review
+
+- Added `docs/MINIMAL_APP_SHAPE.md` as a short planning note that reviews the smallest possible future Luna app shape from `docs/APP_SEED.md` without starting a build plan.
+- Updated the README Where to Look Next section so new visitors can find the minimal app shape review note.
+- Updated `project.json` and `STATE.md` so the newest completed run and next step stay aligned around resting before any app feature, dashboard feature, visual styling, backend, account system, roadmap expansion, or additional planning note.
+
 ### App Seed Clarity Review
 
 - Reviewed `docs/APP_SEED.md` for clarity and restraint against Luna's smallest honest future app direction.
