@@ -2,6 +2,12 @@
 
 ## 2026-07-09
 
+### First Usable Prototype Slice Note
+
+- Added `docs/FIRST_USABLE_PROTOTYPE_SLICE.md` as a concise public-safe boundary note for the first tiny usable Luna prototype slice.
+- Defined the slice as one local/simple project state using the same Luna return loop: return, orient, see what changed, choose one next action, see what can wait, record one change, and rest.
+- Updated `README.md`, `project.json`, `STATE.md`, and `ROADMAP.md` so the public trail rests before creating a prototype page, editable UI, local storage, backend, account system, database, dashboard expansion, visual redesign, mode workflow, or multi-project system.
+
 ### Moonlit Palette Depth Pass
 
 - Deepened the existing `index.html` CSS with a more intentional moonlit background gradient, indigo and blue-violet depth, muted periwinkle and soft silver accents, and readable moon-cream text.
