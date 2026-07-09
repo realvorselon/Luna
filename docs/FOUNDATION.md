@@ -22,4 +22,4 @@ Luna's foundation docs are a small public map, not a new app plan. They help a n
 
 ## Current Next Step
 
-After this foundation map review, Luna should rest or review public prototype readiness before adding any new foundation, documentation, visual, or dashboard feature.
+Rest or write a tiny future app seed note before adding any app feature, dashboard feature, visual styling, backend, account system, or roadmap expansion.
