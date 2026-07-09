@@ -1,6 +1,10 @@
 {
-  "status": "Resting after restrained CSS polish",
+  "status": "Resting after mobile readability review",
   "statusHistory": [
+    {
+      "date": "2026-07-09",
+      "note": "Reviewed the restrained CSS polish and added a tiny mobile readability adjustment so Garden Cycle and Garden Path cards stack more calmly on narrow screens."
+    },
     {
       "date": "2026-07-09",
       "note": "Applied a restrained CSS-only dashboard polish with calmer spacing, warmer card edges, and a subtle lantern-like focus on the existing Next Action area."
@@ -215,8 +219,8 @@
     }
   ],
   "currentGoal": "Keep the dashboard and docs focused on Luna's plain-language welcome, one clear Next Action, the stable Philosophy Garden cycle, calm guidance, and restrained public-safe visual polish.",
-  "lastCompletedRun": "2026-07-09: Applied a restrained CSS-only dashboard polish with calmer spacing, warmer card edges, and a subtle lantern-like focus on the existing Next Action area.",
-  "nextStep": "Rest or review the CSS polish before adding any additional visual styling.",
+  "lastCompletedRun": "2026-07-09: Reviewed the restrained CSS polish and added a tiny mobile readability adjustment so Garden Cycle and Garden Path cards stack more calmly on narrow screens.",
+  "nextStep": "Rest or do a documentation/foundation review before adding any additional visual styling.",
   "dashboardGuide": [
     "Welcome explains Luna in plain language before the project details begin.",
     "Status gives a quick snapshot of how the project is doing right now.",
@@ -226,7 +230,7 @@
     "Read the dashboard from top to bottom; if you only need one task, stop at Next Action."
   ],
   "futureIdeas": [
-    "Rest or review the CSS polish before adding any additional visual styling.",
+    "Rest or do a documentation/foundation review before adding any additional visual styling.",
     "Review the current CSS polish for readability before making any further visual change.",
     "Keep project.json, STATE.md, and CHANGELOG.md aligned after each small dashboard or documentation change."
   ],
@@ -242,7 +246,7 @@
     "The Garden Cycle connects the Reflection Card, Garden Review, Next Garden Update, and rest step so beginners can see how Philosophy Garden pieces fit together."
   ],
   "ideaQueue": [
-    "Rest or review the CSS polish before adding any additional visual styling.",
+    "Rest or do a documentation/foundation review before adding any additional visual styling.",
     "Review the current CSS polish for readability before making any further visual change.",
     "Keep project.json, STATE.md, and CHANGELOG.md aligned after each small dashboard or documentation change."
   ],
@@ -279,10 +283,10 @@
     "Visit http://localhost:8000 in a browser to view the dashboard."
   ],
   "nextAction": {
-    "title": "Rest or review the CSS polish",
-    "description": "Pause after the restrained visual polish, or review the current CSS for readability before adding any additional visual styling.",
+    "title": "Rest or review the foundation docs",
+    "description": "Pause after the mobile readability review, or review documentation and project foundations before adding any additional visual styling.",
     "whyItMatters": "Resting keeps Luna warm and calm without turning visual identity into clutter or a larger design plan.",
-    "status": "Resting after restrained CSS polish"
+    "status": "Resting after mobile readability review"
   },
   "creativeSeed": {
     "name": "Philosophy Garden",

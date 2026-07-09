@@ -2,6 +2,12 @@
 
 ## 2026-07-09
 
+### Mobile Readability Review
+
+- Reviewed the restrained dashboard CSS against the visual identity note for calm warmth, readable cards, subtle Next Action focus, uncluttered visual warmth, and mobile readability.
+- Added one tiny CSS adjustment in `index.html` so Garden Cycle and Garden Path cards stack more calmly on narrow screens.
+- Updated `project.json` and `STATE.md` so the newest completed run and next step stay aligned around rest or documentation/foundation review before any additional visual styling.
+
 ### Restrained Dashboard Visual Polish
 
 - Applied a small CSS-only polish to `index.html` so the dashboard feels calmer and warmer without adding new sections, content, images, icons, animations, or JavaScript behavior.
