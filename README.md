@@ -43,6 +43,7 @@ Then visit `http://localhost:8000` in a browser.
 - `CHANGELOG.md` records project history by date.
 - `RULES.md` explains Luna's one-small-change rhythm and alignment expectations.
 - `docs/STEWARDSHIP.md` describes a calm future stewardship loop for small projects without adding a feature yet.
+- `docs/APP_SEED.md` describes the smallest honest future app shape Luna may grow toward without starting a build plan.
 - `docs/USER_GUIDANCE.md` explains how people can approach Luna without needing to be good at prompting.
 - `docs/VISUAL_IDENTITY.md` describes Luna's calm, warm visual and interface personality direction.
 - `project.json` stores the dashboard data shown on the web page.

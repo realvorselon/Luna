@@ -1,6 +1,10 @@
 {
-  "status": "Resting after public prototype readiness review",
+  "status": "Resting after tiny app seed note",
   "statusHistory": [
+    {
+      "date": "2026-07-09",
+      "note": "Added a tiny app seed note that names the smallest honest future app shape without starting an app plan, feature build, roadmap expansion, or technical architecture."
+    },
     {
       "date": "2026-07-09",
       "note": "Reviewed Luna's public prototype readiness and made a tiny foundation-map wording update so the next step points to rest or a future app seed note before any feature growth."
@@ -231,8 +235,8 @@
     }
   ],
   "currentGoal": "Keep the dashboard and docs focused on Luna's plain-language welcome, one clear Next Action, the stable Philosophy Garden cycle, calm guidance, and restrained public-safe visual polish.",
-  "lastCompletedRun": "2026-07-09: Reviewed Luna's public prototype readiness and made a tiny foundation-map wording update so the next step points to rest or a future app seed note before any feature growth.",
-  "nextStep": "Rest or write a tiny future app seed note before adding any app feature, dashboard feature, visual styling, backend, account system, or roadmap expansion.",
+  "lastCompletedRun": "2026-07-09: Added a tiny app seed note that names the smallest honest future app shape without starting an app plan, feature build, roadmap expansion, or technical architecture.",
+  "nextStep": "Rest or review docs/APP_SEED.md before adding any app feature, dashboard feature, visual styling, backend, account system, or roadmap expansion.",
   "dashboardGuide": [
     "Welcome explains Luna in plain language before the project details begin.",
     "Status gives a quick snapshot of how the project is doing right now.",
@@ -242,7 +246,7 @@
     "Read the dashboard from top to bottom; if you only need one task, stop at Next Action."
   ],
   "futureIdeas": [
-    "Rest or write a tiny future app seed note before adding any app feature, dashboard feature, visual styling, backend, account system, or roadmap expansion.",
+    "Rest or review docs/APP_SEED.md before adding any app feature, dashboard feature, visual styling, backend, account system, or roadmap expansion.",
     "Review one existing dashboard or documentation sentence at a time for beginner-friendly clarity.",
     "Keep project.json, STATE.md, and CHANGELOG.md aligned after each small dashboard or documentation change."
   ],
@@ -258,7 +262,7 @@
     "The Garden Cycle connects the Reflection Card, Garden Review, Next Garden Update, and rest step so beginners can see how Philosophy Garden pieces fit together."
   ],
   "ideaQueue": [
-    "Rest or write a tiny future app seed note before adding any app feature, dashboard feature, visual styling, backend, account system, or roadmap expansion.",
+    "Rest or review docs/APP_SEED.md before adding any app feature, dashboard feature, visual styling, backend, account system, or roadmap expansion.",
     "Review one existing dashboard or documentation sentence at a time for beginner-friendly clarity.",
     "Keep project.json, STATE.md, and CHANGELOG.md aligned after each small dashboard or documentation change."
   ],
@@ -295,10 +299,10 @@
     "Visit http://localhost:8000 in a browser to view the dashboard."
   ],
   "nextAction": {
-    "title": "Rest or write a tiny future app seed note",
-    "description": "Pause after the public prototype readiness review, or write one tiny future app seed note before adding any app feature, dashboard feature, visual styling, backend, account system, or roadmap expansion.",
-    "whyItMatters": "Resting or writing only a tiny seed note keeps Luna understandable as an early public prototype and prevents a readiness review from turning into feature-building.",
-    "status": "Resting after public prototype readiness review"
+    "title": "Rest or review the app seed note",
+    "description": "Pause after adding the tiny app seed note, or review docs/APP_SEED.md before adding any app feature, dashboard feature, visual styling, backend, account system, or roadmap expansion.",
+    "whyItMatters": "Resting or reviewing the seed note keeps Luna's future app direction small and honest without turning it into a build plan.",
+    "status": "Resting after tiny app seed note"
   },
   "creativeSeed": {
     "name": "Philosophy Garden",
