@@ -1,6 +1,10 @@
 {
-  "status": "Resting after minimal app shape review",
+  "status": "Resting after example return walkthrough",
   "statusHistory": [
+    {
+      "date": "2026-07-09",
+      "note": "Added a short example return walkthrough that shows Luna helping one fictional person return to one small creative project without starting an app build."
+    },
     {
       "date": "2026-07-09",
       "note": "Added a minimal app shape review note that reviews the smallest possible future Luna app shape from the app seed without starting a build plan."
@@ -243,8 +247,8 @@
     }
   ],
   "currentGoal": "Keep the dashboard and docs focused on Luna's plain-language welcome, one clear Next Action, the stable Philosophy Garden cycle, calm guidance, and restrained public-safe visual polish.",
-  "lastCompletedRun": "2026-07-09: Added a minimal app shape review note that reviews the smallest possible future Luna app shape from the app seed without starting a build plan.",
-  "nextStep": "Rest before adding any app feature, dashboard feature, visual styling, backend, account system, roadmap expansion, or additional planning note.",
+  "lastCompletedRun": "2026-07-09: Added a short example return walkthrough that shows Luna helping one fictional person return to one small creative project without starting an app build.",
+  "nextStep": "Rest before adding any app feature, dashboard feature, visual styling, backend, account system, roadmap expansion, additional planning note, or second example.",
   "dashboardGuide": [
     "Welcome explains Luna in plain language before the project details begin.",
     "Status gives a quick snapshot of how the project is doing right now.",
@@ -307,10 +311,10 @@
     "Visit http://localhost:8000 in a browser to view the dashboard."
   ],
   "nextAction": {
-    "title": "Rest before adding app features",
-    "description": "Rest before adding any app feature, dashboard feature, visual styling, backend, account system, roadmap expansion, or additional planning note.",
-    "whyItMatters": "Resting keeps Luna's minimal app shape understanding separate from building and protects the one-small-change rhythm.",
-    "status": "Resting after minimal app shape review"
+    "title": "Rest before adding more examples or features",
+    "description": "Rest before adding any app feature, dashboard feature, visual styling, backend, account system, roadmap expansion, additional planning note, or second example.",
+    "whyItMatters": "Resting keeps the example walkthrough as one small concrete product moment without turning it into a feature plan or larger example library.",
+    "status": "Resting after example return walkthrough"
   },
   "creativeSeed": {
     "name": "Philosophy Garden",

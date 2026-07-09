@@ -2,6 +2,12 @@
 
 ## 2026-07-09
 
+### Example Return Walkthrough
+
+- Added `docs/EXAMPLE_RETURN.md` as a short public-safe walkthrough of Luna helping one fictional person return to one tiny browser game.
+- Updated the README Where to Look Next section so new visitors can find the example return walkthrough.
+- Updated `project.json` and `STATE.md` so the newest completed run and next step stay aligned around resting before any app feature, dashboard feature, visual styling, backend, account system, roadmap expansion, additional planning note, or second example.
+
 ### Minimal App Shape Review
 
 - Added `docs/MINIMAL_APP_SHAPE.md` as a short planning note that reviews the smallest possible future Luna app shape from `docs/APP_SEED.md` without starting a build plan.
