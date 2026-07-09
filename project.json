@@ -1,6 +1,10 @@
 {
-  "status": "Resting after tiny app seed note",
+  "status": "Resting after app seed clarity review",
   "statusHistory": [
+    {
+      "date": "2026-07-09",
+      "note": "Reviewed the app seed note and made two tiny wording clarifications so the smallest honest future app shape stays calm, directional, and not a build plan."
+    },
     {
       "date": "2026-07-09",
       "note": "Added a tiny app seed note that names the smallest honest future app shape without starting an app plan, feature build, roadmap expansion, or technical architecture."
@@ -235,8 +239,8 @@
     }
   ],
   "currentGoal": "Keep the dashboard and docs focused on Luna's plain-language welcome, one clear Next Action, the stable Philosophy Garden cycle, calm guidance, and restrained public-safe visual polish.",
-  "lastCompletedRun": "2026-07-09: Added a tiny app seed note that names the smallest honest future app shape without starting an app plan, feature build, roadmap expansion, or technical architecture.",
-  "nextStep": "Rest or review docs/APP_SEED.md before adding any app feature, dashboard feature, visual styling, backend, account system, or roadmap expansion.",
+  "lastCompletedRun": "2026-07-09: Reviewed the app seed note and made two tiny wording clarifications so the smallest honest future app shape stays calm, directional, and not a build plan.",
+  "nextStep": "Rest or plan the first minimal app shape review before adding any app feature, dashboard feature, visual styling, backend, account system, or roadmap expansion.",
   "dashboardGuide": [
     "Welcome explains Luna in plain language before the project details begin.",
     "Status gives a quick snapshot of how the project is doing right now.",
@@ -246,7 +250,7 @@
     "Read the dashboard from top to bottom; if you only need one task, stop at Next Action."
   ],
   "futureIdeas": [
-    "Rest or review docs/APP_SEED.md before adding any app feature, dashboard feature, visual styling, backend, account system, or roadmap expansion.",
+    "Rest or plan the first minimal app shape review before adding any app feature, dashboard feature, visual styling, backend, account system, or roadmap expansion.",
     "Review one existing dashboard or documentation sentence at a time for beginner-friendly clarity.",
     "Keep project.json, STATE.md, and CHANGELOG.md aligned after each small dashboard or documentation change."
   ],
@@ -262,7 +266,7 @@
     "The Garden Cycle connects the Reflection Card, Garden Review, Next Garden Update, and rest step so beginners can see how Philosophy Garden pieces fit together."
   ],
   "ideaQueue": [
-    "Rest or review docs/APP_SEED.md before adding any app feature, dashboard feature, visual styling, backend, account system, or roadmap expansion.",
+    "Rest or plan the first minimal app shape review before adding any app feature, dashboard feature, visual styling, backend, account system, or roadmap expansion.",
     "Review one existing dashboard or documentation sentence at a time for beginner-friendly clarity.",
     "Keep project.json, STATE.md, and CHANGELOG.md aligned after each small dashboard or documentation change."
   ],
@@ -299,10 +303,10 @@
     "Visit http://localhost:8000 in a browser to view the dashboard."
   ],
   "nextAction": {
-    "title": "Rest or review the app seed note",
-    "description": "Pause after adding the tiny app seed note, or review docs/APP_SEED.md before adding any app feature, dashboard feature, visual styling, backend, account system, or roadmap expansion.",
-    "whyItMatters": "Resting or reviewing the seed note keeps Luna's future app direction small and honest without turning it into a build plan.",
-    "status": "Resting after tiny app seed note"
+    "title": "Rest or plan a minimal app shape review",
+    "description": "Pause after the app seed clarity review, or plan only the first minimal app shape review before adding any app feature, dashboard feature, visual styling, backend, account system, or roadmap expansion.",
+    "whyItMatters": "Resting or planning a review keeps Luna's future app direction honest and small without turning it into a roadmap or build plan.",
+    "status": "Resting after app seed clarity review"
   },
   "creativeSeed": {
     "name": "Philosophy Garden",

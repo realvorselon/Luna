@@ -4,11 +4,11 @@ Luna may later become a calm companion for small projects. This is only a tiny d
 
 ## Smallest Honest Shape
 
-If Luna ever grows into an app, the smallest honest shape could be:
+If Luna ever grows into an app, the smallest honest shape can stay this simple:
 
 - Hold **one small project at a time** so the person is not asked to manage everything at once.
 - Begin with a **gentle setup** that asks what the project is and what matters about it.
-- Keep a simple **saved project state** so returning does not mean starting over.
+- Remember enough of the **project state** that returning does not mean starting over.
 - Name a current mode, such as **orient**, **grow**, **align**, **prune**, **reflect**, or **rest**.
 - Offer **one suggested next action** that is small, kind, and possible now.
 - Show a short history of **what changed last**.
