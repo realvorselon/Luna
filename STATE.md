@@ -10,7 +10,7 @@ Help someone return to one small project, see where they left off and what chang
 
 ## Last Completed Run
 
-- 2026-07-09: Cleaned up the Future Ideas and Idea Queue shelves so they match Luna's current return-to-one-small-project direction without adding features or new notes.
+- 2026-07-09: Clarified the top README framing so Luna foregrounds returning to one small project while keeping the Philosophy Garden as a supporting reflection layer.
 
 ## Next Suggested Step
 
@@ -72,3 +72,5 @@ The README Where to Look Next section now groups the same useful links into Star
 The Current Goal now foregrounds Luna's core return shape: helping someone return to one small project, see where they left off and what changed last, choose one clear Next Action, know what to ignore for now, record the change, and rest before adding more. It still preserves the existing v0.1 dashboard and Philosophy Garden instead of expanding the roadmap or adding features. The next step is to rest before adding a dashboard section, app feature, visual styling, backend, account system, roadmap expansion, new planning note, additional example, or future visual idea.
 
 The Future Ideas and Idea Queue shelves now stay short, calm, and aligned with Luna's current return shape: return to one small project, see what changed last, choose one clear Next Action, know what to ignore for now, record the change, and rest before adding more. The next step is to rest before adding a dashboard section, app feature, visual styling, backend, account system, roadmap expansion, new planning note, additional example, or future visual idea.
+
+The README top framing now foregrounds Luna's return-to-one-small-project shape: seeing where the project left off, seeing what changed last, choosing one clear Next Action, knowing what to ignore for now, recording the change, and resting before adding more. The Philosophy Garden remains as a gentle supporting reflection layer around that core return path rather than the whole project or main engine. The next step is to rest before adding a dashboard section, app feature, visual styling, backend, account system, roadmap expansion, new planning note, additional example, or future visual idea.

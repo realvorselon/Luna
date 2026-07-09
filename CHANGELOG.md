@@ -2,6 +2,12 @@
 
 ## 2026-07-09
 
+### README Top-Framing Clarity Review
+
+- Clarified the README opening, v0.1 milestone, longer-term vision, and dashboard wording so Luna foregrounds helping someone return to one small project.
+- Framed the Philosophy Garden as a gentle supporting reflection layer around the core return path rather than the whole project or main engine.
+- Updated `project.json` and `STATE.md` so the newest completed run and next step stay aligned around resting before adding any dashboard section, app feature, visual styling, backend, account system, roadmap expansion, new planning note, additional example, or future visual idea.
+
 ### Future Ideas and Idea Queue Shelf Cleanup
 
 - Cleaned up `project.json.futureIdeas` and `project.json.ideaQueue` so both lists read like a short, quiet shelf aligned with Luna's current return-to-one-small-project direction.
