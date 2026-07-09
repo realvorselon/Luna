@@ -1,6 +1,10 @@
 {
-  "status": "Resting after foundation map",
+  "status": "Resting after foundation map review",
   "statusHistory": [
+    {
+      "date": "2026-07-09",
+      "note": "Reviewed the foundation map for new-visitor clarity and made tiny wording updates so it more clearly connects Luna's public docs, dashboard data, and current dashboard page."
+    },
     {
       "date": "2026-07-09",
       "note": "Added a small foundation map that explains how Luna's current public docs and dashboard files fit together for new visitors."
@@ -223,8 +227,8 @@
     }
   ],
   "currentGoal": "Keep the dashboard and docs focused on Luna's plain-language welcome, one clear Next Action, the stable Philosophy Garden cycle, calm guidance, and restrained public-safe visual polish.",
-  "lastCompletedRun": "2026-07-09: Added a small foundation map that explains how Luna's current public docs and dashboard files fit together for new visitors.",
-  "nextStep": "Rest or review docs/FOUNDATION.md before adding any new foundation, documentation, visual, or dashboard feature.",
+  "lastCompletedRun": "2026-07-09: Reviewed the foundation map for new-visitor clarity and made tiny wording updates so it more clearly connects Luna's public docs, dashboard data, and current dashboard page.",
+  "nextStep": "Rest or review public prototype readiness before adding any new foundation, documentation, visual, or dashboard feature.",
   "dashboardGuide": [
     "Welcome explains Luna in plain language before the project details begin.",
     "Status gives a quick snapshot of how the project is doing right now.",
@@ -287,10 +291,10 @@
     "Visit http://localhost:8000 in a browser to view the dashboard."
   ],
   "nextAction": {
-    "title": "Rest or review the foundation map",
-    "description": "Pause after adding docs/FOUNDATION.md, or review the foundation map before adding any new foundation, documentation, visual, or dashboard feature.",
-    "whyItMatters": "Resting keeps Luna beginner-friendly and prevents a simple documentation map from turning into a larger plan.",
-    "status": "Resting after foundation map"
+    "title": "Rest or review public prototype readiness",
+    "description": "Pause after the foundation map review, or gently review whether the current public prototype is ready before adding any new foundation, documentation, visual, or dashboard feature.",
+    "whyItMatters": "Resting or reviewing readiness keeps Luna beginner-friendly and prevents a simple documentation map from turning into a larger plan.",
+    "status": "Resting after foundation map review"
   },
   "creativeSeed": {
     "name": "Philosophy Garden",

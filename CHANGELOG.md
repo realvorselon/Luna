@@ -2,6 +2,12 @@
 
 ## 2026-07-09
 
+### Foundation Map Clarity Review
+
+- Reviewed `docs/FOUNDATION.md` for new-visitor clarity and alignment with Luna's current public docs and dashboard files.
+- Made tiny wording updates so the foundation map more clearly connects the public docs, `project.json` dashboard content, and `index.html` dashboard page without adding a new plan or feature.
+- Updated `project.json` and `STATE.md` so the newest completed run and next step stay aligned around resting or reviewing public prototype readiness before adding any new foundation, documentation, visual, or dashboard feature.
+
 ### Foundation Map
 
 - Added `docs/FOUNDATION.md` as a short public-safe guide to how Luna's current foundation docs and dashboard files fit together.

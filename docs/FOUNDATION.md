@@ -1,6 +1,6 @@
 # Foundation Map
 
-Luna's foundation docs are a small public map, not a new app plan. They help a new visitor understand what is already here, where to look next, and how to keep each change calm and aligned.
+Luna's foundation docs are a small public map, not a new app plan. They help a new visitor understand what is already here, how the public docs and dashboard fit together, where to look next, and how to keep each change calm and aligned.
 
 ## Start Here
 
@@ -17,9 +17,9 @@ Luna's foundation docs are a small public map, not a new app plan. They help a n
 
 ## Public Dashboard Files
 
-- `project.json` stores the dashboard data shown on the web page.
-- `index.html` renders the current public dashboard from that data.
+- `project.json` stores the public dashboard content, including the current status, last completed run, and next action.
+- `index.html` renders that content as the current public dashboard page.
 
 ## Current Next Step
 
-After this foundation map, Luna should rest or review `docs/FOUNDATION.md` before adding any new foundation, documentation, visual, or dashboard feature.
+After this foundation map review, Luna should rest or review public prototype readiness before adding any new foundation, documentation, visual, or dashboard feature.
