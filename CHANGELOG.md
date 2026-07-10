@@ -2,6 +2,13 @@
 
 ## 2026-07-10
 
+### Prototype Rest Checkpoint
+
+- Added `docs/PROTOTYPE_REST_CHECKPOINT.md` as a concise public-safe pause note after the first editable saved-and-clearable prototype slice was human tested.
+- Recorded that the prototype has one project state view with a calm return loop, editable project name and current goal, local browser saving for only those two fields, and one human-tested clear-local-edits control for those two local browser edits only.
+- Confirmed Current Mode, last completed run, Next Action, Ignore For Now, Record the Change, rest / next step, and every other card remain static and unsaved while the dashboard ↔ prototype reversible path and “Return to dashboard” link remain preserved.
+- Updated `README.md`, `project.json`, `STATE.md`, and `ROADMAP.md` so the public trail rests before deciding whether to improve wording, returning flow, or the visible one-project loop, and before adding more persistence or prototype behavior.
+
 ### Clear Local Edits Read-Through
 
 - Added `docs/CLEAR_LOCAL_EDITS_READ_THROUGH.md` after human testing confirmed the clear-local-edits control works.
