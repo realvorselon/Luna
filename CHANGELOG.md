@@ -2,6 +2,13 @@
 
 ## 2026-07-10
 
+### Local Saving Read-Through
+
+- Added `docs/LOCAL_SAVING_READ_THROUGH.md` after human testing confirmed project name and current goal survive refresh.
+- Recorded that saved values are local to the same browser only, do not sync, do not create an account, and may be cleared by clearing browser site data.
+- Kept only project name and current goal saved while Current Mode, last completed run, Next Action, Ignore For Now, Record the Change, rest / next step, and every other card remain static and unsaved.
+- Updated `README.md`, `project.json`, `STATE.md`, and `ROADMAP.md` so the public trail rests before reset/clear controls, saving more fields, sessionStorage, cookies, backend, accounts, database, sync, dashboard expansion, visual redesign, mode workflow, multi-project system, or more editable cards.
+
 ### Tiny Local Browser Saving
 
 - Added localStorage saving in `prototype.html` for project name and current goal only.
