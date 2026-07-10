@@ -2,6 +2,12 @@
 
 ## 2026-07-10
 
+### Prototype Return Path Wording Polish
+
+- Updated `prototype.html` copy only so someone returning to an unfinished small project is told to read the project state, then what changed last, then the one Next Action.
+- Made the visible return path and one-project loop slightly easier to scan without changing prototype behavior, controls, saved fields, local browser saving, clear-local-edits behavior, or the dashboard ↔ prototype reversible path.
+- Updated `README.md`, `project.json`, `STATE.md`, and `ROADMAP.md` so the public trail points to human review before any new behavior, more persistence, more editable cards, sessionStorage, cookies, backend, accounts, database, sync, dashboard expansion, visual redesign, mode workflow, multi-project system, or new Philosophy Garden content.
+
 ### Returning Flow Wording Boundary
 
 - Added `docs/RETURNING_FLOW_WORDING_BOUNDARY.md` as a concise public-safe boundary note before changing prototype copy.

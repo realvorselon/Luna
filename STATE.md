@@ -10,13 +10,15 @@ Help someone return to one small project, see where they left off and what chang
 
 ## Last Completed Run
 
-- 2026-07-10: Added a returning flow wording boundary note before changing prototype copy.
+- 2026-07-10: Added a tiny wording-only polish to make the prototype return path clearer.
 
 ## Next Suggested Step
 
-Rest before deciding whether to implement one tiny wording-only polish to the returning flow, and before adding any new behavior, more persistence, more editable cards, sessionStorage, cookies, backend, accounts, database, sync, dashboard expansion, visual redesign, mode workflow, multi-project system, or new Philosophy Garden content.
+Human review the wording-only polish before adding any new behavior, more persistence, more editable cards, sessionStorage, cookies, backend, accounts, database, sync, dashboard expansion, visual redesign, mode workflow, multi-project system, or new Philosophy Garden content.
 
 ## Notes
+
+The prototype now includes one tiny wording-only polish near the top of `prototype.html` that tells someone returning to start with the project state, then what changed last, then the one Next Action. It also makes the return path and one-project loop slightly easier to scan without changing behavior, adding controls, saving more fields, changing local browser saving, or altering the dashboard ↔ prototype reversible path. The next step is to human review the wording-only polish before adding any new behavior, more persistence, more editable cards, sessionStorage, cookies, backend, accounts, database, sync, dashboard expansion, visual redesign, mode workflow, multi-project system, or new Philosophy Garden content.
 
 The returning flow wording boundary note records that this run does not change `prototype.html`, add code, change behavior, add persistence, add controls, expand the dashboard, redesign visuals, create a mode workflow, or add multi-project behavior. Any later wording polish should only make the visible return path easier to understand for someone coming back to an unfinished small project: it may clarify what to read first, make the return path feel more obvious, or make the one-project loop easier to scan. Any later polish should stay limited to copy, labels, or short helper text already present in `prototype.html`, preserve the current prototype structure, preserve project name and current goal local browser saving, preserve the clear-local-edits control behavior, keep Current Mode, last completed run, Next Action, Ignore For Now, Record the Change, rest / next step, and every other card static and unsaved, and preserve the dashboard ↔ prototype reversible path and “Return to dashboard” link. The next step is to rest before deciding whether to implement one tiny wording-only polish to the returning flow, and before adding any new behavior, more persistence, more editable cards, sessionStorage, cookies, backend, accounts, database, sync, dashboard expansion, visual redesign, mode workflow, multi-project system, or new Philosophy Garden content.
 
