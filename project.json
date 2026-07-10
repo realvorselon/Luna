@@ -1,6 +1,10 @@
 {
-  "status": "Resting after sample project layer read-through",
+  "status": "Resting after theme direction boundary",
   "statusHistory": [
+    {
+      "date": "2026-07-10",
+      "note": "Added a tiny theme direction boundary for Luna’s finished moonlit garden / quiet desk / gentle return path vibe."
+    },
     {
       "date": "2026-07-10",
       "note": "Added a human read-through note after the sample project layer copy polish."
@@ -408,10 +412,6 @@
     {
       "date": "2026-07-07",
       "note": "The project is resting after a good run and ready for one gentle improvement."
-    },
-    {
-      "date": "2026-07-10",
-      "status": "2026-07-10: Added a tiny theme direction boundary for Luna’s finished moonlit garden / quiet desk / gentle return path vibe."
     }
   ],
   "currentGoal": "Help someone return to one small project, see where they left off and what changed last, choose one clear Next Action, know what to ignore for now, record the change, and rest before adding more while keeping Philosophy Garden clearly optional.",
