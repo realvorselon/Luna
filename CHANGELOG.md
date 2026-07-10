@@ -2,6 +2,13 @@
 
 ## 2026-07-10
 
+### Clear Local Edits Read-Through
+
+- Added `docs/CLEAR_LOCAL_EDITS_READ_THROUGH.md` after human testing confirmed the clear-local-edits control works.
+- Recorded that the control clears only local browser edits for project name and current goal, returns both fields to the public-safe sample values, and leaves those sample values after another refresh.
+- Kept the clear action local to the same browser only, with no sync, account, backend, database, cookies, sessionStorage, export/import, delete behavior, or reset-all-project behavior.
+- Updated `README.md`, `project.json`, `STATE.md`, and `ROADMAP.md` so the public trail rests before adding more persistence behavior, saving more fields, sessionStorage, cookies, backend, accounts, database, sync, dashboard expansion, visual redesign, mode workflow, multi-project system, or more editable cards.
+
 ### Tiny Clear Local Edits Control
 
 - Added one calm clear-local-edits button in `prototype.html` near the editable project name and current goal fields.
