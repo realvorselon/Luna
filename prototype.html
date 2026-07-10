@@ -144,6 +144,53 @@
 
     .lantern-card p { margin-bottom: 0; color: var(--moon-soft); }
 
+
+    .try-editing-card {
+      margin-top: 18px;
+      padding: 20px;
+      background: var(--card);
+      border: 1px solid var(--line-strong);
+      border-radius: 16px;
+      box-shadow: 0 14px 34px rgb(0 0 0 / 16%);
+    }
+
+    .try-editing-note {
+      margin: 0 0 16px;
+      color: var(--moon-soft);
+    }
+
+    .edit-fields {
+      display: grid;
+      gap: 14px;
+    }
+
+    .edit-field {
+      display: grid;
+      gap: 7px;
+    }
+
+    .edit-field label {
+      color: var(--periwinkle);
+      font-size: 0.86rem;
+      font-weight: 750;
+    }
+
+    .edit-field input {
+      width: 100%;
+      padding: 11px 12px;
+      color: var(--moon);
+      background: rgb(10 17 34 / 42%);
+      border: 1px solid rgb(196 205 238 / 26%);
+      border-radius: 12px;
+      font: inherit;
+    }
+
+    .edit-field input:focus {
+      outline: 2px solid rgb(241 215 147 / 55%);
+      outline-offset: 2px;
+      border-color: rgb(241 215 147 / 48%);
+    }
+
     ul, ol { margin: 10px 0 0; padding-left: 1.2rem; color: var(--moon-soft); }
     li + li { margin-top: 8px; }
 
@@ -168,11 +215,11 @@
   <main>
     <header>
       <h1>Luna Prototype Slice</h1>
-      <p class="subtitle">A static, non-editable preview of the first one-project Luna loop: return, orient, see what changed, choose one next action, see what can wait, record one change, and rest.</p>
+      <p class="subtitle">A tiny prototype preview of the first one-project Luna loop: return, orient, try two temporary edits, see what changed, choose one next action, see what can wait, record one change, and rest.</p>
       <div class="prototype-note">
-        <p>This is sample public-safe placeholder data for a tiny fictional project. It does not save anything, collect input, or pretend to be a finished app.</p>
+        <p>This is sample public-safe placeholder data for a tiny fictional project. You can try two temporary edits on this page, but they do not save yet and refreshing may reset them.</p>
       </div>
-      <div class="project-status">Static prototype preview</div>
+      <div class="project-status">Temporary edit preview</div>
     </header>
 
     <section aria-labelledby="project-state">
@@ -180,7 +227,7 @@
       <div class="loop-grid">
         <article class="card">
           <span class="label">Project name</span>
-          <h3>Moonlit Recipe Notes</h3>
+          <h3 id="project-name-display">Moonlit Recipe Notes</h3>
           <p>A small public-safe sample project for collecting three simple weeknight soup ideas.</p>
         </article>
         <article class="card">
@@ -195,10 +242,26 @@
         </article>
         <article class="card">
           <span class="label">Current goal</span>
-          <h3>Make the tiny collection understandable</h3>
+          <h3 id="current-goal-display">Make the tiny collection understandable</h3>
           <p>Keep one short note for each recipe idea so the project is easy to return to later.</p>
         </article>
       </div>
+      <article class="try-editing-card" aria-labelledby="try-editing-title">
+        <span class="label">Try editing</span>
+        <h3 id="try-editing-title">Make two temporary preview edits</h3>
+        <p class="try-editing-note">These edits are only a calm in-browser preview. They do not save yet; refreshing the page may reset the sample project name and current goal.</p>
+        <div class="edit-fields">
+          <div class="edit-field">
+            <label for="project-name-input">Project name</label>
+            <input id="project-name-input" type="text" value="Moonlit Recipe Notes" autocomplete="off">
+          </div>
+          <div class="edit-field">
+            <label for="current-goal-input">Current goal</label>
+            <input id="current-goal-input" type="text" value="Make the tiny collection understandable" autocomplete="off">
+          </div>
+        </div>
+      </article>
+
     </section>
 
     <section aria-labelledby="what-changed">
@@ -255,7 +318,22 @@
       </ol>
     </section>
 
-    <p class="footer-note"><a href="index.html">Return to the Luna dashboard</a>. This page is separate from the self-demo dashboard and remains a static prototype preview.</p>
+    <p class="footer-note"><a href="index.html">Return to the Luna dashboard</a>. This page is separate from the self-demo dashboard and remains a tiny temporary-edit prototype preview.</p>
   </main>
+
+  <script>
+    const projectNameInput = document.querySelector('#project-name-input');
+    const currentGoalInput = document.querySelector('#current-goal-input');
+    const projectNameDisplay = document.querySelector('#project-name-display');
+    const currentGoalDisplay = document.querySelector('#current-goal-display');
+
+    projectNameInput.addEventListener('input', () => {
+      projectNameDisplay.textContent = projectNameInput.value.trim() || 'Untitled small project';
+    });
+
+    currentGoalInput.addEventListener('input', () => {
+      currentGoalDisplay.textContent = currentGoalInput.value.trim() || 'Choose one small current goal';
+    });
+  </script>
 </body>
 </html>

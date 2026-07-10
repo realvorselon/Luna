@@ -2,6 +2,13 @@
 
 ## 2026-07-10
 
+### First Editable Prototype UI
+
+- Added the first tiny editable area to `prototype.html` for temporary project name and current goal edits only.
+- Kept edits as in-browser preview changes that do not save, use localStorage, sessionStorage, cookies, backend, accounts, database, or persistence.
+- Kept Current Mode, last completed run, Next Action, Ignore For Now, Record the Change, and rest / next step static while preserving the dashboard ↔ prototype reversible path.
+- Updated `README.md`, `project.json`, `STATE.md`, and `ROADMAP.md` so the public trail rests before saving, storage, backend, account system, database, dashboard expansion, visual redesign, mode workflow, multi-project system, or making more cards editable.
+
 ### First Editable Field Boundary Note
 
 - Added `docs/FIRST_EDITABLE_FIELD_BOUNDARY.md` as a concise public-safe boundary note for the later first editable fields.

@@ -10,13 +10,15 @@ Help someone return to one small project, see where they left off and what chang
 
 ## Last Completed Run
 
-- 2026-07-10: Added a first editable field boundary note limiting the later first editable fields to project name and current goal.
+- 2026-07-10: Added the first tiny editable prototype UI for temporary project name and current goal edits.
 
 ## Next Suggested Step
 
-Rest before adding the first editable UI, forms, local storage, backend, account system, database, dashboard expansion, visual redesign, mode workflow, or multi-project system.
+Rest before adding saving, local storage, session storage, cookies, backend, account system, database, dashboard expansion, visual redesign, mode workflow, multi-project system, or making more cards editable.
 
 ## Notes
+
+The prototype now has the first tiny editable UI: a calm “Try editing” area for only project name and current goal. Edits update the visible sample project state in the browser only, do not save, do not use localStorage, sessionStorage, cookies, backend, accounts, database, forms, or persistence, and may reset on refresh. Current Mode, last completed run, Next Action, Ignore For Now, Record the Change, and rest / next step remain static. The next step is to rest before adding saving, local storage, session storage, cookies, backend, account system, database, dashboard expansion, visual redesign, mode workflow, multi-project system, or making more cards editable.
 
 The first editable field boundary note defines the later first editable fields as only project name and current goal. Those fields are enough to make the one-project prototype feel personally useful without turning Luna into a task manager. Current Mode, last completed run, Next Action, Ignore For Now, Record the Change, and rest / next step should remain static until later boundaries are defined. The prototype should preserve the dashboard ↔ prototype reversible path, including the “Return to dashboard” link. This run added only the boundary note, not editable UI, forms, inputs, storage, backend, accounts, database, dashboard expansion, visual redesign, mode workflow, multi-project system, or new Philosophy Garden content. The next step is to rest before adding the first editable UI, forms, local storage, backend, account system, database, dashboard expansion, visual redesign, mode workflow, or multi-project system.
 

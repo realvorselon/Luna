@@ -1,6 +1,10 @@
 {
-  "status": "Resting after first editable field boundary note",
+  "status": "Resting after first editable prototype UI",
   "statusHistory": [
+    {
+      "date": "2026-07-10",
+      "note": "Added the first tiny editable prototype UI for temporary project name and current goal edits."
+    },
     {
       "date": "2026-07-10",
       "note": "Added a first editable field boundary note limiting the later first editable fields to project name and current goal."
@@ -347,8 +351,8 @@
     }
   ],
   "currentGoal": "Help someone return to one small project, see where they left off and what changed last, choose one clear Next Action, know what to ignore for now, record the change, and rest before adding more while keeping Philosophy Garden clearly optional.",
-  "lastCompletedRun": "2026-07-10: Added a first editable field boundary note limiting the later first editable fields to project name and current goal.",
-  "nextStep": "Rest before adding the first editable UI, forms, local storage, backend, account system, database, dashboard expansion, visual redesign, mode workflow, or multi-project system.",
+  "lastCompletedRun": "2026-07-10: Added the first tiny editable prototype UI for temporary project name and current goal edits.",
+  "nextStep": "Rest before adding saving, local storage, session storage, cookies, backend, account system, database, dashboard expansion, visual redesign, mode workflow, multi-project system, or making more cards editable.",
   "dashboardGuide": [
     "Welcome starts the path to read through Record the Change before choosing more work.",
     "Status gives a quick snapshot of how the project is doing right now.",
@@ -485,7 +489,7 @@
   ],
   "currentMode": {
     "name": "Rest",
-    "description": "The project is pausing after defining project name and current goal as the first tiny editable fields for a later run.",
-    "whyItMatters": "Rest protects Luna from turning the prototype into a form, task manager, dashboard expansion, visual redesign, mode workflow, or multi-project system before the first editable UI is added carefully."
+    "description": "The project is pausing after adding the first tiny editable prototype UI for temporary project name and current goal edits.",
+    "whyItMatters": "Rest protects Luna from turning the prototype into saved forms, storage, a task manager, dashboard expansion, visual redesign, mode workflow, or multi-project system before the smallest editable surface is understood."
   }
 }
