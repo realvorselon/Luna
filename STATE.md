@@ -10,13 +10,15 @@ Help someone return to one small project, see where they left off and what chang
 
 ## Last Completed Run
 
-- 2026-07-10: Added a human read-through note after the prototype return path wording polish.
+- 2026-07-10: Added a sample project layer boundary note before making the prototype feel less meta.
 
 ## Next Suggested Step
 
-Rest before deciding whether to add a boundary note for making the sample project layer feel less meta and more natural, and before adding any new behavior, more persistence, more editable cards, sessionStorage, cookies, backend, accounts, database, sync, dashboard expansion, visual redesign, mode workflow, multi-project system, or new Philosophy Garden content.
+Rest before deciding whether to implement one tiny copy-only polish that makes the sample project layer feel less meta and more natural, and before adding any new behavior, more persistence, more editable cards, sessionStorage, cookies, backend, accounts, database, sync, dashboard expansion, visual redesign, mode workflow, multi-project system, or new Philosophy Garden content.
 
 ## Notes
+
+The sample project layer boundary note records that the prototype currently proves the Luna loop, but the sample project layer still feels a little framework-like or meta in the current state area. The next useful improvement is to make the fictional recipe-note sample project feel more like a small project someone could actually return to while keeping the framework underneath: one project state, Current Mode, current goal, what changed last, one Next Action, Ignore For Now, Record the Change, and Rest. Any later polish should be copy-only unless absolutely necessary to preserve existing behavior, should not change `prototype.html` structure or add behavior, persistence, editable cards, buttons, controls, sessionStorage, cookies, backend, accounts, database, sync, dashboard expansion, visual redesign, mode workflow, multi-project system, or new Philosophy Garden content, and should preserve project name and current goal local browser saving, the clear-local-edits control behavior, static unsaved cards, and the dashboard ↔ prototype reversible path. The next step is to rest before deciding whether to implement one tiny copy-only polish that makes the sample project layer feel less meta and more natural.
 
 The returning flow wording read-through note records that a human reviewed the wording-only polish after it landed. The clearer top guidance helped the prototype feel easier to follow, the page now more clearly suggests reading the project state, then what changed last, then the one Next Action, and the visible section labels make the one-project return loop easier to scan. The prototype still feels a little framework-like or meta in the current state area, which is understandable because the prototype is still proving the Luna loop before it becomes a more natural finished project experience. The next useful direction is to make the sample project layer feel more natural while preserving the Luna loop. The next step is to rest before deciding whether to add a boundary note for making the sample project layer feel less meta and more natural, and before adding any new behavior, more persistence, more editable cards, sessionStorage, cookies, backend, accounts, database, sync, dashboard expansion, visual redesign, mode workflow, multi-project system, or new Philosophy Garden content.
 
