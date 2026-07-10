@@ -2,6 +2,13 @@
 
 ## 2026-07-10
 
+### Sample Project Layer Read-Through
+
+- Added `docs/SAMPLE_PROJECT_LAYER_READ_THROUGH.md` after a human reviewed the copy-only sample project layer polish.
+- Recorded that the sample project layer now feels fine, more natural, and less meta, and that the recipe-note / soup-note language worked as a neutral fictional sample for testing the one-project return loop.
+- Recorded the theme insight that Luna’s finished theme is closer to moonlit garden, quiet desk, and gentle return path, while garden / cultivation language remains part of Luna’s identity.
+- Updated `README.md`, `project.json`, `STATE.md`, and `ROADMAP.md` so the public trail rests before deciding whether to add a tiny theme direction boundary or change prototype copy again.
+
 ### Sample Project Copy Polish
 
 - Updated `prototype.html` copy only so the fictional recipe-note sample project feels less meta and more like a small project someone could actually return to.

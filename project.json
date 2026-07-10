@@ -1,6 +1,10 @@
 {
-  "status": "Ready for human review after sample project copy-only polish",
+  "status": "Resting after sample project layer read-through",
   "statusHistory": [
+    {
+      "date": "2026-07-10",
+      "note": "Added a human read-through note after the sample project layer copy polish."
+    },
     {
       "date": "2026-07-10",
       "note": "Added a tiny copy-only polish to make the sample project layer feel less meta and more natural."
@@ -407,8 +411,8 @@
     }
   ],
   "currentGoal": "Help someone return to one small project, see where they left off and what changed last, choose one clear Next Action, know what to ignore for now, record the change, and rest before adding more while keeping Philosophy Garden clearly optional.",
-  "lastCompletedRun": "2026-07-10: Added a tiny copy-only polish to make the sample project layer feel less meta and more natural.",
-  "nextStep": "Human review the sample project copy-only polish before adding any new behavior, more persistence, more editable cards, sessionStorage, cookies, backend, accounts, database, sync, dashboard expansion, visual redesign, mode workflow, multi-project system, or new Philosophy Garden content.",
+  "lastCompletedRun": "2026-07-10: Added a human read-through note after the sample project layer copy polish.",
+  "nextStep": "Rest before deciding whether to add a tiny theme direction boundary for Luna’s finished moonlit garden / quiet desk / gentle return path vibe, and before changing prototype copy again or adding any new behavior, more persistence, more editable cards, sessionStorage, cookies, backend, accounts, database, sync, dashboard expansion, visual redesign, mode workflow, multi-project system, or new Philosophy Garden content.",
   "dashboardGuide": [
     "Welcome starts the path to read through Record the Change before choosing more work.",
     "Status gives a quick snapshot of how the project is doing right now.",
@@ -419,7 +423,7 @@
     "Optional Reflection can wait; Philosophy Garden is a gentle reflection layer, not Luna's main engine."
   ],
   "futureIdeas": [
-    "Rest before deciding whether to add a boundary note for making the sample project layer feel less meta and more natural, and before adding any new behavior, more persistence, more editable cards, sessionStorage, cookies, backend, accounts, database, sync, dashboard expansion, visual redesign, mode workflow, multi-project system, or new Philosophy Garden content.",
+    "Rest before deciding whether to add a tiny theme direction boundary for Luna’s finished moonlit garden / quiet desk / gentle return path vibe, and before changing prototype copy again or adding any new behavior, more persistence, more editable cards, sessionStorage, cookies, backend, accounts, database, sync, dashboard expansion, visual redesign, mode workflow, multi-project system, or new Philosophy Garden content.",
     "Review one existing sentence or section for beginner clarity, especially around returning to one small project and choosing one clear Next Action.",
     "Keep README.md, STATE.md, CHANGELOG.md, and project.json aligned whenever the public record changes.",
     "Only later consider surfacing an existing quiet item on the dashboard after the front door and current goal still feel calm."
@@ -436,7 +440,7 @@
     "The Garden Cycle connects the Reflection Card, Garden Review, Next Garden Update, and rest step so beginners can see how Philosophy Garden pieces fit together."
   ],
   "ideaQueue": [
-    "Rest before deciding whether to add a boundary note for making the sample project layer feel less meta and more natural, and before adding any new behavior, more persistence, more editable cards, sessionStorage, cookies, backend, accounts, database, sync, dashboard expansion, visual redesign, mode workflow, multi-project system, or new Philosophy Garden content.",
+    "Rest before deciding whether to add a tiny theme direction boundary for Luna’s finished moonlit garden / quiet desk / gentle return path vibe, and before changing prototype copy again or adding any new behavior, more persistence, more editable cards, sessionStorage, cookies, backend, accounts, database, sync, dashboard expansion, visual redesign, mode workflow, multi-project system, or new Philosophy Garden content.",
     "Review one existing sentence or section for beginner clarity, especially around returning to one small project and choosing one clear Next Action.",
     "Keep README.md, STATE.md, CHANGELOG.md, and project.json aligned whenever the public record changes.",
     "Only later consider surfacing an existing quiet item on the dashboard after the front door and current goal still feel calm."
@@ -474,10 +478,10 @@
     "Visit http://localhost:8000 in a browser to view the dashboard."
   ],
   "nextAction": {
-    "title": "Human review sample project polish",
-    "description": "Human review the copy-only sample project layer polish before adding any new behavior, more persistence, more editable cards, sessionStorage, cookies, backend, accounts, database, sync, dashboard expansion, visual redesign, mode workflow, multi-project system, or new Philosophy Garden content.",
-    "whyItMatters": "A human review can confirm the sample project now feels less meta and more natural while the Luna loop, local saving, clear-local-edits behavior, and static unsaved cards stay intact.",
-    "status": "Ready for human review"
+    "title": "Rest before theme boundary",
+    "description": "Rest before deciding whether to add a tiny theme direction boundary for Luna’s finished moonlit garden / quiet desk / gentle return path vibe, and before changing prototype copy again or adding any new behavior, more persistence, more editable cards, sessionStorage, cookies, backend, accounts, database, sync, dashboard expansion, visual redesign, mode workflow, multi-project system, or new Philosophy Garden content.",
+    "whyItMatters": "Rest keeps the sample project review from turning into another copy change before Luna’s finished theme direction is named clearly.",
+    "status": "Resting"
   },
   "creativeSeed": {
     "name": "Philosophy Garden",
@@ -544,8 +548,8 @@
     "Then rest before adding another dashboard section, feature, or planning note."
   ],
   "currentMode": {
-    "name": "Review",
-    "description": "The sample recipe-note project copy has been lightly polished and is ready for human review before any new prototype behavior.",
-    "whyItMatters": "Review can confirm the fictional project now feels more natural while the Luna loop and local browser saving boundaries stay intact."
+    "name": "Rest",
+    "description": "The sample project layer read-through is recorded, and Luna is resting before deciding whether to add a tiny theme direction boundary.",
+    "whyItMatters": "Rest protects the prototype from more copy changes or behavior growth before the finished moonlit garden / quiet desk / gentle return path vibe is named clearly."
   }
 }
