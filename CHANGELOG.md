@@ -2,6 +2,13 @@
 
 ## 2026-07-10
 
+### Sample Project Copy Polish
+
+- Updated `prototype.html` copy only so the fictional recipe-note sample project feels less meta and more like a small project someone could actually return to.
+- Made the current state area mention rereading soup notes, clarifying the broth note, and keeping the note collection small while preserving the Luna loop underneath.
+- Preserved prototype behavior, structure, saved project name and current goal behavior, clear-local-edits behavior, static unsaved cards, and the dashboard ↔ prototype reversible path.
+- Updated `README.md`, `project.json`, `STATE.md`, and `ROADMAP.md` so the public trail points to human review before adding new behavior or expanding persistence.
+
 ### Sample Project Layer Boundary
 
 - Added `docs/SAMPLE_PROJECT_LAYER_BOUNDARY.md` as a concise public-safe boundary note before any sample project copy polish.

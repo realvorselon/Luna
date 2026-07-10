@@ -1,6 +1,10 @@
 {
-  "status": "Resting after adding a sample project layer boundary note",
+  "status": "Ready for human review after sample project copy-only polish",
   "statusHistory": [
+    {
+      "date": "2026-07-10",
+      "note": "Added a tiny copy-only polish to make the sample project layer feel less meta and more natural."
+    },
     {
       "date": "2026-07-10",
       "note": "Added a sample project layer boundary note before making the prototype feel less meta."
@@ -403,8 +407,8 @@
     }
   ],
   "currentGoal": "Help someone return to one small project, see where they left off and what changed last, choose one clear Next Action, know what to ignore for now, record the change, and rest before adding more while keeping Philosophy Garden clearly optional.",
-  "lastCompletedRun": "2026-07-10: Added a sample project layer boundary note before making the prototype feel less meta.",
-  "nextStep": "Rest before deciding whether to implement one tiny copy-only polish that makes the sample project layer feel less meta and more natural, and before adding any new behavior, more persistence, more editable cards, sessionStorage, cookies, backend, accounts, database, sync, dashboard expansion, visual redesign, mode workflow, multi-project system, or new Philosophy Garden content.",
+  "lastCompletedRun": "2026-07-10: Added a tiny copy-only polish to make the sample project layer feel less meta and more natural.",
+  "nextStep": "Human review the sample project copy-only polish before adding any new behavior, more persistence, more editable cards, sessionStorage, cookies, backend, accounts, database, sync, dashboard expansion, visual redesign, mode workflow, multi-project system, or new Philosophy Garden content.",
   "dashboardGuide": [
     "Welcome starts the path to read through Record the Change before choosing more work.",
     "Status gives a quick snapshot of how the project is doing right now.",
@@ -470,10 +474,10 @@
     "Visit http://localhost:8000 in a browser to view the dashboard."
   ],
   "nextAction": {
-    "title": "Rest before sample layer boundary",
-    "description": "Rest before deciding whether to add a boundary note for making the sample project layer feel less meta and more natural, and before adding any new behavior, more persistence, more editable cards, sessionStorage, cookies, backend, accounts, database, sync, dashboard expansion, visual redesign, mode workflow, multi-project system, or new Philosophy Garden content.",
-    "whyItMatters": "Rest keeps Luna from turning a wording read-through into new behavior before deciding whether a small boundary note should make the sample project layer feel less meta and more natural.",
-    "status": "Resting"
+    "title": "Human review sample project polish",
+    "description": "Human review the copy-only sample project layer polish before adding any new behavior, more persistence, more editable cards, sessionStorage, cookies, backend, accounts, database, sync, dashboard expansion, visual redesign, mode workflow, multi-project system, or new Philosophy Garden content.",
+    "whyItMatters": "A human review can confirm the sample project now feels less meta and more natural while the Luna loop, local saving, clear-local-edits behavior, and static unsaved cards stay intact.",
+    "status": "Ready for human review"
   },
   "creativeSeed": {
     "name": "Philosophy Garden",
@@ -540,8 +544,8 @@
     "Then rest before adding another dashboard section, feature, or planning note."
   ],
   "currentMode": {
-    "name": "Rest",
-    "description": "The project is pausing after a human read-through confirmed the wording-only polish made the prototype return path easier to follow.",
-    "whyItMatters": "Rest protects the current Luna loop before deciding whether to add a boundary note for making the sample project layer feel less meta and more natural."
+    "name": "Review",
+    "description": "The sample recipe-note project copy has been lightly polished and is ready for human review before any new prototype behavior.",
+    "whyItMatters": "Review can confirm the fictional project now feels more natural while the Luna loop and local browser saving boundaries stay intact."
   }
 }
