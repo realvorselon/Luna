@@ -1,6 +1,10 @@
 {
-  "status": "Resting before human testing clear local edits control",
+  "status": "Resting after clear local edits read-through",
   "statusHistory": [
+    {
+      "date": "2026-07-10",
+      "note": "Added a clear local edits read-through note after human testing confirmed the clear control works."
+    },
     {
       "date": "2026-07-10",
       "note": "Added a tiny clear local edits control for project name and current goal only."
@@ -375,8 +379,8 @@
     }
   ],
   "currentGoal": "Help someone return to one small project, see where they left off and what changed last, choose one clear Next Action, know what to ignore for now, record the change, and rest before adding more while keeping Philosophy Garden clearly optional.",
-  "lastCompletedRun": "2026-07-10: Added a tiny clear local edits control for project name and current goal only.",
-  "nextStep": "Human test the clear local edits control before adding any more persistence behavior, saving more fields, sessionStorage, cookies, backend, accounts, database, sync, dashboard expansion, visual redesign, mode workflow, multi-project system, or more editable cards.",
+  "lastCompletedRun": "2026-07-10: Added a clear local edits read-through note after human testing confirmed the clear control works.",
+  "nextStep": "Rest before adding any more persistence behavior, saving more fields, sessionStorage, cookies, backend, accounts, database, sync, dashboard expansion, visual redesign, mode workflow, multi-project system, or more editable cards.",
   "dashboardGuide": [
     "Welcome starts the path to read through Record the Change before choosing more work.",
     "Status gives a quick snapshot of how the project is doing right now.",
@@ -387,7 +391,7 @@
     "Optional Reflection can wait; Philosophy Garden is a gentle reflection layer, not Luna's main engine."
   ],
   "futureIdeas": [
-    "Rest before implementing clear/reset controls, saving more fields, sessionStorage, cookies, backend, accounts, database, sync, dashboard expansion, visual redesign, mode workflow, multi-project system, or more editable cards.",
+    "Rest before adding any more persistence behavior, saving more fields, sessionStorage, cookies, backend, accounts, database, sync, dashboard expansion, visual redesign, mode workflow, multi-project system, or more editable cards.",
     "Review one existing sentence or section for beginner clarity, especially around returning to one small project and choosing one clear Next Action.",
     "Keep README.md, STATE.md, CHANGELOG.md, and project.json aligned whenever the public record changes.",
     "Only later consider surfacing an existing quiet item on the dashboard after the front door and current goal still feel calm."
@@ -404,7 +408,7 @@
     "The Garden Cycle connects the Reflection Card, Garden Review, Next Garden Update, and rest step so beginners can see how Philosophy Garden pieces fit together."
   ],
   "ideaQueue": [
-    "Rest before implementing clear/reset controls, saving more fields, sessionStorage, cookies, backend, accounts, database, sync, dashboard expansion, visual redesign, mode workflow, multi-project system, or more editable cards.",
+    "Rest before adding any more persistence behavior, saving more fields, sessionStorage, cookies, backend, accounts, database, sync, dashboard expansion, visual redesign, mode workflow, multi-project system, or more editable cards.",
     "Review one existing sentence or section for beginner clarity, especially around returning to one small project and choosing one clear Next Action.",
     "Keep README.md, STATE.md, CHANGELOG.md, and project.json aligned whenever the public record changes.",
     "Only later consider surfacing an existing quiet item on the dashboard after the front door and current goal still feel calm."
@@ -442,10 +446,10 @@
     "Visit http://localhost:8000 in a browser to view the dashboard."
   ],
   "nextAction": {
-    "title": "Human test the clear local edits control",
-    "description": "Human test the clear local edits control before adding any more persistence behavior, saving more fields, sessionStorage, cookies, backend, accounts, database, sync, dashboard expansion, visual redesign, mode workflow, multi-project system, or more editable cards.",
-    "whyItMatters": "Testing the small clear control protects the two-field local saving surface before Luna adds any more persistence behavior or expands into broader app behavior.",
-    "status": "Ready for human test of clear local edits control"
+    "title": "Rest before adding more persistence behavior",
+    "description": "Rest before adding any more persistence behavior, saving more fields, sessionStorage, cookies, backend, accounts, database, sync, dashboard expansion, visual redesign, mode workflow, multi-project system, or more editable cards.",
+    "whyItMatters": "Resting protects the tiny two-field local saving and clear-local-edits surface from growing into broader persistence, sync, account, dashboard, workflow, or multi-project behavior too quickly.",
+    "status": "Resting before more persistence or prototype expansion"
   },
   "creativeSeed": {
     "name": "Philosophy Garden",

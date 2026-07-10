@@ -10,13 +10,15 @@ Help someone return to one small project, see where they left off and what chang
 
 ## Last Completed Run
 
-- 2026-07-10: Added a tiny clear local edits control for project name and current goal only.
+- 2026-07-10: Added a clear local edits read-through note after human testing confirmed the clear control works.
 
 ## Next Suggested Step
 
-Human test the clear local edits control before adding any more persistence behavior, saving more fields, sessionStorage, cookies, backend, accounts, database, sync, dashboard expansion, visual redesign, mode workflow, multi-project system, or more editable cards.
+Rest before adding any more persistence behavior, saving more fields, sessionStorage, cookies, backend, accounts, database, sync, dashboard expansion, visual redesign, mode workflow, multi-project system, or more editable cards.
 
 ## Notes
+
+The clear local edits read-through note records that a human tested the clear-local-edits control and confirmed it works. The control cleared only the local browser edits for project name and current goal; after clearing, both fields returned to the public-safe sample values, and after refreshing again those public-safe sample values remained. The clear action is local to the same browser only, does not sync, and creates no account. No backend, database, cookies, sessionStorage, sync, export/import, delete behavior, or reset-all-project behavior was added. Current Mode, last completed run, Next Action, Ignore For Now, Record the Change, rest / next step, and every other card remain static and unsaved. The dashboard ↔ prototype reversible path and “Return to dashboard” link should remain preserved. The next step is to rest before adding any more persistence behavior, saving more fields, sessionStorage, cookies, backend, accounts, database, sync, dashboard expansion, visual redesign, mode workflow, multi-project system, or more editable cards.
 
 The prototype now has one calm clear-local-edits control near the editable fields. It clears only the two localStorage values for project name and current goal in this browser, then returns both inputs and visible displays to the public-safe sample values. Current Mode, last completed run, Next Action, Ignore For Now, Record the Change, rest / next step, and every other card remain unchanged and unsaved. The next step is to human test the clear local edits control before adding any more persistence behavior, saving more fields, sessionStorage, cookies, backend, accounts, database, sync, dashboard expansion, visual redesign, mode workflow, multi-project system, or more editable cards.
 
