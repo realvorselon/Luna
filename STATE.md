@@ -10,13 +10,15 @@ Help someone return to one small project, see where they left off and what chang
 
 ## Last Completed Run
 
-- 2026-07-10: Added an editable prototype read-through note after human checking and cleaned stale saving-boundary wording.
+- 2026-07-10: Added a saving boundary note before implementing any persistence.
 
 ## Next Suggested Step
 
-Rest before deciding any saving or local storage boundary, or adding saving, local storage, session storage, cookies, backend, accounts, database, mode workflow, dashboard expansion, visual redesign, multi-project system, or more editable cards yet.
+Rest before implementing localStorage, saving, sessionStorage, cookies, backend, accounts, database, sync, dashboard expansion, visual redesign, mode workflow, multi-project system, or more editable cards.
 
 ## Notes
+
+The saving boundary note records that this run does not add saving. The prototype still has only temporary in-browser preview edits for project name and current goal. Before persistence is added, Luna should decide whether saving helps returning feel easier without creating pressure, clutter, accounts, syncing, or task-manager behavior. If chosen later, the first saving approach should be local, reversible, and limited to project name and current goal only. Current Mode, last completed run, Next Action, Ignore For Now, Record the Change, rest / next step, and every card should not be saved yet. The dashboard ↔ prototype reversible path and “Return to dashboard” link should remain preserved. The next step is to rest before implementing localStorage, saving, sessionStorage, cookies, backend, accounts, database, sync, dashboard expansion, visual redesign, mode workflow, multi-project system, or more editable cards.
 
 The editable prototype read-through note records that the first editable prototype UI was checked by a human and seemed okay. Only project name and current goal are editable, edits update the visible prototype in the browser only, edits do not save yet, and refreshing may reset the sample data. Current Mode, last completed run, Next Action, Ignore For Now, Record the Change, and rest / next step remain static. The dashboard ↔ prototype reversible path and “Return to dashboard” link should be preserved. Before adding persistence, Luna should define a separate saving and local-storage boundary. The next step is to rest before deciding any saving or local storage boundary, or adding saving, local storage, session storage, cookies, backend, accounts, database, dashboard expansion, visual redesign, mode workflow, multi-project system, or more editable cards.
 
