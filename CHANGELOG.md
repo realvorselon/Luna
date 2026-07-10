@@ -2,6 +2,13 @@
 
 ## 2026-07-10
 
+### Clear Saved Values Boundary Note
+
+- Added `docs/CLEAR_SAVED_VALUES_BOUNDARY.md` as a concise public-safe boundary note before any later clear/reset control work.
+- Recorded that this run does not add a clear button, reset button, delete button, export/import, sync, account, backend, or new persistence behavior.
+- Kept any possible later first clear control limited to the two localStorage values for project name and current goal only, without clearing or changing Current Mode, last completed run, Next Action, Ignore For Now, Record the Change, rest / next step, or every card.
+- Updated `README.md`, `project.json`, `STATE.md`, and `ROADMAP.md` so the public trail rests before implementing clear/reset controls, saving more fields, sessionStorage, cookies, backend, accounts, database, sync, dashboard expansion, visual redesign, mode workflow, multi-project system, or more editable cards.
+
 ### Local Saving Read-Through
 
 - Added `docs/LOCAL_SAVING_READ_THROUGH.md` after human testing confirmed project name and current goal survive refresh.
