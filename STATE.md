@@ -10,13 +10,15 @@ Help someone return to one small project, see where they left off and what chang
 
 ## Last Completed Run
 
-- 2026-07-10: Added a saving boundary note before implementing any persistence.
+- 2026-07-10: Added tiny local browser saving for project name and current goal only.
 
 ## Next Suggested Step
 
-Rest before implementing localStorage, saving, sessionStorage, cookies, backend, accounts, database, sync, dashboard expansion, visual redesign, mode workflow, multi-project system, or more editable cards.
+Rest before adding reset/clear controls, saving more fields, sessionStorage, cookies, backend, accounts, database, sync, dashboard expansion, visual redesign, mode workflow, multi-project system, or more editable cards.
 
 ## Notes
+
+The prototype now saves only the project name and current goal locally in the same browser with localStorage. Saved values appear in both the inputs and displayed cards on page load, while the public-safe sample values remain when nothing has been saved. The note near the editable fields explains that these two edits save only in this browser, do not sync, do not create an account, can be cleared by clearing browser site data, and that other cards are not saved yet. Current Mode, last completed run, Next Action, Ignore For Now, Record the Change, rest / next step, and every other card remain outside the saved surface. The next step is to rest before adding reset/clear controls, saving more fields, sessionStorage, cookies, backend, accounts, database, sync, dashboard expansion, visual redesign, mode workflow, multi-project system, or more editable cards.
 
 The saving boundary note records that this run does not add saving. The prototype still has only temporary in-browser preview edits for project name and current goal. Before persistence is added, Luna should decide whether saving helps returning feel easier without creating pressure, clutter, accounts, syncing, or task-manager behavior. If chosen later, the first saving approach should be local, reversible, and limited to project name and current goal only. Current Mode, last completed run, Next Action, Ignore For Now, Record the Change, rest / next step, and every card should not be saved yet. The dashboard ↔ prototype reversible path and “Return to dashboard” link should remain preserved. The next step is to rest before implementing localStorage, saving, sessionStorage, cookies, backend, accounts, database, sync, dashboard expansion, visual redesign, mode workflow, multi-project system, or more editable cards.
 
