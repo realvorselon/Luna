@@ -64,6 +64,7 @@ These links are grouped so a new visitor can start with the most useful front do
 - `docs/PROTOTYPE_READINESS.md` — a short boundary note that the self-demo dashboard can rest before a tiny local usable prototype for one project.
 - `docs/FIRST_USABLE_PROTOTYPE_SLICE.md` — a concise boundary note for the first tiny local one-project usable prototype slice before building it.
 - `docs/PROTOTYPE_READ_THROUGH.md` — a concise read-through note that the dashboard-to-prototype preview path feels calm, static, reversible, and separate before editability.
+- `docs/FIRST_EDITABLE_FIELD_BOUNDARY.md` — a concise boundary note defining project name and current goal as the first tiny editable fields for a later run.
 
 ## First Rule
 
