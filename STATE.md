@@ -10,13 +10,15 @@ Help someone return to one small project, see where they left off and what chang
 
 ## Last Completed Run
 
-- 2026-07-10: Added a prototype rest checkpoint after the first editable saved-and-clearable slice was human tested.
+- 2026-07-10: Added a returning flow review note before deciding any new prototype behavior.
 
 ## Next Suggested Step
 
-Rest before deciding whether to improve wording, returning flow, or the visible one-project loop, and before adding any more persistence behavior, saving more fields, sessionStorage, cookies, backend, accounts, database, sync, dashboard expansion, visual redesign, mode workflow, multi-project system, or more editable cards.
+Rest before deciding whether to do a tiny wording polish for the returning flow, and before adding any new behavior, more persistence, more editable cards, sessionStorage, cookies, backend, accounts, database, sync, dashboard expansion, visual redesign, mode workflow, multi-project system, or new Philosophy Garden content.
 
 ## Notes
+
+The returning flow review note records that Luna’s product north star is to make returning easier. The current prototype already shows the main returning bones: one project state, current mode, current goal, what changed last, one next action, what to ignore for now, record the change, and rest. The saved project name and current goal help remember project identity and current intention in the same browser, while the clear-local-edits control gives a gentle way back to the public-safe sample values. The returning flow is visible but still mostly static. The next useful design question is whether the visible path feels clear enough for someone who has been away from a project. The next step is to rest before deciding whether to do a tiny wording polish for the returning flow, and before adding any new behavior, more persistence, more editable cards, sessionStorage, cookies, backend, accounts, database, sync, dashboard expansion, visual redesign, mode workflow, multi-project system, or new Philosophy Garden content.
 
 The prototype rest checkpoint records that the first editable prototype slice is complete enough for now: one project state view, a calm return loop, editable project name and current goal, local browser saving for only those two fields, and a human-tested clear-local-edits control that clears only those two local browser edits. The prototype remains public-safe and does not include private user data. Current Mode, last completed run, Next Action, Ignore For Now, Record the Change, rest / next step, and every other card remain static and unsaved. The dashboard ↔ prototype reversible path and “Return to dashboard” link remain preserved. Next design thinking should decide whether to improve wording, returning flow, or the visible one-project loop before adding any new behavior. The next step is to rest before deciding that direction and before adding any more persistence behavior, saving more fields, sessionStorage, cookies, backend, accounts, database, sync, dashboard expansion, visual redesign, mode workflow, multi-project system, or more editable cards.
 
