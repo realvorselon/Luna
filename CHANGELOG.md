@@ -2,6 +2,13 @@
 
 ## 2026-07-10
 
+### Editable Prototype Read-Through
+
+- Added `docs/EDITABLE_PROTOTYPE_READ_THROUGH.md` after a human checked the first editable prototype UI and it seemed okay.
+- Recorded that only project name and current goal are editable, edits update the visible browser prototype only, edits do not save yet, refreshing may reset sample data, and the rest of the prototype loop remains static.
+- Cleaned stale `project.json.futureIdeas` and `project.json.ideaQueue` wording so Luna rests before deciding any saving or local-storage boundary instead of before adding the first editable UI.
+- Updated `README.md`, `project.json`, `STATE.md`, and `ROADMAP.md` so the public trail rests before saving, local storage, session storage, cookies, backend, accounts, database, dashboard expansion, visual redesign, mode workflow, multi-project system, or more editable cards.
+
 ### Next Action Alignment Fix
 
 - Aligned `project.json.nextAction` with the already-merged first editable prototype UI state.

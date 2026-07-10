@@ -4,6 +4,7 @@ This roadmap is intentionally small. Luna is a public dashboard prototype right 
 
 ## Completed
 
+- Added an editable prototype read-through note after a human checked the first editable prototype UI, preserving the no-save boundary before deciding saving or local storage.
 - Added the first tiny editable prototype UI for temporary project name and current goal edits only, without saving or storage.
 - Added a first editable field boundary note defining project name and current goal as the only first editable fields for a later run.
 - Added a concise prototype read-through note recording that the dashboard-to-prototype path feels calm, static, reversible, and separate before deciding the first editable field boundary.
@@ -45,7 +46,7 @@ Near-term work should stay focused on the current return path: help someone see 
 
 ## Later Direction
 
-The next phase is not more dashboard cards by default. Luna now has a separate prototype preview for the first one-project slice in `prototype.html`, linked quietly from the main dashboard Project Trail. The first slice is defined in `docs/FIRST_USABLE_PROTOTYPE_SLICE.md`, the read-through is recorded in `docs/PROTOTYPE_READ_THROUGH.md`, and the first editable boundary is defined in `docs/FIRST_EDITABLE_FIELD_BOUNDARY.md`. The prototype now lets someone temporarily edit only project name and current goal in the browser, without saving or storage. Current Mode, last completed run, Next Action, Ignore For Now, Record the Change, and rest / next step should remain static until later boundaries are defined. Rest before adding saving, local storage, session storage, cookies, backend, accounts, database, SaaS structure, mode workflow, dashboard expansion, visual redesign, multi-project system, or making more cards editable.
+The next phase is not more dashboard cards by default. Luna now has a separate prototype preview for the first one-project slice in `prototype.html`, linked quietly from the main dashboard Project Trail. The first slice is defined in `docs/FIRST_USABLE_PROTOTYPE_SLICE.md`, the static read-through is recorded in `docs/PROTOTYPE_READ_THROUGH.md`, the first editable boundary is defined in `docs/FIRST_EDITABLE_FIELD_BOUNDARY.md`, and the editable prototype read-through is recorded in `docs/EDITABLE_PROTOTYPE_READ_THROUGH.md`. The prototype now lets someone temporarily edit only project name and current goal in the browser, without saving or storage. Current Mode, last completed run, Next Action, Ignore For Now, Record the Change, and rest / next step should remain static until later boundaries are defined. Rest before deciding any saving or local storage boundary, or adding saving, local storage, session storage, cookies, backend, accounts, database, mode workflow, dashboard expansion, visual redesign, multi-project system, or more editable cards yet.
 
 Later, Luna may become a calm companion for small projects. That means helping one person return to one small project, remember what is already there, see what changed last, choose one small next step, know what can wait, record the change, and rest. This future app direction should stay small and separate from any build plan; it is a direction to protect gently, not a big app roadmap.
 
