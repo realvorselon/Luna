@@ -2,6 +2,11 @@
 
 ## 2026-07-09
 
+### Prototype Preview Link
+
+- Added one quiet Project Trail link in `index.html` so visitors can discover `prototype.html` without making it a primary call-to-action.
+- Updated `README.md`, `project.json`, `STATE.md`, and `ROADMAP.md` so the public trail rests before editable UI, forms, local storage, backend, account system, database, dashboard expansion, visual redesign, mode workflow, or multi-project system.
+
 ### Static Prototype Page
 
 - Added `prototype.html` as a separate static, non-editable preview of the first one-project Luna slice.
