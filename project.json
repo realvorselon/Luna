@@ -1,6 +1,10 @@
 {
-  "status": "Resting after prototype preview link",
+  "status": "Resting after prototype read-through note",
   "statusHistory": [
+    {
+      "date": "2026-07-10",
+      "note": "Added a concise prototype read-through note after the static preview path was checked."
+    },
     {
       "date": "2026-07-09",
       "note": "Added one quiet Project Trail link from the main dashboard to the static first usable prototype preview."
@@ -339,8 +343,8 @@
     }
   ],
   "currentGoal": "Help someone return to one small project, see where they left off and what changed last, choose one clear Next Action, know what to ignore for now, record the change, and rest before adding more while keeping Philosophy Garden clearly optional.",
-  "lastCompletedRun": "2026-07-09: Added one quiet Project Trail link from the main dashboard to the static first usable prototype preview.",
-  "nextStep": "Rest before adding editable UI, forms, local storage, backend, account system, database, dashboard expansion, visual redesign, mode workflow, or multi-project system.",
+  "lastCompletedRun": "2026-07-10: Added a concise prototype read-through note after the static preview path was checked.",
+  "nextStep": "Rest before deciding the first editable field boundary or adding editable UI, forms, local storage, backend, account system, database, dashboard expansion, visual redesign, mode workflow, or multi-project system.",
   "dashboardGuide": [
     "Welcome starts the path to read through Record the Change before choosing more work.",
     "Status gives a quick snapshot of how the project is doing right now.",
@@ -351,7 +355,7 @@
     "Optional Reflection can wait; Philosophy Garden is a gentle reflection layer, not Luna's main engine."
   ],
   "futureIdeas": [
-    "Rest before creating a prototype page for the first usable slice; do not add editable UI, local storage, backend, accounts, database, mode workflow, dashboard expansion, visual redesign, or a multi-project system yet.",
+    "Rest before deciding the first editable field boundary; do not add editable UI, forms, local storage, backend, accounts, database, mode workflow, dashboard expansion, visual redesign, or a multi-project system yet.",
     "Review one existing sentence or section for beginner clarity, especially around returning to one small project and choosing one clear Next Action.",
     "Keep README.md, STATE.md, CHANGELOG.md, and project.json aligned whenever the public record changes.",
     "Only later consider surfacing an existing quiet item on the dashboard after the front door and current goal still feel calm."
@@ -368,7 +372,7 @@
     "The Garden Cycle connects the Reflection Card, Garden Review, Next Garden Update, and rest step so beginners can see how Philosophy Garden pieces fit together."
   ],
   "ideaQueue": [
-    "Rest before creating a prototype page for the first usable slice; do not add editable UI, local storage, backend, accounts, database, mode workflow, dashboard expansion, visual redesign, or a multi-project system yet.",
+    "Rest before deciding the first editable field boundary; do not add editable UI, forms, local storage, backend, accounts, database, mode workflow, dashboard expansion, visual redesign, or a multi-project system yet.",
     "Review one existing sentence or section for beginner clarity, especially around returning to one small project and choosing one clear Next Action.",
     "Keep README.md, STATE.md, CHANGELOG.md, and project.json aligned whenever the public record changes.",
     "Only later consider surfacing an existing quiet item on the dashboard after the front door and current goal still feel calm."
@@ -406,10 +410,10 @@
     "Visit http://localhost:8000 in a browser to view the dashboard."
   ],
   "nextAction": {
-    "title": "Rest after the prototype preview link",
-    "description": "Rest before adding editable UI, forms, local storage, backend, account system, database, dashboard expansion, visual redesign, mode workflow, or multi-project system.",
-    "whyItMatters": "Resting keeps the prototype preview link as a small signpost in the public trail instead of turning it into editable UI, storage, app architecture, backend, accounts, database, dashboard expansion, visual redesign, mode workflow, or a multi-project system.",
-    "status": "Resting after prototype preview link"
+    "title": "Rest before editable field boundary",
+    "description": "Rest before deciding the first editable field boundary or adding editable UI, forms, local storage, backend, account system, database, dashboard expansion, visual redesign, mode workflow, or multi-project system.",
+    "whyItMatters": "Resting keeps the static prototype as a calm, reversible preview path before Luna decides the first editable field boundary or starts any editable UI, storage, backend, accounts, database, dashboard expansion, visual redesign, mode workflow, or multi-project system.",
+    "status": "Resting after prototype read-through note"
   },
   "creativeSeed": {
     "name": "Philosophy Garden",
@@ -477,7 +481,7 @@
   ],
   "currentMode": {
     "name": "Rest",
-    "description": "The project is pausing after adding one quiet dashboard link to the static prototype preview so the signpost can rest before anything editable or larger starts.",
-    "whyItMatters": "Rest protects Luna from turning a small prototype preview link into editable UI, storage, app architecture, backend, accounts, database, dashboard expansion, visual redesign, mode workflow, or a multi-project system."
+    "description": "The project is pausing after recording that the dashboard-to-prototype click path works as a calm, reversible static preview.",
+    "whyItMatters": "Rest protects Luna from turning the static prototype read-through into editable UI, forms, local storage, backend, accounts, database, dashboard expansion, visual redesign, mode workflow, or a multi-project system before the first editable field boundary is decided."
   }
 }

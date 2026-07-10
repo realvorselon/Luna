@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-07-10
+
+### Prototype Read-Through Note
+
+- Added `docs/PROTOTYPE_READ_THROUGH.md` as a concise public-safe read-through note after the static preview path was checked.
+- Recorded that the main dashboard to `prototype.html` click path feels calm, the static prototype page is coherent as a first usable one-project slice, and the “Return to dashboard” link should be preserved.
+- Updated `README.md`, `project.json`, `STATE.md`, and `ROADMAP.md` so the public trail rests before deciding the first editable field boundary or adding editable UI, forms, local storage, backend, account system, database, dashboard expansion, visual redesign, mode workflow, or multi-project system.
+
 ## 2026-07-09
 
 ### Prototype Preview Link

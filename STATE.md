@@ -10,13 +10,15 @@ Help someone return to one small project, see where they left off and what chang
 
 ## Last Completed Run
 
-- 2026-07-09: Added one quiet Project Trail link from the main dashboard to the static first usable prototype preview.
+- 2026-07-10: Added a concise prototype read-through note after the static preview path was checked.
 
 ## Next Suggested Step
 
-Rest before adding editable UI, forms, local storage, backend, account system, database, dashboard expansion, visual redesign, mode workflow, or multi-project system.
+Rest before deciding the first editable field boundary or adding editable UI, forms, local storage, backend, account system, database, dashboard expansion, visual redesign, mode workflow, or multi-project system.
 
 ## Notes
+
+The prototype read-through note records that the main dashboard to `prototype.html` click path works as a calm preview path, that the static page feels coherent as a first usable one-project Luna slice, and that the “Return to dashboard” link should be preserved because it keeps the preview safe and reversible. The prototype should remain separate from the self-demo dashboard for now. The next later step is to decide the first editable field boundary, but Luna should rest before adding editable UI, forms, inputs, local storage, backend, account system, database, dashboard expansion, visual redesign, mode workflow, or multi-project system.
 
 The main dashboard now includes one quiet Project Trail link to `prototype.html` so visitors can discover the static first usable prototype preview without making it a primary call-to-action. The static `prototype.html` page still makes the first one-project Luna slice tangible with public-safe placeholder data: project name, current status, Current Mode, current goal, last completed run, one Next Action, Ignore For Now, Record the Change, and rest / next step. It is intentionally non-editable, separate from the self-demo dashboard, and does not save anything. The next step is to rest before adding editable UI, forms, local storage, backend, account system, database, dashboard expansion, visual redesign, mode workflow, or multi-project system.
 
