@@ -10,13 +10,15 @@ Help someone return to one small project, see where they left off and what chang
 
 ## Last Completed Run
 
-- 2026-07-10: Added a returning flow review note before deciding any new prototype behavior.
+- 2026-07-10: Added a returning flow wording boundary note before changing prototype copy.
 
 ## Next Suggested Step
 
-Rest before deciding whether to do a tiny wording polish for the returning flow, and before adding any new behavior, more persistence, more editable cards, sessionStorage, cookies, backend, accounts, database, sync, dashboard expansion, visual redesign, mode workflow, multi-project system, or new Philosophy Garden content.
+Rest before deciding whether to implement one tiny wording-only polish to the returning flow, and before adding any new behavior, more persistence, more editable cards, sessionStorage, cookies, backend, accounts, database, sync, dashboard expansion, visual redesign, mode workflow, multi-project system, or new Philosophy Garden content.
 
 ## Notes
+
+The returning flow wording boundary note records that this run does not change `prototype.html`, add code, change behavior, add persistence, add controls, expand the dashboard, redesign visuals, create a mode workflow, or add multi-project behavior. Any later wording polish should only make the visible return path easier to understand for someone coming back to an unfinished small project: it may clarify what to read first, make the return path feel more obvious, or make the one-project loop easier to scan. Any later polish should stay limited to copy, labels, or short helper text already present in `prototype.html`, preserve the current prototype structure, preserve project name and current goal local browser saving, preserve the clear-local-edits control behavior, keep Current Mode, last completed run, Next Action, Ignore For Now, Record the Change, rest / next step, and every other card static and unsaved, and preserve the dashboard ↔ prototype reversible path and “Return to dashboard” link. The next step is to rest before deciding whether to implement one tiny wording-only polish to the returning flow, and before adding any new behavior, more persistence, more editable cards, sessionStorage, cookies, backend, accounts, database, sync, dashboard expansion, visual redesign, mode workflow, multi-project system, or new Philosophy Garden content.
 
 The returning flow review note records that Luna’s product north star is to make returning easier. The current prototype already shows the main returning bones: one project state, current mode, current goal, what changed last, one next action, what to ignore for now, record the change, and rest. The saved project name and current goal help remember project identity and current intention in the same browser, while the clear-local-edits control gives a gentle way back to the public-safe sample values. The returning flow is visible but still mostly static. The next useful design question is whether the visible path feels clear enough for someone who has been away from a project. The next step is to rest before deciding whether to do a tiny wording polish for the returning flow, and before adding any new behavior, more persistence, more editable cards, sessionStorage, cookies, backend, accounts, database, sync, dashboard expansion, visual redesign, mode workflow, multi-project system, or new Philosophy Garden content.
 
