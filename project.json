@@ -1,6 +1,10 @@
 {
-  "status": "Resting after human read-through of prototype return path wording polish",
+  "status": "Resting after adding a sample project layer boundary note",
   "statusHistory": [
+    {
+      "date": "2026-07-10",
+      "note": "Added a sample project layer boundary note before making the prototype feel less meta."
+    },
     {
       "date": "2026-07-10",
       "note": "Added a human read-through note after the prototype return path wording polish."
@@ -399,8 +403,8 @@
     }
   ],
   "currentGoal": "Help someone return to one small project, see where they left off and what changed last, choose one clear Next Action, know what to ignore for now, record the change, and rest before adding more while keeping Philosophy Garden clearly optional.",
-  "lastCompletedRun": "2026-07-10: Added a human read-through note after the prototype return path wording polish.",
-  "nextStep": "Rest before deciding whether to add a boundary note for making the sample project layer feel less meta and more natural, and before adding any new behavior, more persistence, more editable cards, sessionStorage, cookies, backend, accounts, database, sync, dashboard expansion, visual redesign, mode workflow, multi-project system, or new Philosophy Garden content.",
+  "lastCompletedRun": "2026-07-10: Added a sample project layer boundary note before making the prototype feel less meta.",
+  "nextStep": "Rest before deciding whether to implement one tiny copy-only polish that makes the sample project layer feel less meta and more natural, and before adding any new behavior, more persistence, more editable cards, sessionStorage, cookies, backend, accounts, database, sync, dashboard expansion, visual redesign, mode workflow, multi-project system, or new Philosophy Garden content.",
   "dashboardGuide": [
     "Welcome starts the path to read through Record the Change before choosing more work.",
     "Status gives a quick snapshot of how the project is doing right now.",

@@ -2,6 +2,13 @@
 
 ## 2026-07-10
 
+### Sample Project Layer Boundary
+
+- Added `docs/SAMPLE_PROJECT_LAYER_BOUNDARY.md` as a concise public-safe boundary note before any sample project copy polish.
+- Recorded that the prototype currently proves the Luna loop, but the sample project layer still feels a little framework-like or meta in the current state area.
+- Kept any later polish copy-only unless absolutely necessary to preserve existing behavior, while preserving the Luna loop, prototype structure, local project name and current goal saving, clear-local-edits behavior, static unsaved cards, and dashboard ↔ prototype reversible path.
+- Updated `README.md`, `project.json`, `STATE.md`, and `ROADMAP.md` so the public trail rests before deciding whether to implement one tiny copy-only polish that makes the sample project layer feel less meta and more natural.
+
 ### Returning Flow Wording Read-Through
 
 - Added `docs/RETURNING_FLOW_WORDING_READ_THROUGH.md` after a human reviewed the wording-only prototype return path polish.
