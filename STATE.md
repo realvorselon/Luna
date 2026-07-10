@@ -10,7 +10,7 @@ Help someone return to one small project, see where they left off and what chang
 
 ## Last Completed Run
 
-- 2026-07-09: Added a separate static prototype page showing the first one-project Luna slice with sample public-safe placeholder data and no editable UI.
+- 2026-07-09: Added one quiet Project Trail link from the main dashboard to the static first usable prototype preview.
 
 ## Next Suggested Step
 
@@ -18,7 +18,7 @@ Rest before adding editable UI, forms, local storage, backend, account system, d
 
 ## Notes
 
-The static `prototype.html` page now makes the first one-project Luna slice tangible with public-safe placeholder data: project name, current status, Current Mode, current goal, last completed run, one Next Action, Ignore For Now, Record the Change, and rest / next step. It is intentionally non-editable, separate from the self-demo dashboard, and does not save anything. The next step is to rest before adding editable UI, forms, local storage, backend, account system, database, dashboard expansion, visual redesign, mode workflow, or multi-project system.
+The main dashboard now includes one quiet Project Trail link to `prototype.html` so visitors can discover the static first usable prototype preview without making it a primary call-to-action. The static `prototype.html` page still makes the first one-project Luna slice tangible with public-safe placeholder data: project name, current status, Current Mode, current goal, last completed run, one Next Action, Ignore For Now, Record the Change, and rest / next step. It is intentionally non-editable, separate from the self-demo dashboard, and does not save anything. The next step is to rest before adding editable UI, forms, local storage, backend, account system, database, dashboard expansion, visual redesign, mode workflow, or multi-project system.
 
 The first usable prototype slice note now defines the tiny usable version before building it: one project only, local/simple first, the same Luna return loop as the self-demo dashboard, and only the essential project state needed for returning calmly. The next step is to rest before creating a prototype page, editable UI, local storage, backend, account system, database, dashboard expansion, visual redesign, mode workflow, or multi-project system.
 

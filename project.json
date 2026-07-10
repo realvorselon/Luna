@@ -1,6 +1,10 @@
 {
-  "status": "Resting after static prototype page",
+  "status": "Resting after prototype preview link",
   "statusHistory": [
+    {
+      "date": "2026-07-09",
+      "note": "Added one quiet Project Trail link from the main dashboard to the static first usable prototype preview."
+    },
     {
       "date": "2026-07-09",
       "note": "Added a separate static prototype page showing the first one-project Luna slice with sample public-safe placeholder data and no editable UI."
@@ -335,7 +339,7 @@
     }
   ],
   "currentGoal": "Help someone return to one small project, see where they left off and what changed last, choose one clear Next Action, know what to ignore for now, record the change, and rest before adding more while keeping Philosophy Garden clearly optional.",
-  "lastCompletedRun": "2026-07-09: Added a separate static prototype page showing the first one-project Luna slice with sample public-safe placeholder data and no editable UI.",
+  "lastCompletedRun": "2026-07-09: Added one quiet Project Trail link from the main dashboard to the static first usable prototype preview.",
   "nextStep": "Rest before adding editable UI, forms, local storage, backend, account system, database, dashboard expansion, visual redesign, mode workflow, or multi-project system.",
   "dashboardGuide": [
     "Welcome starts the path to read through Record the Change before choosing more work.",
@@ -402,10 +406,10 @@
     "Visit http://localhost:8000 in a browser to view the dashboard."
   ],
   "nextAction": {
-    "title": "Rest after the static prototype page",
+    "title": "Rest after the prototype preview link",
     "description": "Rest before adding editable UI, forms, local storage, backend, account system, database, dashboard expansion, visual redesign, mode workflow, or multi-project system.",
-    "whyItMatters": "Resting keeps the prototype page as a tangible preview of one small Luna slice instead of turning it into editable UI, storage, app architecture, backend, accounts, database, dashboard expansion, or a multi-project system.",
-    "status": "Resting after static prototype page"
+    "whyItMatters": "Resting keeps the prototype preview link as a small signpost in the public trail instead of turning it into editable UI, storage, app architecture, backend, accounts, database, dashboard expansion, visual redesign, mode workflow, or a multi-project system.",
+    "status": "Resting after prototype preview link"
   },
   "creativeSeed": {
     "name": "Philosophy Garden",
@@ -473,7 +477,7 @@
   ],
   "currentMode": {
     "name": "Rest",
-    "description": "The project is pausing after defining the first usable prototype slice so the note can stay a boundary before any prototype page or editable UI exists.",
-    "whyItMatters": "Rest protects Luna from jumping from a self-demo dashboard into app sprawl before the first tiny local one-project slice is ready to build."
+    "description": "The project is pausing after adding one quiet dashboard link to the static prototype preview so the signpost can rest before anything editable or larger starts.",
+    "whyItMatters": "Rest protects Luna from turning a small prototype preview link into editable UI, storage, app architecture, backend, accounts, database, dashboard expansion, visual redesign, mode workflow, or a multi-project system."
   }
 }
