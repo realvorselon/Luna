@@ -14,7 +14,7 @@ Luna is currently a small public dashboard prototype. Over time, the idea is for
 
 Luna's v0.1 dashboard is a simple web page in `index.html`, and it currently uses the Luna repo itself as the first example project. It reads from `project.json` and starts with a plain-language Welcome, Status, Current Mode, Current Goal, Last Completed Run, one clear Next Action, a small Ignore For Now card, and a small Record the Change card so someone can quickly see where the project left off, what changed last, what to do next, what can wait, and how to update the public project trail. Recent Runs, Project Health, and one quiet Project Trail note remain on the page, while builder/reference material stays in README.md, docs, and project.json instead of filling the public front page.
 
-A separate static preview, `prototype.html`, is quietly linked from Project Trail and shows the first one-project Luna slice with sample public-safe placeholder data. It now includes the first tiny editable prototype UI for temporary in-browser project name and current goal edits. The edits do not save, use storage, or add forms, backend, accounts, database, mode workflow, dashboard expansion, visual redesign, or a multi-project system; refreshing may reset the sample data.
+A separate static preview, `prototype.html`, is quietly linked from Project Trail and shows the first one-project Luna slice with sample public-safe placeholder data. It now includes the first tiny editable prototype UI for temporary in-browser project name and current goal edits. A human checked that first editable prototype UI and it seemed okay. The edits update the visible prototype in the browser only; they do not save, use storage, or add forms, backend, accounts, database, mode workflow, dashboard expansion, visual redesign, or a multi-project system, and refreshing may reset the sample data. Luna should rest before deciding a separate saving or local-storage boundary.
 
 Philosophy Garden now appears only as a small Optional Reflection section. It is a gentle supporting layer for occasional reflection, not the whole project or Luna's main engine. The dashboard now uses a deeper moonlit night palette with indigo, blue-violet, muted periwinkle, soft silver, and a small lantern-gold Next Action focus so the same structure feels more atmospheric and Luna-like without starting another redesign.
 
@@ -65,6 +65,7 @@ These links are grouped so a new visitor can start with the most useful front do
 - `docs/FIRST_USABLE_PROTOTYPE_SLICE.md` — a concise boundary note for the first tiny local one-project usable prototype slice before building it.
 - `docs/PROTOTYPE_READ_THROUGH.md` — a concise read-through note that the dashboard-to-prototype preview path feels calm, static, reversible, and separate before editability.
 - `docs/FIRST_EDITABLE_FIELD_BOUNDARY.md` — a concise boundary note defining project name and current goal as the first tiny editable fields for a later run.
+- `docs/EDITABLE_PROTOTYPE_READ_THROUGH.md` — a concise read-through note after a human checked the first editable prototype UI, preserving the no-save boundary before any saving or local-storage decision.
 
 ## First Rule
 
