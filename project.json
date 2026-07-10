@@ -418,10 +418,10 @@
     "Visit http://localhost:8000 in a browser to view the dashboard."
   ],
   "nextAction": {
-    "title": "Rest before first editable UI",
-    "description": "Rest before adding the first editable UI, forms, local storage, backend, account system, database, dashboard expansion, visual redesign, mode workflow, or multi-project system.",
-    "whyItMatters": "Resting keeps the first editable boundary small: later edit only project name and current goal first, while Current Mode, last completed run, Next Action, Ignore For Now, Record the Change, and rest / next step stay static until later boundaries are defined.",
-    "status": "Resting after first editable field boundary note"
+    "title": "Rest after first editable prototype UI",
+    "description": "Rest before adding saving, local storage, session storage, cookies, backend, account system, database, dashboard expansion, visual redesign, mode workflow, multi-project system, or making more cards editable.",
+    "whyItMatters": "Resting keeps the first editable prototype UI small and temporary: only project name and current goal can be edited in-browser, while saving, storage, backend, accounts, database, dashboard expansion, visual redesign, mode workflow, multi-project system, and more editable cards wait.",
+    "status": "Resting after first editable prototype UI"
   },
   "creativeSeed": {
     "name": "Philosophy Garden",
