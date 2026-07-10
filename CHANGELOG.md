@@ -2,6 +2,13 @@
 
 ## 2026-07-10
 
+### Saving Boundary Note
+
+- Added `docs/SAVING_BOUNDARY.md` as a concise public-safe boundary note before any later saving or local-storage work.
+- Recorded that this run does not add saving, localStorage, sessionStorage, cookies, backend, accounts, database, sync, or broader app behavior.
+- Kept any possible later saving local, reversible, and limited to project name and current goal only, with Current Mode, last completed run, Next Action, Ignore For Now, Record the Change, rest / next step, and every card outside the saving surface.
+- Updated `README.md`, `project.json`, `STATE.md`, and `ROADMAP.md` so the public trail rests before implementing persistence or expanding the prototype.
+
 ### Editable Prototype Read-Through
 
 - Added `docs/EDITABLE_PROTOTYPE_READ_THROUGH.md` after a human checked the first editable prototype UI and it seemed okay.
