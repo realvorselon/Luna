@@ -10,13 +10,15 @@ Help someone return to one small project, see where they left off and what chang
 
 ## Last Completed Run
 
-- 2026-07-10: Added a tiny wording-only polish to make the prototype return path clearer.
+- 2026-07-10: Added a human read-through note after the prototype return path wording polish.
 
 ## Next Suggested Step
 
-Human review the wording-only polish before adding any new behavior, more persistence, more editable cards, sessionStorage, cookies, backend, accounts, database, sync, dashboard expansion, visual redesign, mode workflow, multi-project system, or new Philosophy Garden content.
+Rest before deciding whether to add a boundary note for making the sample project layer feel less meta and more natural, and before adding any new behavior, more persistence, more editable cards, sessionStorage, cookies, backend, accounts, database, sync, dashboard expansion, visual redesign, mode workflow, multi-project system, or new Philosophy Garden content.
 
 ## Notes
+
+The returning flow wording read-through note records that a human reviewed the wording-only polish after it landed. The clearer top guidance helped the prototype feel easier to follow, the page now more clearly suggests reading the project state, then what changed last, then the one Next Action, and the visible section labels make the one-project return loop easier to scan. The prototype still feels a little framework-like or meta in the current state area, which is understandable because the prototype is still proving the Luna loop before it becomes a more natural finished project experience. The next useful direction is to make the sample project layer feel more natural while preserving the Luna loop. The next step is to rest before deciding whether to add a boundary note for making the sample project layer feel less meta and more natural, and before adding any new behavior, more persistence, more editable cards, sessionStorage, cookies, backend, accounts, database, sync, dashboard expansion, visual redesign, mode workflow, multi-project system, or new Philosophy Garden content.
 
 The prototype now includes one tiny wording-only polish near the top of `prototype.html` that tells someone returning to start with the project state, then what changed last, then the one Next Action. It also makes the return path and one-project loop slightly easier to scan without changing behavior, adding controls, saving more fields, changing local browser saving, or altering the dashboard ↔ prototype reversible path. The next step is to human review the wording-only polish before adding any new behavior, more persistence, more editable cards, sessionStorage, cookies, backend, accounts, database, sync, dashboard expansion, visual redesign, mode workflow, multi-project system, or new Philosophy Garden content.
 

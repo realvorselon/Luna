@@ -2,6 +2,13 @@
 
 ## 2026-07-10
 
+### Returning Flow Wording Read-Through
+
+- Added `docs/RETURNING_FLOW_WORDING_READ_THROUGH.md` after a human reviewed the wording-only prototype return path polish.
+- Recorded that the clearer top guidance helped the prototype feel easier to follow, that the page now points more clearly from project state to what changed last to the one Next Action, and that visible section labels make the one-project return loop easier to scan.
+- Noted that the current state area still feels a little framework-like or meta because the prototype is still proving the Luna loop before becoming a more natural finished project experience.
+- Updated `README.md`, `project.json`, `STATE.md`, and `ROADMAP.md` so the public trail rests before deciding whether to add a boundary note for making the sample project layer feel less meta and more natural, and before adding new behavior or expanding persistence.
+
 ### Prototype Return Path Wording Polish
 
 - Updated `prototype.html` copy only so someone returning to an unfinished small project is told to read the project state, then what changed last, then the one Next Action.
