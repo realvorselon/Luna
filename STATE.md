@@ -10,13 +10,15 @@ Help someone return to one small project, see where they left off and what chang
 
 ## Last Completed Run
 
-- 2026-07-10: Added a clear saved values boundary note before implementing any reset or clear controls.
+- 2026-07-10: Added a tiny clear local edits control for project name and current goal only.
 
 ## Next Suggested Step
 
-Rest before implementing clear/reset controls, saving more fields, sessionStorage, cookies, backend, accounts, database, sync, dashboard expansion, visual redesign, mode workflow, multi-project system, or more editable cards.
+Human test the clear local edits control before adding any more persistence behavior, saving more fields, sessionStorage, cookies, backend, accounts, database, sync, dashboard expansion, visual redesign, mode workflow, multi-project system, or more editable cards.
 
 ## Notes
+
+The prototype now has one calm clear-local-edits control near the editable fields. It clears only the two localStorage values for project name and current goal in this browser, then returns both inputs and visible displays to the public-safe sample values. Current Mode, last completed run, Next Action, Ignore For Now, Record the Change, rest / next step, and every other card remain unchanged and unsaved. The next step is to human test the clear local edits control before adding any more persistence behavior, saving more fields, sessionStorage, cookies, backend, accounts, database, sync, dashboard expansion, visual redesign, mode workflow, multi-project system, or more editable cards.
 
 The clear saved values boundary note records that this run does not add a clear button, reset button, delete button, export/import, sync, account, backend, or new persistence behavior. The prototype currently saves only project name and current goal in localStorage in the same browser. If a clear control is added later, the first one should clear only those two localStorage values, feel calm and clearly local to the browser, and avoid changing Current Mode, last completed run, Next Action, Ignore For Now, Record the Change, rest / next step, or every card. The dashboard ↔ prototype reversible path and “Return to dashboard” link should remain preserved. The next step is to rest before implementing clear/reset controls, saving more fields, sessionStorage, cookies, backend, accounts, database, sync, dashboard expansion, visual redesign, mode workflow, multi-project system, or more editable cards.
 
