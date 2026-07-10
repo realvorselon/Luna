@@ -2,6 +2,11 @@
 
 ## 2026-07-10
 
+### Theme Direction Boundary
+
+- Added `docs/THEME_DIRECTION_BOUNDARY.md` to name Luna’s finished direction as moonlit garden, quiet desk, and gentle return path while preserving the Luna loop and keeping the recipe-note / soup-note sample as a neutral test sample rather than the intended finished theme.
+- Set the next step to rest before deciding whether to do one tiny path/visual clarity polish in `prototype.html`, and before changing sample project copy again or adding behavior, persistence, dashboard expansion, visual redesign, mode workflow, multi-project work, or new Philosophy Garden content.
+
 ### Sample Project Layer Read-Through
 
 - Added `docs/SAMPLE_PROJECT_LAYER_READ_THROUGH.md` after a human reviewed the copy-only sample project layer polish.
