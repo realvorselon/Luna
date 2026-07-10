@@ -10,13 +10,15 @@ Help someone return to one small project, see where they left off and what chang
 
 ## Last Completed Run
 
-- 2026-07-10: Added a local saving read-through note after human testing confirmed project name and current goal survive refresh.
+- 2026-07-10: Added a clear saved values boundary note before implementing any reset or clear controls.
 
 ## Next Suggested Step
 
-Rest before adding reset/clear controls, saving more fields, sessionStorage, cookies, backend, accounts, database, sync, dashboard expansion, visual redesign, mode workflow, multi-project system, or more editable cards.
+Rest before implementing clear/reset controls, saving more fields, sessionStorage, cookies, backend, accounts, database, sync, dashboard expansion, visual redesign, mode workflow, multi-project system, or more editable cards.
 
 ## Notes
+
+The clear saved values boundary note records that this run does not add a clear button, reset button, delete button, export/import, sync, account, backend, or new persistence behavior. The prototype currently saves only project name and current goal in localStorage in the same browser. If a clear control is added later, the first one should clear only those two localStorage values, feel calm and clearly local to the browser, and avoid changing Current Mode, last completed run, Next Action, Ignore For Now, Record the Change, rest / next step, or every card. The dashboard ↔ prototype reversible path and “Return to dashboard” link should remain preserved. The next step is to rest before implementing clear/reset controls, saving more fields, sessionStorage, cookies, backend, accounts, database, sync, dashboard expansion, visual redesign, mode workflow, multi-project system, or more editable cards.
 
 The local saving read-through note records that a human tested the tiny local browser saving and confirmed project name and current goal survived refresh. The saved values are local to the same browser only, do not sync, do not create an account, and may be cleared by clearing browser site data. Only project name and current goal are saved; Current Mode, last completed run, Next Action, Ignore For Now, Record the Change, rest / next step, and every other card remain static and unsaved. The dashboard ↔ prototype reversible path and “Return to dashboard” link should remain preserved. The next step is to rest before adding reset/clear controls, saving more fields, sessionStorage, cookies, backend, accounts, database, sync, dashboard expansion, visual redesign, mode workflow, multi-project system, or more editable cards.
 

@@ -1,6 +1,10 @@
 {
-  "status": "Resting after local saving read-through",
+  "status": "Resting after clear saved values boundary note",
   "statusHistory": [
+    {
+      "date": "2026-07-10",
+      "note": "Added a clear saved values boundary note before implementing any reset or clear controls."
+    },
     {
       "date": "2026-07-10",
       "note": "Added a local saving read-through note after human testing confirmed project name and current goal survive refresh."
@@ -367,8 +371,8 @@
     }
   ],
   "currentGoal": "Help someone return to one small project, see where they left off and what changed last, choose one clear Next Action, know what to ignore for now, record the change, and rest before adding more while keeping Philosophy Garden clearly optional.",
-  "lastCompletedRun": "2026-07-10: Added a local saving read-through note after human testing confirmed project name and current goal survive refresh.",
-  "nextStep": "Rest before adding reset/clear controls, saving more fields, sessionStorage, cookies, backend, accounts, database, sync, dashboard expansion, visual redesign, mode workflow, multi-project system, or more editable cards.",
+  "lastCompletedRun": "2026-07-10: Added a clear saved values boundary note before implementing any reset or clear controls.",
+  "nextStep": "Rest before implementing clear/reset controls, saving more fields, sessionStorage, cookies, backend, accounts, database, sync, dashboard expansion, visual redesign, mode workflow, multi-project system, or more editable cards.",
   "dashboardGuide": [
     "Welcome starts the path to read through Record the Change before choosing more work.",
     "Status gives a quick snapshot of how the project is doing right now.",
@@ -379,7 +383,7 @@
     "Optional Reflection can wait; Philosophy Garden is a gentle reflection layer, not Luna's main engine."
   ],
   "futureIdeas": [
-    "Rest before adding reset/clear controls, saving more fields, sessionStorage, cookies, backend, accounts, database, sync, dashboard expansion, visual redesign, mode workflow, multi-project system, or more editable cards.",
+    "Rest before implementing clear/reset controls, saving more fields, sessionStorage, cookies, backend, accounts, database, sync, dashboard expansion, visual redesign, mode workflow, multi-project system, or more editable cards.",
     "Review one existing sentence or section for beginner clarity, especially around returning to one small project and choosing one clear Next Action.",
     "Keep README.md, STATE.md, CHANGELOG.md, and project.json aligned whenever the public record changes.",
     "Only later consider surfacing an existing quiet item on the dashboard after the front door and current goal still feel calm."
@@ -396,7 +400,7 @@
     "The Garden Cycle connects the Reflection Card, Garden Review, Next Garden Update, and rest step so beginners can see how Philosophy Garden pieces fit together."
   ],
   "ideaQueue": [
-    "Rest before adding reset/clear controls, saving more fields, sessionStorage, cookies, backend, accounts, database, sync, dashboard expansion, visual redesign, mode workflow, multi-project system, or more editable cards.",
+    "Rest before implementing clear/reset controls, saving more fields, sessionStorage, cookies, backend, accounts, database, sync, dashboard expansion, visual redesign, mode workflow, multi-project system, or more editable cards.",
     "Review one existing sentence or section for beginner clarity, especially around returning to one small project and choosing one clear Next Action.",
     "Keep README.md, STATE.md, CHANGELOG.md, and project.json aligned whenever the public record changes.",
     "Only later consider surfacing an existing quiet item on the dashboard after the front door and current goal still feel calm."
@@ -434,10 +438,10 @@
     "Visit http://localhost:8000 in a browser to view the dashboard."
   ],
   "nextAction": {
-    "title": "Rest after local saving read-through",
-    "description": "Rest before adding reset/clear controls, saving more fields, sessionStorage, cookies, backend, accounts, database, sync, dashboard expansion, visual redesign, mode workflow, multi-project system, or more editable cards.",
-    "whyItMatters": "Resting protects the tiny tested local saving surface from growing into controls, broader saved fields, accounts, syncing, backend work, dashboard expansion, visual redesign, task-manager behavior, or a multi-project system too quickly.",
-    "status": "Resting before expanding persistence"
+    "title": "Rest after clear saved values boundary note",
+    "description": "Rest before implementing clear/reset controls, saving more fields, sessionStorage, cookies, backend, accounts, database, sync, dashboard expansion, visual redesign, mode workflow, multi-project system, or more editable cards.",
+    "whyItMatters": "Resting protects the tiny tested local saving surface from growing into clear/reset controls, broader saved fields, accounts, syncing, backend work, dashboard expansion, visual redesign, task-manager behavior, or a multi-project system too quickly.",
+    "status": "Resting before clear/reset controls"
   },
   "creativeSeed": {
     "name": "Philosophy Garden",
@@ -505,7 +509,7 @@
   ],
   "currentMode": {
     "name": "Rest",
-    "description": "The project is pausing after a local saving read-through confirmed project name and current goal survive refresh.",
-    "whyItMatters": "Rest protects Luna from adding reset/clear controls, saving more fields, sessionStorage, cookies, backend, accounts, database, sync, dashboard expansion, visual redesign, mode workflow, multi-project system, or more editable cards before another boundary is chosen."
+    "description": "The project is pausing after a clear saved values boundary note defined the limit for any later first clear control.",
+    "whyItMatters": "Rest protects Luna from adding clear/reset controls, saving more fields, sessionStorage, cookies, backend, accounts, database, sync, dashboard expansion, visual redesign, mode workflow, multi-project system, or more editable cards before a separate implementation run."
   }
 }
