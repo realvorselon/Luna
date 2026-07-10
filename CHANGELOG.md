@@ -2,6 +2,10 @@
 
 ## 2026-07-10
 
+### Next Action Alignment Fix
+
+- Aligned `project.json.nextAction` with the already-merged first editable prototype UI state.
+
 ### First Editable Prototype UI
 
 - Added the first tiny editable area to `prototype.html` for temporary project name and current goal edits only.
