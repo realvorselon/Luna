@@ -191,6 +191,27 @@
       border-color: rgb(241 215 147 / 48%);
     }
 
+    .clear-local-edits-button {
+      justify-self: start;
+      padding: 10px 13px;
+      color: var(--moon);
+      background: rgb(10 17 34 / 30%);
+      border: 1px solid rgb(196 205 238 / 28%);
+      border-radius: 999px;
+      font: inherit;
+      cursor: pointer;
+    }
+
+    .clear-local-edits-button:hover,
+    .clear-local-edits-button:focus {
+      border-color: rgb(241 215 147 / 48%);
+    }
+
+    .clear-local-edits-button:focus {
+      outline: 2px solid rgb(241 215 147 / 55%);
+      outline-offset: 2px;
+    }
+
     ul, ol { margin: 10px 0 0; padding-left: 1.2rem; color: var(--moon-soft); }
     li + li { margin-top: 8px; }
 
@@ -259,6 +280,7 @@
             <label for="current-goal-input">Current goal</label>
             <input id="current-goal-input" type="text" value="Make the tiny collection understandable" autocomplete="off">
           </div>
+          <button class="clear-local-edits-button" type="button" id="clear-local-edits-button">Clear only local edits in this browser</button>
         </div>
       </article>
 
@@ -326,8 +348,11 @@
     const currentGoalInput = document.querySelector('#current-goal-input');
     const projectNameDisplay = document.querySelector('#project-name-display');
     const currentGoalDisplay = document.querySelector('#current-goal-display');
+    const clearLocalEditsButton = document.querySelector('#clear-local-edits-button');
     const projectNameStorageKey = 'luna.prototype.projectName';
     const currentGoalStorageKey = 'luna.prototype.currentGoal';
+    const sampleProjectName = 'Moonlit Recipe Notes';
+    const sampleCurrentGoal = 'Make the tiny collection understandable';
 
     const syncEditableField = (input, display, fallbackDisplay, storageKey) => {
       const savedValue = localStorage.getItem(storageKey);
@@ -346,10 +371,21 @@
         localStorage.setItem(storageKey, input.value);
         updateDisplay();
       });
+
+      return updateDisplay;
     };
 
-    syncEditableField(projectNameInput, projectNameDisplay, 'Untitled small project', projectNameStorageKey);
-    syncEditableField(currentGoalInput, currentGoalDisplay, 'Choose one small current goal', currentGoalStorageKey);
+    const updateProjectNameDisplay = syncEditableField(projectNameInput, projectNameDisplay, sampleProjectName, projectNameStorageKey);
+    const updateCurrentGoalDisplay = syncEditableField(currentGoalInput, currentGoalDisplay, sampleCurrentGoal, currentGoalStorageKey);
+
+    clearLocalEditsButton.addEventListener('click', () => {
+      localStorage.removeItem(projectNameStorageKey);
+      localStorage.removeItem(currentGoalStorageKey);
+      projectNameInput.value = sampleProjectName;
+      currentGoalInput.value = sampleCurrentGoal;
+      updateProjectNameDisplay();
+      updateCurrentGoalDisplay();
+    });
   </script>
 </body>
 </html>

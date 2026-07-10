@@ -2,6 +2,13 @@
 
 ## 2026-07-10
 
+### Tiny Clear Local Edits Control
+
+- Added one calm clear-local-edits button in `prototype.html` near the editable project name and current goal fields.
+- Kept the clear action limited to the two existing localStorage keys for project name and current goal only, returning both inputs and visible displays to the public-safe sample values.
+- Kept Current Mode, last completed run, Next Action, Ignore For Now, Record the Change, rest / next step, and every other card unchanged and unsaved.
+- Updated `README.md`, `project.json`, `STATE.md`, and `ROADMAP.md` so the public trail points to human testing the clear local edits control before adding any more persistence behavior or expanding the prototype.
+
 ### Clear Saved Values Boundary Note
 
 - Added `docs/CLEAR_SAVED_VALUES_BOUNDARY.md` as a concise public-safe boundary note before any later clear/reset control work.
