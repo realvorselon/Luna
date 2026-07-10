@@ -10,13 +10,15 @@ Help someone return to one small project, see where they left off and what chang
 
 ## Last Completed Run
 
-- 2026-07-10: Added the first tiny editable prototype UI for temporary project name and current goal edits.
+- 2026-07-10: Added an editable prototype read-through note after human checking and cleaned stale saving-boundary wording.
 
 ## Next Suggested Step
 
-Rest before adding saving, local storage, session storage, cookies, backend, account system, database, dashboard expansion, visual redesign, mode workflow, multi-project system, or making more cards editable.
+Rest before deciding any saving or local storage boundary, or adding saving, local storage, session storage, cookies, backend, accounts, database, mode workflow, dashboard expansion, visual redesign, multi-project system, or more editable cards yet.
 
 ## Notes
+
+The editable prototype read-through note records that the first editable prototype UI was checked by a human and seemed okay. Only project name and current goal are editable, edits update the visible prototype in the browser only, edits do not save yet, and refreshing may reset the sample data. Current Mode, last completed run, Next Action, Ignore For Now, Record the Change, and rest / next step remain static. The dashboard ↔ prototype reversible path and “Return to dashboard” link should be preserved. Before adding persistence, Luna should define a separate saving and local-storage boundary. The next step is to rest before deciding any saving or local storage boundary, or adding saving, local storage, session storage, cookies, backend, accounts, database, dashboard expansion, visual redesign, mode workflow, multi-project system, or more editable cards.
 
 The prototype now has the first tiny editable UI: a calm “Try editing” area for only project name and current goal. Edits update the visible sample project state in the browser only, do not save, do not use localStorage, sessionStorage, cookies, backend, accounts, database, forms, or persistence, and may reset on refresh. Current Mode, last completed run, Next Action, Ignore For Now, Record the Change, and rest / next step remain static. The next step is to rest before adding saving, local storage, session storage, cookies, backend, account system, database, dashboard expansion, visual redesign, mode workflow, multi-project system, or making more cards editable.
 
