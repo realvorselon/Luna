@@ -2,6 +2,12 @@
 
 ## 2026-07-10
 
+### Returning Flow Review
+
+- Added `docs/RETURNING_FLOW_REVIEW.md` as a concise public-safe review note from the perspective of someone returning to an unfinished small project.
+- Recorded that Luna’s product north star is to make returning easier, and that the current prototype already shows the main returning bones while still being mostly static.
+- Kept the next step as rest before deciding whether to do a tiny wording polish for the returning flow, and before adding any new behavior, more persistence, more editable cards, sessionStorage, cookies, backend, accounts, database, sync, dashboard expansion, visual redesign, mode workflow, multi-project system, or new Philosophy Garden content.
+
 ### Prototype Rest Checkpoint
 
 - Added `docs/PROTOTYPE_REST_CHECKPOINT.md` as a concise public-safe pause note after the first editable saved-and-clearable prototype slice was human tested.
