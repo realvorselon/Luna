@@ -10,13 +10,17 @@ Help someone return to one small project, see where they left off and what chang
 
 ## Last Completed Run
 
-- 2026-07-10: Added a concise prototype read-through note after the static preview path was checked.
+- 2026-07-10: Added the first tiny editable prototype UI for temporary project name and current goal preview edits.
 
 ## Next Suggested Step
 
-Rest before deciding the first editable field boundary or adding editable UI, forms, local storage, backend, account system, database, dashboard expansion, visual redesign, mode workflow, or multi-project system.
+Rest before adding saving, local storage, backend, account system, database, dashboard expansion, visual redesign, mode workflow, multi-project system, or making more cards editable.
 
 ## Notes
+
+The static prototype page now has the first tiny editable UI: project name and current goal can be edited directly on `prototype.html` as temporary in-browser preview changes. The page does not save changes, use localStorage, submit a form, add a Save button, add a backend, add accounts, add a database, or make every card editable. Current Mode, last completed run, Next Action, Ignore For Now, Record the Change, and rest / next step remain static. The dashboard ↔ prototype reversible path and “Return to dashboard” link are preserved. The next step is to rest before adding saving, local storage, backend, account system, database, dashboard expansion, visual redesign, mode workflow, multi-project system, or making more cards editable.
+
+The first editable field boundary note defines the later first editable fields as only project name and current goal. Those fields are enough to make the one-project prototype feel personally useful without turning Luna into a task manager. Current Mode, last completed run, Next Action, Ignore For Now, Record the Change, and rest / next step should remain static until later boundaries are defined. The prototype should preserve the dashboard ↔ prototype reversible path, including the “Return to dashboard” link. This run added only the boundary note, not editable UI, forms, inputs, storage, backend, accounts, database, dashboard expansion, visual redesign, mode workflow, multi-project system, or new Philosophy Garden content. The next step is to rest before adding the first editable UI, forms, local storage, backend, account system, database, dashboard expansion, visual redesign, mode workflow, or multi-project system.
 
 The prototype read-through note records that the main dashboard to `prototype.html` click path works as a calm preview path, that the static page feels coherent as a first usable one-project Luna slice, and that the “Return to dashboard” link should be preserved because it keeps the preview safe and reversible. The prototype should remain separate from the self-demo dashboard for now. The next later step is to decide the first editable field boundary, but Luna should rest before adding editable UI, forms, inputs, local storage, backend, account system, database, dashboard expansion, visual redesign, mode workflow, or multi-project system.
 

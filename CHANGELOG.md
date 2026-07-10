@@ -2,6 +2,20 @@
 
 ## 2026-07-10
 
+### First Tiny Editable Prototype UI
+
+- Updated `prototype.html` so only project name and current goal can be edited as temporary in-browser preview changes.
+- Added a plain-language note near the editable fields that the edits do not save yet and refreshing may reset the sample data.
+- Kept Current Mode, last completed run, Next Action, Ignore For Now, Record the Change, and rest / next step static, with no Save button, localStorage, backend, accounts, database, dashboard expansion, visual redesign, mode workflow, multi-project system, or new Philosophy Garden content.
+- Updated `README.md`, `project.json`, `STATE.md`, and `ROADMAP.md` so the public trail rests before saving, local storage, backend, account system, database, dashboard expansion, visual redesign, mode workflow, multi-project system, or making more cards editable.
+
+### First Editable Field Boundary Note
+
+- Added `docs/FIRST_EDITABLE_FIELD_BOUNDARY.md` as a concise public-safe boundary note for the later first editable fields.
+- Defined project name and current goal as the only first editable fields so the prototype can feel personally useful without becoming a task manager.
+- Recorded that Current Mode, last completed run, Next Action, Ignore For Now, Record the Change, and rest / next step should stay static until later boundaries are defined, while preserving the dashboard ↔ prototype reversible path and “Return to dashboard” link.
+- Updated `README.md`, `project.json`, `STATE.md`, and `ROADMAP.md` so the public trail rests before adding the first editable UI, forms, local storage, backend, account system, database, dashboard expansion, visual redesign, mode workflow, or multi-project system.
+
 ### Prototype Read-Through Note
 
 - Added `docs/PROTOTYPE_READ_THROUGH.md` as a concise public-safe read-through note after the static preview path was checked.

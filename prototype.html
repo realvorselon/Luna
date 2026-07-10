@@ -108,6 +108,52 @@
       border-top: 1px solid rgb(174 190 226 / 17%);
     }
 
+
+    .edit-preview {
+      margin: 18px 0 20px;
+      padding: 18px;
+      background: rgb(10 17 34 / 34%);
+      border: 1px solid rgb(196 205 238 / 22%);
+      border-radius: 14px;
+    }
+
+    .edit-preview p {
+      margin-bottom: 14px;
+      color: var(--moon-soft);
+    }
+
+    .edit-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .edit-field label {
+      display: block;
+      margin-bottom: 6px;
+      color: var(--periwinkle);
+      font-size: 0.82rem;
+      font-weight: 750;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .edit-field input {
+      width: 100%;
+      padding: 11px 12px;
+      color: var(--moon);
+      background: rgb(11 18 36 / 72%);
+      border: 1px solid rgb(196 205 238 / 30%);
+      border-radius: 12px;
+      font: inherit;
+    }
+
+    .edit-field input:focus {
+      outline: 2px solid rgb(241 215 147 / 48%);
+      outline-offset: 2px;
+      border-color: rgb(241 215 147 / 58%);
+    }
+
     .loop-grid {
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -160,7 +206,7 @@
 
     @media (max-width: 680px) {
       main { padding-top: 44px; }
-      .loop-grid { grid-template-columns: 1fr; }
+      .edit-grid, .loop-grid { grid-template-columns: 1fr; }
     }
   </style>
 </head>
@@ -168,19 +214,33 @@
   <main>
     <header>
       <h1>Luna Prototype Slice</h1>
-      <p class="subtitle">A static, non-editable preview of the first one-project Luna loop: return, orient, see what changed, choose one next action, see what can wait, record one change, and rest.</p>
+      <p class="subtitle">A small editable preview of the first one-project Luna loop: return, orient, see what changed, choose one next action, see what can wait, record one change, and rest.</p>
       <div class="prototype-note">
-        <p>This is sample public-safe placeholder data for a tiny fictional project. It does not save anything, collect input, or pretend to be a finished app.</p>
+        <p>This is sample public-safe placeholder data for a tiny fictional project. It lets you try two temporary edits, but it does not save anything or pretend to be a finished app.</p>
       </div>
-      <div class="project-status">Static prototype preview</div>
+      <div class="project-status">Temporary editable prototype preview</div>
     </header>
 
     <section aria-labelledby="project-state">
       <h2 id="project-state">One project state</h2>
+      <div class="edit-preview" aria-labelledby="try-editing-title">
+        <h3 id="try-editing-title">Try editing two small fields</h3>
+        <p>These edits are temporary in-browser preview changes only. They do not save yet, and refreshing the page may reset the sample data.</p>
+        <div class="edit-grid">
+          <div class="edit-field">
+            <label for="project-name-input">Project name</label>
+            <input id="project-name-input" type="text" value="Moonlit Recipe Notes" autocomplete="off">
+          </div>
+          <div class="edit-field">
+            <label for="current-goal-input">Current goal</label>
+            <input id="current-goal-input" type="text" value="Make the tiny collection understandable" autocomplete="off">
+          </div>
+        </div>
+      </div>
       <div class="loop-grid">
         <article class="card">
           <span class="label">Project name</span>
-          <h3>Moonlit Recipe Notes</h3>
+          <h3 id="project-name-display">Moonlit Recipe Notes</h3>
           <p>A small public-safe sample project for collecting three simple weeknight soup ideas.</p>
         </article>
         <article class="card">
@@ -195,7 +255,7 @@
         </article>
         <article class="card">
           <span class="label">Current goal</span>
-          <h3>Make the tiny collection understandable</h3>
+          <h3 id="current-goal-display">Make the tiny collection understandable</h3>
           <p>Keep one short note for each recipe idea so the project is easy to return to later.</p>
         </article>
       </div>
@@ -255,7 +315,21 @@
       </ol>
     </section>
 
-    <p class="footer-note"><a href="index.html">Return to the Luna dashboard</a>. This page is separate from the self-demo dashboard and remains a static prototype preview.</p>
+    <p class="footer-note"><a href="index.html">Return to the Luna dashboard</a>. This page is separate from the self-demo dashboard and remains a temporary prototype preview.</p>
   </main>
+  <script>
+    const bindPreviewEdit = (inputId, displayId) => {
+      const input = document.getElementById(inputId);
+      const display = document.getElementById(displayId);
+      const fallback = input.value;
+
+      input.addEventListener('input', () => {
+        display.textContent = input.value.trim() || fallback;
+      });
+    };
+
+    bindPreviewEdit('project-name-input', 'project-name-display');
+    bindPreviewEdit('current-goal-input', 'current-goal-display');
+  </script>
 </body>
 </html>
