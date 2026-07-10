@@ -2,6 +2,13 @@
 
 ## 2026-07-10
 
+### Returning Flow Wording Boundary
+
+- Added `docs/RETURNING_FLOW_WORDING_BOUNDARY.md` as a concise public-safe boundary note before changing prototype copy.
+- Recorded that this run does not change `prototype.html`, add code, change behavior, add persistence, add controls, expand the dashboard, redesign visuals, create a mode workflow, or add multi-project behavior.
+- Kept any later wording polish limited to copy, labels, or short helper text already present in `prototype.html`, while preserving the current prototype structure, saved project name and current goal behavior, clear-local-edits behavior, static unsaved cards, and dashboard ↔ prototype reversible path.
+- Updated `README.md`, `project.json`, `STATE.md`, and `ROADMAP.md` so the public trail rests before deciding whether to implement one tiny wording-only polish to the returning flow.
+
 ### Returning Flow Review
 
 - Added `docs/RETURNING_FLOW_REVIEW.md` as a concise public-safe review note from the perspective of someone returning to an unfinished small project.
