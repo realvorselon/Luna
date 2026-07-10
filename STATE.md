@@ -10,13 +10,15 @@ Help someone return to one small project, see where they left off and what chang
 
 ## Last Completed Run
 
-- 2026-07-10: Added a sample project layer boundary note before making the prototype feel less meta.
+- 2026-07-10: Added a tiny copy-only polish to make the sample project layer feel less meta and more natural.
 
 ## Next Suggested Step
 
-Rest before deciding whether to implement one tiny copy-only polish that makes the sample project layer feel less meta and more natural, and before adding any new behavior, more persistence, more editable cards, sessionStorage, cookies, backend, accounts, database, sync, dashboard expansion, visual redesign, mode workflow, multi-project system, or new Philosophy Garden content.
+Human review the sample project copy-only polish before adding any new behavior, more persistence, more editable cards, sessionStorage, cookies, backend, accounts, database, sync, dashboard expansion, visual redesign, mode workflow, multi-project system, or new Philosophy Garden content.
 
 ## Notes
+
+The prototype now has one tiny copy-only polish that makes the fictional recipe-note sample project feel less meta and more natural. The current state area now reads more like a small recipe-note project someone could return to: rereading the soup notes, clarifying the broth note, keeping larger recipe ideas for later, and recording one small change. The Luna loop remains underneath, and the prototype structure, local project name and current goal saving, clear-local-edits behavior, static unsaved cards, and dashboard ↔ prototype reversible path remain preserved. The next step is to human review the sample project copy-only polish before adding any new behavior, more persistence, more editable cards, sessionStorage, cookies, backend, accounts, database, sync, dashboard expansion, visual redesign, mode workflow, multi-project system, or new Philosophy Garden content.
 
 The sample project layer boundary note records that the prototype currently proves the Luna loop, but the sample project layer still feels a little framework-like or meta in the current state area. The next useful improvement is to make the fictional recipe-note sample project feel more like a small project someone could actually return to while keeping the framework underneath: one project state, Current Mode, current goal, what changed last, one Next Action, Ignore For Now, Record the Change, and Rest. Any later polish should be copy-only unless absolutely necessary to preserve existing behavior, should not change `prototype.html` structure or add behavior, persistence, editable cards, buttons, controls, sessionStorage, cookies, backend, accounts, database, sync, dashboard expansion, visual redesign, mode workflow, multi-project system, or new Philosophy Garden content, and should preserve project name and current goal local browser saving, the clear-local-edits control behavior, static unsaved cards, and the dashboard ↔ prototype reversible path. The next step is to rest before deciding whether to implement one tiny copy-only polish that makes the sample project layer feel less meta and more natural.
 
