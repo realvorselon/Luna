@@ -2,6 +2,13 @@
 
 ## 2026-07-10
 
+### Tiny Local Browser Saving
+
+- Added localStorage saving in `prototype.html` for project name and current goal only.
+- Loaded saved project name and current goal values into both the inputs and displayed cards on page load, while keeping public-safe sample values when nothing is saved.
+- Added a plain-language note that these two edits save only in this browser, do not sync, do not create an account, can be cleared by clearing browser site data, and that other cards are not saved yet.
+- Updated `README.md`, `project.json`, `STATE.md`, and `ROADMAP.md` so the public trail rests before reset/clear controls, saving more fields, sessionStorage, cookies, backend, accounts, database, sync, dashboard expansion, visual redesign, mode workflow, multi-project system, or more editable cards.
+
 ### Saving Boundary Note
 
 - Added `docs/SAVING_BOUNDARY.md` as a concise public-safe boundary note before any later saving or local-storage work.

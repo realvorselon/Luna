@@ -215,11 +215,11 @@
   <main>
     <header>
       <h1>Luna Prototype Slice</h1>
-      <p class="subtitle">A tiny prototype preview of the first one-project Luna loop: return, orient, try two temporary edits, see what changed, choose one next action, see what can wait, record one change, and rest.</p>
+      <p class="subtitle">A tiny prototype preview of the first one-project Luna loop: return, orient, try two local browser edits, see what changed, choose one next action, see what can wait, record one change, and rest.</p>
       <div class="prototype-note">
-        <p>This is sample public-safe placeholder data for a tiny fictional project. You can try two temporary edits on this page, but they do not save yet and refreshing may reset them.</p>
+        <p>This is sample public-safe placeholder data for a tiny fictional project. You can try two small edits on this page. They save only in this browser, do not sync, and do not create an account.</p>
       </div>
-      <div class="project-status">Temporary edit preview</div>
+      <div class="project-status">Local browser edit preview</div>
     </header>
 
     <section aria-labelledby="project-state">
@@ -248,8 +248,8 @@
       </div>
       <article class="try-editing-card" aria-labelledby="try-editing-title">
         <span class="label">Try editing</span>
-        <h3 id="try-editing-title">Make two temporary preview edits</h3>
-        <p class="try-editing-note">These edits are only a calm in-browser preview. They do not save yet; refreshing the page may reset the sample project name and current goal.</p>
+        <h3 id="try-editing-title">Make two local browser edits</h3>
+        <p class="try-editing-note">These two edits save only in this browser. They do not sync, do not create an account, and can be cleared by clearing browser site data. Other cards are not saved yet.</p>
         <div class="edit-fields">
           <div class="edit-field">
             <label for="project-name-input">Project name</label>
@@ -318,7 +318,7 @@
       </ol>
     </section>
 
-    <p class="footer-note"><a href="index.html">Return to the Luna dashboard</a>. This page is separate from the self-demo dashboard and remains a tiny temporary-edit prototype preview.</p>
+    <p class="footer-note"><a href="index.html">Return to the Luna dashboard</a>. This page is separate from the self-demo dashboard and remains a tiny local browser-edit prototype preview.</p>
   </main>
 
   <script>
@@ -326,14 +326,30 @@
     const currentGoalInput = document.querySelector('#current-goal-input');
     const projectNameDisplay = document.querySelector('#project-name-display');
     const currentGoalDisplay = document.querySelector('#current-goal-display');
+    const projectNameStorageKey = 'luna.prototype.projectName';
+    const currentGoalStorageKey = 'luna.prototype.currentGoal';
 
-    projectNameInput.addEventListener('input', () => {
-      projectNameDisplay.textContent = projectNameInput.value.trim() || 'Untitled small project';
-    });
+    const syncEditableField = (input, display, fallbackDisplay, storageKey) => {
+      const savedValue = localStorage.getItem(storageKey);
 
-    currentGoalInput.addEventListener('input', () => {
-      currentGoalDisplay.textContent = currentGoalInput.value.trim() || 'Choose one small current goal';
-    });
+      if (savedValue !== null) {
+        input.value = savedValue;
+      }
+
+      const updateDisplay = () => {
+        display.textContent = input.value.trim() || fallbackDisplay;
+      };
+
+      updateDisplay();
+
+      input.addEventListener('input', () => {
+        localStorage.setItem(storageKey, input.value);
+        updateDisplay();
+      });
+    };
+
+    syncEditableField(projectNameInput, projectNameDisplay, 'Untitled small project', projectNameStorageKey);
+    syncEditableField(currentGoalInput, currentGoalDisplay, 'Choose one small current goal', currentGoalStorageKey);
   </script>
 </body>
 </html>
