@@ -325,8 +325,19 @@
       <h2 id="next-action">Choose one next action</h2>
       <article class="lantern-card">
         <span class="label">One Next Action</span>
-        <h3>Add one public-safe sentence to the broth note.</h3>
+        <h3 id="next-action-display">Add one public-safe sentence to the broth note.</h3>
         <p>Keep it small: one general broth sentence is enough. Do not add a full recipe, grocery list, meal plan, or new project area.</p>
+      </article>
+      <article class="try-editing-card" aria-labelledby="next-action-editing-title">
+        <span class="label">Try editing</span>
+        <h3 id="next-action-editing-title">Change the one next action</h3>
+        <p class="try-editing-note">Keep this to one small action you can return to. Not a list. Not the whole project. Avoid private secrets or anything harmful.</p>
+        <div class="edit-fields">
+          <div class="edit-field">
+            <label for="next-action-input">One next action</label>
+            <input id="next-action-input" type="text" value="Add one public-safe sentence to the broth note." autocomplete="off">
+          </div>
+        </div>
       </article>
     </section>
 
@@ -383,11 +394,15 @@
     const currentGoalInput = document.querySelector('#current-goal-input');
     const projectNameDisplay = document.querySelector('#project-name-display');
     const currentGoalDisplay = document.querySelector('#current-goal-display');
+    const nextActionInput = document.querySelector('#next-action-input');
+    const nextActionDisplay = document.querySelector('#next-action-display');
     const clearLocalEditsButton = document.querySelector('#clear-local-edits-button');
     const projectNameStorageKey = 'luna.prototype.projectName';
     const currentGoalStorageKey = 'luna.prototype.currentGoal';
+    const nextActionStorageKey = 'luna.prototype.nextAction';
     const sampleProjectName = 'Moonlit Recipe Notes';
     const sampleCurrentGoal = 'Make the tiny collection understandable';
+    const sampleNextAction = 'Add one public-safe sentence to the broth note.';
 
     const syncEditableField = (input, display, fallbackDisplay, storageKey) => {
       const savedValue = localStorage.getItem(storageKey);
@@ -412,6 +427,7 @@
 
     const updateProjectNameDisplay = syncEditableField(projectNameInput, projectNameDisplay, sampleProjectName, projectNameStorageKey);
     const updateCurrentGoalDisplay = syncEditableField(currentGoalInput, currentGoalDisplay, sampleCurrentGoal, currentGoalStorageKey);
+    syncEditableField(nextActionInput, nextActionDisplay, sampleNextAction, nextActionStorageKey);
 
     clearLocalEditsButton.addEventListener('click', () => {
       localStorage.removeItem(projectNameStorageKey);

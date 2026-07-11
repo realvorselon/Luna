@@ -2,6 +2,14 @@
 
 ## 2026-07-10
 
+### One Next Action Editable Field
+
+- Made only the One Next Action text editable in `prototype.html` with one short text input.
+- Saved the field locally in the same browser with the new `luna.prototype.nextAction` localStorage key.
+- Kept the sample next action as the fallback when no saved value exists or when the input is blank.
+- Kept project name and current goal saving unchanged, and kept the existing clear-local-edits button limited to project name and current goal only.
+- Updated `README.md`, `project.json`, `STATE.md`, and `ROADMAP.md` so the public trail points to human testing the new editable Next Action field.
+
 ### Next Action Editable Field Boundary
 
 - Added `docs/NEXT_ACTION_EDITABLE_FIELD_BOUNDARY.md` as a concise public-safe boundary note for making One Next Action editable later.

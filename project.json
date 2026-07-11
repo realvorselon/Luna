@@ -1,6 +1,10 @@
 {
-  "status": "Resting before Next Action editable implementation",
+  "status": "Ready for human test after Next Action editing",
   "statusHistory": [
+    {
+      "date": "2026-07-10",
+      "note": "Made One Next Action editable and locally saved in the prototype."
+    },
     {
       "date": "2026-07-10",
       "note": "Added a boundary for making One Next Action editable later."
@@ -431,8 +435,8 @@
     }
   ],
   "currentGoal": "Help someone return to one small project, see where they left off and what changed last, choose one clear Next Action, know what to ignore for now, record the change, and rest before adding more while keeping Philosophy Garden clearly optional.",
-  "lastCompletedRun": "2026-07-10: Added a boundary for making One Next Action editable later.",
-  "nextStep": "Rest before implementing the One Next Action editable field, and before adding any other editable cards, more persistence, sessionStorage, cookies, backend, accounts, database, sync, dashboard expansion, visual redesign, mode workflow, multi-project system, AI generation, moderation logic, crisis detection, control affordance changes, or new Philosophy Garden content.",
+  "lastCompletedRun": "2026-07-10: Made One Next Action editable and locally saved in the prototype.",
+  "nextStep": "Human test the editable One Next Action field by changing it, refreshing the page, confirming it persists locally, confirming blank input falls back to the sample value, and confirming the existing clear-local-edits button still only clears project name and current goal.",
   "dashboardGuide": [
     "Welcome starts the path to read through Record the Change before choosing more work.",
     "Status gives a quick snapshot of how the project is doing right now.",
@@ -443,7 +447,7 @@
     "Optional Reflection can wait; Philosophy Garden is a gentle reflection layer, not Luna's main engine."
   ],
   "futureIdeas": [
-    "Rest before implementing the One Next Action editable field, and before adding any other editable cards, more persistence, sessionStorage, cookies, backend, accounts, database, sync, dashboard expansion, visual redesign, mode workflow, multi-project system, AI generation, moderation logic, crisis detection, control affordance changes, or new Philosophy Garden content.",
+    "Human test Next Action editing: Human test the editable One Next Action field by changing it, refreshing the page, confirming it persists locally, confirming blank input falls back to the sample value, and confirming the existing clear-local-edits button still only clears project name and current goal.",
     "Review one existing sentence or section for beginner clarity, especially around returning to one small project and choosing one clear Next Action.",
     "Keep README.md, STATE.md, CHANGELOG.md, and project.json aligned whenever the public record changes.",
     "Only later consider surfacing an existing quiet item on the dashboard after the front door and current goal still feel calm."
@@ -460,7 +464,7 @@
     "The Garden Cycle connects the Reflection Card, Garden Review, Next Garden Update, and rest step so beginners can see how Philosophy Garden pieces fit together."
   ],
   "ideaQueue": [
-    "Rest before implementing the One Next Action editable field, and before adding any other editable cards, more persistence, sessionStorage, cookies, backend, accounts, database, sync, dashboard expansion, visual redesign, mode workflow, multi-project system, AI generation, moderation logic, crisis detection, control affordance changes, or new Philosophy Garden content.",
+    "Human test Next Action editing: Human test the editable One Next Action field by changing it, refreshing the page, confirming it persists locally, confirming blank input falls back to the sample value, and confirming the existing clear-local-edits button still only clears project name and current goal.",
     "Review one existing sentence or section for beginner clarity, especially around returning to one small project and choosing one clear Next Action.",
     "Keep README.md, STATE.md, CHANGELOG.md, and project.json aligned whenever the public record changes.",
     "Only later consider surfacing an existing quiet item on the dashboard after the front door and current goal still feel calm."
@@ -498,10 +502,10 @@
     "Visit http://localhost:8000 in a browser to view the dashboard."
   ],
   "nextAction": {
-    "title": "Rest before Next Action editing",
-    "description": "Rest before implementing the One Next Action editable field, and before adding any other editable cards, more persistence, sessionStorage, cookies, backend, accounts, database, sync, dashboard expansion, visual redesign, mode workflow, multi-project system, AI generation, moderation logic, crisis detection, control affordance changes, or new Philosophy Garden content.",
-    "whyItMatters": "Rest keeps the next editable field focused on the lantern of the loop, so Luna becomes more usable without turning into a task swamp.",
-    "status": "Resting"
+    "title": "Human test Next Action editing",
+    "description": "Human test the editable One Next Action field by changing it, refreshing the page, confirming it persists locally, confirming blank input falls back to the sample value, and confirming the existing clear-local-edits button still only clears project name and current goal.",
+    "whyItMatters": "Testing confirms the lantern of the Luna loop can now be changed by the user while staying local, narrow, and separate from broader task-list behavior.",
+    "status": "Ready for human test"
   },
   "creativeSeed": {
     "name": "Philosophy Garden",
