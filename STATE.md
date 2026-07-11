@@ -10,13 +10,15 @@ Help someone return to one small project, see where they left off and what chang
 
 ## Last Completed Run
 
-- 2026-07-11: Added prototype completion criteria before adding another editable field.
+- 2026-07-11: Polished prototype control affordance after human review.
 
 ## Next Suggested Step
 
-Human-review the prototype completion criteria before deciding whether any remaining prototype gap justifies another implementation slice, and before adding another editable field, changing saving behavior, redesigning visuals, adding dashboard sections, adding backend/accounts/database/sync, AI generation, moderation logic, crisis detection, multi-project behavior, task lists, checklists, workflow engines, or new Philosophy Garden content.
+Human-test whether the editable fields and clear-local-edits button are now visually recognizable as interactive controls without relying only on helper text, before adding another editable field, changing saving behavior, changing blank-value fallbacks, changing what the clear-local-edits button clears, redesigning visuals, adding dashboard sections, adding backend/accounts/database/sync, AI generation, moderation logic, crisis detection, multi-project behavior, task lists, checklists, workflow engines, or new Philosophy Garden content.
 
 ## Notes
+
+The prototype control affordance polish records the human review finding that the editable fields are understandable with helper text, but without that text a user might not recognize them as editable because they lacked a strong visual cue. The implementation keeps the existing fields, localStorage keys, saving behavior, blank-value fallbacks, and clear-local-edits scope unchanged while making text inputs look more like editable fields and making the existing clear-local-edits control read more clearly as a button. The static gentle return-path cues remain quieter so actual interactive controls are more distinguishable. Next, human-test whether the editable fields and clear-local-edits button are visually recognizable as interactive controls without relying only on helper text.
 
 The prototype completion criteria note defines when the current single-project browser prototype is complete enough for this phase as a calm return tool, not a general project manager. It protects the Luna loop: one project state, Current Mode, current goal, what changed last, one Next Action, Ignore For Now, Record the Change, and Rest. It says completion depends on an understandable return path, visible essential one-project state, editable fields that support returning rather than planning, clear local-only saving limits, safe blank-value fallbacks, distinguishable controls, a reversible dashboard ↔ prototype path, and public-safe beginner-friendly behavior. It also confirms that backend, accounts, database, sync, AI generation, moderation system, crisis detection, multi-project behavior, task lists, checklists, and workflow engines are not required for this phase. This run does not change `prototype.html`, add or modify JavaScript, change localStorage behavior, make another field editable, change the clear-local-edits button, redesign visuals, add dashboard sections, or add new Philosophy Garden content. Luna is resting until a human reviews the completion criteria and decides whether any remaining prototype gap justifies another implementation slice.
 
