@@ -1,6 +1,10 @@
 {
-  "status": "Resting after Next Action editing test",
+  "status": "Resting after defining prototype completion criteria",
   "statusHistory": [
+    {
+      "date": "2026-07-11",
+      "note": "Added prototype completion criteria before adding another editable field."
+    },
     {
       "date": "2026-07-10",
       "note": "Recorded the human test of editable One Next Action."
@@ -439,8 +443,8 @@
     }
   ],
   "currentGoal": "Help someone return to one small project, see where they left off and what changed last, choose one clear Next Action, know what to ignore for now, record the change, and rest before adding more while keeping Philosophy Garden clearly optional.",
-  "lastCompletedRun": "2026-07-10: Recorded the human test of editable One Next Action.",
-  "nextStep": "Rest before deciding whether to make What Changed Last editable, make Ignore For Now editable, improve control affordance, define prototype completion criteria, or add another small prototype slice, and before adding any other editable cards, more persistence, sessionStorage, cookies, backend, accounts, database, sync, dashboard expansion, visual redesign, mode workflow, multi-project system, AI generation, moderation logic, crisis detection, or new Philosophy Garden content.",
+  "lastCompletedRun": "2026-07-11: Added prototype completion criteria before adding another editable field.",
+  "nextStep": "Human-review the prototype completion criteria before deciding whether any remaining prototype gap justifies another implementation slice, and before adding another editable field, changing saving behavior, redesigning visuals, adding dashboard sections, adding backend/accounts/database/sync, AI generation, moderation logic, crisis detection, multi-project behavior, task lists, checklists, workflow engines, or new Philosophy Garden content.",
   "dashboardGuide": [
     "Welcome starts the path to read through Record the Change before choosing more work.",
     "Status gives a quick snapshot of how the project is doing right now.",
@@ -451,7 +455,7 @@
     "Optional Reflection can wait; Philosophy Garden is a gentle reflection layer, not Luna's main engine."
   ],
   "futureIdeas": [
-    "Rest after Next Action test: Rest before deciding whether to make What Changed Last editable, make Ignore For Now editable, improve control affordance, define prototype completion criteria, or add another small prototype slice, and before adding any other editable cards, more persistence, sessionStorage, cookies, backend, accounts, database, sync, dashboard expansion, visual redesign, mode workflow, multi-project system, AI generation, moderation logic, crisis detection, or new Philosophy Garden content.",
+    "Review completion criteria: Human-review the prototype completion criteria before deciding whether any remaining prototype gap justifies another implementation slice.",
     "Review one existing sentence or section for beginner clarity, especially around returning to one small project and choosing one clear Next Action.",
     "Keep README.md, STATE.md, CHANGELOG.md, and project.json aligned whenever the public record changes.",
     "Only later consider surfacing an existing quiet item on the dashboard after the front door and current goal still feel calm."
@@ -468,7 +472,7 @@
     "The Garden Cycle connects the Reflection Card, Garden Review, Next Garden Update, and rest step so beginners can see how Philosophy Garden pieces fit together."
   ],
   "ideaQueue": [
-    "Rest after Next Action test: Rest before deciding whether to make What Changed Last editable, make Ignore For Now editable, improve control affordance, define prototype completion criteria, or add another small prototype slice, and before adding any other editable cards, more persistence, sessionStorage, cookies, backend, accounts, database, sync, dashboard expansion, visual redesign, mode workflow, multi-project system, AI generation, moderation logic, crisis detection, or new Philosophy Garden content.",
+    "Review completion criteria: Human-review the prototype completion criteria before deciding whether any remaining prototype gap justifies another implementation slice.",
     "Review one existing sentence or section for beginner clarity, especially around returning to one small project and choosing one clear Next Action.",
     "Keep README.md, STATE.md, CHANGELOG.md, and project.json aligned whenever the public record changes.",
     "Only later consider surfacing an existing quiet item on the dashboard after the front door and current goal still feel calm."
@@ -506,9 +510,9 @@
     "Visit http://localhost:8000 in a browser to view the dashboard."
   ],
   "nextAction": {
-    "title": "Rest after Next Action test",
-    "description": "Rest before deciding whether to make What Changed Last editable, make Ignore For Now editable, improve control affordance, define prototype completion criteria, or add another small prototype slice, and before adding any other editable cards, more persistence, sessionStorage, cookies, backend, accounts, database, sync, dashboard expansion, visual redesign, mode workflow, multi-project system, AI generation, moderation logic, crisis detection, or new Philosophy Garden content.",
-    "whyItMatters": "Rest lets the first truly usable lantern-field milestone settle before Luna chooses the next part of the return loop to make editable.",
+    "title": "Review completion criteria",
+    "description": "Human-review the prototype completion criteria before deciding whether any remaining prototype gap justifies another implementation slice, and before adding another editable field, changing saving behavior, redesigning visuals, adding dashboard sections, adding backend/accounts/database/sync, AI generation, moderation logic, crisis detection, multi-project behavior, task lists, checklists, workflow engines, or new Philosophy Garden content.",
+    "whyItMatters": "A human review can decide whether the current single-project browser prototype is complete enough for this phase before Luna adds more behavior.",
     "status": "Resting"
   },
   "creativeSeed": {
@@ -577,7 +581,7 @@
   ],
   "currentMode": {
     "name": "Rest",
-    "description": "The tiny path clarity polish is in place, and Luna is resting for human review before any new behavior or expansion.",
-    "whyItMatters": "Rest keeps the prototype path-like and calm without turning a small clarity polish into a redesign or feature expansion."
+    "description": "Luna is resting after defining prototype completion criteria for the current single-project browser prototype.",
+    "whyItMatters": "Rest keeps the prototype from growing into a project manager before a human checks whether the calm return tool is complete enough for this phase."
   }
 }

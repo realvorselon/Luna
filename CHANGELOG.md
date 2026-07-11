@@ -1,5 +1,15 @@
 # Changelog
 
+## 2026-07-11
+
+### Prototype Completion Criteria
+
+- Added `docs/PROTOTYPE_COMPLETION_CRITERIA.md` before adding another editable field.
+- Defined completion for the current single-project browser prototype as a calm return tool, not a general project manager.
+- Protected the Luna loop: one project state, Current Mode, current goal, what changed last, one Next Action, Ignore For Now, Record the Change, and Rest.
+- Recorded that backend, accounts, database, sync, AI generation, moderation system, crisis detection, multi-project behavior, task lists, checklists, and workflow engines are not required for completion in this phase.
+- Updated `README.md`, `project.json`, `STATE.md`, and `ROADMAP.md` so Luna rests while a human reviews the completion criteria before deciding whether any remaining prototype gap justifies another implementation slice.
+
 ## 2026-07-10
 
 ### Next Action Editing Read-Through
