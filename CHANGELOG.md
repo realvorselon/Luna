@@ -2,6 +2,14 @@
 
 ## 2026-07-10
 
+### Next Action Editable Field Boundary
+
+- Added `docs/NEXT_ACTION_EDITABLE_FIELD_BOUNDARY.md` as a concise public-safe boundary note for making One Next Action editable later.
+- Recorded that One Next Action is the lantern of the Luna loop and should stay one short action, not a task list, checklist, subtasks, generated plan, or AI-rewritten output.
+- Preserved the input safety boundary: Luna may hold project notes, but should not help harmful intent become more actionable.
+- Confirmed this run does not change `prototype.html`, add JavaScript, change saving behavior, add buttons or controls, improve control affordance, or add AI generation, moderation logic, crisis detection, backend, accounts, database, sync, dashboard expansion, visual redesign, mode workflow, multi-project behavior, or new Philosophy Garden content.
+- Updated `README.md`, `project.json`, `STATE.md`, and `ROADMAP.md` so the public trail rests before implementing the One Next Action editable field.
+
 ### Input Safety Boundary
 
 - Added `docs/INPUT_SAFETY_BOUNDARY.md` as a concise public-safe boundary note for future user-entered text.
