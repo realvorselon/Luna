@@ -6,17 +6,19 @@ Luna is an autonomous repository experiment and small public dashboard prototype
 
 ## Current Goal
 
-Review what the first Guided Return slice actually proved before choosing the next small experiment.
+Human-review the Guided Return motion experiment boundary before choosing the next small experiment.
 
 ## Last Completed Run
 
-- 2026-07-11: Recorded that the first Guided Return slice passed its initial technical and visual human tests, and closed the button-blend issue.
+- 2026-07-11: Added the Guided Return motion experiment boundary while preserving the first-slice read-through conclusions.
 
 ## Next Suggested Step
 
-Review what the first Guided Return slice actually proved and choose the most meaningful next experiment without automatically extending the full six-stage sequence.
+Human-review `docs/GUIDED_RETURN_MOTION_EXPERIMENT_BOUNDARY.md` before deciding whether one tiny guided-stage motion experiment should proceed.
 
 ## Notes
+
+The Guided Return motion experiment boundary defines the next possible small experiment after the first Orient → Remember → Choose slice passed its initial technical and visual human tests. It preserves the first-slice read-through as the recorded proof that navigation, backward navigation, returning to the full overview, preserved editable values, and the follow-up button-depth polish worked. The boundary says the next question is only whether one tiny guided-stage motion cue would improve orientation without making Luna flashy, procedural, gamified, or more important than the full overview. This run does not change `prototype.html`, `index.html`, runtime behavior, guided stages, persistence, controls, animations, transitions, graphics, backend, task systems, or Philosophy Garden content. Luna is back at Rest. Next, human-review `docs/GUIDED_RETURN_MOTION_EXPERIMENT_BOUNDARY.md` before deciding whether one tiny motion experiment should proceed.
 
 The Guided Return first slice read-through records that the first small reversible Guided Return slice passed its initial technical and visual human tests. Orient → Remember → Choose navigation, backward navigation, returning to the full overview, and preserved editable values worked, and no technical blocker was found. The initial visual observation was that the guided controls and clear-local-edits button blended into surrounding surfaces a little, which justified one tiny CSS-only button-depth follow-up. The follow-up human visual test confirmed that the buttons now stand apart clearly enough, remain calm and consistent with the moonlit visual direction, and close the remaining button-blend issue. No further button polish is needed now. The full overview remains available as the proven reference mode, and the current guided implementation remains intentionally limited to Orient → Remember → Choose. Do not automatically add Set Aside, Record, and Rest merely to complete the sequence. Luna is back at Rest. Next, review what the first Guided Return slice actually proved and choose the most meaningful next experiment.
 

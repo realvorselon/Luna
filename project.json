@@ -3,6 +3,10 @@
   "statusHistory": [
     {
       "date": "2026-07-11",
+      "note": "Added the Guided Return motion experiment boundary while preserving the first-slice read-through conclusions."
+    },
+    {
+      "date": "2026-07-11",
       "note": "Recorded that the first Guided Return slice passed its initial technical and visual human tests, and closed the button-blend issue."
     },
     {
@@ -474,9 +478,9 @@
       "note": "The project is resting after a good run and ready for one gentle improvement."
     }
   ],
-  "currentGoal": "Review what the first Guided Return slice actually proved before choosing the next small experiment.",
-  "lastCompletedRun": "2026-07-11: Recorded that the first Guided Return slice passed its initial technical and visual human tests, and closed the button-blend issue.",
-  "nextStep": "Review what the first Guided Return slice actually proved and choose the most meaningful next experiment without automatically extending the full six-stage sequence.",
+  "currentGoal": "Human-review the Guided Return motion experiment boundary before choosing the next small experiment.",
+  "lastCompletedRun": "2026-07-11: Added the Guided Return motion experiment boundary while preserving the first-slice read-through conclusions.",
+  "nextStep": "Human-review docs/GUIDED_RETURN_MOTION_EXPERIMENT_BOUNDARY.md before deciding whether one tiny guided-stage motion experiment should proceed.",
   "dashboardGuide": [
     "Welcome starts the path to read through Record the Change before choosing more work.",
     "Status gives a quick snapshot of how the project is doing right now.",
@@ -487,8 +491,9 @@
     "Optional Reflection can wait; Philosophy Garden is a gentle reflection layer, not Luna's main engine."
   ],
   "futureIdeas": [
-    "Review what the first Guided Return slice actually proved before choosing the next small experiment.",
-    "Preserve the full overview as the proven reference mode while considering any later guided experiment.",
+    "Human-review the Guided Return motion experiment boundary before choosing the next small experiment.",
+    "Preserve the first Guided Return slice read-through as the recorded proof of what Orient → Remember → Choose already showed.",
+    "Preserve the full overview as the proven reference mode while considering any later guided motion experiment.",
     "Later, consider whether completely fresh users need a clearer introduction than the current prototype-oriented recipe/soup placeholder language."
   ],
   "decisionLog": [
@@ -505,8 +510,8 @@
     "The Garden Cycle connects the Reflection Card, Garden Review, Next Garden Update, and rest step so beginners can see how Philosophy Garden pieces fit together."
   ],
   "ideaQueue": [
-    "Review what the first Guided Return slice actually proved and choose the most meaningful next experiment.",
-    "Preserve Orient → Remember → Choose as the current limited guided slice unless a later experiment has a clear reason to extend it.",
+    "Human-review docs/GUIDED_RETURN_MOTION_EXPERIMENT_BOUNDARY.md before deciding whether one tiny guided-stage motion experiment should proceed.",
+    "If a motion experiment proceeds later, keep it limited to the existing Orient → Remember → Choose guided slice and respect reduced-motion preferences.",
     "Do not automatically add Set Aside, Record, and Rest merely to complete the sequence.",
     "Protect the Luna loop and avoid turning Luna into a task manager, checklist system, workflow engine, or Jira with moon stickers."
   ],

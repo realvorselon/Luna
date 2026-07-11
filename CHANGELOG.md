@@ -2,6 +2,14 @@
 
 ## 2026-07-11
 
+### Guided Return Motion Experiment Boundary
+
+- Added `docs/GUIDED_RETURN_MOTION_EXPERIMENT_BOUNDARY.md` to define the next possible Guided Return experiment after the first Orient → Remember → Choose slice passed its initial human technical and visual tests.
+- Preserved `docs/GUIDED_RETURN_FIRST_SLICE_READ_THROUGH.md` as the recorded proof that navigation, backward navigation, returning to the full overview, preserved editable values, and the follow-up button-depth polish all passed.
+- Recorded that the next question is whether one tiny guided-stage motion cue would improve orientation without making Luna feel flashy, procedural, gamified, or more important than the full overview.
+- Confirmed this boundary run does not change `prototype.html`, `index.html`, runtime behavior, guided stages, persistence, controls, animations, transitions, graphics, backend, task systems, or Philosophy Garden content.
+- Set Luna back to Rest and set the next suggested step to human-reviewing the motion boundary before deciding whether one tiny guided-stage motion experiment should proceed.
+
 ### Guided Return First Slice Read-Through
 
 - Added `docs/GUIDED_RETURN_FIRST_SLICE_READ_THROUGH.md` to record that the first small reversible Guided Return slice passed its initial technical and visual human tests.
