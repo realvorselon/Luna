@@ -10,13 +10,15 @@ Help someone return to one small project, see where they left off and what chang
 
 ## Last Completed Run
 
-- 2026-07-10: Added a tiny theme direction boundary for Luna’s finished moonlit garden / quiet desk / gentle return path vibe.
+- 2026-07-10: Added a tiny path clarity polish to make the prototype return loop feel more guided.
 
 ## Next Suggested Step
 
-Rest before deciding whether to do one tiny path/visual clarity polish in prototype.html, and before changing sample project copy again or adding any new behavior, more persistence, more editable cards, sessionStorage, cookies, backend, accounts, database, sync, dashboard expansion, visual redesign, mode workflow, multi-project system, or new Philosophy Garden content.
+Human review the tiny path clarity polish before adding any new behavior, more persistence, more editable cards, sessionStorage, cookies, backend, accounts, database, sync, dashboard expansion, visual redesign, mode workflow, multi-project system, or new Philosophy Garden content.
 
 ## Notes
+
+The prototype now includes one tiny path clarity polish near the one-project return loop. A quiet static path cue names the movement from Orient to Notice, Choose, Leave alone, Record, and Rest, and the loop heading now frames the section as a gentle return path. This keeps the existing project state, Current Mode, current goal, what changed last, one Next Action, Ignore For Now, Record the Change, Rest, local project name and current goal saving, clear-local-edits behavior, static unsaved cards, and dashboard ↔ prototype reversible path intact. The next step is to human review the tiny path clarity polish before adding any new behavior, more persistence, more editable cards, sessionStorage, cookies, backend, accounts, database, sync, dashboard expansion, visual redesign, mode workflow, multi-project system, or new Philosophy Garden content.
 
 The theme direction boundary note records that Luna’s finished theme should be closer to moonlit garden, quiet desk, and gentle return path. Moonlit is the emotional atmosphere, quiet desk is the useful project workspace, gentle return path is the product experience, garden / cultivation is restrained action language, and Philosophy Garden remains an optional reflective layer rather than the main engine. The recipe-note / soup-note sample worked as a neutral public-safe fictional sample for testing the one-project return loop, but it is not the intended finished theme. The sample project may later stay recipe-based or shift to something more Luna-adjacent, but that decision should wait. Future polish should filter through calm moonlit atmosphere, useful desk-like clarity, path-like return flow, restrained garden/cultivation language, no forced metaphor on every project, no bloat, no childishness, and no corporate task pressure. The Luna loop remains the core: one project state, current mode, current goal, what changed last, one Next Action, Ignore For Now, Record the Change, and Rest. The next step is to rest before deciding whether to do one tiny path/visual clarity polish in prototype.html, and before changing sample project copy again or adding any new behavior, more persistence, more editable cards, sessionStorage, cookies, backend, accounts, database, sync, dashboard expansion, visual redesign, mode workflow, multi-project system, or new Philosophy Garden content.
 

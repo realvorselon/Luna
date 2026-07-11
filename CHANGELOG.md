@@ -2,6 +2,12 @@
 
 ## 2026-07-10
 
+### Tiny Path Clarity Polish
+
+- Added a small static return-path cue in `prototype.html` so the existing one-project return loop feels more guided and path-like.
+- Reframed the loop section as a gentle return path while preserving existing behavior, local project name and current goal saving, clear-local-edits behavior, static unsaved cards, and the dashboard ↔ prototype reversible path.
+- Updated `README.md`, `project.json`, `STATE.md`, and `ROADMAP.md` so the public trail points to human review before any new behavior, more persistence, more editable cards, sessionStorage, cookies, backend, accounts, database, sync, dashboard expansion, visual redesign, mode workflow, multi-project system, or new Philosophy Garden content.
+
 ### Theme Direction Boundary
 
 - Added `docs/THEME_DIRECTION_BOUNDARY.md` to name Luna’s finished direction as moonlit garden, quiet desk, and gentle return path while preserving the Luna loop and keeping the recipe-note / soup-note sample as a neutral test sample rather than the intended finished theme.
