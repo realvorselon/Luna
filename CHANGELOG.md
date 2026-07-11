@@ -2,6 +2,13 @@
 
 ## 2026-07-11
 
+### Input Surface Contrast Read-Through
+
+- Added `docs/INPUT_SURFACE_CONTRAST_READ_THROUGH.md` to record the successful follow-up human visual test of the prototype input-surface contrast polish.
+- Recorded that the previous affordance polish improved controls, the first human test still found editable input surfaces blended into surrounding cards, and the tiny CSS-only contrast polish gave existing editable fields a slightly lighter, cooler blue-violet inset writing surface.
+- Recorded that the follow-up human visual test confirmed the fields now stand apart clearly enough, read naturally as places to type, and remain calm, moonlit, and consistent with the existing visual direction.
+- Marked the control-affordance gap closed for this prototype phase, set Luna back to Rest, and set the next suggested step to a broader prototype completion review against `docs/PROTOTYPE_COMPLETION_CRITERIA.md` before deciding whether any genuine remaining gap justifies another implementation slice.
+
 ### Prototype Input Surface Contrast Polish
 
 - Recorded the first human test finding that the previous affordance polish improved the editable fields, but their input surfaces still blended into the surrounding card because the shades were too close.
