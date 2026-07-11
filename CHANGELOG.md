@@ -2,6 +2,13 @@
 
 ## 2026-07-10
 
+### Path Polish Read-Through
+
+- Added `docs/PATH_POLISH_READ_THROUGH.md` after a human reviewed the tiny path clarity polish.
+- Recorded that the gentle return path feels okay / not bad, that the static step strip helps the loop feel a little more guided and path-like, and that no immediate prototype change is needed.
+- Preserved an affordance note that future actual buttons and interactive controls should read more clearly than static path cues, without starting immediate visual churn.
+- Updated `README.md`, `project.json`, `STATE.md`, and `ROADMAP.md` so the public trail rests before deciding whether to improve control affordance, continue with another prototype slice, or add another small read-through / boundary note.
+
 ### Tiny Path Clarity Polish
 
 - Added a small static return-path cue in `prototype.html` so the existing one-project return loop feels more guided and path-like.

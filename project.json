@@ -1,6 +1,10 @@
 {
-  "status": "Ready for human review after path clarity polish",
+  "status": "Resting after path polish read-through",
   "statusHistory": [
+    {
+      "date": "2026-07-10",
+      "note": "Added a human read-through note after the tiny path clarity polish."
+    },
     {
       "date": "2026-07-10",
       "note": "Added a tiny path clarity polish to make the prototype return loop feel more guided."
@@ -419,8 +423,8 @@
     }
   ],
   "currentGoal": "Help someone return to one small project, see where they left off and what changed last, choose one clear Next Action, know what to ignore for now, record the change, and rest before adding more while keeping Philosophy Garden clearly optional.",
-  "lastCompletedRun": "2026-07-10: Added a tiny path clarity polish to make the prototype return loop feel more guided.",
-  "nextStep": "Human review the tiny path clarity polish before adding any new behavior, more persistence, more editable cards, sessionStorage, cookies, backend, accounts, database, sync, dashboard expansion, visual redesign, mode workflow, multi-project system, or new Philosophy Garden content.",
+  "lastCompletedRun": "2026-07-10: Added a human read-through note after the tiny path clarity polish.",
+  "nextStep": "Rest before deciding whether to improve control affordance, continue with another prototype slice, or add another small read-through / boundary note, and before adding any new behavior, more persistence, more editable cards, sessionStorage, cookies, backend, accounts, database, sync, dashboard expansion, visual redesign, mode workflow, multi-project system, or new Philosophy Garden content.",
   "dashboardGuide": [
     "Welcome starts the path to read through Record the Change before choosing more work.",
     "Status gives a quick snapshot of how the project is doing right now.",
@@ -486,10 +490,10 @@
     "Visit http://localhost:8000 in a browser to view the dashboard."
   ],
   "nextAction": {
-    "title": "Human review path polish",
-    "description": "Human review the tiny path clarity polish before adding any new behavior, more persistence, more editable cards, sessionStorage, cookies, backend, accounts, database, sync, dashboard expansion, visual redesign, mode workflow, multi-project system, or new Philosophy Garden content.",
-    "whyItMatters": "A human review can confirm the prototype feels more guided and path-like without becoming a redesign or adding behavior.",
-    "status": "Ready for human review"
+    "title": "Rest after path review",
+    "description": "Rest before deciding whether to improve control affordance, continue with another prototype slice, or add another small read-through / boundary note, and before adding any new behavior, more persistence, more editable cards, sessionStorage, cookies, backend, accounts, database, sync, dashboard expansion, visual redesign, mode workflow, multi-project system, or new Philosophy Garden content.",
+    "whyItMatters": "Rest keeps the path-polish review from turning into immediate visual churn while preserving the useful note that future interactive controls need clearer affordance than static path cues.",
+    "status": "Resting"
   },
   "creativeSeed": {
     "name": "Philosophy Garden",
