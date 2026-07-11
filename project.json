@@ -3,6 +3,10 @@
   "statusHistory": [
     {
       "date": "2026-07-11",
+      "note": "Darkened the Guided Return stage panel surface after human testing found the first panel-level transition made the guided area brighter than the surrounding moonlit prototype."
+    },
+    {
+      "date": "2026-07-11",
       "note": "Replaced the first quick Guided Return micro-transition with a calmer app-like panel-level transition after human testing found the 220ms content shift too quick and visually uncomfortable."
     },
     {
@@ -23,7 +27,7 @@
     },
     {
       "date": "2026-07-11",
-      "note": "Added the first Guided Return implementation slice: an optional reversible Orient \u2192 Remember \u2192 Choose guided view in prototype.html while keeping the full overview available."
+      "note": "Added the first Guided Return implementation slice: an optional reversible Orient → Remember → Choose guided view in prototype.html while keeping the full overview available."
     },
     {
       "date": "2026-07-11",
@@ -75,7 +79,7 @@
     },
     {
       "date": "2026-07-10",
-      "note": "Added a tiny theme direction boundary for Luna\u2019s finished moonlit garden / quiet desk / gentle return path vibe."
+      "note": "Added a tiny theme direction boundary for Luna’s finished moonlit garden / quiet desk / gentle return path vibe."
     },
     {
       "date": "2026-07-10",
@@ -486,9 +490,9 @@
       "note": "The project is resting after a good run and ready for one gentle improvement."
     }
   ],
-  "currentGoal": "Human-test the new Guided Return panel-level transition for softness, eye comfort, preserved values, and whether it feels like moving between calm focused app screens.",
-  "lastCompletedRun": "2026-07-11: Replaced the first quick Guided Return micro-transition with a calmer app-like panel-level transition for Forward and Back navigation.",
-  "nextStep": "Human-test whether the new Guided Return panel-level transition feels softer, easier on the eyes, and closer to moving between calm focused app screens.",
+  "currentGoal": "Human-test whether Guided Return now keeps the same dark moonlit theme while preserving the softer panel transition.",
+  "lastCompletedRun": "2026-07-11: Darkened the Guided Return stage panel surface after human testing found the first panel-level transition made the guided area brighter than the surrounding prototype.",
+  "nextStep": "Human-test whether Guided Return now keeps the same dark theme while preserving the softer panel transition.",
   "dashboardGuide": [
     "Welcome starts the path to read through Record the Change before choosing more work.",
     "Status gives a quick snapshot of how the project is doing right now.",
@@ -499,8 +503,8 @@
     "Optional Reflection can wait; Philosophy Garden is a gentle reflection layer, not Luna's main engine."
   ],
   "futureIdeas": [
-    "Human-test whether the new Guided Return panel-level transition feels softer, easier on the eyes, preserves editable values, and feels closer to moving between calm focused app screens.",
-    "Preserve the first Guided Return slice read-through as the recorded proof of what Orient \u2192 Remember \u2192 Choose already showed.",
+    "Human-test whether Guided Return now keeps the same dark moonlit theme while preserving the softer panel transition.",
+    "Preserve the first Guided Return slice read-through as the recorded proof of what Orient → Remember → Choose already showed.",
     "Preserve the full overview as the proven reference mode while evaluating the panel-level guided transition experiment.",
     "Later, consider whether completely fresh users need a clearer introduction than the current prototype-oriented recipe/soup placeholder language."
   ],
@@ -518,8 +522,8 @@
     "The Garden Cycle connects the Reflection Card, Garden Review, Next Garden Update, and rest step so beginners can see how Philosophy Garden pieces fit together."
   ],
   "ideaQueue": [
-    "Human-test the new Guided Return panel-level transition before deciding whether to keep, tune, or remove it.",
-    "If the motion experiment continues later, keep it limited to the existing Orient \u2192 Remember \u2192 Choose guided slice and respect reduced-motion preferences.",
+    "Human-test the darker Guided Return stage panel before deciding whether to keep, tune, or remove the panel-level transition.",
+    "If the motion experiment continues later, keep it limited to the existing Orient → Remember → Choose guided slice and respect reduced-motion preferences.",
     "Do not automatically add Set Aside, Record, and Rest merely to complete the sequence.",
     "Protect the Luna loop and avoid turning Luna into a task manager, checklist system, workflow engine, or Jira with moon stickers."
   ],
@@ -556,9 +560,9 @@
     "Visit http://localhost:8000 in a browser to view the dashboard."
   ],
   "nextAction": {
-    "title": "Human-test Guided Return panel transition",
-    "description": "Begin a guided return, move Forward and Back through Orient \u2192 Remember \u2192 Choose, return to the full overview, check preserved editable values, and try reduced-motion behavior where practical.",
-    "whyItMatters": "The first 220ms micro-transition was too quick and visually uncomfortable; the replacement should prove whether a panel-level screen-like transition feels softer and more app-like without expanding Luna into a workflow.",
+    "title": "Human-test Guided Return dark panel surface",
+    "description": "Begin a guided return, compare the guided stage surface to the surrounding prototype, move Forward and Back through Orient → Remember → Choose, and confirm the softer panel transition still feels calm.",
+    "whyItMatters": "The first panel-level transition felt closer to the intended app-like direction, but made the guided area too bright; the follow-up should prove whether the darker surface restores moonlit continuity without changing motion or behavior.",
     "status": "Ready for human test"
   },
   "creativeSeed": {
@@ -627,7 +631,7 @@
   ],
   "currentMode": {
     "name": "Rest",
-    "description": "Luna is resting after the first Guided Return slice passed its initial technical and visual human tests.",
-    "whyItMatters": "Rest protects the proven full overview and the intentionally limited Orient \u2192 Remember \u2192 Choose guided slice before choosing the next experiment."
+    "description": "Luna is resting after darkening the Guided Return stage panel surface without changing motion or behavior.",
+    "whyItMatters": "Rest protects the darker moonlit Guided Return surface and the intentionally limited Orient → Remember → Choose guided slice before choosing any new behavior or sequence expansion."
   }
 }

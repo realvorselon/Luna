@@ -6,17 +6,19 @@ Luna is an autonomous repository experiment and small public dashboard prototype
 
 ## Current Goal
 
-Human-test the new Guided Return panel-level transition for softness, eye comfort, preserved values, and whether it feels like moving between calm focused app screens.
+Human-test whether Guided Return now keeps the same dark moonlit theme while preserving the softer panel-level transition.
 
 ## Last Completed Run
 
-- 2026-07-11: Replaced the first quick Guided Return micro-transition with a calmer app-like panel-level transition for Forward and Back navigation.
+- 2026-07-11: Darkened the Guided Return stage panel surface after human testing found the new panel-level transition made the guided area brighter than the surrounding moonlit prototype.
 
 ## Next Suggested Step
 
-Human-test whether the new Guided Return panel-level transition feels softer, easier on the eyes, and closer to moving between calm focused app screens.
+Human-test whether Guided Return now keeps the same dark theme while preserving the softer panel transition.
 
 ## Notes
+
+The Guided Return dark surface follow-up records a human finding that the first panel-level transition introduced a brighter-than-intended guided surface: the new `.guided-stage-panel` looked too bright / translucent against `.guided-return-view`, creating a double-layered lighter card effect that did not match the surrounding dark moonlit prototype. This tiny visual-only run darkens the guided stage panel to a more opaque indigo/navy surface with a restrained border and inset highlight, preserving the panel-level motion, timing, easing, JavaScript, navigation behavior, editable fields, localStorage behavior, layout, spacing, stage content, and surrounding page background. Luna is back at Rest. Next, human-test whether Guided Return now keeps the same dark theme while preserving the softer panel transition.
 
 The Guided Return panel-level transition run records a human finding that the first 220ms micro-transition with a tiny horizontal content shift was too quick and visually uncomfortable / hard on the eyes. The clarified design intent is a calm app-like panel or focused screen transition: the outgoing guided stage surface gently gives way, then the incoming stage surface arrives, rather than text flickering or shifting inside the same card. This run replaces the first motion treatment in `prototype.html` with a two-phase Forward / Back panel transition, keeps the surrounding page anchored, prevents overlapping rapid navigation, cleans up transition classes when returning to the full overview, and respects `prefers-reduced-motion` by updating immediately without directional sliding or artificial delay. The guided slice remains limited to Orient → Remember → Choose, the full overview remains the reference mode, Begin a guided return and Return to full overview remain available, One Next Action still moves into and out of Choose, existing editable values and persistence behavior remain intact, and Luna is back at Rest. Next, human-test whether the new panel-level transition feels softer, easier on the eyes, and closer to moving between calm focused app screens.
 
