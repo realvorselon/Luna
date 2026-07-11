@@ -5,11 +5,11 @@ This roadmap is intentionally small. Luna is a public dashboard prototype right 
 ## Current Phase Direction
 
 - Guided Return is the next phase direction after the completed single-project browser prototype phase. Its boundary is `docs/GUIDED_RETURN_PHASE_BOUNDARY.md`.
-- Next: human-test the restrained Guided Return motion direction, responsiveness, preserved editable values, reduced-motion behavior where practical, and whether the guided path now feels less like extra clicking.
+- Next: human-test whether the new Guided Return panel-level transition feels softer, easier on the eyes, preserves editable values, respects reduced-motion behavior where practical, and feels closer to moving between calm focused app screens.
 
 ## Completed
 
-- Added a restrained Guided Return stage-change motion experiment for existing Forward and Back navigation only, with reduced-motion support and the full overview preserved as the reference mode.
+- Replaced the first quick 220ms Guided Return micro-transition with a calmer app-like panel-level Forward / Back transition, after human testing found the first treatment too quick and visually uncomfortable.
 - Added the Guided Return motion experiment boundary while preserving the first-slice read-through and its conclusions.
 - Recorded that the first Guided Return slice passed its initial technical and visual human tests, and closed the remaining button-blend issue.
 - Added a tiny CSS-only button-depth polish after the first Guided Return human test passed technically and found only a remaining visual blend issue.
@@ -73,8 +73,9 @@ This roadmap is intentionally small. Luna is a public dashboard prototype right 
 - The first Guided Return human test passed technically: navigation, backward navigation, returning to the full overview, and preserved editable values all worked.
 - A tiny CSS-only follow-up gave the existing guided controls and clear-local-edits button slightly stronger darker underside depth so they read more clearly as physical controls without changing behavior.
 - The follow-up human visual test passed: the buttons now stand apart clearly enough, remain calm and moonlit, and the remaining button-blend issue is closed.
-- The restrained Guided Return motion experiment is now implemented for existing Forward and Back navigation only; entering Guided Return, returning to the full overview, and the full overview itself remain unanimated.
-- Next suggested step: human-test motion direction, responsiveness, preserved editable values, reduced-motion behavior where practical, and whether the guided path now feels less like extra clicking; do not extend the six-stage sequence by default.
+- A human test found the first 220ms motion treatment too quick and visually uncomfortable / hard on the eyes, and clarified the intent as a calm app-like panel or screen transition rather than animated text or a tiny content shift.
+- The current Guided Return motion experiment replaces that first treatment with a two-phase panel-level Forward / Back transition; entering Guided Return, returning to the full overview, and the full overview itself remain unanimated.
+- Next suggested step: human-test whether the new panel-level transition feels softer, easier on the eyes, preserves editable values, respects reduced-motion behavior where practical, and feels closer to moving between calm focused app screens; do not extend the six-stage sequence by default.
 
 ## Near Term
 

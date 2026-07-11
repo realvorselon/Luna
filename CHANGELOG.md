@@ -2,6 +2,15 @@
 
 ## 2026-07-11
 
+### Guided Return Panel Transition Experiment
+
+- Recorded the human finding that the first 220ms Guided Return micro-transition with a tiny directional content shift was too quick and visually uncomfortable / hard on the eyes.
+- Replaced that first motion treatment in `prototype.html` with a calmer app-like panel-level transition for existing Forward and Back navigation only.
+- Treated the focused guided stage surface as the transitioning unit: the outgoing stage softly leaves, then the incoming stage gently arrives, while the surrounding page and controls remain anchored.
+- Preserved the Orient → Remember → Choose guided slice, full overview reference mode, Begin a guided return, Return to full overview, Back / Forward visibility rules, One Next Action editor movement, editable values, localStorage keys, blank-value fallbacks, and clear-local-edits behavior.
+- Kept reduced-motion behavior immediate with no directional sliding or artificial delay, prevented overlapping rapid navigation, and cleaned up transition state when returning to the full overview.
+- Set Luna back to Rest and set the next suggested step to a human test of whether the new panel-level transition feels softer, easier on the eyes, and closer to moving between calm focused app screens.
+
 ### Guided Return Motion Experiment
 
 - Added one restrained stage-change transition to the existing Guided Return Forward and Back navigation in `prototype.html`.
