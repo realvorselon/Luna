@@ -10,6 +10,10 @@ Luna now has a plain-language welcome, a clear Next Action, small Ignore For Now
 
 Luna is currently a small public dashboard prototype. Over time, the idea is for Luna to become a calm project companion that helps people return to one small project, remember where they left off, see what changed last, choose one small next step, know what to ignore for now, record the change, and rest before adding more.
 
+## Current Phase Direction
+
+The current single-project browser prototype phase is complete and closed. The next phase direction is **Guided Return**: a small exploration of whether Luna can feel less like a form and more like a calm path someone moves through while preserving the proven one-project return loop. The boundary for this phase lives in `docs/GUIDED_RETURN_PHASE_BOUNDARY.md`. It protects the existing one-project state, the full overview, One Next Action as the lantern of the loop, Ignore For Now as something that can wait rather than a backlog, and Rest as permission or state. The next suggested step is human review of that boundary before deciding whether one small reversible guided-view implementation slice should proceed.
+
 ## Dashboard
 
 Luna's v0.1 dashboard is a simple web page in `index.html`, and it currently uses the Luna repo itself as the first example project. It reads from `project.json` and starts with a plain-language Welcome, Status, Current Mode, Current Goal, Last Completed Run, one clear Next Action, a small Ignore For Now card, and a small Record the Change card so someone can quickly see where the project left off, what changed last, what to do next, what can wait, and how to update the public project trail. Recent Runs, Project Health, and one quiet Project Trail note remain on the page, while builder/reference material stays in README.md, docs, and project.json instead of filling the public front page.

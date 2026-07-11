@@ -2,8 +2,14 @@
 
 This roadmap is intentionally small. Luna is a public dashboard prototype right now, and its core is helping someone return to one small project, see where they left off, see what changed last, choose one clear Next Action, know what to ignore for now, record the change, and rest before adding more.
 
+## Current Phase Direction
+
+- Guided Return is the next phase direction after the completed single-project browser prototype phase. Its boundary is `docs/GUIDED_RETURN_PHASE_BOUNDARY.md`.
+- Next: human-review the Guided Return phase boundary and decide whether one small reversible guided-view slice should proceed.
+
 ## Completed
 
+- Added the Guided Return phase boundary while keeping the current prototype phase complete and closed.
 - Recorded the broader prototype phase completion review and closed the current single-project browser prototype phase as complete enough.
 - Recorded the successful follow-up human visual test of the input-surface contrast polish; editable fields now stand apart clearly enough, and the control-affordance gap is closed for this prototype phase.
 - Added prototype completion criteria before adding another editable field.

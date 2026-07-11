@@ -6,17 +6,19 @@ Luna is an autonomous repository experiment and small public dashboard prototype
 
 ## Current Goal
 
-Help someone return to one small project, see where they left off and what changed last, choose one clear Next Action, know what to ignore for now, record the change, and rest before adding more while keeping Philosophy Garden clearly optional.
+Explore Guided Return as the next Luna phase: a small, documentation-bounded test of whether returning to one unfinished project can feel like a calm path while preserving the proven one-project overview loop.
 
 ## Last Completed Run
 
-- 2026-07-11: Recorded the broader prototype phase completion review and closed the single-project browser prototype phase as complete enough.
+- 2026-07-11: Added the Guided Return phase boundary while keeping the current single-project browser prototype phase complete and closed.
 
 ## Next Suggested Step
 
-Define the boundary for the next Luna phase before implementing anything new.
+Human-review the Guided Return phase boundary and decide whether its first small reversible guided-view implementation slice should proceed.
 
 ## Notes
+
+The Guided Return phase boundary defines the next Luna phase after the completed single-project browser prototype phase. Guided Return should explore whether Luna can feel less like a form and more like a calm path someone moves through, while preserving the proven one-project return loop. The conceptual path remains Orient → Remember → Choose → Set Aside → Record → Rest. It protects one-project focus, project identity, Current Mode, current goal, what changed last, one Next Action, Ignore For Now, Record the Change, and Rest; preserves access to the full overview; keeps One Next Action as the lantern; avoids turning Ignore For Now into a backlog; treats Rest as permission or state; and avoids making every section editable by default. The current single-project browser prototype phase remains complete and closed, and this documentation-only run does not change `prototype.html`, `index.html`, CSS, JavaScript, runtime behavior, controls, navigation, editable fields, localStorage behavior, blank-value fallback behavior, clear-local-edits behavior, transitions, animations, graphics, visual assets, backend, accounts, database, sync, AI generation, moderation logic, crisis detection, multi-project behavior, task lists, checklists, workflow engines, or Philosophy Garden content. Luna is back at Rest. Next, human-review `docs/GUIDED_RETURN_PHASE_BOUNDARY.md` and decide whether one small reversible guided-view slice should proceed.
 
 The prototype phase completion review records the broader human judgment that the current single-project browser prototype is complete enough for this phase. It is not the finished Luna app, but it proves the core one-project return loop: return to one unfinished project, see where things are, remember what changed last, identify one clear Next Action, know what can wait, record the change, and rest. The review marks essential one-project state, current editable fields, local-only saving, blank-value fallback behavior, control affordance, the reversible dashboard ↔ prototype path, and public-safe beginner-friendly scope as met for this phase. It also records that the return path is only partially met for a completely fresh visitor because the fictional recipe/soup placeholder language is still prototype-oriented, but that observation does not block phase completion. Later, Luna may explore a guided path mode beside the full-page overview and may clarify the fresh-user introduction, but those are later-direction observations only, not commitments to implement navigation, transitions, animation, graphics, new interaction models, or copy changes now. Luna is back at Rest. Next, define the boundary for the next Luna phase before implementing anything new.
 
