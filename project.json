@@ -1,6 +1,10 @@
 {
-  "status": "Resting after path polish read-through",
+  "status": "Resting after input safety boundary",
   "statusHistory": [
+    {
+      "date": "2026-07-10",
+      "note": "Added an input safety boundary and refreshed stale queue items after the path polish review."
+    },
     {
       "date": "2026-07-10",
       "note": "Added a human read-through note after the tiny path clarity polish."
@@ -423,8 +427,8 @@
     }
   ],
   "currentGoal": "Help someone return to one small project, see where they left off and what changed last, choose one clear Next Action, know what to ignore for now, record the change, and rest before adding more while keeping Philosophy Garden clearly optional.",
-  "lastCompletedRun": "2026-07-10: Added a human read-through note after the tiny path clarity polish.",
-  "nextStep": "Rest before deciding whether to improve control affordance, continue with another prototype slice, or add another small read-through / boundary note, and before adding any new behavior, more persistence, more editable cards, sessionStorage, cookies, backend, accounts, database, sync, dashboard expansion, visual redesign, mode workflow, multi-project system, or new Philosophy Garden content.",
+  "lastCompletedRun": "2026-07-10: Added an input safety boundary and refreshed stale queue items after the path polish review.",
+  "nextStep": "Rest before deciding whether to improve control affordance, continue with another prototype slice, or define the next editable-field boundary, and before adding any new behavior, more persistence, more editable cards, sessionStorage, cookies, backend, accounts, database, sync, dashboard expansion, visual redesign, mode workflow, multi-project system, AI generation, moderation logic, crisis detection, or new Philosophy Garden content.",
   "dashboardGuide": [
     "Welcome starts the path to read through Record the Change before choosing more work.",
     "Status gives a quick snapshot of how the project is doing right now.",
@@ -435,7 +439,7 @@
     "Optional Reflection can wait; Philosophy Garden is a gentle reflection layer, not Luna's main engine."
   ],
   "futureIdeas": [
-    "Human review the tiny path clarity polish before adding any new behavior, more persistence, more editable cards, sessionStorage, cookies, backend, accounts, database, sync, dashboard expansion, visual redesign, mode workflow, multi-project system, or new Philosophy Garden content.",
+    "Rest before deciding whether to improve control affordance, continue with another prototype slice, or define the next editable-field boundary, and before adding any new behavior, more persistence, more editable cards, sessionStorage, cookies, backend, accounts, database, sync, dashboard expansion, visual redesign, mode workflow, multi-project system, AI generation, moderation logic, crisis detection, or new Philosophy Garden content.",
     "Review one existing sentence or section for beginner clarity, especially around returning to one small project and choosing one clear Next Action.",
     "Keep README.md, STATE.md, CHANGELOG.md, and project.json aligned whenever the public record changes.",
     "Only later consider surfacing an existing quiet item on the dashboard after the front door and current goal still feel calm."
@@ -452,7 +456,7 @@
     "The Garden Cycle connects the Reflection Card, Garden Review, Next Garden Update, and rest step so beginners can see how Philosophy Garden pieces fit together."
   ],
   "ideaQueue": [
-    "Human review the tiny path clarity polish before adding any new behavior, more persistence, more editable cards, sessionStorage, cookies, backend, accounts, database, sync, dashboard expansion, visual redesign, mode workflow, multi-project system, or new Philosophy Garden content.",
+    "Rest before deciding whether to improve control affordance, continue with another prototype slice, or define the next editable-field boundary, and before adding any new behavior, more persistence, more editable cards, sessionStorage, cookies, backend, accounts, database, sync, dashboard expansion, visual redesign, mode workflow, multi-project system, AI generation, moderation logic, crisis detection, or new Philosophy Garden content.",
     "Review one existing sentence or section for beginner clarity, especially around returning to one small project and choosing one clear Next Action.",
     "Keep README.md, STATE.md, CHANGELOG.md, and project.json aligned whenever the public record changes.",
     "Only later consider surfacing an existing quiet item on the dashboard after the front door and current goal still feel calm."
@@ -490,9 +494,9 @@
     "Visit http://localhost:8000 in a browser to view the dashboard."
   ],
   "nextAction": {
-    "title": "Rest after path review",
-    "description": "Rest before deciding whether to improve control affordance, continue with another prototype slice, or add another small read-through / boundary note, and before adding any new behavior, more persistence, more editable cards, sessionStorage, cookies, backend, accounts, database, sync, dashboard expansion, visual redesign, mode workflow, multi-project system, or new Philosophy Garden content.",
-    "whyItMatters": "Rest keeps the path-polish review from turning into immediate visual churn while preserving the useful note that future interactive controls need clearer affordance than static path cues.",
+    "title": "Rest after input safety boundary",
+    "description": "Rest before deciding whether to improve control affordance, continue with another prototype slice, or define the next editable-field boundary, and before adding any new behavior, more persistence, more editable cards, sessionStorage, cookies, backend, accounts, database, sync, dashboard expansion, visual redesign, mode workflow, multi-project system, AI generation, moderation logic, crisis detection, or new Philosophy Garden content.",
+    "whyItMatters": "Rest lets the input safety boundary settle before Luna accepts more user-entered text or adds any logic that could accidentally amplify harmful notes.",
     "status": "Resting"
   },
   "creativeSeed": {

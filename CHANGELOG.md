@@ -2,6 +2,14 @@
 
 ## 2026-07-10
 
+### Input Safety Boundary
+
+- Added `docs/INPUT_SAFETY_BOUNDARY.md` as a concise public-safe boundary note for future user-entered text.
+- Recorded the core principle that Luna may hold project notes, but should not help harmful intent become more actionable.
+- Recorded a non-AI safety approach: prefer structured fields, treat user text as notes rather than automatic expansion instructions, avoid harmful amplification, keep browser-only saving clear, and do not pretend Luna is a full moderation system.
+- Confirmed this run does not add detection, moderation, crisis copy, warnings, UI, JavaScript, or prototype changes, and that the current prototype remains unchanged.
+- Refreshed `project.json` future ideas and idea queue so they rest after the input safety boundary instead of starting with the completed path-polish review.
+
 ### Path Polish Read-Through
 
 - Added `docs/PATH_POLISH_READ_THROUGH.md` after a human reviewed the tiny path clarity polish.
