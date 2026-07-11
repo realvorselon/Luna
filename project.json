@@ -3,6 +3,10 @@
   "statusHistory": [
     {
       "date": "2026-07-11",
+      "note": "Added the first Guided Return implementation slice: an optional reversible Orient → Remember → Choose guided view in prototype.html while keeping the full overview available."
+    },
+    {
+      "date": "2026-07-11",
       "note": "Added the Guided Return phase boundary as the next phase direction while keeping the current prototype phase complete and closed."
     },
     {
@@ -462,9 +466,9 @@
       "note": "The project is resting after a good run and ready for one gentle improvement."
     }
   ],
-  "currentGoal": "Explore Guided Return as the next Luna phase: a small, documentation-bounded test of whether returning to one unfinished project can feel like a calm path while preserving the proven one-project overview loop.",
-  "lastCompletedRun": "2026-07-11: Added the Guided Return phase boundary while keeping the current single-project browser prototype phase complete and closed.",
-  "nextStep": "Human-review the Guided Return phase boundary and decide whether its first small reversible guided-view implementation slice should proceed.",
+  "currentGoal": "Test the first small Guided Return implementation slice: an optional reversible Orient → Remember → Choose guided view that keeps the full overview available and preserves existing editable values.",
+  "lastCompletedRun": "2026-07-11: Added the first Guided Return implementation slice for Orient → Remember → Choose while preserving the full overview.",
+  "nextStep": "Human-test guided navigation, reversibility, preserved editable values, and whether the guided view feels calmer than the full-page form-like overview.",
   "dashboardGuide": [
     "Welcome starts the path to read through Record the Change before choosing more work.",
     "Status gives a quick snapshot of how the project is doing right now.",
@@ -492,9 +496,9 @@
     "The Garden Cycle connects the Reflection Card, Garden Review, Next Garden Update, and rest step so beginners can see how Philosophy Garden pieces fit together."
   ],
   "ideaQueue": [
-    "Human-review docs/GUIDED_RETURN_PHASE_BOUNDARY.md and decide whether to proceed with one small reversible guided-view slice that tests only part of the existing return loop.",
-    "Define the boundary for the next Luna phase before implementing anything new.",
-    "Keep the completed prototype phase closed unless a future boundary note names a real reason to reopen it.",
+    "Human-test guided navigation, reversibility, preserved editable values, and whether the guided view feels calmer than the full-page form-like overview.",
+    "Keep the guided implementation limited to Orient → Remember → Choose until the interaction model is reviewed.",
+    "Preserve the full overview as the proven reference mode before considering any later guided stages.",
     "Protect the Luna loop and avoid turning Luna into a task manager, checklist system, workflow engine, or Jira with moon stickers."
   ],
   "ideaQueueGuide": [
@@ -530,10 +534,10 @@
     "Visit http://localhost:8000 in a browser to view the dashboard."
   ],
   "nextAction": {
-    "title": "Define the next phase boundary",
-    "description": "Define the boundary for the next Luna phase before implementing anything new.",
-    "whyItMatters": "The current single-project browser prototype phase is complete enough. The safest next move is to protect the Luna loop, name what the next phase is and is not, and avoid inventing another implementation gap just to keep building.",
-    "status": "Rest"
+    "title": "Human-test the Guided Return slice",
+    "description": "Open the prototype, enter the optional guided return, move through Orient → Remember → Choose, move backward, return to the full overview at any time, and confirm editable values are preserved.",
+    "whyItMatters": "The first Guided Return slice should prove that a calmer path can coexist with the proven full overview without adding tasks, persistence, or pressure.",
+    "status": "Ready for human review"
   },
   "creativeSeed": {
     "name": "Philosophy Garden",

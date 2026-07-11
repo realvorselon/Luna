@@ -6,17 +6,19 @@ Luna is an autonomous repository experiment and small public dashboard prototype
 
 ## Current Goal
 
-Explore Guided Return as the next Luna phase: a small, documentation-bounded test of whether returning to one unfinished project can feel like a calm path while preserving the proven one-project overview loop.
+Test the first small Guided Return implementation slice: an optional reversible Orient → Remember → Choose guided view that keeps the full overview available and preserves existing editable values.
 
 ## Last Completed Run
 
-- 2026-07-11: Added the Guided Return phase boundary while keeping the current single-project browser prototype phase complete and closed.
+- 2026-07-11: Added the first Guided Return implementation slice for Orient → Remember → Choose while preserving the full overview.
 
 ## Next Suggested Step
 
-Human-review the Guided Return phase boundary and decide whether its first small reversible guided-view implementation slice should proceed.
+Human-test guided navigation, reversibility, preserved editable values, and whether the guided view feels calmer than the full-page form-like overview.
 
 ## Notes
+
+The first Guided Return implementation slice adds one optional, reversible guided view to `prototype.html` for only Orient → Remember → Choose. The current full-page overview remains available and intact as the proven reference mode. The guided view has one quiet entry point, forward/back controls, and a Return to full overview control at all times. It reuses the existing editable values instead of creating conflicting saved state, keeps the existing localStorage keys and clear-local-edits scope unchanged, and does not add Set Aside, Record, Rest, task lists, checklists, new persistence, backend, accounts, sync, animations, graphics, or workflow behavior. Luna is back at Rest. Next, human-test navigation, reversibility, preserved editable values, and whether the guided view feels calmer than the full-page form-like overview.
 
 The Guided Return phase boundary defines the next Luna phase after the completed single-project browser prototype phase. Guided Return should explore whether Luna can feel less like a form and more like a calm path someone moves through, while preserving the proven one-project return loop. The conceptual path remains Orient → Remember → Choose → Set Aside → Record → Rest. It protects one-project focus, project identity, Current Mode, current goal, what changed last, one Next Action, Ignore For Now, Record the Change, and Rest; preserves access to the full overview; keeps One Next Action as the lantern; avoids turning Ignore For Now into a backlog; treats Rest as permission or state; and avoids making every section editable by default. The current single-project browser prototype phase remains complete and closed, and this documentation-only run does not change `prototype.html`, `index.html`, CSS, JavaScript, runtime behavior, controls, navigation, editable fields, localStorage behavior, blank-value fallback behavior, clear-local-edits behavior, transitions, animations, graphics, visual assets, backend, accounts, database, sync, AI generation, moderation logic, crisis detection, multi-project behavior, task lists, checklists, workflow engines, or Philosophy Garden content. Luna is back at Rest. Next, human-review `docs/GUIDED_RETURN_PHASE_BOUNDARY.md` and decide whether one small reversible guided-view slice should proceed.
 
