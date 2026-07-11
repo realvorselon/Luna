@@ -10,13 +10,15 @@ Help someone return to one small project, see where they left off and what chang
 
 ## Last Completed Run
 
-- 2026-07-11: Polished prototype control affordance after human review.
+- 2026-07-11: Added prototype input-surface contrast polish after first human test.
 
 ## Next Suggested Step
 
-Human-test whether the editable fields and clear-local-edits button are now visually recognizable as interactive controls without relying only on helper text, before adding another editable field, changing saving behavior, changing blank-value fallbacks, changing what the clear-local-edits button clears, redesigning visuals, adding dashboard sections, adding backend/accounts/database/sync, AI generation, moderation logic, crisis detection, multi-project behavior, task lists, checklists, workflow engines, or new Philosophy Garden content.
+Human visually test whether the editable fields now stand apart clearly enough from the surrounding cards while remaining calm and moonlit, before adding another editable field, changing saving behavior, changing blank-value fallbacks, changing what the clear-local-edits button clears, changing the button appearance, redesigning visuals, adding dashboard sections, adding backend/accounts/database/sync, AI generation, moderation logic, crisis detection, multi-project behavior, task lists, checklists, workflow engines, or new Philosophy Garden content.
 
 ## Notes
+
+The prototype input-surface contrast polish records the first human test finding after the previous affordance polish: the editable fields improved, but their input surfaces still blended into the surrounding card because the shades were too close. This run changes only the visual surface treatment of the existing editable text inputs, giving them a slightly lighter, cooler, muted blue-violet inset writing surface. It preserves the brighter silver-periwinkle border, hover treatment, lantern-gold focus ring, text cursor, clear-local-edits button appearance and scope, localStorage keys, saving behavior, blank-value fallbacks, text content, page structure, and Luna loop. Next, human visually test whether the editable fields now stand apart clearly enough from the surrounding cards while remaining calm and moonlit.
 
 The prototype control affordance polish records the human review finding that the editable fields are understandable with helper text, but without that text a user might not recognize them as editable because they lacked a strong visual cue. The implementation keeps the existing fields, localStorage keys, saving behavior, blank-value fallbacks, and clear-local-edits scope unchanged while making text inputs look more like editable fields and making the existing clear-local-edits control read more clearly as a button. The static gentle return-path cues remain quieter so actual interactive controls are more distinguishable. Next, human-test whether the editable fields and clear-local-edits button are visually recognizable as interactive controls without relying only on helper text.
 

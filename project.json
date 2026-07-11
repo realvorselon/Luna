@@ -1,6 +1,10 @@
 {
-  "status": "Resting after prototype control affordance polish",
+  "status": "Resting after prototype input-surface contrast polish",
   "statusHistory": [
+    {
+      "date": "2026-07-11",
+      "note": "Added a tiny input-surface contrast polish after the first human test found improved affordance but input surfaces still blended into the surrounding card."
+    },
     {
       "date": "2026-07-11",
       "note": "Polished prototype control affordance after human review found editable fields and clear-local-edits could read too quietly without helper text."
@@ -447,8 +451,8 @@
     }
   ],
   "currentGoal": "Help someone return to one small project, see where they left off and what changed last, choose one clear Next Action, know what to ignore for now, record the change, and rest before adding more while keeping Philosophy Garden clearly optional.",
-  "lastCompletedRun": "2026-07-11: Polished prototype control affordance after human review.",
-  "nextStep": "Human-test whether the editable fields and clear-local-edits button are now visually recognizable as interactive controls without relying only on helper text, before adding another editable field, changing saving behavior, changing blank-value fallbacks, changing what the clear-local-edits button clears, redesigning visuals, adding dashboard sections, adding backend/accounts/database/sync, AI generation, moderation logic, crisis detection, multi-project behavior, task lists, checklists, workflow engines, or new Philosophy Garden content.",
+  "lastCompletedRun": "2026-07-11: Added prototype input-surface contrast polish after first human test.",
+  "nextStep": "Human visually test whether the editable fields now stand apart clearly enough from the surrounding cards while remaining calm and moonlit, before adding another editable field, changing saving behavior, changing blank-value fallbacks, changing what the clear-local-edits button clears, changing the button appearance, redesigning visuals, adding dashboard sections, adding backend/accounts/database/sync, AI generation, moderation logic, crisis detection, multi-project behavior, task lists, checklists, workflow engines, or new Philosophy Garden content.",
   "dashboardGuide": [
     "Welcome starts the path to read through Record the Change before choosing more work.",
     "Status gives a quick snapshot of how the project is doing right now.",
@@ -459,7 +463,7 @@
     "Optional Reflection can wait; Philosophy Garden is a gentle reflection layer, not Luna's main engine."
   ],
   "futureIdeas": [
-    "Human-test control affordance: check whether the editable fields and clear-local-edits button are visually recognizable as interactive controls without relying only on helper text.",
+    "Human visually test whether the editable fields now stand apart clearly enough from the surrounding cards while remaining calm and moonlit.",
     "Review one existing sentence or section for beginner clarity, especially around returning to one small project and choosing one clear Next Action.",
     "Keep README.md, STATE.md, CHANGELOG.md, and project.json aligned whenever the public record changes.",
     "Let the prototype rest before adding fields, persistence, backend, accounts, sync, task lists, workflows, or new Philosophy Garden content."
@@ -476,7 +480,7 @@
     "The Garden Cycle connects the Reflection Card, Garden Review, Next Garden Update, and rest step so beginners can see how Philosophy Garden pieces fit together."
   ],
   "ideaQueue": [
-    "Human-test control affordance: check whether the editable fields and clear-local-edits button are visually recognizable as interactive controls without relying only on helper text.",
+    "Human visually test whether the editable fields now stand apart clearly enough from the surrounding cards while remaining calm and moonlit.",
     "Review one existing sentence or section for beginner clarity, especially around returning to one small project and choosing one clear Next Action.",
     "Keep README.md, STATE.md, CHANGELOG.md, and project.json aligned whenever the public record changes.",
     "Let the prototype rest before adding fields, persistence, backend, accounts, sync, task lists, workflows, or new Philosophy Garden content."
@@ -514,9 +518,9 @@
     "Visit http://localhost:8000 in a browser to view the dashboard."
   ],
   "nextAction": {
-    "title": "Review completion criteria",
-    "description": "Human-review the prototype completion criteria before deciding whether any remaining prototype gap justifies another implementation slice, and before adding another editable field, changing saving behavior, redesigning visuals, adding dashboard sections, adding backend/accounts/database/sync, AI generation, moderation logic, crisis detection, multi-project behavior, task lists, checklists, workflow engines, or new Philosophy Garden content.",
-    "whyItMatters": "A human review can decide whether the current single-project browser prototype is complete enough for this phase before Luna adds more behavior.",
+    "title": "Human visual test input surfaces",
+    "description": "Human visually test whether the editable fields now stand apart clearly enough from the surrounding cards while remaining calm and moonlit, before adding another editable field, changing saving behavior, changing blank-value fallbacks, changing what the clear-local-edits button clears, changing the button appearance, redesigning visuals, adding dashboard sections, adding backend/accounts/database/sync, AI generation, moderation logic, crisis detection, multi-project behavior, task lists, checklists, workflow engines, or new Philosophy Garden content.",
+    "whyItMatters": "The first human test said the affordance improved, but the writing surfaces still blended into the card. A visual test can confirm whether the tiny CSS-only surface contrast polish is enough without making Luna feel bright or task-manager-like.",
     "status": "Resting"
   },
   "creativeSeed": {
