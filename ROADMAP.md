@@ -5,10 +5,12 @@ This roadmap is intentionally small. Luna is a public dashboard prototype right 
 ## Current Phase Direction
 
 - Guided Return is the next phase direction after the completed single-project browser prototype phase. Its boundary is `docs/GUIDED_RETURN_PHASE_BOUNDARY.md`.
-- Next: human-review the Guided Return phase boundary and decide whether one small reversible guided-view slice should proceed.
+- Next: human-test whether the Guided Return controls and clear-local-edits button now stand apart clearly enough while remaining calm and moonlit.
 
 ## Completed
 
+- Added a tiny CSS-only button-depth polish after the first Guided Return human test passed technically and found only a remaining visual blend issue.
+- Added the first Guided Return implementation slice while keeping the full overview available and existing editable values preserved.
 - Added the Guided Return phase boundary while keeping the current prototype phase complete and closed.
 - Recorded the broader prototype phase completion review and closed the current single-project browser prototype phase as complete enough.
 - Recorded the successful follow-up human visual test of the input-surface contrast polish; editable fields now stand apart clearly enough, and the control-affordance gap is closed for this prototype phase.
@@ -65,7 +67,9 @@ This roadmap is intentionally small. Luna is a public dashboard prototype right 
 ## Guided Return Slice
 
 - The first Guided Return implementation slice is in place in `prototype.html`. It tests only Orient → Remember → Choose, keeps the full overview available as the proven reference mode, preserves existing editable values, and does not add Set Aside, Record, Rest, task lists, checklists, new persistence, or workflow behavior.
-- Next suggested step: human-test guided navigation, reversibility, preserved editable values, and whether the guided view feels calmer than the full-page form-like overview.
+- The first Guided Return human test passed technically: navigation, backward navigation, returning to the full overview, and preserved editable values all worked.
+- A tiny CSS-only follow-up gives the existing guided controls and clear-local-edits button slightly stronger darker underside depth so they read more clearly as physical controls without changing behavior.
+- Next suggested step: human-test whether those controls now stand apart clearly enough while remaining calm and moonlit.
 
 ## Near Term
 
