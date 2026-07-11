@@ -2,6 +2,13 @@
 
 ## 2026-07-11
 
+### Prototype Input Surface Contrast Polish
+
+- Recorded the first human test finding that the previous affordance polish improved the editable fields, but their input surfaces still blended into the surrounding card because the shades were too close.
+- Updated only the existing editable text input surface in `prototype.html` to use a slightly lighter, cooler, muted blue-violet inset writing surface.
+- Preserved the brighter silver-periwinkle border, hover treatment, lantern-gold focus ring, text cursor, localStorage keys, saving behavior, blank-value fallbacks, clear-local-edits scope and appearance, text content, page structure, and the Luna loop.
+- Updated `README.md`, `project.json`, `STATE.md`, and `ROADMAP.md` so the next step is a human visual test of whether the editable fields now stand apart clearly enough from the surrounding cards while remaining calm and moonlit.
+
 ### Prototype Control Affordance Polish
 
 - Recorded the human review finding that the editable fields are understandable with helper text, but without that text a user might not recognize them as editable because they lacked a strong visual cue.
