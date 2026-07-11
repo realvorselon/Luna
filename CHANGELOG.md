@@ -2,6 +2,13 @@
 
 ## 2026-07-10
 
+### Next Action Editing Read-Through
+
+- Added `docs/NEXT_ACTION_EDITING_READ_THROUGH.md` after a human tested the editable One Next Action field and confirmed it worked like a charm.
+- Recorded that the input can be changed, the lantern card updates from the typed value, refresh preserves the typed value locally in the same browser, blank input falls back to the sample value, and the clear-local-edits button still only clears project name and current goal.
+- Recorded that the prototype now feels more like a tiny usable room while keeping One Next Action narrow: one short action, not a task list, checklist, generated plan, or larger planning system.
+- Updated `README.md`, `project.json`, `STATE.md`, and `ROADMAP.md` so the public trail rests before deciding whether to make What Changed Last editable, make Ignore For Now editable, improve control affordance, define prototype completion criteria, or add another small prototype slice.
+
 ### One Next Action Editable Field
 
 - Made only the One Next Action text editable in `prototype.html` with one short text input.
