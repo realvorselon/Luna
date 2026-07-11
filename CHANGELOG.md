@@ -2,6 +2,14 @@
 
 ## 2026-07-11
 
+### Guided Return Motion Experiment Boundary
+
+- Added `docs/GUIDED_RETURN_MOTION_EXPERIMENT_BOUNDARY.md` to interpret the first Guided Return human-use result and define the next experiment.
+- Recorded that the first Guided Return slice passed technically and visually, including guided navigation, backward navigation, returning to the full overview, preserved editable values, coexistence with the full overview, and technical viability.
+- Recorded that the slice does not yet feel meaningfully calmer or more Luna-like because Orient → Remember → Choose can feel like the same information split into extra clicks; this is a human-use finding, not a technical defect.
+- Defined the next experiment as one restrained Forward/Back stage transition using a short fade plus a very small shift, with motion boundaries that avoid flashiness, bounce, slow movement, game-like or celebratory feedback, productivity pressure, graphics, sound, parallax, persistent motion, and full-overview animation.
+- Updated `README.md`, `STATE.md`, `ROADMAP.md`, and `project.json` so Luna is back at Rest and the next suggested step is human-reviewing the motion boundary before implementing one tiny transition slice.
+
 ### Guided Return Button Depth Polish
 
 - Recorded that the first Guided Return human test passed technically: Orient → Remember → Choose navigation, backward navigation, returning to the full overview, and preserved editable values all worked.

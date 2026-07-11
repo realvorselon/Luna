@@ -4,11 +4,12 @@ This roadmap is intentionally small. Luna is a public dashboard prototype right 
 
 ## Current Phase Direction
 
-- Guided Return is the next phase direction after the completed single-project browser prototype phase. Its boundary is `docs/GUIDED_RETURN_PHASE_BOUNDARY.md`.
-- Next: human-test whether the Guided Return controls and clear-local-edits button now stand apart clearly enough while remaining calm and moonlit.
+- Guided Return is the next phase direction after the completed single-project browser prototype phase. Its phase boundary is `docs/GUIDED_RETURN_PHASE_BOUNDARY.md`, and the next motion experiment boundary is `docs/GUIDED_RETURN_MOTION_EXPERIMENT_BOUNDARY.md`.
+- Next: human-review the motion experiment boundary before implementing one tiny restrained Forward/Back transition slice.
 
 ## Completed
 
+- Added a Guided Return motion experiment boundary after the first human-use result showed the slice works technically but still feels like extra clicking.
 - Added a tiny CSS-only button-depth polish after the first Guided Return human test passed technically and found only a remaining visual blend issue.
 - Added the first Guided Return implementation slice while keeping the full overview available and existing editable values preserved.
 - Added the Guided Return phase boundary while keeping the current prototype phase complete and closed.
@@ -69,12 +70,14 @@ This roadmap is intentionally small. Luna is a public dashboard prototype right 
 - The first Guided Return implementation slice is in place in `prototype.html`. It tests only Orient → Remember → Choose, keeps the full overview available as the proven reference mode, preserves existing editable values, and does not add Set Aside, Record, Rest, task lists, checklists, new persistence, or workflow behavior.
 - The first Guided Return human test passed technically: navigation, backward navigation, returning to the full overview, and preserved editable values all worked.
 - A tiny CSS-only follow-up gives the existing guided controls and clear-local-edits button slightly stronger darker underside depth so they read more clearly as physical controls without changing behavior.
-- Next suggested step: human-test whether those controls now stand apart clearly enough while remaining calm and moonlit.
+- The first Guided Return human-use result still found that Orient → Remember → Choose feels more like extra clicking than a meaningfully calmer Luna-like return experience; this is a human-use finding, not a technical defect.
+- The next experiment is one restrained Forward/Back stage transition for the existing Orient → Remember → Choose slice: a short fade plus a very small horizontal or vertical shift that helps the next stage arrive or settle into place without feeling flashy, bouncy, slow, game-like, celebratory, or productivity-driven.
+- Next suggested step: human-review `docs/GUIDED_RETURN_MOTION_EXPERIMENT_BOUNDARY.md` before implementing one tiny transition slice.
 
 ## Near Term
 
 - Use `docs/THEME_DIRECTION_BOUNDARY.md` as a filter before any later visual or copy polish.
-- Define the boundary for the next Luna phase before implementing anything new.
+- Human-review `docs/GUIDED_RETURN_MOTION_EXPERIMENT_BOUNDARY.md` before implementing one tiny restrained transition slice.
 
 Near-term work should stay focused on the current return path: help someone see where they left off and what changed last, guide them toward one clear Next Action, name what can be ignored for now without making a backlog, record the change in the public project trail, and rest. Choose a task that is small enough to finish in one careful pull request. When a task changes project direction, dashboard data, or public history, keep `project.json`, `STATE.md`, and `CHANGELOG.md` aligned so the next person can see what changed.
 

@@ -6,17 +6,19 @@ Luna is an autonomous repository experiment and small public dashboard prototype
 
 ## Current Goal
 
-Visually test the small Guided Return button-depth polish after the first technical human test passed.
+Human-review the Guided Return motion experiment boundary before implementing one tiny restrained stage transition.
 
 ## Last Completed Run
 
-- 2026-07-11: Added a tiny CSS-only button-depth polish after the first Guided Return human test passed technically.
+- 2026-07-11: Added a Guided Return motion experiment boundary after the first human-use result showed the slice works technically but still feels like extra clicking.
 
 ## Next Suggested Step
 
-Human-test whether the guided controls and clear-local-edits button now stand apart clearly enough while remaining calm and moonlit.
+Human-review `docs/GUIDED_RETURN_MOTION_EXPERIMENT_BOUNDARY.md` before implementing one tiny restrained Forward/Back transition slice.
 
 ## Notes
+
+The Guided Return motion experiment boundary records the first human-use interpretation after the first Guided Return slice. The slice passed technically and visually: guided navigation works, backward navigation works, returning to the full overview works, editable values are preserved, the full overview and guided view can coexist, and the interaction model is technically viable. It did not yet prove that Guided Return feels meaningfully calmer or more Luna-like; moving through Orient → Remember → Choose currently feels more like extra clicking than a calm return path. This is a human-use finding, not a technical defect, and it does not mean Guided Return should be abandoned. The next experiment is one restrained Forward/Back stage transition: a short fade plus a very small horizontal or vertical shift, roughly 180–300ms, with immediate usability, readable focus states, and `prefers-reduced-motion` support. The experiment must avoid flashiness, bounce, slowness, game-like feeling, celebration, productivity pressure, scroll-triggered animation, graphics, particles, sound, parallax, large page movement, initial-load animation, persistent motion, every-interaction animation, and animation on the full overview. This run is documentation-only and does not change `prototype.html`, `index.html`, CSS, JavaScript, navigation, editable fields, localStorage keys, blank-value fallbacks, clear-local-edits behavior, backend, accounts, database, sync, AI generation, moderation logic, crisis detection, multi-project behavior, task systems, calendars, habit tracking, or Philosophy Garden content. Luna is back at Rest. Next, human-review `docs/GUIDED_RETURN_MOTION_EXPERIMENT_BOUNDARY.md` before implementing one tiny restrained transition slice.
 
 The first Guided Return human test passed technically: Orient → Remember → Choose navigation, backward navigation, returning to the full overview, and preserved editable values all work. The only remaining issue was visual: the guided controls and clear-local-edits button still blended into the surrounding surface a little. This run makes one tiny CSS-only depth polish in `prototype.html`, limited to the existing `.guided-control` and `.clear-local-edits-button` treatments, with a slightly stronger darker underside/drop shadow, a subtle top inset highlight, and a tiny hover lift. It keeps the existing pill shape, gradients, borders, typography, focus treatment, HTML, JavaScript, localStorage keys, blank fallback behavior, clear-local-edits scope, and guided navigation behavior unchanged. Luna is back at Rest. Next, human-test whether the guided controls and clear-local-edits button now stand apart clearly enough while remaining calm and moonlit.
 

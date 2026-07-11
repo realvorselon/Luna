@@ -3,6 +3,10 @@
   "statusHistory": [
     {
       "date": "2026-07-11",
+      "note": "Added a Guided Return motion experiment boundary after the first human-use result showed the slice works technically but still feels like extra clicking."
+    },
+    {
+      "date": "2026-07-11",
       "note": "Added a tiny CSS-only button-depth polish after the first Guided Return human test passed technically and found only a remaining visual blend issue."
     },
     {
@@ -470,9 +474,9 @@
       "note": "The project is resting after a good run and ready for one gentle improvement."
     }
   ],
-  "currentGoal": "Visually test the small Guided Return button-depth polish after the first technical human test passed.",
-  "lastCompletedRun": "2026-07-11: Added a tiny CSS-only button-depth polish after the first Guided Return human test passed technically.",
-  "nextStep": "Human-test whether the guided controls and clear-local-edits button now stand apart clearly enough while remaining calm and moonlit.",
+  "currentGoal": "Human-review the Guided Return motion experiment boundary before implementing one tiny restrained stage transition.",
+  "lastCompletedRun": "2026-07-11: Added a Guided Return motion experiment boundary after the first human-use result showed the slice works technically but still feels like extra clicking.",
+  "nextStep": "Human-review docs/GUIDED_RETURN_MOTION_EXPERIMENT_BOUNDARY.md before implementing one tiny restrained Forward/Back transition slice.",
   "dashboardGuide": [
     "Welcome starts the path to read through Record the Change before choosing more work.",
     "Status gives a quick snapshot of how the project is doing right now.",
@@ -483,11 +487,12 @@
     "Optional Reflection can wait; Philosophy Garden is a gentle reflection layer, not Luna's main engine."
   ],
   "futureIdeas": [
-    "Define the boundary for the next Luna phase before implementing anything new.",
-    "Later, consider whether a guided path mode could complement the full-page overview without committing to navigation, transitions, animations, graphics, or a new interaction model now.",
+    "Human-review the Guided Return motion experiment boundary before implementing motion.",
+    "Next, test one restrained Forward/Back stage transition for Orient → Remember → Choose using a short fade plus tiny shift, while preserving the full overview as the reference mode.",
     "Later, consider whether completely fresh users need a clearer introduction than the current prototype-oriented recipe/soup placeholder language."
   ],
   "decisionLog": [
+    "2026-07-11: The first Guided Return slice passed technically and visually, but human use found Orient → Remember → Choose still feels more like extra clicking than a meaningfully calmer return experience; the next experiment is one restrained stage transition, not more stages or broader workflow.",
     "2026-07-11: The first Guided Return human test passed technically; the follow-up should only improve subtle button depth so controls stand apart while remaining calm and moonlit.",
     "2026-07-11: Guided Return is the next phase direction after the completed prototype phase; it should explore a calm guided path through part of the one-project return loop while preserving the full overview.",
     "A dashboard makes Luna easy to understand at a glance.",
@@ -501,10 +506,10 @@
     "The Garden Cycle connects the Reflection Card, Garden Review, Next Garden Update, and rest step so beginners can see how Philosophy Garden pieces fit together."
   ],
   "ideaQueue": [
-    "Human-test whether the guided controls and clear-local-edits button now stand apart clearly enough while remaining calm and moonlit.",
-    "Keep any further Guided Return polish small and visual-only unless a human test finds a clear usability issue.",
-    "Preserve the full overview as the proven reference mode before considering any later guided stages.",
-    "Protect the Luna loop and avoid turning Luna into a task manager, checklist system, workflow engine, or Jira with moon stickers."
+    "Human-review docs/GUIDED_RETURN_MOTION_EXPERIMENT_BOUNDARY.md before implementing one tiny transition slice.",
+    "Keep the existing Guided Return slice limited to Orient → Remember → Choose and preserve the full overview as the reference mode.",
+    "If approved later, test only one restrained Forward/Back transition with a short fade plus tiny horizontal or vertical shift, respecting prefers-reduced-motion.",
+    "Protect the Luna loop and avoid graphics, confetti, productivity rewards, task systems, new stages, or Jira with moon stickers."
   ],
   "ideaQueueGuide": [
     "Choose one small task that can be finished clearly in a single update.",
@@ -539,10 +544,10 @@
     "Visit http://localhost:8000 in a browser to view the dashboard."
   ],
   "nextAction": {
-    "title": "Human-test Guided Return button depth",
-    "description": "Open the prototype, compare the guided controls and clear-local-edits button against the surrounding card surfaces, and confirm they now read as physical interactive controls without becoming glossy, bouncy, or loud.",
-    "whyItMatters": "The first Guided Return interaction already passed technically; this tiny follow-up checks whether the remaining visual blend issue is resolved while preserving Luna’s calm moonlit tone.",
-    "status": "Ready for human visual review"
+    "title": "Human-review Guided Return motion boundary",
+    "description": "Read docs/GUIDED_RETURN_MOTION_EXPERIMENT_BOUNDARY.md and confirm whether the next implementation should test one tiny restrained Forward/Back stage transition for the existing Orient → Remember → Choose guided slice.",
+    "whyItMatters": "The first Guided Return slice works technically, but human use says the experience still feels like extra clicking; the next experiment should test calm path feeling without adding stages, workflow pressure, or decorative motion.",
+    "status": "Ready for human review"
   },
   "creativeSeed": {
     "name": "Philosophy Garden",
@@ -610,7 +615,7 @@
   ],
   "currentMode": {
     "name": "Rest",
-    "description": "Luna is resting after a tiny CSS-only Guided Return button-depth polish.",
-    "whyItMatters": "Rest keeps the passed Guided Return interaction protected while a human checks whether the remaining visual blend issue is resolved."
+    "description": "Luna is resting after documenting the next Guided Return motion experiment boundary.",
+    "whyItMatters": "Rest protects the technically successful Guided Return slice while a human reviews whether one restrained transition is the right next experiment."
   }
 }
