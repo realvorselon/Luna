@@ -2,6 +2,14 @@
 
 ## 2026-07-11
 
+### Prototype Control Affordance Polish
+
+- Recorded the human review finding that the editable fields are understandable with helper text, but without that text a user might not recognize them as editable because they lacked a strong visual cue.
+- Updated `prototype.html` so the existing editable input fields have clearer editable-field affordance while staying restrained and moonlit.
+- Updated the existing clear-local-edits button so it reads more clearly as a button without changing what it clears.
+- Preserved existing localStorage keys, saving behavior, blank-value fallbacks, text content, page structure, static gentle return-path cues, and the Luna loop.
+- Updated `README.md`, `project.json`, `STATE.md`, and `ROADMAP.md` so the next step is a human test of whether the controls are visually recognizable as interactive without relying only on helper text.
+
 ### Prototype Completion Criteria
 
 - Added `docs/PROTOTYPE_COMPLETION_CRITERIA.md` before adding another editable field.

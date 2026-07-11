@@ -1,6 +1,10 @@
 {
-  "status": "Resting after defining prototype completion criteria",
+  "status": "Resting after prototype control affordance polish",
   "statusHistory": [
+    {
+      "date": "2026-07-11",
+      "note": "Polished prototype control affordance after human review found editable fields and clear-local-edits could read too quietly without helper text."
+    },
     {
       "date": "2026-07-11",
       "note": "Added prototype completion criteria before adding another editable field."
@@ -443,8 +447,8 @@
     }
   ],
   "currentGoal": "Help someone return to one small project, see where they left off and what changed last, choose one clear Next Action, know what to ignore for now, record the change, and rest before adding more while keeping Philosophy Garden clearly optional.",
-  "lastCompletedRun": "2026-07-11: Added prototype completion criteria before adding another editable field.",
-  "nextStep": "Human-review the prototype completion criteria before deciding whether any remaining prototype gap justifies another implementation slice, and before adding another editable field, changing saving behavior, redesigning visuals, adding dashboard sections, adding backend/accounts/database/sync, AI generation, moderation logic, crisis detection, multi-project behavior, task lists, checklists, workflow engines, or new Philosophy Garden content.",
+  "lastCompletedRun": "2026-07-11: Polished prototype control affordance after human review.",
+  "nextStep": "Human-test whether the editable fields and clear-local-edits button are now visually recognizable as interactive controls without relying only on helper text, before adding another editable field, changing saving behavior, changing blank-value fallbacks, changing what the clear-local-edits button clears, redesigning visuals, adding dashboard sections, adding backend/accounts/database/sync, AI generation, moderation logic, crisis detection, multi-project behavior, task lists, checklists, workflow engines, or new Philosophy Garden content.",
   "dashboardGuide": [
     "Welcome starts the path to read through Record the Change before choosing more work.",
     "Status gives a quick snapshot of how the project is doing right now.",
@@ -455,10 +459,10 @@
     "Optional Reflection can wait; Philosophy Garden is a gentle reflection layer, not Luna's main engine."
   ],
   "futureIdeas": [
-    "Review completion criteria: Human-review the prototype completion criteria before deciding whether any remaining prototype gap justifies another implementation slice.",
+    "Human-test control affordance: check whether the editable fields and clear-local-edits button are visually recognizable as interactive controls without relying only on helper text.",
     "Review one existing sentence or section for beginner clarity, especially around returning to one small project and choosing one clear Next Action.",
     "Keep README.md, STATE.md, CHANGELOG.md, and project.json aligned whenever the public record changes.",
-    "Only later consider surfacing an existing quiet item on the dashboard after the front door and current goal still feel calm."
+    "Let the prototype rest before adding fields, persistence, backend, accounts, sync, task lists, workflows, or new Philosophy Garden content."
   ],
   "decisionLog": [
     "A dashboard makes Luna easy to understand at a glance.",
@@ -472,10 +476,10 @@
     "The Garden Cycle connects the Reflection Card, Garden Review, Next Garden Update, and rest step so beginners can see how Philosophy Garden pieces fit together."
   ],
   "ideaQueue": [
-    "Review completion criteria: Human-review the prototype completion criteria before deciding whether any remaining prototype gap justifies another implementation slice.",
+    "Human-test control affordance: check whether the editable fields and clear-local-edits button are visually recognizable as interactive controls without relying only on helper text.",
     "Review one existing sentence or section for beginner clarity, especially around returning to one small project and choosing one clear Next Action.",
     "Keep README.md, STATE.md, CHANGELOG.md, and project.json aligned whenever the public record changes.",
-    "Only later consider surfacing an existing quiet item on the dashboard after the front door and current goal still feel calm."
+    "Let the prototype rest before adding fields, persistence, backend, accounts, sync, task lists, workflows, or new Philosophy Garden content."
   ],
   "ideaQueueGuide": [
     "Choose one small task that can be finished clearly in a single update.",
