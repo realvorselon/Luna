@@ -2,6 +2,14 @@
 
 ## 2026-07-11
 
+### Guided Return Phase Boundary
+
+- Added `docs/GUIDED_RETURN_PHASE_BOUNDARY.md` to define Guided Return as the next Luna phase direction after the completed single-project browser prototype phase.
+- Recorded that Guided Return should explore whether Luna can feel less like a form and more like a calm path while preserving the one-project return loop and full overview.
+- Protected project identity, Current Mode, current goal, what changed last, one Next Action, Ignore For Now, Record the Change, and Rest.
+- Recorded that this run is documentation-only and does not change prototype behavior, controls, fields, storage, visuals, assets, backend, multi-project behavior, task systems, or Philosophy Garden content.
+- Set Luna back to Rest and set the next suggested step to human-reviewing the boundary before deciding whether one small reversible guided-view implementation slice should proceed.
+
 ### Prototype Phase Completion Review
 
 - Added `docs/PROTOTYPE_PHASE_COMPLETION_REVIEW.md` to record the broader human review of the current single-project browser prototype.

@@ -3,6 +3,10 @@
   "statusHistory": [
     {
       "date": "2026-07-11",
+      "note": "Added the Guided Return phase boundary as the next phase direction while keeping the current prototype phase complete and closed."
+    },
+    {
+      "date": "2026-07-11",
       "note": "Recorded the broader prototype phase completion review and closed the current single-project browser prototype phase as complete enough."
     },
     {
@@ -458,9 +462,9 @@
       "note": "The project is resting after a good run and ready for one gentle improvement."
     }
   ],
-  "currentGoal": "Help someone return to one small project, see where they left off and what changed last, choose one clear Next Action, know what to ignore for now, record the change, and rest before adding more while keeping Philosophy Garden clearly optional.",
-  "lastCompletedRun": "2026-07-11: Recorded the broader prototype phase completion review and closed the single-project browser prototype phase as complete enough.",
-  "nextStep": "Define the boundary for the next Luna phase before implementing anything new.",
+  "currentGoal": "Explore Guided Return as the next Luna phase: a small, documentation-bounded test of whether returning to one unfinished project can feel like a calm path while preserving the proven one-project overview loop.",
+  "lastCompletedRun": "2026-07-11: Added the Guided Return phase boundary while keeping the current single-project browser prototype phase complete and closed.",
+  "nextStep": "Human-review the Guided Return phase boundary and decide whether its first small reversible guided-view implementation slice should proceed.",
   "dashboardGuide": [
     "Welcome starts the path to read through Record the Change before choosing more work.",
     "Status gives a quick snapshot of how the project is doing right now.",
@@ -476,6 +480,7 @@
     "Later, consider whether completely fresh users need a clearer introduction than the current prototype-oriented recipe/soup placeholder language."
   ],
   "decisionLog": [
+    "2026-07-11: Guided Return is the next phase direction after the completed prototype phase; it should explore a calm guided path through part of the one-project return loop while preserving the full overview.",
     "A dashboard makes Luna easy to understand at a glance.",
     "Structured project data keeps updates small, safe, and beginner-friendly.",
     "Showing goals, ideas, and decisions first creates a clear trail before adding larger features.",
@@ -487,6 +492,7 @@
     "The Garden Cycle connects the Reflection Card, Garden Review, Next Garden Update, and rest step so beginners can see how Philosophy Garden pieces fit together."
   ],
   "ideaQueue": [
+    "Human-review docs/GUIDED_RETURN_PHASE_BOUNDARY.md and decide whether to proceed with one small reversible guided-view slice that tests only part of the existing return loop.",
     "Define the boundary for the next Luna phase before implementing anything new.",
     "Keep the completed prototype phase closed unless a future boundary note names a real reason to reopen it.",
     "Protect the Luna loop and avoid turning Luna into a task manager, checklist system, workflow engine, or Jira with moon stickers."
