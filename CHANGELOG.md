@@ -2,6 +2,14 @@
 
 ## 2026-07-11
 
+### Guided Return Dark Surface Follow-Up
+
+- Recorded the human finding that the first panel-level transition felt closer to the intended app-like direction, but introduced a brighter-than-intended guided surface.
+- Darkened the `.guided-stage-panel` surface in `prototype.html` to a more opaque indigo/navy treatment with a restrained border and inset highlight.
+- Reduced the bright double-card effect between `.guided-return-view` and the focused guided stage panel while keeping the panel visually distinct as the screen-like surface.
+- Preserved the surrounding page background, existing theme variables, panel border radius, layout, spacing, motion classes, timing, easing, JavaScript, navigation behavior, editable fields, localStorage behavior, stage content, full overview, and Philosophy Garden content.
+- Set Luna back to Rest and set the next suggested step to a human visual test of whether Guided Return now keeps the same dark theme while preserving the softer panel transition.
+
 ### Guided Return Panel Transition Experiment
 
 - Recorded the human finding that the first 220ms Guided Return micro-transition with a tiny directional content shift was too quick and visually uncomfortable / hard on the eyes.

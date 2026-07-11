@@ -5,10 +5,11 @@ This roadmap is intentionally small. Luna is a public dashboard prototype right 
 ## Current Phase Direction
 
 - Guided Return is the next phase direction after the completed single-project browser prototype phase. Its boundary is `docs/GUIDED_RETURN_PHASE_BOUNDARY.md`.
-- Next: human-test whether the new Guided Return panel-level transition feels softer, easier on the eyes, preserves editable values, respects reduced-motion behavior where practical, and feels closer to moving between calm focused app screens.
+- Next: human-test whether Guided Return now keeps the same dark moonlit theme while preserving the softer panel transition.
 
 ## Completed
 
+- Darkened the Guided Return stage panel surface after human testing found the first panel-level transition made the guided area brighter than the surrounding moonlit prototype.
 - Replaced the first quick 220ms Guided Return micro-transition with a calmer app-like panel-level Forward / Back transition, after human testing found the first treatment too quick and visually uncomfortable.
 - Added the Guided Return motion experiment boundary while preserving the first-slice read-through and its conclusions.
 - Recorded that the first Guided Return slice passed its initial technical and visual human tests, and closed the remaining button-blend issue.
@@ -75,7 +76,9 @@ This roadmap is intentionally small. Luna is a public dashboard prototype right 
 - The follow-up human visual test passed: the buttons now stand apart clearly enough, remain calm and moonlit, and the remaining button-blend issue is closed.
 - A human test found the first 220ms motion treatment too quick and visually uncomfortable / hard on the eyes, and clarified the intent as a calm app-like panel or screen transition rather than animated text or a tiny content shift.
 - The current Guided Return motion experiment replaces that first treatment with a two-phase panel-level Forward / Back transition; entering Guided Return, returning to the full overview, and the full overview itself remain unanimated.
-- Next suggested step: human-test whether the new panel-level transition feels softer, easier on the eyes, preserves editable values, respects reduced-motion behavior where practical, and feels closer to moving between calm focused app screens; do not extend the six-stage sequence by default.
+- A human test found the first panel-level transition felt closer to the intended app-like direction, but the guided stage surface looked too bright / translucent and created a double-layered lighter-card mismatch against the dark moonlit prototype.
+- A tiny visual-only follow-up darkens the `.guided-stage-panel` surface and restrains its border / inset highlight while preserving the existing panel motion, timing, easing, JavaScript, navigation behavior, layout, content, editable fields, and localStorage behavior.
+- Next suggested step: human-test whether Guided Return now keeps the same dark theme while preserving the softer panel transition; do not extend the six-stage sequence by default.
 
 ## Near Term
 
