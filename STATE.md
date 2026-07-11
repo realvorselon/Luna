@@ -10,13 +10,15 @@ Help someone return to one small project, see where they left off and what chang
 
 ## Last Completed Run
 
-- 2026-07-11: Added prototype input-surface contrast polish after first human test.
+- 2026-07-11: Recorded successful input-surface contrast visual test.
 
 ## Next Suggested Step
 
-Human visually test whether the editable fields now stand apart clearly enough from the surrounding cards while remaining calm and moonlit, before adding another editable field, changing saving behavior, changing blank-value fallbacks, changing what the clear-local-edits button clears, changing the button appearance, redesigning visuals, adding dashboard sections, adding backend/accounts/database/sync, AI generation, moderation logic, crisis detection, multi-project behavior, task lists, checklists, workflow engines, or new Philosophy Garden content.
+Review the current prototype broadly against `docs/PROTOTYPE_COMPLETION_CRITERIA.md` before deciding whether any genuine remaining gap justifies another implementation slice.
 
 ## Notes
+
+The input-surface contrast read-through records the successful follow-up human visual test after the tiny CSS-only input-surface polish. The previous affordance polish improved the controls, and the first human test found that the editable input surfaces still blended into the surrounding cards. The tiny contrast polish gave the existing editable fields a slightly lighter, cooler blue-violet inset writing surface. The follow-up human visual test confirmed that the fields now stand apart clearly enough and read naturally as places to type while remaining calm, moonlit, and consistent with the existing visual direction. The control-affordance gap is considered closed for this prototype phase. Luna is back at Rest. Next, review the current prototype broadly against `docs/PROTOTYPE_COMPLETION_CRITERIA.md` before deciding whether any genuine remaining gap justifies another implementation slice.
 
 The prototype input-surface contrast polish records the first human test finding after the previous affordance polish: the editable fields improved, but their input surfaces still blended into the surrounding card because the shades were too close. This run changes only the visual surface treatment of the existing editable text inputs, giving them a slightly lighter, cooler, muted blue-violet inset writing surface. It preserves the brighter silver-periwinkle border, hover treatment, lantern-gold focus ring, text cursor, clear-local-edits button appearance and scope, localStorage keys, saving behavior, blank-value fallbacks, text content, page structure, and Luna loop. Next, human visually test whether the editable fields now stand apart clearly enough from the surrounding cards while remaining calm and moonlit.
 

@@ -1,6 +1,10 @@
 {
-  "status": "Resting after prototype input-surface contrast polish",
+  "status": "Rest",
   "statusHistory": [
+    {
+      "date": "2026-07-11",
+      "note": "Recorded the successful human visual test of the input-surface contrast polish and closed the control-affordance gap for this prototype phase."
+    },
     {
       "date": "2026-07-11",
       "note": "Added a tiny input-surface contrast polish after the first human test found improved affordance but input surfaces still blended into the surrounding card."
@@ -451,8 +455,8 @@
     }
   ],
   "currentGoal": "Help someone return to one small project, see where they left off and what changed last, choose one clear Next Action, know what to ignore for now, record the change, and rest before adding more while keeping Philosophy Garden clearly optional.",
-  "lastCompletedRun": "2026-07-11: Added prototype input-surface contrast polish after first human test.",
-  "nextStep": "Human visually test whether the editable fields now stand apart clearly enough from the surrounding cards while remaining calm and moonlit, before adding another editable field, changing saving behavior, changing blank-value fallbacks, changing what the clear-local-edits button clears, changing the button appearance, redesigning visuals, adding dashboard sections, adding backend/accounts/database/sync, AI generation, moderation logic, crisis detection, multi-project behavior, task lists, checklists, workflow engines, or new Philosophy Garden content.",
+  "lastCompletedRun": "2026-07-11: Recorded successful input-surface contrast visual test.",
+  "nextStep": "Review the current prototype broadly against docs/PROTOTYPE_COMPLETION_CRITERIA.md before deciding whether any genuine remaining gap justifies another implementation slice.",
   "dashboardGuide": [
     "Welcome starts the path to read through Record the Change before choosing more work.",
     "Status gives a quick snapshot of how the project is doing right now.",
@@ -463,9 +467,8 @@
     "Optional Reflection can wait; Philosophy Garden is a gentle reflection layer, not Luna's main engine."
   ],
   "futureIdeas": [
-    "Human visually test whether the editable fields now stand apart clearly enough from the surrounding cards while remaining calm and moonlit.",
-    "Review one existing sentence or section for beginner clarity, especially around returning to one small project and choosing one clear Next Action.",
-    "Keep README.md, STATE.md, CHANGELOG.md, and project.json aligned whenever the public record changes.",
+    "Review the current prototype broadly against docs/PROTOTYPE_COMPLETION_CRITERIA.md before deciding whether any genuine remaining gap justifies another implementation slice.",
+    "Keep README.md, STATE.md, ROADMAP.md, CHANGELOG.md, and project.json aligned whenever the public record changes.",
     "Let the prototype rest before adding fields, persistence, backend, accounts, sync, task lists, workflows, or new Philosophy Garden content."
   ],
   "decisionLog": [
@@ -480,10 +483,9 @@
     "The Garden Cycle connects the Reflection Card, Garden Review, Next Garden Update, and rest step so beginners can see how Philosophy Garden pieces fit together."
   ],
   "ideaQueue": [
-    "Human visually test whether the editable fields now stand apart clearly enough from the surrounding cards while remaining calm and moonlit.",
-    "Review one existing sentence or section for beginner clarity, especially around returning to one small project and choosing one clear Next Action.",
-    "Keep README.md, STATE.md, CHANGELOG.md, and project.json aligned whenever the public record changes.",
-    "Let the prototype rest before adding fields, persistence, backend, accounts, sync, task lists, workflows, or new Philosophy Garden content."
+    "Review the current prototype broadly against docs/PROTOTYPE_COMPLETION_CRITERIA.md before deciding whether any genuine remaining gap justifies another implementation slice.",
+    "Review one existing sentence or section for beginner clarity only if the completion review finds a real clarity gap.",
+    "Keep the prototype calm and avoid turning Luna into a task manager."
   ],
   "ideaQueueGuide": [
     "Choose one small task that can be finished clearly in a single update.",
@@ -518,10 +520,10 @@
     "Visit http://localhost:8000 in a browser to view the dashboard."
   ],
   "nextAction": {
-    "title": "Human visual test input surfaces",
-    "description": "Human visually test whether the editable fields now stand apart clearly enough from the surrounding cards while remaining calm and moonlit, before adding another editable field, changing saving behavior, changing blank-value fallbacks, changing what the clear-local-edits button clears, changing the button appearance, redesigning visuals, adding dashboard sections, adding backend/accounts/database/sync, AI generation, moderation logic, crisis detection, multi-project behavior, task lists, checklists, workflow engines, or new Philosophy Garden content.",
-    "whyItMatters": "The first human test said the affordance improved, but the writing surfaces still blended into the card. A visual test can confirm whether the tiny CSS-only surface contrast polish is enough without making Luna feel bright or task-manager-like.",
-    "status": "Resting"
+    "title": "Review prototype completion criteria",
+    "description": "Review the current prototype broadly against docs/PROTOTYPE_COMPLETION_CRITERIA.md before deciding whether any genuine remaining gap justifies another implementation slice.",
+    "whyItMatters": "The follow-up human visual test closed the control-affordance gap for this prototype phase. The safest next move is not another polish by default, but a broader review against the written completion criteria.",
+    "status": "Rest"
   },
   "creativeSeed": {
     "name": "Philosophy Garden",
