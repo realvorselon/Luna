@@ -10,13 +10,15 @@ Help someone return to one small project, see where they left off and what chang
 
 ## Last Completed Run
 
-- 2026-07-10: Added a tiny path clarity polish to make the prototype return loop feel more guided.
+- 2026-07-10: Added a human read-through note after the tiny path clarity polish.
 
 ## Next Suggested Step
 
-Human review the tiny path clarity polish before adding any new behavior, more persistence, more editable cards, sessionStorage, cookies, backend, accounts, database, sync, dashboard expansion, visual redesign, mode workflow, multi-project system, or new Philosophy Garden content.
+Rest before deciding whether to improve control affordance, continue with another prototype slice, or add another small read-through / boundary note, and before adding any new behavior, more persistence, more editable cards, sessionStorage, cookies, backend, accounts, database, sync, dashboard expansion, visual redesign, mode workflow, multi-project system, or new Philosophy Garden content.
 
 ## Notes
+
+The path polish read-through note records that a human reviewed the prototype after the tiny path clarity polish. The “gentle return path” section feels okay / not bad, and the static step strip helps the loop feel a little more guided and path-like without needing an immediate prototype change. Because the strip is static and non-interactive, it can stay visually quiet for now. The review also records an affordance note for later: button-like pills and actual controls may visually blend in too much, and the “Clear only local edits in this browser” control works but sits quietly and may not stand out strongly as a control. Future actual buttons and interactive controls should have clearer affordance than static path cues. This is a design note to remember later, not a reason to start immediate visual churn. No prototype change should happen in this run. The Luna loop remains the core: one project state, current mode, current goal, what changed last, one Next Action, Ignore For Now, Record the Change, and Rest. The next step is to rest before deciding whether to improve control affordance, continue with another prototype slice, or add another small read-through / boundary note, and before adding any new behavior, more persistence, more editable cards, sessionStorage, cookies, backend, accounts, database, sync, dashboard expansion, visual redesign, mode workflow, multi-project system, or new Philosophy Garden content.
 
 The prototype now includes one tiny path clarity polish near the one-project return loop. A quiet static path cue names the movement from Orient to Notice, Choose, Leave alone, Record, and Rest, and the loop heading now frames the section as a gentle return path. This keeps the existing project state, Current Mode, current goal, what changed last, one Next Action, Ignore For Now, Record the Change, Rest, local project name and current goal saving, clear-local-edits behavior, static unsaved cards, and dashboard ↔ prototype reversible path intact. The next step is to human review the tiny path clarity polish before adding any new behavior, more persistence, more editable cards, sessionStorage, cookies, backend, accounts, database, sync, dashboard expansion, visual redesign, mode workflow, multi-project system, or new Philosophy Garden content.
 
