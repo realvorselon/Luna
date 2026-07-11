@@ -10,13 +10,15 @@ Help someone return to one small project, see where they left off and what chang
 
 ## Last Completed Run
 
-- 2026-07-10: Added a boundary for making One Next Action editable later.
+- 2026-07-10: Made One Next Action editable and locally saved in the prototype.
 
 ## Next Suggested Step
 
-Rest before implementing the One Next Action editable field, and before adding any other editable cards, more persistence, sessionStorage, cookies, backend, accounts, database, sync, dashboard expansion, visual redesign, mode workflow, multi-project system, AI generation, moderation logic, crisis detection, control affordance changes, or new Philosophy Garden content.
+Human test the editable One Next Action field by changing it, refreshing the page, confirming it persists locally, confirming blank input falls back to the sample value, and confirming the existing clear-local-edits button still only clears project name and current goal.
 
 ## Notes
+
+The prototype now makes only the One Next Action text editable and locally saved with the `luna.prototype.nextAction` localStorage key. The lantern card remains the One Next Action card, the static description text remains unchanged, and blank input falls back to the public-safe sample value instead of showing an empty card. Project name and current goal saving remain unchanged, and the existing clear-local-edits button still clears only those two fields. The next step is to human test the editable One Next Action field by changing it, refreshing the page, confirming it persists locally, confirming blank input falls back to the sample value, and confirming the existing clear-local-edits button still only clears project name and current goal.
 
 The Next Action editable field boundary note records that One Next Action is the lantern of the Luna loop. A later run may make only that card editable and locally saved so the prototype feels more like a real single-project workspace, while keeping the text to one short action and avoiding task lists, checklists, subtasks, generated plans, AI interpretation, automatic rewriting, harmful amplification, or any change beyond that one field. It follows the input safety boundary: Luna may hold project notes, but should not help harmful intent become more actionable. This run does not change `prototype.html`, add JavaScript, change saving behavior, add buttons or controls, improve control affordance, or add AI generation, moderation logic, crisis detection, backend, accounts, database, sync, dashboard expansion, visual redesign, mode workflow, multi-project behavior, or new Philosophy Garden content. Rest before implementing the One Next Action editable field, and before adding any other editable cards, more persistence, sessionStorage, cookies, backend, accounts, database, sync, dashboard expansion, visual redesign, mode workflow, multi-project system, AI generation, moderation logic, crisis detection, control affordance changes, or new Philosophy Garden content.
 
