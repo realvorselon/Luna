@@ -2,6 +2,14 @@
 
 ## 2026-07-11
 
+### Guided Return Motion Experiment
+
+- Added one restrained stage-change transition to the existing Guided Return Forward and Back navigation in `prototype.html`.
+- Kept the guided slice limited to Orient → Remember → Choose and preserved the full overview as the unanimated reference mode.
+- Used a brief fade plus a tiny directional horizontal settle for Forward and Back, with `prefers-reduced-motion` updating stages immediately without motion.
+- Prevented overlapping rapid Forward / Back transitions while preserving Return to full overview, existing Back / Forward visibility rules, One Next Action editor movement, localStorage keys, blank-value fallbacks, clear-local-edits behavior, and editable values.
+- Set Luna back to Rest and set the next suggested step to a human test of motion direction, responsiveness, preserved values, reduced-motion behavior where practical, and whether the guided path now feels less like extra clicking.
+
 ### Guided Return Motion Experiment Boundary
 
 - Added `docs/GUIDED_RETURN_MOTION_EXPERIMENT_BOUNDARY.md` to define the next possible Guided Return experiment after the first Orient → Remember → Choose slice passed its initial human technical and visual tests.

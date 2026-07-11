@@ -261,6 +261,37 @@
       box-shadow: 0 18px 42px rgb(0 0 0 / 20%);
     }
 
+    .guided-stage-panel {
+      will-change: opacity, transform;
+    }
+
+    .guided-stage-panel.is-arriving-forward {
+      animation: guidedStageArriveForward 220ms cubic-bezier(0.22, 0.8, 0.28, 1) both;
+    }
+
+    .guided-stage-panel.is-arriving-back {
+      animation: guidedStageArriveBack 220ms cubic-bezier(0.22, 0.8, 0.28, 1) both;
+    }
+
+    @keyframes guidedStageArriveForward {
+      from { opacity: 0.22; transform: translateX(12px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+
+    @keyframes guidedStageArriveBack {
+      from { opacity: 0.22; transform: translateX(-12px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .guided-stage-panel.is-arriving-forward,
+      .guided-stage-panel.is-arriving-back {
+        animation: none;
+        opacity: 1;
+        transform: none;
+      }
+    }
+
     .guided-position {
       margin-bottom: 10px;
       color: var(--periwinkle);
@@ -346,10 +377,12 @@
     </header>
 
     <section class="guided-return-view" id="guided-return-view" aria-labelledby="guided-stage-title" hidden>
-      <p class="guided-position" id="guided-position">Stage 1 of 3</p>
-      <h2 id="guided-stage-title" tabindex="-1">Orient</h2>
-      <p class="path-note" id="guided-stage-intro">Return to the project identity, current mode, and current goal before choosing anything new.</p>
-      <div class="guided-stage-body" id="guided-stage-body"></div>
+      <div class="guided-stage-panel" id="guided-stage-panel">
+        <p class="guided-position" id="guided-position">Stage 1 of 3</p>
+        <h2 id="guided-stage-title" tabindex="-1">Orient</h2>
+        <p class="path-note" id="guided-stage-intro">Return to the project identity, current mode, and current goal before choosing anything new.</p>
+        <div class="guided-stage-body" id="guided-stage-body"></div>
+      </div>
       <div class="guided-actions">
         <button class="guided-control" type="button" id="guided-back-button">Back</button>
         <button class="guided-control" type="button" id="guided-forward-button">Forward</button>
@@ -492,6 +525,7 @@
     const beginGuidedReturnButton = document.querySelector('#begin-guided-return-button');
     const guidedReturnView = document.querySelector('#guided-return-view');
     const fullOverview = document.querySelector('#full-overview');
+    const guidedStagePanel = document.querySelector('#guided-stage-panel');
     const guidedPosition = document.querySelector('#guided-position');
     const guidedStageTitle = document.querySelector('#guided-stage-title');
     const guidedStageIntro = document.querySelector('#guided-stage-intro');
@@ -508,6 +542,10 @@
     const sampleCurrentGoal = 'Make the tiny collection understandable';
     const sampleNextAction = 'Add one public-safe sentence to the broth note.';
     let guidedStageIndex = 0;
+    let guidedStageTransitionTimer = 0;
+    let guidedStageTransitioning = false;
+    const guidedStageMotionQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
+    const guidedStageMotionFallbackMs = 280;
 
     const escapeHtml = (value) => value
       .replaceAll('&', '&amp;')
@@ -598,7 +636,16 @@
       nextActionEditAnchor.after(nextActionEditingCard);
     };
 
-    const renderGuidedStage = () => {
+    const finishGuidedStageTransition = () => {
+      window.clearTimeout(guidedStageTransitionTimer);
+      guidedStagePanel.classList.remove('is-arriving-forward', 'is-arriving-back');
+      guidedStageTransitioning = false;
+      guidedBackButton.disabled = false;
+      guidedForwardButton.disabled = false;
+    };
+
+    const renderGuidedStage = (direction = null) => {
+      finishGuidedStageTransition();
       const stage = guidedStages[guidedStageIndex];
       guidedPosition.textContent = `Stage ${guidedStageIndex + 1} of ${guidedStages.length}`;
       guidedStageTitle.textContent = stage.title;
@@ -613,6 +660,17 @@
 
       guidedBackButton.hidden = guidedStageIndex === 0;
       guidedForwardButton.hidden = guidedStageIndex === guidedStages.length - 1;
+      guidedStageTitle.focus({ preventScroll: true });
+
+      if (!direction || guidedStageMotionQuery.matches) {
+        return;
+      }
+
+      guidedStageTransitioning = true;
+      guidedBackButton.disabled = true;
+      guidedForwardButton.disabled = true;
+      guidedStagePanel.classList.add(direction === 'back' ? 'is-arriving-back' : 'is-arriving-forward');
+      guidedStageTransitionTimer = window.setTimeout(finishGuidedStageTransition, guidedStageMotionFallbackMs);
     };
 
     const showGuidedReturn = () => {
@@ -624,6 +682,7 @@
     };
 
     const showFullOverview = () => {
+      finishGuidedStageTransition();
       guidedReturnView.hidden = true;
       fullOverview.hidden = false;
       restoreNextActionEditorToOverview();
@@ -632,14 +691,24 @@
 
     beginGuidedReturnButton.addEventListener('click', showGuidedReturn);
 
+    guidedStagePanel.addEventListener('animationend', finishGuidedStageTransition);
+
     guidedBackButton.addEventListener('click', () => {
-      guidedStageIndex = Math.max(0, guidedStageIndex - 1);
-      renderGuidedStage();
+      if (guidedStageTransitioning || guidedStageIndex === 0) {
+        return;
+      }
+
+      guidedStageIndex -= 1;
+      renderGuidedStage('back');
     });
 
     guidedForwardButton.addEventListener('click', () => {
-      guidedStageIndex = Math.min(guidedStages.length - 1, guidedStageIndex + 1);
-      renderGuidedStage();
+      if (guidedStageTransitioning || guidedStageIndex === guidedStages.length - 1) {
+        return;
+      }
+
+      guidedStageIndex += 1;
+      renderGuidedStage('forward');
     });
 
     returnOverviewButton.addEventListener('click', showFullOverview);
