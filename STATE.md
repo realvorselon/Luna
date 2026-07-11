@@ -10,13 +10,15 @@ Help someone return to one small project, see where they left off and what chang
 
 ## Last Completed Run
 
-- 2026-07-11: Recorded successful input-surface contrast visual test.
+- 2026-07-11: Recorded the broader prototype phase completion review and closed the single-project browser prototype phase as complete enough.
 
 ## Next Suggested Step
 
-Review the current prototype broadly against `docs/PROTOTYPE_COMPLETION_CRITERIA.md` before deciding whether any genuine remaining gap justifies another implementation slice.
+Define the boundary for the next Luna phase before implementing anything new.
 
 ## Notes
+
+The prototype phase completion review records the broader human judgment that the current single-project browser prototype is complete enough for this phase. It is not the finished Luna app, but it proves the core one-project return loop: return to one unfinished project, see where things are, remember what changed last, identify one clear Next Action, know what can wait, record the change, and rest. The review marks essential one-project state, current editable fields, local-only saving, blank-value fallback behavior, control affordance, the reversible dashboard ↔ prototype path, and public-safe beginner-friendly scope as met for this phase. It also records that the return path is only partially met for a completely fresh visitor because the fictional recipe/soup placeholder language is still prototype-oriented, but that observation does not block phase completion. Later, Luna may explore a guided path mode beside the full-page overview and may clarify the fresh-user introduction, but those are later-direction observations only, not commitments to implement navigation, transitions, animation, graphics, new interaction models, or copy changes now. Luna is back at Rest. Next, define the boundary for the next Luna phase before implementing anything new.
 
 The input-surface contrast read-through records the successful follow-up human visual test after the tiny CSS-only input-surface polish. The previous affordance polish improved the controls, and the first human test found that the editable input surfaces still blended into the surrounding cards. The tiny contrast polish gave the existing editable fields a slightly lighter, cooler blue-violet inset writing surface. The follow-up human visual test confirmed that the fields now stand apart clearly enough and read naturally as places to type while remaining calm, moonlit, and consistent with the existing visual direction. The control-affordance gap is considered closed for this prototype phase. Luna is back at Rest. Next, review the current prototype broadly against `docs/PROTOTYPE_COMPLETION_CRITERIA.md` before deciding whether any genuine remaining gap justifies another implementation slice.
 

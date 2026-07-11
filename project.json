@@ -3,6 +3,10 @@
   "statusHistory": [
     {
       "date": "2026-07-11",
+      "note": "Recorded the broader prototype phase completion review and closed the current single-project browser prototype phase as complete enough."
+    },
+    {
+      "date": "2026-07-11",
       "note": "Recorded the successful human visual test of the input-surface contrast polish and closed the control-affordance gap for this prototype phase."
     },
     {
@@ -455,8 +459,8 @@
     }
   ],
   "currentGoal": "Help someone return to one small project, see where they left off and what changed last, choose one clear Next Action, know what to ignore for now, record the change, and rest before adding more while keeping Philosophy Garden clearly optional.",
-  "lastCompletedRun": "2026-07-11: Recorded successful input-surface contrast visual test.",
-  "nextStep": "Review the current prototype broadly against docs/PROTOTYPE_COMPLETION_CRITERIA.md before deciding whether any genuine remaining gap justifies another implementation slice.",
+  "lastCompletedRun": "2026-07-11: Recorded the broader prototype phase completion review and closed the single-project browser prototype phase as complete enough.",
+  "nextStep": "Define the boundary for the next Luna phase before implementing anything new.",
   "dashboardGuide": [
     "Welcome starts the path to read through Record the Change before choosing more work.",
     "Status gives a quick snapshot of how the project is doing right now.",
@@ -467,9 +471,9 @@
     "Optional Reflection can wait; Philosophy Garden is a gentle reflection layer, not Luna's main engine."
   ],
   "futureIdeas": [
-    "Review the current prototype broadly against docs/PROTOTYPE_COMPLETION_CRITERIA.md before deciding whether any genuine remaining gap justifies another implementation slice.",
-    "Keep README.md, STATE.md, ROADMAP.md, CHANGELOG.md, and project.json aligned whenever the public record changes.",
-    "Let the prototype rest before adding fields, persistence, backend, accounts, sync, task lists, workflows, or new Philosophy Garden content."
+    "Define the boundary for the next Luna phase before implementing anything new.",
+    "Later, consider whether a guided path mode could complement the full-page overview without committing to navigation, transitions, animations, graphics, or a new interaction model now.",
+    "Later, consider whether completely fresh users need a clearer introduction than the current prototype-oriented recipe/soup placeholder language."
   ],
   "decisionLog": [
     "A dashboard makes Luna easy to understand at a glance.",
@@ -483,9 +487,9 @@
     "The Garden Cycle connects the Reflection Card, Garden Review, Next Garden Update, and rest step so beginners can see how Philosophy Garden pieces fit together."
   ],
   "ideaQueue": [
-    "Review the current prototype broadly against docs/PROTOTYPE_COMPLETION_CRITERIA.md before deciding whether any genuine remaining gap justifies another implementation slice.",
-    "Review one existing sentence or section for beginner clarity only if the completion review finds a real clarity gap.",
-    "Keep the prototype calm and avoid turning Luna into a task manager."
+    "Define the boundary for the next Luna phase before implementing anything new.",
+    "Keep the completed prototype phase closed unless a future boundary note names a real reason to reopen it.",
+    "Protect the Luna loop and avoid turning Luna into a task manager, checklist system, workflow engine, or Jira with moon stickers."
   ],
   "ideaQueueGuide": [
     "Choose one small task that can be finished clearly in a single update.",
@@ -520,9 +524,9 @@
     "Visit http://localhost:8000 in a browser to view the dashboard."
   ],
   "nextAction": {
-    "title": "Review prototype completion criteria",
-    "description": "Review the current prototype broadly against docs/PROTOTYPE_COMPLETION_CRITERIA.md before deciding whether any genuine remaining gap justifies another implementation slice.",
-    "whyItMatters": "The follow-up human visual test closed the control-affordance gap for this prototype phase. The safest next move is not another polish by default, but a broader review against the written completion criteria.",
+    "title": "Define the next phase boundary",
+    "description": "Define the boundary for the next Luna phase before implementing anything new.",
+    "whyItMatters": "The current single-project browser prototype phase is complete enough. The safest next move is to protect the Luna loop, name what the next phase is and is not, and avoid inventing another implementation gap just to keep building.",
     "status": "Rest"
   },
   "creativeSeed": {
