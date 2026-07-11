@@ -3,6 +3,10 @@
   "statusHistory": [
     {
       "date": "2026-07-11",
+      "note": "Added a tiny CSS-only button-depth polish after the first Guided Return human test passed technically and found only a remaining visual blend issue."
+    },
+    {
+      "date": "2026-07-11",
       "note": "Added the first Guided Return implementation slice: an optional reversible Orient → Remember → Choose guided view in prototype.html while keeping the full overview available."
     },
     {
@@ -466,9 +470,9 @@
       "note": "The project is resting after a good run and ready for one gentle improvement."
     }
   ],
-  "currentGoal": "Test the first small Guided Return implementation slice: an optional reversible Orient → Remember → Choose guided view that keeps the full overview available and preserves existing editable values.",
-  "lastCompletedRun": "2026-07-11: Added the first Guided Return implementation slice for Orient → Remember → Choose while preserving the full overview.",
-  "nextStep": "Human-test guided navigation, reversibility, preserved editable values, and whether the guided view feels calmer than the full-page form-like overview.",
+  "currentGoal": "Visually test the small Guided Return button-depth polish after the first technical human test passed.",
+  "lastCompletedRun": "2026-07-11: Added a tiny CSS-only button-depth polish after the first Guided Return human test passed technically.",
+  "nextStep": "Human-test whether the guided controls and clear-local-edits button now stand apart clearly enough while remaining calm and moonlit.",
   "dashboardGuide": [
     "Welcome starts the path to read through Record the Change before choosing more work.",
     "Status gives a quick snapshot of how the project is doing right now.",
@@ -484,6 +488,7 @@
     "Later, consider whether completely fresh users need a clearer introduction than the current prototype-oriented recipe/soup placeholder language."
   ],
   "decisionLog": [
+    "2026-07-11: The first Guided Return human test passed technically; the follow-up should only improve subtle button depth so controls stand apart while remaining calm and moonlit.",
     "2026-07-11: Guided Return is the next phase direction after the completed prototype phase; it should explore a calm guided path through part of the one-project return loop while preserving the full overview.",
     "A dashboard makes Luna easy to understand at a glance.",
     "Structured project data keeps updates small, safe, and beginner-friendly.",
@@ -496,8 +501,8 @@
     "The Garden Cycle connects the Reflection Card, Garden Review, Next Garden Update, and rest step so beginners can see how Philosophy Garden pieces fit together."
   ],
   "ideaQueue": [
-    "Human-test guided navigation, reversibility, preserved editable values, and whether the guided view feels calmer than the full-page form-like overview.",
-    "Keep the guided implementation limited to Orient → Remember → Choose until the interaction model is reviewed.",
+    "Human-test whether the guided controls and clear-local-edits button now stand apart clearly enough while remaining calm and moonlit.",
+    "Keep any further Guided Return polish small and visual-only unless a human test finds a clear usability issue.",
     "Preserve the full overview as the proven reference mode before considering any later guided stages.",
     "Protect the Luna loop and avoid turning Luna into a task manager, checklist system, workflow engine, or Jira with moon stickers."
   ],
@@ -534,10 +539,10 @@
     "Visit http://localhost:8000 in a browser to view the dashboard."
   ],
   "nextAction": {
-    "title": "Human-test the Guided Return slice",
-    "description": "Open the prototype, enter the optional guided return, move through Orient → Remember → Choose, move backward, return to the full overview at any time, and confirm editable values are preserved.",
-    "whyItMatters": "The first Guided Return slice should prove that a calmer path can coexist with the proven full overview without adding tasks, persistence, or pressure.",
-    "status": "Ready for human review"
+    "title": "Human-test Guided Return button depth",
+    "description": "Open the prototype, compare the guided controls and clear-local-edits button against the surrounding card surfaces, and confirm they now read as physical interactive controls without becoming glossy, bouncy, or loud.",
+    "whyItMatters": "The first Guided Return interaction already passed technically; this tiny follow-up checks whether the remaining visual blend issue is resolved while preserving Luna’s calm moonlit tone.",
+    "status": "Ready for human visual review"
   },
   "creativeSeed": {
     "name": "Philosophy Garden",
@@ -605,7 +610,7 @@
   ],
   "currentMode": {
     "name": "Rest",
-    "description": "Luna is resting after defining prototype completion criteria for the current single-project browser prototype.",
-    "whyItMatters": "Rest keeps the prototype from growing into a project manager before a human checks whether the calm return tool is complete enough for this phase."
+    "description": "Luna is resting after a tiny CSS-only Guided Return button-depth polish.",
+    "whyItMatters": "Rest keeps the passed Guided Return interaction protected while a human checks whether the remaining visual blend issue is resolved."
   }
 }

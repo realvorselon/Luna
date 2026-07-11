@@ -2,6 +2,13 @@
 
 ## 2026-07-11
 
+### Guided Return Button Depth Polish
+
+- Recorded that the first Guided Return human test passed technically: Orient → Remember → Choose navigation, backward navigation, returning to the full overview, and preserved editable values all worked.
+- Added a tiny CSS-only depth polish to the existing `.guided-control` and `.clear-local-edits-button` treatments in `prototype.html` so the guided controls and clear-local-edits button sit more clearly above the card surface.
+- Preserved the existing pill shape, gradients, borders, typography, focus treatment, HTML, JavaScript, localStorage keys, blank-value fallback behavior, clear-local-edits behavior and scope, guided navigation behavior, and Luna loop.
+- Updated `README.md`, `STATE.md`, `ROADMAP.md`, and `project.json` so the next suggested step is a human visual test of whether the controls now stand apart clearly enough while remaining calm and moonlit.
+
 ### First Guided Return Implementation Slice
 
 - Added one optional “Begin a guided return” entry point to `prototype.html`.
