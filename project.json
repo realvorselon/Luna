@@ -3,6 +3,10 @@
   "statusHistory": [
     {
       "date": "2026-07-11",
+      "note": "Added restrained Guided Return stage-change motion for Forward and Back navigation while preserving the full overview and editable values."
+    },
+    {
+      "date": "2026-07-11",
       "note": "Added the Guided Return motion experiment boundary while preserving the first-slice read-through conclusions."
     },
     {
@@ -15,7 +19,7 @@
     },
     {
       "date": "2026-07-11",
-      "note": "Added the first Guided Return implementation slice: an optional reversible Orient → Remember → Choose guided view in prototype.html while keeping the full overview available."
+      "note": "Added the first Guided Return implementation slice: an optional reversible Orient \u2192 Remember \u2192 Choose guided view in prototype.html while keeping the full overview available."
     },
     {
       "date": "2026-07-11",
@@ -67,7 +71,7 @@
     },
     {
       "date": "2026-07-10",
-      "note": "Added a tiny theme direction boundary for Luna’s finished moonlit garden / quiet desk / gentle return path vibe."
+      "note": "Added a tiny theme direction boundary for Luna\u2019s finished moonlit garden / quiet desk / gentle return path vibe."
     },
     {
       "date": "2026-07-10",
@@ -478,9 +482,9 @@
       "note": "The project is resting after a good run and ready for one gentle improvement."
     }
   ],
-  "currentGoal": "Human-review the Guided Return motion experiment boundary before choosing the next small experiment.",
-  "lastCompletedRun": "2026-07-11: Added the Guided Return motion experiment boundary while preserving the first-slice read-through conclusions.",
-  "nextStep": "Human-review docs/GUIDED_RETURN_MOTION_EXPERIMENT_BOUNDARY.md before deciding whether one tiny guided-stage motion experiment should proceed.",
+  "currentGoal": "Human-test the restrained Guided Return motion experiment for calm direction, responsiveness, preserved values, and reduced-motion behavior.",
+  "lastCompletedRun": "2026-07-11: Added restrained Guided Return stage-change motion for Forward and Back navigation while preserving the full overview and editable values.",
+  "nextStep": "Human-test Guided Return motion direction, responsiveness, preserved editable values, reduced-motion behavior where practical, and whether the guided path now feels less like extra clicking.",
   "dashboardGuide": [
     "Welcome starts the path to read through Record the Change before choosing more work.",
     "Status gives a quick snapshot of how the project is doing right now.",
@@ -491,9 +495,9 @@
     "Optional Reflection can wait; Philosophy Garden is a gentle reflection layer, not Luna's main engine."
   ],
   "futureIdeas": [
-    "Human-review the Guided Return motion experiment boundary before choosing the next small experiment.",
-    "Preserve the first Guided Return slice read-through as the recorded proof of what Orient → Remember → Choose already showed.",
-    "Preserve the full overview as the proven reference mode while considering any later guided motion experiment.",
+    "Human-test the restrained Guided Return motion direction, responsiveness, preserved editable values, reduced-motion behavior where practical, and whether the guided path now feels less like extra clicking.",
+    "Preserve the first Guided Return slice read-through as the recorded proof of what Orient \u2192 Remember \u2192 Choose already showed.",
+    "Preserve the full overview as the proven reference mode while evaluating the restrained guided motion experiment.",
     "Later, consider whether completely fresh users need a clearer introduction than the current prototype-oriented recipe/soup placeholder language."
   ],
   "decisionLog": [
@@ -510,8 +514,8 @@
     "The Garden Cycle connects the Reflection Card, Garden Review, Next Garden Update, and rest step so beginners can see how Philosophy Garden pieces fit together."
   ],
   "ideaQueue": [
-    "Human-review docs/GUIDED_RETURN_MOTION_EXPERIMENT_BOUNDARY.md before deciding whether one tiny guided-stage motion experiment should proceed.",
-    "If a motion experiment proceeds later, keep it limited to the existing Orient → Remember → Choose guided slice and respect reduced-motion preferences.",
+    "Human-test the existing Guided Return motion experiment before deciding whether to keep, tune, or remove it.",
+    "If the motion experiment continues later, keep it limited to the existing Orient \u2192 Remember \u2192 Choose guided slice and respect reduced-motion preferences.",
     "Do not automatically add Set Aside, Record, and Rest merely to complete the sequence.",
     "Protect the Luna loop and avoid turning Luna into a task manager, checklist system, workflow engine, or Jira with moon stickers."
   ],
@@ -548,10 +552,10 @@
     "Visit http://localhost:8000 in a browser to view the dashboard."
   ],
   "nextAction": {
-    "title": "Review first Guided Return proof",
-    "description": "Read the first Guided Return slice results, keep the full overview as the proven reference mode, and decide the most meaningful next experiment without automatically extending the six-stage sequence.",
-    "whyItMatters": "The first slice passed its initial technical and visual tests; the next move should come from what it proved, not from pressure to complete a workflow.",
-    "status": "Ready for review"
+    "title": "Human-test Guided Return motion",
+    "description": "Begin a guided return, move Forward and Back through Orient \u2192 Remember \u2192 Choose, return to the full overview, check preserved editable values, and try reduced-motion behavior where practical.",
+    "whyItMatters": "The first slice worked technically but felt like extra clicking; the motion experiment should prove whether a tiny settle cue makes the path calmer without becoming slow, flashy, or game-like.",
+    "status": "Ready for human test"
   },
   "creativeSeed": {
     "name": "Philosophy Garden",
@@ -620,6 +624,6 @@
   "currentMode": {
     "name": "Rest",
     "description": "Luna is resting after the first Guided Return slice passed its initial technical and visual human tests.",
-    "whyItMatters": "Rest protects the proven full overview and the intentionally limited Orient → Remember → Choose guided slice before choosing the next experiment."
+    "whyItMatters": "Rest protects the proven full overview and the intentionally limited Orient \u2192 Remember \u2192 Choose guided slice before choosing the next experiment."
   }
 }
