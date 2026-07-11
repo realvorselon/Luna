@@ -2,6 +2,14 @@
 
 ## 2026-07-11
 
+### Guided Return Outer Container Dark Surface Follow-Up
+
+- Recorded the human finding that the first dark-surface follow-up corrected the inner `.guided-stage-panel`, but the larger outer `.guided-return-view` still appeared too bright against the surrounding dark moonlit page.
+- Darkened only the `.guided-return-view` surface in `prototype.html` with a restrained navy/indigo treatment and calmer subtle border.
+- Reduced the large lighter-blue guided block effect visible on mobile while keeping the guided area bounded and distinct.
+- Preserved the inner `.guided-stage-panel`, surrounding page background, margin, padding, border radius, layout, spacing, box shadow structure, motion classes, timing, easing, JavaScript, navigation behavior, editable fields, localStorage behavior, stage content, full overview, and Philosophy Garden content.
+- Set Luna back to Rest and set the next suggested step to a human visual test comparing the full overview and Guided Return background continuity on mobile.
+
 ### Guided Return Dark Surface Follow-Up
 
 - Recorded the human finding that the first panel-level transition felt closer to the intended app-like direction, but introduced a brighter-than-intended guided surface.
