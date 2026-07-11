@@ -1,6 +1,10 @@
 {
-  "status": "Resting after theme direction boundary",
+  "status": "Ready for human review after path clarity polish",
   "statusHistory": [
+    {
+      "date": "2026-07-10",
+      "note": "Added a tiny path clarity polish to make the prototype return loop feel more guided."
+    },
     {
       "date": "2026-07-10",
       "note": "Added a tiny theme direction boundary for Luna’s finished moonlit garden / quiet desk / gentle return path vibe."
@@ -415,8 +419,8 @@
     }
   ],
   "currentGoal": "Help someone return to one small project, see where they left off and what changed last, choose one clear Next Action, know what to ignore for now, record the change, and rest before adding more while keeping Philosophy Garden clearly optional.",
-  "lastCompletedRun": "2026-07-10: Added a tiny theme direction boundary for Luna’s finished moonlit garden / quiet desk / gentle return path vibe.",
-  "nextStep": "Rest before deciding whether to do one tiny path/visual clarity polish in prototype.html, and before changing sample project copy again or adding any new behavior, more persistence, more editable cards, sessionStorage, cookies, backend, accounts, database, sync, dashboard expansion, visual redesign, mode workflow, multi-project system, or new Philosophy Garden content.",
+  "lastCompletedRun": "2026-07-10: Added a tiny path clarity polish to make the prototype return loop feel more guided.",
+  "nextStep": "Human review the tiny path clarity polish before adding any new behavior, more persistence, more editable cards, sessionStorage, cookies, backend, accounts, database, sync, dashboard expansion, visual redesign, mode workflow, multi-project system, or new Philosophy Garden content.",
   "dashboardGuide": [
     "Welcome starts the path to read through Record the Change before choosing more work.",
     "Status gives a quick snapshot of how the project is doing right now.",
@@ -427,7 +431,7 @@
     "Optional Reflection can wait; Philosophy Garden is a gentle reflection layer, not Luna's main engine."
   ],
   "futureIdeas": [
-    "Rest before deciding whether to do one tiny path/visual clarity polish in prototype.html, and before changing sample project copy again or adding any new behavior, more persistence, more editable cards, sessionStorage, cookies, backend, accounts, database, sync, dashboard expansion, visual redesign, mode workflow, multi-project system, or new Philosophy Garden content.",
+    "Human review the tiny path clarity polish before adding any new behavior, more persistence, more editable cards, sessionStorage, cookies, backend, accounts, database, sync, dashboard expansion, visual redesign, mode workflow, multi-project system, or new Philosophy Garden content.",
     "Review one existing sentence or section for beginner clarity, especially around returning to one small project and choosing one clear Next Action.",
     "Keep README.md, STATE.md, CHANGELOG.md, and project.json aligned whenever the public record changes.",
     "Only later consider surfacing an existing quiet item on the dashboard after the front door and current goal still feel calm."
@@ -444,7 +448,7 @@
     "The Garden Cycle connects the Reflection Card, Garden Review, Next Garden Update, and rest step so beginners can see how Philosophy Garden pieces fit together."
   ],
   "ideaQueue": [
-    "Rest before deciding whether to do one tiny path/visual clarity polish in prototype.html, and before changing sample project copy again or adding any new behavior, more persistence, more editable cards, sessionStorage, cookies, backend, accounts, database, sync, dashboard expansion, visual redesign, mode workflow, multi-project system, or new Philosophy Garden content.",
+    "Human review the tiny path clarity polish before adding any new behavior, more persistence, more editable cards, sessionStorage, cookies, backend, accounts, database, sync, dashboard expansion, visual redesign, mode workflow, multi-project system, or new Philosophy Garden content.",
     "Review one existing sentence or section for beginner clarity, especially around returning to one small project and choosing one clear Next Action.",
     "Keep README.md, STATE.md, CHANGELOG.md, and project.json aligned whenever the public record changes.",
     "Only later consider surfacing an existing quiet item on the dashboard after the front door and current goal still feel calm."
@@ -482,10 +486,10 @@
     "Visit http://localhost:8000 in a browser to view the dashboard."
   ],
   "nextAction": {
-    "title": "Rest before path polish",
-    "description": "Rest before deciding whether to do one tiny path/visual clarity polish in prototype.html, and before changing sample project copy again or adding any new behavior, more persistence, more editable cards, sessionStorage, cookies, backend, accounts, database, sync, dashboard expansion, visual redesign, mode workflow, multi-project system, or new Philosophy Garden content.",
-    "whyItMatters": "Rest keeps the theme direction from immediately becoming visual churn, while preparing Luna for one small polish that can make the return loop feel more path-like.",
-    "status": "Resting"
+    "title": "Human review path polish",
+    "description": "Human review the tiny path clarity polish before adding any new behavior, more persistence, more editable cards, sessionStorage, cookies, backend, accounts, database, sync, dashboard expansion, visual redesign, mode workflow, multi-project system, or new Philosophy Garden content.",
+    "whyItMatters": "A human review can confirm the prototype feels more guided and path-like without becoming a redesign or adding behavior.",
+    "status": "Ready for human review"
   },
   "creativeSeed": {
     "name": "Philosophy Garden",
@@ -553,7 +557,7 @@
   ],
   "currentMode": {
     "name": "Rest",
-    "description": "The theme direction boundary is recorded, and Luna is resting before deciding whether to do one tiny path/visual clarity polish.",
-    "whyItMatters": "Rest keeps the finished moonlit garden / quiet desk / gentle return path direction from immediately becoming visual churn or product expansion."
+    "description": "The tiny path clarity polish is in place, and Luna is resting for human review before any new behavior or expansion.",
+    "whyItMatters": "Rest keeps the prototype path-like and calm without turning a small clarity polish into a redesign or feature expansion."
   }
 }

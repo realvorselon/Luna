@@ -220,6 +220,32 @@
       border-color: rgb(189 200 238 / 26%);
     }
 
+    .return-path {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 14px 0 18px;
+      padding: 12px;
+      background: rgb(10 17 34 / 22%);
+      border: 1px solid rgb(174 190 226 / 18%);
+      border-radius: 999px;
+    }
+
+    .return-path span {
+      padding: 6px 10px;
+      color: var(--moon-soft);
+      background: rgb(189 200 238 / 8%);
+      border: 1px solid rgb(189 200 238 / 16%);
+      border-radius: 999px;
+      font-size: 0.88rem;
+      font-weight: 650;
+    }
+
+    .path-note {
+      max-width: 620px;
+      color: var(--silver);
+    }
+
     .footer-note {
       margin-top: 44px;
       color: var(--silver);
@@ -328,13 +354,22 @@
     </section>
 
     <section aria-labelledby="loop-order">
-      <h2 id="loop-order">The one-project return loop</h2>
+      <h2 id="loop-order">The gentle return path</h2>
+      <p class="path-note">Move through the same small loop each time, from orienting to resting, without turning the notes into a bigger system.</p>
+      <div class="return-path" aria-label="Return path steps">
+        <span>Orient</span>
+        <span>Notice</span>
+        <span>Choose</span>
+        <span>Leave alone</span>
+        <span>Record</span>
+        <span>Rest</span>
+      </div>
       <ol>
         <li>Return to the recipe-note project.</li>
         <li>Orient around the current notes.</li>
-        <li>See what changed last.</li>
+        <li>Notice what changed last.</li>
         <li>Choose one next action.</li>
-        <li>See what can wait.</li>
+        <li>Leave the larger ideas alone for now.</li>
         <li>Record one change.</li>
         <li>Rest before adding more.</li>
       </ol>
