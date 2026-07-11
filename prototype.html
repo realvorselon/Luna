@@ -200,6 +200,11 @@
       box-shadow: inset 0 1px 0 rgb(255 255 255 / 12%), 0 0 0 4px rgb(241 215 147 / 14%);
     }
 
+    .guided-entry {
+      margin-top: 18px;
+    }
+
+    .guided-control,
     .clear-local-edits-button {
       justify-self: start;
       padding: 11px 15px;
@@ -214,6 +219,8 @@
       cursor: pointer;
     }
 
+    .guided-control:hover,
+    .guided-control:focus,
     .clear-local-edits-button:hover,
     .clear-local-edits-button:focus {
       background:
@@ -222,9 +229,48 @@
       box-shadow: 0 12px 26px rgb(0 0 0 / 26%), 0 0 0 3px rgb(241 215 147 / 10%), inset 0 1px 0 rgb(255 255 255 / 12%);
     }
 
+    .guided-control:focus,
     .clear-local-edits-button:focus {
       outline: 2px solid rgb(241 215 147 / 55%);
       outline-offset: 2px;
+    }
+
+    .guided-return-view[hidden],
+    .full-overview[hidden] {
+      display: none;
+    }
+
+    .guided-return-view {
+      margin-top: 36px;
+      padding: 24px;
+      background: var(--card);
+      border: 1px solid var(--line-strong);
+      border-radius: 18px;
+      box-shadow: 0 18px 42px rgb(0 0 0 / 20%);
+    }
+
+    .guided-position {
+      margin-bottom: 10px;
+      color: var(--periwinkle);
+      font-size: 0.9rem;
+      font-weight: 750;
+    }
+
+    .guided-stage-body {
+      display: grid;
+      gap: 16px;
+      margin-top: 18px;
+    }
+
+    .guided-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 22px;
+    }
+
+    .overview-edit-anchor {
+      margin-top: 18px;
     }
 
     ul, ol { margin: 10px 0 0; padding-left: 1.2rem; color: var(--moon-soft); }
@@ -282,8 +328,24 @@
         <p>This sample uses public-safe fictional recipe notes. When you come back to it, reread what is already there, notice the one soup-note sentence that would help next, leave the larger ideas alone, and rest after recording the small change. You can try two small edits on this page; they save only in this browser, do not sync, and do not create an account.</p>
       </div>
       <div class="project-status">Local browser edit preview</div>
+      <div class="guided-entry">
+        <button class="guided-control" type="button" id="begin-guided-return-button">Begin a guided return</button>
+      </div>
     </header>
 
+    <section class="guided-return-view" id="guided-return-view" aria-labelledby="guided-stage-title" hidden>
+      <p class="guided-position" id="guided-position">Stage 1 of 3</p>
+      <h2 id="guided-stage-title" tabindex="-1">Orient</h2>
+      <p class="path-note" id="guided-stage-intro">Return to the project identity, current mode, and current goal before choosing anything new.</p>
+      <div class="guided-stage-body" id="guided-stage-body"></div>
+      <div class="guided-actions">
+        <button class="guided-control" type="button" id="guided-back-button">Back</button>
+        <button class="guided-control" type="button" id="guided-forward-button">Forward</button>
+        <button class="guided-control" type="button" id="return-overview-button">Return to full overview</button>
+      </div>
+    </section>
+
+    <div class="full-overview" id="full-overview">
     <section aria-labelledby="project-state">
       <h2 id="project-state">One project state</h2>
       <div class="loop-grid">
@@ -343,7 +405,8 @@
         <h3 id="next-action-display">Add one public-safe sentence to the broth note.</h3>
         <p>Keep it small: one general broth sentence is enough. Do not add a full recipe, grocery list, meal plan, or new project area.</p>
       </article>
-      <article class="try-editing-card" aria-labelledby="next-action-editing-title">
+      <div class="overview-edit-anchor" id="next-action-edit-anchor"></div>
+      <article class="try-editing-card" id="next-action-editing-card" aria-labelledby="next-action-editing-title">
         <span class="label">Try editing</span>
         <h3 id="next-action-editing-title">Change the one next action</h3>
         <p class="try-editing-note">Keep this to one small action you can return to. Not a list. Not the whole project. Avoid private secrets or anything harmful.</p>
@@ -401,6 +464,8 @@
       </ol>
     </section>
 
+    </div>
+
     <p class="footer-note"><a href="index.html">Return to the Luna dashboard</a>. This page stays separate from the self-demo dashboard and remains a tiny local browser-edit preview for the fictional recipe notes.</p>
   </main>
 
@@ -412,12 +477,78 @@
     const nextActionInput = document.querySelector('#next-action-input');
     const nextActionDisplay = document.querySelector('#next-action-display');
     const clearLocalEditsButton = document.querySelector('#clear-local-edits-button');
+    const beginGuidedReturnButton = document.querySelector('#begin-guided-return-button');
+    const guidedReturnView = document.querySelector('#guided-return-view');
+    const fullOverview = document.querySelector('#full-overview');
+    const guidedPosition = document.querySelector('#guided-position');
+    const guidedStageTitle = document.querySelector('#guided-stage-title');
+    const guidedStageIntro = document.querySelector('#guided-stage-intro');
+    const guidedStageBody = document.querySelector('#guided-stage-body');
+    const guidedBackButton = document.querySelector('#guided-back-button');
+    const guidedForwardButton = document.querySelector('#guided-forward-button');
+    const returnOverviewButton = document.querySelector('#return-overview-button');
+    const nextActionEditingCard = document.querySelector('#next-action-editing-card');
+    const nextActionEditAnchor = document.querySelector('#next-action-edit-anchor');
     const projectNameStorageKey = 'luna.prototype.projectName';
     const currentGoalStorageKey = 'luna.prototype.currentGoal';
     const nextActionStorageKey = 'luna.prototype.nextAction';
     const sampleProjectName = 'Moonlit Recipe Notes';
     const sampleCurrentGoal = 'Make the tiny collection understandable';
     const sampleNextAction = 'Add one public-safe sentence to the broth note.';
+    let guidedStageIndex = 0;
+
+    const escapeHtml = (value) => value
+      .replaceAll('&', '&amp;')
+      .replaceAll('<', '&lt;')
+      .replaceAll('>', '&gt;')
+      .replaceAll('"', '&quot;')
+      .replaceAll("'", '&#039;');
+
+    const guidedStages = [
+      {
+        title: 'Orient',
+        intro: 'Return to the project identity, current mode, and current goal before choosing anything new.',
+        render: () => `
+          <article class="card">
+            <span class="label">Project name</span>
+            <h3>${escapeHtml(projectNameDisplay.textContent)}</h3>
+            <p>A small public-safe notebook for three simple weeknight soup ideas.</p>
+          </article>
+          <article class="card">
+            <span class="label">Current Mode</span>
+            <h3>Orient</h3>
+            <p>Reread the soup notes, especially the broth section, and choose one small organizing step before adding more ideas.</p>
+          </article>
+          <article class="card">
+            <span class="label">Current goal</span>
+            <h3>${escapeHtml(currentGoalDisplay.textContent)}</h3>
+            <p>Keep each soup idea short enough that the next return starts with clear notes instead of a messy draft.</p>
+          </article>
+        `
+      },
+      {
+        title: 'Remember',
+        intro: 'Notice what changed last without expanding the project.',
+        render: () => `
+          <article class="card">
+            <span class="label">Last completed run</span>
+            <h3>2026-07-08: Named the three recipe note sections.</h3>
+            <p>The notebook now has simple sections for broth, vegetables, and serving notes. No private details or real household information were added.</p>
+          </article>
+        `
+      },
+      {
+        title: 'Choose',
+        intro: 'Use One Next Action as the lantern of the loop. Keep it to one action, not a list.',
+        render: () => `
+          <article class="lantern-card">
+            <span class="label">One Next Action</span>
+            <h3 id="guided-next-action-display">${escapeHtml(nextActionDisplay.textContent)}</h3>
+            <p>Keep it small: one general broth sentence is enough. Do not add a full recipe, grocery list, meal plan, or new project area.</p>
+          </article>
+        `
+      }
+    ];
 
     const syncEditableField = (input, display, fallbackDisplay, storageKey) => {
       const savedValue = localStorage.getItem(storageKey);
@@ -444,6 +575,63 @@
     const updateCurrentGoalDisplay = syncEditableField(currentGoalInput, currentGoalDisplay, sampleCurrentGoal, currentGoalStorageKey);
     syncEditableField(nextActionInput, nextActionDisplay, sampleNextAction, nextActionStorageKey);
 
+    nextActionInput.addEventListener('input', () => {
+      const guidedNextActionDisplay = document.querySelector('#guided-next-action-display');
+      if (guidedNextActionDisplay) {
+        guidedNextActionDisplay.textContent = nextActionDisplay.textContent;
+      }
+    });
+
+    const restoreNextActionEditorToOverview = () => {
+      nextActionEditAnchor.after(nextActionEditingCard);
+    };
+
+    const renderGuidedStage = () => {
+      const stage = guidedStages[guidedStageIndex];
+      guidedPosition.textContent = `Stage ${guidedStageIndex + 1} of ${guidedStages.length}`;
+      guidedStageTitle.textContent = stage.title;
+      guidedStageIntro.textContent = stage.intro;
+      guidedStageBody.innerHTML = stage.render();
+
+      if (stage.title === 'Choose') {
+        guidedStageBody.append(nextActionEditingCard);
+      } else {
+        restoreNextActionEditorToOverview();
+      }
+
+      guidedBackButton.hidden = guidedStageIndex === 0;
+      guidedForwardButton.hidden = guidedStageIndex === guidedStages.length - 1;
+    };
+
+    const showGuidedReturn = () => {
+      guidedStageIndex = 0;
+      fullOverview.hidden = true;
+      guidedReturnView.hidden = false;
+      renderGuidedStage();
+      guidedStageTitle.focus();
+    };
+
+    const showFullOverview = () => {
+      guidedReturnView.hidden = true;
+      fullOverview.hidden = false;
+      restoreNextActionEditorToOverview();
+      beginGuidedReturnButton.focus();
+    };
+
+    beginGuidedReturnButton.addEventListener('click', showGuidedReturn);
+
+    guidedBackButton.addEventListener('click', () => {
+      guidedStageIndex = Math.max(0, guidedStageIndex - 1);
+      renderGuidedStage();
+    });
+
+    guidedForwardButton.addEventListener('click', () => {
+      guidedStageIndex = Math.min(guidedStages.length - 1, guidedStageIndex + 1);
+      renderGuidedStage();
+    });
+
+    returnOverviewButton.addEventListener('click', showFullOverview);
+
     clearLocalEditsButton.addEventListener('click', () => {
       localStorage.removeItem(projectNameStorageKey);
       localStorage.removeItem(currentGoalStorageKey);
@@ -451,6 +639,9 @@
       currentGoalInput.value = sampleCurrentGoal;
       updateProjectNameDisplay();
       updateCurrentGoalDisplay();
+      if (!guidedReturnView.hidden) {
+        renderGuidedStage();
+      }
     });
   </script>
 </body>

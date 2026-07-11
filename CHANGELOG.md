@@ -2,6 +2,13 @@
 
 ## 2026-07-11
 
+### First Guided Return Implementation Slice
+
+- Added one optional “Begin a guided return” entry point to `prototype.html`.
+- Added a small reversible guided view for only Orient → Remember → Choose, with forward navigation, backward navigation where a previous stage exists, and a Return to full overview control at all times.
+- Kept the full overview available and intact, reused existing editable values, preserved existing localStorage keys and clear-local-edits scope, and avoided Set Aside, Record, Rest, task lists, checklists, new persistence, animations, graphics, backend, accounts, sync, or workflow behavior.
+- Updated `README.md`, `STATE.md`, `ROADMAP.md`, and `project.json` so the next suggested step is a human test of navigation, reversibility, preserved editable values, and whether the guided view feels calmer than the full-page form-like overview.
+
 ### Guided Return Phase Boundary
 
 - Added `docs/GUIDED_RETURN_PHASE_BOUNDARY.md` to define Guided Return as the next Luna phase direction after the completed single-project browser prototype phase.

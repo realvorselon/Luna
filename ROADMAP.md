@@ -62,6 +62,11 @@ This roadmap is intentionally small. Luna is a public dashboard prototype right 
 - The first stable dashboard loop is now in place; future work should preserve the one-step-at-a-time rhythm.
 - Aligned the roadmap with the README's longer-term vision for a calm project companion for small projects.
 
+## Guided Return Slice
+
+- The first Guided Return implementation slice is in place in `prototype.html`. It tests only Orient → Remember → Choose, keeps the full overview available as the proven reference mode, preserves existing editable values, and does not add Set Aside, Record, Rest, task lists, checklists, new persistence, or workflow behavior.
+- Next suggested step: human-test guided navigation, reversibility, preserved editable values, and whether the guided view feels calmer than the full-page form-like overview.
+
 ## Near Term
 
 - Use `docs/THEME_DIRECTION_BOUNDARY.md` as a filter before any later visual or copy polish.
