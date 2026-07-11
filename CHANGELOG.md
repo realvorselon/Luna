@@ -2,6 +2,14 @@
 
 ## 2026-07-11
 
+### Guided Return First Slice Read-Through
+
+- Added `docs/GUIDED_RETURN_FIRST_SLICE_READ_THROUGH.md` to record that the first small reversible Guided Return slice passed its initial technical and visual human tests.
+- Recorded that Orient → Remember → Choose navigation, backward navigation, returning to the full overview, and preserved editable values worked, with no technical blocker found.
+- Recorded that the initial visual blend issue justified one tiny CSS-only button-depth follow-up, and that the follow-up visual test now closes the remaining button-blend issue.
+- Preserved the full overview as the proven reference mode and kept the current guided slice intentionally limited to Orient → Remember → Choose.
+- Set Luna back to Rest and set the next suggested step to reviewing what the first slice actually proved before choosing the most meaningful next experiment, without automatically extending the full six-stage sequence.
+
 ### Guided Return Button Depth Polish
 
 - Recorded that the first Guided Return human test passed technically: Orient → Remember → Choose navigation, backward navigation, returning to the full overview, and preserved editable values all worked.

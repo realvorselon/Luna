@@ -3,6 +3,10 @@
   "statusHistory": [
     {
       "date": "2026-07-11",
+      "note": "Recorded that the first Guided Return slice passed its initial technical and visual human tests, and closed the button-blend issue."
+    },
+    {
+      "date": "2026-07-11",
       "note": "Added a tiny CSS-only button-depth polish after the first Guided Return human test passed technically and found only a remaining visual blend issue."
     },
     {
@@ -470,9 +474,9 @@
       "note": "The project is resting after a good run and ready for one gentle improvement."
     }
   ],
-  "currentGoal": "Visually test the small Guided Return button-depth polish after the first technical human test passed.",
-  "lastCompletedRun": "2026-07-11: Added a tiny CSS-only button-depth polish after the first Guided Return human test passed technically.",
-  "nextStep": "Human-test whether the guided controls and clear-local-edits button now stand apart clearly enough while remaining calm and moonlit.",
+  "currentGoal": "Review what the first Guided Return slice actually proved before choosing the next small experiment.",
+  "lastCompletedRun": "2026-07-11: Recorded that the first Guided Return slice passed its initial technical and visual human tests, and closed the button-blend issue.",
+  "nextStep": "Review what the first Guided Return slice actually proved and choose the most meaningful next experiment without automatically extending the full six-stage sequence.",
   "dashboardGuide": [
     "Welcome starts the path to read through Record the Change before choosing more work.",
     "Status gives a quick snapshot of how the project is doing right now.",
@@ -483,8 +487,8 @@
     "Optional Reflection can wait; Philosophy Garden is a gentle reflection layer, not Luna's main engine."
   ],
   "futureIdeas": [
-    "Define the boundary for the next Luna phase before implementing anything new.",
-    "Later, consider whether a guided path mode could complement the full-page overview without committing to navigation, transitions, animations, graphics, or a new interaction model now.",
+    "Review what the first Guided Return slice actually proved before choosing the next small experiment.",
+    "Preserve the full overview as the proven reference mode while considering any later guided experiment.",
     "Later, consider whether completely fresh users need a clearer introduction than the current prototype-oriented recipe/soup placeholder language."
   ],
   "decisionLog": [
@@ -501,9 +505,9 @@
     "The Garden Cycle connects the Reflection Card, Garden Review, Next Garden Update, and rest step so beginners can see how Philosophy Garden pieces fit together."
   ],
   "ideaQueue": [
-    "Human-test whether the guided controls and clear-local-edits button now stand apart clearly enough while remaining calm and moonlit.",
-    "Keep any further Guided Return polish small and visual-only unless a human test finds a clear usability issue.",
-    "Preserve the full overview as the proven reference mode before considering any later guided stages.",
+    "Review what the first Guided Return slice actually proved and choose the most meaningful next experiment.",
+    "Preserve Orient → Remember → Choose as the current limited guided slice unless a later experiment has a clear reason to extend it.",
+    "Do not automatically add Set Aside, Record, and Rest merely to complete the sequence.",
     "Protect the Luna loop and avoid turning Luna into a task manager, checklist system, workflow engine, or Jira with moon stickers."
   ],
   "ideaQueueGuide": [
@@ -539,10 +543,10 @@
     "Visit http://localhost:8000 in a browser to view the dashboard."
   ],
   "nextAction": {
-    "title": "Human-test Guided Return button depth",
-    "description": "Open the prototype, compare the guided controls and clear-local-edits button against the surrounding card surfaces, and confirm they now read as physical interactive controls without becoming glossy, bouncy, or loud.",
-    "whyItMatters": "The first Guided Return interaction already passed technically; this tiny follow-up checks whether the remaining visual blend issue is resolved while preserving Luna’s calm moonlit tone.",
-    "status": "Ready for human visual review"
+    "title": "Review first Guided Return proof",
+    "description": "Read the first Guided Return slice results, keep the full overview as the proven reference mode, and decide the most meaningful next experiment without automatically extending the six-stage sequence.",
+    "whyItMatters": "The first slice passed its initial technical and visual tests; the next move should come from what it proved, not from pressure to complete a workflow.",
+    "status": "Ready for review"
   },
   "creativeSeed": {
     "name": "Philosophy Garden",
@@ -610,7 +614,7 @@
   ],
   "currentMode": {
     "name": "Rest",
-    "description": "Luna is resting after a tiny CSS-only Guided Return button-depth polish.",
-    "whyItMatters": "Rest keeps the passed Guided Return interaction protected while a human checks whether the remaining visual blend issue is resolved."
+    "description": "Luna is resting after the first Guided Return slice passed its initial technical and visual human tests.",
+    "whyItMatters": "Rest protects the proven full overview and the intentionally limited Orient → Remember → Choose guided slice before choosing the next experiment."
   }
 }

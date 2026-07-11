@@ -6,19 +6,19 @@ Luna is an autonomous repository experiment and small public dashboard prototype
 
 ## Current Goal
 
-Visually test the small Guided Return button-depth polish after the first technical human test passed.
+Review what the first Guided Return slice actually proved before choosing the next small experiment.
 
 ## Last Completed Run
 
-- 2026-07-11: Added a tiny CSS-only button-depth polish after the first Guided Return human test passed technically.
+- 2026-07-11: Recorded that the first Guided Return slice passed its initial technical and visual human tests, and closed the button-blend issue.
 
 ## Next Suggested Step
 
-Human-test whether the guided controls and clear-local-edits button now stand apart clearly enough while remaining calm and moonlit.
+Review what the first Guided Return slice actually proved and choose the most meaningful next experiment without automatically extending the full six-stage sequence.
 
 ## Notes
 
-The first Guided Return human test passed technically: Orient → Remember → Choose navigation, backward navigation, returning to the full overview, and preserved editable values all work. The only remaining issue was visual: the guided controls and clear-local-edits button still blended into the surrounding surface a little. This run makes one tiny CSS-only depth polish in `prototype.html`, limited to the existing `.guided-control` and `.clear-local-edits-button` treatments, with a slightly stronger darker underside/drop shadow, a subtle top inset highlight, and a tiny hover lift. It keeps the existing pill shape, gradients, borders, typography, focus treatment, HTML, JavaScript, localStorage keys, blank fallback behavior, clear-local-edits scope, and guided navigation behavior unchanged. Luna is back at Rest. Next, human-test whether the guided controls and clear-local-edits button now stand apart clearly enough while remaining calm and moonlit.
+The Guided Return first slice read-through records that the first small reversible Guided Return slice passed its initial technical and visual human tests. Orient → Remember → Choose navigation, backward navigation, returning to the full overview, and preserved editable values worked, and no technical blocker was found. The initial visual observation was that the guided controls and clear-local-edits button blended into surrounding surfaces a little, which justified one tiny CSS-only button-depth follow-up. The follow-up human visual test confirmed that the buttons now stand apart clearly enough, remain calm and consistent with the moonlit visual direction, and close the remaining button-blend issue. No further button polish is needed now. The full overview remains available as the proven reference mode, and the current guided implementation remains intentionally limited to Orient → Remember → Choose. Do not automatically add Set Aside, Record, and Rest merely to complete the sequence. Luna is back at Rest. Next, review what the first Guided Return slice actually proved and choose the most meaningful next experiment.
 
 The Guided Return phase boundary defines the next Luna phase after the completed single-project browser prototype phase. Guided Return should explore whether Luna can feel less like a form and more like a calm path someone moves through, while preserving the proven one-project return loop. The conceptual path remains Orient → Remember → Choose → Set Aside → Record → Rest. It protects one-project focus, project identity, Current Mode, current goal, what changed last, one Next Action, Ignore For Now, Record the Change, and Rest; preserves access to the full overview; keeps One Next Action as the lantern; avoids turning Ignore For Now into a backlog; treats Rest as permission or state; and avoids making every section editable by default. The current single-project browser prototype phase remains complete and closed, and this documentation-only run does not change `prototype.html`, `index.html`, CSS, JavaScript, runtime behavior, controls, navigation, editable fields, localStorage behavior, blank-value fallback behavior, clear-local-edits behavior, transitions, animations, graphics, visual assets, backend, accounts, database, sync, AI generation, moderation logic, crisis detection, multi-project behavior, task lists, checklists, workflow engines, or Philosophy Garden content. Luna is back at Rest. Next, human-review `docs/GUIDED_RETURN_PHASE_BOUNDARY.md` and decide whether one small reversible guided-view slice should proceed.
 
