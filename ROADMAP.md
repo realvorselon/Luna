@@ -4,13 +4,14 @@ This roadmap is intentionally small. Luna is a public dashboard prototype right 
 
 ## Current Phase Direction
 
-- Guided Return is the current phase direction after the completed single-project browser prototype phase. Its boundary is `docs/GUIDED_RETURN_PHASE_BOUNDARY.md`, and the latest entrance read-through is `docs/GUIDED_RETURN_ENTRANCE_READ_THROUGH.md`.
-- The restrained entrance is a qualified human-test pass: pressing “Begin a guided return” now feels mostly softer and less abrupt, and no further entrance-motion polish is needed now without a new specific human usability finding.
-- Preserve the One Next Action gradient as intentional lantern emphasis. Keep the quieter Orient / Remember shared-stage visual-language observation as a later possibility, not an immediate CSS polish task.
-- Next: review what the current Guided Return experiments have genuinely proved, then choose the next meaningful product experiment rather than continuing automatic micro-polish or adding stages merely to complete the sequence.
+- Guided Return remains the active product direction after the completed single-project browser prototype phase. Its original phase boundary is `docs/GUIDED_RETURN_PHASE_BOUNDARY.md`; the next experiment boundary is `docs/GUIDED_RETURN_APP_SHELL_EXPERIMENT_BOUNDARY.md`.
+- The existing Guided Return experiments have produced enough evidence to stop automatic micro-polish on the current shell. Optional guided mode is viable, the full overview remains a useful reference mode, Forward / Back and Return to full overview work, editable values remain preserved, One Next Action works as the lantern, panel-level motion can help, the corrected mobile action layout seems better, and the restrained entrance feels mostly softer and less abrupt.
+- The current prototype remains the proven reference implementation, and the full overview remains the reference mode.
+- Next: human-review the app-shell boundary before implementing one bounded shell experiment for only Orient → Remember → Choose. Do not add Set Aside, Record, or Rest by default, and do not continue individual CSS or motion polish as the next automatic step.
 
 ## Completed
 
+- Added the Guided Return app-shell experiment boundary as the next direction after the existing Guided Return experiments produced enough evidence to stop automatic micro-polish.
 - Recorded the Guided Return entrance as a qualified human-test pass and preserved the One Next Action lantern emphasis plus the later quieter shared-stage visual-language observation.
 - Implemented one restrained Guided Return entrance experiment: the overview softly yields, the focused Guided Return surface arrives as a single visual unit, reduced-motion entry remains immediate, and the corrected mobile action layout remains closed without a new usability finding.
 - Recorded that the corrected Guided Return mobile action layout passed its initial human test, needs no further action-layout polish now, and leaves the abrupt Begin a guided return entrance as a separate possible follow-up.
@@ -89,10 +90,12 @@ This roadmap is intentionally small. Luna is a public dashboard prototype right 
 - The mobile correction removes the oversized stage-footprint approach, lets guided content use natural height, groups Back / Forward as the primary mobile navigation row, separates Return to full overview as secondary, and preserves the existing panel-level motion and dark surface findings.
 - The corrected mobile action layout passed its initial human test: it seems better, is good enough for this experiment, and needs no further action-layout polish without a new human usability finding.
 - Former remaining known issue: entering Guided Return after pressing “Begin a guided return” felt abrupt or clunky; this is now the focused entrance experiment and remains separate from the improved Forward / Back action layout.
-- Next suggested step: human mobile test the new Guided Return entrance for softness, visual comfort, scroll stability, preserved values, and whether it feels like entering a focused app screen; do not extend the six-stage sequence by default.
+- The restrained entrance now feels mostly softer and less abrupt, completing enough evidence for this exact shell. The next direction is an app-shell experiment that tests the container and spatial experience, not another individual color, shadow, duration, card, motion, or mobile-control tweak.
 
 ## Near Term
 
+- Human-review `docs/GUIDED_RETURN_APP_SHELL_EXPERIMENT_BOUNDARY.md` before implementing one bounded shell experiment for Orient → Remember → Choose.
+- Preserve the current prototype as the proven reference implementation and the full overview as the reference mode.
 - Use `docs/THEME_DIRECTION_BOUNDARY.md` as a filter before any later visual or copy polish.
 - Define the boundary for the next Luna phase before implementing anything new.
 
