@@ -8,7 +8,7 @@
 
 ## Current Readiness Correction
 
-A human-readiness motion comfort blocker has been corrected: Luna’s Guided Return and guided-entry transitions now avoid large directional movement, use calm fade-only swaps, keep the stage panel steadier during stage changes, and strengthen reduced-motion behavior while preserving the existing structure and behavior. Luna remains at Rest. Next: human mobile-test motion comfort with very brief exposure by moving through Guided Return one stage at a time and confirming transitions no longer cause nausea or visual discomfort.
+A blocking mobile layout regression from the Guided Return size-stability pass has been corrected: Guided Return now favors readable normal-flow layout over a clipped rigid frame, keeps stage text/content/actions in separate non-overlapping regions, and removes mobile sticky action overlay behavior that could hide content. Luna remains at Rest. Next: human mobile-test Guided Return readability only: verify no overlapping text, no content hidden under actions, and no broken internal scroll before broader discussion.
 
 ## Current v0.1 Direction
 

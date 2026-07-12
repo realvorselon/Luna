@@ -1,9 +1,9 @@
-## Guided Return size-stability correction
+## Guided Return mobile layout regression fix
 
-- Stabilized the Guided Return stage frame so Orient → Remember → Choose → Set Aside → Record → Rest keep a steadier panel height on desktop and mobile.
-- Kept longer stage content scrollable inside the stable panel and reserved a steadier action area so buttons no longer cause dramatic stage-to-stage jumps.
+- Restored Guided Return mobile readability by letting the stage panel use normal document flow instead of a clipped fixed frame.
+- Separated stage position, title, intro, content, and actions into non-overlapping layout regions; actions no longer use sticky overlay behavior on mobile.
 - Preserved fade-only motion, reduced-motion protections, calmer visual comfort CSS, editing clarity, the five local-only storage keys, input maxlengths, safe rendering, deterministic guidance, and the complete Guided Return loop.
-- Luna is back at Rest. Next: human mobile-test Guided Return size stability with brief exposure, moving one stage at a time.
+- Luna is back at Rest. Next: human mobile-test Guided Return readability only: verify no overlapping text, no content hidden under actions, and no broken internal scroll.
 
 # Luna
 

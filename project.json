@@ -3,6 +3,10 @@
   "statusHistory": [
     {
       "date": "2026-07-12",
+      "note": "2026-07-12: Fixed the blocking Guided Return mobile layout regression from the size-stability pass by replacing the clipped rigid frame and sticky mobile action overlay with non-overlapping normal-flow stage header, content, and action regions while preserving fade-only motion, visual comfort, editing clarity, five storage keys, maxlengths, safe rendering, deterministic guidance, no network calls, and the complete loop."
+    },
+    {
+      "date": "2026-07-12",
       "note": "2026-07-12: Corrected the remaining Guided Return size-stability blocker by giving the stage panel stable desktop/mobile block sizing, keeping overflowing stage content scrollable inside the panel, stabilizing the guided action area, and preserving fade-only motion, reduced-motion behavior, visual comfort CSS, five local storage keys, maxlengths, safe rendering, deterministic guidance, and the complete loop."
     },
     {
@@ -715,9 +719,9 @@
   ],
   "currentMode": {
     "name": "Rest",
-    "description": "Luna is resting after a focused Guided Return size-stability correction.",
-    "whyItMatters": "Rest protects the opening threshold, Shape this return, Apply → Undo, clearer full overview editing panel, five saved project values, local-only storage, deterministic guidance, safe rendering, mobile containment, mobile visual comfort, fade-only motion, and complete Guided Return loop while human mobile size-stability testing happens.",
+    "description": "Luna is resting after a focused Guided Return mobile layout regression fix.",
+    "whyItMatters": "Rest protects the opening threshold, Shape this return, Apply → Undo, clearer full overview editing panel, five saved project values, local-only storage, deterministic guidance, safe rendering, mobile containment, mobile visual comfort, fade-only motion, and complete Guided Return loop while human mobile readability testing happens.",
     "value": "Rest"
   },
-  "nextSuggestedStep": "Human mobile-test Guided Return size stability with brief exposure: move one stage at a time and confirm the panel no longer visibly jumps or resizes in a discomforting way."
+  "nextSuggestedStep": "Human mobile-test Guided Return readability only: verify no overlapping text, no content hidden under actions, and no broken internal scroll before any broader project discussion."
 }

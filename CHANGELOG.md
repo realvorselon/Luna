@@ -9,6 +9,13 @@
 
 ## 2026-07-12
 
+### Guided Return Mobile Layout Regression Fix
+
+- Replaced the rigid clipped Guided Return stage frame with a calmer normal-flow minimum size so mobile content remains readable.
+- Kept stage position, title, intro, body content, and action buttons in separate non-overlapping regions, and removed the mobile sticky action overlay that could obscure content.
+- Preserved fade-only transitions, visual comfort protections, editing clarity, all five inputs and maxlengths, five storage keys, no network calls, no `Math.random()`, safe rendering paths, and the complete Guided Return loop.
+- Set Luna back to Rest; next is human mobile readability testing for overlap, hidden content, and broken internal scroll only.
+
 ### Guided Return Motion Comfort Correction
 
 - Replaced Guided Return directional stage movement with calm fade-only stage swaps and shorter fallback timings.
