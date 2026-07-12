@@ -253,6 +253,8 @@
     }
 
     .guided-return-view {
+      display: grid;
+      gap: 18px;
       margin-top: 36px;
       padding: 24px;
       background:
@@ -263,6 +265,9 @@
     }
 
     .guided-stage-panel {
+      display: grid;
+      grid-template-rows: auto auto 1fr;
+      min-height: clamp(460px, 58svh, 560px);
       padding: 18px;
       background:
         linear-gradient(180deg, rgb(22 31 59 / 96%), rgb(13 20 42 / 98%));
@@ -328,6 +333,7 @@
 
     .guided-stage-body {
       display: grid;
+      align-content: start;
       gap: 16px;
       margin-top: 18px;
     }
@@ -336,7 +342,7 @@
       display: flex;
       flex-wrap: wrap;
       gap: 10px;
-      margin-top: 22px;
+      margin-top: 0;
     }
 
     .overview-edit-anchor {
@@ -386,6 +392,15 @@
     @media (max-width: 680px) {
       main { padding-top: 44px; }
       .loop-grid { grid-template-columns: 1fr; }
+      .guided-return-view {
+        gap: 16px;
+        margin-top: 30px;
+        padding: 18px;
+      }
+      .guided-stage-panel {
+        min-height: clamp(520px, 68svh, 640px);
+        padding: 16px;
+      }
     }
   </style>
 </head>

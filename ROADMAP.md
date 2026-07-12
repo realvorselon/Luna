@@ -5,10 +5,11 @@ This roadmap is intentionally small. Luna is a public dashboard prototype right 
 ## Current Phase Direction
 
 - Guided Return is the next phase direction after the completed single-project browser prototype phase. Its boundary is `docs/GUIDED_RETURN_PHASE_BOUNDARY.md`.
-- Next: human visually test the full overview and Guided Return background continuity on mobile.
+- Next: human mobile test Guided Return stage-height stability, navigation position, no clipped content, preserved editable values, One Next Action editor usability, and whether scrolling is still required merely because the next stage is taller.
 
 ## Completed
 
+- Stabilized the Guided Return stage footprint after human mobile testing found uneven stage heights made the panel-level transition feel clunky and could require scrolling to find the next controls.
 - Darkened only the outer `.guided-return-view` after human testing found the first dark-surface follow-up corrected the inner panel but the larger guided container still appeared too bright against the moonlit page.
 - Darkened the Guided Return stage panel surface after human testing found the first panel-level transition made the guided area brighter than the surrounding moonlit prototype.
 - Replaced the first quick 220ms Guided Return micro-transition with a calmer app-like panel-level Forward / Back transition, after human testing found the first treatment too quick and visually uncomfortable.
@@ -80,7 +81,8 @@ This roadmap is intentionally small. Luna is a public dashboard prototype right 
 - A human test found the first panel-level transition felt closer to the intended app-like direction, but the guided stage surface looked too bright / translucent and created a double-layered lighter-card mismatch against the dark moonlit prototype.
 - A first tiny visual-only follow-up darkened the `.guided-stage-panel` surface and restrained its border / inset highlight while preserving the existing panel motion, timing, easing, JavaScript, navigation behavior, layout, content, editable fields, and localStorage behavior.
 - The latest tiny CSS-only follow-up darkens only the outer `.guided-return-view` surface after human testing found the inner panel was corrected but the outer guided container still made a large lighter-blue region, especially on mobile.
-- Next suggested step: human visually test the full overview and Guided Return background continuity on mobile; do not extend the six-stage sequence by default.
+- The latest layout follow-up stabilizes the shared Guided Return stage footprint and panel-to-controls gap on mobile after human testing found uneven stage heights made Forward / Back controls feel like they moved down the page; it preserves the current panel-level motion experiment unchanged.
+- Next suggested step: human mobile test stage-height stability, navigation position, no clipped content, preserved editable values, One Next Action editor usability, and whether scrolling is still required merely because the next stage is taller; do not extend the six-stage sequence by default.
 
 ## Near Term
 

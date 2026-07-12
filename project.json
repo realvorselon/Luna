@@ -2,6 +2,10 @@
   "status": "Rest",
   "statusHistory": [
     {
+      "date": "2026-07-12",
+      "note": "Stabilized the Guided Return stage footprint after human mobile testing found uneven Orient, Remember, and Choose heights made the panel-level transition feel clunky and could require scrolling to find the next controls."
+    },
+    {
       "date": "2026-07-11",
       "note": "Darkened only the outer Guided Return container after human testing found the first dark-surface follow-up corrected the inner panel but left the larger guided area too bright."
     },
@@ -494,9 +498,9 @@
       "note": "The project is resting after a good run and ready for one gentle improvement."
     }
   ],
-  "currentGoal": "Human visually test the full overview and Guided Return background continuity on mobile.",
-  "lastCompletedRun": "2026-07-11: Darkened only the outer `.guided-return-view` container after human testing found the inner panel was corrected but the larger guided area still appeared too bright.",
-  "nextStep": "Human visually test the full overview and Guided Return background continuity on mobile.",
+  "currentGoal": "Human mobile test Guided Return stage-height stability, navigation position, no clipped content, preserved editable values, and whether scrolling is still required merely because the next stage is taller.",
+  "lastCompletedRun": "2026-07-12: Stabilized the Guided Return stage footprint so Orient, Remember, and Choose share a more predictable mobile layout without changing the motion experiment.",
+  "nextStep": "Human mobile test Guided Return stage-height stability, navigation position, no clipped content, preserved editable values, and whether scrolling is still required merely because the next stage is taller.",
   "dashboardGuide": [
     "Welcome starts the path to read through Record the Change before choosing more work.",
     "Status gives a quick snapshot of how the project is doing right now.",
@@ -507,10 +511,10 @@
     "Optional Reflection can wait; Philosophy Garden is a gentle reflection layer, not Luna's main engine."
   ],
   "futureIdeas": [
-    "Human visually test the full overview and Guided Return background continuity on mobile.",
-    "Preserve the first Guided Return slice read-through as the recorded proof of what Orient → Remember → Choose already showed.",
-    "Preserve the full overview as the proven reference mode while evaluating the panel-level guided transition experiment.",
-    "Later, consider whether completely fresh users need a clearer introduction than the current prototype-oriented recipe/soup placeholder language."
+    "Human mobile test Guided Return stage-height stability, navigation position, no clipped content, preserved editable values, and whether scrolling is still required merely because the next stage is taller.",
+    "Preserve the current app-like panel-level Forward / Back motion experiment while evaluating the stabilized guided-stage geometry.",
+    "Preserve the earlier human findings: the first 220ms micro-transition was too fast, the panel-level direction is closer to the intended app-like feel, and the dark-surface corrections restored moonlit continuity.",
+    "Later, consider the still-clunky Begin a guided return entrance only after stage geometry is human-tested."
   ],
   "decisionLog": [
     "2026-07-11: The first Guided Return dark-surface follow-up corrected the inner panel, but the outer guided container still appeared too bright; this follow-up should only darken `.guided-return-view` while preserving the panel-level motion experiment.",
@@ -527,9 +531,9 @@
     "The Garden Cycle connects the Reflection Card, Garden Review, Next Garden Update, and rest step so beginners can see how Philosophy Garden pieces fit together."
   ],
   "ideaQueue": [
-    "Human-test the full overview and Guided Return background continuity on mobile before deciding whether to keep, tune, or remove the panel-level transition.",
-    "If the motion experiment continues later, keep it limited to the existing Orient → Remember → Choose guided slice and respect reduced-motion preferences.",
-    "Do not automatically add Set Aside, Record, and Rest merely to complete the sequence.",
+    "Human-test whether the shared guided-stage footprint keeps Forward / Back controls easy to find on mobile across Orient, Remember, and Choose.",
+    "Confirm no guided-stage content is clipped and that the One Next Action editor remains usable in Choose.",
+    "Do not add an entrance animation, new guided stages, or Set Aside / Record / Rest before the stage-height stability test.",
     "Protect the Luna loop and avoid turning Luna into a task manager, checklist system, workflow engine, or Jira with moon stickers."
   ],
   "ideaQueueGuide": [
@@ -565,9 +569,9 @@
     "Visit http://localhost:8000 in a browser to view the dashboard."
   ],
   "nextAction": {
-    "title": "Human-test Guided Return background continuity",
-    "description": "On mobile, compare the full overview against the Guided Return view after pressing “Begin a guided return,” checking whether the outer guided container now feels dark, bounded, and continuous with the moonlit page.",
-    "whyItMatters": "The first dark-surface follow-up fixed the inner stage panel, but the larger outer guided container still created a lighter-blue block; this test confirms whether darkening only `.guided-return-view` restores continuity without changing motion or behavior.",
+    "title": "Human-test Guided Return stage stability",
+    "description": "On mobile, move through Begin a guided return, Orient, Remember, Choose, and Back while checking that the controls stay in roughly the same place, no content is clipped, the One Next Action editor remains usable, and editable values are preserved.",
+    "whyItMatters": "A human mobile test found uneven stage heights made the current panel-level transition feel clunky and could force someone to scroll again to find Forward / Back; this verifies the geometry fix before any entrance animation work.",
     "status": "Ready for human test"
   },
   "creativeSeed": {
@@ -636,7 +640,7 @@
   ],
   "currentMode": {
     "name": "Rest",
-    "description": "Luna is resting after darkening only the outer Guided Return container without changing the inner panel, motion, or behavior.",
-    "whyItMatters": "Rest protects the restrained Guided Return visual correction and the intentionally limited Orient → Remember → Choose guided slice before choosing any new behavior or sequence expansion."
+    "description": "Luna is resting after stabilizing the Guided Return stage footprint without changing the current panel-level motion experiment.",
+    "whyItMatters": "Rest protects the intentionally limited Orient → Remember → Choose guided slice while a human mobile test checks stage-height stability, navigation position, no clipped content, preserved editable values, and whether scrolling is still required merely because the next stage is taller."
   }
 }

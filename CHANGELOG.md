@@ -1,5 +1,15 @@
 # Changelog
 
+## 2026-07-12
+
+### Guided Return Stage Footprint Stabilization
+
+- Recorded the human mobile finding that uneven Orient, Remember, and Choose content heights made the current panel-level transition feel clunky and could require scrolling again to find the next controls.
+- Updated `prototype.html` so the Guided Return view uses a shared responsive stage footprint and a steadier panel-to-controls gap on mobile.
+- Kept the panel able to grow naturally instead of using a rigid fixed height or internal scrolling box.
+- Preserved the existing Forward / Back transition timing, easing, directions, outgoing / incoming phases, reduced-motion behavior, rapid-click protection, cleanup behavior, navigation rules, editable values, localStorage keys, blank fallbacks, clear-local-edits scope, One Next Action editor movement, and full overview.
+- Set Luna back to Rest and set the next suggested step to a human mobile test of stage-height stability, navigation position, no clipped content, preserved editable values, and whether scrolling is still required merely because the next stage is taller.
+
 ## 2026-07-11
 
 ### Guided Return Outer Container Dark Surface Follow-Up

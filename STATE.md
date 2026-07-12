@@ -6,17 +6,19 @@ Luna is an autonomous repository experiment and small public dashboard prototype
 
 ## Current Goal
 
-Human-test the full overview and Guided Return background continuity on mobile after darkening only the outer guided container.
+Human mobile test Guided Return stage-height stability, navigation position, no clipped content, preserved editable values, and whether scrolling is still required merely because the next stage is taller.
 
 ## Last Completed Run
 
-- 2026-07-11: Darkened only the outer `.guided-return-view` container after human testing found the first dark-surface follow-up corrected the inner panel but left the larger guided area too bright on the moonlit page.
+- 2026-07-12: Stabilized the Guided Return stage footprint in `prototype.html` after human mobile testing found uneven stage heights made the panel-level transition feel clunky and could require scrolling to find the next controls.
 
 ## Next Suggested Step
 
-Human visually test the full overview and Guided Return background continuity on mobile.
+Human mobile test Guided Return stage-height stability, navigation position, no clipped content, preserved editable values, and whether scrolling is still required merely because the next stage is taller.
 
 ## Notes
+
+The Guided Return stage-footprint stabilization records a human mobile finding that Orient, Remember, and Choose had noticeably different content heights. Moving Forward to a taller stage could push content and navigation farther down the page, making the human scroll again to find or use the next controls and making the otherwise-improved panel-level transition feel clunky instead of like sibling app screens. This run keeps the guided slice limited to Orient → Remember → Choose, keeps the current app-like Forward / Back motion timing, easing, direction, reduced-motion behavior, rapid-click protection, and cleanup behavior unchanged, and only stabilizes geometry: `.guided-return-view` now lays out the stage panel and controls with a consistent gap, while `.guided-stage-panel` has a shared responsive minimum height that can still grow naturally for very small screens or accessibility text scaling. Luna is back at Rest. Next, human mobile test stage-height stability, navigation position, no clipped content, preserved editable values, One Next Action editor usability, and whether scrolling is still required merely because the next stage is taller.
 
 The Guided Return outer container follow-up records a human finding that the first dark-surface follow-up corrected the inner `.guided-stage-panel`, but the larger outer `.guided-return-view` still appeared too bright and created the main remaining lighter-blue block effect against the dark moonlit page, especially on mobile. This tiny CSS-only run darkens only the outer `.guided-return-view` surface with a restrained navy/indigo treatment and calmer subtle border while preserving the inner stage panel, panel-level motion experiment, timing, easing, JavaScript, navigation behavior, editable fields, localStorage behavior, layout, spacing, stage content, full overview, and surrounding page background. Luna is back at Rest. Next, human visually test the full overview and Guided Return background continuity on mobile.
 
