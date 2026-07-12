@@ -1,5 +1,9 @@
 # Roadmap
 
+## Current Readiness Correction
+
+A human-readiness issue in the full overview/editing area has been corrected: the existing local project-context fields now read more clearly as editable inputs. Luna remains at Rest. Next: human mobile-test the full overview/editing area and confirm the fields are obvious, understandable, and visually distinct before running another full readiness pass.
+
 ## Current v0.1 Direction
 
 Luna has completed one bounded v0.1 stabilization and coherence pass after the recent human-tested slices. The next step is a human v0.1 readiness test on mobile through the complete flow: opening threshold → Shape this return → Apply/Undo → full overview → Guided Return → Rest → Return to Luna. If a blocking issue appears, fix only that issue; otherwise keep Luna at Rest.

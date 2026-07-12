@@ -3,6 +3,10 @@
   "statusHistory": [
     {
       "date": "2026-07-12",
+      "note": "2026-07-12: Corrected the full overview/editing clarity issue by making the existing five local project-context fields read as a visible editing panel with clearer local-only copy, while preserving storage keys, maxlengths, Clear local edits, Shape this return, Apply/Undo, safe rendering, deterministic guidance, no network calls, mobile containment, and the complete Guided Return loop."
+    },
+    {
+      "date": "2026-07-12",
       "note": "2026-07-12: Completed a bounded v0.1 stabilization/coherence pass: cleaned generated Record and Rest punctuation, aligned return-path wording, preserved tested behavior, and extended static regression checks."
     },
     {
@@ -554,9 +558,9 @@
       "note": "The project is resting after a good run and ready for one gentle improvement."
     }
   ],
-  "currentGoal": "Rest after a bounded v0.1 stabilization and coherence pass.",
-  "lastCompletedRun": "2026-07-12: Completed a bounded v0.1 stabilization/coherence pass: cleaned generated Record and Rest punctuation, aligned return-path wording, preserved tested behavior, and extended static regression checks.",
-  "nextStep": "Human v0.1 readiness test on mobile: run the complete flow from opening threshold through Shape this return, Apply/Undo, full overview, Guided Return, Rest, and Return to Luna.",
+  "currentGoal": "Rest after a focused full-overview editing clarity correction.",
+  "lastCompletedRun": "2026-07-12: Corrected the full overview/editing clarity issue by making the existing five local project-context fields read as a visible editing panel with clearer local-only copy, while preserving storage keys, maxlengths, Clear local edits, Shape this return, Apply/Undo, safe rendering, deterministic guidance, no network calls, mobile containment, and the complete Guided Return loop.",
+  "nextStep": "Human mobile-test the full overview/editing area and confirm the editable fields are obvious, understandable, and visually distinct before running another full readiness pass.",
   "dashboardGuide": [
     "Welcome starts the path to read through Record the Change before choosing more work.",
     "Status gives a quick snapshot of how the project is doing right now.",
@@ -628,10 +632,10 @@
     "Visit http://localhost:8000 in a browser to view the dashboard."
   ],
   "nextAction": {
-    "title": "Human v0.1 mobile readiness test",
-    "description": "Human v0.1 readiness test on mobile: run the complete flow from opening threshold through Shape this return, Apply/Undo, full overview, Guided Return, Rest, and Return to Luna.",
-    "whyItMatters": "This verifies the stabilized existing flow end to end without adding new features.",
-    "status": "Resting before human readiness test"
+    "title": "Human mobile-test full overview editing clarity",
+    "description": "Human mobile-test the full overview/editing area and confirm the editable fields are obvious, understandable, and visually distinct before running another full readiness pass.",
+    "whyItMatters": "This verifies that the existing editable local project context is obvious and understandable before another full readiness pass.",
+    "status": "Resting before human mobile test"
   },
   "creativeSeed": {
     "name": "Philosophy Garden",
@@ -699,9 +703,9 @@
   ],
   "currentMode": {
     "name": "Rest",
-    "description": "Luna is resting after a bounded v0.1 stabilization and coherence pass.",
-    "whyItMatters": "Rest protects the human-tested opening threshold, Shape this return, Apply \u2192 Undo, full overview navigation, complete Guided Return loop, five saved project values, deterministic local guidance, input limits, safe rendering, accessibility, motion cleanup, and mobile containment while readiness testing happens.",
+    "description": "Luna is resting after a focused full-overview editing clarity correction.",
+    "whyItMatters": "Rest protects the opening threshold, Shape this return, Apply \u2192 Undo, clearer full overview editing panel, five saved project values, local-only storage, deterministic guidance, safe rendering, mobile containment, and complete Guided Return loop while human mobile testing happens.",
     "value": "Rest"
   },
-  "nextSuggestedStep": "Human v0.1 readiness test on mobile: run the complete flow from opening threshold through Shape this return, Apply/Undo, full overview, Guided Return, Rest, and Return to Luna."
+  "nextSuggestedStep": "Human mobile-test the full overview/editing area and confirm the editable fields are obvious, understandable, and visually distinct before running another full readiness pass."
 }

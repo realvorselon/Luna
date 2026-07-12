@@ -84,6 +84,12 @@ const html = fs.readFileSync('prototype.html', 'utf8');
 const js = fs.readFileSync('prototype-guidance.js', 'utf8');
 assert(!/Math\.random\s*\(/.test(js), 'guidance must not use Math.random');
 assert(!/\bfetch\s*\(/.test(html + js), 'local guidance must not call fetch');
+assert(html.includes('Edit Luna’s current project'), 'overview should include a clear editing-area heading');
+assert(html.includes('Changing them updates Luna’s opening, Shape this return, and Guided Return'), 'overview should explain what the editable context updates');
+assert(html.includes('stores the five values only in this browser'), 'overview should explain local-only storage');
+for (const id of ['project-name-input', 'current-goal-input', 'next-action-input', 'set-aside-input', 'record-change-input']) {
+  assert(html.includes(`id="${id}"`), `${id} should remain present`);
+}
 assert.equal((html.match(/maxlength="80"/g) || []).length, 1);
 assert.equal((html.match(/maxlength="160"/g) || []).length, 1);
 assert.equal((html.match(/maxlength="140"/g) || []).length, 2);

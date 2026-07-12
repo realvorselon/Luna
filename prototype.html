@@ -331,36 +331,51 @@
 
     .try-editing-card {
       margin-top: 18px;
-      padding: 20px;
-      background: var(--card);
-      border: 1px solid var(--line-strong);
-      border-radius: 16px;
-      box-shadow: 0 14px 34px rgb(0 0 0 / 16%);
+      padding: clamp(20px, 4vw, 26px);
+      background:
+        radial-gradient(circle at 92% 0%, rgb(241 215 147 / 10%), transparent 15rem),
+        linear-gradient(145deg, rgb(43 53 88 / 96%), rgb(15 24 49 / 98%));
+      border: 1px solid rgb(241 215 147 / 34%);
+      border-radius: 20px;
+      box-shadow:
+        0 20px 48px rgb(0 0 0 / 24%),
+        inset 0 1px 0 rgb(255 255 255 / 8%);
+    }
+
+    .try-editing-card h3 {
+      margin-bottom: 10px;
+      font-size: clamp(1.15rem, 4vw, 1.35rem);
     }
 
     .try-editing-note {
-      margin: 0 0 16px;
+      max-width: 650px;
+      margin: 0 0 20px;
       color: var(--moon-soft);
+      font-size: 0.98rem;
     }
 
     .edit-fields {
       display: grid;
-      gap: 14px;
+      gap: 18px;
       min-width: 0;
       max-width: 100%;
     }
 
     .edit-field {
       display: grid;
-      gap: 7px;
+      gap: 8px;
       min-width: 0;
       max-width: 100%;
+      padding: 14px;
+      background: rgb(8 13 30 / 34%);
+      border: 1px solid rgb(189 200 238 / 16%);
+      border-radius: 16px;
     }
 
     .edit-field label {
-      color: var(--periwinkle);
-      font-size: 0.86rem;
-      font-weight: 750;
+      color: #fbf4e2;
+      font-size: 0.9rem;
+      font-weight: 800;
     }
 
     .edit-field input {
@@ -368,13 +383,13 @@
       width: 100%;
       min-width: 0;
       max-width: 100%;
-      padding: 12px 13px;
+      padding: 13px 14px;
       color: var(--moon);
       background:
-        linear-gradient(180deg, rgb(34 44 76 / 96%), rgb(24 33 61 / 96%));
-      border: 1px solid rgb(196 205 238 / 48%);
+        linear-gradient(180deg, rgb(52 62 98 / 98%), rgb(34 44 76 / 98%));
+      border: 1px solid rgb(223 230 244 / 62%);
       border-radius: 12px;
-      box-shadow: inset 0 1px 0 rgb(255 255 255 / 9%), 0 0 0 3px rgb(189 200 238 / 8%);
+      box-shadow: inset 0 1px 0 rgb(255 255 255 / 13%), 0 0 0 3px rgb(189 200 238 / 10%);
       font: inherit;
       cursor: text;
     }
@@ -901,33 +916,33 @@
         </article>
       </div>
       <article class="try-editing-card" aria-labelledby="try-editing-title">
-        <span class="label">Try editing</span>
-        <h3 id="try-editing-title">Edit the small project context</h3>
-        <p class="try-editing-note">These edits save only in this browser. They do not sync, create an account, or turn Luna into a project manager.</p>
+        <span class="label">Editable project context</span>
+        <h3 id="try-editing-title">Edit Luna’s current project</h3>
+        <p class="try-editing-note">These are sample/local project values. Changing them updates Luna’s opening, Shape this return, and Guided Return, and stores the five values only in this browser.</p>
         <div class="edit-fields">
           <div class="edit-field">
             <label for="project-name-input">Project name</label>
             <input id="project-name-input" type="text" value="A quiet unfinished project" autocomplete="off" maxlength="80" aria-describedby="project-name-helper project-name-count">
             <p class="character-feedback" id="project-name-count" aria-live="polite">0 / 80</p>
-            <p class="edit-helper" id="project-name-helper">The one project Luna will name at the opening threshold.</p>
+            <p class="edit-helper" id="project-name-helper">The sample/local project name Luna shows at the opening threshold and in Guided Return.</p>
           </div>
           <div class="edit-field">
             <label for="current-goal-input">Current goal</label>
             <input id="current-goal-input" type="text" value="Make the next return easier" autocomplete="off" maxlength="160" aria-describedby="current-goal-helper current-goal-count">
             <p class="character-feedback" id="current-goal-count" aria-live="polite">0 / 160</p>
-            <p class="edit-helper" id="current-goal-helper">A short reason this return matters.</p>
+            <p class="edit-helper" id="current-goal-helper">The current goal Luna uses when shaping this return and orienting Guided Return.</p>
           </div>
           <div class="edit-field">
             <label for="set-aside-input">Set Aside / Ignore For Now</label>
             <input id="set-aside-input" type="text" value="Leave the larger ideas alone for now." autocomplete="off" maxlength="140" aria-describedby="set-aside-helper set-aside-count">
             <p class="character-feedback" id="set-aside-count" aria-live="polite">0 / 140</p>
-            <p class="edit-helper" id="set-aside-helper">One thing that can wait. Not a list, backlog, or priority system.</p>
+            <p class="edit-helper" id="set-aside-helper">One local value Luna uses for the Set Aside step. Not a list, backlog, or priority system.</p>
           </div>
           <div class="edit-field">
             <label for="record-change-input">Record the Change</label>
             <input id="record-change-input" type="text" value="Record one plain note about what changed." autocomplete="off" maxlength="180" aria-describedby="record-change-helper record-change-count">
             <p class="character-feedback" id="record-change-count" aria-live="polite">0 / 180</p>
-            <p class="edit-helper" id="record-change-helper">One brief note for returning later. Not a log or report.</p>
+            <p class="edit-helper" id="record-change-helper">One local value Luna uses for the Record step. Not a log or report.</p>
           </div>
           <button class="clear-local-edits-button" type="button" id="clear-local-edits-button">Clear all five local project edits in this browser</button>
         </div>
@@ -953,15 +968,15 @@
       </article>
       <div class="overview-edit-anchor" id="next-action-edit-anchor"></div>
       <article class="try-editing-card" id="next-action-editing-card" aria-labelledby="next-action-editing-title">
-        <span class="label">Try editing</span>
-        <h3 id="next-action-editing-title">Change the one next action</h3>
-        <p class="try-editing-note">Keep this to one small action you can return to. Not a list. Not the whole project. Avoid private secrets or anything harmful.</p>
+        <span class="label">Editable project context</span>
+        <h3 id="next-action-editing-title">Edit Luna’s one next action</h3>
+        <p class="try-editing-note">This is the same local project context Luna uses in the opening, Shape this return, and Guided Return. It stays only in this browser.</p>
         <div class="edit-fields">
           <div class="edit-field">
             <label for="next-action-input">One next action</label>
             <input id="next-action-input" type="text" value="Choose one small, safe next step." autocomplete="off" maxlength="140" aria-describedby="next-action-helper next-action-count">
             <p class="character-feedback" id="next-action-count" aria-live="polite">0 / 140</p>
-            <p class="edit-helper" id="next-action-helper">The single action that becomes the lantern in Guided Return.</p>
+            <p class="edit-helper" id="next-action-helper">The single sample/local action that becomes the lantern in Luna’s opening and Guided Return.</p>
           </div>
         </div>
       </article>

@@ -1,5 +1,9 @@
 # State
 
+## Full Overview Editing Clarity — 2026-07-12
+
+Luna is at Rest after a focused full-overview clarity correction. The existing editable project-context panels now stand out more clearly, explain that the five values are sample/local browser-only project context, and state that edits feed Luna’s opening, Shape this return, and Guided Return without adding features, storage keys, or navigation changes.
+
 ## v0.1 Stabilization and Coherence Pass — 2026-07-12
 
 Luna is at Rest after one bounded v0.1 stabilization pass. The pass cleaned small generated punctuation and wording mismatches in the existing flow, kept the current tested behavior intact, and extended lightweight checks for punctuation, Apply → Undo markers, mobile containment, storage keys, no network calls, deterministic guidance, safe rendering, and unchanged input limits.
