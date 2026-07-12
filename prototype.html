@@ -6,21 +6,21 @@
   <title>Luna</title>
   <style>
     :root {
-      --night-deep: #0b1022;
-      --night-indigo: #111832;
-      --night-violet: #1b2244;
-      --card: rgb(31 40 68 / 82%);
-      --card-strong: rgb(38 48 80 / 88%);
-      --card-soft: rgb(25 34 60 / 78%);
-      --line: rgb(174 190 226 / 24%);
-      --line-strong: rgb(196 205 238 / 34%);
-      --moon: #f5eedb;
-      --moon-soft: #dfe6f4;
-      --periwinkle: #bdc8ee;
-      --silver: #c9d2e8;
-      --lantern: #f1d793;
-      --lantern-soft: rgb(241 215 147 / 16%);
-      --shadow: rgb(0 0 0 / 28%);
+      --night-deep: #0c1224;
+      --night-indigo: #121a31;
+      --night-violet: #18213b;
+      --card: rgb(27 36 61 / 88%);
+      --card-strong: rgb(32 41 66 / 90%);
+      --card-soft: rgb(24 33 57 / 88%);
+      --line: rgb(174 190 226 / 18%);
+      --line-strong: rgb(196 205 238 / 24%);
+      --moon: #f3eddd;
+      --moon-soft: #dce3ef;
+      --periwinkle: #b7c2e0;
+      --silver: #c5cee0;
+      --lantern: #dfc889;
+      --lantern-soft: rgb(223 200 137 / 10%);
+      --shadow: rgb(0 0 0 / 20%);
     }
 
     * { box-sizing: border-box; }
@@ -28,11 +28,7 @@
     body {
       margin: 0;
       font-family: system-ui, sans-serif;
-      background:
-        radial-gradient(circle at 18% -8%, rgb(196 205 238 / 18%), transparent 30rem),
-        radial-gradient(circle at 86% 6%, rgb(126 139 207 / 16%), transparent 24rem),
-        radial-gradient(circle at 50% 48%, rgb(66 78 129 / 18%), transparent 42rem),
-        linear-gradient(145deg, var(--night-deep) 0%, var(--night-indigo) 46%, #151b38 72%, #0d1429 100%);
+      background: linear-gradient(180deg, var(--night-deep) 0%, var(--night-indigo) 58%, #10182c 100%);
       color: var(--moon);
       line-height: 1.6;
     }
@@ -55,7 +51,7 @@
       font-size: clamp(2.35rem, 9vw, 3.6rem);
       line-height: 1;
       letter-spacing: -0.04em;
-      text-shadow: 0 0 28px rgb(196 205 238 / 16%);
+      text-shadow: none;
     }
 
     h2, h3 { color: var(--moon); line-height: 1.25; }
@@ -95,19 +91,17 @@
       width: 0.82rem;
       height: 0.82rem;
       border-radius: 50%;
-      background: radial-gradient(circle at 35% 35%, #fff8df 0 20%, var(--lantern) 36%, rgb(189 200 238 / 18%) 64%, transparent 66%);
-      box-shadow: 0 0 18px rgb(241 215 147 / 20%);
+      background: var(--lantern);
+      box-shadow: none;
     }
 
     .opening-threshold {
       max-width: 680px;
       padding: clamp(22px, 5vw, 38px);
-      background:
-        radial-gradient(circle at 88% 0%, rgb(241 215 147 / 10%), transparent 17rem),
-        linear-gradient(145deg, rgb(28 38 68 / 74%), rgb(12 19 42 / 88%));
-      border: 1px solid rgb(196 205 238 / 24%);
+      background: rgb(19 28 50 / 92%);
+      border: 1px solid rgb(196 205 238 / 18%);
       border-radius: 28px;
-      box-shadow: 0 24px 68px rgb(0 0 0 / 26%), inset 0 1px 0 rgb(255 255 255 / 6%);
+      box-shadow: 0 16px 36px rgb(0 0 0 / 18%);
     }
 
     .opening-title {
@@ -153,9 +147,7 @@
 
     .guided-control.opening-primary {
       padding: 13px 18px;
-      background:
-        radial-gradient(circle at top right, rgb(241 215 147 / 18%), transparent 9rem),
-        linear-gradient(180deg, rgb(67 77 113 / 96%), rgb(30 40 72 / 98%));
+      background: rgb(47 58 89 / 96%);
     }
 
     .quiet-reference-button {
@@ -249,7 +241,7 @@
       min-width: 0;
       max-width: 100%;
       border-radius: 16px;
-      box-shadow: 0 14px 34px rgb(0 0 0 / 16%);
+      box-shadow: 0 10px 24px rgb(0 0 0 / 12%);
       overflow-wrap: anywhere;
       word-break: break-word;
     }
@@ -257,7 +249,7 @@
     .prototype-note {
       margin-top: 28px;
       padding: 20px;
-      background: linear-gradient(145deg, rgb(48 58 91 / 82%), rgb(28 38 68 / 86%));
+      background: rgb(31 41 68 / 86%);
       border: 1px solid var(--line-strong);
     }
 
@@ -283,7 +275,7 @@
       height: 0.6rem;
       background: var(--periwinkle);
       border-radius: 50%;
-      box-shadow: 0 0 0 4px rgb(189 200 238 / 14%);
+      box-shadow: none;
     }
 
     section {
@@ -319,11 +311,9 @@
 
     .lantern-card {
       padding: 22px;
-      background:
-        radial-gradient(circle at top right, var(--lantern-soft), transparent 18rem),
-        linear-gradient(145deg, rgb(45 51 82 / 96%), rgb(28 37 68 / 96%));
-      border: 1px solid rgb(241 215 147 / 38%);
-      box-shadow: 0 0 0 1px rgb(241 215 147 / 7%), 0 20px 46px rgb(0 0 0 / 26%), 0 0 38px rgb(241 215 147 / 10%);
+      background: rgb(34 42 66 / 94%);
+      border: 1px solid rgb(223 200 137 / 24%);
+      box-shadow: 0 12px 28px rgb(0 0 0 / 14%);
     }
 
     .lantern-card p { margin-bottom: 0; color: var(--moon-soft); }
@@ -332,14 +322,10 @@
     .try-editing-card {
       margin-top: 18px;
       padding: clamp(20px, 4vw, 26px);
-      background:
-        radial-gradient(circle at 92% 0%, rgb(241 215 147 / 10%), transparent 15rem),
-        linear-gradient(145deg, rgb(43 53 88 / 96%), rgb(15 24 49 / 98%));
-      border: 1px solid rgb(241 215 147 / 34%);
+      background: rgb(25 34 58 / 94%);
+      border: 1px solid rgb(196 205 238 / 22%);
       border-radius: 20px;
-      box-shadow:
-        0 20px 48px rgb(0 0 0 / 24%),
-        inset 0 1px 0 rgb(255 255 255 / 8%);
+      box-shadow: 0 12px 28px rgb(0 0 0 / 14%);
     }
 
     .try-editing-card h3 {
@@ -367,7 +353,7 @@
       min-width: 0;
       max-width: 100%;
       padding: 14px;
-      background: rgb(8 13 30 / 34%);
+      background: rgb(14 22 40 / 62%);
       border: 1px solid rgb(189 200 238 / 16%);
       border-radius: 16px;
     }
@@ -385,18 +371,17 @@
       max-width: 100%;
       padding: 13px 14px;
       color: var(--moon);
-      background:
-        linear-gradient(180deg, rgb(52 62 98 / 98%), rgb(34 44 76 / 98%));
-      border: 1px solid rgb(223 230 244 / 62%);
+      background: rgb(35 45 72 / 96%);
+      border: 1px solid rgb(196 205 238 / 42%);
       border-radius: 12px;
-      box-shadow: inset 0 1px 0 rgb(255 255 255 / 13%), 0 0 0 3px rgb(189 200 238 / 10%);
+      box-shadow: none;
       font: inherit;
       cursor: text;
     }
 
     .edit-field input:hover {
-      border-color: rgb(223 230 244 / 62%);
-      box-shadow: inset 0 1px 0 rgb(255 255 255 / 11%), 0 0 0 3px rgb(189 200 238 / 12%);
+      border-color: rgb(196 205 238 / 52%);
+      box-shadow: none;
     }
 
     .edit-helper {
@@ -428,10 +413,10 @@
     }
 
     .edit-field input:focus {
-      outline: 2px solid rgb(241 215 147 / 55%);
+      outline: 2px solid rgb(223 200 137 / 48%);
       outline-offset: 2px;
-      border-color: rgb(241 215 147 / 62%);
-      box-shadow: inset 0 1px 0 rgb(255 255 255 / 12%), 0 0 0 4px rgb(241 215 147 / 14%);
+      border-color: rgb(223 200 137 / 48%);
+      box-shadow: none;
     }
 
     .guided-entry {
@@ -443,14 +428,10 @@
       justify-self: start;
       padding: 11px 15px;
       color: var(--moon);
-      background:
-        linear-gradient(180deg, rgb(55 65 100 / 92%), rgb(24 34 63 / 94%));
-      border: 1px solid rgb(241 215 147 / 42%);
+      background: rgb(43 53 82 / 94%);
+      border: 1px solid rgb(223 200 137 / 30%);
       border-radius: 999px;
-      box-shadow:
-        0 5px 0 rgb(6 10 22 / 66%),
-        0 12px 24px rgb(0 0 0 / 25%),
-        inset 0 1px 0 rgb(255 255 255 / 12%);
+      box-shadow: 0 8px 18px rgb(0 0 0 / 14%);
       font: inherit;
       font-weight: 700;
       min-width: 0;
@@ -464,14 +445,9 @@
     .guided-control:focus,
     .clear-local-edits-button:hover,
     .clear-local-edits-button:focus {
-      background:
-        linear-gradient(180deg, rgb(67 77 113 / 94%), rgb(31 42 73 / 96%));
-      border-color: rgb(241 215 147 / 66%);
-      box-shadow:
-        0 6px 0 rgb(6 10 22 / 68%),
-        0 14px 27px rgb(0 0 0 / 28%),
-        0 0 0 3px rgb(241 215 147 / 10%),
-        inset 0 1px 0 rgb(255 255 255 / 14%);
+      background: rgb(51 62 94 / 96%);
+      border-color: rgb(223 200 137 / 46%);
+      box-shadow: 0 9px 20px rgb(0 0 0 / 16%);
     }
 
     .guided-control:hover,
@@ -502,14 +478,10 @@
       max-width: 100%;
       margin: 38px auto 0;
       padding: clamp(18px, 3vw, 28px);
-      background:
-        radial-gradient(circle at 18% 0%, rgb(189 200 238 / 10%), transparent 20rem),
-        linear-gradient(180deg, rgb(13 20 43 / 94%), rgb(8 13 30 / 98%));
-      border: 1px solid rgb(152 166 214 / 16%);
+      background: rgb(13 21 40 / 96%);
+      border: 1px solid rgb(152 166 214 / 14%);
       border-radius: 26px;
-      box-shadow:
-        0 28px 70px rgb(0 0 0 / 28%),
-        inset 0 1px 0 rgb(255 255 255 / 5%);
+      box-shadow: 0 16px 36px rgb(0 0 0 / 16%);
     }
 
     .guided-shell,
@@ -575,8 +547,7 @@
       min-width: 0;
       max-width: 100%;
       padding: clamp(18px, 3vw, 28px);
-      background:
-        linear-gradient(180deg, rgb(22 31 59 / 78%), rgb(13 20 42 / 88%));
+      background: rgb(20 29 52 / 88%);
       border: 1px solid rgb(152 166 214 / 14%);
       border-radius: 22px;
       box-shadow: inset 0 1px 0 rgb(255 255 255 / 4%);
@@ -648,29 +619,22 @@
     }
 
     .guided-stage-body .quiet-card {
-      background:
-        linear-gradient(180deg, rgb(31 41 72 / 72%), rgb(20 29 56 / 76%));
+      background: rgb(25 35 60 / 80%);
       border-color: rgb(189 200 238 / 18%);
       box-shadow: inset 0 1px 0 rgb(255 255 255 / 4%);
     }
 
     .guided-stage-panel[data-stage-tone="set-aside"] {
-      background:
-        radial-gradient(circle at 86% 12%, rgb(189 200 238 / 8%), transparent 16rem),
-        linear-gradient(180deg, rgb(20 29 56 / 74%), rgb(12 19 39 / 88%));
+      background: rgb(20 29 52 / 88%);
     }
 
     .guided-stage-panel[data-stage-tone="record"] {
-      background:
-        radial-gradient(circle at 12% 8%, rgb(241 215 147 / 8%), transparent 13rem),
-        linear-gradient(180deg, rgb(24 32 58 / 80%), rgb(13 20 42 / 90%));
+      background: rgb(21 30 53 / 90%);
     }
 
     .guided-stage-panel[data-stage-tone="rest"] {
-      background:
-        radial-gradient(circle at 50% 0%, rgb(241 215 147 / 11%), transparent 18rem),
-        linear-gradient(180deg, rgb(27 34 60 / 82%), rgb(11 17 36 / 92%));
-      border-color: rgb(241 215 147 / 18%);
+      background: rgb(24 32 54 / 90%);
+      border-color: rgb(223 200 137 / 16%);
     }
 
     .guided-actions {
@@ -808,7 +772,7 @@
         z-index: 2;
         margin: 16px -4px 0;
         padding: 12px 4px 4px;
-        background: linear-gradient(180deg, rgb(8 13 30 / 0%), rgb(8 13 30 / 92%) 28%, rgb(8 13 30 / 98%));
+        background: rgb(12 19 36 / 96%);
       }
 
       .guided-primary-actions {

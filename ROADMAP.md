@@ -2,7 +2,7 @@
 
 ## Current Readiness Correction
 
-A human-readiness issue in the full overview/editing area has been corrected: the existing local project-context fields now read more clearly as editable inputs. Luna remains at Rest. Next: human mobile-test the full overview/editing area and confirm the fields are obvious, understandable, and visually distinct before running another full readiness pass.
+A human-readiness visual comfort blocker has been corrected: Luna’s mobile color scheme now uses calmer moonlit surfaces with fewer busy gradients, softer editing/input contrast, restrained focus states, and reduced glow/depth while preserving the existing structure and behavior. Luna remains at Rest. Next: human mobile-test Luna, the full overview, and Guided Return for a few minutes and confirm the color scheme/gradients no longer cause eye strain or nausea.
 
 ## Current v0.1 Direction
 

@@ -1,5 +1,9 @@
 # State
 
+Luna is at Rest after a focused mobile visual comfort correction. The current prototype keeps the same opening threshold, full overview editing clarity, Shape this return, Apply → Undo, Clear local edits, deterministic local guidance, safe rendering, input limits, near-limit counters, mobile containment protections, and complete Guided Return loop, but its main mobile surfaces now use calmer moonlit solids, fewer busy gradients, softer input contrast, restrained focus states, and less glow/depth.
+
+Next suggested step: human mobile-test Luna, the full overview, and Guided Return for a few minutes and confirm the color scheme/gradients no longer cause eye strain or nausea.
+
 ## Full Overview Editing Clarity — 2026-07-12
 
 Luna is at Rest after a focused full-overview clarity correction. The existing editable project-context panels now stand out more clearly, explain that the five values are sample/local browser-only project context, and state that edits feed Luna’s opening, Shape this return, and Guided Return without adding features, storage keys, or navigation changes.
