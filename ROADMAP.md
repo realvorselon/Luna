@@ -1,12 +1,24 @@
 # Roadmap
 
-## Current Rest Checkpoint — Guided Return App Shell
+## Current v0.1 direction
 
-- Implemented one bounded app-shell experiment for the existing Orient → Remember → Choose Guided Return slice.
-- Chosen structure: one stable focused shell with a restrained header/context area, one stage-content region, and one predictable action area.
-- Preserved the full overview as the reference mode and kept the prototype as the evolving reference implementation.
-- Preserved prior human findings: the too-fast 220ms micro-transition, the clarified app-like panel direction, dark-surface corrections, the failed oversized mobile stage-height approach, the improved mobile action layout, the qualified entrance-motion pass, and the One Next Action lantern emphasis.
-- Next suggested step: human mobile test whether the new shell feels like one calm focused app space rather than a webpage swapping sections.
+- Prefer fewer meaningful vertical slices over automatic button-by-button micro-polish.
+- Treat the new Luna opening threshold as the first v0.1-oriented vertical slice.
+- Preserve one-project focus: no project switching, project lists, accounts, backend, sync, dashboards, or task systems.
+- Keep the existing Guided Return shell as the primary return flow for Orient → Remember → Choose.
+- Keep the full overview as quieter reference/editing mode, not the first impression.
+- Protect the full intended Luna loop: Orient → Remember → Choose → Set Aside → Record → Rest.
+- Do not add Set Aside, Record, or Rest as guided stages until a later substantial coherent slice.
+- Next: Human-test the new opening threshold on mobile for identity, clarity, emotional tone, scroll comfort, preserved values, and whether opening Luna now feels like opening a real small app. If it passes without a blocking issue, proceed toward completing the remaining Luna loop in a meaningful vertical slice.
+
+
+## Current Rest Checkpoint — Opening Threshold Vertical Slice
+
+- Implemented the first real Luna opening threshold as the first v0.1-oriented vertical slice after the earlier micro-experiment phase.
+- The primary path is now Luna opening threshold → Guided Return app shell for the existing Orient → Remember → Choose slice.
+- The opening uses a restrained Luna identity mark, concise return message, selective one-project context, a primary “Return gently” action, and quiet access to the full overview.
+- Preserved the full overview as the reference/editing mode, all existing editable values, localStorage keys, blank fallbacks, clear-local-edits behavior, mobile action layout, entrance behavior, panel-level Forward / Back motion, reduced-motion behavior, rapid-click protection, and transition cleanup.
+- Next: human mobile test the opening threshold for identity, clarity, emotional tone, scroll comfort, preserved values, and whether opening Luna now feels like opening a real small app. If it passes without a blocking issue, proceed toward completing the remaining Luna loop in a meaningful vertical slice.
 
 This roadmap is intentionally small. Luna is a public dashboard prototype right now, and its core is helping someone return to one small project, see where they left off, see what changed last, choose one clear Next Action, know what to ignore for now, record the change, and rest before adding more.
 

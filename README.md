@@ -1,5 +1,16 @@
 # Luna
 
+## First v0.1-oriented vertical slice: Luna opening threshold
+
+- Luna now opens on a real welcome-and-return threshold instead of a prototype demonstration.
+- The primary path is Luna opening threshold → existing Guided Return shell for Orient → Remember → Choose.
+- The opening preserves one-project focus by showing only selective context: the current project and one next action.
+- The full overview remains available as a quieter reference/editing mode with the existing editable values and local browser persistence intact.
+- Luna has shifted from many tiny micro-experiments toward fewer meaningful vertical slices aimed at a practical v0.1 finish line.
+- The intended loop remains Orient → Remember → Choose → Set Aside → Record → Rest; Set Aside, Record, and Rest remain intentionally unimplemented in the guided flow for this run.
+- Next: Human-test the new opening threshold on mobile for identity, clarity, emotional tone, scroll comfort, preserved values, and whether opening Luna now feels like opening a real small app. If it passes without a blocking issue, proceed toward completing the remaining Luna loop in a meaningful vertical slice.
+
+
 ## Guided Return app-shell experiment
 
 The first bounded Guided Return app-shell experiment is implemented in `prototype.html` for only Orient → Remember → Choose. Guided Return now appears inside one stable, centered app-like shell with a restrained context header, a persistent stage-content region, and a predictable action area, while the dark moonlit background remains around it. Orient and Remember share a quieter surface language; Choose keeps the One Next Action lantern gradient as the strongest emphasis. The full overview remains the reference mode, and existing editable values, localStorage keys, blank-value fallbacks, clear-local-edits behavior, mobile action layout, entrance behavior, panel-level Forward / Back motion, and reduced-motion behavior are preserved. Luna is at Rest; next is a human mobile test of whether the shell feels like one calm focused app space rather than a webpage swapping sections.
@@ -18,7 +29,7 @@ Luna is currently a small public dashboard prototype. Over time, the idea is for
 
 The current single-project browser prototype phase is complete and closed. The active Guided Return work has produced enough human evidence to stop automatic micro-polish on the existing shell: optional guided mode is viable, the full overview remains a useful reference mode, Forward / Back and Return to full overview work, editable values remain preserved, One Next Action works as the lantern, panel-level motion feels closer to a modern app than a quick content shift, the corrected mobile action layout seems better, and the restrained entrance feels mostly softer and less abrupt. The current prototype remains the proven reference implementation, and the full overview remains the reference mode.
 
-The current experiment is one implemented **Guided Return app shell** for the limited Orient → Remember → Choose loop. It should test whether Guided Return can feel like entering one calm focused app space instead of scrolling through or swapping sections of a webpage. This is an evolution of Guided Return, not a rejection of the completed work. Do not automatically add Set Aside, Record, and Rest; do not continue automatic CSS or motion micro-polish. Luna is back at Rest. Next, human mobile test whether the new shell feels like one stable focused app space.
+The current prototype experience now opens with the first real Luna threshold and carries the primary action into the implemented **Guided Return app shell** for the limited Orient → Remember → Choose loop. This is the first v0.1-oriented vertical slice after the earlier micro-experiment phase. Do not automatically add Set Aside, Record, and Rest; do not continue automatic CSS or motion micro-polish. Luna is back at Rest. Next, human mobile test the opening threshold for identity, clarity, emotional tone, scroll comfort, preserved values, and whether opening Luna now feels like opening a real small app.
 
 ## Dashboard
 
