@@ -4,11 +4,14 @@ This roadmap is intentionally small. Luna is a public dashboard prototype right 
 
 ## Current Phase Direction
 
-- Guided Return is the next phase direction after the completed single-project browser prototype phase. Its boundary is `docs/GUIDED_RETURN_PHASE_BOUNDARY.md`.
-- Next: human mobile test the restrained Guided Return entrance for softness, visual comfort, scroll stability, preserved editable values, unclipped content, and whether it feels more like entering a focused app screen.
+- Guided Return is the current phase direction after the completed single-project browser prototype phase. Its boundary is `docs/GUIDED_RETURN_PHASE_BOUNDARY.md`, and the latest entrance read-through is `docs/GUIDED_RETURN_ENTRANCE_READ_THROUGH.md`.
+- The restrained entrance is a qualified human-test pass: pressing “Begin a guided return” now feels mostly softer and less abrupt, and no further entrance-motion polish is needed now without a new specific human usability finding.
+- Preserve the One Next Action gradient as intentional lantern emphasis. Keep the quieter Orient / Remember shared-stage visual-language observation as a later possibility, not an immediate CSS polish task.
+- Next: review what the current Guided Return experiments have genuinely proved, then choose the next meaningful product experiment rather than continuing automatic micro-polish or adding stages merely to complete the sequence.
 
 ## Completed
 
+- Recorded the Guided Return entrance as a qualified human-test pass and preserved the One Next Action lantern emphasis plus the later quieter shared-stage visual-language observation.
 - Implemented one restrained Guided Return entrance experiment: the overview softly yields, the focused Guided Return surface arrives as a single visual unit, reduced-motion entry remains immediate, and the corrected mobile action layout remains closed without a new usability finding.
 - Recorded that the corrected Guided Return mobile action layout passed its initial human test, needs no further action-layout polish now, and leaves the abrupt Begin a guided return entrance as a separate possible follow-up.
 - Darkened only the outer `.guided-return-view` after human testing found the first dark-surface follow-up corrected the inner panel but the larger guided container still appeared too bright against the moonlit page.

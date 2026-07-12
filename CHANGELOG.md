@@ -2,6 +2,15 @@
 
 ## 2026-07-12
 
+### Guided Return Entrance Read-Through
+
+- Added `docs/GUIDED_RETURN_ENTRANCE_READ_THROUGH.md` to record the restrained Guided Return entrance as a qualified human-test pass.
+- Recorded that pressing “Begin a guided return” now feels mostly softer and less abrupt, the overview-yield / guided-surface-arrival direction is closer to the intended modern app-like experience, and no major scroll jump, clipping, or behavior failure was identified.
+- Recorded that no further entrance-motion polish is needed now without a new specific human usability finding.
+- Preserved unchanged Forward / Back panel motion, corrected mobile action layout, editable values, reduced-motion immediate entry, Return to full overview, full overview reference mode, and the limited Orient → Remember → Choose slice.
+- Preserved the One Next Action gradient as intentional lantern emphasis and recorded the quieter shared-stage visual-language observation for Orient and Remember as a later possibility, not an immediate CSS polish task.
+- Set Luna back to Rest and set the next suggested step to reviewing what Guided Return has genuinely proved before choosing the next meaningful product experiment.
+
 ### Guided Return Entrance Experiment
 
 - Replaced the abrupt Begin a guided return mode switch in `prototype.html` with one restrained entrance experiment.
