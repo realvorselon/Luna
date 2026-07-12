@@ -38,9 +38,15 @@
     }
 
     main {
-      max-width: 820px;
+      width: min(100%, 968px);
       margin: 0 auto;
       padding: 64px 22px 72px;
+    }
+
+    header,
+    .full-overview {
+      max-width: 820px;
+      margin-inline: auto;
     }
 
     h1 {
@@ -258,13 +264,53 @@
     }
 
     .guided-return-view {
-      margin-top: 36px;
-      padding: 24px;
+      width: min(100%, 880px);
+      margin: 38px auto 0;
+      padding: clamp(18px, 3vw, 28px);
       background:
-        linear-gradient(180deg, rgb(13 20 43 / 92%), rgb(8 13 30 / 96%));
-      border: 1px solid rgb(152 166 214 / 12%);
-      border-radius: 18px;
-      box-shadow: 0 18px 42px rgb(0 0 0 / 20%);
+        radial-gradient(circle at 18% 0%, rgb(189 200 238 / 10%), transparent 20rem),
+        linear-gradient(180deg, rgb(13 20 43 / 94%), rgb(8 13 30 / 98%));
+      border: 1px solid rgb(152 166 214 / 16%);
+      border-radius: 26px;
+      box-shadow:
+        0 28px 70px rgb(0 0 0 / 28%),
+        inset 0 1px 0 rgb(255 255 255 / 5%);
+    }
+
+    .guided-shell {
+      display: grid;
+      grid-template-rows: auto minmax(0, 1fr) auto;
+      gap: 18px;
+      min-height: min(680px, calc(100svh - 128px));
+    }
+
+    .guided-shell-header {
+      display: grid;
+      gap: 8px;
+      padding: 2px 2px 14px;
+      border-bottom: 1px solid rgb(174 190 226 / 13%);
+    }
+
+    .guided-shell-kicker {
+      margin: 0;
+      color: var(--periwinkle);
+      font-size: 0.78rem;
+      font-weight: 780;
+      letter-spacing: 0.11em;
+      text-transform: uppercase;
+    }
+
+    .guided-shell-title {
+      margin: 0;
+      color: #fbf4e2;
+      font-size: clamp(1.35rem, 4vw, 1.9rem);
+      letter-spacing: -0.025em;
+    }
+
+    .guided-shell-note {
+      max-width: 620px;
+      margin: 0;
+      color: var(--silver);
     }
 
     .guided-return-view.is-arriving-from-overview {
@@ -282,11 +328,12 @@
     }
 
     .guided-stage-panel {
-      padding: 18px;
+      align-self: stretch;
+      padding: clamp(18px, 3vw, 28px);
       background:
-        linear-gradient(180deg, rgb(22 31 59 / 96%), rgb(13 20 42 / 98%));
+        linear-gradient(180deg, rgb(22 31 59 / 78%), rgb(13 20 42 / 88%));
       border: 1px solid rgb(152 166 214 / 14%);
-      border-radius: 16px;
+      border-radius: 22px;
       box-shadow: inset 0 1px 0 rgb(255 255 255 / 4%);
       will-change: opacity, transform;
     }
@@ -353,10 +400,18 @@
       margin-top: 18px;
     }
 
+    .guided-stage-body .quiet-card {
+      background:
+        linear-gradient(180deg, rgb(31 41 72 / 72%), rgb(20 29 56 / 76%));
+      border-color: rgb(189 200 238 / 18%);
+      box-shadow: inset 0 1px 0 rgb(255 255 255 / 4%);
+    }
+
     .guided-actions {
       display: grid;
       gap: 10px;
-      margin-top: 22px;
+      padding-top: 16px;
+      border-top: 1px solid rgb(174 190 226 / 13%);
     }
 
     .guided-primary-actions,
@@ -411,16 +466,31 @@
     }
 
     @media (max-width: 680px) {
-      main { padding-top: 44px; }
+      main {
+        padding: 44px max(14px, env(safe-area-inset-left)) 56px max(14px, env(safe-area-inset-right));
+      }
       .loop-grid { grid-template-columns: 1fr; }
 
       .guided-return-view {
-        padding: 16px;
+        width: 100%;
+        margin-top: 28px;
+        padding: 14px;
+        border-radius: 22px;
+      }
+
+      .guided-shell {
+        gap: 14px;
+        min-height: min(720px, calc(100svh - 92px));
+      }
+
+      .guided-shell-header {
+        padding-bottom: 12px;
       }
 
       .guided-stage-panel {
         min-height: 0;
         padding: 16px;
+        border-radius: 18px;
       }
 
       .guided-actions {
@@ -467,20 +537,27 @@
       </div>
     </header>
 
-    <section class="guided-return-view" id="guided-return-view" aria-labelledby="guided-stage-title" hidden>
-      <div class="guided-stage-panel" id="guided-stage-panel">
-        <p class="guided-position" id="guided-position">Stage 1 of 3</p>
-        <h2 id="guided-stage-title" tabindex="-1">Orient</h2>
-        <p class="path-note" id="guided-stage-intro">Return to the project identity, current mode, and current goal before choosing anything new.</p>
-        <div class="guided-stage-body" id="guided-stage-body"></div>
-      </div>
-      <div class="guided-actions">
-        <div class="guided-primary-actions" role="group" aria-label="Guided stage navigation">
-          <button class="guided-control" type="button" id="guided-back-button">Back</button>
-          <button class="guided-control" type="button" id="guided-forward-button">Forward</button>
+    <section class="guided-return-view" id="guided-return-view" aria-labelledby="guided-shell-title" hidden>
+      <div class="guided-shell">
+        <div class="guided-shell-header">
+          <p class="guided-shell-kicker">Guided Return</p>
+          <h2 class="guided-shell-title" id="guided-shell-title">One quiet return space</h2>
+          <p class="guided-shell-note">Move through Orient → Remember → Choose inside this same focused shell, with the full overview still available as reference.</p>
         </div>
-        <div class="guided-secondary-actions">
-          <button class="guided-control" type="button" id="return-overview-button">Return to full overview</button>
+        <div class="guided-stage-panel" id="guided-stage-panel" aria-labelledby="guided-stage-title">
+          <p class="guided-position" id="guided-position">Stage 1 of 3</p>
+          <h2 id="guided-stage-title" tabindex="-1">Orient</h2>
+          <p class="path-note" id="guided-stage-intro">Return to the project identity, current mode, and current goal before choosing anything new.</p>
+          <div class="guided-stage-body" id="guided-stage-body"></div>
+        </div>
+        <div class="guided-actions">
+          <div class="guided-primary-actions" role="group" aria-label="Guided stage navigation">
+            <button class="guided-control" type="button" id="guided-back-button">Back</button>
+            <button class="guided-control" type="button" id="guided-forward-button">Forward</button>
+          </div>
+          <div class="guided-secondary-actions">
+            <button class="guided-control" type="button" id="return-overview-button">Return to full overview</button>
+          </div>
         </div>
       </div>
     </section>
@@ -664,17 +741,17 @@
         title: 'Orient',
         intro: 'Return to the project identity, current mode, and current goal before choosing anything new.',
         render: () => `
-          <article class="card">
+          <article class="quiet-card">
             <span class="label">Project name</span>
             <h3>${escapeHtml(projectNameDisplay.textContent)}</h3>
             <p>A small public-safe notebook for three simple weeknight soup ideas.</p>
           </article>
-          <article class="card">
+          <article class="quiet-card">
             <span class="label">Current Mode</span>
             <h3>Orient</h3>
             <p>Reread the soup notes, especially the broth section, and choose one small organizing step before adding more ideas.</p>
           </article>
-          <article class="card">
+          <article class="quiet-card">
             <span class="label">Current goal</span>
             <h3>${escapeHtml(currentGoalDisplay.textContent)}</h3>
             <p>Keep each soup idea short enough that the next return starts with clear notes instead of a messy draft.</p>
@@ -685,7 +762,7 @@
         title: 'Remember',
         intro: 'Notice what changed last without expanding the project.',
         render: () => `
-          <article class="card">
+          <article class="quiet-card">
             <span class="label">Last completed run</span>
             <h3>2026-07-08: Named the three recipe note sections.</h3>
             <p>The notebook now has simple sections for broth, vegetables, and serving notes. No private details or real household information were added.</p>
