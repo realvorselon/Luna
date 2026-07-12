@@ -1,5 +1,15 @@
 # Changelog
 
+## 2026-07-12
+
+### Basic Navigation Loop Correction
+
+- Recorded the human finding that the new Luna opening threshold passed strongly and feels like a real app opening.
+- Recorded the remaining navigation gap: after entering Guided Return and choosing “Return to full overview,” the full overview had no clear direct way back to the Luna opening threshold.
+- Added one secondary “Return to Luna” action in the full overview so the path is now Luna opening threshold → Guided Return → Full overview → Luna opening threshold.
+- Preserved editable values, existing localStorage keys and behavior, Guided Return stages, Forward / Back motion, opening entrance behavior, full overview structure, and the current one-project scope.
+- Set Luna back to Rest and kept the next suggested step as continuing toward a fuller Luna loop in a meaningful vertical slice after this navigation correction passes human testing.
+
 
 ## 2026-07-12
 

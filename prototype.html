@@ -530,6 +530,12 @@
       gap: 10px;
     }
 
+    .overview-return-luna {
+      display: flex;
+      justify-content: flex-start;
+      margin-bottom: 22px;
+    }
+
     .overview-edit-anchor {
       margin-top: 18px;
     }
@@ -710,7 +716,10 @@
     </section>
 
     <div class="full-overview" id="full-overview" hidden>
-    <section aria-labelledby="project-state">
+      <div class="overview-return-luna">
+        <button class="guided-control" type="button" id="return-luna-button">Return to Luna</button>
+      </div>
+      <section aria-labelledby="project-state">
       <h2 id="project-state" tabindex="-1">One project state</h2>
       <div class="loop-grid">
         <article class="card">
@@ -751,18 +760,18 @@
         </div>
       </article>
 
-    </section>
+      </section>
 
-    <section aria-labelledby="what-changed">
+      <section aria-labelledby="what-changed">
       <h2 id="what-changed">See what changed last</h2>
       <article class="card">
         <span class="label">Last completed run</span>
         <h3>2026-07-08: Named the three recipe note sections.</h3>
         <p>The notebook now has simple sections for broth, vegetables, and serving notes. No private details or real household information were added.</p>
       </article>
-    </section>
+      </section>
 
-    <section aria-labelledby="next-action">
+      <section aria-labelledby="next-action">
       <h2 id="next-action">Choose one next action</h2>
       <article class="lantern-card">
         <span class="label">One Next Action</span>
@@ -781,9 +790,9 @@
           </div>
         </div>
       </article>
-    </section>
+      </section>
 
-    <section aria-labelledby="wait-record-rest">
+      <section aria-labelledby="wait-record-rest">
       <h2 id="wait-record-rest">See what can wait, record one change, then rest</h2>
       <div class="loop-grid">
         <article class="quiet-card">
@@ -804,9 +813,9 @@
           <p>Come back later and reread the recipe-note state before choosing another small action.</p>
         </article>
       </div>
-    </section>
+      </section>
 
-    <section aria-labelledby="loop-order">
+      <section aria-labelledby="loop-order">
       <h2 id="loop-order">The gentle return path</h2>
       <p class="path-note">Move through the same small loop each time, from orienting to resting, without turning the notes into a bigger system.</p>
       <div class="return-path" aria-label="Return path steps">
@@ -826,7 +835,7 @@
         <li>Record one change.</li>
         <li>Rest before adding more.</li>
       </ol>
-    </section>
+      </section>
 
     </div>
 
@@ -856,6 +865,7 @@
     const guidedBackButton = document.querySelector('#guided-back-button');
     const guidedForwardButton = document.querySelector('#guided-forward-button');
     const returnOverviewButton = document.querySelector('#return-overview-button');
+    const returnLunaButton = document.querySelector('#return-luna-button');
     const nextActionEditingCard = document.querySelector('#next-action-editing-card');
     const nextActionEditAnchor = document.querySelector('#next-action-edit-anchor');
     const projectNameStorageKey = 'luna.prototype.projectName';
@@ -1134,6 +1144,16 @@
       document.querySelector('#project-state').focus({ preventScroll: true });
     };
 
+    const showLunaOpening = () => {
+      clearGuidedEntranceTransition();
+      clearGuidedStageTransition();
+      restoreNextActionEditorToOverview();
+      fullOverview.hidden = true;
+      guidedReturnView.hidden = true;
+      lunaOpening.hidden = false;
+      beginGuidedReturnButton.focus({ preventScroll: true });
+    };
+
     beginGuidedReturnButton.addEventListener('click', showGuidedReturn);
     showOverviewButton.addEventListener('click', showFullOverviewFromOpening);
 
@@ -1162,6 +1182,7 @@
     });
 
     returnOverviewButton.addEventListener('click', showFullOverview);
+    returnLunaButton.addEventListener('click', showLunaOpening);
 
     clearLocalEditsButton.addEventListener('click', () => {
       localStorage.removeItem(projectNameStorageKey);

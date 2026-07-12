@@ -3,6 +3,10 @@
   "statusHistory": [
     {
       "date": "2026-07-12",
+      "note": "Added one clear full-overview Return to Luna action after human testing found the opening threshold passed strongly but the full overview lacked a direct path back to the Luna opening threshold; this completes the basic navigation loop while preserving editable values and existing localStorage behavior."
+    },
+    {
+      "date": "2026-07-12",
       "note": "Implemented the first v0.1-oriented Luna opening threshold vertical slice: the prototype now opens with a calm Luna identity threshold, a primary Return gently action into the existing Guided Return shell, quiet access to the full overview/reference editing mode, and preserved one-project storage and guided-flow behavior while leaving Set Aside, Record, and Rest intentionally unimplemented."
     },
     {
@@ -522,9 +526,9 @@
       "note": "The project is resting after a good run and ready for one gentle improvement."
     }
   ],
-  "currentGoal": "Rest after implementing the first v0.1-oriented Luna opening threshold vertical slice.",
-  "lastCompletedRun": "2026-07-12: Implemented the first v0.1-oriented Luna opening threshold vertical slice.",
-  "nextStep": "Human-test the new opening threshold on mobile for identity, clarity, emotional tone, scroll comfort, preserved values, and whether opening Luna now feels like opening a real small app. If it passes without a blocking issue, proceed toward completing the remaining Luna loop in a meaningful vertical slice.",
+  "currentGoal": "Rest after completing the basic Luna opening threshold navigation loop correction.",
+  "lastCompletedRun": "2026-07-12: Completed the basic navigation loop from full overview back to the Luna opening threshold.",
+  "nextStep": "Human-test the full-overview \u201cReturn to Luna\u201d navigation correction. If it passes, continue toward a fuller Luna loop in a meaningful vertical slice.",
   "dashboardGuide": [
     "Welcome starts the path to read through Record the Change before choosing more work.",
     "Status gives a quick snapshot of how the project is doing right now.",
@@ -535,14 +539,15 @@
     "Optional Reflection can wait; Philosophy Garden is a gentle reflection layer, not Luna's main engine."
   ],
   "futureIdeas": [
-    "Human-test the new opening threshold on mobile for identity, clarity, emotional tone, scroll comfort, preserved values, and whether opening Luna now feels like opening a real small app.",
-    "If the opening threshold passes without a blocking issue, proceed toward completing the remaining Luna loop in a meaningful vertical slice.",
+    "Human-test the full-overview \u201cReturn to Luna\u201d navigation correction on mobile and desktop for focus, scroll comfort, preserved values, and clear path back to the Luna opening threshold.",
+    "If the navigation correction passes, continue toward a fuller Luna loop in a meaningful vertical slice.",
     "Preserve one-project focus and the full overview as a quieter reference/editing mode.",
     "Keep the existing Guided Return shell as the primary return flow for Orient \u2192 Remember \u2192 Choose until the next coherent loop-completion slice.",
     "Protect the intended Luna loop: Orient \u2192 Remember \u2192 Choose \u2192 Set Aside \u2192 Record \u2192 Rest.",
     "Do not return to automatic micro-polish or add Set Aside, Record, and Rest as isolated tiny runs."
   ],
   "decisionLog": [
+    "2026-07-12: Human testing found the new Luna opening threshold passed strongly, but returning from Guided Return to the full overview left no direct route back to the Luna opening threshold; adding one secondary Return to Luna action completes the basic navigation loop without adding competing actions or changing persistence.",
     "2026-07-12: Luna deliberately shifted from many tiny micro-experiments toward fewer meaningful v0.1 vertical slices; the first is a real opening threshold that routes primarily into the existing Guided Return shell while preserving the full overview as quieter reference/editing mode.",
     "2026-07-12: Implemented the first Guided Return app-shell experiment as one stable centered shell with persistent header, stage-content region, and action area for Orient \u2192 Remember \u2192 Choose; next is human mobile testing of whether it feels like one calm focused app space.",
     "2026-07-12: The Guided Return app-shell experiment boundary became the next product direction; existing experiments produced enough evidence to stop automatic micro-polish and test the container / spatial experience next.",
