@@ -492,9 +492,9 @@
 
     .guided-shell {
       display: grid;
-      grid-template-rows: auto minmax(0, 1fr) auto;
+      grid-template-rows: auto minmax(0, auto) auto;
       gap: 18px;
-      min-height: min(680px, calc(100svh - 128px));
+      min-height: min(640px, calc(100svh - 128px));
     }
 
     .guided-shell-header {
@@ -545,12 +545,11 @@
     .guided-stage-panel {
       align-self: stretch;
       display: grid;
-      grid-template-rows: auto auto minmax(0, 1fr);
+      grid-template-rows: auto auto auto minmax(0, auto);
       min-width: 0;
       max-width: 100%;
-      block-size: clamp(420px, 52svh, 520px);
-      min-block-size: clamp(420px, 52svh, 520px);
-      overflow: hidden;
+      min-block-size: clamp(420px, 48svh, 500px);
+      overflow: visible;
       padding: clamp(18px, 3vw, 28px);
       background: rgb(20 29 52 / 88%);
       border: 1px solid rgb(152 166 214 / 14%);
@@ -609,8 +608,7 @@
       max-width: 100%;
       min-block-size: 0;
       margin-top: 18px;
-      overflow: auto;
-      overscroll-behavior: contain;
+      overflow: visible;
       padding-right: 2px;
     }
 
@@ -639,7 +637,7 @@
       gap: 10px;
       min-width: 0;
       max-width: 100%;
-      min-block-size: 108px;
+      min-block-size: 0;
       padding-top: 16px;
       border-top: 1px solid rgb(174 190 226 / 13%);
     }
@@ -751,7 +749,7 @@
 
       .guided-shell {
         gap: 14px;
-        min-height: min(720px, calc(100svh - 92px));
+        min-height: auto;
       }
 
       .guided-shell-header {
@@ -760,21 +758,15 @@
 
       .guided-stage-panel {
         min-height: 0;
-        block-size: clamp(390px, 58svh, 520px);
-        min-block-size: clamp(390px, 58svh, 520px);
-        max-block-size: calc(100svh - 236px);
+        min-block-size: clamp(360px, 48svh, 480px);
         padding: 16px;
         border-radius: 18px;
       }
 
       .guided-actions {
-        position: sticky;
-        bottom: max(12px, env(safe-area-inset-bottom));
-        z-index: 2;
-        min-block-size: 124px;
-        margin: 16px -4px 0;
-        padding: 12px 4px 4px;
-        background: rgb(12 19 36 / 96%);
+        margin: 0;
+        padding: 14px 0 0;
+        background: transparent;
       }
 
       .guided-primary-actions {
