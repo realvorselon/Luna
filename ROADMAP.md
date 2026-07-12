@@ -1,3 +1,9 @@
+## Guided Return size-stability correction
+
+- Current focus is complete: Guided Return now uses a steadier stage frame and action area so stage-to-stage movement feels like one stable shell rather than resizing panels.
+- Longer stage content should remain readable by scrolling inside the stage area instead of widening or jumping the page.
+- Luna is back at Rest; next is brief human mobile testing of Guided Return size stability one stage at a time.
+
 # Roadmap
 
 ## Current Readiness Correction

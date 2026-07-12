@@ -1,3 +1,10 @@
+## Guided Return size-stability correction
+
+- Stabilized the Guided Return stage frame so Orient → Remember → Choose → Set Aside → Record → Rest keep a steadier panel height on desktop and mobile.
+- Kept longer stage content scrollable inside the stable panel and reserved a steadier action area so buttons no longer cause dramatic stage-to-stage jumps.
+- Preserved fade-only motion, reduced-motion protections, calmer visual comfort CSS, editing clarity, the five local-only storage keys, input maxlengths, safe rendering, deterministic guidance, and the complete Guided Return loop.
+- Luna is back at Rest. Next: human mobile-test Guided Return size stability with brief exposure, moving one stage at a time.
+
 # Luna
 
 ## Guided Return motion comfort correction

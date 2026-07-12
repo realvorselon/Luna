@@ -3,6 +3,10 @@
   "statusHistory": [
     {
       "date": "2026-07-12",
+      "note": "2026-07-12: Corrected the remaining Guided Return size-stability blocker by giving the stage panel stable desktop/mobile block sizing, keeping overflowing stage content scrollable inside the panel, stabilizing the guided action area, and preserving fade-only motion, reduced-motion behavior, visual comfort CSS, five local storage keys, maxlengths, safe rendering, deterministic guidance, and the complete loop."
+    },
+    {
+      "date": "2026-07-12",
       "note": "2026-07-12: Corrected the motion/transition comfort blocker by replacing Guided Return directional stage motion with calmer fade-only swaps, reducing guided-entry movement, adding steadier guided stage panel sizing, strengthening reduced-motion behavior, and preserving cleanup, rapid-click protection, mobile containment, visual comfort CSS, five storage keys, maxlengths, safe rendering, deterministic guidance, Apply/Undo, Clear local edits, and the complete Guided Return loop."
     },
     {
@@ -566,9 +570,9 @@
       "note": "The project is resting after a good run and ready for one gentle improvement."
     }
   ],
-  "currentGoal": "Rest after a focused motion comfort correction.",
-  "lastCompletedRun": "2026-07-12: Corrected the motion/transition comfort blocker by replacing Guided Return directional stage motion with calmer fade-only swaps, reducing guided-entry movement, adding steadier guided stage panel sizing, strengthening reduced-motion behavior, and preserving cleanup, rapid-click protection, mobile containment, visual comfort CSS, five storage keys, maxlengths, safe rendering, deterministic guidance, Apply/Undo, Clear local edits, and the complete Guided Return loop.",
-  "nextStep": "Human mobile-test motion comfort with very brief exposure: move through Guided Return one stage at a time and confirm transitions no longer cause nausea or visual discomfort.",
+  "currentGoal": "Rest after a focused Guided Return size-stability correction.",
+  "lastCompletedRun": "2026-07-12: Corrected the remaining Guided Return size-stability blocker by giving the stage panel stable desktop/mobile block sizing, keeping overflowing stage content scrollable inside the panel, stabilizing the guided action area, and preserving fade-only motion, reduced-motion behavior, visual comfort CSS, five local storage keys, maxlengths, safe rendering, deterministic guidance, and the complete loop.",
+  "nextStep": "Human mobile-test Guided Return size stability with brief exposure: move one stage at a time and confirm the panel no longer visibly jumps or resizes in a discomforting way.",
   "dashboardGuide": [
     "Welcome starts the path to read through Record the Change before choosing more work.",
     "Status gives a quick snapshot of how the project is doing right now.",
@@ -579,8 +583,8 @@
     "Optional Reflection can wait; Philosophy Garden is a gentle reflection layer, not Luna's main engine."
   ],
   "futureIdeas": [
-    "Human mobile-test motion comfort with very brief exposure: move through Guided Return one stage at a time and confirm transitions no longer cause nausea or visual discomfort.",
-    "If motion-comfort testing finds a remaining blocker, fix only that issue without expanding v0.1 scope."
+    "Human mobile-test Guided Return size stability with brief exposure: move one stage at a time and confirm the panel no longer visibly jumps or resizes in a discomforting way.",
+    "If size-stability testing finds a remaining blocker, fix only that issue without expanding v0.1 scope."
   ],
   "decisionLog": [
     "2026-07-12: Completed the first full Guided Return loop as the second meaningful v0.1 vertical slice after the opening threshold; Set Aside stays not-a-backlog, Record stays brief, and Rest becomes a real stopping point before returning to Luna.",
@@ -604,8 +608,8 @@
     "The Garden Cycle connects the Reflection Card, Garden Review, Next Garden Update, and rest step so beginners can see how Philosophy Garden pieces fit together."
   ],
   "ideaQueue": [
-    "Human mobile-test motion comfort with very brief exposure: move through Guided Return one stage at a time and confirm transitions no longer cause nausea or visual discomfort.",
-    "If motion-comfort testing finds a remaining blocker, make one bounded motion/accessibility correction."
+    "Human mobile-test Guided Return size stability with brief exposure: move one stage at a time and confirm the panel no longer visibly jumps or resizes in a discomforting way.",
+    "If size-stability testing finds a remaining blocker, make one bounded size-stability/accessibility correction."
   ],
   "ideaQueueGuide": [
     "Choose one small task that can be finished clearly in a single update.",
@@ -640,10 +644,10 @@
     "Visit http://localhost:8000 in a browser to view the dashboard."
   ],
   "nextAction": {
-    "title": "Human mobile-test motion comfort",
-    "description": "Move through Guided Return one stage at a time with very brief exposure and confirm transitions no longer cause nausea or visual discomfort.",
-    "whyItMatters": "This verifies that Luna’s calmer fade-only stage changes and stronger reduced-motion behavior resolve the motion comfort blocker before another readiness pass.",
-    "status": "Resting before human mobile motion-comfort test"
+    "title": "Human mobile-test Guided Return size stability",
+    "description": "Move through Guided Return one stage at a time with brief exposure and confirm the panel no longer visibly jumps or resizes in a discomforting way.",
+    "whyItMatters": "This verifies that Luna’s steadier guided stage frame and action area resolve the remaining human-readiness size-stability blocker before another readiness pass.",
+    "status": "Resting before human mobile size-stability test"
   },
   "creativeSeed": {
     "name": "Philosophy Garden",
@@ -711,9 +715,9 @@
   ],
   "currentMode": {
     "name": "Rest",
-    "description": "Luna is resting after a focused motion comfort correction.",
-    "whyItMatters": "Rest protects the opening threshold, Shape this return, Apply → Undo, clearer full overview editing panel, five saved project values, local-only storage, deterministic guidance, safe rendering, mobile containment, mobile visual comfort, and complete Guided Return loop while human mobile motion-comfort testing happens.",
+    "description": "Luna is resting after a focused Guided Return size-stability correction.",
+    "whyItMatters": "Rest protects the opening threshold, Shape this return, Apply → Undo, clearer full overview editing panel, five saved project values, local-only storage, deterministic guidance, safe rendering, mobile containment, mobile visual comfort, fade-only motion, and complete Guided Return loop while human mobile size-stability testing happens.",
     "value": "Rest"
   },
-  "nextSuggestedStep": "Human mobile-test motion comfort with very brief exposure: move through Guided Return one stage at a time and confirm transitions no longer cause nausea or visual discomfort."
+  "nextSuggestedStep": "Human mobile-test Guided Return size stability with brief exposure: move one stage at a time and confirm the panel no longer visibly jumps or resizes in a discomforting way."
 }

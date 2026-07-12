@@ -544,14 +544,18 @@
 
     .guided-stage-panel {
       align-self: stretch;
+      display: grid;
+      grid-template-rows: auto auto minmax(0, 1fr);
       min-width: 0;
       max-width: 100%;
+      block-size: clamp(420px, 52svh, 520px);
+      min-block-size: clamp(420px, 52svh, 520px);
+      overflow: hidden;
       padding: clamp(18px, 3vw, 28px);
       background: rgb(20 29 52 / 88%);
       border: 1px solid rgb(152 166 214 / 14%);
       border-radius: 22px;
       box-shadow: inset 0 1px 0 rgb(255 255 255 / 4%);
-      min-block-size: clamp(300px, 42svh, 390px);
       will-change: opacity;
     }
 
@@ -599,10 +603,15 @@
 
     .guided-stage-body {
       display: grid;
+      align-content: start;
       gap: 16px;
       min-width: 0;
       max-width: 100%;
+      min-block-size: 0;
       margin-top: 18px;
+      overflow: auto;
+      overscroll-behavior: contain;
+      padding-right: 2px;
     }
 
     .guided-stage-body .quiet-card {
@@ -626,9 +635,11 @@
 
     .guided-actions {
       display: grid;
+      align-content: start;
       gap: 10px;
       min-width: 0;
       max-width: 100%;
+      min-block-size: 108px;
       padding-top: 16px;
       border-top: 1px solid rgb(174 190 226 / 13%);
     }
@@ -749,7 +760,9 @@
 
       .guided-stage-panel {
         min-height: 0;
-        min-block-size: clamp(280px, 48svh, 380px);
+        block-size: clamp(390px, 58svh, 520px);
+        min-block-size: clamp(390px, 58svh, 520px);
+        max-block-size: calc(100svh - 236px);
         padding: 16px;
         border-radius: 18px;
       }
@@ -758,6 +771,7 @@
         position: sticky;
         bottom: max(12px, env(safe-area-inset-bottom));
         z-index: 2;
+        min-block-size: 124px;
         margin: 16px -4px 0;
         padding: 12px 4px 4px;
         background: rgb(12 19 36 / 96%);
