@@ -2,6 +2,19 @@
 
 ## 2026-07-12
 
+### Richer Local Voice and Input Limits
+
+- Recorded the fifth meaningful v0.1 vertical slice: Luna now has a curated deterministic local voice library for the browser-only guidance engine.
+- Integrated stable context-hashed response variants into suggestion reasons, clear-enough responses, no-suggestion results, and Rest messages without using `Math.random()`, response history, cookies, session storage, analytics, or new persistence keys.
+- Preserved the existing deterministic local behavior for blank fields, generic fallbacks, long text, multiple sentences, repeated “and,” list-like text, broad goal/action phrasing, and future-log-like Record wording.
+- Added input limits: Project name 80, Current goal 160, One Next Action 140, Set Aside / Ignore For Now 140, and Record the Change 180 characters.
+- Added quiet near-limit character feedback that appears only as fields approach their limits and stays associated with the relevant inputs.
+- Kept all user text safely rendered through textContent or escaping, kept the plain privacy cue, and added no API, backend, account, external model, cost, network call, or new persistence key.
+- Preserved the opening threshold, Return gently, Shape this return, Open full overview, full overview editing, complete six-stage Guided Return shell, Back / Forward behavior, Rest-stage Return to Luna, five saved project values, blank fallbacks, clear-local-edits behavior, motion/reduced-motion behavior, rapid-click protection, mobile safe-area behavior, One Next Action lantern emphasis, and selective Use this behavior.
+- Set Luna back to Rest and set the next step to mobile human testing of richer local voice and input limits with blank, concise, vague, broad, long, multi-action, and HTML-like text.
+
+## 2026-07-12
+
 ### Local Return-Guidance Engine
 
 - Recorded the fourth meaningful v0.1 vertical slice: Luna’s first deterministic local behavioral engine for shaping a return before entering Guided Return.

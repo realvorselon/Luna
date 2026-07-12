@@ -3,6 +3,10 @@
   "statusHistory": [
     {
       "date": "2026-07-12",
+      "note": "Completed the fifth meaningful v0.1 vertical slice: added Luna's curated deterministic local voice library, integrated stable context-hashed response variants into guidance reasons, clear-enough and no-suggestion messages, and Rest, added input limits for project name (80), current goal (160), One Next Action (140), Set Aside (140), and Record the Change (180), added quiet near-limit character feedback, kept all behavior local/browser-only with no API/backend/account/cost/network call/new persistence key, and preserved the complete loop, five saved project values, navigation, motion, privacy cue, and selective Use this behavior."
+    },
+    {
+      "date": "2026-07-12",
       "note": "Completed the fourth meaningful v0.1 vertical slice: added Luna's first deterministic local return-guidance engine, exposed it through a secondary Shape this return opening action, offered reviewable suggestions for Current goal, One Next Action, Set Aside, and Record without silently overwriting fields, kept all guidance in-browser with no API/backend/account/cost/network call, preserved the existing five project-edit storage keys as the only persisted values, and left suggestion results/history unpersisted."
     },
     {
@@ -616,9 +620,9 @@
     "Visit http://localhost:8000 in a browser to view the dashboard."
   ],
   "nextAction": {
-    "title": "Human-test opening threshold on mobile",
-    "description": "Human-test the new opening threshold on mobile for identity, clarity, emotional tone, scroll comfort, preserved values, and whether opening Luna now feels like opening a real small app. If it passes without a blocking issue, proceed toward completing the remaining Luna loop in a meaningful vertical slice.",
-    "whyItMatters": "This verifies whether the first v0.1-oriented vertical slice makes opening Luna feel like a real small app while preserving one-project focus, existing saved values, and the Guided Return shell.",
+    "title": "Human-test richer local voice and input limits on mobile",
+    "description": "Human-test the richer local voice and input limits on mobile with blank, concise, vague, broad, long, multi-action, and HTML-like text. Judge whether Luna feels warmer and less mechanical while remaining clear and honest about its deterministic local behavior. If it passes without a blocking issue, choose one substantial v0.1 stabilization and coherence pass rather than returning to automatic micro-polish.",
+    "whyItMatters": "This verifies the fifth v0.1 vertical slice: Luna should now feel less mechanical without pretending to be generative AI, while the new length limits keep mobile layout and project context focused.",
     "status": "Resting before human test"
   },
   "creativeSeed": {
@@ -687,9 +691,9 @@
   ],
   "currentMode": {
     "name": "Rest",
-    "description": "Luna is resting after completing the fourth meaningful v0.1 vertical slice: the deterministic local return-guidance engine.",
-    "whyItMatters": "Rest protects the opening threshold, complete Guided Return loop, local-only privacy boundary, five-key persistence scope, suggestion review surface, motion behavior, and mobile-first experience while human testing checks whether Luna is now useful without a backend.",
+    "description": "Luna is resting after completing the fifth meaningful v0.1 vertical slice: a richer deterministic local voice library plus focused input-length limits.",
+    "whyItMatters": "Rest protects the opening threshold, complete Guided Return loop, five-key local persistence scope, selective suggestion review, deterministic browser-only response variation, input limits, quiet near-limit feedback, motion behavior, privacy cue, and mobile-first experience while human testing checks the richer local voice.",
     "value": "Rest"
   },
-  "nextSuggestedStep": "Human-test the local return-guidance engine on mobile using concise, vague, blank, long, and HTML-like project text. Confirm suggestion quality, selective application, privacy, safe rendering, persistence of applied values, and whether Luna now feels genuinely useful without a backend. If it passes without a blocking issue, choose one substantial v0.1 stabilization and coherence pass."
+  "nextSuggestedStep": "Human-test the richer local voice and input limits on mobile with blank, concise, vague, broad, long, multi-action, and HTML-like text. Judge whether Luna feels warmer and less mechanical while remaining clear and honest about its deterministic local behavior. If it passes without a blocking issue, choose one substantial v0.1 stabilization and coherence pass rather than returning to automatic micro-polish."
 }

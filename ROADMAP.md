@@ -110,6 +110,12 @@ This roadmap is intentionally small. Luna is a public dashboard prototype right 
 - The first stable dashboard loop is now in place; future work should preserve the one-step-at-a-time rhythm.
 - Aligned the roadmap with the README's longer-term vision for a calm project companion for small projects.
 
+## Current v0.1 Direction
+
+- The fifth meaningful v0.1 vertical slice is complete: Luna has a richer deterministic local voice library and mobile-focused input limits while staying browser-only and honest about local rules.
+- Next, human-test blank, concise, vague, broad, long, multi-action, and HTML-like text on mobile. If it passes without a blocking issue, choose one substantial v0.1 stabilization and coherence pass rather than returning to automatic micro-polish.
+- Keep protecting the complete Luna loop, five saved local values, no-new-persistence boundary, privacy cue, safe rendering, and selective suggestion behavior.
+
 ## Guided Return Slice
 
 - The first Guided Return implementation slice is in place in `prototype.html`. It tests only Orient → Remember → Choose, keeps the full overview available as the proven reference mode, preserves existing editable values, and does not add Set Aside, Record, Rest, task lists, checklists, new persistence, or workflow behavior.
