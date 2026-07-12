@@ -3,6 +3,10 @@
   "statusHistory": [
     {
       "date": "2026-07-12",
+      "note": "Corrected the blocking Guided Return mobile overflow regression: long unbroken user-entered project text now wraps within the mobile shell/card/action chain instead of widening the viewport; Luna is back at Rest."
+    },
+    {
+      "date": "2026-07-12",
       "note": "Completed the fifth meaningful v0.1 vertical slice: added Luna's curated deterministic local voice library, integrated stable context-hashed response variants into guidance reasons, clear-enough and no-suggestion messages, and Rest, added input limits for project name (80), current goal (160), One Next Action (140), Set Aside (140), and Record the Change (180), added quiet near-limit character feedback, kept all behavior local/browser-only with no API/backend/account/cost/network call/new persistence key, and preserved the complete loop, five saved project values, navigation, motion, privacy cue, and selective Use this behavior."
     },
     {
@@ -542,9 +546,9 @@
       "note": "The project is resting after a good run and ready for one gentle improvement."
     }
   ],
-  "currentGoal": "Rest after completing the fourth meaningful v0.1 slice: Luna now has its first deterministic local return-guidance engine.",
-  "lastCompletedRun": "2026-07-12: Completed the third meaningful v0.1 vertical slice: contextual complete Guided Return loop.",
-  "nextStep": "Human-test the contextual complete loop on mobile, including saved values, blank fallbacks, clear behavior, safe rendering, stage coherence, and whether Luna now feels like a genuine one-project return app rather than a beautiful hardcoded demo. If it passes without a blocking issue, choose one substantial v0.1 stabilization/coherence pass rather than returning to automatic micro-polish.",
+  "currentGoal": "Rest after correcting the blocking Guided Return mobile overflow regression for long unbroken project text.",
+  "lastCompletedRun": "2026-07-12: Corrected the blocking Guided Return mobile overflow regression for long unbroken project-field text.",
+  "nextStep": "Human mobile-test long unbroken text in all five fields and confirm the page remains within the viewport.",
   "dashboardGuide": [
     "Welcome starts the path to read through Record the Change before choosing more work.",
     "Status gives a quick snapshot of how the project is doing right now.",
@@ -555,6 +559,7 @@
     "Optional Reflection can wait; Philosophy Garden is a gentle reflection layer, not Luna's main engine."
   ],
   "futureIdeas": [
+    "Human mobile-test long unbroken text in all five fields and confirm the page remains within the viewport.",
     "Human mobile test the complete guided loop from Luna opening threshold through Orient \u2192 Remember \u2192 Choose \u2192 Set Aside \u2192 Record \u2192 Rest and back to Luna.",
     "Confirm Set Aside feels like consciously leaving something alone, not managing a backlog.",
     "Confirm Record feels brief and grounded, not administrative.",
@@ -583,7 +588,7 @@
     "The Garden Cycle connects the Reflection Card, Garden Review, Next Garden Update, and rest step so beginners can see how Philosophy Garden pieces fit together."
   ],
   "ideaQueue": [
-    "Human mobile test the complete guided loop for focus, reachability, preserved values, no clipping, and a calm ending.",
+    "Human mobile-test long unbroken text in all five fields and confirm the page remains within the viewport.",
     "Confirm the shell still feels like one stable app space across all six stages.",
     "If the complete loop passes, plan one bounded stabilization/coherence pass toward Luna v0.1 instead of automatic micro-polish."
   ],
@@ -620,10 +625,10 @@
     "Visit http://localhost:8000 in a browser to view the dashboard."
   ],
   "nextAction": {
-    "title": "Human-test richer local voice and input limits on mobile",
-    "description": "Human-test the richer local voice and input limits on mobile with blank, concise, vague, broad, long, multi-action, and HTML-like text. Judge whether Luna feels warmer and less mechanical while remaining clear and honest about its deterministic local behavior. If it passes without a blocking issue, choose one substantial v0.1 stabilization and coherence pass rather than returning to automatic micro-polish.",
-    "whyItMatters": "This verifies the fifth v0.1 vertical slice: Luna should now feel less mechanical without pretending to be generative AI, while the new length limits keep mobile layout and project context focused.",
-    "status": "Resting before human test"
+    "title": "Mobile-test long unbroken project text",
+    "description": "Human mobile-test long unbroken text in all five fields and confirm the page remains within the viewport.",
+    "whyItMatters": "This verifies the blocking overflow correction across Project name, Current goal, One Next Action, Set Aside, and Record the Change before Luna moves on.",
+    "status": "Resting before human mobile test"
   },
   "creativeSeed": {
     "name": "Philosophy Garden",
@@ -691,9 +696,9 @@
   ],
   "currentMode": {
     "name": "Rest",
-    "description": "Luna is resting after completing the fifth meaningful v0.1 vertical slice: a richer deterministic local voice library plus focused input-length limits.",
-    "whyItMatters": "Rest protects the opening threshold, complete Guided Return loop, five-key local persistence scope, selective suggestion review, deterministic browser-only response variation, input limits, quiet near-limit feedback, motion behavior, privacy cue, and mobile-first experience while human testing checks the richer local voice.",
+    "description": "Luna is resting after correcting a blocking mobile overflow regression in Guided Return.",
+    "whyItMatters": "Rest protects the complete loop, five saved project values, input limits, deterministic local guidance, navigation, motion, accessibility, and mobile safe-area behavior while human testing verifies long unbroken text containment.",
     "value": "Rest"
   },
-  "nextSuggestedStep": "Human-test the richer local voice and input limits on mobile with blank, concise, vague, broad, long, multi-action, and HTML-like text. Judge whether Luna feels warmer and less mechanical while remaining clear and honest about its deterministic local behavior. If it passes without a blocking issue, choose one substantial v0.1 stabilization and coherence pass rather than returning to automatic micro-polish."
+  "nextSuggestedStep": "Human mobile-test long unbroken text in all five fields and confirm the page remains within the viewport."
 }

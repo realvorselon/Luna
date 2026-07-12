@@ -100,4 +100,33 @@ assert(html.includes('guidance.allClearMessage'));
 assert(html.includes('textContent = text'));
 assert(html.includes('escapeHtml(window.LunaReturnGuidance.buildReturnGuidance'));
 
+const css = html.match(/<style>([\s\S]*?)<\/style>/)[1];
+const longUnbrokenNextAction = 'ReturnToLunaWithoutSpaces'.repeat(8).slice(0, 140);
+assert.equal(longUnbrokenNextAction.length, 140, 'regression value should fill the One Next Action maxlength with no spaces');
+const longActionGuidance = guidance.buildReturnGuidance({ ...base, nextAction: longUnbrokenNextAction });
+assert.equal(longActionGuidance.nextAction.current, longUnbrokenNextAction, 'long unbroken One Next Action remains available to render and wrap');
+assert.doesNotMatch(css, /body[^{]*{[^}]*overflow-x\s*:\s*hidden/i, 'do not hide page overflow as the only mobile fix');
+
+function assertRuleContains(selector, properties) {
+  const escaped = selector.replace(/[.*+?^${}()|[\]\\]/g, '\\$&').replace(/\s+/g, '\\s*');
+  const rule = css.match(new RegExp(escaped + '\\s*\\{([\\s\\S]*?)\\}', 'm'));
+  assert(rule, `${selector} rule should exist`);
+  for (const property of properties) {
+    assert(rule[1].includes(property), `${selector} should include ${property}`);
+  }
+}
+
+assertRuleContains('.guided-return-view', ['min-width: 0', 'max-width: 100%']);
+assertRuleContains('.guided-shell', ['grid-template-rows: auto minmax(0, 1fr) auto']);
+assert(css.includes('.guided-shell,\n    .guided-app-shell') && css.includes('min-width: 0') && css.includes('max-width: 100%'), 'guided shell/app shell containment rules should be present');
+assertRuleContains('.guided-stage-panel', ['min-width: 0', 'max-width: 100%']);
+assertRuleContains('.guided-stage-body', ['min-width: 0', 'max-width: 100%']);
+assertRuleContains('.edit-fields', ['min-width: 0', 'max-width: 100%']);
+assertRuleContains('.edit-field', ['min-width: 0', 'max-width: 100%']);
+assertRuleContains('.edit-field input', ['box-sizing: border-box', 'min-width: 0', 'max-width: 100%']);
+assertRuleContains('.guided-actions', ['min-width: 0', 'max-width: 100%']);
+assert(css.includes('.guided-primary-actions,\n    .guided-secondary-actions') && css.includes('flex-wrap: wrap') && css.includes('min-width: 0'), 'guided action rows should wrap and shrink instead of preserving min-content width');
+assert(css.includes('.prototype-note, .lantern-card, .card, .quiet-card') && css.includes('overflow-wrap: anywhere') && css.includes('word-break: break-word'), 'card surfaces should wrap long user-entered strings instead of widening mobile layout');
+assert(css.includes('.guided-control,\n    .clear-local-edits-button') && css.includes('overflow-wrap: anywhere') && css.includes('word-break: break-word'), 'guided controls should not force horizontal overflow');
+
 console.log('local guidance tests passed');

@@ -2,7 +2,7 @@
 
 ## Current v0.1 Direction
 
-The fourth meaningful v0.1 vertical slice is complete: Luna now has its first deterministic local return-guidance engine. The next step is human mobile testing with concise, vague, blank, long, and HTML-like text to check suggestion quality, selective application, privacy, safe rendering, persistence of applied values, and whether Luna now feels useful without a backend. If that passes without a blocking issue, choose one substantial v0.1 stabilization/coherence pass rather than returning to automatic micro-polish.
+A blocking Guided Return mobile overflow regression is corrected: long unbroken user-entered project text now wraps inside the mobile shell/card/action chain instead of widening the page. The next step is human mobile testing with long unbroken text in all five fields, plus concise, vague, blank, broad, multi-action, and HTML-like text, to confirm containment, suggestion quality, selective application, privacy, safe rendering, and persistence. If that passes without a blocking issue, choose one substantial v0.1 stabilization/coherence pass rather than returning to automatic micro-polish.
 
 Protected scope remains one local project only. The guidance engine must stay browser-only with no API key, backend, account, cost, network call, persisted suggestion result, or suggestion-history key. The existing five project-edit storage keys remain the only persisted project values. Set Aside is one saved value, not a backlog. Record is one saved value, not a log. The opening threshold, Return gently action, navigation loop, panel motion, mobile treatment, full overview reference/editing mode, and six-stage shell should stay protected.
 
