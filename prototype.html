@@ -166,6 +166,10 @@
       border-radius: 8px;
       font: inherit;
       font-weight: 650;
+      min-width: 0;
+      max-width: 100%;
+      overflow-wrap: anywhere;
+      word-break: break-word;
       cursor: pointer;
     }
 
@@ -242,8 +246,12 @@
     }
 
     .prototype-note, .lantern-card, .card, .quiet-card {
+      min-width: 0;
+      max-width: 100%;
       border-radius: 16px;
       box-shadow: 0 14px 34px rgb(0 0 0 / 16%);
+      overflow-wrap: anywhere;
+      word-break: break-word;
     }
 
     .prototype-note {
@@ -338,11 +346,15 @@
     .edit-fields {
       display: grid;
       gap: 14px;
+      min-width: 0;
+      max-width: 100%;
     }
 
     .edit-field {
       display: grid;
       gap: 7px;
+      min-width: 0;
+      max-width: 100%;
     }
 
     .edit-field label {
@@ -352,8 +364,10 @@
     }
 
     .edit-field input {
+      box-sizing: border-box;
       width: 100%;
       min-width: 0;
+      max-width: 100%;
       padding: 12px 13px;
       color: var(--moon);
       background:
@@ -424,6 +438,10 @@
         inset 0 1px 0 rgb(255 255 255 / 12%);
       font: inherit;
       font-weight: 700;
+      min-width: 0;
+      max-width: 100%;
+      overflow-wrap: anywhere;
+      word-break: break-word;
       cursor: pointer;
     }
 
@@ -465,6 +483,8 @@
 
     .guided-return-view {
       width: min(100%, 880px);
+      min-width: 0;
+      max-width: 100%;
       margin: 38px auto 0;
       padding: clamp(18px, 3vw, 28px);
       background:
@@ -477,6 +497,12 @@
         inset 0 1px 0 rgb(255 255 255 / 5%);
     }
 
+    .guided-shell,
+    .guided-app-shell {
+      min-width: 0;
+      max-width: 100%;
+    }
+
     .guided-shell {
       display: grid;
       grid-template-rows: auto minmax(0, 1fr) auto;
@@ -486,6 +512,8 @@
 
     .guided-shell-header {
       display: grid;
+      min-width: 0;
+      max-width: 100%;
       gap: 8px;
       padding: 2px 2px 14px;
       border-bottom: 1px solid rgb(174 190 226 / 13%);
@@ -529,6 +557,8 @@
 
     .guided-stage-panel {
       align-self: stretch;
+      min-width: 0;
+      max-width: 100%;
       padding: clamp(18px, 3vw, 28px);
       background:
         linear-gradient(180deg, rgb(22 31 59 / 78%), rgb(13 20 42 / 88%));
@@ -597,6 +627,8 @@
     .guided-stage-body {
       display: grid;
       gap: 16px;
+      min-width: 0;
+      max-width: 100%;
       margin-top: 18px;
     }
 
@@ -629,6 +661,8 @@
     .guided-actions {
       display: grid;
       gap: 10px;
+      min-width: 0;
+      max-width: 100%;
       padding-top: 16px;
       border-top: 1px solid rgb(174 190 226 / 13%);
     }
@@ -638,6 +672,8 @@
       display: flex;
       flex-wrap: wrap;
       gap: 10px;
+      min-width: 0;
+      max-width: 100%;
     }
 
     .overview-return-luna {

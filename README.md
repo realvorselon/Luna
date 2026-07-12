@@ -1,5 +1,11 @@
 # Luna
 
+## Blocking mobile overflow correction
+
+- Fixed a blocking Guided Return mobile overflow regression where a long unbroken One Next Action could force the stage card, input area, navigation controls, and background wider than the viewport.
+- The correction keeps user-entered project text readable inside the shell/card/action chain by allowing relevant grid/flex children, cards, inputs, and guided controls to shrink and wrap long unbroken strings without relying on page-level `overflow-x: hidden`.
+- Luna is back at Rest. Next: human mobile-test long unbroken text in all five fields and confirm the page remains within the viewport.
+
 ## Richer deterministic local voice and input limits
 
 - Luna now has its fifth meaningful v0.1 vertical slice: a curated local voice library for the deterministic return-guidance engine.

@@ -2,6 +2,13 @@
 
 ## 2026-07-12
 
+### Blocking Mobile Overflow Correction
+
+- Fixed a blocking Guided Return mobile overflow regression where long unbroken user-entered text, especially One Next Action, could widen the mobile page beyond the viewport.
+- Added containment and wrapping protections on the guided shell, stage panel/body, cards, edit fields, inputs, action rows, and guided controls without using page-level overflow hiding as the fix.
+- Added a static regression assertion for a max-length unbroken One Next Action and the relevant no-horizontal-overflow CSS protections.
+- Set Luna back to Rest; next is human mobile testing long unbroken text in all five fields.
+
 ### Richer Local Voice and Input Limits
 
 - Recorded the fifth meaningful v0.1 vertical slice: Luna now has a curated deterministic local voice library for the browser-only guidance engine.
