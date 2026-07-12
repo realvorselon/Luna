@@ -3,11 +3,15 @@
   "statusHistory": [
     {
       "date": "2026-07-12",
+      "note": "Completed the fourth meaningful v0.1 vertical slice: added Luna's first deterministic local return-guidance engine, exposed it through a secondary Shape this return opening action, offered reviewable suggestions for Current goal, One Next Action, Set Aside, and Record without silently overwriting fields, kept all guidance in-browser with no API/backend/account/cost/network call, preserved the existing five project-edit storage keys as the only persisted values, and left suggestion results/history unpersisted."
+    },
+    {
+      "date": "2026-07-12",
       "note": "Completed the third meaningful v0.1 vertical slice: the complete Guided Return loop now responds to the current one-project context, adds exactly two local values (`luna.prototype.setAside` and `luna.prototype.recordChange`), explicitly clears all five local project-edit keys, keeps Set Aside as one value rather than a backlog and Record as one brief value rather than a log, removes recipe-specific guided leakage where current context should appear, and preserves the opening threshold, Return gently action, navigation loop, motion, mobile treatment, full overview, and six-stage shell."
     },
     {
       "date": "2026-07-12",
-      "note": "Completed the second meaningful v0.1 vertical slice after the opening threshold: Guided Return now carries the first full Luna loop through Orient → Remember → Choose → Set Aside → Record → Rest, preserves the opening threshold, full overview, saved values, and navigation loop, keeps Ignore For Now from becoming a backlog, keeps Record brief, and treats Rest as a real stopping point before returning to Luna."
+      "note": "Completed the second meaningful v0.1 vertical slice after the opening threshold: Guided Return now carries the first full Luna loop through Orient \u2192 Remember \u2192 Choose \u2192 Set Aside \u2192 Record \u2192 Rest, preserves the opening threshold, full overview, saved values, and navigation loop, keeps Ignore For Now from becoming a backlog, keeps Record brief, and treats Rest as a real stopping point before returning to Luna."
     },
     {
       "date": "2026-07-12",
@@ -19,11 +23,11 @@
     },
     {
       "date": "2026-07-12",
-      "note": "Implemented one bounded Guided Return app-shell experiment for Orient → Remember → Choose: a stable centered shell with persistent header, stage-content region, and predictable action area, preserving the full overview reference mode, existing motion, mobile action findings, localStorage behavior, and One Next Action lantern emphasis."
+      "note": "Implemented one bounded Guided Return app-shell experiment for Orient \u2192 Remember \u2192 Choose: a stable centered shell with persistent header, stage-content region, and predictable action area, preserving the full overview reference mode, existing motion, mobile action findings, localStorage behavior, and One Next Action lantern emphasis."
     },
     {
       "date": "2026-07-12",
-      "note": "Added the Guided Return app-shell experiment boundary, recorded that existing Guided Return experiments produced enough evidence to stop automatic micro-polish, preserved the current prototype and full overview as references, and set the next direction to human-reviewing one bounded shell experiment for Orient → Remember → Choose."
+      "note": "Added the Guided Return app-shell experiment boundary, recorded that existing Guided Return experiments produced enough evidence to stop automatic micro-polish, preserved the current prototype and full overview as references, and set the next direction to human-reviewing one bounded shell experiment for Orient \u2192 Remember \u2192 Choose."
     },
     {
       "date": "2026-07-12",
@@ -71,7 +75,7 @@
     },
     {
       "date": "2026-07-11",
-      "note": "Added the first Guided Return implementation slice: an optional reversible Orient → Remember → Choose guided view in prototype.html while keeping the full overview available."
+      "note": "Added the first Guided Return implementation slice: an optional reversible Orient \u2192 Remember \u2192 Choose guided view in prototype.html while keeping the full overview available."
     },
     {
       "date": "2026-07-11",
@@ -123,7 +127,7 @@
     },
     {
       "date": "2026-07-10",
-      "note": "Added a tiny theme direction boundary for Luna’s finished moonlit garden / quiet desk / gentle return path vibe."
+      "note": "Added a tiny theme direction boundary for Luna\u2019s finished moonlit garden / quiet desk / gentle return path vibe."
     },
     {
       "date": "2026-07-10",
@@ -534,7 +538,7 @@
       "note": "The project is resting after a good run and ready for one gentle improvement."
     }
   ],
-  "currentGoal": "Human-test the contextual complete loop on mobile, including saved values, blank fallbacks, clear behavior, safe rendering, stage coherence, and whether Luna now feels like a genuine one-project return app rather than a beautiful hardcoded demo. If it passes without a blocking issue, choose one substantial v0.1 stabilization/coherence pass rather than returning to automatic micro-polish.",
+  "currentGoal": "Rest after completing the fourth meaningful v0.1 slice: Luna now has its first deterministic local return-guidance engine.",
   "lastCompletedRun": "2026-07-12: Completed the third meaningful v0.1 vertical slice: contextual complete Guided Return loop.",
   "nextStep": "Human-test the contextual complete loop on mobile, including saved values, blank fallbacks, clear behavior, safe rendering, stage coherence, and whether Luna now feels like a genuine one-project return app rather than a beautiful hardcoded demo. If it passes without a blocking issue, choose one substantial v0.1 stabilization/coherence pass rather than returning to automatic micro-polish.",
   "dashboardGuide": [
@@ -547,7 +551,7 @@
     "Optional Reflection can wait; Philosophy Garden is a gentle reflection layer, not Luna's main engine."
   ],
   "futureIdeas": [
-    "Human mobile test the complete guided loop from Luna opening threshold through Orient → Remember → Choose → Set Aside → Record → Rest and back to Luna.",
+    "Human mobile test the complete guided loop from Luna opening threshold through Orient \u2192 Remember \u2192 Choose \u2192 Set Aside \u2192 Record \u2192 Rest and back to Luna.",
     "Confirm Set Aside feels like consciously leaving something alone, not managing a backlog.",
     "Confirm Record feels brief and grounded, not administrative.",
     "Confirm Rest feels like a real stopping point without pressure.",
@@ -557,7 +561,7 @@
     "2026-07-12: Completed the first full Guided Return loop as the second meaningful v0.1 vertical slice after the opening threshold; Set Aside stays not-a-backlog, Record stays brief, and Rest becomes a real stopping point before returning to Luna.",
     "2026-07-12: Human testing found the new Luna opening threshold passed strongly, but returning from Guided Return to the full overview left no direct route back to the Luna opening threshold; adding one secondary Return to Luna action completes the basic navigation loop without adding competing actions or changing persistence.",
     "2026-07-12: Luna deliberately shifted from many tiny micro-experiments toward fewer meaningful v0.1 vertical slices; the first is a real opening threshold that routes primarily into the existing Guided Return shell while preserving the full overview as quieter reference/editing mode.",
-    "2026-07-12: Implemented the first Guided Return app-shell experiment as one stable centered shell with persistent header, stage-content region, and action area for Orient → Remember → Choose; next is human mobile testing of whether it feels like one calm focused app space.",
+    "2026-07-12: Implemented the first Guided Return app-shell experiment as one stable centered shell with persistent header, stage-content region, and action area for Orient \u2192 Remember \u2192 Choose; next is human mobile testing of whether it feels like one calm focused app space.",
     "2026-07-12: The Guided Return app-shell experiment boundary became the next product direction; existing experiments produced enough evidence to stop automatic micro-polish and test the container / spatial experience next.",
     "2026-07-12: The abrupt Begin a guided return entrance became the focused implementation experiment; the overview now softly yields before the Guided Return surface arrives as one visual unit, while mobile action layout and Forward / Back panel motion stay preserved.",
     "2026-07-12: The corrected Guided Return mobile action layout passed its initial human test; no further action-layout polish is needed now without a new human usability finding, and the abrupt Begin a guided return entrance is a separate possible follow-up.",
@@ -683,9 +687,9 @@
   ],
   "currentMode": {
     "name": "Rest",
-    "description": "Luna is resting after implementing the first v0.1-oriented opening threshold vertical slice.",
-    "whyItMatters": "Rest protects the deliberate shift toward fewer meaningful slices, the one-project focus, the quieter full overview/reference mode, existing localStorage behavior, and the Guided Return shell while mobile testing checks identity, clarity, tone, scroll comfort, and preserved values.",
+    "description": "Luna is resting after completing the fourth meaningful v0.1 vertical slice: the deterministic local return-guidance engine.",
+    "whyItMatters": "Rest protects the opening threshold, complete Guided Return loop, local-only privacy boundary, five-key persistence scope, suggestion review surface, motion behavior, and mobile-first experience while human testing checks whether Luna is now useful without a backend.",
     "value": "Rest"
   },
-  "nextSuggestedStep": "Human-test the new opening threshold on mobile for identity, clarity, emotional tone, scroll comfort, preserved values, and whether opening Luna now feels like opening a real small app. If it passes without a blocking issue, proceed toward completing the remaining Luna loop in a meaningful vertical slice."
+  "nextSuggestedStep": "Human-test the local return-guidance engine on mobile using concise, vague, blank, long, and HTML-like project text. Confirm suggestion quality, selective application, privacy, safe rendering, persistence of applied values, and whether Luna now feels genuinely useful without a backend. If it passes without a blocking issue, choose one substantial v0.1 stabilization and coherence pass."
 }
