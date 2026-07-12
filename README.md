@@ -3,12 +3,13 @@
 ## First v0.1-oriented vertical slice: Luna opening threshold
 
 - Luna now opens on a real welcome-and-return threshold instead of a prototype demonstration.
-- The primary path is Luna opening threshold → existing Guided Return shell for Orient → Remember → Choose.
-- The opening preserves one-project focus by showing only selective context: the current project and one next action.
-- The full overview remains available as a quieter reference/editing mode with the existing editable values and local browser persistence intact.
+- Human testing found the new opening threshold is a strong improvement and feels like a real app opening.
+- That same test found one navigation gap: after Guided Return → “Return to full overview,” the full overview lacked a clear direct way back to the Luna opening threshold.
+- The basic prototype navigation loop is now complete: Luna opening threshold → Guided Return → Full overview → Luna opening threshold.
+- The full overview now includes one secondary “Return to Luna” action, preserving editable values and existing local browser persistence.
 - Luna has shifted from many tiny micro-experiments toward fewer meaningful vertical slices aimed at a practical v0.1 finish line.
 - The intended loop remains Orient → Remember → Choose → Set Aside → Record → Rest; Set Aside, Record, and Rest remain intentionally unimplemented in the guided flow for this run.
-- Next: Human-test the new opening threshold on mobile for identity, clarity, emotional tone, scroll comfort, preserved values, and whether opening Luna now feels like opening a real small app. If it passes without a blocking issue, proceed toward completing the remaining Luna loop in a meaningful vertical slice.
+- Next: continue toward a fuller Luna loop in a meaningful vertical slice after this navigation correction passes human testing.
 
 
 ## Guided Return app-shell experiment
@@ -29,7 +30,7 @@ Luna is currently a small public dashboard prototype. Over time, the idea is for
 
 The current single-project browser prototype phase is complete and closed. The active Guided Return work has produced enough human evidence to stop automatic micro-polish on the existing shell: optional guided mode is viable, the full overview remains a useful reference mode, Forward / Back and Return to full overview work, editable values remain preserved, One Next Action works as the lantern, panel-level motion feels closer to a modern app than a quick content shift, the corrected mobile action layout seems better, and the restrained entrance feels mostly softer and less abrupt. The current prototype remains the proven reference implementation, and the full overview remains the reference mode.
 
-The current prototype experience now opens with the first real Luna threshold and carries the primary action into the implemented **Guided Return app shell** for the limited Orient → Remember → Choose loop. This is the first v0.1-oriented vertical slice after the earlier micro-experiment phase. Do not automatically add Set Aside, Record, and Rest; do not continue automatic CSS or motion micro-polish. Luna is back at Rest. Next, human mobile test the opening threshold for identity, clarity, emotional tone, scroll comfort, preserved values, and whether opening Luna now feels like opening a real small app.
+The current prototype experience now opens with the first real Luna threshold and carries the primary action into the implemented **Guided Return app shell** for the limited Orient → Remember → Choose loop. Human testing found the opening threshold itself passed strongly, but the full overview needed a direct path back to Luna after returning from Guided Return. The full overview now has one secondary “Return to Luna” action, completing the basic loop from opening threshold to Guided Return to full overview and back to the opening threshold. Do not automatically add Set Aside, Record, and Rest; do not continue automatic CSS or motion micro-polish. Luna is back at Rest. Next, continue toward a fuller Luna loop in a meaningful vertical slice after this navigation correction passes human testing.
 
 ## Dashboard
 

@@ -9,16 +9,19 @@
 - Keep the full overview as quieter reference/editing mode, not the first impression.
 - Protect the full intended Luna loop: Orient → Remember → Choose → Set Aside → Record → Rest.
 - Do not add Set Aside, Record, or Rest as guided stages until a later substantial coherent slice.
-- Next: Human-test the new opening threshold on mobile for identity, clarity, emotional tone, scroll comfort, preserved values, and whether opening Luna now feels like opening a real small app. If it passes without a blocking issue, proceed toward completing the remaining Luna loop in a meaningful vertical slice.
+- Human testing found the opening threshold itself passed strongly and feels like a real app opening.
+- The basic navigation loop is now protected: Luna opening threshold → Guided Return → Full overview → Luna opening threshold.
+- Next: Human-test the full-overview “Return to Luna” correction. If it passes, continue toward a fuller Luna loop in a meaningful vertical slice.
 
 
-## Current Rest Checkpoint — Opening Threshold Vertical Slice
+## Current Rest Checkpoint — Basic Navigation Loop Correction
 
 - Implemented the first real Luna opening threshold as the first v0.1-oriented vertical slice after the earlier micro-experiment phase.
-- The primary path is now Luna opening threshold → Guided Return app shell for the existing Orient → Remember → Choose slice.
-- The opening uses a restrained Luna identity mark, concise return message, selective one-project context, a primary “Return gently” action, and quiet access to the full overview.
+- Human testing found the opening threshold passed strongly and feels like a real app opening.
+- Human testing also found a navigation gap: after Guided Return → “Return to full overview,” the full overview lacked a clear direct way back to the Luna opening threshold.
+- Added one secondary “Return to Luna” action in the full overview so the basic path is now Luna opening threshold → Guided Return → Full overview → Luna opening threshold.
 - Preserved the full overview as the reference/editing mode, all existing editable values, localStorage keys, blank fallbacks, clear-local-edits behavior, mobile action layout, entrance behavior, panel-level Forward / Back motion, reduced-motion behavior, rapid-click protection, and transition cleanup.
-- Next: human mobile test the opening threshold for identity, clarity, emotional tone, scroll comfort, preserved values, and whether opening Luna now feels like opening a real small app. If it passes without a blocking issue, proceed toward completing the remaining Luna loop in a meaningful vertical slice.
+- Next: human-test the full-overview “Return to Luna” correction. If it passes, continue toward a fuller Luna loop in a meaningful vertical slice.
 
 This roadmap is intentionally small. Luna is a public dashboard prototype right now, and its core is helping someone return to one small project, see where they left off, see what changed last, choose one clear Next Action, know what to ignore for now, record the change, and rest before adding more.
 
