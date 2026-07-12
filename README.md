@@ -1,5 +1,12 @@
 # Luna
 
+## v0.1 stabilization and coherence pass
+
+- Cleaned small copy and generated punctuation edges in the existing Luna return flow without adding new features.
+- Record fallback wording now avoids doubled punctuation such as “Open the prototype..”, and Rest wording is normalized to end cleanly.
+- The opening threshold, Shape this return, Apply → Undo, Open full overview, Return to Luna, and the complete Orient → Remember → Choose → Set Aside → Record → Rest loop remain preserved.
+- Luna is back at Rest. Next: human v0.1 readiness test on mobile through the complete flow.
+
 ## Reversible suggestion review
 
 - Shape this return now makes each visible applied suggestion immediately reversible in the same review session: “Use this” becomes “Undo” for that one field.
