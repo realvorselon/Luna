@@ -2,25 +2,24 @@
 
 ## Identity
 
-Luna is becoming a small, moonlit one-project return app. It begins with a real opening threshold, then carries a person into the existing Guided Return shell for Orient → Remember → Choose while keeping the full overview available as a quieter reference and editing mode.
+Luna is becoming a small, moonlit one-project return app. It begins with a real opening threshold, carries a person through the first complete Guided Return loop, and keeps the full overview available as a quieter reference and editing mode.
 
 ## Current Goal
 
-Rest after completing the basic Luna opening threshold navigation loop correction.
+Rest after completing the first full guided Luna loop.
 
 ## Last Completed Run
 
+- 2026-07-12: Completed the first full Guided Return sequence: Orient → Remember → Choose → Set Aside → Record → Rest. Set Aside focuses Ignore For Now without becoming a backlog, Record stays brief and non-administrative, and Rest is a real stopping point with a primary path back to Luna’s opening threshold.
 - 2026-07-12: Added one secondary “Return to Luna” action from the full overview back to the Luna opening threshold after human testing found the new opening passed strongly but the overview lacked a direct way back.
 - 2026-07-12: Replaced the prototype-like opening of `prototype.html` with a real Luna opening threshold that establishes Luna's identity, preserves one-project focus, surfaces only enough current project context to feel grounded, and routes the primary "Return gently" action into the existing Guided Return shell.
 
 ## Next Suggested Step
 
-Human-test the new full-overview “Return to Luna” navigation correction. If it passes, continue toward a fuller Luna loop in a meaningful vertical slice.
+Human-test the complete loop on mobile: Luna opening threshold → Orient → Remember → Choose → Set Aside → Record → Rest → Luna opening threshold. If it passes without a blocking issue, do one stabilization and coherence pass toward Luna v0.1 rather than returning to automatic micro-polish.
 
 ## Notes
 
-Luna has deliberately shifted away from many tiny automatic micro-experiments toward fewer, more meaningful vertical slices. The first v0.1-oriented slice is the new Luna opening threshold: a calm, moonlit, human first screen with a restrained typographic identity mark, concise return invitation, selective one-project context, a primary return action, and quiet access to the full overview. The basic prototype navigation loop is now Luna opening threshold → Guided Return → Full overview → Luna opening threshold. The full overview remains preserved as a reference and editing mode with existing editable values, localStorage keys, blank-value fallbacks, and clear-local-edits scope intact.
+Luna has deliberately shifted away from many tiny automatic micro-experiments toward fewer, more meaningful vertical slices. The first v0.1-oriented slice was the Luna opening threshold. This run is the second meaningful v0.1 vertical slice: the existing Guided Return shell now carries the full intended Luna loop from beginning to end while preserving the opening threshold, full overview reference/editing mode, existing editable values, localStorage keys, blank-value fallbacks, clear-local-edits behavior and scope, opening-context syncing, Forward / Back navigation, Return to full overview, reduced-motion support, rapid-click protection, transition cleanup, mobile action layout, dark moonlit surfaces, and One Next Action lantern emphasis.
 
-The existing Guided Return shell remains the primary return flow and is still intentionally limited to Orient → Remember → Choose. The intended Luna loop remains Orient → Remember → Choose → Set Aside → Record → Rest, but Set Aside, Record, and Rest were not added to the guided stages in this run. Preserve the current app-shell direction, Forward / Back navigation, Return to full overview, reduced-motion support, rapid-click protection, transition cleanup, mobile action layout, dark moonlit surfaces, and One Next Action lantern emphasis.
-
-Next meaningful direction after this navigation correction passes is to complete more of the Luna loop in one substantial coherent slice rather than returning to automatic micro-polish. Luna is back at Rest.
+Set Aside intentionally presents Ignore For Now as permission to leave selected work alone, not as a backlog. Record intentionally remains a brief closing note, not a log or administrative system. Rest intentionally gives a real stopping point and returns to Luna only when the person chooses it. Luna is back at Rest.

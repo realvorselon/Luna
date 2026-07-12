@@ -2,6 +2,18 @@
 
 ## 2026-07-12
 
+### First Complete Guided Luna Loop
+
+- Extended the existing Guided Return shell from Orient → Remember → Choose to Orient → Remember → Choose → Set Aside → Record → Rest.
+- Added Set Aside as a focused Ignore For Now stage that reinforces leaving something alone as a valid project decision without creating backlog, list-management, priority, category, due-date, checkbox, kanban, or task-system behavior.
+- Added Record as a brief Record the Change stage without adding persistence, forms, history editing, GitHub-facing language, or a logging system.
+- Added Rest as a warm stopping point where one small return is enough and the person is allowed to stop.
+- Changed the Rest-stage primary action from generic Forward behavior to “Return to Luna,” returning to the opening threshold while preserving saved values and clearing stale transition state.
+- Kept Back and Return to full overview available, preserved the opening threshold and full overview navigation loop, and preserved existing editable values, localStorage keys, blank fallbacks, clear-local-edits scope, opening-context syncing, reduced-motion behavior, rapid-click protection, transition cleanup, and mobile action layout.
+- Recorded this as the second meaningful v0.1 vertical slice after the opening threshold and set the next step to human mobile testing of the complete loop before a possible v0.1 stabilization/coherence pass.
+
+## 2026-07-12
+
 ### Basic Navigation Loop Correction
 
 - Recorded the human finding that the new Luna opening threshold passed strongly and feels like a real app opening.

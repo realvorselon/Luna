@@ -516,6 +516,25 @@
       box-shadow: inset 0 1px 0 rgb(255 255 255 / 4%);
     }
 
+    .guided-stage-panel[data-stage-tone="set-aside"] {
+      background:
+        radial-gradient(circle at 86% 12%, rgb(189 200 238 / 8%), transparent 16rem),
+        linear-gradient(180deg, rgb(20 29 56 / 74%), rgb(12 19 39 / 88%));
+    }
+
+    .guided-stage-panel[data-stage-tone="record"] {
+      background:
+        radial-gradient(circle at 12% 8%, rgb(241 215 147 / 8%), transparent 13rem),
+        linear-gradient(180deg, rgb(24 32 58 / 80%), rgb(13 20 42 / 90%));
+    }
+
+    .guided-stage-panel[data-stage-tone="rest"] {
+      background:
+        radial-gradient(circle at 50% 0%, rgb(241 215 147 / 11%), transparent 18rem),
+        linear-gradient(180deg, rgb(27 34 60 / 82%), rgb(11 17 36 / 92%));
+      border-color: rgb(241 215 147 / 18%);
+    }
+
     .guided-actions {
       display: grid;
       gap: 10px;
@@ -695,10 +714,10 @@
         <div class="guided-shell-header">
           <p class="guided-shell-kicker">Guided Return</p>
           <h2 class="guided-shell-title" id="guided-shell-title">One quiet return space</h2>
-          <p class="guided-shell-note">Move through Orient → Remember → Choose inside this same focused shell, with the full overview available when you want reference or editing.</p>
+          <p class="guided-shell-note">Move through Orient → Remember → Choose → Set Aside → Record → Rest inside this same focused shell, with the full overview available when you want reference or editing.</p>
         </div>
         <div class="guided-stage-panel" id="guided-stage-panel" aria-labelledby="guided-stage-title">
-          <p class="guided-position" id="guided-position">Stage 1 of 3</p>
+          <p class="guided-position" id="guided-position">Stage 1 of 6</p>
           <h2 id="guided-stage-title" tabindex="-1">Orient</h2>
           <p class="path-note" id="guided-stage-intro">Return to the project identity, current mode, and current goal before choosing anything new.</p>
           <div class="guided-stage-body" id="guided-stage-body"></div>
@@ -933,11 +952,52 @@
       {
         title: 'Choose',
         intro: 'Use One Next Action as the lantern of the loop. Keep it to one action, not a list.',
+        tone: 'choose',
         render: () => `
           <article class="lantern-card">
             <span class="label">One Next Action</span>
             <h3 id="guided-next-action-display">${escapeHtml(nextActionDisplay.textContent)}</h3>
             <p>Keep it small: one general broth sentence is enough. Do not add a full recipe, grocery list, meal plan, or new project area.</p>
+          </article>
+        `
+      },
+      {
+        title: 'Set Aside',
+        intro: 'Name what can wait so the next action stays small. Ignore For Now is not a backlog.',
+        tone: 'set-aside',
+        render: () => `
+          <article class="quiet-card">
+            <span class="label">Ignore For Now</span>
+            <p>Leaving these alone is a valid project decision for this return.</p>
+            <ul>
+              <li>Do not add more than three recipe ideas.</li>
+              <li>Do not make a meal planner, shopping list, account, database, or sharing system.</li>
+              <li>Do not polish the visual design before the tiny notes are clear.</li>
+            </ul>
+          </article>
+        `
+      },
+      {
+        title: 'Record',
+        intro: 'Make one small closing note about what changed or what you are carrying forward.',
+        tone: 'record',
+        render: () => `
+          <article class="quiet-card">
+            <span class="label">Record the Change</span>
+            <h3>One plain note is enough.</h3>
+            <p>After the broth sentence is added, write what changed, why the notes are easier to return to, and what can keep waiting.</p>
+          </article>
+        `
+      },
+      {
+        title: 'Rest',
+        intro: 'You can stop here. One small return is enough.',
+        tone: 'rest',
+        render: () => `
+          <article class="quiet-card rest-card">
+            <span class="label">Rest</span>
+            <h3>Leave the project gently.</h3>
+            <p>The next action is named, what can wait is allowed to wait, and nothing else has to happen now.</p>
           </article>
         `
       }
@@ -1022,6 +1082,7 @@
       guidedPosition.textContent = `Stage ${guidedStageIndex + 1} of ${guidedStages.length}`;
       guidedStageTitle.textContent = stage.title;
       guidedStageIntro.textContent = stage.intro;
+      guidedStagePanel.dataset.stageTone = stage.tone || 'quiet';
       guidedStageBody.innerHTML = stage.render();
 
       if (stage.title === 'Choose') {
@@ -1031,7 +1092,8 @@
       }
 
       guidedBackButton.hidden = guidedStageIndex === 0;
-      guidedForwardButton.hidden = guidedStageIndex === guidedStages.length - 1;
+      guidedForwardButton.hidden = false;
+      guidedForwardButton.textContent = guidedStageIndex === guidedStages.length - 1 ? 'Return to Luna' : 'Forward';
     };
 
     const renderGuidedStage = () => {
@@ -1173,7 +1235,12 @@
     });
 
     guidedForwardButton.addEventListener('click', () => {
-      if (guidedStageTransitioning || guidedStageIndex === guidedStages.length - 1) {
+      if (guidedStageTransitioning) {
+        return;
+      }
+
+      if (guidedStageIndex === guidedStages.length - 1) {
+        showLunaOpening();
         return;
       }
 
