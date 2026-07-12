@@ -151,4 +151,14 @@ assert(css.includes('.guided-primary-actions,\n    .guided-secondary-actions') &
 assert(css.includes('.prototype-note, .lantern-card, .card, .quiet-card') && css.includes('overflow-wrap: anywhere') && css.includes('word-break: break-word'), 'card surfaces should wrap long user-entered strings instead of widening mobile layout');
 assert(css.includes('.guided-control,\n    .clear-local-edits-button') && css.includes('overflow-wrap: anywhere') && css.includes('word-break: break-word'), 'guided controls should not force horizontal overflow');
 
+assertRuleContains('body', ['background: linear-gradient(180deg']);
+assertRuleContains('.opening-threshold', ['background: rgb(19 28 50 / 92%)', 'box-shadow: 0 16px 36px']);
+assertRuleContains('.try-editing-card', ['background: rgb(25 34 58 / 94%)', 'border: 1px solid rgb(196 205 238 / 22%)']);
+assertRuleContains('.edit-field input', ['background: rgb(35 45 72 / 96%)', 'box-shadow: none']);
+assertRuleContains('.guided-return-view', ['background: rgb(13 21 40 / 96%)', 'box-shadow: 0 16px 36px']);
+assertRuleContains('.guided-stage-panel', ['background: rgb(20 29 52 / 88%)']);
+assert.doesNotMatch(css, /\.try-editing-card\s*\{[\s\S]*?radial-gradient[\s\S]*?\}/, 'editing panel should not use radial glow gradients');
+assert.doesNotMatch(css, /\.guided-return-view\s*\{[\s\S]*?radial-gradient[\s\S]*?\}/, 'guided shell should not use radial glow gradients');
+assert.doesNotMatch(css, /\.edit-field input\s*\{[\s\S]*?linear-gradient[\s\S]*?\}/, 'inputs should be calm solid surfaces');
+
 console.log('local guidance tests passed');

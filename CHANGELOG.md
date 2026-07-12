@@ -2,6 +2,13 @@
 
 ## 2026-07-12
 
+### Mobile Visual Comfort Correction
+
+- Calmed the body/page background, Luna opening threshold, full overview cards, editing panels, inputs, Guided Return shell/stage panel, and buttons by reducing busy radial gradients, glow, heavy shadows, and bright gold/blue contrast.
+- Kept editable fields obvious with softer solid input surfaces and visible but less glaring focus states.
+- Preserved the editing clarity heading/note, all five inputs and maxlengths, mobile containment protections, five storage keys, no fetch/network calls, no `Math.random()`, safe rendering paths, Apply → Undo, Shape this return, Clear local edits, deterministic guidance, and the complete Guided Return loop.
+- Set Luna back to Rest; next is human mobile visual-comfort testing of Luna, full overview, and Guided Return.
+
 ### Full Overview Editing Clarity
 
 - Made the existing full overview project-context editing area stand out as an editing panel instead of another quiet card.

@@ -1,5 +1,12 @@
 # Luna
 
+## Mobile visual comfort correction
+
+- Calmed Luna’s mobile visual treatment by replacing busy radial glow layers, high-contrast editing/input gradients, heavier card depth, and bright gold/blue glare with steadier moonlit solid surfaces.
+- The opening threshold, full overview cards, editing panels, inputs, Guided Return shell/stage panel, and buttons keep the same structure and behavior while using softer contrast and restrained focus states.
+- Preserved the clearer editing-area copy/layout, mobile containment protections, Apply → Undo, Shape this return, Clear local edits, deterministic guidance, safe rendering, input maxlengths, near-limit counters, and complete Guided Return loop.
+- Luna is back at Rest. Next: human mobile-test Luna, the full overview, and Guided Return for a few minutes to confirm the calmer colors/gradients no longer cause eye strain or nausea.
+
 ## Full overview editing clarity
 
 - Made the existing full overview editing surfaces read more clearly as Luna’s editable local project context rather than quiet reference cards.
