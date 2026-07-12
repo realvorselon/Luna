@@ -2,6 +2,20 @@
 
 ## 2026-07-12
 
+### Contextual Complete Guided Loop
+
+- Recorded the third meaningful v0.1 vertical slice: the complete Guided Return loop now responds to the current one-project context from the full overview through the opening threshold and all six stages.
+- Removed hardcoded recipe / soup / broth / meal-planner leakage from guided-stage content where current project context should appear.
+- Added exactly two minimal local values: `luna.prototype.setAside` for one Set Aside / Ignore For Now value and `luna.prototype.recordChange` for one brief Record the Change value.
+- Kept Set Aside as one value rather than a backlog, list, priority system, or deferred-work manager.
+- Kept Record as one brief value rather than a log, changelog, history system, report, or journal.
+- Explicitly expanded clear-local-edits behavior and copy so it clears all five local project-edit keys in this browser: project name, current goal, One Next Action, Set Aside, and Record the Change.
+- Preserved the opening threshold, “Return gently,” complete navigation loop, panel motion, reduced-motion behavior, mobile safe-area treatment, rapid-click protection, transition cleanup, full overview reference/editing mode, and six-stage Guided Return shell.
+- Set Luna back to Rest and kept development focused on fewer meaningful v0.1 slices rather than automatic micro-polish.
+
+
+## 2026-07-12
+
 ### First Complete Guided Luna Loop
 
 - Extended the existing Guided Return shell from Orient → Remember → Choose to Orient → Remember → Choose → Set Aside → Record → Rest.
