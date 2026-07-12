@@ -2,6 +2,15 @@
 
 ## 2026-07-12
 
+### Guided Return Mobile Action Read-Through
+
+- Added `docs/GUIDED_RETURN_MOBILE_ACTION_READ_THROUGH.md` to record that the corrected mobile action layout passed its initial human test and seems better.
+- Recorded that the previous tall shared stage minimum height created too much empty space, did not remove scrolling, and left Forward / Back / Return stacked unintuitively, so equal stage height was not the correct solution by itself.
+- Recorded that the corrected layout keeps mobile stages at natural height, groups Back / Forward as the primary navigation row, separates Return to full overview as a secondary action, and makes the action area easier to locate without becoming a global fixed toolbar.
+- Marked the mobile action arrangement good enough for this experiment, with no further action-layout polish needed now unless a new human usability finding appears.
+- Preserved the full overview as the reference mode, kept Guided Return limited to Orient → Remember → Choose, and left panel motion, saved-value behavior, localStorage behavior, blank fallbacks, clear-local-edits behavior, and navigation behavior unchanged.
+- Set Luna back to Rest and set the next suggested step to reviewing the abrupt Begin a guided return entrance before deciding whether one restrained entrance experiment should proceed.
+
 ### Guided Return Mobile Action Layout Correction
 
 - Recorded that the tall shared mobile stage minimum height made Orient, Remember, and Choose feel roughly more consistent, but introduced too much empty space and did not prevent mobile scrolling.

@@ -6,19 +6,19 @@ Luna is an autonomous repository experiment and small public dashboard prototype
 
 ## Current Goal
 
-Human-test Guided Return mobile control clarity, reachability, natural stage height, scrolling, preserved values, and unchanged panel motion.
+Review the abrupt Begin a guided return entrance and decide whether one restrained entrance experiment should proceed.
 
 ## Last Completed Run
 
-- 2026-07-12: Replaced the oversized mobile Guided Return stage-footprint approach with natural-height stage content and a clearer mobile action layout after human testing found the tall shared min-height created empty space, did not prevent scrolling, and left the controls stacked and unintuitive.
+- 2026-07-12: Recorded that the corrected Guided Return mobile action layout passed its initial human test, is good enough for this experiment, and needs no further action-layout polish without a new human usability finding.
 
 ## Next Suggested Step
 
-Human mobile test Guided Return control clarity, reachability, empty space, scrolling, preserved editable values, and unchanged panel motion.
+Review the abrupt Begin a guided return entrance and decide whether one restrained entrance experiment should proceed.
 
 ## Notes
 
-The Guided Return mobile action layout correction records that the previous geometry experiment stabilized the wrong thing. A tall shared mobile minimum height made Orient, Remember, and Choose feel roughly similar in size, but it introduced too much empty space, did not prevent mobile scrolling, and left Forward / Back / Return controls stacked in an unintuitive place. This focused run removes the oversized stage-footprint approach in `prototype.html`, keeps guided stage content at natural height, and groups Back / Forward as the primary mobile navigation row with Return to full overview separated as a secondary full-width action. A restrained sticky action area is used only inside the Guided Return container on mobile so controls are easier to locate without becoming a global fixed toolbar. The current panel-level Forward / Back transition timing, easing, directions, cleanup, rapid-click protection, reduced-motion behavior, dark moonlit surfaces, editable values, localStorage keys, blank-value fallbacks, clear-local-edits behavior, full overview, and Orient → Remember → Choose slice remain preserved. Luna is back at Rest. Next, human mobile test control clarity, reachability, empty space, scrolling, preserved values, and unchanged panel motion.
+The Guided Return mobile action read-through records that the focused correction passed its initial human mobile test: the corrected layout seems better. The previous tall shared stage minimum height created too much empty space, did not remove scrolling, and left Forward / Back / Return stacked unintuitively, so equal stage height was not the right solution by itself. The corrected layout keeps mobile stages at natural height, groups Back / Forward as the primary navigation row, separates Return to full overview as a secondary action, and makes the action area easier to locate without becoming a global fixed toolbar. The panel-level Forward / Back motion, dark surfaces, saved-value behavior, full overview reference mode, and Orient → Remember → Choose guided slice remain unchanged. No further mobile action-layout polish is needed now without a new human usability finding. Luna is back at Rest. Next, review the abrupt or clunky feeling when entering Guided Return after pressing “Begin a guided return” and decide whether one restrained entrance experiment should proceed; do not implement entrance motion in this documentation-only run.
 
 The Guided Return outer container follow-up records a human finding that the first dark-surface follow-up corrected the inner `.guided-stage-panel`, but the larger outer `.guided-return-view` still appeared too bright and created the main remaining lighter-blue block effect against the dark moonlit page, especially on mobile. This tiny CSS-only run darkens only the outer `.guided-return-view` surface with a restrained navy/indigo treatment and calmer subtle border while preserving the inner stage panel, panel-level motion experiment, timing, easing, JavaScript, navigation behavior, editable fields, localStorage behavior, layout, spacing, stage content, full overview, and surrounding page background. Luna is back at Rest. Next, human visually test the full overview and Guided Return background continuity on mobile.
 

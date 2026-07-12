@@ -3,6 +3,10 @@
   "statusHistory": [
     {
       "date": "2026-07-12",
+      "note": "Recorded that the corrected Guided Return mobile action layout passed its initial human test, needs no further action-layout polish now, and leaves the abrupt Begin a guided return entrance as a separate possible follow-up."
+    },
+    {
+      "date": "2026-07-12",
       "note": "Replaced the oversized mobile Guided Return stage-footprint approach with natural-height stage content and a clearer mobile action layout after human testing found the tall shared min-height created empty space, did not prevent scrolling, and left Forward / Back / Return stacked unintuitively."
     },
     {
@@ -498,9 +502,9 @@
       "note": "The project is resting after a good run and ready for one gentle improvement."
     }
   ],
-  "currentGoal": "Human visually test the full overview and Guided Return background continuity on mobile.",
-  "lastCompletedRun": "2026-07-11: Darkened only the outer `.guided-return-view` container after human testing found the inner panel was corrected but the larger guided area still appeared too bright.",
-  "nextStep": "Human visually test the full overview and Guided Return background continuity on mobile.",
+  "currentGoal": "Review the abrupt Begin a guided return entrance and decide whether one restrained entrance experiment should proceed.",
+  "lastCompletedRun": "2026-07-12: Recorded that the corrected Guided Return mobile action layout passed its initial human test and needs no further action-layout polish now.",
+  "nextStep": "Review the abrupt Begin a guided return entrance and decide whether one restrained entrance experiment should proceed.",
   "dashboardGuide": [
     "Welcome starts the path to read through Record the Change before choosing more work.",
     "Status gives a quick snapshot of how the project is doing right now.",
@@ -511,12 +515,13 @@
     "Optional Reflection can wait; Philosophy Garden is a gentle reflection layer, not Luna's main engine."
   ],
   "futureIdeas": [
-    "Human visually test the full overview and Guided Return background continuity on mobile.",
+    "Review the abrupt Begin a guided return entrance and decide whether one restrained entrance experiment should proceed.",
     "Preserve the first Guided Return slice read-through as the recorded proof of what Orient → Remember → Choose already showed.",
     "Preserve the full overview as the proven reference mode while evaluating the panel-level guided transition experiment.",
     "Later, consider whether completely fresh users need a clearer introduction than the current prototype-oriented recipe/soup placeholder language."
   ],
   "decisionLog": [
+    "2026-07-12: The corrected Guided Return mobile action layout passed its initial human test; no further action-layout polish is needed now without a new human usability finding, and the abrupt Begin a guided return entrance is a separate possible follow-up.",
     "2026-07-11: The first Guided Return dark-surface follow-up corrected the inner panel, but the outer guided container still appeared too bright; this follow-up should only darken `.guided-return-view` while preserving the panel-level motion experiment.",
     "2026-07-11: The first Guided Return human test passed technically; the follow-up should only improve subtle button depth so controls stand apart while remaining calm and moonlit.",
     "2026-07-11: Guided Return is the next phase direction after the completed prototype phase; it should explore a calm guided path through part of the one-project return loop while preserving the full overview.",
@@ -531,7 +536,7 @@
     "The Garden Cycle connects the Reflection Card, Garden Review, Next Garden Update, and rest step so beginners can see how Philosophy Garden pieces fit together."
   ],
   "ideaQueue": [
-    "Human-test the full overview and Guided Return background continuity on mobile before deciding whether to keep, tune, or remove the panel-level transition.",
+    "Review the abrupt Begin a guided return entrance before deciding whether one restrained entrance experiment should proceed.",
     "If the motion experiment continues later, keep it limited to the existing Orient → Remember → Choose guided slice and respect reduced-motion preferences.",
     "Do not automatically add Set Aside, Record, and Rest merely to complete the sequence.",
     "Protect the Luna loop and avoid turning Luna into a task manager, checklist system, workflow engine, or Jira with moon stickers."
@@ -569,10 +574,10 @@
     "Visit http://localhost:8000 in a browser to view the dashboard."
   ],
   "nextAction": {
-    "title": "Human-test Guided Return mobile controls",
-    "description": "On mobile, enter Guided Return and move through Orient → Remember → Choose and back, checking that Back / Forward read as the primary navigation row, Return to full overview reads as a separate secondary action, stage content uses natural height, controls are easy to locate without hunting or excess scrolling, and no content is clipped.",
-    "whyItMatters": "The previous tall shared mobile min-height made stage sizes more consistent but stabilized the wrong thing: it added empty space, did not prevent mobile scrolling, and left controls feeling stacked and unintuitive. This test checks whether the corrected action layout fixes the actual interaction problem while preserving panel motion and values.",
-    "status": "Ready for human mobile test"
+    "title": "Review Guided Return entrance",
+    "description": "Review the abrupt or clunky feeling when entering Guided Return after pressing “Begin a guided return,” and decide whether one restrained entrance experiment should proceed without changing the already-improved mobile Back / Forward action layout.",
+    "whyItMatters": "The corrected mobile action layout seems better and is good enough for this experiment. The remaining usability question is the separate entrance into the focused Guided Return surface, not more toolbar or action-layout polish.",
+    "status": "Ready for human review"
   },
   "creativeSeed": {
     "name": "Philosophy Garden",
@@ -640,7 +645,7 @@
   ],
   "currentMode": {
     "name": "Rest",
-    "description": "Luna is resting after replacing the oversized mobile Guided Return stage footprint with natural stage height and a clearer Back / Forward plus secondary Return action area.",
-    "whyItMatters": "Rest protects this focused mobile layout correction and the intentionally limited Orient → Remember → Choose guided slice before adding stages, behavior, or broader redesign."
+    "description": "Luna is resting after recording that the corrected Guided Return mobile action layout passed its initial human test and needs no further polish now.",
+    "whyItMatters": "Rest protects the improved Back / Forward primary row, secondary Return action, full overview reference mode, and limited Orient → Remember → Choose slice before considering any separate entrance experiment."
   }
 }
