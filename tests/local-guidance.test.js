@@ -93,6 +93,17 @@ assert(html.includes("const nextActionStorageKey = 'luna.prototype.nextAction';"
 assert(html.includes("const setAsideStorageKey = 'luna.prototype.setAside';"));
 assert(html.includes("const recordChangeStorageKey = 'luna.prototype.recordChange';"));
 assert(!/suggestion.*StorageKey|guidance.*StorageKey|history.*StorageKey/i.test(html), 'no suggestion/history storage keys');
+
+assert(html.includes("let isApplied = false;"), 'suggestion actions should track only visible review-session state');
+assert(html.includes("let previousValue = '';"), 'undo should preserve the exact previous field value in memory');
+assert(html.includes('previousValue = field.input.value;'), 'undo value should come from the selected input immediately before applying');
+assert(html.includes("useButton.textContent = 'Undo';"), 'applied suggestion action should become Undo');
+assert(html.includes("useButton.textContent = 'Use this';"), 'undo should return the action to Use this');
+assert(html.includes('applyGuidanceValue(previousValue);'), 'undo should restore the preserved value through the normal persistence path');
+assert(html.includes('field.storageKey'), 'suggestion apply/undo should write only the selected field storage key');
+assert(html.includes('Other fields were left unchanged. Use Undo'), 'status copy should communicate independent field updates');
+assert(html.includes('Other fields were left unchanged.`'), 'undo status copy should communicate unrelated fields are untouched');
+assert(!/undo.*StorageKey|previousValue.*StorageKey|applied.*StorageKey/i.test(html), 'undo state/history must not add a persistence key');
 assert(!/sessionStorage|document\.cookie|eval\s*\(|new Function/.test(html + js), 'no session/cookie/dynamic execution');
 assert(js.includes('voiceLibrary'));
 assert(js.includes("voice('goalBlank'"));

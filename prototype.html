@@ -1307,16 +1307,33 @@
           useButton.className = 'guided-control';
           useButton.type = 'button';
           useButton.textContent = 'Use this';
-          useButton.addEventListener('click', () => {
-            const boundedSuggestion = result.suggestion.slice(0, Number(field.input.getAttribute('maxlength')) || result.suggestion.length);
-            field.input.value = boundedSuggestion;
-            writeLocalValue(field.storageKey, boundedSuggestion);
+          let isApplied = false;
+          let previousValue = '';
+          const applyGuidanceValue = (value) => {
+            field.input.value = value;
+            writeLocalValue(field.storageKey, value);
             field.update();
             updateCharacterFeedback(field.input);
             syncOpeningContext();
             rerenderVisibleGuidedStage();
-            useButton.textContent = 'Applied';
-            guidanceStatus.textContent = `${field.label} updated. Other fields were left unchanged.`;
+          };
+          useButton.addEventListener('click', () => {
+            if (isApplied) {
+              applyGuidanceValue(previousValue);
+              isApplied = false;
+              useButton.textContent = 'Use this';
+              currentValue.querySelector('p').textContent = previousValue;
+              guidanceStatus.textContent = `${field.label} restored to its previous wording. Other fields were left unchanged.`;
+              return;
+            }
+
+            previousValue = field.input.value;
+            const boundedSuggestion = result.suggestion.slice(0, Number(field.input.getAttribute('maxlength')) || result.suggestion.length);
+            applyGuidanceValue(boundedSuggestion);
+            isApplied = true;
+            useButton.textContent = 'Undo';
+            currentValue.querySelector('p').textContent = boundedSuggestion;
+            guidanceStatus.textContent = `${field.label} updated. Other fields were left unchanged. Use Undo to restore the previous wording.`;
           });
           item.append(useButton);
         } else {

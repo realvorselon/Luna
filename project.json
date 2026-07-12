@@ -3,6 +3,10 @@
   "statusHistory": [
     {
       "date": "2026-07-12",
+      "note": "Made Shape this return suggestions reversible one field at a time: Use this becomes Undo, Undo restores the exact previous field value through existing persistence/display refresh behavior, unrelated fields stay unchanged, no undo history or new persistence key is added, and Luna is back at Rest."
+    },
+    {
+      "date": "2026-07-12",
       "note": "Corrected the blocking Guided Return mobile overflow regression: long unbroken user-entered project text now wraps within the mobile shell/card/action chain instead of widening the viewport; Luna is back at Rest."
     },
     {
