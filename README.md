@@ -1,5 +1,12 @@
 # Luna
 
+## Full overview editing clarity
+
+- Made the existing full overview editing surfaces read more clearly as Luna’s editable local project context rather than quiet reference cards.
+- The editing copy now explains that the five fields are sample/local values, changing them updates the opening threshold, Shape this return, and Guided Return, and the values stay only in this browser.
+- Strengthened the restrained mobile input panel, field spacing, borders, backgrounds, and focus treatment while preserving the five storage keys, maxlengths, Clear local edits, Apply → Undo, safe rendering, deterministic guidance, no network calls, and full Guided Return loop.
+- Luna is back at Rest. Next: human mobile-test the full overview/editing area and confirm the editable fields are obvious, understandable, and visually distinct before another full readiness pass.
+
 ## v0.1 stabilization and coherence pass
 
 - Cleaned small copy and generated punctuation edges in the existing Luna return flow without adding new features.

@@ -2,6 +2,13 @@
 
 ## 2026-07-12
 
+### Full Overview Editing Clarity
+
+- Made the existing full overview project-context editing area stand out as an editing panel instead of another quiet card.
+- Updated concise helper copy so first-time users understand the five fields are sample/local browser-only values used by Luna’s opening, Shape this return, and Guided Return.
+- Strengthened input background, border, focus, field spacing, and mobile hierarchy while preserving the existing five localStorage keys, maxlengths, Clear local edits, Apply → Undo, deterministic guidance, safe rendering, no network calls, and the full Guided Return loop.
+- Set Luna back to Rest; next is human mobile testing of the full overview/editing area before another readiness pass.
+
 ### v0.1 Stabilization and Coherence Pass
 
 - Cleaned generated Record fallback punctuation so action text ending in punctuation does not create doubled periods.
