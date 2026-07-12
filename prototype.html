@@ -291,6 +291,7 @@
 
     .edit-field input {
       width: 100%;
+      min-width: 0;
       padding: 12px 13px;
       color: var(--moon);
       background:
@@ -305,6 +306,12 @@
     .edit-field input:hover {
       border-color: rgb(223 230 244 / 62%);
       box-shadow: inset 0 1px 0 rgb(255 255 255 / 11%), 0 0 0 3px rgb(189 200 238 / 12%);
+    }
+
+    .edit-helper {
+      margin: 0;
+      color: var(--silver);
+      font-size: 0.92rem;
     }
 
     .edit-field input:focus {
@@ -699,8 +706,8 @@
         <p class="opening-message">You left a small thread open. Luna remembers enough to help you return gently.</p>
         <div class="opening-context" aria-label="Current project">
           <span class="label">Waiting here</span>
-          <h2 class="opening-project-name" id="opening-project-name-display">Moonlit Recipe Notes</h2>
-          <p class="opening-return-point">Next: <span id="opening-next-action-display">Add one public-safe sentence to the broth note.</span></p>
+          <h2 class="opening-project-name" id="opening-project-name-display">A quiet unfinished project</h2>
+          <p class="opening-return-point">Next: <span id="opening-next-action-display">Choose one small, safe next step.</span></p>
         </div>
         <div class="opening-actions">
           <button class="guided-control opening-primary" type="button" id="begin-guided-return-button">Return gently</button>
@@ -743,39 +750,51 @@
       <div class="loop-grid">
         <article class="card">
           <span class="label">Project name</span>
-          <h3 id="project-name-display">Moonlit Recipe Notes</h3>
-          <p>A small public-safe notebook for three simple weeknight soup ideas.</p>
+          <h3 id="project-name-display">A quiet unfinished project</h3>
+          <p id="project-summary-display">One small unfinished project, kept local to this browser.</p>
         </article>
         <article class="card">
           <span class="label">Current status</span>
           <h3>Paused, easy to resume</h3>
-          <p>The three note sections are named, and the broth note is the next quiet place to clarify before adding anything new.</p>
+          <p>Your saved project context is ready enough to return to without setting up a larger system.</p>
         </article>
         <article class="card">
           <span class="label">Current Mode</span>
           <h3>Orient</h3>
-          <p>Reread the soup notes, especially the broth section, and choose one small organizing step before adding more ideas.</p>
+          <p>Reconnect with the project name and current goal before choosing anything new.</p>
         </article>
         <article class="card">
           <span class="label">Current goal</span>
-          <h3 id="current-goal-display">Make the tiny collection understandable</h3>
-          <p>Keep each soup idea short enough that the next return starts with clear notes instead of a messy draft.</p>
+          <h3 id="current-goal-display">Make the next return easier</h3>
+          <p>This is the shape of the project you are returning to right now.</p>
         </article>
       </div>
       <article class="try-editing-card" aria-labelledby="try-editing-title">
         <span class="label">Try editing</span>
-        <h3 id="try-editing-title">Make two local browser edits</h3>
-        <p class="try-editing-note">These two edits save only in this browser. They do not sync or create an account. The rest of the recipe-note cards stay as public-safe sample text.</p>
+        <h3 id="try-editing-title">Edit the small project context</h3>
+        <p class="try-editing-note">These edits save only in this browser. They do not sync, create an account, or turn Luna into a project manager.</p>
         <div class="edit-fields">
           <div class="edit-field">
             <label for="project-name-input">Project name</label>
-            <input id="project-name-input" type="text" value="Moonlit Recipe Notes" autocomplete="off">
+            <input id="project-name-input" type="text" value="A quiet unfinished project" autocomplete="off">
+            <p class="edit-helper">The one project Luna will name at the opening threshold.</p>
           </div>
           <div class="edit-field">
             <label for="current-goal-input">Current goal</label>
-            <input id="current-goal-input" type="text" value="Make the tiny collection understandable" autocomplete="off">
+            <input id="current-goal-input" type="text" value="Make the next return easier" autocomplete="off">
+            <p class="edit-helper">A short reason this return matters.</p>
           </div>
-          <button class="clear-local-edits-button" type="button" id="clear-local-edits-button">Clear only local edits in this browser</button>
+          <div class="edit-field">
+            <label for="set-aside-input">Set Aside / Ignore For Now</label>
+            <input id="set-aside-input" type="text" value="Leave the larger ideas alone for now." autocomplete="off">
+            <p class="edit-helper">One thing that can wait. Not a list, backlog, or priority system.</p>
+          </div>
+          <div class="edit-field">
+            <label for="record-change-input">Record the Change</label>
+            <input id="record-change-input" type="text" value="Record one plain note about what changed." autocomplete="off">
+            <p class="edit-helper">One brief note for returning later. Not a log or report.</p>
+          </div>
+          <button class="clear-local-edits-button" type="button" id="clear-local-edits-button">Clear all five local project edits in this browser</button>
         </div>
       </article>
 
@@ -785,8 +804,8 @@
       <h2 id="what-changed">See what changed last</h2>
       <article class="card">
         <span class="label">Last completed run</span>
-        <h3>2026-07-08: Named the three recipe note sections.</h3>
-        <p>The notebook now has simple sections for broth, vegetables, and serving notes. No private details or real household information were added.</p>
+        <h3 id="last-run-display">A small useful change was made before this return.</h3>
+        <p>Remember only enough context to make the next return easier. No report or history system is needed here.</p>
       </article>
       </section>
 
@@ -794,8 +813,8 @@
       <h2 id="next-action">Choose one next action</h2>
       <article class="lantern-card">
         <span class="label">One Next Action</span>
-        <h3 id="next-action-display">Add one public-safe sentence to the broth note.</h3>
-        <p>Keep it small: one general broth sentence is enough. Do not add a full recipe, grocery list, meal plan, or new project area.</p>
+        <h3 id="next-action-display">Choose one small, safe next step.</h3>
+        <p>Keep it small: one action is enough. Do not turn this into a list, plan, or new project area.</p>
       </article>
       <div class="overview-edit-anchor" id="next-action-edit-anchor"></div>
       <article class="try-editing-card" id="next-action-editing-card" aria-labelledby="next-action-editing-title">
@@ -805,7 +824,8 @@
         <div class="edit-fields">
           <div class="edit-field">
             <label for="next-action-input">One next action</label>
-            <input id="next-action-input" type="text" value="Add one public-safe sentence to the broth note." autocomplete="off">
+            <input id="next-action-input" type="text" value="Choose one small, safe next step." autocomplete="off">
+            <p class="edit-helper">The single action that becomes the lantern in Guided Return.</p>
           </div>
         </div>
       </article>
@@ -816,27 +836,25 @@
       <div class="loop-grid">
         <article class="quiet-card">
           <span class="label">Ignore For Now</span>
-          <ul>
-            <li>Do not add more than three recipe ideas.</li>
-            <li>Do not make a meal planner, shopping list, account, database, or sharing system.</li>
-            <li>Do not polish the visual design before the tiny notes are clear.</li>
-          </ul>
+          <p id="set-aside-display">Leave the larger ideas alone for now.</p>
+          <p>One thing can wait without becoming a backlog.</p>
         </article>
         <article class="quiet-card">
           <span class="label">Record the Change</span>
-          <p>After the broth sentence is added, write one plain-language note about what changed, why the soup notes are easier to return to, and what should wait.</p>
+          <p id="record-change-display">Record one plain note about what changed.</p>
+          <p>Keep it brief so returning later is easier.</p>
         </article>
         <article class="quiet-card rest-card">
           <span class="label">Rest / next step</span>
           <h3>Rest after recording.</h3>
-          <p>Come back later and reread the recipe-note state before choosing another small action.</p>
+          <p>The named next action will still be waiting later. Nothing needs to restart automatically.</p>
         </article>
       </div>
       </section>
 
       <section aria-labelledby="loop-order">
       <h2 id="loop-order">The gentle return path</h2>
-      <p class="path-note">Move through the same small loop each time, from orienting to resting, without turning the notes into a bigger system.</p>
+      <p class="path-note">Move through the same small loop each time, from orienting to resting, without turning the project into a bigger system.</p>
       <div class="return-path" aria-label="Return path steps">
         <span>Orient</span>
         <span>Notice</span>
@@ -846,12 +864,12 @@
         <span>Rest</span>
       </div>
       <ol>
-        <li>Return to the recipe-note project.</li>
-        <li>Orient around the current notes.</li>
-        <li>Notice what changed last.</li>
+        <li>Return to the current project.</li>
+        <li>Orient around its name and goal.</li>
+        <li>Remember enough to continue.</li>
         <li>Choose one next action.</li>
-        <li>Leave the larger ideas alone for now.</li>
-        <li>Record one change.</li>
+        <li>Leave one thing alone for now.</li>
+        <li>Record one brief change.</li>
         <li>Rest before adding more.</li>
       </ol>
       </section>
@@ -868,6 +886,10 @@
     const currentGoalDisplay = document.querySelector('#current-goal-display');
     const nextActionInput = document.querySelector('#next-action-input');
     const nextActionDisplay = document.querySelector('#next-action-display');
+    const setAsideInput = document.querySelector('#set-aside-input');
+    const setAsideDisplay = document.querySelector('#set-aside-display');
+    const recordChangeInput = document.querySelector('#record-change-input');
+    const recordChangeDisplay = document.querySelector('#record-change-display');
     const clearLocalEditsButton = document.querySelector('#clear-local-edits-button');
     const beginGuidedReturnButton = document.querySelector('#begin-guided-return-button');
     const guidedReturnView = document.querySelector('#guided-return-view');
@@ -890,9 +912,13 @@
     const projectNameStorageKey = 'luna.prototype.projectName';
     const currentGoalStorageKey = 'luna.prototype.currentGoal';
     const nextActionStorageKey = 'luna.prototype.nextAction';
-    const sampleProjectName = 'Moonlit Recipe Notes';
-    const sampleCurrentGoal = 'Make the tiny collection understandable';
-    const sampleNextAction = 'Add one public-safe sentence to the broth note.';
+    const setAsideStorageKey = 'luna.prototype.setAside';
+    const recordChangeStorageKey = 'luna.prototype.recordChange';
+    const sampleProjectName = 'A quiet unfinished project';
+    const sampleCurrentGoal = 'Make the next return easier';
+    const sampleNextAction = 'Choose one small, safe next step.';
+    const sampleSetAside = 'Leave the larger ideas alone for now.';
+    const sampleRecordChange = 'Record one plain note about what changed.';
     let guidedStageIndex = 0;
     let guidedStageTransitionTimer = 0;
     let guidedEntranceTransitionTimer = 0;
@@ -916,36 +942,42 @@
       .replaceAll('"', '&quot;')
       .replaceAll("'", '&#039;');
 
+    const getProjectName = () => projectNameDisplay.textContent;
+    const getCurrentGoal = () => currentGoalDisplay.textContent;
+    const getNextAction = () => nextActionDisplay.textContent;
+    const getSetAside = () => setAsideDisplay.textContent;
+    const getRecordChange = () => recordChangeDisplay.textContent;
+
     const guidedStages = [
       {
         title: 'Orient',
-        intro: 'Return to the project identity, current mode, and current goal before choosing anything new.',
+        intro: 'Return to the project name and current goal before choosing anything new.',
         render: () => `
           <article class="quiet-card">
             <span class="label">Project name</span>
-            <h3>${escapeHtml(projectNameDisplay.textContent)}</h3>
-            <p>A small public-safe notebook for three simple weeknight soup ideas.</p>
+            <h3>${escapeHtml(getProjectName())}</h3>
+            <p>This is the one project waiting here.</p>
           </article>
           <article class="quiet-card">
             <span class="label">Current Mode</span>
             <h3>Orient</h3>
-            <p>Reread the soup notes, especially the broth section, and choose one small organizing step before adding more ideas.</p>
+            <p>Reconnect with the project as it is now. No setup or reorganization is required.</p>
           </article>
           <article class="quiet-card">
             <span class="label">Current goal</span>
-            <h3>${escapeHtml(currentGoalDisplay.textContent)}</h3>
-            <p>Keep each soup idea short enough that the next return starts with clear notes instead of a messy draft.</p>
+            <h3>${escapeHtml(getCurrentGoal())}</h3>
+            <p>Let this goal give the return a shape before adding anything new.</p>
           </article>
         `
       },
       {
         title: 'Remember',
-        intro: 'Notice what changed last without expanding the project.',
+        intro: 'Notice enough context to return without expanding the project.',
         render: () => `
           <article class="quiet-card">
-            <span class="label">Last completed run</span>
-            <h3>2026-07-08: Named the three recipe note sections.</h3>
-            <p>The notebook now has simple sections for broth, vegetables, and serving notes. No private details or real household information were added.</p>
+            <span class="label">Remember</span>
+            <h3>${escapeHtml(getProjectName())} is already in motion.</h3>
+            <p>The current goal is still: ${escapeHtml(getCurrentGoal())}. You only need enough memory to continue gently.</p>
           </article>
         `
       },
@@ -956,36 +988,32 @@
         render: () => `
           <article class="lantern-card">
             <span class="label">One Next Action</span>
-            <h3 id="guided-next-action-display">${escapeHtml(nextActionDisplay.textContent)}</h3>
-            <p>Keep it small: one general broth sentence is enough. Do not add a full recipe, grocery list, meal plan, or new project area.</p>
+            <h3 id="guided-next-action-display">${escapeHtml(getNextAction())}</h3>
+            <p>Keep it small: one action is enough. Do not turn this into a list, plan, or new project area.</p>
           </article>
         `
       },
       {
         title: 'Set Aside',
-        intro: 'Name what can wait so the next action stays small. Ignore For Now is not a backlog.',
+        intro: 'Name one thing that can wait. Ignore For Now is not a backlog.',
         tone: 'set-aside',
         render: () => `
           <article class="quiet-card">
             <span class="label">Ignore For Now</span>
-            <p>Leaving these alone is a valid project decision for this return.</p>
-            <ul>
-              <li>Do not add more than three recipe ideas.</li>
-              <li>Do not make a meal planner, shopping list, account, database, or sharing system.</li>
-              <li>Do not polish the visual design before the tiny notes are clear.</li>
-            </ul>
+            <h3>${escapeHtml(getSetAside())}</h3>
+            <p>This one thing can wait. Leaving it alone is a valid project decision; nothing needs sorting, ranking, or reorganizing here.</p>
           </article>
         `
       },
       {
         title: 'Record',
-        intro: 'Make one small closing note about what changed or what you are carrying forward.',
+        intro: 'Make one small closing note about what changed or what will make returning easier.',
         tone: 'record',
         render: () => `
           <article class="quiet-card">
             <span class="label">Record the Change</span>
-            <h3>One plain note is enough.</h3>
-            <p>After the broth sentence is added, write what changed, why the notes are easier to return to, and what can keep waiting.</p>
+            <h3>One brief note is enough.</h3>
+            <p>${escapeHtml(getRecordChange())}</p>
           </article>
         `
       },
@@ -996,15 +1024,39 @@
         render: () => `
           <article class="quiet-card rest-card">
             <span class="label">Rest</span>
-            <h3>Leave the project gently.</h3>
-            <p>The next action is named, what can wait is allowed to wait, and nothing else has to happen now.</p>
+            <h3>Leave ${escapeHtml(getProjectName())} gently.</h3>
+            <p>${escapeHtml(getNextAction())} will still be waiting later. Nothing else has to happen now.</p>
           </article>
         `
       }
     ];
 
+    const readLocalValue = (storageKey) => {
+      try {
+        return localStorage.getItem(storageKey);
+      } catch (error) {
+        return null;
+      }
+    };
+
+    const writeLocalValue = (storageKey, value) => {
+      try {
+        localStorage.setItem(storageKey, value);
+      } catch (error) {
+        // Keep the in-memory experience usable if localStorage is unavailable.
+      }
+    };
+
+    const removeLocalValue = (storageKey) => {
+      try {
+        localStorage.removeItem(storageKey);
+      } catch (error) {
+        // Safe fallbacks below still restore the visible experience.
+      }
+    };
+
     const syncEditableField = (input, display, fallbackDisplay, storageKey) => {
-      const savedValue = localStorage.getItem(storageKey);
+      const savedValue = readLocalValue(storageKey);
 
       if (savedValue !== null) {
         input.value = savedValue;
@@ -1017,7 +1069,7 @@
       updateDisplay();
 
       input.addEventListener('input', () => {
-        localStorage.setItem(storageKey, input.value);
+        writeLocalValue(storageKey, input.value);
         updateDisplay();
       });
 
@@ -1032,15 +1084,34 @@
     const updateProjectNameDisplay = syncEditableField(projectNameInput, projectNameDisplay, sampleProjectName, projectNameStorageKey);
     const updateCurrentGoalDisplay = syncEditableField(currentGoalInput, currentGoalDisplay, sampleCurrentGoal, currentGoalStorageKey);
     const updateNextActionDisplay = syncEditableField(nextActionInput, nextActionDisplay, sampleNextAction, nextActionStorageKey);
+    const updateSetAsideDisplay = syncEditableField(setAsideInput, setAsideDisplay, sampleSetAside, setAsideStorageKey);
+    const updateRecordChangeDisplay = syncEditableField(recordChangeInput, recordChangeDisplay, sampleRecordChange, recordChangeStorageKey);
     syncOpeningContext();
 
     projectNameInput.addEventListener('input', syncOpeningContext);
+    projectNameInput.addEventListener('input', () => {
+      if (!guidedReturnView.hidden && guidedStageIndex !== 2) {
+        renderGuidedStage();
+      }
+    });
+
+    const rerenderVisibleGuidedStage = () => {
+      if (!guidedReturnView.hidden) {
+        renderGuidedStage();
+      }
+    };
+
+    currentGoalInput.addEventListener('input', rerenderVisibleGuidedStage);
+    setAsideInput.addEventListener('input', rerenderVisibleGuidedStage);
+    recordChangeInput.addEventListener('input', rerenderVisibleGuidedStage);
 
     nextActionInput.addEventListener('input', () => {
       const guidedNextActionDisplay = document.querySelector('#guided-next-action-display');
       syncOpeningContext();
       if (guidedNextActionDisplay) {
         guidedNextActionDisplay.textContent = nextActionDisplay.textContent;
+      } else if (!guidedReturnView.hidden) {
+        renderGuidedStage();
       }
     });
 
@@ -1252,12 +1323,21 @@
     returnLunaButton.addEventListener('click', showLunaOpening);
 
     clearLocalEditsButton.addEventListener('click', () => {
-      localStorage.removeItem(projectNameStorageKey);
-      localStorage.removeItem(currentGoalStorageKey);
+      removeLocalValue(projectNameStorageKey);
+      removeLocalValue(currentGoalStorageKey);
+      removeLocalValue(nextActionStorageKey);
+      removeLocalValue(setAsideStorageKey);
+      removeLocalValue(recordChangeStorageKey);
       projectNameInput.value = sampleProjectName;
       currentGoalInput.value = sampleCurrentGoal;
+      nextActionInput.value = sampleNextAction;
+      setAsideInput.value = sampleSetAside;
+      recordChangeInput.value = sampleRecordChange;
       updateProjectNameDisplay();
       updateCurrentGoalDisplay();
+      updateNextActionDisplay();
+      updateSetAsideDisplay();
+      updateRecordChangeDisplay();
       syncOpeningContext();
       if (!guidedReturnView.hidden) {
         renderGuidedStage();

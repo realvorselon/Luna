@@ -3,6 +3,10 @@
   "statusHistory": [
     {
       "date": "2026-07-12",
+      "note": "Completed the third meaningful v0.1 vertical slice: the complete Guided Return loop now responds to the current one-project context, adds exactly two local values (`luna.prototype.setAside` and `luna.prototype.recordChange`), explicitly clears all five local project-edit keys, keeps Set Aside as one value rather than a backlog and Record as one brief value rather than a log, removes recipe-specific guided leakage where current context should appear, and preserves the opening threshold, Return gently action, navigation loop, motion, mobile treatment, full overview, and six-stage shell."
+    },
+    {
+      "date": "2026-07-12",
       "note": "Completed the second meaningful v0.1 vertical slice after the opening threshold: Guided Return now carries the first full Luna loop through Orient → Remember → Choose → Set Aside → Record → Rest, preserves the opening threshold, full overview, saved values, and navigation loop, keeps Ignore For Now from becoming a backlog, keeps Record brief, and treats Rest as a real stopping point before returning to Luna."
     },
     {
@@ -530,9 +534,9 @@
       "note": "The project is resting after a good run and ready for one gentle improvement."
     }
   ],
-  "currentGoal": "Rest after completing the first full guided Luna loop.",
-  "lastCompletedRun": "2026-07-12: Completed the first full Guided Return sequence: Orient → Remember → Choose → Set Aside → Record → Rest.",
-  "nextStep": "Human-test the complete guided loop on mobile. If it passes without a blocking issue, do one stabilization and coherence pass toward Luna v0.1 rather than returning to automatic micro-polish.",
+  "currentGoal": "Human-test the contextual complete loop on mobile, including saved values, blank fallbacks, clear behavior, safe rendering, stage coherence, and whether Luna now feels like a genuine one-project return app rather than a beautiful hardcoded demo. If it passes without a blocking issue, choose one substantial v0.1 stabilization/coherence pass rather than returning to automatic micro-polish.",
+  "lastCompletedRun": "2026-07-12: Completed the third meaningful v0.1 vertical slice: contextual complete Guided Return loop.",
+  "nextStep": "Human-test the contextual complete loop on mobile, including saved values, blank fallbacks, clear behavior, safe rendering, stage coherence, and whether Luna now feels like a genuine one-project return app rather than a beautiful hardcoded demo. If it passes without a blocking issue, choose one substantial v0.1 stabilization/coherence pass rather than returning to automatic micro-polish.",
   "dashboardGuide": [
     "Welcome starts the path to read through Record the Change before choosing more work.",
     "Status gives a quick snapshot of how the project is doing right now.",
