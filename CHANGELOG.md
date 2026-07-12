@@ -1,5 +1,18 @@
 # Changelog
 
+
+## 2026-07-12
+
+### Luna Opening Threshold Vertical Slice
+
+- Replaced the prototype-like first impression in `prototype.html` with a real Luna opening threshold that establishes Luna identity, offers a concise return invitation, and keeps attention on one unfinished project.
+- Changed the primary opening action to “Return gently” and connected it directly to the existing Guided Return app shell for Orient → Remember → Choose.
+- Preserved the full overview as a quieter reference/editing path with editable fields, existing localStorage keys, blank-value fallbacks, clear-local-edits scope, and saved-value behavior intact.
+- Preserved the existing Guided Return shell, Forward / Back navigation, Return to full overview, reduced-motion support, transition cleanup, rapid-click protection, mobile action layout, and One Next Action lantern emphasis.
+- Recorded the deliberate rhythm change from many tiny micro-experiments toward fewer meaningful vertical slices for Luna v0.1.
+- Recorded that the intended Luna loop remains Orient → Remember → Choose → Set Aside → Record → Rest, while Set Aside, Record, and Rest remain intentionally unimplemented in this run.
+- Set Luna back to Rest and set the next suggested step to human-testing the new opening threshold on mobile before proceeding toward completing more of the Luna loop in a meaningful vertical slice.
+
 ## 2026-07-12
 
 ### Guided Return App Shell Experiment
