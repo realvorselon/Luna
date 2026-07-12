@@ -1,5 +1,12 @@
 # Luna
 
+## Reversible suggestion review
+
+- Shape this return now makes each visible applied suggestion immediately reversible in the same review session: “Use this” becomes “Undo” for that one field.
+- Undo restores the exact field value that existed immediately before that suggestion was applied, updates the input, visible context, existing localStorage persistence path, and Guided Return content where relevant, and leaves unrelated fields unchanged.
+- No global undo, history, persisted suggestion state, or new localStorage key was added; reopening Shape this return recomputes guidance from the current saved project values.
+- Luna is back at Rest. Next: human-test selective Apply → Undo behavior on mobile, including multiple suggestions, refresh, and reopening Shape this return.
+
 ## Blocking mobile overflow correction
 
 - Fixed a blocking Guided Return mobile overflow regression where a long unbroken One Next Action could force the stage card, input area, navigation controls, and background wider than the viewport.

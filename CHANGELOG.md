@@ -2,6 +2,14 @@
 
 ## 2026-07-12
 
+### Reversible Suggestion Review
+
+- Changed each visible Shape this return suggestion action from a one-way “Use this” / “Applied” control into a reversible “Use this” / “Undo” button.
+- Undo restores the exact value that field had immediately before that suggestion was applied, using the existing input, display, localStorage, character-count, and Guided Return refresh path.
+- Kept undo state in memory for the current review surface only, left unrelated fields unchanged, added no global undo/history/new persistence key, and preserved recomputation when Shape this return is reopened.
+- Extended lightweight regression coverage for selected-field apply, exact undo value, unrelated-field protection, independent visible suggestion state, no new persistence key, unpersisted undo history, and existing mobile containment protections.
+- Set Luna back to Rest and set the next step to human mobile testing of selective Apply → Undo behavior.
+
 ### Blocking Mobile Overflow Correction
 
 - Fixed a blocking Guided Return mobile overflow regression where long unbroken user-entered text, especially One Next Action, could widen the mobile page beyond the viewport.
