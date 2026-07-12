@@ -54,7 +54,8 @@ assert.equal(result.setAside.voiceKey, 'setAsideMultiple');
 
 result = guidance.buildReturnGuidance({ ...base, recordChange: '' });
 assert.equal(result.recordChange.status, 'suggestion');
-assert.equal(result.recordChange.suggestion, 'Returned to Luna and chose: Open the prototype..');
+assert.equal(result.recordChange.suggestion, 'Returned to Luna and chose: Open the prototype.');
+assert.doesNotMatch(result.recordChange.suggestion, /\.\./, 'Record fallback should not produce doubled periods');
 assert.equal(result.recordChange.voiceKey, 'recordBlank');
 
 result = guidance.buildReturnGuidance({ ...base, recordChange: 'Write an update later when each thing changes.' });
@@ -68,6 +69,8 @@ assert.equal(result.setAside.status, 'clear');
 assert.equal(result.recordChange.status, 'clear');
 assert.match(result.allClearMessage, /clear|ready|rewriting|written|deterministic/i);
 assert.match(result.restMessage, /waiting|stop here|Rest is allowed|gently|without pressure/i);
+assert.match(result.restMessage, /[.!?]$/, 'Rest message should end cleanly');
+assert.doesNotMatch(result.restMessage, /\.\.|\s+[.!?]$/, 'Rest message should not have doubled punctuation or spacing before the ending');
 assert.doesNotMatch(result.restMessage, /must|should|hurry|productive|finish/i);
 
 result = guidance.buildReturnGuidance({ ...base, currentGoal: '<img src=x onerror=alert(1)> and polish everything', nextAction: '<b>Open</b>, then ship' });
@@ -81,10 +84,10 @@ const html = fs.readFileSync('prototype.html', 'utf8');
 const js = fs.readFileSync('prototype-guidance.js', 'utf8');
 assert(!/Math\.random\s*\(/.test(js), 'guidance must not use Math.random');
 assert(!/\bfetch\s*\(/.test(html + js), 'local guidance must not call fetch');
-assert(html.includes('maxlength="80"'));
-assert(html.includes('maxlength="160"'));
+assert.equal((html.match(/maxlength="80"/g) || []).length, 1);
+assert.equal((html.match(/maxlength="160"/g) || []).length, 1);
 assert.equal((html.match(/maxlength="140"/g) || []).length, 2);
-assert(html.includes('maxlength="180"'));
+assert.equal((html.match(/maxlength="180"/g) || []).length, 1);
 assert(html.includes('character-feedback'));
 assert(html.includes('aria-describedby="project-name-helper project-name-count"'));
 assert(html.includes("const projectNameStorageKey = 'luna.prototype.projectName';"));
@@ -92,6 +95,7 @@ assert(html.includes("const currentGoalStorageKey = 'luna.prototype.currentGoal'
 assert(html.includes("const nextActionStorageKey = 'luna.prototype.nextAction';"));
 assert(html.includes("const setAsideStorageKey = 'luna.prototype.setAside';"));
 assert(html.includes("const recordChangeStorageKey = 'luna.prototype.recordChange';"));
+assert.equal((html.match(/StorageKey\s*=\s*'luna\.prototype\./g) || []).length, 5, 'only the five project storage keys should be declared');
 assert(!/suggestion.*StorageKey|guidance.*StorageKey|history.*StorageKey/i.test(html), 'no suggestion/history storage keys');
 
 assert(html.includes("let isApplied = false;"), 'suggestion actions should track only visible review-session state');
@@ -108,6 +112,7 @@ assert(!/sessionStorage|document\.cookie|eval\s*\(|new Function/.test(html + js)
 assert(js.includes('voiceLibrary'));
 assert(js.includes("voice('goalBlank'"));
 assert(html.includes('guidance.allClearMessage'));
+assert(html.includes('createTextElement'));
 assert(html.includes('textContent = text'));
 assert(html.includes('escapeHtml(window.LunaReturnGuidance.buildReturnGuidance'));
 

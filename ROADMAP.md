@@ -2,7 +2,7 @@
 
 ## Current v0.1 Direction
 
-Applied Shape this return suggestions are now reversible from the same review surface, one field at a time, without adding global undo, history, or a new persistence key. The next step is human mobile testing of selective Apply → Undo behavior, including applying multiple different suggestions, undoing one without affecting the others, refreshing after an applied value, and reopening Shape this return to confirm guidance is recomputed from current saved context. If that passes without a blocking issue, choose one substantial v0.1 stabilization/coherence pass rather than returning to automatic micro-polish.
+Luna has completed one bounded v0.1 stabilization and coherence pass after the recent human-tested slices. The next step is a human v0.1 readiness test on mobile through the complete flow: opening threshold → Shape this return → Apply/Undo → full overview → Guided Return → Rest → Return to Luna. If a blocking issue appears, fix only that issue; otherwise keep Luna at Rest.
 
 Protected scope remains one local project only. The guidance engine must stay browser-only with no API key, backend, account, cost, network call, persisted suggestion result, or suggestion-history key. The existing five project-edit storage keys remain the only persisted project values. Set Aside is one saved value, not a backlog. Record is one saved value, not a log. The opening threshold, Return gently action, navigation loop, panel motion, mobile treatment, full overview reference/editing mode, and six-stage shell should stay protected.
 
@@ -20,7 +20,7 @@ Protected scope remains one local project only. The guidance engine must stay br
 - Protect the complete guided sequence: Orient → Remember → Choose → Set Aside → Record → Rest.
 - Keep Ignore For Now intentionally not-a-backlog, Record intentionally brief and non-administrative, and Rest as a real stopping point.
 - Human testing found the opening threshold passed strongly and the basic navigation loop works.
-- Next: human-test the local return-guidance engine on mobile with concise, vague, blank, long, and HTML-like text. If it passes without a blocking issue, move to one stabilization and coherence pass toward Luna v0.1 instead of automatic micro-polish.
+- Current next step: human v0.1 readiness test on mobile through the complete flow. Do not add features during readiness testing.
 
 ## Current Rest Checkpoint — First Complete Guided Loop
 

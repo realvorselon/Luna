@@ -2,6 +2,14 @@
 
 ## 2026-07-12
 
+### v0.1 Stabilization and Coherence Pass
+
+- Cleaned generated Record fallback punctuation so action text ending in punctuation does not create doubled periods.
+- Normalized generated Rest messages so they end cleanly, including variants that include the current One Next Action.
+- Tightened small flow-copy mismatches while preserving the opening threshold, Shape this return, Apply → Undo, Open full overview, Return to Luna, full six-stage Guided Return loop, deterministic local guidance, five storage keys, input limits, safe rendering, mobile containment, motion cleanup, and accessibility protections.
+- Extended lightweight regression coverage for clean generated punctuation, Apply → Undo markers, mobile containment protections, no new storage keys, no fetch/network calls, no `Math.random()`, safe rendering paths, and unchanged maxlength values.
+- Set Luna back to Rest and set the next step to a human v0.1 readiness test on mobile through the complete flow.
+
 ### Reversible Suggestion Review
 
 - Changed each visible Shape this return suggestion action from a one-way “Use this” / “Applied” control into a reversible “Use this” / “Undo” button.

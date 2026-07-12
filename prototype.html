@@ -852,7 +852,7 @@
         <div class="guided-shell-header">
           <p class="guided-shell-kicker">Guided Return</p>
           <h2 class="guided-shell-title" id="guided-shell-title">One quiet return space</h2>
-          <p class="guided-shell-note">Move through Orient → Remember → Choose → Set Aside → Record → Rest inside this same focused shell, with the full overview available when you want reference or editing.</p>
+          <p class="guided-shell-note">Move through Orient → Remember → Choose → Set Aside → Record → Rest inside this same focused shell, with the full overview available for reference or editing.</p>
         </div>
         <div class="guided-stage-panel" id="guided-stage-panel" aria-labelledby="guided-stage-title">
           <p class="guided-position" id="guided-position">Stage 1 of 6</p>
@@ -993,16 +993,15 @@
       <p class="path-note">Move through the same small loop each time, from orienting to resting, without turning the project into a bigger system.</p>
       <div class="return-path" aria-label="Return path steps">
         <span>Orient</span>
-        <span>Notice</span>
+        <span>Remember</span>
         <span>Choose</span>
         <span>Leave alone</span>
         <span>Record</span>
         <span>Rest</span>
       </div>
       <ol>
-        <li>Return to the current project.</li>
-        <li>Orient around its name and goal.</li>
-        <li>Remember enough to continue.</li>
+        <li>Orient around the current project name and goal.</li>
+        <li>Remember enough context to continue.</li>
         <li>Choose one next action.</li>
         <li>Leave one thing alone for now.</li>
         <li>Record one brief change.</li>
@@ -1102,7 +1101,7 @@
     const guidedStages = [
       {
         title: 'Orient',
-        intro: 'Return to the project name and current goal before choosing anything new.',
+        intro: 'Orient around the project name and current goal before choosing anything new.',
         render: () => `
           <article class="quiet-card">
             <span class="label">Project name</span>
@@ -1128,7 +1127,7 @@
           <article class="quiet-card">
             <span class="label">Remember</span>
             <h3>${escapeHtml(getProjectName())} is already in motion.</h3>
-            <p>The current goal is still: ${escapeHtml(getCurrentGoal())}. You only need enough memory to continue gently.</p>
+            <p>The current goal is still ${escapeHtml(getCurrentGoal())}. You only need enough context to continue gently.</p>
           </article>
         `
       },

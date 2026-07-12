@@ -116,6 +116,13 @@
     return normalized || fallback;
   };
 
+  const stripTerminalPunctuation = (value) => normalizeProjectText(value).replace(/[.!?]+$/g, '').trim();
+
+  const endSentence = (value) => {
+    const text = normalizeProjectText(value);
+    return /[.!?]$/.test(text) ? text : `${text}.`;
+  };
+
   const stableTextHash = (value) => {
     let hash = 2166136261;
     const text = normalizeProjectText(value);
@@ -183,7 +190,7 @@
     const action = normalizeProjectText(nextAction, fallbackNextAction);
     const project = normalizeProjectText(projectName, fallbackProjectName);
     const seed = `${project}|${action}|${current}`;
-    if (!raw || isFallback(current, fallbackRecordChange)) return suggestion(current, `Returned to ${project} and chose: ${action}.`, voice('recordBlank', seed), 'recordBlank');
+    if (!raw || isFallback(current, fallbackRecordChange)) return suggestion(current, `Returned to ${project} and chose: ${stripTerminalPunctuation(action)}.`, voice('recordBlank', seed), 'recordBlank');
     if (current.length > 130 || sentenceCount(current) > 1 || futureLogInstruction.test(current)) return suggestion(current, firstSentence(current), voice('recordLong', seed), 'recordLong');
     return clear(current, voice('recordClear', seed), 'recordClear');
   };
@@ -205,8 +212,8 @@
       recordChange,
       allClearMessage,
       restMessage: normalizeProjectText(actionForRest) && !isFallback(actionForRest, fallbackNextAction)
-        ? voice('restWithAction', `${projectName}|${actionForRest}`, { action: actionForRest })
-        : voice('restWithoutContext', `${projectName}|${goal.current}`)
+        ? endSentence(voice('restWithAction', `${projectName}|${actionForRest}`, { action: stripTerminalPunctuation(actionForRest) }))
+        : endSentence(voice('restWithoutContext', `${projectName}|${goal.current}`))
     };
   };
 
