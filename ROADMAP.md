@@ -5,10 +5,11 @@ This roadmap is intentionally small. Luna is a public dashboard prototype right 
 ## Current Phase Direction
 
 - Guided Return is the next phase direction after the completed single-project browser prototype phase. Its boundary is `docs/GUIDED_RETURN_PHASE_BOUNDARY.md`.
-- Next: human-test whether Guided Return now keeps the same dark moonlit theme while preserving the softer panel transition.
+- Next: human visually test the full overview and Guided Return background continuity on mobile.
 
 ## Completed
 
+- Darkened only the outer `.guided-return-view` after human testing found the first dark-surface follow-up corrected the inner panel but the larger guided container still appeared too bright against the moonlit page.
 - Darkened the Guided Return stage panel surface after human testing found the first panel-level transition made the guided area brighter than the surrounding moonlit prototype.
 - Replaced the first quick 220ms Guided Return micro-transition with a calmer app-like panel-level Forward / Back transition, after human testing found the first treatment too quick and visually uncomfortable.
 - Added the Guided Return motion experiment boundary while preserving the first-slice read-through and its conclusions.
@@ -77,8 +78,9 @@ This roadmap is intentionally small. Luna is a public dashboard prototype right 
 - A human test found the first 220ms motion treatment too quick and visually uncomfortable / hard on the eyes, and clarified the intent as a calm app-like panel or screen transition rather than animated text or a tiny content shift.
 - The current Guided Return motion experiment replaces that first treatment with a two-phase panel-level Forward / Back transition; entering Guided Return, returning to the full overview, and the full overview itself remain unanimated.
 - A human test found the first panel-level transition felt closer to the intended app-like direction, but the guided stage surface looked too bright / translucent and created a double-layered lighter-card mismatch against the dark moonlit prototype.
-- A tiny visual-only follow-up darkens the `.guided-stage-panel` surface and restrains its border / inset highlight while preserving the existing panel motion, timing, easing, JavaScript, navigation behavior, layout, content, editable fields, and localStorage behavior.
-- Next suggested step: human-test whether Guided Return now keeps the same dark theme while preserving the softer panel transition; do not extend the six-stage sequence by default.
+- A first tiny visual-only follow-up darkened the `.guided-stage-panel` surface and restrained its border / inset highlight while preserving the existing panel motion, timing, easing, JavaScript, navigation behavior, layout, content, editable fields, and localStorage behavior.
+- The latest tiny CSS-only follow-up darkens only the outer `.guided-return-view` surface after human testing found the inner panel was corrected but the outer guided container still made a large lighter-blue region, especially on mobile.
+- Next suggested step: human visually test the full overview and Guided Return background continuity on mobile; do not extend the six-stage sequence by default.
 
 ## Near Term
 

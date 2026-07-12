@@ -6,19 +6,19 @@ Luna is an autonomous repository experiment and small public dashboard prototype
 
 ## Current Goal
 
-Human-test whether Guided Return now keeps the same dark moonlit theme while preserving the softer panel-level transition.
+Human-test the full overview and Guided Return background continuity on mobile after darkening only the outer guided container.
 
 ## Last Completed Run
 
-- 2026-07-11: Darkened the Guided Return stage panel surface after human testing found the new panel-level transition made the guided area brighter than the surrounding moonlit prototype.
+- 2026-07-11: Darkened only the outer `.guided-return-view` container after human testing found the first dark-surface follow-up corrected the inner panel but left the larger guided area too bright on the moonlit page.
 
 ## Next Suggested Step
 
-Human-test whether Guided Return now keeps the same dark theme while preserving the softer panel transition.
+Human visually test the full overview and Guided Return background continuity on mobile.
 
 ## Notes
 
-The Guided Return dark surface follow-up records a human finding that the first panel-level transition introduced a brighter-than-intended guided surface: the new `.guided-stage-panel` looked too bright / translucent against `.guided-return-view`, creating a double-layered lighter card effect that did not match the surrounding dark moonlit prototype. This tiny visual-only run darkens the guided stage panel to a more opaque indigo/navy surface with a restrained border and inset highlight, preserving the panel-level motion, timing, easing, JavaScript, navigation behavior, editable fields, localStorage behavior, layout, spacing, stage content, and surrounding page background. Luna is back at Rest. Next, human-test whether Guided Return now keeps the same dark theme while preserving the softer panel transition.
+The Guided Return outer container follow-up records a human finding that the first dark-surface follow-up corrected the inner `.guided-stage-panel`, but the larger outer `.guided-return-view` still appeared too bright and created the main remaining lighter-blue block effect against the dark moonlit page, especially on mobile. This tiny CSS-only run darkens only the outer `.guided-return-view` surface with a restrained navy/indigo treatment and calmer subtle border while preserving the inner stage panel, panel-level motion experiment, timing, easing, JavaScript, navigation behavior, editable fields, localStorage behavior, layout, spacing, stage content, full overview, and surrounding page background. Luna is back at Rest. Next, human visually test the full overview and Guided Return background continuity on mobile.
 
 The Guided Return panel-level transition run records a human finding that the first 220ms micro-transition with a tiny horizontal content shift was too quick and visually uncomfortable / hard on the eyes. The clarified design intent is a calm app-like panel or focused screen transition: the outgoing guided stage surface gently gives way, then the incoming stage surface arrives, rather than text flickering or shifting inside the same card. This run replaces the first motion treatment in `prototype.html` with a two-phase Forward / Back panel transition, keeps the surrounding page anchored, prevents overlapping rapid navigation, cleans up transition classes when returning to the full overview, and respects `prefers-reduced-motion` by updating immediately without directional sliding or artificial delay. The guided slice remains limited to Orient → Remember → Choose, the full overview remains the reference mode, Begin a guided return and Return to full overview remain available, One Next Action still moves into and out of Choose, existing editable values and persistence behavior remain intact, and Luna is back at Rest. Next, human-test whether the new panel-level transition feels softer, easier on the eyes, and closer to moving between calm focused app screens.
 
