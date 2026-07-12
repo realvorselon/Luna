@@ -333,10 +333,16 @@
     }
 
     .guided-actions {
+      display: grid;
+      gap: 10px;
+      margin-top: 22px;
+    }
+
+    .guided-primary-actions,
+    .guided-secondary-actions {
       display: flex;
       flex-wrap: wrap;
       gap: 10px;
-      margin-top: 22px;
     }
 
     .overview-edit-anchor {
@@ -386,6 +392,43 @@
     @media (max-width: 680px) {
       main { padding-top: 44px; }
       .loop-grid { grid-template-columns: 1fr; }
+
+      .guided-return-view {
+        padding: 16px;
+      }
+
+      .guided-stage-panel {
+        min-height: 0;
+        padding: 16px;
+      }
+
+      .guided-actions {
+        position: sticky;
+        bottom: max(12px, env(safe-area-inset-bottom));
+        z-index: 2;
+        margin: 16px -4px 0;
+        padding: 12px 4px 4px;
+        background: linear-gradient(180deg, rgb(8 13 30 / 0%), rgb(8 13 30 / 92%) 28%, rgb(8 13 30 / 98%));
+      }
+
+      .guided-primary-actions {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .guided-primary-actions:has(.guided-control[hidden]) {
+        grid-template-columns: 1fr;
+      }
+
+      .guided-secondary-actions {
+        display: grid;
+        grid-template-columns: 1fr;
+      }
+
+      .guided-actions .guided-control {
+        justify-self: stretch;
+        width: 100%;
+      }
     }
   </style>
 </head>
@@ -411,9 +454,13 @@
         <div class="guided-stage-body" id="guided-stage-body"></div>
       </div>
       <div class="guided-actions">
-        <button class="guided-control" type="button" id="guided-back-button">Back</button>
-        <button class="guided-control" type="button" id="guided-forward-button">Forward</button>
-        <button class="guided-control" type="button" id="return-overview-button">Return to full overview</button>
+        <div class="guided-primary-actions" role="group" aria-label="Guided stage navigation">
+          <button class="guided-control" type="button" id="guided-back-button">Back</button>
+          <button class="guided-control" type="button" id="guided-forward-button">Forward</button>
+        </div>
+        <div class="guided-secondary-actions">
+          <button class="guided-control" type="button" id="return-overview-button">Return to full overview</button>
+        </div>
       </div>
     </section>
 

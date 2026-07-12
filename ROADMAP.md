@@ -79,8 +79,10 @@ This roadmap is intentionally small. Luna is a public dashboard prototype right 
 - The current Guided Return motion experiment replaces that first treatment with a two-phase panel-level Forward / Back transition; entering Guided Return, returning to the full overview, and the full overview itself remain unanimated.
 - A human test found the first panel-level transition felt closer to the intended app-like direction, but the guided stage surface looked too bright / translucent and created a double-layered lighter-card mismatch against the dark moonlit prototype.
 - A first tiny visual-only follow-up darkened the `.guided-stage-panel` surface and restrained its border / inset highlight while preserving the existing panel motion, timing, easing, JavaScript, navigation behavior, layout, content, editable fields, and localStorage behavior.
-- The latest tiny CSS-only follow-up darkens only the outer `.guided-return-view` surface after human testing found the inner panel was corrected but the outer guided container still made a large lighter-blue region, especially on mobile.
-- Next suggested step: human visually test the full overview and Guided Return background continuity on mobile; do not extend the six-stage sequence by default.
+- A later tiny CSS-only follow-up darkened only the outer `.guided-return-view` surface after human testing found the inner panel was corrected but the outer guided container still made a large lighter-blue region, especially on mobile.
+- A mobile geometry experiment then made the guided stages feel roughly similar in size with a tall shared minimum height, but human testing found it stabilized the wrong thing: too much empty space remained, scrolling was still required, and Forward / Back / Return controls stacked awkwardly.
+- The current mobile correction removes the oversized stage-footprint approach, lets guided content use natural height, groups Back / Forward as the primary mobile navigation row, separates Return to full overview as secondary, and preserves the existing panel-level motion and dark surface findings.
+- Next suggested step: human mobile test Guided Return control clarity, reachability, empty space, scrolling, preserved editable values, and unchanged panel motion; do not extend the six-stage sequence by default.
 
 ## Near Term
 
