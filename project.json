@@ -2,6 +2,10 @@
   "status": "Rest",
   "statusHistory": [
     {
+      "date": "2026-07-12",
+      "note": "Replaced the oversized mobile Guided Return stage-footprint approach with natural-height stage content and a clearer mobile action layout after human testing found the tall shared min-height created empty space, did not prevent scrolling, and left Forward / Back / Return stacked unintuitively."
+    },
+    {
       "date": "2026-07-11",
       "note": "Darkened only the outer Guided Return container after human testing found the first dark-surface follow-up corrected the inner panel but left the larger guided area too bright."
     },
@@ -565,10 +569,10 @@
     "Visit http://localhost:8000 in a browser to view the dashboard."
   ],
   "nextAction": {
-    "title": "Human-test Guided Return background continuity",
-    "description": "On mobile, compare the full overview against the Guided Return view after pressing “Begin a guided return,” checking whether the outer guided container now feels dark, bounded, and continuous with the moonlit page.",
-    "whyItMatters": "The first dark-surface follow-up fixed the inner stage panel, but the larger outer guided container still created a lighter-blue block; this test confirms whether darkening only `.guided-return-view` restores continuity without changing motion or behavior.",
-    "status": "Ready for human test"
+    "title": "Human-test Guided Return mobile controls",
+    "description": "On mobile, enter Guided Return and move through Orient → Remember → Choose and back, checking that Back / Forward read as the primary navigation row, Return to full overview reads as a separate secondary action, stage content uses natural height, controls are easy to locate without hunting or excess scrolling, and no content is clipped.",
+    "whyItMatters": "The previous tall shared mobile min-height made stage sizes more consistent but stabilized the wrong thing: it added empty space, did not prevent mobile scrolling, and left controls feeling stacked and unintuitive. This test checks whether the corrected action layout fixes the actual interaction problem while preserving panel motion and values.",
+    "status": "Ready for human mobile test"
   },
   "creativeSeed": {
     "name": "Philosophy Garden",
@@ -636,7 +640,7 @@
   ],
   "currentMode": {
     "name": "Rest",
-    "description": "Luna is resting after darkening only the outer Guided Return container without changing the inner panel, motion, or behavior.",
-    "whyItMatters": "Rest protects the restrained Guided Return visual correction and the intentionally limited Orient → Remember → Choose guided slice before choosing any new behavior or sequence expansion."
+    "description": "Luna is resting after replacing the oversized mobile Guided Return stage footprint with natural stage height and a clearer Back / Forward plus secondary Return action area.",
+    "whyItMatters": "Rest protects this focused mobile layout correction and the intentionally limited Orient → Remember → Choose guided slice before adding stages, behavior, or broader redesign."
   }
 }

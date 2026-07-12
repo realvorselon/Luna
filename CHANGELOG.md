@@ -1,5 +1,17 @@
 # Changelog
 
+## 2026-07-12
+
+### Guided Return Mobile Action Layout Correction
+
+- Recorded that the tall shared mobile stage minimum height made Orient, Remember, and Choose feel roughly more consistent, but introduced too much empty space and did not prevent mobile scrolling.
+- Recorded that the mobile Forward / Back / Return controls felt stacked, awkward, and unintuitive.
+- Updated `prototype.html` to replace the oversized mobile stage-footprint approach with natural-height guided stage content.
+- Reworked the mobile Guided Return action area so Back and Forward sit together as the primary navigation row, while Return to full overview appears separately as a secondary full-width action.
+- Added a restrained mobile sticky treatment within the Guided Return container only, respecting safe-area padding and avoiding fixed global toolbar behavior.
+- Preserved the current panel-level Forward / Back transition timing, easing, directions, outgoing / incoming phases, reduced-motion behavior, rapid-click protection, transition cleanup, dark moonlit surfaces, editable values, localStorage keys, blank-value fallbacks, clear-local-edits behavior, full overview reference mode, and the Orient → Remember → Choose scope.
+- Set Luna back to Rest and set the next suggested step to a human mobile test of control clarity, reachability, empty space, scrolling, preserved values, and unchanged panel motion.
+
 ## 2026-07-11
 
 ### Guided Return Outer Container Dark Surface Follow-Up
