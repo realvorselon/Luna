@@ -2,6 +2,14 @@
 
 ## 2026-07-12
 
+### Guided Return Motion Comfort Correction
+
+- Replaced Guided Return directional stage movement with calm fade-only stage swaps and shorter fallback timings.
+- Reduced opening/full-overview guided-entry motion to fade-only transitions, added a steadier guided stage minimum block size, and strengthened reduced-motion CSS so transitions are disabled or nearly instant for reduced-motion users.
+- Preserved transition cleanup, rapid-click protection, mobile containment, visual comfort CSS, five storage keys and maxlengths, safe rendering, deterministic guidance, Apply → Undo, Clear local edits, and the complete Guided Return loop.
+- Set Luna back to Rest; next is a brief human mobile motion-comfort test through Guided Return one stage at a time.
+
+
 ### Mobile Visual Comfort Correction
 
 - Calmed the body/page background, Luna opening threshold, full overview cards, editing panels, inputs, Guided Return shell/stage panel, and buttons by reducing busy radial gradients, glow, heavy shadows, and bright gold/blue contrast.

@@ -161,4 +161,18 @@ assert.doesNotMatch(css, /\.try-editing-card\s*\{[\s\S]*?radial-gradient[\s\S]*?
 assert.doesNotMatch(css, /\.guided-return-view\s*\{[\s\S]*?radial-gradient[\s\S]*?\}/, 'guided shell should not use radial glow gradients');
 assert.doesNotMatch(css, /\.edit-field input\s*\{[\s\S]*?linear-gradient[\s\S]*?\}/, 'inputs should be calm solid surfaces');
 
+const guidedMotionCss = css.match(/\.guided-stage-panel\.is-leaving-forward[\s\S]*?@media \(prefers-reduced-motion: reduce\)/)[0];
+assert(guidedMotionCss.includes('guidedPanelFadeOut'), 'guided stage transitions should use calm fade-out classes');
+assert(guidedMotionCss.includes('guidedPanelFadeIn'), 'guided stage transitions should use calm fade-in classes');
+assert.doesNotMatch(guidedMotionCss, /translate[XY]?\s*\(\s*-?\d+(?:\.\d+)?px\s*\)/, 'guided stage transitions should not use directional pixel movement');
+assert.doesNotMatch(guidedMotionCss, /guidedPanel(?:Leave|Enter)(?:Forward|Back)/, 'old directional guided stage keyframes should not remain');
+assertRuleContains('.guided-stage-panel', ['min-block-size: clamp(300px, 42svh, 390px)', 'will-change: opacity']);
+assert(css.includes('animation: none !important') && css.includes('transition: none !important') && css.includes('filter: none'), 'reduced motion should remove/minimize animation, transition, transform, and filter changes');
+assert(html.includes('const guidedStageMotionFallbackMs = 220;'));
+assert(html.includes('const guidedEntranceFallbackMs = 240;'));
+assert(html.includes('if (guidedStageTransitioning || guidedStageMotionQuery.matches)'), 'rapid-click protection and reduced-motion immediate stage path should remain');
+assert(html.includes('clearGuidedStageTransition();') && html.includes('guidedStagePanel.classList.remove(...guidedStageMotionClasses)'), 'guided stage transition cleanup should remain');
+assert(html.includes('if (guidedEntranceTransitioning || !guidedReturnView.hidden)'), 'guided entrance rapid-click protection should remain');
+assert(html.includes('clearGuidedEntranceTransition();') && html.includes("guidedReturnView.classList.remove('is-arriving-from-overview')"), 'guided entrance transition cleanup should remain');
+
 console.log('local guidance tests passed');

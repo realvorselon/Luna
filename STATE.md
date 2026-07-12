@@ -1,8 +1,8 @@
 # State
 
-Luna is at Rest after a focused mobile visual comfort correction. The current prototype keeps the same opening threshold, full overview editing clarity, Shape this return, Apply → Undo, Clear local edits, deterministic local guidance, safe rendering, input limits, near-limit counters, mobile containment protections, and complete Guided Return loop, but its main mobile surfaces now use calmer moonlit solids, fewer busy gradients, softer input contrast, restrained focus states, and less glow/depth.
+Luna is at Rest after a focused motion comfort correction. The current prototype keeps the same opening threshold, full overview editing clarity, Shape this return, Apply → Undo, Clear local edits, deterministic local guidance, safe rendering, input limits, near-limit counters, mobile containment protections, mobile visual comfort surfaces, and complete Guided Return loop, but Guided Return stage changes now use fade-only swaps instead of directional movement, guided-entry view changes avoid screen-like sliding, stage sizing is steadier, and reduced-motion behavior is stronger.
 
-Next suggested step: human mobile-test Luna, the full overview, and Guided Return for a few minutes and confirm the color scheme/gradients no longer cause eye strain or nausea.
+Next suggested step: human mobile-test motion comfort with very brief exposure by moving through Guided Return one stage at a time and confirming transitions no longer cause nausea or visual discomfort.
 
 ## Full Overview Editing Clarity — 2026-07-12
 
@@ -37,9 +37,11 @@ Rest after a bounded v0.1 stabilization and coherence pass.
 
 ## Next Suggested Step
 
-Human v0.1 readiness test on mobile: run the complete flow from opening threshold through Shape this return, Apply/Undo, full overview, Guided Return, Rest, and Return to Luna.
+Human mobile-test motion comfort with very brief exposure: move through Guided Return one stage at a time and confirm transitions no longer cause nausea or visual discomfort.
 
 ## Notes
+
+2026-07-12: Corrected the motion/transition comfort blocker by replacing Guided Return directional stage movement with fade-only swaps, reducing guided-entry movement, adding a steadier guided stage panel size, and strengthening reduced-motion behavior while preserving the full loop and protected local-only behavior. Luna is back at Rest.
 
 Luna has deliberately shifted away from many tiny automatic micro-experiments toward fewer, more meaningful vertical slices. The first v0.1-oriented slice was the Luna opening threshold; the second completed the six-stage shell; the third made the complete loop contextual; the fourth added local return guidance; this run is the fifth meaningful v0.1 vertical slice, adding richer deterministic local voice and focused input limits. The complete Guided Return loop now follows the current one-project context from full overview edits through opening threshold, Orient, Remember, Choose, Set Aside, Record, and Rest.
 
