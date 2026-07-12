@@ -3,6 +3,10 @@
   "statusHistory": [
     {
       "date": "2026-07-12",
+      "note": "2026-07-12: Corrected the motion/transition comfort blocker by replacing Guided Return directional stage motion with calmer fade-only swaps, reducing guided-entry movement, adding steadier guided stage panel sizing, strengthening reduced-motion behavior, and preserving cleanup, rapid-click protection, mobile containment, visual comfort CSS, five storage keys, maxlengths, safe rendering, deterministic guidance, Apply/Undo, Clear local edits, and the complete Guided Return loop."
+    },
+    {
+      "date": "2026-07-12",
       "note": "2026-07-12: Corrected the mobile visual comfort blocker by calming Luna’s page background, opening threshold, overview cards, editing panels, inputs, Guided Return shell/stage panel, and buttons with fewer busy gradients, softer contrast, restrained focus states, and less glow/depth while preserving structure, behavior, five storage keys, maxlengths, mobile containment, safe rendering, deterministic guidance, Apply/Undo, Clear local edits, and the complete Guided Return loop."
     },
     {
@@ -562,9 +566,9 @@
       "note": "The project is resting after a good run and ready for one gentle improvement."
     }
   ],
-  "currentGoal": "Rest after a focused mobile visual comfort correction.",
-  "lastCompletedRun": "2026-07-12: Corrected the mobile visual comfort blocker by calming Luna’s page background, opening threshold, overview cards, editing panels, inputs, Guided Return shell/stage panel, and buttons with fewer busy gradients, softer contrast, restrained focus states, and less glow/depth while preserving structure, behavior, five storage keys, maxlengths, mobile containment, safe rendering, deterministic guidance, Apply/Undo, Clear local edits, and the complete Guided Return loop.",
-  "nextStep": "Human mobile-test Luna, the full overview, and Guided Return for a few minutes and confirm the calmer colors and gradients no longer cause eye strain or nausea.",
+  "currentGoal": "Rest after a focused motion comfort correction.",
+  "lastCompletedRun": "2026-07-12: Corrected the motion/transition comfort blocker by replacing Guided Return directional stage motion with calmer fade-only swaps, reducing guided-entry movement, adding steadier guided stage panel sizing, strengthening reduced-motion behavior, and preserving cleanup, rapid-click protection, mobile containment, visual comfort CSS, five storage keys, maxlengths, safe rendering, deterministic guidance, Apply/Undo, Clear local edits, and the complete Guided Return loop.",
+  "nextStep": "Human mobile-test motion comfort with very brief exposure: move through Guided Return one stage at a time and confirm transitions no longer cause nausea or visual discomfort.",
   "dashboardGuide": [
     "Welcome starts the path to read through Record the Change before choosing more work.",
     "Status gives a quick snapshot of how the project is doing right now.",
@@ -575,8 +579,8 @@
     "Optional Reflection can wait; Philosophy Garden is a gentle reflection layer, not Luna's main engine."
   ],
   "futureIdeas": [
-    "Human mobile-test Luna, the full overview, and Guided Return for a few minutes and confirm the calmer colors and gradients no longer cause eye strain or nausea.",
-    "If visual-comfort testing finds a remaining blocker, fix only that issue without expanding v0.1 scope."
+    "Human mobile-test motion comfort with very brief exposure: move through Guided Return one stage at a time and confirm transitions no longer cause nausea or visual discomfort.",
+    "If motion-comfort testing finds a remaining blocker, fix only that issue without expanding v0.1 scope."
   ],
   "decisionLog": [
     "2026-07-12: Completed the first full Guided Return loop as the second meaningful v0.1 vertical slice after the opening threshold; Set Aside stays not-a-backlog, Record stays brief, and Rest becomes a real stopping point before returning to Luna.",
@@ -600,8 +604,8 @@
     "The Garden Cycle connects the Reflection Card, Garden Review, Next Garden Update, and rest step so beginners can see how Philosophy Garden pieces fit together."
   ],
   "ideaQueue": [
-    "Human mobile-test Luna, the full overview, and Guided Return for a few minutes and confirm the calmer colors and gradients no longer cause eye strain or nausea.",
-    "If visual-comfort testing finds a remaining blocker, make one bounded comfort/accessibility correction."
+    "Human mobile-test motion comfort with very brief exposure: move through Guided Return one stage at a time and confirm transitions no longer cause nausea or visual discomfort.",
+    "If motion-comfort testing finds a remaining blocker, make one bounded motion/accessibility correction."
   ],
   "ideaQueueGuide": [
     "Choose one small task that can be finished clearly in a single update.",
@@ -636,10 +640,10 @@
     "Visit http://localhost:8000 in a browser to view the dashboard."
   ],
   "nextAction": {
-    "title": "Human mobile-test visual comfort",
-    "description": "Human mobile-test Luna, the full overview, and Guided Return for a few minutes and confirm the calmer colors and gradients no longer cause eye strain or nausea.",
-    "whyItMatters": "This verifies that Luna’s calmer moonlit surfaces no longer create eye strain or nausea on mobile before another readiness pass.",
-    "status": "Resting before human mobile visual-comfort test"
+    "title": "Human mobile-test motion comfort",
+    "description": "Move through Guided Return one stage at a time with very brief exposure and confirm transitions no longer cause nausea or visual discomfort.",
+    "whyItMatters": "This verifies that Luna’s calmer fade-only stage changes and stronger reduced-motion behavior resolve the motion comfort blocker before another readiness pass.",
+    "status": "Resting before human mobile motion-comfort test"
   },
   "creativeSeed": {
     "name": "Philosophy Garden",
@@ -707,9 +711,9 @@
   ],
   "currentMode": {
     "name": "Rest",
-    "description": "Luna is resting after a focused mobile visual comfort correction.",
-    "whyItMatters": "Rest protects the opening threshold, Shape this return, Apply → Undo, clearer full overview editing panel, five saved project values, local-only storage, deterministic guidance, safe rendering, mobile containment, and complete Guided Return loop while human mobile visual-comfort testing happens.",
+    "description": "Luna is resting after a focused motion comfort correction.",
+    "whyItMatters": "Rest protects the opening threshold, Shape this return, Apply → Undo, clearer full overview editing panel, five saved project values, local-only storage, deterministic guidance, safe rendering, mobile containment, mobile visual comfort, and complete Guided Return loop while human mobile motion-comfort testing happens.",
     "value": "Rest"
   },
-  "nextSuggestedStep": "Human mobile-test Luna, the full overview, and Guided Return for a few minutes and confirm the calmer colors and gradients no longer cause eye strain or nausea."
+  "nextSuggestedStep": "Human mobile-test motion comfort with very brief exposure: move through Guided Return one stage at a time and confirm transitions no longer cause nausea or visual discomfort."
 }

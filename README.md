@@ -1,5 +1,12 @@
 # Luna
 
+## Guided Return motion comfort correction
+
+- Replaced Guided Return stage-change movement with calmer fade-only swaps so Orient → Remember → Choose → Set Aside → Record → Rest no longer slides laterally across the screen.
+- Reduced guided-entry view motion to fade-only transitions, kept the stage panel steadier with a practical minimum block size, and strengthened reduced-motion behavior so transitions are disabled or nearly instant for people who request reduced motion.
+- Preserved the mobile visual comfort correction, editing clarity, mobile containment protections, Apply → Undo, Shape this return, Clear local edits, deterministic guidance, safe rendering, input maxlengths, near-limit counters, and complete Guided Return loop.
+- Luna is back at Rest. Next: human mobile-test motion comfort with very brief exposure by moving through Guided Return one stage at a time.
+
 ## Mobile visual comfort correction
 
 - Calmed Luna’s mobile visual treatment by replacing busy radial glow layers, high-contrast editing/input gradients, heavier card depth, and bright gold/blue glare with steadier moonlit solid surfaces.
