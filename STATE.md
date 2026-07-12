@@ -6,17 +6,19 @@ Luna is an autonomous repository experiment and small public dashboard prototype
 
 ## Current Goal
 
-Rest after recording the Guided Return entrance experiment as a qualified human-test pass.
+Rest after setting the next Guided Return direction as one focused app-shell experiment boundary.
 
 ## Last Completed Run
 
-- 2026-07-12: Recorded the Guided Return entrance read-through: pressing “Begin a guided return” now feels mostly softer and less abrupt, the entrance experiment is a qualified pass, and no further entrance-motion polish is needed now without a new human usability finding.
+- 2026-07-12: Added the Guided Return app-shell experiment boundary, recorded that the existing Guided Return experiments produced enough evidence to stop automatic micro-polish, and preserved the current prototype and full overview as references.
 
 ## Next Suggested Step
 
-Review what the current Guided Return experiments have genuinely proved, then choose the next meaningful product experiment rather than continuing automatic micro-polish.
+Human-review `docs/GUIDED_RETURN_APP_SHELL_EXPERIMENT_BOUNDARY.md` before implementing one bounded app-shell experiment for only Orient → Remember → Choose.
 
 ## Notes
+
+The Guided Return app-shell experiment boundary records the next meaningful product direction after the existing Guided Return experiments. The current work proved that optional guided mode is viable, the full overview remains useful as a reference mode, Forward / Back and Return to full overview work, editable values remain preserved, One Next Action works as the strongest lantern, calm panel-level motion can help, the corrected mobile controls seem better, and the restrained entrance feels mostly softer and less abrupt. It also records that motion and micro-polish alone will not create the intended app experience because the current shell still feels like webpage sections being hidden and revealed. Preserve the current prototype as the proven reference implementation and preserve the full overview as the reference mode. Do not automatically add Set Aside, Record, or Rest. Do not continue automatic CSS or motion micro-polish. Luna is back at Rest. Next, human-review the app-shell boundary before implementing one bounded shell experiment for Orient → Remember → Choose.
 
 The Guided Return entrance read-through records the human result of the restrained entrance experiment. Pressing “Begin a guided return” now feels mostly softer and less abrupt; the overview-yield / guided-surface-arrival direction is closer to the intended modern app-like experience; and no major scroll jump, clipping, or behavior failure was identified. Treat the entrance experiment as a qualified pass. No further entrance-motion polish is needed now without a new specific human usability finding. The existing Forward / Back panel motion remains unchanged, the corrected mobile action layout remains unchanged, editable values remain preserved, reduced-motion entry remains immediate, Return to full overview remains available, the full overview remains the reference mode, and the guided slice remains limited to Orient → Remember → Choose. One Next Action keeps its distinctive gradient / lantern-like emphasis because it looks acceptable and should remain visually special. Orient and Remember may later need a quieter shared surface language so the three guided stages feel related while Choose remains strongest, but that is not a blocker and should not trigger immediate CSS polishing. Luna is back at Rest. Next, review what Guided Return has genuinely proved and choose a meaningful next product experiment instead of continuing automatic micro-polish or adding Set Aside, Record, and Rest merely to complete the sequence.
 

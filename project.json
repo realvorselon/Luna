@@ -3,6 +3,10 @@
   "statusHistory": [
     {
       "date": "2026-07-12",
+      "note": "Added the Guided Return app-shell experiment boundary, recorded that existing Guided Return experiments produced enough evidence to stop automatic micro-polish, preserved the current prototype and full overview as references, and set the next direction to human-reviewing one bounded shell experiment for Orient → Remember → Choose."
+    },
+    {
+      "date": "2026-07-12",
       "note": "Recorded the Guided Return entrance as a qualified human-test pass: it feels mostly softer and less abrupt, needs no further entrance-motion polish without a new usability finding, and preserves the One Next Action gradient as intentional lantern emphasis while keeping a quieter shared-stage visual-language observation for later."
     },
     {
@@ -510,9 +514,9 @@
       "note": "The project is resting after a good run and ready for one gentle improvement."
     }
   ],
-  "currentGoal": "Rest after recording the Guided Return entrance experiment as a qualified human-test pass.",
-  "lastCompletedRun": "2026-07-12: Recorded that the Guided Return entrance feels mostly softer and less abrupt, qualifies as a human-test pass, and needs no further entrance-motion polish without a new usability finding.",
-  "nextStep": "Review what the current Guided Return experiments have genuinely proved, then choose the next meaningful product experiment rather than continuing automatic micro-polish.",
+  "currentGoal": "Rest after setting the next Guided Return direction as one focused app-shell experiment boundary.",
+  "lastCompletedRun": "2026-07-12: Added the Guided Return app-shell experiment boundary and recorded the next direction as one focused shell experiment for the proven Orient → Remember → Choose loop.",
+  "nextStep": "Human-review docs/GUIDED_RETURN_APP_SHELL_EXPERIMENT_BOUNDARY.md before implementing one bounded app-shell experiment for only Orient → Remember → Choose.",
   "dashboardGuide": [
     "Welcome starts the path to read through Record the Change before choosing more work.",
     "Status gives a quick snapshot of how the project is doing right now.",
@@ -523,14 +527,15 @@
     "Optional Reflection can wait; Philosophy Garden is a gentle reflection layer, not Luna's main engine."
   ],
   "futureIdeas": [
-    "Review what the current Guided Return experiments have genuinely proved before choosing the next meaningful product experiment.",
-    "Preserve the One Next Action gradient as intentional lantern emphasis; if revisited later, explore only a quieter shared surface language for Orient and Remember while keeping Choose strongest.",
-    "Do not continue entrance-motion polish, mobile action-layout polish, or guided-stage expansion without a new specific human usability finding.",
-    "Preserve the first Guided Return slice read-through as the recorded proof of what Orient → Remember → Choose already showed.",
-    "Preserve the full overview as the proven reference mode while evaluating the panel-level guided transition experiment.",
+    "Human-review docs/GUIDED_RETURN_APP_SHELL_EXPERIMENT_BOUNDARY.md before implementing one bounded app-shell experiment for Orient → Remember → Choose.",
+    "Test the container and spatial experience next, not another individual color, shadow, duration, card, motion, or mobile-control tweak.",
+    "Preserve the current prototype as the proven reference implementation and preserve the full overview as the reference mode.",
+    "Keep One Next Action visually strongest as the lantern of the loop.",
+    "Do not automatically add Set Aside, Record, or Rest merely to complete the sequence.",
     "Later, consider whether completely fresh users need a clearer introduction than the current prototype-oriented recipe/soup placeholder language."
   ],
   "decisionLog": [
+    "2026-07-12: The Guided Return app-shell experiment boundary became the next product direction; existing experiments produced enough evidence to stop automatic micro-polish and test the container / spatial experience next.",
     "2026-07-12: The abrupt Begin a guided return entrance became the focused implementation experiment; the overview now softly yields before the Guided Return surface arrives as one visual unit, while mobile action layout and Forward / Back panel motion stay preserved.",
     "2026-07-12: The corrected Guided Return mobile action layout passed its initial human test; no further action-layout polish is needed now without a new human usability finding, and the abrupt Begin a guided return entrance is a separate possible follow-up.",
     "2026-07-11: The first Guided Return dark-surface follow-up corrected the inner panel, but the outer guided container still appeared too bright; this follow-up should only darken `.guided-return-view` while preserving the panel-level motion experiment.",
@@ -547,8 +552,9 @@
     "The Garden Cycle connects the Reflection Card, Garden Review, Next Garden Update, and rest step so beginners can see how Philosophy Garden pieces fit together."
   ],
   "ideaQueue": [
-    "Review what Guided Return has genuinely proved before choosing the next meaningful product experiment.",
-    "Preserve the One Next Action gradient as intentional lantern emphasis; consider quieter related surfaces for Orient and Remember only in a later visual experiment.",
+    "Human-review the app-shell boundary before implementing one bounded shell experiment for Orient → Remember → Choose.",
+    "Preserve the current prototype as the proven reference implementation and the full overview as the reference mode.",
+    "Do not continue automatic CSS or motion micro-polish on the existing shell.",
     "Do not automatically add Set Aside, Record, and Rest merely to complete the sequence.",
     "Protect the Luna loop and avoid turning Luna into a task manager, checklist system, workflow engine, or Jira with moon stickers."
   ],
@@ -585,10 +591,10 @@
     "Visit http://localhost:8000 in a browser to view the dashboard."
   ],
   "nextAction": {
-    "title": "Review Guided Return evidence",
-    "description": "Review what the current Guided Return experiments have genuinely proved, including the qualified entrance pass, panel motion, dark surfaces, corrected mobile action layout, and the preserved One Next Action lantern emphasis.",
-    "whyItMatters": "The entrance, panel motion, dark surfaces, and mobile layout have produced enough human evidence to pause automatic micro-polish and choose the next meaningful product experiment deliberately.",
-    "status": "Resting before decision"
+    "title": "Human-review app-shell boundary",
+    "description": "Review the Guided Return app-shell experiment boundary before implementing one bounded focused shell for the existing Orient → Remember → Choose loop.",
+    "whyItMatters": "The existing Guided Return experiments produced enough evidence to stop automatic micro-polish; the next meaningful question is whether a more intentional shell can feel like one calm focused app space while preserving the proven loop and full overview.",
+    "status": "Resting before implementation"
   },
   "creativeSeed": {
     "name": "Philosophy Garden",
@@ -656,8 +662,8 @@
   ],
   "currentMode": {
     "name": "Rest",
-    "description": "Luna is resting after recording the Guided Return entrance experiment as a qualified human-test pass.",
-    "whyItMatters": "Rest protects the limited Orient → Remember → Choose slice, the full overview reference mode, the unchanged Forward / Back panel motion, the corrected mobile action layout, and the One Next Action lantern emphasis while the next product decision is reviewed.",
+    "description": "Luna is resting after setting the next Guided Return direction as one focused app-shell experiment boundary.",
+    "whyItMatters": "Rest protects the proven Orient → Remember → Choose guided loop, the full overview reference mode, existing editable state, localStorage behavior, current motion and mobile controls, and the current prototype as the reference implementation while the app-shell boundary is reviewed.",
     "value": "Rest"
   }
 }

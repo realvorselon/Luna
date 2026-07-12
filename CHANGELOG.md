@@ -2,6 +2,15 @@
 
 ## 2026-07-12
 
+### Guided Return App Shell Experiment Boundary
+
+- Added `docs/GUIDED_RETURN_APP_SHELL_EXPERIMENT_BOUNDARY.md` as a documentation-only boundary for the next meaningful Guided Return product experiment.
+- Recorded that the existing Guided Return work proved optional guided mode is viable, the full overview remains useful as a reference mode, stage navigation and preserved editable state work, calm motion can help, One Next Action should remain the strongest lantern, and mobile controls must remain clear and reachable.
+- Recorded that the current guided view still feels like webpage sections being hidden and revealed, so repeated CSS and motion micro-polish has reached diminishing returns.
+- Set the next direction as one focused Guided Return app shell for the existing Orient → Remember → Choose loop while preserving the current prototype as the proven reference implementation and preserving the full overview as the reference mode.
+- Confirmed this run does not change `prototype.html`, `index.html`, CSS, JavaScript, current motion, mobile controls, stage styling, editable fields, persistence, graphics, assets, backend, task systems, or Philosophy Garden content.
+- Set Luna back to Rest and set the next suggested step to human-reviewing the app-shell boundary before implementing one bounded shell experiment for Orient → Remember → Choose.
+
 ### Guided Return Entrance Read-Through
 
 - Added `docs/GUIDED_RETURN_ENTRANCE_READ_THROUGH.md` to record the restrained Guided Return entrance as a qualified human-test pass.
