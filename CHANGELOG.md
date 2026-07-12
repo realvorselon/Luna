@@ -2,6 +2,17 @@
 
 ## 2026-07-12
 
+### Guided Return App Shell Experiment
+
+- Implemented one bounded Guided Return app-shell experiment in `prototype.html` for only Orient → Remember → Choose.
+- Added one stable, centered focused shell with a restrained Guided Return context header, one persistent stage-content region, and a predictable action area.
+- Preserved the dark moonlit environment around the shell and the full overview as the reference mode.
+- Gave Orient and Remember a quieter shared surface language while preserving the One Next Action gradient / lantern treatment as the strongest Choose-stage emphasis.
+- Preserved existing editable values, localStorage keys, persistence behavior, blank-value fallbacks, clear-local-edits scope, mobile Back / Forward primary navigation, separate Return to full overview action, restrained entrance behavior, panel-level Forward / Back motion, reduced-motion behavior, rapid-click protection, and transition cleanup.
+- Set Luna back to Rest and set the next suggested step to a human mobile test of whether the new shell feels like one calm focused app space rather than a webpage swapping sections.
+
+## 2026-07-12
+
 ### Guided Return App Shell Experiment Boundary
 
 - Added `docs/GUIDED_RETURN_APP_SHELL_EXPERIMENT_BOUNDARY.md` as a documentation-only boundary for the next meaningful Guided Return product experiment.

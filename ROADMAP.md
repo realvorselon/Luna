@@ -1,16 +1,26 @@
 # Roadmap
 
+## Current Rest Checkpoint — Guided Return App Shell
+
+- Implemented one bounded app-shell experiment for the existing Orient → Remember → Choose Guided Return slice.
+- Chosen structure: one stable focused shell with a restrained header/context area, one stage-content region, and one predictable action area.
+- Preserved the full overview as the reference mode and kept the prototype as the evolving reference implementation.
+- Preserved prior human findings: the too-fast 220ms micro-transition, the clarified app-like panel direction, dark-surface corrections, the failed oversized mobile stage-height approach, the improved mobile action layout, the qualified entrance-motion pass, and the One Next Action lantern emphasis.
+- Next suggested step: human mobile test whether the new shell feels like one calm focused app space rather than a webpage swapping sections.
+
 This roadmap is intentionally small. Luna is a public dashboard prototype right now, and its core is helping someone return to one small project, see where they left off, see what changed last, choose one clear Next Action, know what to ignore for now, record the change, and rest before adding more.
 
 ## Current Phase Direction
 
 - Guided Return remains the active product direction after the completed single-project browser prototype phase. Its original phase boundary is `docs/GUIDED_RETURN_PHASE_BOUNDARY.md`; the next experiment boundary is `docs/GUIDED_RETURN_APP_SHELL_EXPERIMENT_BOUNDARY.md`.
 - The existing Guided Return experiments have produced enough evidence to stop automatic micro-polish on the current shell. Optional guided mode is viable, the full overview remains a useful reference mode, Forward / Back and Return to full overview work, editable values remain preserved, One Next Action works as the lantern, panel-level motion can help, the corrected mobile action layout seems better, and the restrained entrance feels mostly softer and less abrupt.
-- The current prototype remains the proven reference implementation, and the full overview remains the reference mode.
-- Next: human-review the app-shell boundary before implementing one bounded shell experiment for only Orient → Remember → Choose. Do not add Set Aside, Record, or Rest by default, and do not continue individual CSS or motion polish as the next automatic step.
+- The current prototype remains the evolving reference implementation, and the full overview remains the reference mode.
+- The first app-shell experiment is now implemented for only Orient → Remember → Choose.
+- Next: human mobile test whether the new shell feels like one stable focused app space rather than webpage sections being swapped. Do not add Set Aside, Record, or Rest by default, and do not continue individual CSS or motion polish as the next automatic step.
 
 ## Completed
 
+- Implemented the first Guided Return app-shell experiment for Orient → Remember → Choose while preserving the full overview reference mode.
 - Added the Guided Return app-shell experiment boundary as the next direction after the existing Guided Return experiments produced enough evidence to stop automatic micro-polish.
 - Recorded the Guided Return entrance as a qualified human-test pass and preserved the One Next Action lantern emphasis plus the later quieter shared-stage visual-language observation.
 - Implemented one restrained Guided Return entrance experiment: the overview softly yields, the focused Guided Return surface arrives as a single visual unit, reduced-motion entry remains immediate, and the corrected mobile action layout remains closed without a new usability finding.

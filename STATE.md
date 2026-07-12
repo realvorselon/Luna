@@ -6,17 +6,19 @@ Luna is an autonomous repository experiment and small public dashboard prototype
 
 ## Current Goal
 
-Rest after setting the next Guided Return direction as one focused app-shell experiment boundary.
+Rest after implementing the first Guided Return app-shell experiment for Orient → Remember → Choose.
 
 ## Last Completed Run
 
-- 2026-07-12: Added the Guided Return app-shell experiment boundary, recorded that the existing Guided Return experiments produced enough evidence to stop automatic micro-polish, and preserved the current prototype and full overview as references.
+- 2026-07-12: Implemented one bounded Guided Return app-shell experiment for Orient → Remember → Choose in `prototype.html`, using a stable focused shell with a restrained context header, one stage-content region, and a predictable action area.
 
 ## Next Suggested Step
 
-Human-review `docs/GUIDED_RETURN_APP_SHELL_EXPERIMENT_BOUNDARY.md` before implementing one bounded app-shell experiment for only Orient → Remember → Choose.
+Human mobile test whether the new Guided Return shell feels like one calm focused app space rather than a webpage swapping sections.
 
 ## Notes
+
+The first Guided Return app-shell experiment is now implemented for Orient → Remember → Choose in `prototype.html`. The structural approach is one stable centered shell over the existing dark moonlit environment: a restrained Guided Return context header, one persistent stage-content region, and a predictable action area. Stage content changes inside that shell so the person should feel they remain inside one focused Guided Return place. Orient and Remember use a quieter shared surface language, while Choose preserves the One Next Action lantern gradient as the strongest emphasis. The full overview remains the reference mode. Existing editable values, localStorage keys, blank fallbacks, clear-local-edits scope, mobile Back / Forward primary navigation with separate Return to full overview, restrained entrance, panel-level Forward / Back motion, reduced-motion behavior, rapid-click protection, and transition cleanup remain preserved. Preserve the previous human findings: the 220ms micro-transition was too fast and uncomfortable; app-like panel motion was the clarified direction; dark-surface corrections improved continuity; oversized mobile stage height failed by adding empty space; the improved mobile action layout passed; entrance motion is a qualified pass; One Next Action remains the lantern. Luna is back at Rest. Next, run a human mobile test of whether the new shell feels like one calm focused app space rather than a webpage swapping sections.
 
 The Guided Return app-shell experiment boundary records the next meaningful product direction after the existing Guided Return experiments. The current work proved that optional guided mode is viable, the full overview remains useful as a reference mode, Forward / Back and Return to full overview work, editable values remain preserved, One Next Action works as the strongest lantern, calm panel-level motion can help, the corrected mobile controls seem better, and the restrained entrance feels mostly softer and less abrupt. It also records that motion and micro-polish alone will not create the intended app experience because the current shell still feels like webpage sections being hidden and revealed. Preserve the current prototype as the proven reference implementation and preserve the full overview as the reference mode. Do not automatically add Set Aside, Record, or Rest. Do not continue automatic CSS or motion micro-polish. Luna is back at Rest. Next, human-review the app-shell boundary before implementing one bounded shell experiment for Orient → Remember → Choose.
 
