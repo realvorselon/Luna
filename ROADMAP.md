@@ -5,10 +5,11 @@ This roadmap is intentionally small. Luna is a public dashboard prototype right 
 ## Current Phase Direction
 
 - Guided Return is the next phase direction after the completed single-project browser prototype phase. Its boundary is `docs/GUIDED_RETURN_PHASE_BOUNDARY.md`.
-- Next: review the abrupt Begin a guided return entrance and decide whether one restrained entrance experiment should proceed.
+- Next: human mobile test the restrained Guided Return entrance for softness, visual comfort, scroll stability, preserved editable values, unclipped content, and whether it feels more like entering a focused app screen.
 
 ## Completed
 
+- Implemented one restrained Guided Return entrance experiment: the overview softly yields, the focused Guided Return surface arrives as a single visual unit, reduced-motion entry remains immediate, and the corrected mobile action layout remains closed without a new usability finding.
 - Recorded that the corrected Guided Return mobile action layout passed its initial human test, needs no further action-layout polish now, and leaves the abrupt Begin a guided return entrance as a separate possible follow-up.
 - Darkened only the outer `.guided-return-view` after human testing found the first dark-surface follow-up corrected the inner panel but the larger guided container still appeared too bright against the moonlit page.
 - Darkened the Guided Return stage panel surface after human testing found the first panel-level transition made the guided area brighter than the surrounding moonlit prototype.
@@ -77,15 +78,15 @@ This roadmap is intentionally small. Luna is a public dashboard prototype right 
 - A tiny CSS-only follow-up gave the existing guided controls and clear-local-edits button slightly stronger darker underside depth so they read more clearly as physical controls without changing behavior.
 - The follow-up human visual test passed: the buttons now stand apart clearly enough, remain calm and moonlit, and the remaining button-blend issue is closed.
 - A human test found the first 220ms motion treatment too quick and visually uncomfortable / hard on the eyes, and clarified the intent as a calm app-like panel or screen transition rather than animated text or a tiny content shift.
-- The current Guided Return motion experiment replaces that first treatment with a two-phase panel-level Forward / Back transition; entering Guided Return, returning to the full overview, and the full overview itself remain unanimated.
+- The current Guided Return Forward / Back motion remains the two-phase panel-level transition. Separately, the Begin a guided return entrance now has one restrained focused-mode transition: the overview yields, the Guided Return surface arrives as one unit, and reduced-motion users enter immediately. Returning to the full overview remains unanimated.
 - A human test found the first panel-level transition felt closer to the intended app-like direction, but the guided stage surface looked too bright / translucent and created a double-layered lighter-card mismatch against the dark moonlit prototype.
 - A first tiny visual-only follow-up darkened the `.guided-stage-panel` surface and restrained its border / inset highlight while preserving the existing panel motion, timing, easing, JavaScript, navigation behavior, layout, content, editable fields, and localStorage behavior.
 - A later tiny CSS-only follow-up darkened only the outer `.guided-return-view` surface after human testing found the inner panel was corrected but the outer guided container still made a large lighter-blue region, especially on mobile.
 - A mobile geometry experiment then made the guided stages feel roughly similar in size with a tall shared minimum height, but human testing found it stabilized the wrong thing: too much empty space remained, scrolling was still required, and Forward / Back / Return controls stacked awkwardly.
 - The mobile correction removes the oversized stage-footprint approach, lets guided content use natural height, groups Back / Forward as the primary mobile navigation row, separates Return to full overview as secondary, and preserves the existing panel-level motion and dark surface findings.
 - The corrected mobile action layout passed its initial human test: it seems better, is good enough for this experiment, and needs no further action-layout polish without a new human usability finding.
-- Remaining known issue: entering Guided Return after pressing “Begin a guided return” still feels abrupt or clunky; this is separate from the improved Forward / Back action layout.
-- Next suggested step: review the abrupt Begin a guided return entrance and decide whether one restrained entrance experiment should proceed; do not extend the six-stage sequence by default.
+- Former remaining known issue: entering Guided Return after pressing “Begin a guided return” felt abrupt or clunky; this is now the focused entrance experiment and remains separate from the improved Forward / Back action layout.
+- Next suggested step: human mobile test the new Guided Return entrance for softness, visual comfort, scroll stability, preserved values, and whether it feels like entering a focused app screen; do not extend the six-stage sequence by default.
 
 ## Near Term
 
