@@ -376,6 +376,28 @@
       font-size: 0.92rem;
     }
 
+    .character-feedback {
+      justify-self: end;
+      min-height: 1.2em;
+      margin: -2px 0 0;
+      color: var(--periwinkle);
+      font-size: 0.78rem;
+      font-weight: 700;
+      opacity: 0;
+      transition: opacity 160ms ease;
+    }
+
+    .character-feedback.is-visible {
+      opacity: 0.78;
+    }
+
+    .card h3,
+    .lantern-card h3,
+    .quiet-card h3,
+    .opening-project-name {
+      overflow-wrap: anywhere;
+    }
+
     .edit-field input:focus {
       outline: 2px solid rgb(241 215 147 / 55%);
       outline-offset: 2px;
@@ -849,23 +871,27 @@
         <div class="edit-fields">
           <div class="edit-field">
             <label for="project-name-input">Project name</label>
-            <input id="project-name-input" type="text" value="A quiet unfinished project" autocomplete="off">
-            <p class="edit-helper">The one project Luna will name at the opening threshold.</p>
+            <input id="project-name-input" type="text" value="A quiet unfinished project" autocomplete="off" maxlength="80" aria-describedby="project-name-helper project-name-count">
+            <p class="character-feedback" id="project-name-count" aria-live="polite">0 / 80</p>
+            <p class="edit-helper" id="project-name-helper">The one project Luna will name at the opening threshold.</p>
           </div>
           <div class="edit-field">
             <label for="current-goal-input">Current goal</label>
-            <input id="current-goal-input" type="text" value="Make the next return easier" autocomplete="off">
-            <p class="edit-helper">A short reason this return matters.</p>
+            <input id="current-goal-input" type="text" value="Make the next return easier" autocomplete="off" maxlength="160" aria-describedby="current-goal-helper current-goal-count">
+            <p class="character-feedback" id="current-goal-count" aria-live="polite">0 / 160</p>
+            <p class="edit-helper" id="current-goal-helper">A short reason this return matters.</p>
           </div>
           <div class="edit-field">
             <label for="set-aside-input">Set Aside / Ignore For Now</label>
-            <input id="set-aside-input" type="text" value="Leave the larger ideas alone for now." autocomplete="off">
-            <p class="edit-helper">One thing that can wait. Not a list, backlog, or priority system.</p>
+            <input id="set-aside-input" type="text" value="Leave the larger ideas alone for now." autocomplete="off" maxlength="140" aria-describedby="set-aside-helper set-aside-count">
+            <p class="character-feedback" id="set-aside-count" aria-live="polite">0 / 140</p>
+            <p class="edit-helper" id="set-aside-helper">One thing that can wait. Not a list, backlog, or priority system.</p>
           </div>
           <div class="edit-field">
             <label for="record-change-input">Record the Change</label>
-            <input id="record-change-input" type="text" value="Record one plain note about what changed." autocomplete="off">
-            <p class="edit-helper">One brief note for returning later. Not a log or report.</p>
+            <input id="record-change-input" type="text" value="Record one plain note about what changed." autocomplete="off" maxlength="180" aria-describedby="record-change-helper record-change-count">
+            <p class="character-feedback" id="record-change-count" aria-live="polite">0 / 180</p>
+            <p class="edit-helper" id="record-change-helper">One brief note for returning later. Not a log or report.</p>
           </div>
           <button class="clear-local-edits-button" type="button" id="clear-local-edits-button">Clear all five local project edits in this browser</button>
         </div>
@@ -897,8 +923,9 @@
         <div class="edit-fields">
           <div class="edit-field">
             <label for="next-action-input">One next action</label>
-            <input id="next-action-input" type="text" value="Choose one small, safe next step." autocomplete="off">
-            <p class="edit-helper">The single action that becomes the lantern in Guided Return.</p>
+            <input id="next-action-input" type="text" value="Choose one small, safe next step." autocomplete="off" maxlength="140" aria-describedby="next-action-helper next-action-count">
+            <p class="character-feedback" id="next-action-count" aria-live="polite">0 / 140</p>
+            <p class="edit-helper" id="next-action-helper">The single action that becomes the lantern in Guided Return.</p>
           </div>
         </div>
       </article>
@@ -1000,6 +1027,13 @@
     const sampleNextAction = 'Choose one small, safe next step.';
     const sampleSetAside = 'Leave the larger ideas alone for now.';
     const sampleRecordChange = 'Record one plain note about what changed.';
+    const inputLengthLimits = {
+      projectName: 80,
+      currentGoal: 160,
+      nextAction: 140,
+      setAside: 140,
+      recordChange: 180
+    };
     let guidedStageIndex = 0;
     let guidedStageTransitionTimer = 0;
     let guidedEntranceTransitionTimer = 0;
@@ -1146,6 +1180,15 @@
       }
     };
 
+    const updateCharacterFeedback = (input) => {
+      const feedback = document.querySelector(`#${input.id.replace('-input', '-count')}`);
+      if (!feedback) return;
+      const limit = Number(input.getAttribute('maxlength'));
+      const length = input.value.length;
+      feedback.textContent = `${length} / ${limit}`;
+      feedback.classList.toggle('is-visible', length >= Math.floor(limit * 0.75));
+    };
+
     const syncEditableField = (input, display, fallbackDisplay, storageKey) => {
       const savedValue = readLocalValue(storageKey);
 
@@ -1158,10 +1201,12 @@
       };
 
       updateDisplay();
+      updateCharacterFeedback(input);
 
       input.addEventListener('input', () => {
         writeLocalValue(storageKey, input.value);
         updateDisplay();
+        updateCharacterFeedback(input);
       });
 
       return updateDisplay;
@@ -1227,9 +1272,11 @@
           useButton.type = 'button';
           useButton.textContent = 'Use this';
           useButton.addEventListener('click', () => {
-            field.input.value = result.suggestion;
-            writeLocalValue(field.storageKey, result.suggestion);
+            const boundedSuggestion = result.suggestion.slice(0, Number(field.input.getAttribute('maxlength')) || result.suggestion.length);
+            field.input.value = boundedSuggestion;
+            writeLocalValue(field.storageKey, boundedSuggestion);
             field.update();
+            updateCharacterFeedback(field.input);
             syncOpeningContext();
             rerenderVisibleGuidedStage();
             useButton.textContent = 'Applied';
@@ -1244,7 +1291,9 @@
       });
 
       if (suggestionCount === 0) {
-        guidanceStatus.textContent = 'Luna found the current wording clear enough. Nothing needs to change before returning.';
+        guidanceStatus.textContent = guidance.allClearMessage;
+      } else if (guidance.contextMessage) {
+        guidanceStatus.textContent = guidance.contextMessage;
       }
     };
 
@@ -1514,6 +1563,7 @@
       updateNextActionDisplay();
       updateSetAsideDisplay();
       updateRecordChangeDisplay();
+      [projectNameInput, currentGoalInput, nextActionInput, setAsideInput, recordChangeInput].forEach(updateCharacterFeedback);
       syncOpeningContext();
       if (!guidedReturnView.hidden) {
         renderGuidedStage();
