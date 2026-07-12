@@ -141,12 +141,12 @@ function assertRuleContains(selector, properties) {
 assertRuleContains('.guided-return-view', ['min-width: 0', 'max-width: 100%']);
 assertRuleContains('.guided-shell', ['grid-template-rows: auto minmax(0, 1fr) auto']);
 assert(css.includes('.guided-shell,\n    .guided-app-shell') && css.includes('min-width: 0') && css.includes('max-width: 100%'), 'guided shell/app shell containment rules should be present');
-assertRuleContains('.guided-stage-panel', ['min-width: 0', 'max-width: 100%']);
-assertRuleContains('.guided-stage-body', ['min-width: 0', 'max-width: 100%']);
+assertRuleContains('.guided-stage-panel', ['display: grid', 'grid-template-rows: auto auto minmax(0, 1fr)', 'min-width: 0', 'max-width: 100%', 'block-size: clamp(420px, 52svh, 520px)', 'overflow: hidden']);
+assertRuleContains('.guided-stage-body', ['align-content: start', 'min-width: 0', 'max-width: 100%', 'min-block-size: 0', 'overflow: auto', 'overscroll-behavior: contain']);
 assertRuleContains('.edit-fields', ['min-width: 0', 'max-width: 100%']);
 assertRuleContains('.edit-field', ['min-width: 0', 'max-width: 100%']);
 assertRuleContains('.edit-field input', ['box-sizing: border-box', 'min-width: 0', 'max-width: 100%']);
-assertRuleContains('.guided-actions', ['min-width: 0', 'max-width: 100%']);
+assertRuleContains('.guided-actions', ['align-content: start', 'min-width: 0', 'max-width: 100%', 'min-block-size: 108px']);
 assert(css.includes('.guided-primary-actions,\n    .guided-secondary-actions') && css.includes('flex-wrap: wrap') && css.includes('min-width: 0'), 'guided action rows should wrap and shrink instead of preserving min-content width');
 assert(css.includes('.prototype-note, .lantern-card, .card, .quiet-card') && css.includes('overflow-wrap: anywhere') && css.includes('word-break: break-word'), 'card surfaces should wrap long user-entered strings instead of widening mobile layout');
 assert(css.includes('.guided-control,\n    .clear-local-edits-button') && css.includes('overflow-wrap: anywhere') && css.includes('word-break: break-word'), 'guided controls should not force horizontal overflow');
@@ -166,7 +166,9 @@ assert(guidedMotionCss.includes('guidedPanelFadeOut'), 'guided stage transitions
 assert(guidedMotionCss.includes('guidedPanelFadeIn'), 'guided stage transitions should use calm fade-in classes');
 assert.doesNotMatch(guidedMotionCss, /translate[XY]?\s*\(\s*-?\d+(?:\.\d+)?px\s*\)/, 'guided stage transitions should not use directional pixel movement');
 assert.doesNotMatch(guidedMotionCss, /guidedPanel(?:Leave|Enter)(?:Forward|Back)/, 'old directional guided stage keyframes should not remain');
-assertRuleContains('.guided-stage-panel', ['min-block-size: clamp(300px, 42svh, 390px)', 'will-change: opacity']);
+assertRuleContains('.guided-stage-panel', ['block-size: clamp(420px, 52svh, 520px)', 'min-block-size: clamp(420px, 52svh, 520px)', 'will-change: opacity']);
+assert(css.includes('block-size: clamp(390px, 58svh, 520px)') && css.includes('max-block-size: calc(100svh - 236px)'), 'mobile guided stage panel should keep a stable bounded size');
+assert(css.includes('min-block-size: 124px'), 'mobile guided action area should keep a stable touch area');
 assert(css.includes('animation: none !important') && css.includes('transition: none !important') && css.includes('filter: none'), 'reduced motion should remove/minimize animation, transition, transform, and filter changes');
 assert(html.includes('const guidedStageMotionFallbackMs = 220;'));
 assert(html.includes('const guidedEntranceFallbackMs = 240;'));

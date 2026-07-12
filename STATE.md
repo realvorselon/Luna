@@ -1,3 +1,7 @@
+Luna is at Rest after a focused Guided Return size-stability correction. The current prototype keeps the same opening threshold, full overview editing clarity, Shape this return, Apply → Undo, Clear local edits, deterministic local guidance, safe rendering, input limits, near-limit counters, mobile containment protections, mobile visual comfort surfaces, fade-only Guided Return motion, reduced-motion behavior, and complete Guided Return loop, while the Guided Return stage panel and action area now keep steadier desktop/mobile sizing and let longer stage content scroll inside the stable frame.
+
+Next suggested step: human mobile-test Guided Return size stability with brief exposure: move one stage at a time and confirm the panel no longer visibly jumps or resizes in a discomforting way.
+
 # State
 
 Luna is at Rest after a focused motion comfort correction. The current prototype keeps the same opening threshold, full overview editing clarity, Shape this return, Apply → Undo, Clear local edits, deterministic local guidance, safe rendering, input limits, near-limit counters, mobile containment protections, mobile visual comfort surfaces, and complete Guided Return loop, but Guided Return stage changes now use fade-only swaps instead of directional movement, guided-entry view changes avoid screen-like sliding, stage sizing is steadier, and reduced-motion behavior is stronger.
