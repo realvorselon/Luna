@@ -1,5 +1,16 @@
 # Luna
 
+## Local return-guidance engine
+
+- Luna now has its fourth meaningful v0.1 vertical slice: a secondary “Shape this return” action on the opening threshold. “Return gently” remains the primary path.
+- Shape this return runs a deterministic local JavaScript guidance engine entirely in the browser. It has no API, backend, account, cost, network call, cloud storage, analytics, or external model dependency.
+- The engine reviews the existing five project values and can offer up to four bounded suggestions: Current goal, One Next Action, Set Aside, and Record the Change. It does not generate suggestions merely to fill every slot.
+- Suggestions are reviewable and selective. Luna shows the current wording, suggested wording, and a short reason; the person must choose an individual “Use this” action before anything changes.
+- The rules look only for simple local shapes such as blank text, generic fallbacks, unusually long text, multiple sentences, list-like separators, repeated “and,” and broad phrases. Luna does not pretend this is generative AI or project planning.
+- The existing five storage keys remain the only project-edit keys: `luna.prototype.projectName`, `luna.prototype.currentGoal`, `luna.prototype.nextAction`, `luna.prototype.setAside`, and `luna.prototype.recordChange`. Suggestion results and suggestion history are not persisted.
+- The opening threshold, full overview, complete six-stage Guided Return loop, navigation, saved context, motion behavior, mobile-safe layout, clear-local-edits scope, and One Next Action lantern emphasis remain preserved.
+- Development continues to prefer fewer meaningful v0.1 vertical slices over automatic micro-polish.
+
 ## Contextual complete guided loop
 
 - Luna now has its third meaningful v0.1 vertical slice: the complete Guided Return loop responds to the current one-project context instead of depending on hardcoded recipe-note / soup sample content.

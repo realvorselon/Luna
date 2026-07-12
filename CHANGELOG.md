@@ -2,6 +2,20 @@
 
 ## 2026-07-12
 
+### Local Return-Guidance Engine
+
+- Recorded the fourth meaningful v0.1 vertical slice: Luna’s first deterministic local behavioral engine for shaping a return before entering Guided Return.
+- Added a clearly secondary “Shape this return” action near the opening project context while preserving “Return gently” as the primary path.
+- Added a suggestion-review surface that shows local privacy copy, current wording, suggested wording, one short reason, individual “Use this” actions, a keep-current close path, and a continue-to-Guided-Return path.
+- Implemented browser-only deterministic rules for blank, generic, long, multi-sentence, list-like, repeated-and, and broad phrasing across Current goal, One Next Action, Set Aside, and Record the Change.
+- Kept suggestions reviewable and selective; Luna never silently overwrites fields and does not pretend to be generative AI.
+- Preserved the existing five local project-edit keys as the only persisted project values and did not persist suggestion results or suggestion history.
+- Added deterministic Node checks for guidance behavior, plain-text output, HTML-like input safety, no fetch/network call, unchanged storage keys, and no suggestion-history storage key.
+- Preserved the opening threshold, full overview, complete loop, navigation, saved context, clear-local-edits behavior, motion, reduced-motion support, mobile behavior, and One Next Action lantern emphasis.
+- Set Luna back to Rest and set the next step to mobile human testing of the local guidance engine before choosing one substantial v0.1 stabilization/coherence pass.
+
+## 2026-07-12
+
 ### Contextual Complete Guided Loop
 
 - Recorded the third meaningful v0.1 vertical slice: the complete Guided Return loop now responds to the current one-project context from the full overview through the opening threshold and all six stages.

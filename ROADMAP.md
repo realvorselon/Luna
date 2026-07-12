@@ -2,9 +2,9 @@
 
 ## Current v0.1 Direction
 
-The third meaningful v0.1 vertical slice is complete: Luna’s full Guided Return loop now follows the current one-project context instead of feeling like a hardcoded recipe-note demo. The next step is human mobile testing of saved values, blank fallbacks, explicit clear behavior, safe rendering, and stage coherence. If that passes without a blocking issue, choose one substantial v0.1 stabilization/coherence pass rather than returning to automatic micro-polish.
+The fourth meaningful v0.1 vertical slice is complete: Luna now has its first deterministic local return-guidance engine. The next step is human mobile testing with concise, vague, blank, long, and HTML-like text to check suggestion quality, selective application, privacy, safe rendering, persistence of applied values, and whether Luna now feels useful without a backend. If that passes without a blocking issue, choose one substantial v0.1 stabilization/coherence pass rather than returning to automatic micro-polish.
 
-Protected scope remains one local project only. Set Aside is one saved value, not a backlog. Record is one saved value, not a log. The opening threshold, Return gently action, navigation loop, panel motion, mobile treatment, full overview reference/editing mode, and six-stage shell should stay protected.
+Protected scope remains one local project only. The guidance engine must stay browser-only with no API key, backend, account, cost, network call, persisted suggestion result, or suggestion-history key. The existing five project-edit storage keys remain the only persisted project values. Set Aside is one saved value, not a backlog. Record is one saved value, not a log. The opening threshold, Return gently action, navigation loop, panel motion, mobile treatment, full overview reference/editing mode, and six-stage shell should stay protected.
 
 
 ## Current v0.1 direction
@@ -12,13 +12,15 @@ Protected scope remains one local project only. Set Aside is one saved value, no
 - Prefer fewer meaningful vertical slices over automatic button-by-button micro-polish.
 - Treat the Luna opening threshold as the first v0.1-oriented vertical slice.
 - Treat the completed full Guided Return loop as the second meaningful v0.1 vertical slice.
+- Treat the contextual complete loop as the third meaningful v0.1 vertical slice.
+- Treat the deterministic local return-guidance engine as the fourth meaningful v0.1 vertical slice.
 - Preserve one-project focus: no project switching, project lists, accounts, backend, sync, dashboards, or task systems.
 - Keep the existing Guided Return shell as the primary return flow.
 - Keep the full overview as quieter reference/editing mode, not the first impression.
 - Protect the complete guided sequence: Orient → Remember → Choose → Set Aside → Record → Rest.
 - Keep Ignore For Now intentionally not-a-backlog, Record intentionally brief and non-administrative, and Rest as a real stopping point.
 - Human testing found the opening threshold passed strongly and the basic navigation loop works.
-- Next: human mobile test the complete loop. If it passes without a blocking issue, move to one stabilization and coherence pass toward Luna v0.1 instead of automatic micro-polish.
+- Next: human-test the local return-guidance engine on mobile with concise, vague, blank, long, and HTML-like text. If it passes without a blocking issue, move to one stabilization and coherence pass toward Luna v0.1 instead of automatic micro-polish.
 
 ## Current Rest Checkpoint — First Complete Guided Loop
 

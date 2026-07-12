@@ -179,6 +179,68 @@
       outline-offset: 3px;
     }
 
+    .local-guidance-panel {
+      margin-top: 22px;
+      padding: 18px;
+      background: rgb(12 19 42 / 72%);
+      border: 1px solid rgb(189 200 238 / 20%);
+      border-radius: 20px;
+    }
+
+    .local-guidance-panel[hidden] { display: none; }
+
+    .local-guidance-panel h2 { margin-bottom: 8px; }
+
+    .privacy-cue,
+    .guidance-status {
+      margin: 0;
+      color: var(--silver);
+      font-size: 0.94rem;
+    }
+
+    .guidance-list {
+      display: grid;
+      gap: 12px;
+      margin-top: 16px;
+    }
+
+    .guidance-suggestion {
+      display: grid;
+      gap: 10px;
+      padding: 14px;
+      background: rgb(25 34 60 / 76%);
+      border: 1px solid rgb(174 190 226 / 18%);
+      border-radius: 16px;
+    }
+
+    .guidance-value {
+      display: grid;
+      gap: 3px;
+      min-width: 0;
+    }
+
+    .guidance-value span {
+      color: var(--periwinkle);
+      font-size: 0.78rem;
+      font-weight: 750;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+    }
+
+    .guidance-value p {
+      margin: 0;
+      overflow-wrap: anywhere;
+      color: var(--moon-soft);
+    }
+
+    .guidance-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+      margin-top: 16px;
+    }
+
     .prototype-note, .lantern-card, .card, .quiet-card {
       border-radius: 16px;
       box-shadow: 0 14px 34px rgb(0 0 0 / 16%);
@@ -711,8 +773,19 @@
         </div>
         <div class="opening-actions">
           <button class="guided-control opening-primary" type="button" id="begin-guided-return-button">Return gently</button>
+          <button class="quiet-reference-button" type="button" id="shape-return-button" aria-expanded="false" aria-controls="local-guidance-panel">Shape this return</button>
           <button class="quiet-reference-button" type="button" id="show-overview-button">Open full overview</button>
         </div>
+        <aside class="local-guidance-panel" id="local-guidance-panel" aria-labelledby="local-guidance-title" hidden>
+          <h2 id="local-guidance-title" tabindex="-1">Shape this return</h2>
+          <p class="privacy-cue">Suggestions are shaped in this browser. Nothing is sent anywhere.</p>
+          <div class="guidance-list" id="guidance-list"></div>
+          <p class="guidance-status" id="guidance-status" aria-live="polite"></p>
+          <div class="guidance-actions">
+            <button class="guided-control" type="button" id="guidance-continue-button">Continue to Guided Return</button>
+            <button class="quiet-reference-button" type="button" id="guidance-close-button">Keep current wording</button>
+          </div>
+        </aside>
       </div>
     </header>
 
@@ -879,6 +952,7 @@
     <p class="footer-note"><a href="index.html">Return to the Luna dashboard</a>. The full overview remains available here as a quiet reference and editing mode for this one local project.</p>
   </main>
 
+  <script src="prototype-guidance.js"></script>
   <script>
     const projectNameInput = document.querySelector('#project-name-input');
     const currentGoalInput = document.querySelector('#current-goal-input');
@@ -896,6 +970,13 @@
     const fullOverview = document.querySelector('#full-overview');
     const lunaOpening = document.querySelector('#luna-opening');
     const showOverviewButton = document.querySelector('#show-overview-button');
+    const shapeReturnButton = document.querySelector('#shape-return-button');
+    const localGuidancePanel = document.querySelector('#local-guidance-panel');
+    const localGuidanceTitle = document.querySelector('#local-guidance-title');
+    const guidanceList = document.querySelector('#guidance-list');
+    const guidanceStatus = document.querySelector('#guidance-status');
+    const guidanceContinueButton = document.querySelector('#guidance-continue-button');
+    const guidanceCloseButton = document.querySelector('#guidance-close-button');
     const openingProjectNameDisplay = document.querySelector('#opening-project-name-display');
     const openingNextActionDisplay = document.querySelector('#opening-next-action-display');
     const guidedStagePanel = document.querySelector('#guided-stage-panel');
@@ -1025,11 +1106,21 @@
           <article class="quiet-card rest-card">
             <span class="label">Rest</span>
             <h3>Leave ${escapeHtml(getProjectName())} gently.</h3>
-            <p>${escapeHtml(getNextAction())} will still be waiting later. Nothing else has to happen now.</p>
+            <p>${escapeHtml(window.LunaReturnGuidance.buildReturnGuidance(getGuidanceContext()).restMessage)}</p>
           </article>
         `
       }
     ];
+
+    function getGuidanceContext() {
+      return {
+        projectName: projectNameInput.value,
+        currentGoal: currentGoalInput.value,
+        nextAction: nextActionInput.value,
+        setAside: setAsideInput.value,
+        recordChange: recordChangeInput.value
+      };
+    }
 
     const readLocalValue = (storageKey) => {
       try {
@@ -1086,7 +1177,89 @@
     const updateNextActionDisplay = syncEditableField(nextActionInput, nextActionDisplay, sampleNextAction, nextActionStorageKey);
     const updateSetAsideDisplay = syncEditableField(setAsideInput, setAsideDisplay, sampleSetAside, setAsideStorageKey);
     const updateRecordChangeDisplay = syncEditableField(recordChangeInput, recordChangeDisplay, sampleRecordChange, recordChangeStorageKey);
+    const guidanceFieldMap = {
+      goal: { label: 'Current goal', input: currentGoalInput, display: currentGoalDisplay, storageKey: currentGoalStorageKey, update: updateCurrentGoalDisplay },
+      nextAction: { label: 'One Next Action', input: nextActionInput, display: nextActionDisplay, storageKey: nextActionStorageKey, update: updateNextActionDisplay },
+      setAside: { label: 'Set Aside', input: setAsideInput, display: setAsideDisplay, storageKey: setAsideStorageKey, update: updateSetAsideDisplay },
+      recordChange: { label: 'Record the Change', input: recordChangeInput, display: recordChangeDisplay, storageKey: recordChangeStorageKey, update: updateRecordChangeDisplay }
+    };
     syncOpeningContext();
+
+    const createTextElement = (tagName, className, text) => {
+      const element = document.createElement(tagName);
+      if (className) element.className = className;
+      element.textContent = text;
+      return element;
+    };
+
+    const renderGuidanceReview = () => {
+      const guidance = window.LunaReturnGuidance.buildReturnGuidance(getGuidanceContext());
+      guidanceList.textContent = '';
+      guidanceStatus.textContent = '';
+
+      const entries = ['goal', 'nextAction', 'setAside', 'recordChange'];
+      let suggestionCount = 0;
+
+      entries.forEach((fieldKey) => {
+        const result = guidance[fieldKey];
+        const field = guidanceFieldMap[fieldKey];
+        const item = document.createElement('article');
+        item.className = 'guidance-suggestion';
+        item.append(createTextElement('h3', '', field.label));
+
+        const currentValue = document.createElement('div');
+        currentValue.className = 'guidance-value';
+        currentValue.append(createTextElement('span', '', 'Current'));
+        currentValue.append(createTextElement('p', '', result.current));
+        item.append(currentValue);
+
+        if (result.status === 'suggestion') {
+          suggestionCount += 1;
+          const suggestedValue = document.createElement('div');
+          suggestedValue.className = 'guidance-value';
+          suggestedValue.append(createTextElement('span', '', 'Suggested wording'));
+          suggestedValue.append(createTextElement('p', '', result.suggestion));
+          item.append(suggestedValue);
+          item.append(createTextElement('p', 'guidance-status', result.reason));
+
+          const useButton = document.createElement('button');
+          useButton.className = 'guided-control';
+          useButton.type = 'button';
+          useButton.textContent = 'Use this';
+          useButton.addEventListener('click', () => {
+            field.input.value = result.suggestion;
+            writeLocalValue(field.storageKey, result.suggestion);
+            field.update();
+            syncOpeningContext();
+            rerenderVisibleGuidedStage();
+            useButton.textContent = 'Applied';
+            guidanceStatus.textContent = `${field.label} updated. Other fields were left unchanged.`;
+          });
+          item.append(useButton);
+        } else {
+          item.append(createTextElement('p', 'guidance-status', `${result.reason} Keep the current wording.`));
+        }
+
+        guidanceList.append(item);
+      });
+
+      if (suggestionCount === 0) {
+        guidanceStatus.textContent = 'Luna found the current wording clear enough. Nothing needs to change before returning.';
+      }
+    };
+
+    const showLocalGuidance = () => {
+      renderGuidanceReview();
+      localGuidancePanel.hidden = false;
+      shapeReturnButton.setAttribute('aria-expanded', 'true');
+      localGuidanceTitle.focus({ preventScroll: true });
+    };
+
+    const closeLocalGuidance = () => {
+      localGuidancePanel.hidden = true;
+      shapeReturnButton.setAttribute('aria-expanded', 'false');
+      shapeReturnButton.focus({ preventScroll: true });
+    };
 
     projectNameInput.addEventListener('input', syncOpeningContext);
     projectNameInput.addEventListener('input', () => {
@@ -1289,6 +1462,9 @@
 
     beginGuidedReturnButton.addEventListener('click', showGuidedReturn);
     showOverviewButton.addEventListener('click', showFullOverviewFromOpening);
+    shapeReturnButton.addEventListener('click', showLocalGuidance);
+    guidanceCloseButton.addEventListener('click', closeLocalGuidance);
+    guidanceContinueButton.addEventListener('click', showGuidedReturn);
 
     guidedStagePanel.addEventListener('animationend', (event) => {
       if (event.target === guidedStagePanel && guidedStageTransitionResolve) {
