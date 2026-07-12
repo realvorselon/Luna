@@ -3,25 +3,26 @@
 ## Current v0.1 direction
 
 - Prefer fewer meaningful vertical slices over automatic button-by-button micro-polish.
-- Treat the new Luna opening threshold as the first v0.1-oriented vertical slice.
+- Treat the Luna opening threshold as the first v0.1-oriented vertical slice.
+- Treat the completed full Guided Return loop as the second meaningful v0.1 vertical slice.
 - Preserve one-project focus: no project switching, project lists, accounts, backend, sync, dashboards, or task systems.
-- Keep the existing Guided Return shell as the primary return flow for Orient → Remember → Choose.
+- Keep the existing Guided Return shell as the primary return flow.
 - Keep the full overview as quieter reference/editing mode, not the first impression.
-- Protect the full intended Luna loop: Orient → Remember → Choose → Set Aside → Record → Rest.
-- Do not add Set Aside, Record, or Rest as guided stages until a later substantial coherent slice.
-- Human testing found the opening threshold itself passed strongly and feels like a real app opening.
-- The basic navigation loop is now protected: Luna opening threshold → Guided Return → Full overview → Luna opening threshold.
-- Next: Human-test the full-overview “Return to Luna” correction. If it passes, continue toward a fuller Luna loop in a meaningful vertical slice.
+- Protect the complete guided sequence: Orient → Remember → Choose → Set Aside → Record → Rest.
+- Keep Ignore For Now intentionally not-a-backlog, Record intentionally brief and non-administrative, and Rest as a real stopping point.
+- Human testing found the opening threshold passed strongly and the basic navigation loop works.
+- Next: human mobile test the complete loop. If it passes without a blocking issue, move to one stabilization and coherence pass toward Luna v0.1 instead of automatic micro-polish.
 
+## Current Rest Checkpoint — First Complete Guided Loop
 
-## Current Rest Checkpoint — Basic Navigation Loop Correction
-
-- Implemented the first real Luna opening threshold as the first v0.1-oriented vertical slice after the earlier micro-experiment phase.
-- Human testing found the opening threshold passed strongly and feels like a real app opening.
-- Human testing also found a navigation gap: after Guided Return → “Return to full overview,” the full overview lacked a clear direct way back to the Luna opening threshold.
-- Added one secondary “Return to Luna” action in the full overview so the basic path is now Luna opening threshold → Guided Return → Full overview → Luna opening threshold.
-- Preserved the full overview as the reference/editing mode, all existing editable values, localStorage keys, blank fallbacks, clear-local-edits behavior, mobile action layout, entrance behavior, panel-level Forward / Back motion, reduced-motion behavior, rapid-click protection, and transition cleanup.
-- Next: human-test the full-overview “Return to Luna” correction. If it passes, continue toward a fuller Luna loop in a meaningful vertical slice.
+- Added Set Aside, Record, and Rest to the existing Guided Return shell without creating a second guided system.
+- The final guided sequence is now Orient → Remember → Choose → Set Aside → Record → Rest.
+- Set Aside presents existing Ignore For Now content in a focused, permission-giving way and does not create deferred-item management, lists, checkboxes, due dates, categories, or backlog behavior.
+- Record reuses Record the Change as a small closing note and does not add a logging system, history editing, form requirement, user-facing GitHub language, or new persistence.
+- Rest gives the loop a quiet ending, keeps Back available, keeps Return to full overview available, and changes the final primary action to Return to Luna.
+- Returning to Luna preserves saved values and clears transition state while restoring focus to the opening action without a jarring scroll jump where practical.
+- Preserved the opening threshold, full overview reference/editing mode, existing editable values, localStorage keys, blank fallbacks, clear-local-edits behavior, mobile action layout, entrance behavior, panel-level Forward / Back motion, reduced-motion behavior, rapid-click protection, and transition cleanup.
+- Next: human mobile test the complete loop. If it passes, do one v0.1 stabilization and coherence pass.
 
 This roadmap is intentionally small. Luna is a public dashboard prototype right now, and its core is helping someone return to one small project, see where they left off, see what changed last, choose one clear Next Action, know what to ignore for now, record the change, and rest before adding more.
 
