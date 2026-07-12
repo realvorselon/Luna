@@ -252,6 +252,11 @@
       display: none;
     }
 
+    .full-overview.is-yielding-to-guided {
+      animation: guidedOverviewYield 190ms cubic-bezier(0.4, 0, 0.6, 1) both;
+      pointer-events: none;
+    }
+
     .guided-return-view {
       margin-top: 36px;
       padding: 24px;
@@ -260,6 +265,20 @@
       border: 1px solid rgb(152 166 214 / 12%);
       border-radius: 18px;
       box-shadow: 0 18px 42px rgb(0 0 0 / 20%);
+    }
+
+    .guided-return-view.is-arriving-from-overview {
+      animation: guidedReturnArrive 360ms cubic-bezier(0.2, 0.75, 0.28, 1) both;
+    }
+
+    @keyframes guidedOverviewYield {
+      from { opacity: 1; transform: translateY(0); filter: none; }
+      to { opacity: 0; transform: translateY(10px); filter: saturate(0.92); }
+    }
+
+    @keyframes guidedReturnArrive {
+      from { opacity: 0; transform: translateY(18px); }
+      to { opacity: 1; transform: translateY(0); }
     }
 
     .guided-stage-panel {
@@ -309,6 +328,8 @@
     }
 
     @media (prefers-reduced-motion: reduce) {
+      .full-overview.is-yielding-to-guided,
+      .guided-return-view.is-arriving-from-overview,
       .guided-stage-panel.is-leaving-forward,
       .guided-stage-panel.is-leaving-back,
       .guided-stage-panel.is-entering-forward,
@@ -617,10 +638,13 @@
     const sampleNextAction = 'Add one public-safe sentence to the broth note.';
     let guidedStageIndex = 0;
     let guidedStageTransitionTimer = 0;
+    let guidedEntranceTransitionTimer = 0;
     let guidedStageTransitioning = false;
+    let guidedEntranceTransitioning = false;
     let guidedStageTransitionResolve = null;
     const guidedStageMotionQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
     const guidedStageMotionFallbackMs = 560;
+    const guidedEntranceFallbackMs = 650;
     const guidedStageMotionClasses = [
       'is-leaving-forward',
       'is-leaving-back',
@@ -795,15 +819,58 @@
       clearGuidedStageTransition();
     };
 
+    const clearGuidedEntranceTransition = () => {
+      window.clearTimeout(guidedEntranceTransitionTimer);
+      fullOverview.classList.remove('is-yielding-to-guided');
+      guidedReturnView.classList.remove('is-arriving-from-overview');
+      guidedEntranceTransitioning = false;
+      beginGuidedReturnButton.disabled = false;
+    };
+
+    const finishGuidedEntrance = () => {
+      clearGuidedEntranceTransition();
+      guidedStageTitle.focus({ preventScroll: true });
+    };
+
     const showGuidedReturn = () => {
+      if (guidedEntranceTransitioning || !guidedReturnView.hidden) {
+        return;
+      }
+
       guidedStageIndex = 0;
-      fullOverview.hidden = true;
-      guidedReturnView.hidden = false;
-      renderGuidedStage();
-      guidedStageTitle.focus();
+      renderGuidedStageContent();
+
+      if (guidedStageMotionQuery.matches) {
+        fullOverview.hidden = true;
+        guidedReturnView.hidden = false;
+        guidedStageTitle.focus({ preventScroll: true });
+        return;
+      }
+
+      guidedEntranceTransitioning = true;
+      beginGuidedReturnButton.disabled = true;
+      fullOverview.classList.add('is-yielding-to-guided');
+
+      const revealGuidedSurface = () => {
+        if (!guidedEntranceTransitioning) {
+          return;
+        }
+
+        window.clearTimeout(guidedEntranceTransitionTimer);
+        fullOverview.hidden = true;
+        fullOverview.classList.remove('is-yielding-to-guided');
+        guidedReturnView.hidden = false;
+        guidedReturnView.classList.add('is-arriving-from-overview');
+        guidedEntranceTransitionTimer = window.setTimeout(finishGuidedEntrance, guidedEntranceFallbackMs);
+      };
+
+      fullOverview.addEventListener('animationend', revealGuidedSurface, { once: true });
+      guidedReturnView.addEventListener('animationend', finishGuidedEntrance, { once: true });
+      guidedEntranceTransitionTimer = window.setTimeout(revealGuidedSurface, 230);
     };
 
     const showFullOverview = () => {
+      clearGuidedEntranceTransition();
       clearGuidedStageTransition();
       guidedReturnView.hidden = true;
       fullOverview.hidden = false;

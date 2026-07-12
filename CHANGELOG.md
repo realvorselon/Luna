@@ -2,6 +2,16 @@
 
 ## 2026-07-12
 
+### Guided Return Entrance Experiment
+
+- Replaced the abrupt Begin a guided return mode switch in `prototype.html` with one restrained entrance experiment.
+- The full overview softly yields with a small fade / settle before the focused Guided Return surface arrives as a single calm visual unit.
+- Preserved the corrected mobile action layout: natural mobile stage height, Back / Forward as primary navigation, Return to full overview as the separate secondary action, current sticky treatment, and safe-area handling.
+- Preserved the existing Forward / Back panel-level transition timing, easing, direction, reduced-motion behavior, rapid-click protection, and cleanup behavior.
+- Added entrance safety so repeated Begin activation cannot overlap transitions, entrance classes are cleaned, fallback timing prevents a stuck intermediate state, and reduced-motion users enter immediately without artificial delay or directional movement.
+- Recorded that the abrupt entrance became the focused interaction experiment after the corrected mobile action layout passed its initial human test.
+- Set Luna back to Rest and set the next suggested step to a human mobile test of Guided Return entrance softness, visual comfort, scroll stability, preserved values, content clipping, and whether it feels more like entering a focused app screen.
+
 ### Guided Return Mobile Action Read-Through
 
 - Added `docs/GUIDED_RETURN_MOBILE_ACTION_READ_THROUGH.md` to record that the corrected mobile action layout passed its initial human test and seems better.
