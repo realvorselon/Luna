@@ -10,6 +10,10 @@ Luna now has a concise visual direction note anchoring the finished look and fee
 
 # Roadmap
 
+## Current Luna First-Impression Clarity Slice
+
+This was a focused Luna first-impression clarity slice that made the opening explain the practical payoff of Guided Return: bringing one unfinished thing back into view, finding the thread, choosing a lantern, and leaving with a Return Card. The opening now explains the practical Guided Return payoff before a user starts, while preserving the opening actions, six-stage flow, Rest Return Card behavior, five existing localStorage keys, local-only boundary, and calm moonlit visual direction. Luna remains at Rest. Next: Human mobile test of whether Luna’s opening explains why Guided Return helps.
+
 ## Current Guided Return Return Card Slice
 
 This was a focused Guided Return Return Card slice that made Rest give the user a small useful outcome from the existing five local values, so the loop feels less like collecting inputs and more like Luna holding a clear place to resume. The Rest stage keeps the existing soft landing, preserves the six-stage flow and five local-only values, and emphasizes One Next Action as the lantern/resume point without adding task-list, dashboard, storage, network, model, or navigation behavior. Luna remains at Rest. Next: Human mobile test of whether the Rest Return Card feels useful.

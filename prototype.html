@@ -106,17 +106,31 @@
       box-shadow: 0 16px 36px rgb(0 0 0 / 18%);
     }
 
+    .opening-threshold::before,
     .opening-threshold::after {
       content: "";
       position: absolute;
-      inset: auto 14% 0;
-      height: 82px;
       pointer-events: none;
+    }
+
+    .opening-threshold::before {
+      inset: 18px 18px auto auto;
+      width: clamp(84px, 24vw, 156px);
+      height: clamp(84px, 24vw, 156px);
+      border-radius: 50%;
       background:
-        linear-gradient(90deg, transparent, rgb(223 200 137 / 14%), transparent) top / 100% 1px no-repeat,
-        linear-gradient(180deg, rgb(223 200 137 / 8%), transparent 70%);
-      clip-path: polygon(46% 0, 54% 0, 64% 100%, 36% 100%);
-      opacity: 0.42;
+        radial-gradient(circle at 38% 38%, rgb(251 244 226 / 22%), rgb(223 200 137 / 8%) 48%, transparent 70%);
+      opacity: 0.68;
+    }
+
+    .opening-threshold::after {
+      inset: auto 14% 0;
+      height: 118px;
+      background:
+        linear-gradient(90deg, transparent, rgb(223 200 137 / 18%), transparent) top / 100% 1px no-repeat,
+        linear-gradient(180deg, rgb(223 200 137 / 10%), transparent 72%);
+      clip-path: polygon(47% 0, 53% 0, 66% 100%, 34% 100%);
+      opacity: 0.5;
     }
 
     .opening-moonrise {
@@ -158,6 +172,47 @@
       font-size: 0.95rem;
       line-height: 1.45;
       text-align: center;
+    }
+
+    .opening-payoff-preview {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 10px;
+      max-width: 620px;
+      margin: 22px auto 0;
+      padding: 12px;
+      background: rgb(10 17 34 / 32%);
+      border: 1px solid rgb(223 200 137 / 16%);
+      border-radius: 20px;
+    }
+
+    .opening-payoff-item {
+      min-width: 0;
+      padding: 12px;
+      background: rgb(25 35 60 / 58%);
+      border: 1px solid rgb(189 200 238 / 12%);
+      border-radius: 15px;
+    }
+
+    .opening-payoff-item strong {
+      display: block;
+      color: #fbf4e2;
+      font-size: 0.88rem;
+    }
+
+    .opening-payoff-item span {
+      display: block;
+      margin-top: 4px;
+      color: rgb(220 227 239 / 78%);
+      font-size: 0.82rem;
+      line-height: 1.35;
+    }
+
+    .opening-payoff-item.is-lantern {
+      border-color: rgb(223 200 137 / 26%);
+      background: rgb(38 42 58 / 76%);
     }
 
     .opening-context-data {
@@ -1059,6 +1114,18 @@
 
       .opening-thread-hint { font-size: 0.9rem; }
 
+      .opening-payoff-preview {
+        grid-template-columns: 1fr;
+        gap: 8px;
+        max-width: 320px;
+        margin-top: 16px;
+        padding: 10px;
+      }
+
+      .opening-payoff-item {
+        padding: 10px 11px;
+      }
+
       .opening-actions {
         grid-template-columns: 1fr;
         gap: 10px;
@@ -1139,15 +1206,29 @@
       <div class="opening-threshold">
         <div class="opening-moonrise">
           <div class="luna-mark">Luna</div>
-          <h1 class="opening-title">Find your way back to one unfinished thing.</h1>
-          <p class="opening-message">A gentle path through one return: find your place, remember enough, choose one small next step, then rest.</p>
+          <h1 class="opening-title">Bring one unfinished thing back into view.</h1>
+          <p class="opening-message">Luna turns scattered context into one small lantern for next time: find the thread, choose what matters now, set aside the extra noise, and leave with a Return Card.</p>
         </div>
         <div class="opening-context" aria-label="Current project">
-          <p class="opening-thread-hint">One unfinished thing. One gentle return.</p>
+          <p class="opening-thread-hint">Bring the loose pieces. Luna helps you leave with one clear place to resume.</p>
           <div class="opening-context-data" aria-hidden="true">
             <span class="label">Waiting here</span>
             <h2 class="opening-project-name" id="opening-project-name-display">Name the thing you want to return to.</h2>
             <p class="opening-return-point">Next: <span id="opening-next-action-display">What is one small next step?</span></p>
+          </div>
+        </div>
+        <div class="opening-payoff-preview" aria-label="What Luna gives back">
+          <div class="opening-payoff-item">
+            <strong>Find the thread</strong>
+            <span>See the one thing you are returning to.</span>
+          </div>
+          <div class="opening-payoff-item is-lantern">
+            <strong>Choose the lantern</strong>
+            <span>Name one small resume point.</span>
+          </div>
+          <div class="opening-payoff-item">
+            <strong>Leave with a Return Card</strong>
+            <span>Keep the next return easier.</span>
           </div>
         </div>
         <div class="opening-actions" aria-label="Opening threshold actions">

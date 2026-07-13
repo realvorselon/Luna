@@ -3,6 +3,10 @@
   "statusHistory": [
     {
       "date": "2026-07-13",
+      "note": "This was a focused Luna first-impression clarity slice that made the opening explain the practical payoff of Guided Return: bringing one unfinished thing back into view, finding the thread, choosing a lantern, and leaving with a Return Card."
+    },
+    {
+      "date": "2026-07-13",
       "note": "This was a focused Guided Return Return Card slice that made Rest give the user a small useful outcome from the existing five local values, so the loop feels less like collecting inputs and more like Luna holding a clear place to resume."
     },
     {
@@ -630,9 +634,9 @@
       "note": "The project is resting after a good run and ready for one gentle improvement."
     }
   ],
-  "currentGoal": "Rest after the Guided Return Return Card slice.",
-  "lastCompletedRun": "Guided Return Return Card slice: made Rest give a small useful Return Card outcome from the existing five local values, emphasizing the One Next Action as the lantern/resume point while preserving the protected six-stage local-only flow.",
-  "nextStep": "Human mobile test of whether the Rest Return Card feels useful.",
+  "currentGoal": "Rest after the Luna first-impression clarity slice.",
+  "lastCompletedRun": "Luna first-impression clarity slice: made the opening explain the practical payoff of Guided Return—bringing one unfinished thing back into view, finding the thread, choosing a lantern, and leaving with a Return Card—while preserving the protected local-only flow.",
+  "nextStep": "Human mobile test of whether Luna’s opening explains why Guided Return helps.",
   "dashboardGuide": [
     "Welcome starts the path to read through Record the Change before choosing more work.",
     "Status gives a quick snapshot of how the project is doing right now.",
@@ -704,9 +708,9 @@
     "Visit http://localhost:8000 in a browser to view the dashboard."
   ],
   "nextAction": {
-    "title": "Human mobile Return Card test",
-    "description": "Human mobile test of whether the Rest Return Card feels useful.",
-    "whyItMatters": "The Return Card slice is complete; a mobile human pass should confirm Rest feels useful without feeling like a report, dashboard, or task manager.",
+    "title": "Human mobile opening clarity test",
+    "description": "Human mobile test of whether Luna’s opening explains why Guided Return helps.",
+    "whyItMatters": "The first-impression clarity slice is complete; a mobile human pass should confirm the opening communicates the unfinished thing → thread → lantern → Return Card payoff without prior context.",
     "status": "Ready for human test"
   },
   "creativeSeed": {
@@ -775,9 +779,9 @@
   ],
   "currentMode": {
     "name": "Rest",
-    "description": "Luna is resting after the Guided Return Return Card slice.",
-    "whyItMatters": "The Rest stage now gives a small useful held return point from the existing five local values while preserving the local-only/no-network boundary and unchanged flow.",
+    "description": "Luna is resting after the first-impression clarity slice.",
+    "whyItMatters": "The opening now explains why Guided Return helps before a person starts, while preserving the local-only/no-network boundary and unchanged flow.",
     "value": "Rest"
   },
-  "nextSuggestedStep": "Human mobile test of whether the Rest Return Card feels useful."
+  "nextSuggestedStep": "Human mobile test of whether Luna’s opening explains why Guided Return helps."
 }

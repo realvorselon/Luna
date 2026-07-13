@@ -1,5 +1,15 @@
 # State
 
+## Luna First-Impression Clarity Slice
+
+- This was a focused Luna first-impression clarity slice that made the opening explain the practical payoff of Guided Return: bringing one unfinished thing back into view, finding the thread, choosing a lantern, and leaving with a Return Card.
+- The opening threshold now names the transformation from scattered context to one small lantern/resume point, with a static payoff preview for finding the thread, choosing the lantern, and leaving with a Return Card.
+- Status remains Rest; next suggested step is: “Human mobile test of whether Luna’s opening explains why Guided Return helps.”
+
+Luna is at Rest after a focused opening-threshold clarity pass. The prototype behavior remains unchanged: same opening buttons, same six Guided Return stages, same one-question Find your place behavior, same Rest Return Card, same five localStorage keys, and no AI/API/model/network behavior.
+
+Next suggested step: Human mobile test of whether Luna’s opening explains why Guided Return helps.
+
 ## Guided Return Return Card Slice
 
 - This was a focused Guided Return Return Card slice that made Rest give the user a small useful outcome from the existing five local values, so the loop feels less like collecting inputs and more like Luna holding a clear place to resume.
@@ -38,7 +48,7 @@ Luna is becoming a small, moonlit one-project return app. It begins with a real 
 
 ## Current Goal
 
-Rest after the Guided Return Return Card slice.
+Rest after the Luna first-impression clarity slice.
 
 ## Last Completed Run
 
@@ -69,7 +79,7 @@ Rest after the Guided Return Return Card slice.
 
 ## Next Suggested Step
 
-Human mobile test of whether the Rest Return Card feels useful.
+Human mobile test of whether Luna’s opening explains why Guided Return helps.
 
 ## Notes
 
