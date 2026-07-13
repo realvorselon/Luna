@@ -691,6 +691,49 @@
       }
     }
 
+
+    .guided-inline-edit {
+      display: grid;
+      gap: 12px;
+      min-width: 0;
+      max-width: 100%;
+    }
+
+    .guided-inline-field {
+      display: grid;
+      gap: 8px;
+      min-width: 0;
+      max-width: 100%;
+      padding: 14px;
+      background: rgb(14 22 40 / 54%);
+      border: 1px solid rgb(189 200 238 / 15%);
+      border-radius: 16px;
+    }
+
+    .guided-inline-field label {
+      color: #fbf4e2;
+      font-size: 0.9rem;
+      font-weight: 800;
+    }
+
+    .guided-inline-field input {
+      width: 100%;
+      padding: 12px 13px;
+      color: var(--moon);
+      background: rgb(35 45 72 / 96%);
+      border: 1px solid rgb(196 205 238 / 42%);
+      border-radius: 12px;
+      box-shadow: none;
+      font: inherit;
+      cursor: text;
+    }
+
+    .guided-inline-helper {
+      margin: 0;
+      color: var(--silver);
+      font-size: 0.9rem;
+    }
+
     .guided-position {
       margin-bottom: 10px;
       color: var(--periwinkle);
@@ -1213,25 +1256,96 @@
     const getSetAside = () => setAsideDisplay.textContent;
     const getRecordChange = () => recordChangeDisplay.textContent;
 
+    const guidedEditableFields = {
+      projectName: {
+        label: 'Project name',
+        input: projectNameInput,
+        storageKey: projectNameStorageKey,
+        update: updateProjectNameDisplay,
+        helper: 'Name the one unfinished thing you are returning to.',
+        guidedDisplaySelector: '#guided-project-name-display'
+      },
+      currentGoal: {
+        label: 'Current goal',
+        input: currentGoalInput,
+        storageKey: currentGoalStorageKey,
+        update: updateCurrentGoalDisplay,
+        helper: 'Name what this return is for right now.',
+        guidedDisplaySelector: '#guided-current-goal-display'
+      },
+      nextAction: {
+        label: 'One Next Action',
+        input: nextActionInput,
+        storageKey: nextActionStorageKey,
+        update: updateNextActionDisplay,
+        helper: 'Keep this to one small action, not a list.',
+        guidedDisplaySelector: '#guided-next-action-display'
+      },
+      setAside: {
+        label: 'Set Aside / Ignore For Now',
+        input: setAsideInput,
+        storageKey: setAsideStorageKey,
+        update: updateSetAsideDisplay,
+        helper: 'Name one distraction or larger idea that can wait.',
+        guidedDisplaySelector: '#guided-set-aside-display'
+      },
+      recordChange: {
+        label: 'Record the Change',
+        input: recordChangeInput,
+        storageKey: recordChangeStorageKey,
+        update: updateRecordChangeDisplay,
+        helper: 'Write one brief note about what changed.',
+        guidedDisplaySelector: '#guided-record-change-display'
+      }
+    };
+
+    const renderGuidedEditableField = (fieldKey) => {
+      const field = guidedEditableFields[fieldKey];
+      const inputId = `guided-${fieldKey}-input`;
+      const helperId = `${inputId}-helper`;
+      return `
+        <div class="guided-inline-field" data-guided-field="${fieldKey}">
+          <label for="${inputId}">${escapeHtml(field.label)}</label>
+          <input id="${inputId}" type="text" value="${escapeHtml(field.input.value)}" autocomplete="off" maxlength="${field.input.getAttribute('maxlength')}" aria-describedby="${helperId}">
+          <p class="guided-inline-helper" id="${helperId}">${escapeHtml(field.helper)}</p>
+        </div>
+      `;
+    };
+
+    const syncGuidedEditableFields = () => {
+      guidedStageBody.querySelectorAll('[data-guided-field]').forEach((fieldElement) => {
+        const fieldKey = fieldElement.getAttribute('data-guided-field');
+        const field = guidedEditableFields[fieldKey];
+        const guidedInput = fieldElement.querySelector('input');
+        if (!field || !guidedInput) return;
+
+        guidedInput.addEventListener('input', () => {
+          field.input.value = guidedInput.value;
+          writeLocalValue(field.storageKey, guidedInput.value);
+          field.update();
+          updateCharacterFeedback(field.input);
+          syncOpeningContext();
+          const guidedDisplay = field.guidedDisplaySelector ? document.querySelector(field.guidedDisplaySelector) : null;
+          if (guidedDisplay) {
+            guidedDisplay.textContent = field.input.value.trim() || field.input.defaultValue;
+          }
+        });
+      });
+    };
+
     const guidedStages = [
       {
         title: 'Find your place',
         intro: 'See the one thing you’re returning to and where it stands.',
         render: () => `
-          <article class="quiet-card">
-            <span class="label">Project name</span>
-            <h3>${escapeHtml(getProjectName())}</h3>
-            <p>This is the unfinished thing Luna is helping you return to.</p>
-          </article>
+          <div class="guided-inline-edit" aria-label="Find your place editable project context">
+            ${renderGuidedEditableField('projectName')}
+            ${renderGuidedEditableField('currentGoal')}
+          </div>
           <article class="quiet-card">
             <span class="label">Current step</span>
             <h3>Find your place</h3>
-            <p>Notice where it stands now. No setup or reorganization is required.</p>
-          </article>
-          <article class="quiet-card">
-            <span class="label">Current goal</span>
-            <h3>${escapeHtml(getCurrentGoal())}</h3>
-            <p>Let this goal remind you what this return is for.</p>
+            <p>Notice what is here. No setup or reorganization is required.</p>
           </article>
         `
       },
@@ -1256,6 +1370,9 @@
             <h3 id="guided-next-action-display">${escapeHtml(getNextAction())}</h3>
             <p>Keep it small: one action is enough for this return.</p>
           </article>
+          <div class="guided-inline-edit" aria-label="Choose editable next action">
+            ${renderGuidedEditableField('nextAction')}
+          </div>
         `
       },
       {
@@ -1265,9 +1382,12 @@
         render: () => `
           <article class="quiet-card">
             <span class="label">Ignore For Now</span>
-            <h3>${escapeHtml(getSetAside())}</h3>
-            <p>This can wait while you return. Nothing needs sorting, ranking, or reorganizing here.</p>
+            <h3 id="guided-set-aside-display">${escapeHtml(getSetAside())}</h3>
+            <p>This can wait while you return.</p>
           </article>
+          <div class="guided-inline-edit" aria-label="Set Aside editable value">
+            ${renderGuidedEditableField('setAside')}
+          </div>
         `
       },
       {
@@ -1277,9 +1397,12 @@
         render: () => `
           <article class="quiet-card">
             <span class="label">Record the Change</span>
-            <h3>One brief note about what changed is enough.</h3>
-            <p>${escapeHtml(getRecordChange())}</p>
+            <h3>One brief note is enough.</h3>
+            <p id="guided-record-change-display">${escapeHtml(getRecordChange())}</p>
           </article>
+          <div class="guided-inline-edit" aria-label="Record editable change note">
+            ${renderGuidedEditableField('recordChange')}
+          </div>
         `
       },
       {
@@ -1291,6 +1414,14 @@
             <span class="label">Rest</span>
             <h3>Rest after one small return.</h3>
             <p>${escapeHtml(window.LunaReturnGuidance.buildReturnGuidance(getGuidanceContext()).restMessage)}</p>
+          </article>
+          <article class="quiet-card">
+            <span class="label">Current return</span>
+            <p><strong>Project:</strong> ${escapeHtml(getProjectName())}</p>
+            <p><strong>Goal:</strong> ${escapeHtml(getCurrentGoal())}</p>
+            <p><strong>Next action:</strong> ${escapeHtml(getNextAction())}</p>
+            <p><strong>Set aside:</strong> ${escapeHtml(getSetAside())}</p>
+            <p><strong>Changed:</strong> ${escapeHtml(getRecordChange())}</p>
           </article>
         `
       }
@@ -1544,12 +1675,8 @@
       guidedStageIntro.textContent = stage.intro;
       guidedStagePanel.dataset.stageTone = stage.tone || 'quiet';
       guidedStageBody.innerHTML = stage.render();
-
-      if (stage.title === 'Choose') {
-        guidedStageBody.append(nextActionEditingCard);
-      } else {
-        restoreNextActionEditorToOverview();
-      }
+      syncGuidedEditableFields();
+      restoreNextActionEditorToOverview();
 
       guidedBackButton.hidden = guidedStageIndex === 0;
       guidedForwardButton.hidden = false;
