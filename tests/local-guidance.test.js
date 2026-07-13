@@ -145,7 +145,15 @@ assert(html.includes('guidedForwardButton.hidden = guidedStageIndex === 0 && gui
 assert(html.includes("${renderGuidedEditableField('nextAction')}"), 'Choose should include editable One Next Action');
 assert(html.includes("${renderGuidedEditableField('setAside')}"), 'Set Aside should include editable Set Aside / Ignore For Now');
 assert(html.includes("${renderGuidedEditableField('recordChange')}"), 'Record should include editable Record the Change');
+for (const guidedField of ['projectName', 'currentGoal', 'nextAction', 'setAside', 'recordChange']) {
+  assert(html.includes('data-guided-field="${fieldKey}"'), 'Guided editable renderer should preserve data-guided-field binding');
+}
+assert(html.includes('<input id="${inputId}" type="text"'), 'Guided editable fields should remain real text inputs');
 assert(html.includes('syncGuidedEditableFields();'), 'Guided Return inline controls should sync through existing fields');
+assert(html.includes('guided-answer-space'), 'Guided Return should style editable responses as calm answer spaces');
+assert(html.includes('guided-answer-input-frame'), 'Guided Return answer spaces should wrap the real input elements');
+assert(html.includes('Your answer'), 'Guided Return answer-space copy should gently label the response area');
+assert(html.includes('Luna will hold this locally.'), 'Guided Return helper copy should keep the local-only boundary visible');
 assert(html.includes('field.input.value = guidedInput.value;'), 'Guided inline edits should update the existing overview input values');
 assert(html.includes('writeLocalValue(field.storageKey, guidedInput.value);'), 'Guided inline edits should save through the existing five storage keys');
 assert(html.includes('<span class="label">Current return</span>'), 'Rest should include a brief current-return summary');

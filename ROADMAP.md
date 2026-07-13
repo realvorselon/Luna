@@ -12,7 +12,7 @@ Luna now has a concise visual direction note anchoring the finished look and fee
 
 ## Current Opening Threshold Slice
 
-A Guided Return conversational presentation slice made the existing editable local flow feel less like a form and more like Luna asking one gentle question at a time. The slice keeps Luna’s existing six-stage flow, five values, inline editing, full overview editing, Shape this return Apply → Undo behavior, storage-key boundary, no-network/no-model behavior, mobile comfort, and reduced-motion protections. Luna remains at Rest. Next: Human mobile usability test of the conversational Guided Return flow.
+A focused Guided Return answer-space presentation slice made editable responses feel less like generic form fields while preserving the six-stage flow, one-question Find your place prototype, five saved local values, full overview editing, Shape this return Apply → Undo behavior, storage-key boundary, no-network/no-model behavior, mobile comfort, and reduced-motion protections. Luna remains at Rest. Next: Human mobile usability test of Guided Return answer spaces.
 
 ## Current v0.1 Direction
 
@@ -23,12 +23,12 @@ Protected scope remains one local project only. The guidance engine must stay br
 
 ## Current v0.1 direction
 
-### Find your place one-question-at-a-time prototype
+### Guided Return answer-space presentation slice
 
-- Completed a focused Find your place one-question-at-a-time prototype that tested a less form-like Guided Return interaction while preserving the six-stage flow and five-value local-only/no-network boundary.
+- Completed a focused Guided Return answer-space presentation slice that made editable responses feel less like generic form fields while preserving the six-stage flow, one-question Find your place prototype, and five-value local-only/no-network boundary.
 - Only Stage 1 changed internally: Luna asks “What are we returning to?” first, then “What would make returning easier?” while the visible Guided Return count remains Stage 1 of 6.
 - Preserved the existing five local values, storage keys, full overview editing, Shape this return Apply → Undo, safe rendering, no-network/no-model boundary, mobile comfort, and reduced-motion protections.
-- Status remains Rest; next suggested step is: “Human mobile usability test of one-question Find your place.”
+- Status remains Rest; next suggested step is: “Human mobile usability test of Guided Return answer spaces.”
 
 
 - Prefer fewer meaningful vertical slices over automatic button-by-button micro-polish.
