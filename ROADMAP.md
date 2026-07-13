@@ -1,3 +1,7 @@
+## Visual North-Star Checkpoint
+
+Luna now has a concise visual direction note anchoring the finished look and feel as a quiet moonlit garden return app rather than a dashboard, Notion clone, or generic productivity surface. The next visual implementation should start by planning the first small garden-gate opening slice, not a broad redesign.
+
 ## Guided Return size-stability correction
 
 - Current focus is complete: Guided Return now uses a steadier stage frame and action area so stage-to-stage movement feels like one stable shell rather than resizing panels.

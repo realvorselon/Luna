@@ -1,12 +1,12 @@
-Luna is at Rest after a focused Guided Return mobile layout regression fix. The current prototype keeps the same opening threshold, full overview editing clarity, Shape this return, Apply → Undo, Clear local edits, deterministic local guidance, safe rendering, input limits, near-limit counters, mobile containment protections, mobile visual comfort surfaces, fade-only Guided Return motion, reduced-motion behavior, and complete Guided Return loop, while the Guided Return stage header, content, and actions now occupy separate non-overlapping normal-flow regions on mobile.
+Luna is at Rest after adding the visual north-star note for a quiet moonlit garden return direction. The current prototype behavior remains unchanged; future visual work should start from the moonlit sky → garden gate → lantern/path → gentle return metaphor instead of drifting toward dashboards, admin pages, or generic productivity surfaces.
 
-Next suggested step: human mobile-test Guided Return readability only: verify no overlapping text, no content hidden under actions, and no broken internal scroll before any broader project discussion.
+Next suggested step: Plan the first small garden-gate visual slice for the opening threshold.
 
 # State
 
-Luna is at Rest after a focused motion comfort correction. The current prototype keeps the same opening threshold, full overview editing clarity, Shape this return, Apply → Undo, Clear local edits, deterministic local guidance, safe rendering, input limits, near-limit counters, mobile containment protections, mobile visual comfort surfaces, and complete Guided Return loop, but Guided Return stage changes now use fade-only swaps instead of directional movement, guided-entry view changes avoid screen-like sliding, stage sizing is steadier, and reduced-motion behavior is stronger.
+Luna is at Rest after adding a concise visual north-star note for the quiet moonlit garden return direction. The current prototype behavior remains unchanged, and future visual work should preserve the opening threshold, full overview editing clarity, Shape this return, Apply → Undo, local-only storage, deterministic guidance, safe rendering, mobile comfort, reduced-motion behavior, and complete Guided Return loop while translating the look one small slice at a time.
 
-Next suggested step: human mobile-test motion comfort with very brief exposure by moving through Guided Return one stage at a time and confirming transitions no longer cause nausea or visual discomfort.
+Next suggested step: Plan the first small garden-gate visual slice for the opening threshold.
 
 ## Full Overview Editing Clarity — 2026-07-12
 
@@ -26,10 +26,11 @@ Luna is becoming a small, moonlit one-project return app. It begins with a real 
 
 ## Current Goal
 
-Rest after a bounded v0.1 stabilization and coherence pass.
+Rest after adding the visual north-star note for Luna’s moonlit garden return direction.
 
 ## Last Completed Run
 
+- 2026-07-12: Added `DESIGN.md` as a concise visual north-star note for Luna’s moonlit garden return direction, anchoring future visual work around a quiet opening threshold, garden gate, lantern/path, small companion cues, and game-design attention guidance without gamification or behavior changes.
 - 2026-07-12: Completed a bounded v0.1 stabilization/coherence pass: cleaned generated Record and Rest punctuation, aligned return-path wording, preserved tested behavior, and extended static regression checks.
 - 2026-07-12: Made each visible Shape this return suggestion reversible during the current review session: Use this becomes Undo, Undo restores the exact previous field value through the existing input/display/localStorage/Guided Return update path, unrelated fields remain unchanged, and no undo history or new persistence key is added.
 - 2026-07-12: Corrected the blocking Guided Return mobile overflow regression for long unbroken project-field text while preserving the five input limits, saved values, Shape this return, deterministic local voice, complete six-stage Guided Return, navigation, motion, accessibility, and mobile safe-area handling.
@@ -41,7 +42,7 @@ Rest after a bounded v0.1 stabilization and coherence pass.
 
 ## Next Suggested Step
 
-Human mobile-test motion comfort with very brief exposure: move through Guided Return one stage at a time and confirm transitions no longer cause nausea or visual discomfort.
+Plan the first small garden-gate visual slice for the opening threshold.
 
 ## Notes
 
