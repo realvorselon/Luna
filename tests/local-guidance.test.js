@@ -157,6 +157,97 @@ assert(html.includes('createTextElement'));
 assert(html.includes('textContent = text'));
 assert(html.includes('escapeHtml(window.LunaReturnGuidance.buildReturnGuidance'));
 
+
+const inlineScript = html.match(/<script>\n([\s\S]*?)\n  <\/script>\n<\/body>/)[1];
+for (const id of ['begin-guided-return-button', 'shape-return-button', 'show-overview-button']) {
+  assert(html.includes(`id="${id}"`), `${id} should exist for opening button wiring`);
+  assert(inlineScript.includes(`document.querySelector('#${id}')`), `${id} should be queried during initialization`);
+}
+assert(inlineScript.includes("beginGuidedReturnButton.addEventListener('click', showGuidedReturn);"), 'Return gently listener should be attached during initialization');
+assert(inlineScript.includes("shapeReturnButton.addEventListener('click', showLocalGuidance);"), 'Shape this return listener should be attached during initialization');
+assert(inlineScript.includes("showOverviewButton.addEventListener('click', showFullOverviewFromOpening);"), 'Open full overview listener should be attached during initialization');
+assert(!inlineScript.includes('update: updateProjectNameDisplay,'), 'Guided editable field config should not read updateProjectNameDisplay before it is initialized');
+assert(inlineScript.includes('const normalizeInvitationValue = (value) => (value ?? \'\').toString().trim();'), 'invitation default formatting should safely normalize missing values');
+assert(inlineScript.includes('if (typeof defaultValue !== \'string\') return false;'), 'invitation default checks should guard unknown field keys');
+
+class FakeElement {
+  constructor(id = '') {
+    this.id = id;
+    this.value = '';
+    this.defaultValue = '';
+    this.textContent = '';
+    this.hidden = false;
+    this.disabled = false;
+    this.dataset = {};
+    this.attributes = new Map();
+    this.listeners = {};
+    this.children = [];
+    this.classList = { add: () => {}, remove: () => {}, toggle: () => {} };
+  }
+  addEventListener(type, listener) { this.listeners[type] = listener; }
+  setAttribute(name, value) { this.attributes.set(name, String(value)); }
+  getAttribute(name) { return this.attributes.get(name) || ''; }
+  focus() {}
+  append(...children) { this.children.push(...children); }
+  after() {}
+  querySelector(selector) {
+    if (selector === 'input') return new FakeElement('guided-inline-input');
+    if (selector === 'p') return this.children.find((child) => child.tagName === 'p') || new FakeElement('p');
+    return new FakeElement(selector);
+  }
+  querySelectorAll() { return []; }
+}
+
+const requiredPrototypeIds = [...html.matchAll(/id="([^"]+)"/g)].map((match) => match[1]);
+const fakeElements = new Map();
+for (const id of requiredPrototypeIds) {
+  const element = new FakeElement(id);
+  if (id.endsWith('-input')) {
+    element.value = 'Test value';
+    element.defaultValue = 'Test value';
+    const limit = html.match(new RegExp(`id="${id}"[^>]*maxlength="(\\d+)"`));
+    if (limit) element.setAttribute('maxlength', limit[1]);
+  }
+  if (id.includes('display')) element.textContent = 'Test display';
+  fakeElements.set(id, element);
+}
+fakeElements.get('guided-return-view').hidden = true;
+fakeElements.get('full-overview').hidden = true;
+fakeElements.get('local-guidance-panel').hidden = true;
+
+const vmContext = {
+  console,
+  require,
+  setTimeout,
+  clearTimeout,
+  localStorage: { getItem: () => null, setItem: () => {}, removeItem: () => {} },
+  window: {
+    matchMedia: () => ({ matches: true }),
+    clearTimeout,
+    setTimeout,
+    LunaReturnGuidance: guidance
+  },
+  document: {
+    querySelector: (selector) => selector.startsWith('#') ? fakeElements.get(selector.slice(1)) || null : new FakeElement(selector),
+    createElement: (tagName) => {
+      const element = new FakeElement(tagName);
+      element.tagName = tagName;
+      return element;
+    }
+  }
+};
+vmContext.window.window = vmContext.window;
+vmContext.window.document = vmContext.document;
+require('node:vm').runInNewContext(inlineScript, vmContext, { filename: 'prototype.html inline script' });
+for (const id of ['begin-guided-return-button', 'shape-return-button', 'show-overview-button']) {
+  assert.equal(typeof fakeElements.get(id).listeners.click, 'function', `${id} should have a click listener after initialization`);
+}
+assert.doesNotThrow(() => fakeElements.get('begin-guided-return-button').listeners.click(), 'Return gently click handler should not throw');
+fakeElements.get('luna-opening').hidden = false;
+assert.doesNotThrow(() => fakeElements.get('shape-return-button').listeners.click(), 'Shape this return click handler should not throw');
+fakeElements.get('luna-opening').hidden = false;
+assert.doesNotThrow(() => fakeElements.get('show-overview-button').listeners.click(), 'Open full overview click handler should not throw');
+
 const css = html.match(/<style>([\s\S]*?)<\/style>/)[1];
 const longUnbrokenNextAction = 'ReturnToLunaWithoutSpaces'.repeat(8).slice(0, 140);
 assert.equal(longUnbrokenNextAction.length, 140, 'regression value should fill the One Next Action maxlength with no spaces');

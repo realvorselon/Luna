@@ -3,6 +3,10 @@
   "statusHistory": [
     {
       "date": "2026-07-13",
+      "note": "Fixed the blocking prototype button regression after the first-use invitation defaults pass by making invitation-default formatting defensive, avoiding initialization-time helper references before display updaters exist, preserving Guided Return inline editing, and adding a lightweight button-wiring/script-initialization regression test."
+    },
+    {
+      "date": "2026-07-13",
       "note": "2026-07-13: Completed a first-use empty-state invitation copy pass that made Luna’s five default local values feel honest and usable as prompts, not fake project content, while preserving the existing fields, storage keys, Guided Return inline editing, Shape this return Apply → Undo, safe rendering, and no-network/no-new-behavior boundary."
     },
     {
@@ -602,9 +606,9 @@
       "note": "The project is resting after a good run and ready for one gentle improvement."
     }
   ],
-  "currentGoal": "Rest after a first-use empty-state invitation copy pass for Guided Return.",
-  "lastCompletedRun": "2026-07-13: Completed a first-use empty-state invitation copy pass that made Luna’s five default local values feel honest and usable as prompts, not fake project content, while preserving the existing fields, storage keys, Guided Return inline editing, Shape this return Apply → Undo, safe rendering, and no-network/no-new-behavior boundary.",
-  "nextStep": "Human mobile first-use test of the invitation defaults inside Guided Return.",
+  "currentGoal": "Rest after restoring prototype opening button behavior after the first-use invitation defaults pass.",
+  "lastCompletedRun": "2026-07-13: Fixed the blocking prototype button regression after the first-use invitation defaults pass by making invitation-default formatting defensive, avoiding initialization-time helper references before display updaters exist, preserving Guided Return inline editing, and adding a lightweight button-wiring/script-initialization regression test.",
+  "nextStep": "Human mobile smoke test of opening buttons and Guided Return entry.",
   "dashboardGuide": [
     "Welcome starts the path to read through Record the Change before choosing more work.",
     "Status gives a quick snapshot of how the project is doing right now.",
@@ -676,9 +680,9 @@
     "Visit http://localhost:8000 in a browser to view the dashboard."
   ],
   "nextAction": {
-    "title": "Human mobile usability test",
-    "description": "Human mobile usability test of editing inside the Guided Return flow.",
-    "whyItMatters": "The new inline editing slice should be checked on a real mobile path for calmness, readability, and whether it helps someone return without feeling like a form or task system.",
+    "title": "Human mobile smoke test",
+    "description": "Human mobile smoke test of opening buttons and Guided Return entry.",
+    "whyItMatters": "The live prototype buttons are restored in code, but a real mobile smoke test should confirm Return gently, Shape this return, Open full overview, and Guided Return entry all respond calmly on GitHub Pages.",
     "status": "Ready for human test"
   },
   "creativeSeed": {
@@ -747,9 +751,9 @@
   ],
   "currentMode": {
     "name": "Rest",
-    "description": "Luna is resting after a first-use empty-state invitation pass made the existing five local defaults feel honest instead of fake.",
-    "whyItMatters": "Invitation defaults help a person start with their own words while preserving Luna’s one-project, local-only, no-network boundary.",
+    "description": "Luna is resting after a blocking bugfix restored prototype opening button behavior.",
+    "whyItMatters": "The opening buttons must work before any further invitation-copy or Guided Return usability testing can continue.",
     "value": "Rest"
   },
-  "nextSuggestedStep": "Human mobile first-use test of the invitation defaults inside Guided Return."
+  "nextSuggestedStep": "Human mobile smoke test of opening buttons and Guided Return entry."
 }

@@ -1264,10 +1264,16 @@
       recordChange: sampleRecordChange
     };
 
-    const isInvitationDefault = (fieldKey, value) => value.trim().toLowerCase() === invitationDefaults[fieldKey].toLowerCase();
+    const normalizeInvitationValue = (value) => (value ?? '').toString().trim();
+
+    const isInvitationDefault = (fieldKey, value) => {
+      const defaultValue = invitationDefaults[fieldKey];
+      if (typeof defaultValue !== 'string') return false;
+      return normalizeInvitationValue(value).toLowerCase() === defaultValue.toLowerCase();
+    };
 
     const formatRestSummaryValue = (fieldKey, value) => {
-      const text = value.trim();
+      const text = normalizeInvitationValue(value);
       if (isInvitationDefault(fieldKey, text)) {
         return fieldKey === 'projectName' ? 'Not named yet' : text;
       }
@@ -1288,7 +1294,7 @@
         label: 'Project name',
         input: projectNameInput,
         storageKey: projectNameStorageKey,
-        update: updateProjectNameDisplay,
+        update: () => updateProjectNameDisplay(),
         helper: 'Name the unfinished thing in your own words.',
         guidedDisplaySelector: '#guided-project-name-display'
       },
@@ -1296,7 +1302,7 @@
         label: 'Current goal',
         input: currentGoalInput,
         storageKey: currentGoalStorageKey,
-        update: updateCurrentGoalDisplay,
+        update: () => updateCurrentGoalDisplay(),
         helper: 'Name what you are trying to make easier.',
         guidedDisplaySelector: '#guided-current-goal-display'
       },
@@ -1304,7 +1310,7 @@
         label: 'One Next Action',
         input: nextActionInput,
         storageKey: nextActionStorageKey,
-        update: updateNextActionDisplay,
+        update: () => updateNextActionDisplay(),
         helper: 'Write one small next step, not a list.',
         guidedDisplaySelector: '#guided-next-action-display'
       },
@@ -1312,7 +1318,7 @@
         label: 'Set Aside / Ignore For Now',
         input: setAsideInput,
         storageKey: setAsideStorageKey,
-        update: updateSetAsideDisplay,
+        update: () => updateSetAsideDisplay(),
         helper: 'Name one distraction or larger idea that can wait.',
         guidedDisplaySelector: '#guided-set-aside-display'
       },
@@ -1320,7 +1326,7 @@
         label: 'Record the Change',
         input: recordChangeInput,
         storageKey: recordChangeStorageKey,
-        update: updateRecordChangeDisplay,
+        update: () => updateRecordChangeDisplay(),
         helper: 'Write what changed, even a little.',
         guidedDisplaySelector: '#guided-record-change-display'
       }

@@ -10,6 +10,13 @@
 
 ## 2026-07-13
 
+### Prototype Opening Button Regression Fix
+
+- Fixed a blocking live prototype regression where Return gently, Shape this return, and Open full overview rendered but did not respond after the first-use invitation defaults pass.
+- Made invitation-default formatting defensive for missing, undefined, null, or unknown values and avoided initialization-time helper references that could stop event listeners from attaching.
+- Preserved Guided Return inline editing for the existing five local values, Rest summary, storage-key boundary, no-network behavior, input limits, stage order, and safe rendering.
+- Added a lightweight script-initialization/button-wiring regression check and set Luna back to Rest; next is a human mobile smoke test of opening buttons and Guided Return entry.
+
 ### First-Use Empty-State Invitation Copy Pass
 
 - Replaced fake project-feeling defaults with warmer invitation prompts for project name, current goal, One Next Action, Set Aside / Ignore For Now, and Record the Change.
