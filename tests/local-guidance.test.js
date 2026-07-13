@@ -158,8 +158,14 @@ assert(html.includes('field.input.value = guidedInput.value;'), 'Guided inline e
 assert(html.includes('writeLocalValue(field.storageKey, guidedInput.value);'), 'Guided inline edits should save through the existing five storage keys');
 assert(html.includes('I have enough to hold this return.'), 'Rest should keep the enough-to-hold soft landing copy');
 assert(html.includes('You can stop here. Luna will keep the thread warm until you come back.'), 'Rest should include short soft-landing permission copy');
-assert(html.includes('<span class="label">Held for now</span>'), 'Rest should include a softer secondary held-words section');
-assert(html.includes('Held words for when you return.'), 'Rest secondary current-return section should use calm wording');
+assert(html.includes('<span class="label">Return Card</span>'), 'Rest should include Return Card framing');
+assert(html.includes('A small place to resume.'), 'Rest Return Card should feel like a useful held return point');
+assert(html.includes('Luna gathered the thread into one held point.'), 'Rest Return Card should say Luna gathered the words into a return point');
+assert(html.includes('When you come back, begin with the lantern.'), 'Rest should include a clear resume cue');
+for (const returnCardLabel of ['Returning to', 'The thread', 'The lantern', 'Waiting outside the gate', 'What changed']) {
+  assert(html.includes(returnCardLabel), `Rest Return Card should include label: ${returnCardLabel}`);
+}
+assert(html.includes('return-card-lantern'), 'Rest should visually emphasize nextAction as the lantern/resume point');
 for (const escapedRestValue of [
   "${escapeHtml(formatRestSummaryValue('projectName', getProjectName()))}",
   "${escapeHtml(formatRestSummaryValue('currentGoal', getCurrentGoal()))}",

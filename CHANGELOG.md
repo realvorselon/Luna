@@ -2,6 +2,14 @@
 
 ## 2026-07-13
 
+### Guided Return Return Card Slice
+
+- Reframed the Rest-stage secondary section into a calm Return Card using only project name, current goal, One Next Action, Set Aside, and Record the Change.
+- Emphasized the existing One Next Action as the lantern/resume point and added a short cue to begin with the lantern when returning.
+- Preserved the Rest soft landing, six-stage flow, one-question Find your place behavior, answer spaces, Luna insight cards, five existing localStorage keys, maxlengths, Shape this return Apply → Undo, safe escaping, no-network/no-model boundary, mobile comfort, and final Return to Luna behavior.
+- Set Luna back to Rest; next is: Human mobile test of whether the Rest Return Card feels useful.
+
+
 ### Guided Return Coherence Pass
 
 - Smoothed short copy across Opening, Find your place, Remember, Choose, Set Aside, Record, and Rest so the loop feels like one intentional return instead of stitched-together slices.

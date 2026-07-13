@@ -3,6 +3,10 @@
   "statusHistory": [
     {
       "date": "2026-07-13",
+      "note": "This was a focused Guided Return Return Card slice that made Rest give the user a small useful outcome from the existing five local values, so the loop feels less like collecting inputs and more like Luna holding a clear place to resume."
+    },
+    {
+      "date": "2026-07-13",
       "note": "2026-07-13: This was a focused Guided Return coherence pass that smoothed copy and presentation seams across the existing six-stage loop while preserving the one-question Find your place prototype, answer spaces, Rest soft landing, and five-value local-only/no-network boundary."
     },
     {
@@ -626,9 +630,9 @@
       "note": "The project is resting after a good run and ready for one gentle improvement."
     }
   ],
-  "currentGoal": "Rest after the Guided Return coherence pass.",
-  "lastCompletedRun": "Guided Return coherence pass: smoothed copy and presentation seams across Opening → Find your place → Remember → Choose → Set Aside → Record → Rest while preserving one-question Find your place, answer spaces, Rest soft landing, and five local-only values.",
-  "nextStep": "Human full-loop mobile test of Guided Return coherence.",
+  "currentGoal": "Rest after the Guided Return Return Card slice.",
+  "lastCompletedRun": "Guided Return Return Card slice: made Rest give a small useful Return Card outcome from the existing five local values, emphasizing the One Next Action as the lantern/resume point while preserving the protected six-stage local-only flow.",
+  "nextStep": "Human mobile test of whether the Rest Return Card feels useful.",
   "dashboardGuide": [
     "Welcome starts the path to read through Record the Change before choosing more work.",
     "Status gives a quick snapshot of how the project is doing right now.",
@@ -700,9 +704,9 @@
     "Visit http://localhost:8000 in a browser to view the dashboard."
   ],
   "nextAction": {
-    "title": "Human mobile usability test",
-    "description": "Human full-loop mobile test of Guided Return coherence.",
-    "whyItMatters": "The coherence pass is complete; a mobile human pass should confirm the full Guided Return loop feels calm, coherent, and unchanged in behavior.",
+    "title": "Human mobile Return Card test",
+    "description": "Human mobile test of whether the Rest Return Card feels useful.",
+    "whyItMatters": "The Return Card slice is complete; a mobile human pass should confirm Rest feels useful without feeling like a report, dashboard, or task manager.",
     "status": "Ready for human test"
   },
   "creativeSeed": {
@@ -771,9 +775,9 @@
   ],
   "currentMode": {
     "name": "Rest",
-    "description": "Luna is resting after the Guided Return coherence pass.",
-    "whyItMatters": "The coherence pass smoothed the existing six-stage loop while preserving the one-question Find your place prototype, answer spaces, Rest soft landing, and five-value local-only/no-network boundary.",
+    "description": "Luna is resting after the Guided Return Return Card slice.",
+    "whyItMatters": "The Rest stage now gives a small useful held return point from the existing five local values while preserving the local-only/no-network boundary and unchanged flow.",
     "value": "Rest"
   },
-  "nextSuggestedStep": "Human full-loop mobile test of Guided Return coherence."
+  "nextSuggestedStep": "Human mobile test of whether the Rest Return Card feels useful."
 }
