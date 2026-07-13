@@ -156,7 +156,19 @@ assert(html.includes('Your answer'), 'Guided Return answer-space copy should gen
 assert(html.includes('Luna will hold this locally.'), 'Guided Return helper copy should keep the local-only boundary visible');
 assert(html.includes('field.input.value = guidedInput.value;'), 'Guided inline edits should update the existing overview input values');
 assert(html.includes('writeLocalValue(field.storageKey, guidedInput.value);'), 'Guided inline edits should save through the existing five storage keys');
-assert(html.includes('<span class="label">Current return</span>'), 'Rest should include a brief current-return summary');
+assert(html.includes('I have enough to hold this return.'), 'Rest should keep the enough-to-hold soft landing copy');
+assert(html.includes('You can stop here. Luna will keep the thread warm until you come back.'), 'Rest should include short soft-landing permission copy');
+assert(html.includes('<span class="label">Held for now</span>'), 'Rest should include a softer secondary held-words section');
+assert(html.includes('The words Luna is keeping close.'), 'Rest secondary current-return section should use calm wording');
+for (const escapedRestValue of [
+  "${escapeHtml(formatRestSummaryValue('projectName', getProjectName()))}",
+  "${escapeHtml(formatRestSummaryValue('currentGoal', getCurrentGoal()))}",
+  "${escapeHtml(formatRestSummaryValue('nextAction', getNextAction()))}",
+  "${escapeHtml(formatRestSummaryValue('setAside', getSetAside()))}",
+  "${escapeHtml(formatRestSummaryValue('recordChange', getRecordChange()))}"
+]) {
+  assert(html.includes(escapedRestValue), `Rest should preserve escaped current-return value: ${escapedRestValue}`);
+}
 assert(html.includes('class="luna-insight-card"'), 'Guided Return should render Luna insight cards');
 assert(html.includes('aria-label="Luna insight for this step"'), 'Guided Return insights should be accessible labelled coaching regions');
 for (const copy of ['Start by naming one real thing Luna can hold', 'one unfinished thing, not a whole life system', 'One small action is enough', 'one distraction, larger idea, or pressure that can wait', 'This is not a log or report', 'The return is held clearly enough']) {
@@ -180,11 +192,10 @@ assert(!/sessionStorage|document\.cookie|eval\s*\(|new Function/.test(html + js)
 assert(js.includes('voiceLibrary'));
 assert(js.includes("voice('goalBlank'"));
 assert(html.includes('guidance.allClearMessage'));
-assert(html.includes('formatRestSummaryValue'), 'Rest summary should format invitation defaults honestly');
-assert(html.includes('Not named yet'), 'Rest summary should not pretend default project prompt is a real project name');
+assert(html.includes('formatRestSummaryValue'), 'Rest held-words values should format invitation defaults honestly');
+assert(html.includes('Not named yet'), 'Rest held-words values should not pretend default project prompt is a real project name');
 assert(html.includes('createTextElement'));
 assert(html.includes('textContent = text'));
-assert(html.includes('escapeHtml(getReturnGuidance().restMessage)'));
 assert(html.includes('const getReturnGuidance = () => window.LunaReturnGuidance.buildReturnGuidance(getGuidanceContext());'));
 
 

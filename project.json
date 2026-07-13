@@ -3,6 +3,10 @@
   "statusHistory": [
     {
       "date": "2026-07-13",
+      "note": "2026-07-13: This was a focused Guided Return Rest soft-landing slice that made the ending feel less like a report and more like Luna gently holding one completed return, while preserving the six-stage flow, one-question Find your place prototype, answer spaces, and five-value local-only/no-network boundary."
+    },
+    {
+      "date": "2026-07-13",
       "note": "2026-07-13: Completed a focused Guided Return answer-space presentation slice that made editable responses feel less like generic form fields while preserving the six-stage flow, one-question Find your place prototype, and five-value local-only/no-network boundary."
     },
     {
@@ -19,11 +23,11 @@
     },
     {
       "date": "2026-07-13",
-      "note": "2026-07-13: Completed a first-use empty-state invitation copy pass that made Luna\u2019s five default local values feel honest and usable as prompts, not fake project content, while preserving the existing fields, storage keys, Guided Return inline editing, Shape this return Apply \u2192 Undo, safe rendering, and no-network/no-new-behavior boundary."
+      "note": "2026-07-13: Completed a first-use empty-state invitation copy pass that made Luna’s five default local values feel honest and usable as prompts, not fake project content, while preserving the existing fields, storage keys, Guided Return inline editing, Shape this return Apply → Undo, safe rendering, and no-network/no-new-behavior boundary."
     },
     {
       "date": "2026-07-13",
-      "note": "2026-07-13: Completed a Guided Return usability slice that made the existing five local values editable inside the flow while preserving the one-project/local-only/no-network boundary, full overview reference editing mode, Shape this return Apply \u2192 Undo behavior, storage keys, input limits, safe rendering, mobile comfort, and six-stage order."
+      "note": "2026-07-13: Completed a Guided Return usability slice that made the existing five local values editable inside the flow while preserving the one-project/local-only/no-network boundary, full overview reference editing mode, Shape this return Apply → Undo behavior, storage keys, input limits, safe rendering, mobile comfort, and six-stage order."
     },
     {
       "date": "2026-07-13",
@@ -59,7 +63,7 @@
     },
     {
       "date": "2026-07-12",
-      "note": "2026-07-12: Corrected the mobile visual comfort blocker by calming Luna\u2019s page background, opening threshold, overview cards, editing panels, inputs, Guided Return shell/stage panel, and buttons with fewer busy gradients, softer contrast, restrained focus states, and less glow/depth while preserving structure, behavior, five storage keys, maxlengths, mobile containment, safe rendering, deterministic guidance, Apply/Undo, Clear local edits, and the complete Guided Return loop."
+      "note": "2026-07-12: Corrected the mobile visual comfort blocker by calming Luna’s page background, opening threshold, overview cards, editing panels, inputs, Guided Return shell/stage panel, and buttons with fewer busy gradients, softer contrast, restrained focus states, and less glow/depth while preserving structure, behavior, five storage keys, maxlengths, mobile containment, safe rendering, deterministic guidance, Apply/Undo, Clear local edits, and the complete Guided Return loop."
     },
     {
       "date": "2026-07-12",
@@ -91,7 +95,7 @@
     },
     {
       "date": "2026-07-12",
-      "note": "Completed the second meaningful v0.1 vertical slice after the opening threshold: Guided Return now carries the first full Luna loop through Orient \u2192 Remember \u2192 Choose \u2192 Set Aside \u2192 Record \u2192 Rest, preserves the opening threshold, full overview, saved values, and navigation loop, keeps Ignore For Now from becoming a backlog, keeps Record brief, and treats Rest as a real stopping point before returning to Luna."
+      "note": "Completed the second meaningful v0.1 vertical slice after the opening threshold: Guided Return now carries the first full Luna loop through Orient → Remember → Choose → Set Aside → Record → Rest, preserves the opening threshold, full overview, saved values, and navigation loop, keeps Ignore For Now from becoming a backlog, keeps Record brief, and treats Rest as a real stopping point before returning to Luna."
     },
     {
       "date": "2026-07-12",
@@ -103,11 +107,11 @@
     },
     {
       "date": "2026-07-12",
-      "note": "Implemented one bounded Guided Return app-shell experiment for Orient \u2192 Remember \u2192 Choose: a stable centered shell with persistent header, stage-content region, and predictable action area, preserving the full overview reference mode, existing motion, mobile action findings, localStorage behavior, and One Next Action lantern emphasis."
+      "note": "Implemented one bounded Guided Return app-shell experiment for Orient → Remember → Choose: a stable centered shell with persistent header, stage-content region, and predictable action area, preserving the full overview reference mode, existing motion, mobile action findings, localStorage behavior, and One Next Action lantern emphasis."
     },
     {
       "date": "2026-07-12",
-      "note": "Added the Guided Return app-shell experiment boundary, recorded that existing Guided Return experiments produced enough evidence to stop automatic micro-polish, preserved the current prototype and full overview as references, and set the next direction to human-reviewing one bounded shell experiment for Orient \u2192 Remember \u2192 Choose."
+      "note": "Added the Guided Return app-shell experiment boundary, recorded that existing Guided Return experiments produced enough evidence to stop automatic micro-polish, preserved the current prototype and full overview as references, and set the next direction to human-reviewing one bounded shell experiment for Orient → Remember → Choose."
     },
     {
       "date": "2026-07-12",
@@ -155,7 +159,7 @@
     },
     {
       "date": "2026-07-11",
-      "note": "Added the first Guided Return implementation slice: an optional reversible Orient \u2192 Remember \u2192 Choose guided view in prototype.html while keeping the full overview available."
+      "note": "Added the first Guided Return implementation slice: an optional reversible Orient → Remember → Choose guided view in prototype.html while keeping the full overview available."
     },
     {
       "date": "2026-07-11",
@@ -207,7 +211,7 @@
     },
     {
       "date": "2026-07-10",
-      "note": "Added a tiny theme direction boundary for Luna\u2019s finished moonlit garden / quiet desk / gentle return path vibe."
+      "note": "Added a tiny theme direction boundary for Luna’s finished moonlit garden / quiet desk / gentle return path vibe."
     },
     {
       "date": "2026-07-10",
@@ -618,9 +622,9 @@
       "note": "The project is resting after a good run and ready for one gentle improvement."
     }
   ],
-  "currentGoal": "Rest after the Guided Return answer-space presentation slice.",
-  "lastCompletedRun": "2026-07-13: Completed a focused Guided Return answer-space presentation slice that made editable responses feel less like generic form fields while preserving the six-stage flow, one-question Find your place prototype, and five-value local-only/no-network boundary.",
-  "nextStep": "Human mobile usability test of Guided Return answer spaces.",
+  "currentGoal": "Rest after the Guided Return Rest soft-landing slice.",
+  "lastCompletedRun": "2026-07-13: This was a focused Guided Return Rest soft-landing slice that made the ending feel less like a report and more like Luna gently holding one completed return, while preserving the six-stage flow, one-question Find your place prototype, answer spaces, and five-value local-only/no-network boundary.",
+  "nextStep": "Human mobile usability test of the Rest soft landing.",
   "dashboardGuide": [
     "Welcome starts the path to read through Record the Change before choosing more work.",
     "Status gives a quick snapshot of how the project is doing right now.",
@@ -638,7 +642,7 @@
     "2026-07-12: Completed the first full Guided Return loop as the second meaningful v0.1 vertical slice after the opening threshold; Set Aside stays not-a-backlog, Record stays brief, and Rest becomes a real stopping point before returning to Luna.",
     "2026-07-12: Human testing found the new Luna opening threshold passed strongly, but returning from Guided Return to the full overview left no direct route back to the Luna opening threshold; adding one secondary Return to Luna action completes the basic navigation loop without adding competing actions or changing persistence.",
     "2026-07-12: Luna deliberately shifted from many tiny micro-experiments toward fewer meaningful v0.1 vertical slices; the first is a real opening threshold that routes primarily into the existing Guided Return shell while preserving the full overview as quieter reference/editing mode.",
-    "2026-07-12: Implemented the first Guided Return app-shell experiment as one stable centered shell with persistent header, stage-content region, and action area for Orient \u2192 Remember \u2192 Choose; next is human mobile testing of whether it feels like one calm focused app space.",
+    "2026-07-12: Implemented the first Guided Return app-shell experiment as one stable centered shell with persistent header, stage-content region, and action area for Orient → Remember → Choose; next is human mobile testing of whether it feels like one calm focused app space.",
     "2026-07-12: The Guided Return app-shell experiment boundary became the next product direction; existing experiments produced enough evidence to stop automatic micro-polish and test the container / spatial experience next.",
     "2026-07-12: The abrupt Begin a guided return entrance became the focused implementation experiment; the overview now softly yields before the Guided Return surface arrives as one visual unit, while mobile action layout and Forward / Back panel motion stay preserved.",
     "2026-07-12: The corrected Guided Return mobile action layout passed its initial human test; no further action-layout polish is needed now without a new human usability finding, and the abrupt Begin a guided return entrance is a separate possible follow-up.",
@@ -693,8 +697,8 @@
   ],
   "nextAction": {
     "title": "Human mobile usability test",
-    "description": "Human mobile usability test of Guided Return answer spaces.",
-    "whyItMatters": "The editable Guided Return fields now have softer answer-space framing; a mobile human pass should confirm they feel calm without becoming chat, survey, or form UI.",
+    "description": "Human mobile usability test of the Rest soft landing.",
+    "whyItMatters": "The Rest stage now lands more softly while preserving the current-return values as secondary held words; a mobile human pass should confirm the ending feels calm, uncrowded, and not like a report.",
     "status": "Ready for human test"
   },
   "creativeSeed": {
@@ -763,9 +767,9 @@
   ],
   "currentMode": {
     "name": "Rest",
-    "description": "Luna is resting after a Guided Return answer-space presentation slice.",
-    "whyItMatters": "Editable responses now feel more like calm Luna answer spaces than generic form fields while preserving the six-stage flow and five-value local-only/no-network boundary.",
+    "description": "Luna is resting after a Guided Return Rest soft-landing slice.",
+    "whyItMatters": "The ending now feels more like Luna gently holding one completed return than a report screen while preserving the six-stage flow and five-value local-only/no-network boundary.",
     "value": "Rest"
   },
-  "nextSuggestedStep": "Human mobile usability test of Guided Return answer spaces."
+  "nextSuggestedStep": "Human mobile usability test of the Rest soft landing."
 }

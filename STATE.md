@@ -1,11 +1,11 @@
-Luna is at Rest after a focused Guided Return answer-space presentation slice that made editable responses feel less like generic form fields while preserving the six-stage flow, one-question Find your place prototype, and five-value local-only/no-network boundary.
+Luna is at Rest after a focused Guided Return Rest soft-landing slice that made the ending feel less like a report and more like Luna gently holding one completed return, while preserving the six-stage flow, one-question Find your place prototype, answer spaces, and five-value local-only/no-network boundary.
 
-Next suggested step: Human mobile usability test of Guided Return answer spaces.
+Next suggested step: Human mobile usability test of the Rest soft landing.
 # State
 
-Luna is at Rest after a focused Guided Return answer-space presentation slice. The editable Guided Return answers now sit in calmer answer spaces while Stage 1 keeps the one-question-at-a-time Find your place behavior, and the visible six-stage flow, deterministic local insight, five saved values, and no-network/no-model boundary remain preserved.
+Luna is at Rest after a focused Guided Return Rest soft-landing slice. The Rest stage now lands with warmer permission to stop, while the current-return words stay available as a quieter held-for-now section. Stage 1 keeps the one-question-at-a-time Find your place behavior, answer spaces remain intact, and the visible six-stage flow, deterministic local insight, five saved values, and no-network/no-model boundary remain preserved.
 
-Next suggested step: Human mobile usability test of Guided Return answer spaces.
+Next suggested step: Human mobile usability test of the Rest soft landing.
 
 ## Full Overview Editing Clarity — 2026-07-12
 
@@ -25,11 +25,11 @@ Luna is becoming a small, moonlit one-project return app. It begins with a real 
 
 ## Current Goal
 
-Rest after the Guided Return answer-space presentation slice.
+Rest after the Guided Return Rest soft-landing slice.
 
 ## Last Completed Run
 
-- 2026-07-13: Completed a focused Guided Return answer-space presentation slice that made editable responses feel less like generic form fields while preserving the six-stage flow, one-question Find your place prototype, and five-value local-only/no-network boundary.
+- 2026-07-13: This was a focused Guided Return Rest soft-landing slice that made the ending feel less like a report and more like Luna gently holding one completed return, while preserving the six-stage flow, one-question Find your place prototype, answer spaces, and five-value local-only/no-network boundary.
 - 2026-07-13: Completed a focused Find your place one-question-at-a-time prototype that tested a less form-like Guided Return interaction while preserving the six-stage flow and five-value local-only/no-network boundary.
 - 2026-07-13: Completed a Guided Return conversational presentation slice that made the existing editable local flow feel less like a form and more like Luna asking one gentle question at a time, while preserving the five-value local-only/no-network boundary.
 - 2026-07-13: Completed a Guided Return Luna insight/coaching slice that made the existing editable flow less form-like by adding local deterministic stage guidance, while preserving the five-value local-only/no-network boundary.
@@ -55,7 +55,7 @@ Rest after the Guided Return answer-space presentation slice.
 
 ## Next Suggested Step
 
-Human mobile usability test of Guided Return answer spaces.
+Human mobile usability test of the Rest soft landing.
 
 ## Notes
 

@@ -12,7 +12,7 @@ Luna now has a concise visual direction note anchoring the finished look and fee
 
 ## Current Opening Threshold Slice
 
-A focused Guided Return answer-space presentation slice made editable responses feel less like generic form fields while preserving the six-stage flow, one-question Find your place prototype, five saved local values, full overview editing, Shape this return Apply → Undo behavior, storage-key boundary, no-network/no-model behavior, mobile comfort, and reduced-motion protections. Luna remains at Rest. Next: Human mobile usability test of Guided Return answer spaces.
+A focused Guided Return Rest soft-landing slice made the ending feel less like a report and more like Luna gently holding one completed return, while preserving the six-stage flow, one-question Find your place prototype, answer spaces, five saved local values, full overview editing, Shape this return Apply → Undo behavior, storage-key boundary, no-network/no-model behavior, mobile comfort, and reduced-motion protections. Luna remains at Rest. Next: Human mobile usability test of the Rest soft landing.
 
 ## Current v0.1 Direction
 
@@ -23,12 +23,12 @@ Protected scope remains one local project only. The guidance engine must stay br
 
 ## Current v0.1 direction
 
-### Guided Return answer-space presentation slice
+### Guided Return Rest soft-landing slice
 
-- Completed a focused Guided Return answer-space presentation slice that made editable responses feel less like generic form fields while preserving the six-stage flow, one-question Find your place prototype, and five-value local-only/no-network boundary.
-- Only Stage 1 changed internally: Luna asks “What are we returning to?” first, then “What would make returning easier?” while the visible Guided Return count remains Stage 1 of 6.
+- This was a focused Guided Return Rest soft-landing slice that made the ending feel less like a report and more like Luna gently holding one completed return, while preserving the six-stage flow, one-question Find your place prototype, answer spaces, and five-value local-only/no-network boundary.
+- Only the Rest-stage presentation/copy changed: the main landing is warmer, and the current-return values remain available as quieter held words.
 - Preserved the existing five local values, storage keys, full overview editing, Shape this return Apply → Undo, safe rendering, no-network/no-model boundary, mobile comfort, and reduced-motion protections.
-- Status remains Rest; next suggested step is: “Human mobile usability test of Guided Return answer spaces.”
+- Status remains Rest; next suggested step is: “Human mobile usability test of the Rest soft landing.”
 
 
 - Prefer fewer meaningful vertical slices over automatic button-by-button micro-polish.
