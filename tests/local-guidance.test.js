@@ -159,7 +159,7 @@ assert(html.includes('writeLocalValue(field.storageKey, guidedInput.value);'), '
 assert(html.includes('I have enough to hold this return.'), 'Rest should keep the enough-to-hold soft landing copy');
 assert(html.includes('You can stop here. Luna will keep the thread warm until you come back.'), 'Rest should include short soft-landing permission copy');
 assert(html.includes('<span class="label">Held for now</span>'), 'Rest should include a softer secondary held-words section');
-assert(html.includes('The words Luna is keeping close.'), 'Rest secondary current-return section should use calm wording');
+assert(html.includes('Held words for when you return.'), 'Rest secondary current-return section should use calm wording');
 for (const escapedRestValue of [
   "${escapeHtml(formatRestSummaryValue('projectName', getProjectName()))}",
   "${escapeHtml(formatRestSummaryValue('currentGoal', getCurrentGoal()))}",
@@ -171,7 +171,7 @@ for (const escapedRestValue of [
 }
 assert(html.includes('class="luna-insight-card"'), 'Guided Return should render Luna insight cards');
 assert(html.includes('aria-label="Luna insight for this step"'), 'Guided Return insights should be accessible labelled coaching regions');
-for (const copy of ['Start by naming one real thing Luna can hold', 'one unfinished thing, not a whole life system', 'One small action is enough', 'one distraction, larger idea, or pressure that can wait', 'This is not a log or report', 'The return is held clearly enough']) {
+for (const copy of ['Name one unfinished thing for Luna to hold', 'It does not need to be a whole life system', 'One small action is enough', 'one distraction, larger idea, or pressure that can wait', 'This is not a log or report', 'Luna has one named thing and one visible next move']) {
   assert(html.includes(copy), `Guided Return insight copy should include: ${copy}`);
 }
 assert(html.includes('updateVisibleGuidedInsight();'), 'Guided inline edits should refresh visible Luna insight copy after typing');
@@ -328,10 +328,10 @@ assert(css.includes('padding: 24px max(14px, env(safe-area-inset-left)) calc(80p
 assert(css.includes('font-size: clamp(1.72rem, 8.2vw, 2.28rem)'), 'mobile opening headline should be calmer than the desktop title scale');
 assertRuleContains('.opening-context', ['background: transparent', 'border: 0', 'opacity: 0.82']);
 assertRuleContains('.opening-context-data', ['position: absolute', 'clip-path: inset(50%)']);
-assert(html.includes('Give Luna one unfinished thing, then return gently.'), 'opening should explain that Return gently starts the guided path');
+assert(html.includes('One unfinished thing. One gentle return.'), 'opening should explain that Return gently starts the guided path');
 assert(html.includes('Find your place'), 'Guided Return copy should name the first step clearly');
-assert(html.includes('Name the one thing you want to return to and what would help now.'), 'first Guided Return step should plainly explain its purpose');
-assert(html.includes('A gentle path back to one unfinished thing: remember where you left off, then choose one small next step.'), "opening should briefly explain Luna's purpose");
+assert(html.includes('Begin with the one thing you are returning to.'), 'first Guided Return step should plainly explain its purpose');
+assert(html.includes('A gentle path through one return: find your place, remember enough, choose one small next step, then rest.'), "opening should briefly explain Luna's purpose");
 assertRuleContains('.try-editing-card', ['background: rgb(25 34 58 / 94%)', 'border: 1px solid rgb(196 205 238 / 22%)']);
 assertRuleContains('.edit-field input', ['background: rgb(35 45 72 / 96%)', 'box-shadow: none']);
 assertRuleContains('.guided-return-view', ['background: rgb(13 21 40 / 96%)', 'box-shadow: 0 16px 36px']);

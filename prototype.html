@@ -701,12 +701,12 @@
 
     .guided-answer-space {
       display: grid;
-      gap: 12px;
+      gap: 10px;
       min-width: 0;
       max-width: 100%;
       padding: clamp(14px, 2.5vw, 18px);
-      background: rgb(20 30 54 / 74%);
-      border: 1px solid rgb(205 213 244 / 18%);
+      background: rgb(17 26 48 / 68%);
+      border: 1px solid rgb(205 213 244 / 15%);
       border-radius: 20px;
       box-shadow: inset 0 1px 0 rgb(255 255 255 / 5%);
     }
@@ -810,10 +810,10 @@
       gap: 8px;
       min-width: 0;
       max-width: 100%;
-      padding: 14px 16px;
+      padding: 13px 15px;
       color: var(--moon-soft);
-      background: rgb(28 38 63 / 74%);
-      border: 1px solid rgb(223 200 137 / 18%);
+      background: rgb(22 32 56 / 62%);
+      border: 1px solid rgb(223 200 137 / 14%);
       border-radius: 18px;
       box-shadow: inset 0 1px 0 rgb(255 255 255 / 5%);
     }
@@ -904,7 +904,8 @@
 
     .rest-landing-card {
       gap: 10px;
-      background: rgb(25 35 60 / 86%);
+      padding: clamp(22px, 3.4vw, 30px);
+      background: rgb(28 38 64 / 90%);
       border-color: rgb(223 200 137 / 20%);
     }
 
@@ -914,8 +915,8 @@
 
     .rest-held-words {
       gap: 8px;
-      font-size: 0.94rem;
-      background: rgb(14 22 40 / 42%);
+      font-size: 0.92rem;
+      background: rgb(14 22 40 / 34%);
       border-color: rgb(189 200 238 / 12%);
       box-shadow: none;
     }
@@ -1096,10 +1097,10 @@
         <div class="opening-moonrise">
           <div class="luna-mark">Luna</div>
           <h1 class="opening-title">Find your way back to one unfinished thing.</h1>
-          <p class="opening-message">A gentle path back to one unfinished thing: remember where you left off, then choose one small next step.</p>
+          <p class="opening-message">A gentle path through one return: find your place, remember enough, choose one small next step, then rest.</p>
         </div>
         <div class="opening-context" aria-label="Current project">
-          <p class="opening-thread-hint">Give Luna one unfinished thing, then return gently.</p>
+          <p class="opening-thread-hint">One unfinished thing. One gentle return.</p>
           <div class="opening-context-data" aria-hidden="true">
             <span class="label">Waiting here</span>
             <h2 class="opening-project-name" id="opening-project-name-display">Name the thing you want to return to.</h2>
@@ -1133,12 +1134,12 @@
         <div class="guided-shell-header">
           <p class="guided-shell-kicker">Guided Return</p>
           <h2 class="guided-shell-title" id="guided-shell-title">One quiet return space</h2>
-          <p class="guided-shell-note">A short path to remember where you are, choose one small next step, set aside distractions, record what changed, and rest.</p>
+          <p class="guided-shell-note">A short path through one return: find your place, remember, choose, set aside, record, then rest.</p>
         </div>
         <div class="guided-stage-panel" id="guided-stage-panel" aria-labelledby="guided-stage-title">
           <p class="guided-position" id="guided-position">Stage 1 of 6</p>
           <h2 id="guided-stage-title" tabindex="-1">Find your place</h2>
-          <p class="path-note" id="guided-stage-intro">Name the one thing you want to return to and what would help now.</p>
+          <p class="path-note" id="guided-stage-intro">Begin with the one thing you are returning to.</p>
           <div class="guided-stage-body" id="guided-stage-body"></div>
         </div>
         <div class="guided-actions">
@@ -1276,7 +1277,7 @@
         <span>Find your place</span>
         <span>Remember</span>
         <span>Choose</span>
-        <span>Leave alone</span>
+        <span>Set Aside</span>
         <span>Record</span>
         <span>Rest</span>
       </div>
@@ -1284,9 +1285,9 @@
         <li>Find your place with the current project name and goal.</li>
         <li>Remember enough context to continue.</li>
         <li>Choose one next action.</li>
-        <li>Leave one thing alone for now.</li>
+        <li>Set aside one thing for now.</li>
         <li>Record one brief change.</li>
-        <li>Rest before adding more.</li>
+        <li>Rest. Nothing else needs to be added.</li>
       </ol>
       </section>
 
@@ -1440,42 +1441,42 @@
       if (stageKey === 'place') {
         const placeFieldKey = getGuidedPlaceFieldKey();
         if (placeFieldKey === 'projectName' && !projectNamed) {
-          return 'Start by naming one real thing Luna can hold. The project name can be one unfinished thing, not a whole life system.';
+          return 'Name one unfinished thing for Luna to hold. It does not need to be a whole life system.';
         }
         if (placeFieldKey === 'currentGoal' && !goalNamed) {
-          return 'Now name what would make returning easier. One gentle condition for re-entry is enough.';
+          return 'Now name what would make returning easier. One small condition is enough.';
         }
         if (!projectNamed || !goalNamed) {
-          return 'Start by naming one real thing Luna can hold. The project name can be one unfinished thing, not a whole life system; the goal can name what returning should make easier.';
+          return 'Name one unfinished thing and what would make returning easier. That is enough to begin.';
         }
         if (guidance.goal.status === 'suggestion') {
           return `${guidance.goal.reason} The project name can stay simple, and the goal can be just enough to make returning easier.`;
         }
-        return 'That is enough to find your place. Luna can hold this as one unfinished thing with a clear return point.';
+        return 'That is enough to find your place: one unfinished thing with a clear return point.';
       }
       if (stageKey === 'choose') {
         if (guidance.nextAction.status === 'suggestion') {
           return guidance.nextAction.reason;
         }
-        return 'One small action is enough. This looks clear enough to act as the lantern for this return.';
+        return 'One small action is enough. This can be the lantern for this return.';
       }
       if (stageKey === 'setAside') {
         if (guidance.setAside.status === 'suggestion') {
           return `${guidance.setAside.reason} This field is only for one distraction, larger idea, or pressure that can wait.`;
         }
-        return 'That can wait while you return. Naming it here is a boundary, not a backlog.';
+        return 'That can wait. Naming it here is a boundary, not a backlog.';
       }
       if (stageKey === 'record') {
         if (guidance.recordChange.status === 'suggestion') {
           return `${guidance.recordChange.reason} This is not a log or report; one small note about what changed is enough.`;
         }
-        return 'This note is enough to make returning easier later. It does not need to become a report.';
+        return 'This note is enough for later. It does not need to become a report.';
       }
       if (stageKey === 'rest') {
         if (projectNamed && actionNamed) {
-          return 'The return is held clearly enough: Luna has one named thing and one visible next move. You can stop here.';
+          return 'Luna has one named thing and one visible next move. You can stop here.';
         }
-        return 'You can still stop gently. The next return can start by naming the missing piece: one real thing Luna can hold, or one small visible next move.';
+        return 'You can still stop gently. Next time can begin with one unfinished thing or one small visible move.';
       }
       return guidance.contextMessage || guidance.allClearMessage;
     };
@@ -1591,10 +1592,10 @@
     const guidedStages = [
       {
         title: 'Find your place',
-        intro: 'Answer only what helps you re-enter this one return.',
+        intro: 'Answer one thing at a time.',
         render: () => `
           <div class="guided-question-card">
-            <p class="guided-answer-note">Luna asks one thing at a time. Your words stay local to this browser.</p>
+            <p class="guided-answer-note">One question at a time. Your words stay local to this browser.</p>
             <div class="guided-inline-edit" aria-label="Find your place editable project context">
               ${renderGuidedEditableField(getGuidedPlaceFieldKey())}
             </div>
@@ -1608,7 +1609,7 @@
       },
       {
         title: 'Remember',
-        intro: 'Remember only enough context to continue without expanding the project.',
+        intro: 'Remember enough to continue, without making the project larger.',
         render: () => `
           <article class="quiet-card">
             <span class="label">Remember</span>
@@ -1619,21 +1620,21 @@
       },
       {
         title: 'Choose',
-        intro: 'Let this be one visible move, not a plan.',
+        intro: 'Choose one small visible move.',
         tone: 'choose',
         render: () => `
           <div class="guided-question-card">
             <div class="guided-inline-edit" aria-label="Choose editable next action">
               ${renderGuidedEditableField('nextAction')}
             </div>
-            <p class="guided-answer-note">This becomes the visible move Luna holds for this return.</p>
+            <p class="guided-answer-note">This is the One Next Action Luna holds for this return.</p>
           </div>
           ${renderLunaInsight('choose')}
         `
       },
       {
         title: 'Set Aside',
-        intro: 'Give one pressure permission to wait.',
+        intro: 'Name one thing that can wait.',
         tone: 'set-aside',
         render: () => `
           <div class="guided-question-card">
@@ -1647,7 +1648,7 @@
       },
       {
         title: 'Record',
-        intro: 'Name the smallest change you can honestly see.',
+        intro: 'Record one small change.',
         tone: 'record',
         render: () => `
           <div class="guided-question-card">
@@ -1661,7 +1662,7 @@
       },
       {
         title: 'Rest',
-        intro: 'That is enough. You can stop here.',
+        intro: 'You reached Rest. You can stop here.',
         tone: 'rest',
         render: () => `
           <article class="quiet-card rest-card rest-landing-card">
@@ -1672,7 +1673,7 @@
           ${renderLunaInsight('rest')}
           <article class="quiet-card rest-held-words">
             <span class="label">Held for now</span>
-            <h3>The words Luna is keeping close.</h3>
+            <h3>Held words for when you return.</h3>
             <p><strong>Project:</strong> ${escapeHtml(formatRestSummaryValue('projectName', getProjectName()))}</p>
             <p><strong>Goal:</strong> ${escapeHtml(formatRestSummaryValue('currentGoal', getCurrentGoal()))}</p>
             <p><strong>Next action:</strong> ${escapeHtml(formatRestSummaryValue('nextAction', getNextAction()))}</p>

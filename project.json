@@ -3,6 +3,10 @@
   "statusHistory": [
     {
       "date": "2026-07-13",
+      "note": "2026-07-13: This was a focused Guided Return coherence pass that smoothed copy and presentation seams across the existing six-stage loop while preserving the one-question Find your place prototype, answer spaces, Rest soft landing, and five-value local-only/no-network boundary."
+    },
+    {
+      "date": "2026-07-13",
       "note": "2026-07-13: This was a focused Guided Return Rest soft-landing slice that made the ending feel less like a report and more like Luna gently holding one completed return, while preserving the six-stage flow, one-question Find your place prototype, answer spaces, and five-value local-only/no-network boundary."
     },
     {
@@ -622,9 +626,9 @@
       "note": "The project is resting after a good run and ready for one gentle improvement."
     }
   ],
-  "currentGoal": "Rest after the Guided Return Rest soft-landing slice.",
-  "lastCompletedRun": "2026-07-13: This was a focused Guided Return Rest soft-landing slice that made the ending feel less like a report and more like Luna gently holding one completed return, while preserving the six-stage flow, one-question Find your place prototype, answer spaces, and five-value local-only/no-network boundary.",
-  "nextStep": "Human mobile usability test of the Rest soft landing.",
+  "currentGoal": "Complete the Guided Return coherence pass across the existing six-stage loop without changing behavior or boundaries.",
+  "lastCompletedRun": "Guided Return coherence pass: smoothed copy and presentation seams across Opening → Find your place → Remember → Choose → Set Aside → Record → Rest while preserving one-question Find your place, answer spaces, Rest soft landing, and five local-only values.",
+  "nextStep": "Human full-loop mobile test of Guided Return coherence.",
   "dashboardGuide": [
     "Welcome starts the path to read through Record the Change before choosing more work.",
     "Status gives a quick snapshot of how the project is doing right now.",
