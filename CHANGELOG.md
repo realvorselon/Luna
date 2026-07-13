@@ -10,6 +10,13 @@
 
 ## 2026-07-13
 
+### Purpose and Guided Return Orientation Copy Pass
+
+- Clarified the opening threshold so Luna says it helps return to one unfinished thing and choose one small next step.
+- Clarified that Return gently starts a short guided path, and rewrote visible Guided Return stage copy for Orient, Remember, Choose, Set Aside, Record, and Rest in plainer purpose-first language.
+- Preserved layout, CSS, JavaScript behavior, storage keys, guidance engine behavior, input limits, Shape this return, Open full overview, and the full six-stage order.
+- Set Luna back to Rest; next is human mobile clarity check of the opening and Guided Return path.
+
 - Minimized the opening threshold project context card into a small “One unfinished thing is waiting.” hint so the first impression reads more like moon/Luna → gate → Return gently than a project summary.
 - Preserved the saved project name and next action display bindings in the markup, kept `.opening-gate` wrapping the real `Return gently` button, and left Shape this return, Open full overview, storage keys, guidance, and network-free behavior unchanged.
 
