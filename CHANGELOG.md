@@ -10,6 +10,13 @@
 
 ## 2026-07-13
 
+### First-Use Empty-State Invitation Copy Pass
+
+- Replaced fake project-feeling defaults with warmer invitation prompts for project name, current goal, One Next Action, Set Aside / Ignore For Now, and Record the Change.
+- Adjusted opening, Guided Return, and Rest summary wording so first use does not imply Luna already knows a real project.
+- Preserved the five existing local storage keys, fields, maxlengths, Guided Return inline editing, Shape this return Apply → Undo behavior, safe rendering, no-network behavior, stage order, and mobile layout protections.
+- Set Luna back to Rest; next is a human mobile first-use test of the invitation defaults inside Guided Return.
+
 ### Guided Return Inline Editing Usability Slice
 
 - Made Guided Return actionable by adding inline controls for the existing five local values where they matter in the flow: project name/current goal, One Next Action, Set Aside / Ignore For Now, and Record the Change.

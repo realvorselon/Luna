@@ -1,11 +1,11 @@
 (function (root) {
   'use strict';
 
-  const fallbackProjectName = 'A quiet unfinished project';
-  const fallbackGoal = 'Make the next return easier';
-  const fallbackNextAction = 'Choose one small, safe next step.';
-  const fallbackSetAside = 'Leave the larger ideas alone for now.';
-  const fallbackRecordChange = 'Record one plain note about what changed.';
+  const fallbackProjectName = 'Name the thing you want to return to.';
+  const fallbackGoal = 'What are you trying to make easier?';
+  const fallbackNextAction = 'What is one small next step?';
+  const fallbackSetAside = 'What can wait while you return?';
+  const fallbackRecordChange = 'What changed, even a little?';
 
   const voiceLibrary = {
     goalBlank: [
@@ -157,10 +157,10 @@
     const current = normalizeProjectText(value, fallbackGoal);
     const project = normalizeProjectText(projectName, fallbackProjectName);
     const seed = `${project}|${current}`;
-    if (!normalizeProjectText(value)) return suggestion(current, `Make the next step in ${project} easier to see.`, voice('goalBlank', seed), 'goalBlank');
-    if (isFallback(current, fallbackGoal)) return suggestion(current, `Make the next step in ${project} easier to see.`, voice('goalVague', seed), 'goalVague');
+    if (!normalizeProjectText(value)) return suggestion(current, `Name what would make returning to ${project} easier.`, voice('goalBlank', seed), 'goalBlank');
+    if (isFallback(current, fallbackGoal)) return suggestion(current, `Name what would make returning to ${project} easier.`, voice('goalVague', seed), 'goalVague');
     if (sentenceCount(current) > 1) return suggestion(current, firstSentence(current), voice('goalLong', seed), 'goalLong');
-    if (current.length > 120 || hasRepeatedAnd(current) || broadGoal.test(current)) return suggestion(current, firstClause(firstSentence(current)) || `Make the next step in ${project} easier to see.`, voice(current.length > 120 ? 'goalLong' : 'goalBroad', seed), current.length > 120 ? 'goalLong' : 'goalBroad');
+    if (current.length > 120 || hasRepeatedAnd(current) || broadGoal.test(current)) return suggestion(current, firstClause(firstSentence(current)) || `Name what would make returning to ${project} easier.`, voice(current.length > 120 ? 'goalLong' : 'goalBroad', seed), current.length > 120 ? 'goalLong' : 'goalBroad');
     return clear(current, voice('goalClear', seed), 'goalClear');
   };
 
@@ -168,9 +168,9 @@
     const current = normalizeProjectText(value, fallbackNextAction);
     const project = normalizeProjectText(projectName, fallbackProjectName);
     const seed = `${project}|${current}`;
-    if (!normalizeProjectText(value) || isFallback(current, fallbackNextAction)) return suggestion(current, `Open ${project} and choose the smallest visible next move.`, voice('actionBlank', seed), 'actionBlank');
+    if (!normalizeProjectText(value) || isFallback(current, fallbackNextAction)) return suggestion(current, `Open ${project} and choose one small visible next move.`, voice('actionBlank', seed), 'actionBlank');
     if (sentenceCount(current) > 1 || hasListShape(current)) return suggestion(current, firstClause(current), voice('actionMultiple', seed), 'actionMultiple');
-    if (broadAction.test(current)) return suggestion(current, `Open ${project} and choose the smallest visible next move.`, voice('actionBroad', seed), 'actionBroad');
+    if (broadAction.test(current)) return suggestion(current, `Open ${project} and choose one small visible next move.`, voice('actionBroad', seed), 'actionBroad');
     return clear(current, voice('actionClear', seed), 'actionClear');
   };
 
@@ -179,7 +179,7 @@
     const current = normalizeProjectText(value, fallbackSetAside);
     const goal = normalizeProjectText(currentGoal, fallbackGoal);
     const seed = `${goal}|${current}`;
-    if (!raw || isFallback(current, fallbackSetAside)) return suggestion(current, `Leave anything beyond '${goal}' for later.`, voice('setAsideBlank', seed), 'setAsideBlank');
+    if (!raw || isFallback(current, fallbackSetAside)) return suggestion(current, `Let anything beyond '${goal}' wait for now.`, voice('setAsideBlank', seed), 'setAsideBlank');
     if (current.length > 110 || hasListShape(current)) return suggestion(current, firstClause(firstSentence(current)), voice('setAsideMultiple', seed), 'setAsideMultiple');
     return clear(current, voice('setAsideClear', seed), 'setAsideClear');
   };
@@ -190,7 +190,7 @@
     const action = normalizeProjectText(nextAction, fallbackNextAction);
     const project = normalizeProjectText(projectName, fallbackProjectName);
     const seed = `${project}|${action}|${current}`;
-    if (!raw || isFallback(current, fallbackRecordChange)) return suggestion(current, `Returned to ${project} and chose: ${stripTerminalPunctuation(action)}.`, voice('recordBlank', seed), 'recordBlank');
+    if (!raw || isFallback(current, fallbackRecordChange)) return suggestion(current, `Noted one small change while returning to ${project}: ${stripTerminalPunctuation(action)}.`, voice('recordBlank', seed), 'recordBlank');
     if (current.length > 130 || sentenceCount(current) > 1 || futureLogInstruction.test(current)) return suggestion(current, firstSentence(current), voice('recordLong', seed), 'recordLong');
     return clear(current, voice('recordClear', seed), 'recordClear');
   };

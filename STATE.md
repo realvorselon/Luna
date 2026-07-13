@@ -1,11 +1,11 @@
-Luna is at Rest after a Guided Return usability slice that made the existing five local values editable inside the flow while preserving the one-project, local-only, no-network boundary.
+Luna is at Rest after a first-use empty-state / invitation copy pass that made the existing five local defaults feel like honest prompts instead of fake project content, while preserving the one-project, local-only, no-network boundary.
 
-Next suggested step: Human mobile usability test of editing inside the Guided Return flow.
+Next suggested step: Human mobile first-use test of the invitation defaults inside Guided Return.
 # State
 
-Luna is at Rest after making Guided Return usable as an inline return ritual: Find your place, Choose, Set Aside, and Record now edit the same five local project values used by the full overview, while preserving Shape this return, Apply → Undo, local-only storage, deterministic guidance, safe rendering, mobile comfort, reduced-motion behavior, and the complete Guided Return loop.
+Luna is at Rest after refining first-use empty states so Guided Return invites a person to name the unfinished thing, choose one next step, set aside one distraction, and record what changed without pretending a real project already exists. The same five local project values, Shape this return, Apply → Undo, local-only storage, deterministic guidance, safe rendering, mobile comfort, reduced-motion behavior, and complete Guided Return loop remain preserved.
 
-Next suggested step: Human mobile usability test of editing inside the Guided Return flow.
+Next suggested step: Human mobile first-use test of the invitation defaults inside Guided Return.
 
 ## Full Overview Editing Clarity — 2026-07-12
 
@@ -25,10 +25,11 @@ Luna is becoming a small, moonlit one-project return app. It begins with a real 
 
 ## Current Goal
 
-Rest after a Guided Return inline editing usability slice.
+Rest after a first-use empty-state invitation copy pass for Guided Return.
 
 ## Last Completed Run
 
+- 2026-07-13: Completed a first-use empty-state invitation copy pass that made Luna’s five default local values feel honest and usable as prompts, not fake project content, while preserving the existing fields, storage keys, Guided Return inline editing, Shape this return Apply → Undo, safe rendering, and no-network/no-new-behavior boundary.
 - 2026-07-13: Completed a Guided Return usability slice that made the existing five local values editable where they matter inside the flow, added a brief Rest summary, and preserved the one-project/local-only/no-network boundary, storage keys, input limits, Shape this return Apply → Undo behavior, safe rendering, mobile comfort, and stage order.
 - 2026-07-13: Renamed the first visible Guided Return stage from “Orient” to “Find your place,” clarified that it helps someone see the one thing they are returning to and where it stands, and preserved stage order, behavior, storage keys, input limits, and network-free guidance.
 - 2026-07-13: Clarified Luna’s opening purpose and Guided Return step copy so a new person can understand that Return gently starts a short path back to one unfinished thing, one small next step, setting aside distractions, recording what changed, and resting.
@@ -49,7 +50,7 @@ Rest after a Guided Return inline editing usability slice.
 
 ## Next Suggested Step
 
-Human mobile usability test of editing inside the Guided Return flow.
+Human mobile first-use test of the invitation defaults inside Guided Return.
 
 ## Notes
 
