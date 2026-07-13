@@ -8,6 +8,15 @@
 
 # Changelog
 
+## 2026-07-13
+
+### Opening Threshold Slice 01 Planning
+
+- Added `OPENING_SLICE.md` to plan the first narrow garden-gate press-start visual slice for the opening threshold.
+- Kept the plan explicitly docs-only: no prototype, CSS, JavaScript behavior, assets, storage keys, guidance-engine, backend, account, analytics, model, or network changes.
+- Set Luna back to Rest; next is implementing the first small garden-gate opening threshold slice without broad redesign.
+
+
 ## 2026-07-12
 
 ### Guided Return Mobile Layout Regression Fix

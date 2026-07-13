@@ -574,9 +574,9 @@
       "note": "The project is resting after a good run and ready for one gentle improvement."
     }
   ],
-  "currentGoal": "Rest after adding the visual north-star note for Luna’s moonlit garden return direction.",
-  "lastCompletedRun": "2026-07-12: Added DESIGN.md as a concise visual north-star note anchoring Luna’s finished look and feel around a quiet moonlit garden return, opening gate threshold, lantern/path guidance, small night companion cues, game-design attention logic without gamification, and small visual-slice implementation rules.",
-  "nextStep": "Plan the first small garden-gate visual slice for the opening threshold.",
+  "currentGoal": "Rest after planning the first opening-threshold visual slice.",
+  "lastCompletedRun": "2026-07-13: Added OPENING_SLICE.md to plan the first narrow garden-gate press-start visual slice for Luna’s opening threshold while keeping the current prototype behavior unchanged.",
+  "nextStep": "Implement the first small garden-gate opening threshold slice.",
   "dashboardGuide": [
     "Welcome starts the path to read through Record the Change before choosing more work.",
     "Status gives a quick snapshot of how the project is doing right now.",
@@ -587,8 +587,8 @@
     "Optional Reflection can wait; Philosophy Garden is a gentle reflection layer, not Luna's main engine."
   ],
   "futureIdeas": [
-    "Plan the first small garden-gate visual slice for the opening threshold.",
-    "If visual implementation begins, preserve current behavior and change only one small opening-threshold slice."
+    "Implement the first small garden-gate opening threshold slice.",
+    "Keep the implementation narrow: opening threshold visual/layout only, with no behavior expansion."
   ],
   "decisionLog": [
     "2026-07-12: Completed the first full Guided Return loop as the second meaningful v0.1 vertical slice after the opening threshold; Set Aside stays not-a-backlog, Record stays brief, and Rest becomes a real stopping point before returning to Luna.",
@@ -612,8 +612,8 @@
     "The Garden Cycle connects the Reflection Card, Garden Review, Next Garden Update, and rest step so beginners can see how Philosophy Garden pieces fit together."
   ],
   "ideaQueue": [
-    "Plan the first small garden-gate visual slice for the opening threshold.",
-    "If visual implementation begins, preserve current behavior and change only one small opening-threshold slice."
+    "Implement the first small garden-gate opening threshold slice.",
+    "Keep the implementation narrow: opening threshold visual/layout only, with no behavior expansion."
   ],
   "ideaQueueGuide": [
     "Choose one small task that can be finished clearly in a single update.",
@@ -648,10 +648,10 @@
     "Visit http://localhost:8000 in a browser to view the dashboard."
   ],
   "nextAction": {
-    "title": "Plan the first small garden-gate visual slice",
-    "description": "Plan the first small garden-gate visual slice for the opening threshold before changing UI code.",
-    "whyItMatters": "This keeps Luna aligned with the new moonlit garden return north star while avoiding a broad redesign or dashboard drift.",
-    "status": "Resting before visual slice planning"
+    "title": "Implement the garden-gate opening slice",
+    "description": "Implement the first small garden-gate opening threshold slice.",
+    "whyItMatters": "This turns the new opening-slice plan into one focused visual/layout translation without broad redesign or behavior expansion.",
+    "status": "Ready after planning"
   },
   "creativeSeed": {
     "name": "Philosophy Garden",
@@ -719,9 +719,9 @@
   ],
   "currentMode": {
     "name": "Rest",
-    "description": "Luna is resting after adding the visual north-star note for a quiet moonlit garden return direction.",
-    "whyItMatters": "Rest protects current behavior while future visual work starts from the moonlit sky, garden gate, lantern/path, and gentle return metaphor instead of broad redesign.",
+    "description": "Luna is resting after planning the first opening-threshold visual slice.",
+    "whyItMatters": "Rest protects current behavior while the next visual implementation stays limited to a narrow moonlit garden-gate opening threshold translation.",
     "value": "Rest"
   },
-  "nextSuggestedStep": "Plan the first small garden-gate visual slice for the opening threshold."
+  "nextSuggestedStep": "Implement the first small garden-gate opening threshold slice."
 }
