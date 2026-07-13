@@ -914,10 +914,10 @@
     }
 
     .rest-held-words {
-      gap: 8px;
+      gap: 12px;
       font-size: 0.92rem;
-      background: rgb(14 22 40 / 34%);
-      border-color: rgb(189 200 238 / 12%);
+      background: rgb(14 22 40 / 42%);
+      border-color: rgb(189 200 238 / 14%);
       box-shadow: none;
     }
 
@@ -927,11 +927,54 @@
     }
 
     .rest-held-words h3 {
-      font-size: clamp(1rem, 2vw, 1.18rem);
+      font-size: clamp(1.04rem, 2vw, 1.22rem);
     }
 
     .rest-held-words p {
       color: rgb(216 224 246 / 78%);
+    }
+
+    .return-card-list {
+      display: grid;
+      gap: 10px;
+      margin-top: 2px;
+    }
+
+    .return-card-row {
+      display: grid;
+      gap: 4px;
+      min-width: 0;
+      padding: 10px 12px;
+      background: rgb(9 16 31 / 22%);
+      border: 1px solid rgb(189 200 238 / 10%);
+      border-radius: 16px;
+    }
+
+    .return-card-row strong {
+      color: var(--silver);
+      font-size: 0.74rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .return-card-row span {
+      overflow-wrap: anywhere;
+      color: rgb(235 239 255 / 84%);
+    }
+
+    .return-card-lantern {
+      background: rgb(38 42 58 / 88%);
+      border-color: rgb(255 214 128 / 28%);
+    }
+
+    .return-card-lantern strong,
+    .return-card-lantern span {
+      color: var(--lantern);
+    }
+
+    .return-card-cue {
+      margin-top: 2px;
+      color: rgb(244 232 196 / 88%);
     }
 
     .return-path {
@@ -1671,14 +1714,18 @@
             <p>You can stop here. Luna will keep the thread warm until you come back.</p>
           </article>
           ${renderLunaInsight('rest')}
-          <article class="quiet-card rest-held-words">
-            <span class="label">Held for now</span>
-            <h3>Held words for when you return.</h3>
-            <p><strong>Project:</strong> ${escapeHtml(formatRestSummaryValue('projectName', getProjectName()))}</p>
-            <p><strong>Goal:</strong> ${escapeHtml(formatRestSummaryValue('currentGoal', getCurrentGoal()))}</p>
-            <p><strong>Next action:</strong> ${escapeHtml(formatRestSummaryValue('nextAction', getNextAction()))}</p>
-            <p><strong>Set aside:</strong> ${escapeHtml(formatRestSummaryValue('setAside', getSetAside()))}</p>
-            <p><strong>Changed:</strong> ${escapeHtml(formatRestSummaryValue('recordChange', getRecordChange()))}</p>
+          <article class="quiet-card rest-held-words return-card">
+            <span class="label">Return Card</span>
+            <h3>A small place to resume.</h3>
+            <p>Luna gathered the thread into one held point.</p>
+            <div class="return-card-list">
+              <p class="return-card-row"><strong>Returning to</strong><span>${escapeHtml(formatRestSummaryValue('projectName', getProjectName()))}</span></p>
+              <p class="return-card-row"><strong>The thread</strong><span>${escapeHtml(formatRestSummaryValue('currentGoal', getCurrentGoal()))}</span></p>
+              <p class="return-card-row return-card-lantern"><strong>The lantern</strong><span>${escapeHtml(formatRestSummaryValue('nextAction', getNextAction()))}</span></p>
+              <p class="return-card-row"><strong>Waiting outside the gate</strong><span>${escapeHtml(formatRestSummaryValue('setAside', getSetAside()))}</span></p>
+              <p class="return-card-row"><strong>What changed</strong><span>${escapeHtml(formatRestSummaryValue('recordChange', getRecordChange()))}</span></p>
+            </div>
+            <p class="return-card-cue">When you come back, begin with the lantern.</p>
           </article>
         `
       }

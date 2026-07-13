@@ -10,9 +10,9 @@ Luna now has a concise visual direction note anchoring the finished look and fee
 
 # Roadmap
 
-## Current Opening Threshold Slice
+## Current Guided Return Return Card Slice
 
-A focused Guided Return coherence pass smoothed copy and presentation seams across the existing six-stage loop while preserving the one-question Find your place prototype, answer spaces, Rest soft landing, five saved local values, full overview editing, Shape this return Apply → Undo behavior, storage-key boundary, no-network/no-model behavior, mobile comfort, and reduced-motion protections. Luna remains at Rest. Next: Human full-loop mobile test of Guided Return coherence.
+This was a focused Guided Return Return Card slice that made Rest give the user a small useful outcome from the existing five local values, so the loop feels less like collecting inputs and more like Luna holding a clear place to resume. The Rest stage keeps the existing soft landing, preserves the six-stage flow and five local-only values, and emphasizes One Next Action as the lantern/resume point without adding task-list, dashboard, storage, network, model, or navigation behavior. Luna remains at Rest. Next: Human mobile test of whether the Rest Return Card feels useful.
 
 ## Current v0.1 Direction
 

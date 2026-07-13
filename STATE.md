@@ -1,5 +1,15 @@
 # State
 
+## Guided Return Return Card Slice
+
+- This was a focused Guided Return Return Card slice that made Rest give the user a small useful outcome from the existing five local values, so the loop feels less like collecting inputs and more like Luna holding a clear place to resume.
+- The Rest stage now keeps the soft landing and adds a calm Return Card with Returning to, The thread, The lantern, Waiting outside the gate, What changed, and a cue to begin with the lantern when the user comes back.
+- Status remains Rest; next suggested step is: “Human mobile test of whether the Rest Return Card feels useful.”
+
+Luna is at Rest after a focused Guided Return Return Card slice. Rest now turns the existing five local values into a small held return point without adding fields, storage keys, AI/API/model/network behavior, navigation changes, stages, task lists, dashboards, or visual redesign.
+
+Next suggested step: Human mobile test of whether the Rest Return Card feels useful.
+
 ## Guided Return Coherence Pass
 
 - This was a focused Guided Return coherence pass that smoothed copy and presentation seams across the existing six-stage loop while preserving the one-question Find your place prototype, answer spaces, Rest soft landing, and five-value local-only/no-network boundary.
@@ -28,7 +38,7 @@ Luna is becoming a small, moonlit one-project return app. It begins with a real 
 
 ## Current Goal
 
-Rest after the Guided Return coherence pass.
+Rest after the Guided Return Return Card slice.
 
 ## Last Completed Run
 
@@ -59,7 +69,7 @@ Rest after the Guided Return coherence pass.
 
 ## Next Suggested Step
 
-Human full-loop mobile test of Guided Return coherence.
+Human mobile test of whether the Rest Return Card feels useful.
 
 ## Notes
 
