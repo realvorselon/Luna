@@ -10,6 +10,13 @@
 
 ## 2026-07-13
 
+### Opening Threshold Slice 01 Implementation
+
+- Updated only `prototype.html` opening-threshold presentation so the first impression feels more like a quiet moonlit press-start threshold than a project dashboard.
+- Added a simple CSS-only garden-gate treatment around the existing `Return gently` primary action, kept the action clearly pressable, and made `Shape this return` plus `Open full overview` visually quieter while preserving behavior.
+- Kept existing local-only storage, five project keys, input limits, deterministic guidance, safe rendering, no network calls, no `Math.random()`, reduced-motion protections, mobile comfort protections, and the existing Guided Return/full overview paths.
+- Set Luna back to Rest; next is a human mobile comfort/readability check of the new opening threshold.
+
 ### Opening Threshold Slice 01 Planning
 
 - Added `OPENING_SLICE.md` to plan the first narrow garden-gate press-start visual slice for the opening threshold.

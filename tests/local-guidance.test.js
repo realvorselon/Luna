@@ -85,6 +85,10 @@ const js = fs.readFileSync('prototype-guidance.js', 'utf8');
 assert(!/Math\.random\s*\(/.test(js), 'guidance must not use Math.random');
 assert(!/\bfetch\s*\(/.test(html + js), 'local guidance must not call fetch');
 assert(html.includes('Edit Luna’s current project'), 'overview should include a clear editing-area heading');
+assert(html.includes('opening-moonrise'), 'opening threshold should foreground the Luna/moon title area');
+assert(html.includes('opening-gate'), 'opening threshold should include the CSS-only garden-gate press-start direction');
+assert(!html.includes('<div class="opening-gate" aria-hidden="true"></div>'), 'opening gate should not be an empty aria-hidden decorative sibling');
+assert(/<div class="opening-gate">\s*<button class="guided-control opening-primary" type="button" id="begin-guided-return-button">Return gently<\/button>\s*<\/div>/.test(html), 'opening gate should wrap the real Return gently button');
 assert(html.includes('Changing them updates Luna’s opening, Shape this return, and Guided Return'), 'overview should explain what the editable context updates');
 assert(html.includes('stores the five values only in this browser'), 'overview should explain local-only storage');
 for (const id of ['project-name-input', 'current-goal-input', 'next-action-input', 'set-aside-input', 'record-change-input']) {
@@ -154,6 +158,9 @@ assert(css.includes('.guided-control,\n    .clear-local-edits-button') && css.in
 
 assertRuleContains('body', ['background: linear-gradient(180deg']);
 assertRuleContains('.opening-threshold', ['background: rgb(19 28 50 / 92%)', 'box-shadow: 0 16px 36px']);
+assertRuleContains('.opening-gate::before', ['background: rgb(223 200 137 / 48%)', 'border-radius: 999px']);
+assert(css.includes('border-inline: 4px solid rgb(223 200 137 / 34%)'), 'opening gate posts should be CSS-only and subtle');
+assertRuleContains('.guided-control.opening-primary', ['min-width: min(100%, 220px)', 'border-color: rgb(223 200 137 / 48%)']);
 assertRuleContains('.try-editing-card', ['background: rgb(25 34 58 / 94%)', 'border: 1px solid rgb(196 205 238 / 22%)']);
 assertRuleContains('.edit-field input', ['background: rgb(35 45 72 / 96%)', 'box-shadow: none']);
 assertRuleContains('.guided-return-view', ['background: rgb(13 21 40 / 96%)', 'box-shadow: 0 16px 36px']);

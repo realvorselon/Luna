@@ -10,9 +10,9 @@ Luna now has a concise visual direction note anchoring the finished look and fee
 
 # Roadmap
 
-## Current Readiness Correction
+## Current Opening Threshold Slice
 
-A blocking mobile layout regression from the Guided Return size-stability pass has been corrected: Guided Return now favors readable normal-flow layout over a clipped rigid frame, keeps stage text/content/actions in separate non-overlapping regions, and removes mobile sticky action overlay behavior that could hide content. Luna remains at Rest. Next: human mobile-test Guided Return readability only: verify no overlapping text, no content hidden under actions, and no broken internal scroll before broader discussion.
+The first small opening-threshold visual slice is implemented: Luna’s opening now foregrounds the moon/title area, presents Return gently as a central CSS-only garden-gate press-start action, and keeps Shape this return plus Open full overview accessible but quieter. Luna remains at Rest. Next: human mobile comfort/readability check of this opening threshold only before any broader visual redesign.
 
 ## Current v0.1 Direction
 
@@ -34,7 +34,7 @@ Protected scope remains one local project only. The guidance engine must stay br
 - Protect the complete guided sequence: Orient → Remember → Choose → Set Aside → Record → Rest.
 - Keep Ignore For Now intentionally not-a-backlog, Record intentionally brief and non-administrative, and Rest as a real stopping point.
 - Human testing found the opening threshold passed strongly and the basic navigation loop works.
-- Current next step: human v0.1 readiness test on mobile through the complete flow. Do not add features during readiness testing.
+- Current next step: human mobile comfort/readability check of the new opening threshold, then resume the broader v0.1 readiness test only if the threshold feels calm and readable.
 
 ## Current Rest Checkpoint — First Complete Guided Loop
 

@@ -2,6 +2,10 @@
   "status": "Rest",
   "statusHistory": [
     {
+      "date": "2026-07-13",
+      "note": "2026-07-13: Implemented the first small garden-gate opening threshold visual slice in prototype.html, foregrounding the Luna moon/title area, making Return gently the central CSS-only press-start gate action, and keeping Shape this return plus Open full overview accessible but quieter while preserving existing behavior."
+    },
+    {
       "date": "2026-07-12",
       "note": "2026-07-12: Fixed the blocking Guided Return mobile layout regression from the size-stability pass by replacing the clipped rigid frame and sticky mobile action overlay with non-overlapping normal-flow stage header, content, and action regions while preserving fade-only motion, visual comfort, editing clarity, five storage keys, maxlengths, safe rendering, deterministic guidance, no network calls, and the complete loop."
     },
@@ -574,9 +578,9 @@
       "note": "The project is resting after a good run and ready for one gentle improvement."
     }
   ],
-  "currentGoal": "Rest after planning the first opening-threshold visual slice.",
-  "lastCompletedRun": "2026-07-13: Added OPENING_SLICE.md to plan the first narrow garden-gate press-start visual slice for Luna’s opening threshold while keeping the current prototype behavior unchanged.",
-  "nextStep": "Implement the first small garden-gate opening threshold slice.",
+  "currentGoal": "Rest after implementing the first opening-threshold visual slice.",
+  "lastCompletedRun": "2026-07-13: Implemented the first small garden-gate opening threshold visual slice in prototype.html, foregrounding the Luna moon/title area, making Return gently the central CSS-only press-start gate action, and keeping Shape this return plus Open full overview accessible but quieter while preserving existing behavior.",
+  "nextStep": "Human mobile comfort/readability check of the new opening threshold.",
   "dashboardGuide": [
     "Welcome starts the path to read through Record the Change before choosing more work.",
     "Status gives a quick snapshot of how the project is doing right now.",

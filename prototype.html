@@ -75,10 +75,10 @@
     }
 
     .luna-mark {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      margin-bottom: 24px;
+      display: inline-grid;
+      justify-items: center;
+      gap: 9px;
+      margin-bottom: 22px;
       color: var(--periwinkle);
       font-size: 0.82rem;
       font-weight: 780;
@@ -88,20 +88,43 @@
 
     .luna-mark::before {
       content: "";
-      width: 0.82rem;
-      height: 0.82rem;
+      width: 2.35rem;
+      height: 2.35rem;
       border-radius: 50%;
-      background: var(--lantern);
-      box-shadow: none;
+      background: var(--moon);
+      box-shadow: inset -9px 0 0 rgb(183 194 224 / 28%);
     }
 
     .opening-threshold {
+      position: relative;
       max-width: 680px;
-      padding: clamp(22px, 5vw, 38px);
+      padding: clamp(24px, 5vw, 42px);
+      overflow: hidden;
       background: rgb(19 28 50 / 92%);
       border: 1px solid rgb(196 205 238 / 18%);
       border-radius: 28px;
       box-shadow: 0 16px 36px rgb(0 0 0 / 18%);
+    }
+
+    .opening-threshold::after {
+      content: "";
+      position: absolute;
+      inset: auto 14% 0;
+      height: 82px;
+      pointer-events: none;
+      background:
+        linear-gradient(90deg, transparent, rgb(223 200 137 / 14%), transparent) top / 100% 1px no-repeat,
+        linear-gradient(180deg, rgb(223 200 137 / 8%), transparent 70%);
+      clip-path: polygon(46% 0, 54% 0, 64% 100%, 36% 100%);
+      opacity: 0.42;
+    }
+
+    .opening-moonrise {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      justify-items: center;
+      text-align: center;
     }
 
     .opening-title {
@@ -116,12 +139,17 @@
     }
 
     .opening-context {
+      position: relative;
+      z-index: 1;
       display: grid;
       gap: 8px;
       max-width: 560px;
-      margin-top: 26px;
-      padding-top: 22px;
-      border-top: 1px solid rgb(174 190 226 / 16%);
+      margin: 26px auto 0;
+      padding: 16px 18px;
+      background: rgb(12 19 42 / 34%);
+      border: 1px solid rgb(174 190 226 / 12%);
+      border-radius: 18px;
+      opacity: 0.84;
     }
 
     .opening-project-name {
@@ -138,16 +166,64 @@
     }
 
     .opening-actions {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      justify-items: center;
+      gap: 14px;
+      margin-top: 30px;
+    }
+
+    .opening-secondary-actions {
       display: flex;
       flex-wrap: wrap;
-      gap: 12px;
-      align-items: center;
-      margin-top: 28px;
+      justify-content: center;
+      gap: 10px 16px;
+    }
+
+    .opening-gate {
+      position: relative;
+      display: grid;
+      justify-items: center;
+      width: min(100%, 360px);
+      padding: 18px 32px 20px;
+    }
+
+    .opening-gate::before,
+    .opening-gate::after {
+      content: "";
+      position: absolute;
+      pointer-events: none;
+    }
+
+    .opening-gate::before {
+      top: 0;
+      left: 16%;
+      right: 16%;
+      height: 11px;
+      background: rgb(223 200 137 / 48%);
+      border: 1px solid rgb(251 244 226 / 24%);
+      border-radius: 999px;
+      box-shadow: 0 10px 0 -5px rgb(223 200 137 / 28%);
+    }
+
+    .opening-gate::after {
+      top: 10px;
+      bottom: 8px;
+      left: 24%;
+      right: 24%;
+      border-inline: 4px solid rgb(223 200 137 / 34%);
+      border-radius: 2px;
     }
 
     .guided-control.opening-primary {
-      padding: 13px 18px;
+      position: relative;
+      z-index: 1;
+      justify-self: center;
+      min-width: min(100%, 220px);
+      padding: 15px 22px;
       background: rgb(47 58 89 / 96%);
+      border-color: rgb(223 200 137 / 48%);
     }
 
     .quiet-reference-button {
@@ -728,9 +804,19 @@
       }
 
       .opening-actions {
-        display: grid;
         grid-template-columns: 1fr;
         margin-top: 22px;
+      }
+
+      .opening-gate {
+        width: min(100%, 300px);
+        padding-inline: 22px;
+      }
+
+      .opening-secondary-actions {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
       }
 
       .opening-actions .guided-control,
@@ -794,18 +880,24 @@
   <main>
     <header class="luna-opening" id="luna-opening">
       <div class="opening-threshold">
-        <div class="luna-mark">Luna</div>
-        <h1 class="opening-title">Find your way back to one unfinished thing.</h1>
-        <p class="opening-message">You left a small thread open. Luna remembers enough to help you return gently.</p>
+        <div class="opening-moonrise">
+          <div class="luna-mark">Luna</div>
+          <h1 class="opening-title">Find your way back to one unfinished thing.</h1>
+          <p class="opening-message">You left a small thread open. Luna remembers enough to help you return gently.</p>
+        </div>
         <div class="opening-context" aria-label="Current project">
           <span class="label">Waiting here</span>
           <h2 class="opening-project-name" id="opening-project-name-display">A quiet unfinished project</h2>
           <p class="opening-return-point">Next: <span id="opening-next-action-display">Choose one small, safe next step.</span></p>
         </div>
-        <div class="opening-actions">
-          <button class="guided-control opening-primary" type="button" id="begin-guided-return-button">Return gently</button>
-          <button class="quiet-reference-button" type="button" id="shape-return-button" aria-expanded="false" aria-controls="local-guidance-panel">Shape this return</button>
-          <button class="quiet-reference-button" type="button" id="show-overview-button">Open full overview</button>
+        <div class="opening-actions" aria-label="Opening threshold actions">
+          <div class="opening-gate">
+            <button class="guided-control opening-primary" type="button" id="begin-guided-return-button">Return gently</button>
+          </div>
+          <div class="opening-secondary-actions">
+            <button class="quiet-reference-button" type="button" id="shape-return-button" aria-expanded="false" aria-controls="local-guidance-panel">Shape this return</button>
+            <button class="quiet-reference-button" type="button" id="show-overview-button">Open full overview</button>
+          </div>
         </div>
         <aside class="local-guidance-panel" id="local-guidance-panel" aria-labelledby="local-guidance-title" hidden>
           <h2 id="local-guidance-title" tabindex="-1">Shape this return</h2>
