@@ -3,6 +3,10 @@
   "statusHistory": [
     {
       "date": "2026-07-13",
+      "note": "2026-07-13: Minimized the opening threshold project context into a small unfinished-thread hint so the first impression reads as moon/Luna presence, garden gate, and Return gently, while preserving project name and next action bindings, existing actions, storage keys, and Guided Return behavior."
+    },
+    {
+      "date": "2026-07-13",
       "note": "2026-07-13: Removed the remaining visible dashboard framing from the prototype return link and current project trail so Luna points back to its opening threshold while preserving layout, CSS, JavaScript behavior, storage keys, and Guided Return behavior."
     },
     {
@@ -586,9 +590,9 @@
       "note": "The project is resting after a good run and ready for one gentle improvement."
     }
   ],
-  "currentGoal": "Rest after removing visible dashboard framing from the current prototype copy.",
-  "lastCompletedRun": "2026-07-13: Removed the remaining visible dashboard framing from the prototype return link and current project trail so Luna points back to its opening threshold while preserving layout, CSS, JavaScript behavior, storage keys, and Guided Return behavior.",
-  "nextStep": "Human mobile comfort/readability check of the refined opening threshold.",
+  "currentGoal": "Rest after refining the opening threshold away from a visible project-summary card and toward a press-start gate.",
+  "lastCompletedRun": "2026-07-13: Minimized the opening threshold project context into a small unfinished-thread hint so the first impression reads as moon/Luna presence, garden gate, and Return gently, while preserving project name and next action bindings, existing actions, storage keys, and Guided Return behavior.",
+  "nextStep": "Human mobile comfort/readability check of the press-start opening threshold.",
   "dashboardGuide": [
     "Welcome starts the path to read through Record the Change before choosing more work.",
     "Status gives a quick snapshot of how the project is doing right now.",
@@ -731,9 +735,9 @@
   ],
   "currentMode": {
     "name": "Rest",
-    "description": "Luna is resting after planning the first opening-threshold visual slice.",
-    "whyItMatters": "Rest protects current behavior while the next visual implementation stays limited to a narrow moonlit garden-gate opening threshold translation.",
+    "description": "Luna is resting after a focused press-start opening threshold refinement.",
+    "whyItMatters": "Rest protects current behavior while the first impression stays limited to moon/Luna presence, one soft unfinished-thread hint, the garden gate, and Return gently.",
     "value": "Rest"
   },
-  "nextSuggestedStep": "Human mobile comfort/readability check of the refined opening threshold."
+  "nextSuggestedStep": "Human mobile comfort/readability check of the press-start opening threshold."
 }

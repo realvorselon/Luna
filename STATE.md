@@ -1,12 +1,11 @@
-Luna is at Rest after a tiny copy cleanup that removes the remaining visible dashboard framing from the prototype return link and current project trail. The refined opening threshold remains unchanged in layout and behavior.
+Luna is at Rest after refining the opening threshold into a quieter press-start first impression: moon/Luna presence, a small unfinished-thread hint, the garden gate, and Return gently, while preserving the saved project displays and existing behavior.
 
-Next suggested step: Human mobile comfort/readability check of the refined opening threshold.
-
+Next suggested step: Human mobile comfort/readability check of the press-start opening threshold.
 # State
 
-Luna is at Rest after implementing the first narrow garden-gate press-start translation of the opening threshold while preserving full overview editing clarity, Shape this return, Apply → Undo, local-only storage, deterministic guidance, safe rendering, mobile comfort, reduced-motion behavior, and the complete Guided Return loop.
+Luna is at Rest after refining the opening threshold so the first impression feels more like a quiet press-start threshold than a project summary, while preserving full overview editing clarity, Shape this return, Apply → Undo, local-only storage, deterministic guidance, safe rendering, mobile comfort, reduced-motion behavior, and the complete Guided Return loop.
 
-Next suggested step: Human mobile comfort/readability check of the refined opening threshold.
+Next suggested step: Human mobile comfort/readability check of the press-start opening threshold.
 
 ## Full Overview Editing Clarity — 2026-07-12
 
@@ -26,10 +25,11 @@ Luna is becoming a small, moonlit one-project return app. It begins with a real 
 
 ## Current Goal
 
-Rest after removing visible dashboard framing from the current prototype copy.
+Rest after refining the opening threshold away from a visible project-summary card and toward a press-start gate.
 
 ## Last Completed Run
 
+- 2026-07-13: Minimized the opening project context into a small unfinished-thread hint while preserving the project name and next action bindings, keeping Return gently inside the CSS-only gate as the main press-start action.
 - 2026-07-13: Removed the remaining visible dashboard framing from the prototype return link and current project trail so Luna points back to its opening threshold while preserving layout, CSS, JavaScript behavior, storage keys, and Guided Return behavior.
 - 2026-07-13: Refined the mobile opening threshold in `prototype.html` so the headline and project context are calmer, Return gently becomes the earlier visual/action focus, and Shape this return plus Open full overview have safer bottom breathing room without changing behavior.
 - 2026-07-13: Implemented the first small garden-gate opening threshold visual slice in `prototype.html`, foregrounding Luna/moon/title, making Return gently the central CSS-only gate action, and keeping Shape this return plus Open full overview quieter without changing behavior.
@@ -46,7 +46,7 @@ Rest after removing visible dashboard framing from the current prototype copy.
 
 ## Next Suggested Step
 
-Human mobile comfort/readability check of the refined opening threshold.
+Human mobile comfort/readability check of the press-start opening threshold.
 
 ## Notes
 

@@ -142,20 +142,41 @@
       position: relative;
       z-index: 1;
       display: grid;
-      gap: 5px;
-      max-width: 500px;
-      margin: 20px auto 0;
-      padding: 12px 16px;
-      background: rgb(12 19 42 / 22%);
-      border: 1px solid rgb(174 190 226 / 9%);
-      border-radius: 16px;
-      opacity: 0.72;
+      justify-items: center;
+      max-width: 360px;
+      margin: 16px auto 0;
+      padding: 0;
+      color: rgb(197 206 224 / 78%);
+      background: transparent;
+      border: 0;
+      border-radius: 0;
+      opacity: 0.82;
+    }
+
+    .opening-thread-hint {
+      margin: 0;
+      font-size: 0.95rem;
+      line-height: 1.45;
+      text-align: center;
+    }
+
+    .opening-context-data {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      margin: -1px;
+      padding: 0;
+      overflow: hidden;
+      clip: rect(0 0 0 0);
+      clip-path: inset(50%);
+      white-space: nowrap;
+      border: 0;
     }
 
     .opening-project-name {
       margin: 0;
       color: #fbf4e2;
-      font-size: clamp(1.05rem, 3vw, 1.32rem);
+      font-size: 1rem;
       line-height: 1.2;
       letter-spacing: -0.02em;
     }
@@ -163,7 +184,7 @@
     .opening-return-point {
       margin: 0;
       color: var(--silver);
-      font-size: 0.95rem;
+      font-size: 0.9rem;
     }
 
     .opening-actions {
@@ -821,19 +842,12 @@
       }
 
       .opening-context {
-        gap: 3px;
-        max-width: 320px;
-        margin-top: 14px;
-        padding: 9px 12px;
-        border-radius: 14px;
+        max-width: 280px;
+        margin-top: 12px;
+        padding: 0;
       }
 
-      .opening-project-name {
-        font-size: 1rem;
-        line-height: 1.22;
-      }
-
-      .opening-return-point { font-size: 0.86rem; }
+      .opening-thread-hint { font-size: 0.9rem; }
 
       .opening-actions {
         grid-template-columns: 1fr;
@@ -919,9 +933,12 @@
           <p class="opening-message">You left a small thread open. Luna remembers enough to help you return gently.</p>
         </div>
         <div class="opening-context" aria-label="Current project">
-          <span class="label">Waiting here</span>
-          <h2 class="opening-project-name" id="opening-project-name-display">A quiet unfinished project</h2>
-          <p class="opening-return-point">Next: <span id="opening-next-action-display">Choose one small, safe next step.</span></p>
+          <p class="opening-thread-hint">One unfinished thing is waiting.</p>
+          <div class="opening-context-data" aria-hidden="true">
+            <span class="label">Waiting here</span>
+            <h2 class="opening-project-name" id="opening-project-name-display">A quiet unfinished project</h2>
+            <p class="opening-return-point">Next: <span id="opening-next-action-display">Choose one small, safe next step.</span></p>
+          </div>
         </div>
         <div class="opening-actions" aria-label="Opening threshold actions">
           <div class="opening-gate">

@@ -163,7 +163,9 @@ assert(css.includes('border-inline: 4px solid rgb(223 200 137 / 34%)'), 'opening
 assertRuleContains('.guided-control.opening-primary', ['min-width: min(100%, 236px)', 'border-color: rgb(223 200 137 / 48%)']);
 assert(css.includes('padding: 24px max(14px, env(safe-area-inset-left)) calc(80px + env(safe-area-inset-bottom)) max(14px, env(safe-area-inset-right))'), 'mobile opening should preserve bottom safe-area breathing room');
 assert(css.includes('font-size: clamp(1.72rem, 8.2vw, 2.28rem)'), 'mobile opening headline should be calmer than the desktop title scale');
-assertRuleContains('.opening-context', ['background: rgb(12 19 42 / 22%)', 'opacity: 0.72']);
+assertRuleContains('.opening-context', ['background: transparent', 'border: 0', 'opacity: 0.82']);
+assertRuleContains('.opening-context-data', ['position: absolute', 'clip-path: inset(50%)']);
+assert(html.includes('One unfinished thing is waiting.'), 'opening should replace the dominant project context card with a small thread hint');
 assertRuleContains('.try-editing-card', ['background: rgb(25 34 58 / 94%)', 'border: 1px solid rgb(196 205 238 / 22%)']);
 assertRuleContains('.edit-field input', ['background: rgb(35 45 72 / 96%)', 'box-shadow: none']);
 assertRuleContains('.guided-return-view', ['background: rgb(13 21 40 / 96%)', 'box-shadow: 0 16px 36px']);
