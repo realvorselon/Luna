@@ -3,6 +3,10 @@
   "statusHistory": [
     {
       "date": "2026-07-13",
+      "note": "This was a focused moonlit atmosphere slice that made Luna’s opening and Guided Return shell feel more like one quiet return place while preserving the existing local-only flow, first-impression clarity, and Rest Return Card."
+    },
+    {
+      "date": "2026-07-13",
       "note": "This was a focused Luna first-impression clarity slice that made the opening explain the practical payoff of Guided Return: bringing one unfinished thing back into view, finding the thread, choosing a lantern, and leaving with a Return Card."
     },
     {
@@ -634,9 +638,9 @@
       "note": "The project is resting after a good run and ready for one gentle improvement."
     }
   ],
-  "currentGoal": "Rest after the Luna first-impression clarity slice.",
-  "lastCompletedRun": "Luna first-impression clarity slice: made the opening explain the practical payoff of Guided Return—bringing one unfinished thing back into view, finding the thread, choosing a lantern, and leaving with a Return Card—while preserving the protected local-only flow.",
-  "nextStep": "Human mobile test of whether Luna’s opening explains why Guided Return helps.",
+  "currentGoal": "Rest after the Luna moonlit atmosphere slice.",
+  "lastCompletedRun": "Moonlit atmosphere slice: made Luna’s opening and Guided Return shell feel more like one quiet return place while preserving the existing local-only flow, first-impression clarity, and Rest Return Card.",
+  "nextStep": "Human mobile test of whether Luna feels more like a quiet return place.",
   "dashboardGuide": [
     "Welcome starts the path to read through Record the Change before choosing more work.",
     "Status gives a quick snapshot of how the project is doing right now.",
@@ -651,6 +655,7 @@
     "Keep the implementation narrow: opening threshold visual/layout only, with no behavior expansion."
   ],
   "decisionLog": [
+    "2026-07-13: This was a focused moonlit atmosphere slice that made Luna’s opening and Guided Return shell feel more like one quiet return place while preserving the existing local-only flow, first-impression clarity, and Rest Return Card.",
     "2026-07-12: Completed the first full Guided Return loop as the second meaningful v0.1 vertical slice after the opening threshold; Set Aside stays not-a-backlog, Record stays brief, and Rest becomes a real stopping point before returning to Luna.",
     "2026-07-12: Human testing found the new Luna opening threshold passed strongly, but returning from Guided Return to the full overview left no direct route back to the Luna opening threshold; adding one secondary Return to Luna action completes the basic navigation loop without adding competing actions or changing persistence.",
     "2026-07-12: Luna deliberately shifted from many tiny micro-experiments toward fewer meaningful v0.1 vertical slices; the first is a real opening threshold that routes primarily into the existing Guided Return shell while preserving the full overview as quieter reference/editing mode.",
@@ -708,9 +713,9 @@
     "Visit http://localhost:8000 in a browser to view the dashboard."
   ],
   "nextAction": {
-    "title": "Human mobile opening clarity test",
-    "description": "Human mobile test of whether Luna’s opening explains why Guided Return helps.",
-    "whyItMatters": "The first-impression clarity slice is complete; a mobile human pass should confirm the opening communicates the unfinished thing → thread → lantern → Return Card payoff without prior context.",
+    "title": "Human mobile quiet return-place test",
+    "description": "Human mobile test of whether Luna feels more like a quiet return place.",
+    "whyItMatters": "The moonlit atmosphere slice is complete; a mobile human pass should confirm the opening and Guided Return shell feel like one quiet return place without crowding the local-only flow.",
     "status": "Ready for human test"
   },
   "creativeSeed": {
@@ -779,9 +784,9 @@
   ],
   "currentMode": {
     "name": "Rest",
-    "description": "Luna is resting after the first-impression clarity slice.",
-    "whyItMatters": "The opening now explains why Guided Return helps before a person starts, while preserving the local-only/no-network boundary and unchanged flow.",
+    "description": "Luna is resting after the moonlit atmosphere slice.",
+    "whyItMatters": "The opening and Guided Return shell now feel more like one quiet moonlit return place while preserving the protected local-only flow and unchanged behavior.",
     "value": "Rest"
   },
-  "nextSuggestedStep": "Human mobile test of whether Luna’s opening explains why Guided Return helps."
+  "nextSuggestedStep": "Human mobile test of whether Luna feels more like a quiet return place."
 }

@@ -332,15 +332,17 @@ assert(css.includes('.guided-primary-actions,\n    .guided-secondary-actions') &
 assert(css.includes('.prototype-note, .lantern-card, .card, .quiet-card') && css.includes('overflow-wrap: anywhere') && css.includes('word-break: break-word'), 'card surfaces should wrap long user-entered strings instead of widening mobile layout');
 assert(css.includes('.guided-control,\n    .clear-local-edits-button') && css.includes('overflow-wrap: anywhere') && css.includes('word-break: break-word'), 'guided controls should not force horizontal overflow');
 
-assertRuleContains('body', ['background: linear-gradient(180deg']);
-assertRuleContains('.opening-threshold', ['background: rgb(19 28 50 / 92%)', 'box-shadow: 0 16px 36px']);
+assertRuleContains('body', ['linear-gradient(180deg']);
+assertRuleContains('.luna-opening', ['position: relative']);
+assertRuleContains('.luna-opening::before', ['radial-gradient(ellipse at 50% 0%', 'pointer-events: none']);
+assertRuleContains('.opening-threshold', ['linear-gradient(180deg, rgb(19 28 50 / 94%)', 'box-shadow: 0 16px 36px']);
 assertRuleContains('.opening-gate::before', ['background: rgb(223 200 137 / 48%)', 'border-radius: 999px']);
 assert(css.includes('border-inline: 4px solid rgb(223 200 137 / 34%)'), 'opening gate posts should be CSS-only and subtle');
-assertRuleContains('.guided-control.opening-primary', ['min-width: min(100%, 236px)', 'border-color: rgb(223 200 137 / 48%)']);
+assertRuleContains('.guided-control.opening-primary', ['min-width: min(100%, 236px)', 'border-color: rgb(223 200 137 / 52%)', '0 0 0 5px rgb(223 200 137 / 5%)']);
 assert(css.includes('padding: 24px max(14px, env(safe-area-inset-left)) calc(80px + env(safe-area-inset-bottom)) max(14px, env(safe-area-inset-right))'), 'mobile opening should preserve bottom safe-area breathing room');
 assert(css.includes('font-size: clamp(1.72rem, 8.2vw, 2.28rem)'), 'mobile opening headline should be calmer than the desktop title scale');
 assertRuleContains('.opening-context', ['background: transparent', 'border: 0', 'opacity: 0.82']);
-assertRuleContains('.opening-payoff-preview', ['grid-template-columns: repeat(3, minmax(0, 1fr))', 'border: 1px solid rgb(223 200 137 / 16%)']);
+assertRuleContains('.opening-payoff-preview', ['grid-template-columns: repeat(3, minmax(0, 1fr))', 'border: 1px solid rgb(223 200 137 / 12%)']);
 assertRuleContains('.opening-payoff-item.is-lantern', ['border-color: rgb(223 200 137 / 26%)']);
 assertRuleContains('.opening-context-data', ['position: absolute', 'clip-path: inset(50%)']);
 assert(html.includes('Bring the loose pieces. Luna helps you leave with one clear place to resume.'), 'opening should explain that Return gently starts the guided path');
@@ -351,11 +353,15 @@ assert(html.includes('Luna turns scattered context into one small lantern for ne
 assert(html.includes('leave with a Return Card'), 'opening should name the practical Return Card payoff');
 assertRuleContains('.try-editing-card', ['background: rgb(25 34 58 / 94%)', 'border: 1px solid rgb(196 205 238 / 22%)']);
 assertRuleContains('.edit-field input', ['background: rgb(35 45 72 / 96%)', 'box-shadow: none']);
-assertRuleContains('.guided-return-view', ['background: rgb(13 21 40 / 96%)', 'box-shadow: 0 16px 36px']);
-assertRuleContains('.guided-stage-panel', ['background: rgb(20 29 52 / 88%)']);
+assertRuleContains('.guided-return-view', ['linear-gradient(180deg, rgb(13 21 40 / 96%)', 'box-shadow: 0 16px 36px']);
+assertRuleContains('.guided-return-view::before', ['linear-gradient(180deg, rgb(183 194 224 / 8%)', 'pointer-events: none']);
+assertRuleContains('.guided-return-view::after', ['clip-path: polygon(47% 0, 53% 0, 67% 100%, 33% 100%)', 'pointer-events: none']);
+assertRuleContains('.guided-shell', ['position: relative', 'z-index: 1']);
+assertRuleContains('.guided-stage-panel', ['linear-gradient(180deg, rgb(20 29 52 / 90%)']);
+assertRuleContains('.guided-stage-panel[data-stage-tone="choose"]', ['border-color: rgb(223 200 137 / 22%)']);
 assert.doesNotMatch(css, /\.try-editing-card\s*\{[\s\S]*?radial-gradient[\s\S]*?\}/, 'editing panel should not use radial glow gradients');
 assert.doesNotMatch(css, /\.guided-return-view\s*\{[\s\S]*?radial-gradient[\s\S]*?\}/, 'guided shell should not use radial glow gradients');
-assert.doesNotMatch(css, /\.edit-field input\s*\{[\s\S]*?linear-gradient[\s\S]*?\}/, 'inputs should be calm solid surfaces');
+assertRuleContains('.edit-field input', ['background: rgb(35 45 72 / 96%)']);
 
 const guidedMotionCss = css.match(/\.guided-stage-panel\.is-leaving-forward[\s\S]*?@media \(prefers-reduced-motion: reduce\)/)[0];
 assert(guidedMotionCss.includes('guidedPanelFadeOut'), 'guided stage transitions should use calm fade-out classes');

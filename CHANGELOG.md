@@ -2,6 +2,13 @@
 
 ## 2026-07-13
 
+### Moonlit Atmosphere Slice
+
+- Added restrained CSS-only moonlit atmosphere to the opening threshold: softer night depth, subtle path light, and a warmer garden-gate focal point around the real Return gently button.
+- Carried the same quiet return-place atmosphere into the Guided Return shell and stage panel while keeping answer spaces and the Rest Return Card from competing visually.
+- Preserved all behavior: opening buttons, six Guided Return stages, one-question Find your place, answer spaces, Luna insight cards, Rest Return Card, final Return to Luna, full overview editing, Shape this return Apply → Undo, five existing localStorage keys, maxlengths, safe rendering, reduced-motion protections, and no-network/no-model boundary.
+- Set Luna back to Rest; next is: Human mobile test of whether Luna feels more like a quiet return place.
+
 ### Luna First-Impression Clarity Slice
 
 - This was a focused Luna first-impression clarity slice that made the opening explain the practical payoff of Guided Return: bringing one unfinished thing back into view, finding the thread, choosing a lantern, and leaving with a Return Card.
