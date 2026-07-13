@@ -12,7 +12,7 @@ Luna now has a concise visual direction note anchoring the finished look and fee
 
 ## Current Opening Threshold Slice
 
-A Guided Return usability slice made the existing five local values editable inside the stages where they matter: project name and current goal in Find your place, One Next Action in Choose, Set Aside in Set Aside, and Record the Change in Record. The full overview remains the detailed/reference editing mode; the one-project/local-only/no-network boundary remains protected. Luna remains at Rest. Next: Human mobile usability test of editing inside the Guided Return flow.
+A first-use empty-state / invitation copy pass made Luna’s existing five local defaults feel like honest prompts instead of fake project content: name the unfinished thing, name what would help, choose one next step, set aside one distraction, and record what changed. No fields, storage keys, onboarding, tutorial, task system, history, backend, network/model behavior, or visual redesign were added. Luna remains at Rest. Next: Human mobile first-use test of the invitation defaults inside Guided Return.
 
 ## Current v0.1 Direction
 

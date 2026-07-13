@@ -3,6 +3,10 @@
   "statusHistory": [
     {
       "date": "2026-07-13",
+      "note": "2026-07-13: Completed a first-use empty-state invitation copy pass that made Luna’s five default local values feel honest and usable as prompts, not fake project content, while preserving the existing fields, storage keys, Guided Return inline editing, Shape this return Apply → Undo, safe rendering, and no-network/no-new-behavior boundary."
+    },
+    {
+      "date": "2026-07-13",
       "note": "2026-07-13: Completed a Guided Return usability slice that made the existing five local values editable inside the flow while preserving the one-project/local-only/no-network boundary, full overview reference editing mode, Shape this return Apply → Undo behavior, storage keys, input limits, safe rendering, mobile comfort, and six-stage order."
     },
     {
@@ -598,9 +602,9 @@
       "note": "The project is resting after a good run and ready for one gentle improvement."
     }
   ],
-  "currentGoal": "Rest after a Guided Return inline editing usability slice.",
-  "lastCompletedRun": "2026-07-13: Completed a Guided Return usability slice that made the existing five local values editable inside the flow while preserving the one-project/local-only/no-network boundary, full overview reference editing mode, Shape this return Apply → Undo behavior, storage keys, input limits, safe rendering, mobile comfort, and six-stage order.",
-  "nextStep": "Human mobile usability test of editing inside the Guided Return flow.",
+  "currentGoal": "Rest after a first-use empty-state invitation copy pass for Guided Return.",
+  "lastCompletedRun": "2026-07-13: Completed a first-use empty-state invitation copy pass that made Luna’s five default local values feel honest and usable as prompts, not fake project content, while preserving the existing fields, storage keys, Guided Return inline editing, Shape this return Apply → Undo, safe rendering, and no-network/no-new-behavior boundary.",
+  "nextStep": "Human mobile first-use test of the invitation defaults inside Guided Return.",
   "dashboardGuide": [
     "Welcome starts the path to read through Record the Change before choosing more work.",
     "Status gives a quick snapshot of how the project is doing right now.",
@@ -743,9 +747,9 @@
   ],
   "currentMode": {
     "name": "Rest",
-    "description": "Luna is resting after a Guided Return usability slice made the existing five local project values editable inside the flow.",
-    "whyItMatters": "Inline editing helps a person actively return to one unfinished thing while preserving Luna’s one-project, local-only, no-network boundary.",
+    "description": "Luna is resting after a first-use empty-state invitation pass made the existing five local defaults feel honest instead of fake.",
+    "whyItMatters": "Invitation defaults help a person start with their own words while preserving Luna’s one-project, local-only, no-network boundary.",
     "value": "Rest"
   },
-  "nextSuggestedStep": "Human mobile usability test of editing inside the Guided Return flow."
+  "nextSuggestedStep": "Human mobile first-use test of the invitation defaults inside Guided Return."
 }

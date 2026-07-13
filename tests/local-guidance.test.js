@@ -12,7 +12,7 @@ const base = {
 
 let result = guidance.buildReturnGuidance({ ...base, currentGoal: '   ' });
 assert.equal(result.goal.status, 'suggestion');
-assert.equal(result.goal.suggestion, 'Make the next step in Luna easier to see.');
+assert.equal(result.goal.suggestion, 'Name what would make returning to Luna easier.');
 assert.equal(result.goal.voiceKey, 'goalBlank');
 
 const repeat = guidance.buildReturnGuidance({ ...base, currentGoal: '   ' });
@@ -54,7 +54,7 @@ assert.equal(result.setAside.voiceKey, 'setAsideMultiple');
 
 result = guidance.buildReturnGuidance({ ...base, recordChange: '' });
 assert.equal(result.recordChange.status, 'suggestion');
-assert.equal(result.recordChange.suggestion, 'Returned to Luna and chose: Open the prototype.');
+assert.equal(result.recordChange.suggestion, 'Noted one small change while returning to Luna: Open the prototype.');
 assert.doesNotMatch(result.recordChange.suggestion, /\.\./, 'Record fallback should not produce doubled periods');
 assert.equal(result.recordChange.voiceKey, 'recordBlank');
 
@@ -92,7 +92,7 @@ assert(/<div class="opening-gate">\s*<button class="guided-control opening-prima
 for (const openingAction of ['Return gently', 'Shape this return', 'Open full overview']) {
   assert(html.includes(openingAction), `${openingAction} should remain present`);
 }
-assert(html.includes('Changing them updates Luna’s opening, Shape this return, and Guided Return'), 'overview should explain what the editable context updates');
+assert(html.includes('These five local prompts are invitations until you replace them with your own words. Changing them updates Luna’s opening, Shape this return, and Guided Return'), 'overview should explain what the editable context updates');
 assert(html.includes('stores the five values only in this browser'), 'overview should explain local-only storage');
 for (const id of ['project-name-input', 'current-goal-input', 'next-action-input', 'set-aside-input', 'record-change-input']) {
   assert(html.includes(`id="${id}"`), `${id} should remain present`);
@@ -119,6 +119,10 @@ assert.deepEqual(projectStorageKeys, [
 ], 'the existing five project-edit keys should remain the only saved project keys');
 assert(!/localStorage\.(?:setItem|removeItem)\(\s*['"]luna\.prototype\./.test(html), 'localStorage project edits should use the declared five key constants, not hidden extra key literals');
 const guidedStageTitles = [...html.matchAll(/title: '([^']+)'/g)].map((match) => match[1]);
+for (const invitation of ['Name the thing you want to return to.', 'What are you trying to make easier?', 'What is one small next step?', 'What can wait while you return?', 'What changed, even a little?']) {
+  assert(html.includes(invitation), `${invitation} invitation default should remain present`);
+  assert(js.includes(invitation), `${invitation} guidance fallback should remain present`);
+}
 assert.deepEqual(guidedStageTitles, ['Find your place', 'Remember', 'Choose', 'Set Aside', 'Record', 'Rest'], 'Guided Return stage order should stay fixed');
 assert.equal(guidedStageTitles[0], 'Find your place', 'the first Guided Return stage should still say Find your place');
 assert(html.includes("${renderGuidedEditableField('projectName')}"), 'Find your place should include editable project name');
@@ -147,6 +151,8 @@ assert(!/sessionStorage|document\.cookie|eval\s*\(|new Function/.test(html + js)
 assert(js.includes('voiceLibrary'));
 assert(js.includes("voice('goalBlank'"));
 assert(html.includes('guidance.allClearMessage'));
+assert(html.includes('formatRestSummaryValue'), 'Rest summary should format invitation defaults honestly');
+assert(html.includes('Not named yet'), 'Rest summary should not pretend default project prompt is a real project name');
 assert(html.includes('createTextElement'));
 assert(html.includes('textContent = text'));
 assert(html.includes('escapeHtml(window.LunaReturnGuidance.buildReturnGuidance'));
@@ -190,9 +196,9 @@ assert(css.includes('padding: 24px max(14px, env(safe-area-inset-left)) calc(80p
 assert(css.includes('font-size: clamp(1.72rem, 8.2vw, 2.28rem)'), 'mobile opening headline should be calmer than the desktop title scale');
 assertRuleContains('.opening-context', ['background: transparent', 'border: 0', 'opacity: 0.82']);
 assertRuleContains('.opening-context-data', ['position: absolute', 'clip-path: inset(50%)']);
-assert(html.includes('Return gently starts a short guided path.'), 'opening should explain that Return gently starts the guided path');
+assert(html.includes('Give Luna one unfinished thing, then return gently.'), 'opening should explain that Return gently starts the guided path');
 assert(html.includes('Find your place'), 'Guided Return copy should name the first step clearly');
-assert(html.includes('See the one thing you’re returning to and where it stands.'), 'first Guided Return step should plainly explain its purpose');
+assert(html.includes('Name the one thing you want to return to and what would help now.'), 'first Guided Return step should plainly explain its purpose');
 assert(html.includes('A gentle path back to one unfinished thing: remember where you left off, then choose one small next step.'), "opening should briefly explain Luna's purpose");
 assertRuleContains('.try-editing-card', ['background: rgb(25 34 58 / 94%)', 'border: 1px solid rgb(196 205 238 / 22%)']);
 assertRuleContains('.edit-field input', ['background: rgb(35 45 72 / 96%)', 'box-shadow: none']);

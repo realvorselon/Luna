@@ -976,11 +976,11 @@
           <p class="opening-message">A gentle path back to one unfinished thing: remember where you left off, then choose one small next step.</p>
         </div>
         <div class="opening-context" aria-label="Current project">
-          <p class="opening-thread-hint">Return gently starts a short guided path.</p>
+          <p class="opening-thread-hint">Give Luna one unfinished thing, then return gently.</p>
           <div class="opening-context-data" aria-hidden="true">
             <span class="label">Waiting here</span>
-            <h2 class="opening-project-name" id="opening-project-name-display">A quiet unfinished project</h2>
-            <p class="opening-return-point">Next: <span id="opening-next-action-display">Choose one small, safe next step.</span></p>
+            <h2 class="opening-project-name" id="opening-project-name-display">Name the thing you want to return to.</h2>
+            <p class="opening-return-point">Next: <span id="opening-next-action-display">What is one small next step?</span></p>
           </div>
         </div>
         <div class="opening-actions" aria-label="Opening threshold actions">
@@ -1015,7 +1015,7 @@
         <div class="guided-stage-panel" id="guided-stage-panel" aria-labelledby="guided-stage-title">
           <p class="guided-position" id="guided-position">Stage 1 of 6</p>
           <h2 id="guided-stage-title" tabindex="-1">Find your place</h2>
-          <p class="path-note" id="guided-stage-intro">See the one thing you’re returning to and where it stands.</p>
+          <p class="path-note" id="guided-stage-intro">Name the one thing you want to return to and what would help now.</p>
           <div class="guided-stage-body" id="guided-stage-body"></div>
         </div>
         <div class="guided-actions">
@@ -1039,7 +1039,7 @@
       <div class="loop-grid">
         <article class="card">
           <span class="label">Project name</span>
-          <h3 id="project-name-display">A quiet unfinished project</h3>
+          <h3 id="project-name-display">Name the thing you want to return to.</h3>
           <p id="project-summary-display">One small unfinished project, kept local to this browser.</p>
         </article>
         <article class="card">
@@ -1054,38 +1054,38 @@
         </article>
         <article class="card">
           <span class="label">Current goal</span>
-          <h3 id="current-goal-display">Make the next return easier</h3>
+          <h3 id="current-goal-display">What are you trying to make easier?</h3>
           <p>This is the shape of the project you are returning to right now.</p>
         </article>
       </div>
       <article class="try-editing-card" aria-labelledby="try-editing-title">
         <span class="label">Editable project context</span>
         <h3 id="try-editing-title">Edit Luna’s current project</h3>
-        <p class="try-editing-note">These are sample/local project values. Changing them updates Luna’s opening, Shape this return, and Guided Return, and stores the five values only in this browser.</p>
+        <p class="try-editing-note">These five local prompts are invitations until you replace them with your own words. Changing them updates Luna’s opening, Shape this return, and Guided Return, and stores the five values only in this browser.</p>
         <div class="edit-fields">
           <div class="edit-field">
             <label for="project-name-input">Project name</label>
-            <input id="project-name-input" type="text" value="A quiet unfinished project" autocomplete="off" maxlength="80" aria-describedby="project-name-helper project-name-count">
+            <input id="project-name-input" type="text" value="Name the thing you want to return to." autocomplete="off" maxlength="80" aria-describedby="project-name-helper project-name-count">
             <p class="character-feedback" id="project-name-count" aria-live="polite">0 / 80</p>
-            <p class="edit-helper" id="project-name-helper">The sample/local project name Luna shows at the opening threshold and in Guided Return.</p>
+            <p class="edit-helper" id="project-name-helper">An invitation to name the one unfinished thing Luna should hold.</p>
           </div>
           <div class="edit-field">
             <label for="current-goal-input">Current goal</label>
-            <input id="current-goal-input" type="text" value="Make the next return easier" autocomplete="off" maxlength="160" aria-describedby="current-goal-helper current-goal-count">
+            <input id="current-goal-input" type="text" value="What are you trying to make easier?" autocomplete="off" maxlength="160" aria-describedby="current-goal-helper current-goal-count">
             <p class="character-feedback" id="current-goal-count" aria-live="polite">0 / 160</p>
-            <p class="edit-helper" id="current-goal-helper">The current goal Luna uses when shaping this return and helping you find your place in Guided Return.</p>
+            <p class="edit-helper" id="current-goal-helper">An invitation to name what this return should make easier.</p>
           </div>
           <div class="edit-field">
             <label for="set-aside-input">Set Aside / Ignore For Now</label>
-            <input id="set-aside-input" type="text" value="Leave the larger ideas alone for now." autocomplete="off" maxlength="140" aria-describedby="set-aside-helper set-aside-count">
+            <input id="set-aside-input" type="text" value="What can wait while you return?" autocomplete="off" maxlength="140" aria-describedby="set-aside-helper set-aside-count">
             <p class="character-feedback" id="set-aside-count" aria-live="polite">0 / 140</p>
-            <p class="edit-helper" id="set-aside-helper">One local value Luna uses for the Set Aside step. Not a list, backlog, or priority system.</p>
+            <p class="edit-helper" id="set-aside-helper">An invitation to set aside one thing that can wait. Not a list, backlog, or priority system.</p>
           </div>
           <div class="edit-field">
             <label for="record-change-input">Record the Change</label>
-            <input id="record-change-input" type="text" value="Record one plain note about what changed." autocomplete="off" maxlength="180" aria-describedby="record-change-helper record-change-count">
+            <input id="record-change-input" type="text" value="What changed, even a little?" autocomplete="off" maxlength="180" aria-describedby="record-change-helper record-change-count">
             <p class="character-feedback" id="record-change-count" aria-live="polite">0 / 180</p>
-            <p class="edit-helper" id="record-change-helper">One local value Luna uses for the Record step. Not a log or report.</p>
+            <p class="edit-helper" id="record-change-helper">An invitation to record one small change. Not a log or report.</p>
           </div>
           <button class="clear-local-edits-button" type="button" id="clear-local-edits-button">Clear all five local project edits in this browser</button>
         </div>
@@ -1106,7 +1106,7 @@
       <h2 id="next-action">Choose one next action</h2>
       <article class="lantern-card">
         <span class="label">One Next Action</span>
-        <h3 id="next-action-display">Choose one small, safe next step.</h3>
+        <h3 id="next-action-display">What is one small next step?</h3>
         <p>Keep it small: one action is enough for this return.</p>
       </article>
       <div class="overview-edit-anchor" id="next-action-edit-anchor"></div>
@@ -1117,9 +1117,9 @@
         <div class="edit-fields">
           <div class="edit-field">
             <label for="next-action-input">One next action</label>
-            <input id="next-action-input" type="text" value="Choose one small, safe next step." autocomplete="off" maxlength="140" aria-describedby="next-action-helper next-action-count">
+            <input id="next-action-input" type="text" value="What is one small next step?" autocomplete="off" maxlength="140" aria-describedby="next-action-helper next-action-count">
             <p class="character-feedback" id="next-action-count" aria-live="polite">0 / 140</p>
-            <p class="edit-helper" id="next-action-helper">The single sample/local action that becomes the lantern in Luna’s opening and Guided Return.</p>
+            <p class="edit-helper" id="next-action-helper">An invitation to choose the one small action that becomes the lantern in Luna’s opening and Guided Return.</p>
           </div>
         </div>
       </article>
@@ -1130,12 +1130,12 @@
       <div class="loop-grid">
         <article class="quiet-card">
           <span class="label">Ignore For Now</span>
-          <p id="set-aside-display">Leave the larger ideas alone for now.</p>
+          <p id="set-aside-display">What can wait while you return?</p>
           <p>One thing can wait without becoming a backlog.</p>
         </article>
         <article class="quiet-card">
           <span class="label">Record the Change</span>
-          <p id="record-change-display">Record one plain note about what changed.</p>
+          <p id="record-change-display">What changed, even a little?</p>
           <p>Keep it brief so returning later is easier.</p>
         </article>
         <article class="quiet-card rest-card">
@@ -1215,11 +1215,11 @@
     const nextActionStorageKey = 'luna.prototype.nextAction';
     const setAsideStorageKey = 'luna.prototype.setAside';
     const recordChangeStorageKey = 'luna.prototype.recordChange';
-    const sampleProjectName = 'A quiet unfinished project';
-    const sampleCurrentGoal = 'Make the next return easier';
-    const sampleNextAction = 'Choose one small, safe next step.';
-    const sampleSetAside = 'Leave the larger ideas alone for now.';
-    const sampleRecordChange = 'Record one plain note about what changed.';
+    const sampleProjectName = 'Name the thing you want to return to.';
+    const sampleCurrentGoal = 'What are you trying to make easier?';
+    const sampleNextAction = 'What is one small next step?';
+    const sampleSetAside = 'What can wait while you return?';
+    const sampleRecordChange = 'What changed, even a little?';
     const inputLengthLimits = {
       projectName: 80,
       currentGoal: 160,
@@ -1256,13 +1256,40 @@
     const getSetAside = () => setAsideDisplay.textContent;
     const getRecordChange = () => recordChangeDisplay.textContent;
 
+    const invitationDefaults = {
+      projectName: sampleProjectName,
+      currentGoal: sampleCurrentGoal,
+      nextAction: sampleNextAction,
+      setAside: sampleSetAside,
+      recordChange: sampleRecordChange
+    };
+
+    const isInvitationDefault = (fieldKey, value) => value.trim().toLowerCase() === invitationDefaults[fieldKey].toLowerCase();
+
+    const formatRestSummaryValue = (fieldKey, value) => {
+      const text = value.trim();
+      if (isInvitationDefault(fieldKey, text)) {
+        return fieldKey === 'projectName' ? 'Not named yet' : text;
+      }
+      return text;
+    };
+
+    const formatRememberGoalLine = () => {
+      const project = formatRestSummaryValue('projectName', getProjectName());
+      const goal = formatRestSummaryValue('currentGoal', getCurrentGoal());
+      if (project === 'Not named yet' && isInvitationDefault('currentGoal', getCurrentGoal())) {
+        return 'Start by naming what Luna should hold, then choose one small next step.';
+      }
+      return `The current goal is ${goal}. You only need enough context to choose a small next step.`;
+    };
+
     const guidedEditableFields = {
       projectName: {
         label: 'Project name',
         input: projectNameInput,
         storageKey: projectNameStorageKey,
         update: updateProjectNameDisplay,
-        helper: 'Name the one unfinished thing you are returning to.',
+        helper: 'Name the unfinished thing in your own words.',
         guidedDisplaySelector: '#guided-project-name-display'
       },
       currentGoal: {
@@ -1270,7 +1297,7 @@
         input: currentGoalInput,
         storageKey: currentGoalStorageKey,
         update: updateCurrentGoalDisplay,
-        helper: 'Name what this return is for right now.',
+        helper: 'Name what you are trying to make easier.',
         guidedDisplaySelector: '#guided-current-goal-display'
       },
       nextAction: {
@@ -1278,7 +1305,7 @@
         input: nextActionInput,
         storageKey: nextActionStorageKey,
         update: updateNextActionDisplay,
-        helper: 'Keep this to one small action, not a list.',
+        helper: 'Write one small next step, not a list.',
         guidedDisplaySelector: '#guided-next-action-display'
       },
       setAside: {
@@ -1294,7 +1321,7 @@
         input: recordChangeInput,
         storageKey: recordChangeStorageKey,
         update: updateRecordChangeDisplay,
-        helper: 'Write one brief note about what changed.',
+        helper: 'Write what changed, even a little.',
         guidedDisplaySelector: '#guided-record-change-display'
       }
     };
@@ -1336,7 +1363,7 @@
     const guidedStages = [
       {
         title: 'Find your place',
-        intro: 'See the one thing you’re returning to and where it stands.',
+        intro: 'Name the one thing you want to return to and what would help now.',
         render: () => `
           <div class="guided-inline-edit" aria-label="Find your place editable project context">
             ${renderGuidedEditableField('projectName')}
@@ -1355,8 +1382,8 @@
         render: () => `
           <article class="quiet-card">
             <span class="label">Remember</span>
-            <h3>${escapeHtml(getProjectName())} is already in motion.</h3>
-            <p>The current goal is still ${escapeHtml(getCurrentGoal())}. You only need enough context to choose a small next step.</p>
+            <h3>${escapeHtml(formatRestSummaryValue('projectName', getProjectName()))}</h3>
+            <p>${escapeHtml(formatRememberGoalLine())}</p>
           </article>
         `
       },
@@ -1417,11 +1444,11 @@
           </article>
           <article class="quiet-card">
             <span class="label">Current return</span>
-            <p><strong>Project:</strong> ${escapeHtml(getProjectName())}</p>
-            <p><strong>Goal:</strong> ${escapeHtml(getCurrentGoal())}</p>
-            <p><strong>Next action:</strong> ${escapeHtml(getNextAction())}</p>
-            <p><strong>Set aside:</strong> ${escapeHtml(getSetAside())}</p>
-            <p><strong>Changed:</strong> ${escapeHtml(getRecordChange())}</p>
+            <p><strong>Project:</strong> ${escapeHtml(formatRestSummaryValue('projectName', getProjectName()))}</p>
+            <p><strong>Goal:</strong> ${escapeHtml(formatRestSummaryValue('currentGoal', getCurrentGoal()))}</p>
+            <p><strong>Next action:</strong> ${escapeHtml(formatRestSummaryValue('nextAction', getNextAction()))}</p>
+            <p><strong>Set aside:</strong> ${escapeHtml(formatRestSummaryValue('setAside', getSetAside()))}</p>
+            <p><strong>Changed:</strong> ${escapeHtml(formatRestSummaryValue('recordChange', getRecordChange()))}</p>
           </article>
         `
       }
