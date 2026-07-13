@@ -3,6 +3,10 @@
   "statusHistory": [
     {
       "date": "2026-07-13",
+      "note": "2026-07-13: Refined the mobile opening threshold in prototype.html so the headline and project context are calmer, Return gently becomes the earlier press-start focus, and Shape this return plus Open full overview have safer bottom breathing room while preserving existing behavior."
+    },
+    {
+      "date": "2026-07-13",
       "note": "2026-07-13: Implemented the first small garden-gate opening threshold visual slice in prototype.html, foregrounding the Luna moon/title area, making Return gently the central CSS-only press-start gate action, and keeping Shape this return plus Open full overview accessible but quieter while preserving existing behavior."
     },
     {
@@ -578,9 +582,9 @@
       "note": "The project is resting after a good run and ready for one gentle improvement."
     }
   ],
-  "currentGoal": "Rest after implementing the first opening-threshold visual slice.",
-  "lastCompletedRun": "2026-07-13: Implemented the first small garden-gate opening threshold visual slice in prototype.html, foregrounding the Luna moon/title area, making Return gently the central CSS-only press-start gate action, and keeping Shape this return plus Open full overview accessible but quieter while preserving existing behavior.",
-  "nextStep": "Human mobile comfort/readability check of the new opening threshold.",
+  "currentGoal": "Rest after refining the mobile opening threshold.",
+  "lastCompletedRun": "2026-07-13: Refined the mobile opening threshold in prototype.html so the headline and project context are calmer, Return gently becomes the earlier press-start focus, and Shape this return plus Open full overview have safer bottom breathing room while preserving existing behavior.",
+  "nextStep": "Human mobile comfort/readability check of the refined opening threshold.",
   "dashboardGuide": [
     "Welcome starts the path to read through Record the Change before choosing more work.",
     "Status gives a quick snapshot of how the project is doing right now.",
@@ -727,5 +731,5 @@
     "whyItMatters": "Rest protects current behavior while the next visual implementation stays limited to a narrow moonlit garden-gate opening threshold translation.",
     "value": "Rest"
   },
-  "nextSuggestedStep": "Implement the first small garden-gate opening threshold slice."
+  "nextSuggestedStep": "Human mobile comfort/readability check of the refined opening threshold."
 }

@@ -10,6 +10,13 @@
 
 ## 2026-07-13
 
+### Opening Threshold Mobile Refinement
+
+- Refined only the `prototype.html` opening threshold so the mobile first impression is calmer and less dashboard-like.
+- Reduced mobile headline dominance, quieted the project context card, raised the visual priority of the existing `Return gently` garden-gate action, and added safer bottom breathing room for `Shape this return` plus `Open full overview`.
+- Preserved the existing button IDs, project data bindings, local-only storage, guidance engine, no-network/no-random protections, reduced-motion behavior, full overview, and Guided Return behavior.
+- Set Luna back to Rest; next is a human mobile comfort/readability check of the refined opening threshold.
+
 ### Opening Threshold Slice 01 Implementation
 
 - Updated only `prototype.html` opening-threshold presentation so the first impression feels more like a quiet moonlit press-start threshold than a project dashboard.
