@@ -87,6 +87,8 @@ assert(!/\bfetch\s*\(/.test(html + js), 'local guidance must not call fetch');
 assert(html.includes('Edit Luna’s current project'), 'overview should include a clear editing-area heading');
 assert(html.includes('opening-moonrise'), 'opening threshold should foreground the Luna/moon title area');
 assert(html.includes('opening-gate'), 'opening threshold should include the CSS-only garden-gate press-start direction');
+assert(!html.includes('<div class="opening-gate" aria-hidden="true"></div>'), 'opening gate should not be an empty aria-hidden decorative sibling');
+assert(/<div class="opening-gate">\s*<button class="guided-control opening-primary" type="button" id="begin-guided-return-button">Return gently<\/button>\s*<\/div>/.test(html), 'opening gate should wrap the real Return gently button');
 assert(html.includes('Changing them updates Luna’s opening, Shape this return, and Guided Return'), 'overview should explain what the editable context updates');
 assert(html.includes('stores the five values only in this browser'), 'overview should explain local-only storage');
 for (const id of ['project-name-input', 'current-goal-input', 'next-action-input', 'set-aside-input', 'record-change-input']) {
