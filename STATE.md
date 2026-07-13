@@ -1,11 +1,11 @@
-Luna is at Rest after a Guided Return conversational presentation slice made the existing editable local flow feel less like a form and more like Luna asking one gentle question at a time, while preserving the five-value local-only/no-network boundary.
+Luna is at Rest after a focused Find your place one-question-at-a-time prototype tested a less form-like Guided Return interaction while preserving the six-stage flow and five-value local-only/no-network boundary.
 
-Next suggested step: Human mobile usability test of the conversational Guided Return flow.
+Next suggested step: Human mobile usability test of one-question Find your place.
 # State
 
-Luna is at Rest after a Guided Return conversational presentation slice made the existing editable local flow feel less like a form and more like Luna asking one gentle question at a time. It preserves the six-stage flow, deterministic local insight, five saved values, and no-network/no-model boundary.
+Luna is at Rest after a focused Find your place one-question-at-a-time prototype. Only Stage 1 changed internally: Luna asks for the project name first and the current goal second while preserving the visible six-stage flow, deterministic local insight, five saved values, and no-network/no-model boundary.
 
-Next suggested step: Human mobile usability test of the conversational Guided Return flow.
+Next suggested step: Human mobile usability test of one-question Find your place.
 
 ## Full Overview Editing Clarity — 2026-07-12
 
@@ -25,10 +25,11 @@ Luna is becoming a small, moonlit one-project return app. It begins with a real 
 
 ## Current Goal
 
-Rest after the Guided Return conversational presentation slice.
+Rest after the Find your place one-question-at-a-time prototype.
 
 ## Last Completed Run
 
+- 2026-07-13: Completed a focused Find your place one-question-at-a-time prototype that tested a less form-like Guided Return interaction while preserving the six-stage flow and five-value local-only/no-network boundary.
 - 2026-07-13: Completed a Guided Return conversational presentation slice that made the existing editable local flow feel less like a form and more like Luna asking one gentle question at a time, while preserving the five-value local-only/no-network boundary.
 - 2026-07-13: Completed a Guided Return Luna insight/coaching slice that made the existing editable flow less form-like by adding local deterministic stage guidance, while preserving the five-value local-only/no-network boundary.
 - 2026-07-13: Fixed the blocking prototype button regression after the first-use invitation defaults pass by making invitation-default formatting defensive, avoiding initialization-time helper references before display updaters exist, preserving Guided Return inline editing, and adding a lightweight button-wiring/script-initialization regression test.
