@@ -1,3 +1,4 @@
+- 2026-07-12: Added DESIGN.md as a concise visual north-star note for Luna’s quiet moonlit garden return direction, with no prototype, CSS, JavaScript, asset, storage, or behavior changes.
 ### Guided Return Size-Stability Correction
 
 - Stabilized the Guided Return stage panel with practical desktop/mobile block sizing so Orient → Remember → Choose → Set Aside → Record → Rest feel like one stable frame.
