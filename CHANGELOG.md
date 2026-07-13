@@ -22,9 +22,17 @@
 
 # Changelog
 
+- 2026-07-13: This was a focused Guided Return coherence pass that smoothed copy and presentation seams across the existing six-stage loop while preserving the one-question Find your place prototype, answer spaces, Rest soft landing, and five-value local-only/no-network boundary.
 - 2026-07-13: This was a focused Guided Return Rest soft-landing slice that made the ending feel less like a report and more like Luna gently holding one completed return, while preserving the six-stage flow, one-question Find your place prototype, answer spaces, and five-value local-only/no-network boundary.
 
 ## 2026-07-13
+
+### Guided Return Coherence Pass
+
+- Smoothed short copy across Opening, Find your place, Remember, Choose, Set Aside, Record, and Rest so the loop feels like one intentional return instead of stitched-together slices.
+- Softened answer-space, insight-card, and Rest held-words hierarchy without changing the visual theme or navigation behavior.
+- Preserved the six-stage flow, one-question Find your place interaction, five local-only values, storage keys, maxlengths, Shape this return Apply → Undo, safe rendering, no-network/no-model boundary, mobile comfort, and reduced-motion behavior.
+- Set Luna back to Rest; next is: Human full-loop mobile test of Guided Return coherence.
 
 ### Find your place One-Question Prototype
 

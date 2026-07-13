@@ -12,7 +12,7 @@ Luna now has a concise visual direction note anchoring the finished look and fee
 
 ## Current Opening Threshold Slice
 
-A focused Guided Return Rest soft-landing slice made the ending feel less like a report and more like Luna gently holding one completed return, while preserving the six-stage flow, one-question Find your place prototype, answer spaces, five saved local values, full overview editing, Shape this return Apply → Undo behavior, storage-key boundary, no-network/no-model behavior, mobile comfort, and reduced-motion protections. Luna remains at Rest. Next: Human mobile usability test of the Rest soft landing.
+A focused Guided Return coherence pass smoothed copy and presentation seams across the existing six-stage loop while preserving the one-question Find your place prototype, answer spaces, Rest soft landing, five saved local values, full overview editing, Shape this return Apply → Undo behavior, storage-key boundary, no-network/no-model behavior, mobile comfort, and reduced-motion protections. Luna remains at Rest. Next: Human full-loop mobile test of Guided Return coherence.
 
 ## Current v0.1 Direction
 
@@ -183,3 +183,9 @@ Later, Luna may become a calm companion for small projects. That means helping o
 - Philosophy garden.
 - eBay/card collecting helper.
 - Tiny weird game that grows one mechanic at a time.
+
+### Guided Return Coherence Pass
+
+- Smoothed Guided Return copy and presentation seams from Opening through Find your place, Remember, Choose, Set Aside, Record, and Rest.
+- Preserved all current behavior and boundaries: six stages, one-question Find your place, answer spaces, Rest soft landing, five local values, full overview editing, Shape this return Apply → Undo, safe rendering, no-network/no-model behavior, mobile comfort, and reduced motion.
+- Set Luna back to Rest; next is: Human full-loop mobile test of Guided Return coherence.
