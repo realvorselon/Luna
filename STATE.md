@@ -1,11 +1,11 @@
-Luna is at Rest after a first-use empty-state / invitation copy pass that made the existing five local defaults feel like honest prompts instead of fake project content, while preserving the one-project, local-only, no-network boundary.
+Luna is at Rest after a blocking bugfix restored prototype opening button behavior after the first-use invitation defaults pass, while preserving Guided Return inline editing and the one-project, local-only, no-network boundary.
 
-Next suggested step: Human mobile first-use test of the invitation defaults inside Guided Return.
+Next suggested step: Human mobile smoke test of opening buttons and Guided Return entry.
 # State
 
-Luna is at Rest after refining first-use empty states so Guided Return invites a person to name the unfinished thing, choose one next step, set aside one distraction, and record what changed without pretending a real project already exists. The same five local project values, Shape this return, Apply → Undo, local-only storage, deterministic guidance, safe rendering, mobile comfort, reduced-motion behavior, and complete Guided Return loop remain preserved.
+Luna is at Rest after a blocking bugfix restored the live prototype opening buttons. The fix made the first-use invitation-default helpers defensive, removed the initialization-time reference that stopped listener wiring, preserved the five local Guided Return inline edits, and added a script-initialization/button-wiring regression check.
 
-Next suggested step: Human mobile first-use test of the invitation defaults inside Guided Return.
+Next suggested step: Human mobile smoke test of opening buttons and Guided Return entry.
 
 ## Full Overview Editing Clarity — 2026-07-12
 
@@ -25,10 +25,11 @@ Luna is becoming a small, moonlit one-project return app. It begins with a real 
 
 ## Current Goal
 
-Rest after a first-use empty-state invitation copy pass for Guided Return.
+Rest after restoring prototype opening button behavior after the first-use invitation defaults pass.
 
 ## Last Completed Run
 
+- 2026-07-13: Fixed the blocking prototype button regression after the first-use invitation defaults pass by making invitation-default formatting defensive, avoiding initialization-time helper references before display updaters exist, preserving Guided Return inline editing, and adding a lightweight button-wiring/script-initialization regression test.
 - 2026-07-13: Completed a first-use empty-state invitation copy pass that made Luna’s five default local values feel honest and usable as prompts, not fake project content, while preserving the existing fields, storage keys, Guided Return inline editing, Shape this return Apply → Undo, safe rendering, and no-network/no-new-behavior boundary.
 - 2026-07-13: Completed a Guided Return usability slice that made the existing five local values editable where they matter inside the flow, added a brief Rest summary, and preserved the one-project/local-only/no-network boundary, storage keys, input limits, Shape this return Apply → Undo behavior, safe rendering, mobile comfort, and stage order.
 - 2026-07-13: Renamed the first visible Guided Return stage from “Orient” to “Find your place,” clarified that it helps someone see the one thing they are returning to and where it stands, and preserved stage order, behavior, storage keys, input limits, and network-free guidance.
@@ -50,7 +51,7 @@ Rest after a first-use empty-state invitation copy pass for Guided Return.
 
 ## Next Suggested Step
 
-Human mobile first-use test of the invitation defaults inside Guided Return.
+Human mobile smoke test of opening buttons and Guided Return entry.
 
 ## Notes
 

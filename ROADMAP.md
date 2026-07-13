@@ -12,7 +12,7 @@ Luna now has a concise visual direction note anchoring the finished look and fee
 
 ## Current Opening Threshold Slice
 
-A first-use empty-state / invitation copy pass made Luna’s existing five local defaults feel like honest prompts instead of fake project content: name the unfinished thing, name what would help, choose one next step, set aside one distraction, and record what changed. No fields, storage keys, onboarding, tutorial, task system, history, backend, network/model behavior, or visual redesign were added. Luna remains at Rest. Next: Human mobile first-use test of the invitation defaults inside Guided Return.
+A blocking bugfix restored the live prototype opening buttons after the first-use invitation defaults pass. The fix keeps Luna’s existing five local defaults and Guided Return inline editing, makes invitation-default formatting safe during initialization, and adds a lightweight regression check for script initialization/button wiring. No fields, storage keys, onboarding, tutorial, task system, history, backend, network/model behavior, or visual redesign were added. Luna remains at Rest. Next: Human mobile smoke test of opening buttons and Guided Return entry.
 
 ## Current v0.1 Direction
 
