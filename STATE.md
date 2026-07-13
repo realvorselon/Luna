@@ -1,11 +1,11 @@
-Luna is at Rest after a tiny purpose/orientation copy pass that clarifies the opening threshold and Guided Return path: Return gently starts a short path back to one unfinished thing, one small next step, setting aside distractions, recording what changed, and resting.
+Luna is at Rest after a tiny first-stage clarity cleanup for Guided Return: the opening step now says “Find your place” and plainly explains that it helps you see the one thing you’re returning to and where it stands.
 
-Next suggested step: Human mobile clarity check of the opening and Guided Return path.
+Next suggested step: Human mobile clarity check of the first Guided Return step.
 # State
 
-Luna is at Rest after refining the opening threshold so the first impression feels more like a quiet press-start threshold than a project summary, while preserving full overview editing clarity, Shape this return, Apply → Undo, local-only storage, deterministic guidance, safe rendering, mobile comfort, reduced-motion behavior, and the complete Guided Return loop.
+Luna is at Rest after refining the first Guided Return stage label and intro so new users see “Find your place” instead of “Orient,” while preserving full overview editing clarity, Shape this return, Apply → Undo, local-only storage, deterministic guidance, safe rendering, mobile comfort, reduced-motion behavior, and the complete Guided Return loop.
 
-Next suggested step: Human mobile comfort/readability check of the press-start opening threshold.
+Next suggested step: Human mobile clarity check of the first Guided Return step.
 
 ## Full Overview Editing Clarity — 2026-07-12
 
@@ -25,10 +25,11 @@ Luna is becoming a small, moonlit one-project return app. It begins with a real 
 
 ## Current Goal
 
-Rest after a tiny purpose/orientation copy pass for the opening threshold and Guided Return path.
+Rest after a tiny first-stage clarity copy cleanup for Guided Return.
 
 ## Last Completed Run
 
+- 2026-07-13: Renamed the first visible Guided Return stage from “Orient” to “Find your place,” clarified that it helps someone see the one thing they are returning to and where it stands, and preserved stage order, behavior, storage keys, input limits, and network-free guidance.
 - 2026-07-13: Clarified Luna’s opening purpose and Guided Return step copy so a new person can understand that Return gently starts a short path back to one unfinished thing, one small next step, setting aside distractions, recording what changed, and resting.
 - 2026-07-13: Minimized the opening project context into a small unfinished-thread hint while preserving the project name and next action bindings, keeping Return gently inside the CSS-only gate as the main press-start action.
 - 2026-07-13: Removed the remaining visible dashboard framing from the prototype return link and current project trail so Luna points back to its opening threshold while preserving layout, CSS, JavaScript behavior, storage keys, and Guided Return behavior.
@@ -47,7 +48,7 @@ Rest after a tiny purpose/orientation copy pass for the opening threshold and Gu
 
 ## Next Suggested Step
 
-Human mobile comfort/readability check of the press-start opening threshold.
+Human mobile clarity check of the first Guided Return step.
 
 ## Notes
 

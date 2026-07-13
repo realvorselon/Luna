@@ -10,6 +10,13 @@
 
 ## 2026-07-13
 
+### Guided Return First-Step Clarity Copy Cleanup
+
+- Renamed the visible first Guided Return stage from “Orient” to “Find your place” so new users can immediately understand the first step.
+- Replaced the first-stage intro with a plainer purpose line: “See the one thing you’re returning to and where it stands.”
+- Reworded visible “Current Mode: Orient” presentation to “Current step: Find your place” while preserving stage order, layout, behavior, storage keys, input limits, and network-free guidance protections.
+- Set Luna back to Rest; next is a human mobile clarity check of the first Guided Return step.
+
 ### Purpose and Guided Return Orientation Copy Pass
 
 - Clarified the opening threshold so Luna says it helps return to one unfinished thing and choose one small next step.

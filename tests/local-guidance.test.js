@@ -166,6 +166,8 @@ assert(css.includes('font-size: clamp(1.72rem, 8.2vw, 2.28rem)'), 'mobile openin
 assertRuleContains('.opening-context', ['background: transparent', 'border: 0', 'opacity: 0.82']);
 assertRuleContains('.opening-context-data', ['position: absolute', 'clip-path: inset(50%)']);
 assert(html.includes('Return gently starts a short guided path.'), 'opening should explain that Return gently starts the guided path');
+assert(html.includes('Find your place'), 'Guided Return copy should name the first step clearly');
+assert(html.includes('See the one thing you’re returning to and where it stands.'), 'first Guided Return step should plainly explain its purpose');
 assert(html.includes('A gentle path back to one unfinished thing: remember where you left off, then choose one small next step.'), "opening should briefly explain Luna's purpose");
 assertRuleContains('.try-editing-card', ['background: rgb(25 34 58 / 94%)', 'border: 1px solid rgb(196 205 238 / 22%)']);
 assertRuleContains('.edit-field input', ['background: rgb(35 45 72 / 96%)', 'box-shadow: none']);

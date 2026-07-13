@@ -971,8 +971,8 @@
         </div>
         <div class="guided-stage-panel" id="guided-stage-panel" aria-labelledby="guided-stage-title">
           <p class="guided-position" id="guided-position">Stage 1 of 6</p>
-          <h2 id="guided-stage-title" tabindex="-1">Orient</h2>
-          <p class="path-note" id="guided-stage-intro">Start by seeing the one thing you are returning to and where it stands now.</p>
+          <h2 id="guided-stage-title" tabindex="-1">Find your place</h2>
+          <p class="path-note" id="guided-stage-intro">See the one thing you’re returning to and where it stands.</p>
           <div class="guided-stage-body" id="guided-stage-body"></div>
         </div>
         <div class="guided-actions">
@@ -1005,9 +1005,9 @@
           <p>Your saved project context is ready enough to return to without setting up a larger system.</p>
         </article>
         <article class="card">
-          <span class="label">Current Mode</span>
-          <h3>Orient</h3>
-          <p>Reconnect with the project name and current goal before choosing anything new.</p>
+          <span class="label">Current step</span>
+          <h3>Find your place</h3>
+          <p>See what you are returning to before choosing anything new.</p>
         </article>
         <article class="card">
           <span class="label">Current goal</span>
@@ -1030,7 +1030,7 @@
             <label for="current-goal-input">Current goal</label>
             <input id="current-goal-input" type="text" value="Make the next return easier" autocomplete="off" maxlength="160" aria-describedby="current-goal-helper current-goal-count">
             <p class="character-feedback" id="current-goal-count" aria-live="polite">0 / 160</p>
-            <p class="edit-helper" id="current-goal-helper">The current goal Luna uses when shaping this return and orienting Guided Return.</p>
+            <p class="edit-helper" id="current-goal-helper">The current goal Luna uses when shaping this return and helping you find your place in Guided Return.</p>
           </div>
           <div class="edit-field">
             <label for="set-aside-input">Set Aside / Ignore For Now</label>
@@ -1105,9 +1105,9 @@
 
       <section aria-labelledby="loop-order">
       <h2 id="loop-order">The gentle return path</h2>
-      <p class="path-note">Move through the same small loop each time, from orienting to resting, without turning the project into a bigger system.</p>
+      <p class="path-note">Move through the same small loop each time, from finding your place to resting, without turning the project into a bigger system.</p>
       <div class="return-path" aria-label="Return path steps">
-        <span>Orient</span>
+        <span>Find your place</span>
         <span>Remember</span>
         <span>Choose</span>
         <span>Leave alone</span>
@@ -1115,7 +1115,7 @@
         <span>Rest</span>
       </div>
       <ol>
-        <li>Orient around the current project name and goal.</li>
+        <li>Find your place with the current project name and goal.</li>
         <li>Remember enough context to continue.</li>
         <li>Choose one next action.</li>
         <li>Leave one thing alone for now.</li>
@@ -1215,8 +1215,8 @@
 
     const guidedStages = [
       {
-        title: 'Orient',
-        intro: 'Start by seeing the one thing you are returning to and where it stands now.',
+        title: 'Find your place',
+        intro: 'See the one thing you’re returning to and where it stands.',
         render: () => `
           <article class="quiet-card">
             <span class="label">Project name</span>
@@ -1224,8 +1224,8 @@
             <p>This is the unfinished thing Luna is helping you return to.</p>
           </article>
           <article class="quiet-card">
-            <span class="label">Current Mode</span>
-            <h3>Orient</h3>
+            <span class="label">Current step</span>
+            <h3>Find your place</h3>
             <p>Notice where it stands now. No setup or reorganization is required.</p>
           </article>
           <article class="quiet-card">

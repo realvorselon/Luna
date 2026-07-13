@@ -12,7 +12,7 @@ Luna now has a concise visual direction note anchoring the finished look and fee
 
 ## Current Opening Threshold Slice
 
-The first small opening-threshold visual slice now has a tiny purpose/orientation copy pass: Luna explains that Return gently starts a short path back to one unfinished thing, one small next step, setting aside distractions, recording what changed, and resting. Luna remains at Rest. Next: human mobile clarity check of the opening and Guided Return path.
+The first Guided Return stage now reads “Find your place” instead of “Orient,” with plain intro copy that explains the step helps someone see the one thing they are returning to and where it stands. Luna remains at Rest. Next: human mobile clarity check of the first Guided Return step.
 
 ## Current v0.1 Direction
 
