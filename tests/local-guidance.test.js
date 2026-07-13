@@ -135,8 +135,13 @@ for (const questionCopy of [
 ]) {
   assert(html.includes(questionCopy), `Guided Return conversational question copy should include: ${questionCopy}`);
 }
-assert(html.includes("${renderGuidedEditableField('projectName')}"), 'Find your place should include editable project name');
-assert(html.includes("${renderGuidedEditableField('currentGoal')}"), 'Find your place should include editable current goal');
+assert(html.includes("const guidedPlaceSteps = ['projectName', 'currentGoal'];"), 'Find your place should define only the existing project name and current goal internal steps');
+assert(html.includes("${renderGuidedEditableField(getGuidedPlaceFieldKey())}"), 'Find your place should render only the active internal editable field');
+assert(!html.includes("${renderGuidedEditableField('projectName')}\n              ${renderGuidedEditableField('currentGoal')}"), 'Find your place should not render both projectName and currentGoal inline fields at once by default');
+assert(html.includes('data-guided-place-continue'), 'Find your place should include a local internal Continue control');
+assert(html.includes('data-guided-place-back'), 'Find your place should include a local internal Back control');
+assert(html.includes('guidedBackButton.hidden = guidedStageIndex === 0;'), 'main back button should stay hidden inside Find your place so internal Back is not duplicated');
+assert(html.includes('guidedForwardButton.hidden = guidedStageIndex === 0 && guidedPlaceStepIndex === 0;'), 'main forward button should be hidden during the first internal Find your place question to avoid duplicate forward controls');
 assert(html.includes("${renderGuidedEditableField('nextAction')}"), 'Choose should include editable One Next Action');
 assert(html.includes("${renderGuidedEditableField('setAside')}"), 'Set Aside should include editable Set Aside / Ignore For Now');
 assert(html.includes("${renderGuidedEditableField('recordChange')}"), 'Record should include editable Record the Change');

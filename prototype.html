@@ -756,6 +756,15 @@
       font-size: 0.9rem;
     }
 
+    .guided-place-controls {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      min-width: 0;
+      max-width: 100%;
+      margin-top: 2px;
+    }
+
     .luna-insight-card {
       display: grid;
       gap: 8px;
@@ -1271,6 +1280,7 @@
       recordChange: 180
     };
     let guidedStageIndex = 0;
+    let guidedPlaceStepIndex = 0;
     let guidedStageTransitionTimer = 0;
     let guidedEntranceTransitionTimer = 0;
     let guidedStageTransitioning = false;
@@ -1340,6 +1350,10 @@
       return Boolean(text) && !isInvitationDefault(fieldKey, text);
     };
 
+    const guidedPlaceSteps = ['projectName', 'currentGoal'];
+
+    const getGuidedPlaceFieldKey = () => guidedPlaceSteps[guidedPlaceStepIndex] || 'projectName';
+
     const renderLunaInsight = (stageKey) => `
       <aside class="luna-insight-card" aria-label="Luna insight for this step">
         <span class="label">Luna insight</span>
@@ -1353,6 +1367,13 @@
       const goalNamed = isRealUserEntry('currentGoal', currentGoalInput.value);
       const actionNamed = isRealUserEntry('nextAction', nextActionInput.value);
       if (stageKey === 'place') {
+        const placeFieldKey = getGuidedPlaceFieldKey();
+        if (placeFieldKey === 'projectName' && !projectNamed) {
+          return 'Start by naming one real thing Luna can hold. The project name can be one unfinished thing, not a whole life system.';
+        }
+        if (placeFieldKey === 'currentGoal' && !goalNamed) {
+          return 'Now name what would make returning easier. One gentle condition for re-entry is enough.';
+        }
         if (!projectNamed || !goalNamed) {
           return 'Start by naming one real thing Luna can hold. The project name can be one unfinished thing, not a whole life system; the goal can name what returning should make easier.';
         }
@@ -1473,6 +1494,26 @@
       });
     };
 
+
+    const syncGuidedPlaceControls = () => {
+      const placeContinueButton = guidedStageBody.querySelector('[data-guided-place-continue]');
+      const placeBackButton = guidedStageBody.querySelector('[data-guided-place-back]');
+      if (placeContinueButton) {
+        placeContinueButton.addEventListener('click', () => {
+          guidedPlaceStepIndex = 1;
+          renderGuidedStage();
+        });
+      }
+      if (placeBackButton) {
+        placeBackButton.addEventListener('click', () => {
+          if (guidedPlaceStepIndex > 0) {
+            guidedPlaceStepIndex -= 1;
+            renderGuidedStage();
+          }
+        });
+      }
+    };
+
     const guidedStages = [
       {
         title: 'Find your place',
@@ -1481,8 +1522,11 @@
           <div class="guided-question-card">
             <p class="guided-answer-note">Luna asks one thing at a time. Your words stay local to this browser.</p>
             <div class="guided-inline-edit" aria-label="Find your place editable project context">
-              ${renderGuidedEditableField('projectName')}
-              ${renderGuidedEditableField('currentGoal')}
+              ${renderGuidedEditableField(getGuidedPlaceFieldKey())}
+            </div>
+            <div class="guided-place-controls" role="group" aria-label="Find your place question navigation">
+              <button class="guided-control" type="button" data-guided-place-back ${guidedPlaceStepIndex === 0 ? 'hidden' : ''}>Back</button>
+              <button class="guided-control" type="button" data-guided-place-continue ${guidedPlaceStepIndex === 1 ? 'hidden' : ''}>Continue</button>
             </div>
           </div>
           ${renderLunaInsight('place')}
@@ -1814,10 +1858,11 @@
       guidedStagePanel.dataset.stageTone = stage.tone || 'quiet';
       guidedStageBody.innerHTML = stage.render();
       syncGuidedEditableFields();
+      syncGuidedPlaceControls();
       restoreNextActionEditorToOverview();
 
       guidedBackButton.hidden = guidedStageIndex === 0;
-      guidedForwardButton.hidden = false;
+      guidedForwardButton.hidden = guidedStageIndex === 0 && guidedPlaceStepIndex === 0;
       guidedForwardButton.textContent = guidedStageIndex === guidedStages.length - 1 ? 'Return to Luna' : 'Forward';
     };
 
@@ -1872,6 +1917,7 @@
       }
 
       guidedStageIndex = 0;
+      guidedPlaceStepIndex = 0;
       renderGuidedStageContent();
 
       if (guidedStageMotionQuery.matches) {
@@ -1954,16 +2000,33 @@
     });
 
     guidedBackButton.addEventListener('click', () => {
-      if (guidedStageTransitioning || guidedStageIndex === 0) {
+      if (guidedStageTransitioning) {
+        return;
+      }
+
+      if (guidedStageIndex === 0 && guidedPlaceStepIndex > 0) {
+        guidedPlaceStepIndex -= 1;
+        renderGuidedStage();
+        return;
+      }
+
+      if (guidedStageIndex === 0) {
         return;
       }
 
       guidedStageIndex -= 1;
+      if (guidedStageIndex === 0) guidedPlaceStepIndex = 1;
       moveGuidedStage('back');
     });
 
     guidedForwardButton.addEventListener('click', () => {
       if (guidedStageTransitioning) {
+        return;
+      }
+
+      if (guidedStageIndex === 0 && guidedPlaceStepIndex === 0) {
+        guidedPlaceStepIndex = 1;
+        renderGuidedStage();
         return;
       }
 

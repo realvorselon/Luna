@@ -23,6 +23,14 @@ Protected scope remains one local project only. The guidance engine must stay br
 
 ## Current v0.1 direction
 
+### Find your place one-question-at-a-time prototype
+
+- Completed a focused Find your place one-question-at-a-time prototype that tested a less form-like Guided Return interaction while preserving the six-stage flow and five-value local-only/no-network boundary.
+- Only Stage 1 changed internally: Luna asks “What are we returning to?” first, then “What would make returning easier?” while the visible Guided Return count remains Stage 1 of 6.
+- Preserved the existing five local values, storage keys, full overview editing, Shape this return Apply → Undo, safe rendering, no-network/no-model boundary, mobile comfort, and reduced-motion protections.
+- Status remains Rest; next suggested step is: “Human mobile usability test of one-question Find your place.”
+
+
 - Prefer fewer meaningful vertical slices over automatic button-by-button micro-polish.
 - Treat the Luna opening threshold as the first v0.1-oriented vertical slice.
 - Treat the completed full Guided Return loop as the second meaningful v0.1 vertical slice.
