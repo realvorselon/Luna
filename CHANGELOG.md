@@ -2,6 +2,13 @@
 
 ## 2026-07-13
 
+### Luna First-Impression Clarity Slice
+
+- This was a focused Luna first-impression clarity slice that made the opening explain the practical payoff of Guided Return: bringing one unfinished thing back into view, finding the thread, choosing a lantern, and leaving with a Return Card.
+- Added a compact static opening payoff preview for Find the thread, Choose the lantern, and Leave with a Return Card.
+- Preserved the same opening buttons, Guided Return stage order, one-question Find your place behavior, answer spaces, Luna insight cards, Rest Return Card, five existing localStorage keys, maxlengths, safe escaping, Shape this return Apply → Undo behavior, and no-network/no-model boundary.
+- Set Luna back to Rest; next is: Human mobile test of whether Luna’s opening explains why Guided Return helps.
+
 ### Guided Return Return Card Slice
 
 - Reframed the Rest-stage secondary section into a calm Return Card using only project name, current goal, One Next Action, Set Aside, and Record the Change.

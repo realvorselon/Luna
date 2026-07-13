@@ -87,6 +87,13 @@ assert(!/\bfetch\s*\(/.test(html + js), 'local guidance must not call fetch');
 assert(html.includes('Edit Luna’s current project'), 'overview should include a clear editing-area heading');
 assert(html.includes('opening-moonrise'), 'opening threshold should foreground the Luna/moon title area');
 assert(html.includes('opening-gate'), 'opening threshold should include the CSS-only garden-gate press-start direction');
+assert(html.includes('opening-payoff-preview'), 'opening should include a static payoff preview');
+assert(html.includes('aria-label="What Luna gives back"'), 'payoff preview should be labelled as what Luna gives back');
+for (const payoffCopy of ['Find the thread', 'Choose the lantern', 'Leave with a Return Card', 'Name one small resume point']) {
+  assert(html.includes(payoffCopy), `opening payoff preview should include: ${payoffCopy}`);
+}
+const payoffPreviewMarkup = html.match(/<div class="opening-payoff-preview"[\s\S]*?<div class="opening-actions"/)[0];
+assert(!/<input|<button|id="opening-payoff/i.test(payoffPreviewMarkup), 'payoff preview should be static explanatory copy, not new user data');
 assert(!html.includes('<div class="opening-gate" aria-hidden="true"></div>'), 'opening gate should not be an empty aria-hidden decorative sibling');
 assert(/<div class="opening-gate">\s*<button class="guided-control opening-primary" type="button" id="begin-guided-return-button">Return gently<\/button>\s*<\/div>/.test(html), 'opening gate should wrap the real Return gently button');
 for (const openingAction of ['Return gently', 'Shape this return', 'Open full overview']) {
@@ -333,11 +340,15 @@ assertRuleContains('.guided-control.opening-primary', ['min-width: min(100%, 236
 assert(css.includes('padding: 24px max(14px, env(safe-area-inset-left)) calc(80px + env(safe-area-inset-bottom)) max(14px, env(safe-area-inset-right))'), 'mobile opening should preserve bottom safe-area breathing room');
 assert(css.includes('font-size: clamp(1.72rem, 8.2vw, 2.28rem)'), 'mobile opening headline should be calmer than the desktop title scale');
 assertRuleContains('.opening-context', ['background: transparent', 'border: 0', 'opacity: 0.82']);
+assertRuleContains('.opening-payoff-preview', ['grid-template-columns: repeat(3, minmax(0, 1fr))', 'border: 1px solid rgb(223 200 137 / 16%)']);
+assertRuleContains('.opening-payoff-item.is-lantern', ['border-color: rgb(223 200 137 / 26%)']);
 assertRuleContains('.opening-context-data', ['position: absolute', 'clip-path: inset(50%)']);
-assert(html.includes('One unfinished thing. One gentle return.'), 'opening should explain that Return gently starts the guided path');
+assert(html.includes('Bring the loose pieces. Luna helps you leave with one clear place to resume.'), 'opening should explain that Return gently starts the guided path');
 assert(html.includes('Find your place'), 'Guided Return copy should name the first step clearly');
 assert(html.includes('Begin with the one thing you are returning to.'), 'first Guided Return step should plainly explain its purpose');
-assert(html.includes('A gentle path through one return: find your place, remember enough, choose one small next step, then rest.'), "opening should briefly explain Luna's purpose");
+assert(html.includes('Bring one unfinished thing back into view.'), 'opening should clearly invite one unfinished thing');
+assert(html.includes('Luna turns scattered context into one small lantern for next time'), "opening should explain Luna's transformation from scattered context to a lantern");
+assert(html.includes('leave with a Return Card'), 'opening should name the practical Return Card payoff');
 assertRuleContains('.try-editing-card', ['background: rgb(25 34 58 / 94%)', 'border: 1px solid rgb(196 205 238 / 22%)']);
 assertRuleContains('.edit-field input', ['background: rgb(35 45 72 / 96%)', 'box-shadow: none']);
 assertRuleContains('.guided-return-view', ['background: rgb(13 21 40 / 96%)', 'box-shadow: 0 16px 36px']);
