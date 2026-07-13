@@ -10,6 +10,13 @@
 
 ## 2026-07-13
 
+### Guided Return Inline Editing Usability Slice
+
+- Made Guided Return actionable by adding inline controls for the existing five local values where they matter in the flow: project name/current goal, One Next Action, Set Aside / Ignore For Now, and Record the Change.
+- Kept the full overview as the detailed/reference editing mode and preserved existing storage keys, input limits, fallback values, safe rendering, Shape this return Apply → Undo behavior, reduced-motion behavior, mobile comfort, and stage order.
+- Added a brief Rest summary of the current return without adding history, export, sharing, logs, task lists, dashboards, backend, model/API behavior, or network calls.
+- Set Luna back to Rest; next is a human mobile usability test of editing inside the Guided Return flow.
+
 ### Guided Return First-Step Clarity Copy Cleanup
 
 - Renamed the visible first Guided Return stage from “Orient” to “Find your place” so new users can immediately understand the first step.

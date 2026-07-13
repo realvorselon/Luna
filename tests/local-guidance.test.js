@@ -89,6 +89,9 @@ assert(html.includes('opening-moonrise'), 'opening threshold should foreground t
 assert(html.includes('opening-gate'), 'opening threshold should include the CSS-only garden-gate press-start direction');
 assert(!html.includes('<div class="opening-gate" aria-hidden="true"></div>'), 'opening gate should not be an empty aria-hidden decorative sibling');
 assert(/<div class="opening-gate">\s*<button class="guided-control opening-primary" type="button" id="begin-guided-return-button">Return gently<\/button>\s*<\/div>/.test(html), 'opening gate should wrap the real Return gently button');
+for (const openingAction of ['Return gently', 'Shape this return', 'Open full overview']) {
+  assert(html.includes(openingAction), `${openingAction} should remain present`);
+}
 assert(html.includes('Changing them updates Luna’s opening, Shape this return, and Guided Return'), 'overview should explain what the editable context updates');
 assert(html.includes('stores the five values only in this browser'), 'overview should explain local-only storage');
 for (const id of ['project-name-input', 'current-goal-input', 'next-action-input', 'set-aside-input', 'record-change-input']) {
@@ -105,6 +108,28 @@ assert(html.includes("const currentGoalStorageKey = 'luna.prototype.currentGoal'
 assert(html.includes("const nextActionStorageKey = 'luna.prototype.nextAction';"));
 assert(html.includes("const setAsideStorageKey = 'luna.prototype.setAside';"));
 assert(html.includes("const recordChangeStorageKey = 'luna.prototype.recordChange';"));
+
+const projectStorageKeys = [...html.matchAll(/const (\w+StorageKey) = '(luna\.prototype\.[^']+)';/g)].map((match) => match[2]);
+assert.deepEqual(projectStorageKeys, [
+  'luna.prototype.projectName',
+  'luna.prototype.currentGoal',
+  'luna.prototype.nextAction',
+  'luna.prototype.setAside',
+  'luna.prototype.recordChange'
+], 'the existing five project-edit keys should remain the only saved project keys');
+assert(!/localStorage\.(?:setItem|removeItem)\(\s*['"]luna\.prototype\./.test(html), 'localStorage project edits should use the declared five key constants, not hidden extra key literals');
+const guidedStageTitles = [...html.matchAll(/title: '([^']+)'/g)].map((match) => match[1]);
+assert.deepEqual(guidedStageTitles, ['Find your place', 'Remember', 'Choose', 'Set Aside', 'Record', 'Rest'], 'Guided Return stage order should stay fixed');
+assert.equal(guidedStageTitles[0], 'Find your place', 'the first Guided Return stage should still say Find your place');
+assert(html.includes("${renderGuidedEditableField('projectName')}"), 'Find your place should include editable project name');
+assert(html.includes("${renderGuidedEditableField('currentGoal')}"), 'Find your place should include editable current goal');
+assert(html.includes("${renderGuidedEditableField('nextAction')}"), 'Choose should include editable One Next Action');
+assert(html.includes("${renderGuidedEditableField('setAside')}"), 'Set Aside should include editable Set Aside / Ignore For Now');
+assert(html.includes("${renderGuidedEditableField('recordChange')}"), 'Record should include editable Record the Change');
+assert(html.includes('syncGuidedEditableFields();'), 'Guided Return inline controls should sync through existing fields');
+assert(html.includes('field.input.value = guidedInput.value;'), 'Guided inline edits should update the existing overview input values');
+assert(html.includes('writeLocalValue(field.storageKey, guidedInput.value);'), 'Guided inline edits should save through the existing five storage keys');
+assert(html.includes('<span class="label">Current return</span>'), 'Rest should include a brief current-return summary');
 assert.equal((html.match(/StorageKey\s*=\s*'luna\.prototype\./g) || []).length, 5, 'only the five project storage keys should be declared');
 assert(!/suggestion.*StorageKey|guidance.*StorageKey|history.*StorageKey/i.test(html), 'no suggestion/history storage keys');
 

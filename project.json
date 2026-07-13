@@ -3,6 +3,10 @@
   "statusHistory": [
     {
       "date": "2026-07-13",
+      "note": "2026-07-13: Completed a Guided Return usability slice that made the existing five local values editable inside the flow while preserving the one-project/local-only/no-network boundary, full overview reference editing mode, Shape this return Apply → Undo behavior, storage keys, input limits, safe rendering, mobile comfort, and six-stage order."
+    },
+    {
+      "date": "2026-07-13",
       "note": "2026-07-13: Renamed the first visible Guided Return stage from Orient to Find your place and clarified that the step helps someone see the one thing they are returning to and where it stands, while preserving stage order, behavior, storage keys, input limits, and network-free guidance."
     },
     {
@@ -594,9 +598,9 @@
       "note": "The project is resting after a good run and ready for one gentle improvement."
     }
   ],
-  "currentGoal": "Rest after a tiny first-stage clarity copy cleanup for Guided Return.",
-  "lastCompletedRun": "2026-07-13: Renamed the first visible Guided Return stage from Orient to Find your place and clarified that the step helps someone see the one thing they are returning to and where it stands, while preserving stage order, behavior, storage keys, input limits, and network-free guidance.",
-  "nextStep": "Human mobile clarity check of the first Guided Return step.",
+  "currentGoal": "Rest after a Guided Return inline editing usability slice.",
+  "lastCompletedRun": "2026-07-13: Completed a Guided Return usability slice that made the existing five local values editable inside the flow while preserving the one-project/local-only/no-network boundary, full overview reference editing mode, Shape this return Apply → Undo behavior, storage keys, input limits, safe rendering, mobile comfort, and six-stage order.",
+  "nextStep": "Human mobile usability test of editing inside the Guided Return flow.",
   "dashboardGuide": [
     "Welcome starts the path to read through Record the Change before choosing more work.",
     "Status gives a quick snapshot of how the project is doing right now.",
@@ -668,10 +672,10 @@
     "Visit http://localhost:8000 in a browser to view the dashboard."
   ],
   "nextAction": {
-    "title": "Implement the garden-gate opening slice",
-    "description": "Implement the first small garden-gate opening threshold slice.",
-    "whyItMatters": "This turns the new opening-slice plan into one focused visual/layout translation without broad redesign or behavior expansion.",
-    "status": "Ready after planning"
+    "title": "Human mobile usability test",
+    "description": "Human mobile usability test of editing inside the Guided Return flow.",
+    "whyItMatters": "The new inline editing slice should be checked on a real mobile path for calmness, readability, and whether it helps someone return without feeling like a form or task system.",
+    "status": "Ready for human test"
   },
   "creativeSeed": {
     "name": "Philosophy Garden",
@@ -739,9 +743,9 @@
   ],
   "currentMode": {
     "name": "Rest",
-    "description": "Luna is resting after a focused first-stage Guided Return clarity cleanup.",
-    "whyItMatters": "Rest protects behavior while the first Guided Return step clearly helps someone find their place before choosing a next action.",
+    "description": "Luna is resting after a Guided Return usability slice made the existing five local project values editable inside the flow.",
+    "whyItMatters": "Inline editing helps a person actively return to one unfinished thing while preserving Luna’s one-project, local-only, no-network boundary.",
     "value": "Rest"
   },
-  "nextSuggestedStep": "Human mobile clarity check of the first Guided Return step."
+  "nextSuggestedStep": "Human mobile usability test of editing inside the Guided Return flow."
 }

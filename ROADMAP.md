@@ -2,17 +2,17 @@
 
 Luna now has a concise visual direction note anchoring the finished look and feel as a quiet moonlit garden return app rather than a dashboard, Notion clone, or generic productivity surface. The next visual implementation should be the first narrow garden-gate opening threshold slice, not a broad redesign.
 
-## Guided Return size-stability correction
+## Guided Return inline editing usability slice
 
-- Current focus is complete: Guided Return now uses a steadier stage frame and action area so stage-to-stage movement feels like one stable shell rather than resizing panels.
-- Longer stage content should remain readable by scrolling inside the stage area instead of widening or jumping the page.
-- Luna is back at Rest; next is brief human mobile testing of Guided Return size stability one stage at a time.
+- Current focus is complete: Guided Return now lets the existing five local project values be edited where they matter inside the flow, without adding storage keys, task lists, project switching, or network behavior.
+- Rest now shows a small plain summary of the current return so the loop ends with enough context, not a report or history.
+- Luna is back at Rest; next is a human mobile usability test of editing inside the Guided Return flow.
 
 # Roadmap
 
 ## Current Opening Threshold Slice
 
-The first Guided Return stage now reads “Find your place” instead of “Orient,” with plain intro copy that explains the step helps someone see the one thing they are returning to and where it stands. Luna remains at Rest. Next: human mobile clarity check of the first Guided Return step.
+A Guided Return usability slice made the existing five local values editable inside the stages where they matter: project name and current goal in Find your place, One Next Action in Choose, Set Aside in Set Aside, and Record the Change in Record. The full overview remains the detailed/reference editing mode; the one-project/local-only/no-network boundary remains protected. Luna remains at Rest. Next: Human mobile usability test of editing inside the Guided Return flow.
 
 ## Current v0.1 Direction
 

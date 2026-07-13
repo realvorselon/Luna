@@ -1,11 +1,11 @@
-Luna is at Rest after a tiny first-stage clarity cleanup for Guided Return: the opening step now says “Find your place” and plainly explains that it helps you see the one thing you’re returning to and where it stands.
+Luna is at Rest after a Guided Return usability slice that made the existing five local values editable inside the flow while preserving the one-project, local-only, no-network boundary.
 
-Next suggested step: Human mobile clarity check of the first Guided Return step.
+Next suggested step: Human mobile usability test of editing inside the Guided Return flow.
 # State
 
-Luna is at Rest after refining the first Guided Return stage label and intro so new users see “Find your place” instead of “Orient,” while preserving full overview editing clarity, Shape this return, Apply → Undo, local-only storage, deterministic guidance, safe rendering, mobile comfort, reduced-motion behavior, and the complete Guided Return loop.
+Luna is at Rest after making Guided Return usable as an inline return ritual: Find your place, Choose, Set Aside, and Record now edit the same five local project values used by the full overview, while preserving Shape this return, Apply → Undo, local-only storage, deterministic guidance, safe rendering, mobile comfort, reduced-motion behavior, and the complete Guided Return loop.
 
-Next suggested step: Human mobile clarity check of the first Guided Return step.
+Next suggested step: Human mobile usability test of editing inside the Guided Return flow.
 
 ## Full Overview Editing Clarity — 2026-07-12
 
@@ -25,10 +25,11 @@ Luna is becoming a small, moonlit one-project return app. It begins with a real 
 
 ## Current Goal
 
-Rest after a tiny first-stage clarity copy cleanup for Guided Return.
+Rest after a Guided Return inline editing usability slice.
 
 ## Last Completed Run
 
+- 2026-07-13: Completed a Guided Return usability slice that made the existing five local values editable where they matter inside the flow, added a brief Rest summary, and preserved the one-project/local-only/no-network boundary, storage keys, input limits, Shape this return Apply → Undo behavior, safe rendering, mobile comfort, and stage order.
 - 2026-07-13: Renamed the first visible Guided Return stage from “Orient” to “Find your place,” clarified that it helps someone see the one thing they are returning to and where it stands, and preserved stage order, behavior, storage keys, input limits, and network-free guidance.
 - 2026-07-13: Clarified Luna’s opening purpose and Guided Return step copy so a new person can understand that Return gently starts a short path back to one unfinished thing, one small next step, setting aside distractions, recording what changed, and resting.
 - 2026-07-13: Minimized the opening project context into a small unfinished-thread hint while preserving the project name and next action bindings, keeping Return gently inside the CSS-only gate as the main press-start action.
@@ -48,7 +49,7 @@ Rest after a tiny first-stage clarity copy cleanup for Guided Return.
 
 ## Next Suggested Step
 
-Human mobile clarity check of the first Guided Return step.
+Human mobile usability test of editing inside the Guided Return flow.
 
 ## Notes
 
