@@ -626,7 +626,7 @@
       "note": "The project is resting after a good run and ready for one gentle improvement."
     }
   ],
-  "currentGoal": "Complete the Guided Return coherence pass across the existing six-stage loop without changing behavior or boundaries.",
+  "currentGoal": "Rest after the Guided Return coherence pass.",
   "lastCompletedRun": "Guided Return coherence pass: smoothed copy and presentation seams across Opening → Find your place → Remember → Choose → Set Aside → Record → Rest while preserving one-question Find your place, answer spaces, Rest soft landing, and five local-only values.",
   "nextStep": "Human full-loop mobile test of Guided Return coherence.",
   "dashboardGuide": [
@@ -701,8 +701,8 @@
   ],
   "nextAction": {
     "title": "Human mobile usability test",
-    "description": "Human mobile usability test of the Rest soft landing.",
-    "whyItMatters": "The Rest stage now lands more softly while preserving the current-return values as secondary held words; a mobile human pass should confirm the ending feels calm, uncrowded, and not like a report.",
+    "description": "Human full-loop mobile test of Guided Return coherence.",
+    "whyItMatters": "The coherence pass is complete; a mobile human pass should confirm the full Guided Return loop feels calm, coherent, and unchanged in behavior.",
     "status": "Ready for human test"
   },
   "creativeSeed": {
@@ -771,9 +771,9 @@
   ],
   "currentMode": {
     "name": "Rest",
-    "description": "Luna is resting after a Guided Return Rest soft-landing slice.",
-    "whyItMatters": "The ending now feels more like Luna gently holding one completed return than a report screen while preserving the six-stage flow and five-value local-only/no-network boundary.",
+    "description": "Luna is resting after the Guided Return coherence pass.",
+    "whyItMatters": "The coherence pass smoothed the existing six-stage loop while preserving the one-question Find your place prototype, answer spaces, Rest soft landing, and five-value local-only/no-network boundary.",
     "value": "Rest"
   },
-  "nextSuggestedStep": "Human mobile usability test of the Rest soft landing."
+  "nextSuggestedStep": "Human full-loop mobile test of Guided Return coherence."
 }
