@@ -3,6 +3,10 @@
   "statusHistory": [
     {
       "date": "2026-07-13",
+      "note": "2026-07-13: Renamed the first visible Guided Return stage from Orient to Find your place and clarified that the step helps someone see the one thing they are returning to and where it stands, while preserving stage order, behavior, storage keys, input limits, and network-free guidance."
+    },
+    {
+      "date": "2026-07-13",
       "note": "2026-07-13: Minimized the opening threshold project context into a small unfinished-thread hint so the first impression reads as moon/Luna presence, garden gate, and Return gently, while preserving project name and next action bindings, existing actions, storage keys, and Guided Return behavior."
     },
     {
@@ -590,9 +594,9 @@
       "note": "The project is resting after a good run and ready for one gentle improvement."
     }
   ],
-  "currentGoal": "Rest after a tiny purpose/orientation copy pass for the opening threshold and Guided Return path.",
-  "lastCompletedRun": "2026-07-13: Clarified Luna’s opening purpose and Guided Return step copy so a new person can understand that Return gently starts a short path back to one unfinished thing, one small next step, setting aside distractions, recording what changed, and resting.",
-  "nextStep": "Human mobile clarity check of the opening and Guided Return path.",
+  "currentGoal": "Rest after a tiny first-stage clarity copy cleanup for Guided Return.",
+  "lastCompletedRun": "2026-07-13: Renamed the first visible Guided Return stage from Orient to Find your place and clarified that the step helps someone see the one thing they are returning to and where it stands, while preserving stage order, behavior, storage keys, input limits, and network-free guidance.",
+  "nextStep": "Human mobile clarity check of the first Guided Return step.",
   "dashboardGuide": [
     "Welcome starts the path to read through Record the Change before choosing more work.",
     "Status gives a quick snapshot of how the project is doing right now.",
@@ -735,9 +739,9 @@
   ],
   "currentMode": {
     "name": "Rest",
-    "description": "Luna is resting after a focused purpose/orientation copy pass.",
-    "whyItMatters": "Rest protects behavior while the opening and Guided Return path explain one unfinished thing, one small next step, setting aside distractions, recording what changed, and resting.",
+    "description": "Luna is resting after a focused first-stage Guided Return clarity cleanup.",
+    "whyItMatters": "Rest protects behavior while the first Guided Return step clearly helps someone find their place before choosing a next action.",
     "value": "Rest"
   },
-  "nextSuggestedStep": "Human mobile clarity check of the opening and Guided Return path."
+  "nextSuggestedStep": "Human mobile clarity check of the first Guided Return step."
 }
