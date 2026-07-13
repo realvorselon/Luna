@@ -12,7 +12,7 @@ Luna now has a concise visual direction note anchoring the finished look and fee
 
 ## Current Opening Threshold Slice
 
-The first small opening-threshold visual slice is implemented: Luna’s opening now foregrounds the moon/title area, presents Return gently as a central CSS-only garden-gate press-start action, and keeps Shape this return plus Open full overview accessible but quieter. Luna remains at Rest. Next: human mobile comfort/readability check of this opening threshold only before any broader visual redesign.
+The first small opening-threshold visual slice has been refined for mobile review: Luna’s opening now keeps the headline and project context quieter, brings Return gently forward as the press-start focus sooner, and gives Shape this return plus Open full overview more bottom breathing room. Luna remains at Rest. Next: human mobile comfort/readability check of the refined opening threshold only before any broader visual redesign.
 
 ## Current v0.1 Direction
 
