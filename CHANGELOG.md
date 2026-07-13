@@ -10,6 +10,13 @@
 
 ## 2026-07-13
 
+### Guided Return Luna Insight Coaching Slice
+
+- Added calm Luna insight cards inside Guided Return so Find your place, Choose, Set Aside, Record, and Rest explain what kind of user wording belongs in each step.
+- Reused the existing deterministic local guidance rules and simple invitation/default checks to reflect blank, broad, list-like, and clear-enough entries without generating projects for the user.
+- Preserved Guided Return inline editing, full overview editing, Shape this return Apply → Undo, the same five localStorage keys, input limits, safe rendering, no network/API/model behavior, mobile comfort, and reduced-motion protections.
+- Set Luna back to Rest; next is a human mobile usability test of Luna insight inside Guided Return.
+
 ### Prototype Opening Button Regression Fix
 
 - Fixed a blocking live prototype regression where Return gently, Shape this return, and Open full overview rendered but did not respond after the first-use invitation defaults pass.

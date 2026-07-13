@@ -3,6 +3,10 @@
   "statusHistory": [
     {
       "date": "2026-07-13",
+      "note": "Completed a Guided Return Luna insight/coaching slice that made the existing editable flow less form-like by adding local deterministic stage guidance, while preserving the five-value local-only/no-network boundary."
+    },
+    {
+      "date": "2026-07-13",
       "note": "Fixed the blocking prototype button regression after the first-use invitation defaults pass by making invitation-default formatting defensive, avoiding initialization-time helper references before display updaters exist, preserving Guided Return inline editing, and adding a lightweight button-wiring/script-initialization regression test."
     },
     {
@@ -606,9 +610,9 @@
       "note": "The project is resting after a good run and ready for one gentle improvement."
     }
   ],
-  "currentGoal": "Rest after restoring prototype opening button behavior after the first-use invitation defaults pass.",
-  "lastCompletedRun": "2026-07-13: Fixed the blocking prototype button regression after the first-use invitation defaults pass by making invitation-default formatting defensive, avoiding initialization-time helper references before display updaters exist, preserving Guided Return inline editing, and adding a lightweight button-wiring/script-initialization regression test.",
-  "nextStep": "Human mobile smoke test of opening buttons and Guided Return entry.",
+  "currentGoal": "Rest after the Guided Return Luna insight/coaching slice.",
+  "lastCompletedRun": "2026-07-13: Completed a Guided Return Luna insight/coaching slice that made the existing editable flow less form-like by adding local deterministic stage guidance, while preserving the five-value local-only/no-network boundary.",
+  "nextStep": "Human mobile usability test of Luna insight inside Guided Return.",
   "dashboardGuide": [
     "Welcome starts the path to read through Record the Change before choosing more work.",
     "Status gives a quick snapshot of how the project is doing right now.",
@@ -680,9 +684,9 @@
     "Visit http://localhost:8000 in a browser to view the dashboard."
   ],
   "nextAction": {
-    "title": "Human mobile smoke test",
-    "description": "Human mobile smoke test of opening buttons and Guided Return entry.",
-    "whyItMatters": "The live prototype buttons are restored in code, but a real mobile smoke test should confirm Return gently, Shape this return, Open full overview, and Guided Return entry all respond calmly on GitHub Pages.",
+    "title": "Human mobile usability test",
+    "description": "Human mobile usability test of Luna insight inside Guided Return.",
+    "whyItMatters": "The new insight cards are deterministic and local in code, but a real mobile usability pass should confirm they make Guided Return feel less like a form while preserving comfortable editing.",
     "status": "Ready for human test"
   },
   "creativeSeed": {
@@ -751,9 +755,9 @@
   ],
   "currentMode": {
     "name": "Rest",
-    "description": "Luna is resting after a blocking bugfix restored prototype opening button behavior.",
-    "whyItMatters": "The opening buttons must work before any further invitation-copy or Guided Return usability testing can continue.",
+    "description": "Luna is resting after a Guided Return Luna insight/coaching slice.",
+    "whyItMatters": "The existing editable flow now gives local stage guidance without adding fields, storage keys, or network/model behavior.",
     "value": "Rest"
   },
-  "nextSuggestedStep": "Human mobile smoke test of opening buttons and Guided Return entry."
+  "nextSuggestedStep": "Human mobile usability test of Luna insight inside Guided Return."
 }
