@@ -12,7 +12,7 @@ Luna now has a concise visual direction note anchoring the finished look and fee
 
 ## Current Opening Threshold Slice
 
-The first small opening-threshold visual slice has been refined again so the opening reads less like a project-summary card and more like a press-start threshold: moon/Luna presence, a small unfinished-thread hint, the garden gate, and Return gently. Luna remains at Rest. Next: human mobile comfort/readability check of the press-start opening threshold only before any broader visual redesign.
+The first small opening-threshold visual slice now has a tiny purpose/orientation copy pass: Luna explains that Return gently starts a short path back to one unfinished thing, one small next step, setting aside distractions, recording what changed, and resting. Luna remains at Rest. Next: human mobile clarity check of the opening and Guided Return path.
 
 ## Current v0.1 Direction
 
