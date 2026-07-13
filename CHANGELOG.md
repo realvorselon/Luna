@@ -1,4 +1,11 @@
 - 2026-07-12: Added DESIGN.md as a concise visual north-star note for Luna’s quiet moonlit garden return direction, with no prototype, CSS, JavaScript, asset, storage, or behavior changes.
+### Guided Return Rest Soft-Landing Slice
+
+- Reframed the Guided Return Rest stage as a short soft landing: Luna has enough to hold the return, and the person can stop here.
+- Made the five current-return values quieter under Held for now while preserving escaped rendering for project name, current goal, one next action, set aside, and recorded change.
+- Preserved the six-stage flow, one-question Find your place prototype, answer spaces, five existing localStorage keys, Shape this return Apply → Undo, final Return to Luna behavior, no-network/no-model boundary, and mobile comfort.
+- Set Luna back to Rest; next is a human mobile usability test of the Rest soft landing.
+
 ### Guided Return Conversational Presentation Slice
 
 - Reframed Guided Return editable stages around direct Luna questions: what we are returning to, what would make returning easier, one visible move, what can wait, and what changed.
@@ -15,7 +22,7 @@
 
 # Changelog
 
-- 2026-07-13: Completed a focused Guided Return answer-space presentation slice that made editable responses feel less like generic form fields while preserving the six-stage flow, one-question Find your place prototype, and five-value local-only/no-network boundary.
+- 2026-07-13: This was a focused Guided Return Rest soft-landing slice that made the ending feel less like a report and more like Luna gently holding one completed return, while preserving the six-stage flow, one-question Find your place prototype, answer spaces, and five-value local-only/no-network boundary.
 
 ## 2026-07-13
 

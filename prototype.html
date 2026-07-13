@@ -902,6 +902,37 @@
       border-color: rgb(189 200 238 / 26%);
     }
 
+    .rest-landing-card {
+      gap: 10px;
+      background: rgb(25 35 60 / 86%);
+      border-color: rgb(223 200 137 / 20%);
+    }
+
+    .rest-landing-card h3 {
+      max-width: 32rem;
+    }
+
+    .rest-held-words {
+      gap: 8px;
+      font-size: 0.94rem;
+      background: rgb(14 22 40 / 42%);
+      border-color: rgb(189 200 238 / 12%);
+      box-shadow: none;
+    }
+
+    .rest-held-words .label,
+    .rest-held-words h3 {
+      color: var(--silver);
+    }
+
+    .rest-held-words h3 {
+      font-size: clamp(1rem, 2vw, 1.18rem);
+    }
+
+    .rest-held-words p {
+      color: rgb(216 224 246 / 78%);
+    }
+
     .return-path {
       display: flex;
       flex-wrap: wrap;
@@ -1633,15 +1664,15 @@
         intro: 'That is enough. You can stop here.',
         tone: 'rest',
         render: () => `
-          ${renderLunaInsight('rest')}
-          <article class="quiet-card rest-card">
+          <article class="quiet-card rest-card rest-landing-card">
             <span class="label">Rest</span>
             <h3>I have enough to hold this return.</h3>
-            <p>You can stop here. ${escapeHtml(getReturnGuidance().restMessage)}</p>
+            <p>You can stop here. Luna will keep the thread warm until you come back.</p>
           </article>
-          <article class="quiet-card">
-            <span class="label">Current return</span>
-            <h3>Luna is holding these words briefly.</h3>
+          ${renderLunaInsight('rest')}
+          <article class="quiet-card rest-held-words">
+            <span class="label">Held for now</span>
+            <h3>The words Luna is keeping close.</h3>
             <p><strong>Project:</strong> ${escapeHtml(formatRestSummaryValue('projectName', getProjectName()))}</p>
             <p><strong>Goal:</strong> ${escapeHtml(formatRestSummaryValue('currentGoal', getCurrentGoal()))}</p>
             <p><strong>Next action:</strong> ${escapeHtml(formatRestSummaryValue('nextAction', getNextAction()))}</p>
