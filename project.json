@@ -574,9 +574,9 @@
       "note": "The project is resting after a good run and ready for one gentle improvement."
     }
   ],
-  "currentGoal": "Rest after a focused Guided Return size-stability correction.",
-  "lastCompletedRun": "2026-07-12: Corrected the remaining Guided Return size-stability blocker by giving the stage panel stable desktop/mobile block sizing, keeping overflowing stage content scrollable inside the panel, stabilizing the guided action area, and preserving fade-only motion, reduced-motion behavior, visual comfort CSS, five local storage keys, maxlengths, safe rendering, deterministic guidance, and the complete loop.",
-  "nextStep": "Human mobile-test Guided Return size stability with brief exposure: move one stage at a time and confirm the panel no longer visibly jumps or resizes in a discomforting way.",
+  "currentGoal": "Rest after adding the visual north-star note for Luna’s moonlit garden return direction.",
+  "lastCompletedRun": "2026-07-12: Added DESIGN.md as a concise visual north-star note anchoring Luna’s finished look and feel around a quiet moonlit garden return, opening gate threshold, lantern/path guidance, small night companion cues, game-design attention logic without gamification, and small visual-slice implementation rules.",
+  "nextStep": "Plan the first small garden-gate visual slice for the opening threshold.",
   "dashboardGuide": [
     "Welcome starts the path to read through Record the Change before choosing more work.",
     "Status gives a quick snapshot of how the project is doing right now.",
@@ -587,8 +587,8 @@
     "Optional Reflection can wait; Philosophy Garden is a gentle reflection layer, not Luna's main engine."
   ],
   "futureIdeas": [
-    "Human mobile-test Guided Return size stability with brief exposure: move one stage at a time and confirm the panel no longer visibly jumps or resizes in a discomforting way.",
-    "If size-stability testing finds a remaining blocker, fix only that issue without expanding v0.1 scope."
+    "Plan the first small garden-gate visual slice for the opening threshold.",
+    "If visual implementation begins, preserve current behavior and change only one small opening-threshold slice."
   ],
   "decisionLog": [
     "2026-07-12: Completed the first full Guided Return loop as the second meaningful v0.1 vertical slice after the opening threshold; Set Aside stays not-a-backlog, Record stays brief, and Rest becomes a real stopping point before returning to Luna.",
@@ -612,8 +612,8 @@
     "The Garden Cycle connects the Reflection Card, Garden Review, Next Garden Update, and rest step so beginners can see how Philosophy Garden pieces fit together."
   ],
   "ideaQueue": [
-    "Human mobile-test Guided Return size stability with brief exposure: move one stage at a time and confirm the panel no longer visibly jumps or resizes in a discomforting way.",
-    "If size-stability testing finds a remaining blocker, make one bounded size-stability/accessibility correction."
+    "Plan the first small garden-gate visual slice for the opening threshold.",
+    "If visual implementation begins, preserve current behavior and change only one small opening-threshold slice."
   ],
   "ideaQueueGuide": [
     "Choose one small task that can be finished clearly in a single update.",
@@ -648,10 +648,10 @@
     "Visit http://localhost:8000 in a browser to view the dashboard."
   ],
   "nextAction": {
-    "title": "Human mobile-test Guided Return size stability",
-    "description": "Move through Guided Return one stage at a time with brief exposure and confirm the panel no longer visibly jumps or resizes in a discomforting way.",
-    "whyItMatters": "This verifies that Luna’s steadier guided stage frame and action area resolve the remaining human-readiness size-stability blocker before another readiness pass.",
-    "status": "Resting before human mobile size-stability test"
+    "title": "Plan the first small garden-gate visual slice",
+    "description": "Plan the first small garden-gate visual slice for the opening threshold before changing UI code.",
+    "whyItMatters": "This keeps Luna aligned with the new moonlit garden return north star while avoiding a broad redesign or dashboard drift.",
+    "status": "Resting before visual slice planning"
   },
   "creativeSeed": {
     "name": "Philosophy Garden",
@@ -719,9 +719,9 @@
   ],
   "currentMode": {
     "name": "Rest",
-    "description": "Luna is resting after a focused Guided Return mobile layout regression fix.",
-    "whyItMatters": "Rest protects the opening threshold, Shape this return, Apply → Undo, clearer full overview editing panel, five saved project values, local-only storage, deterministic guidance, safe rendering, mobile containment, mobile visual comfort, fade-only motion, and complete Guided Return loop while human mobile readability testing happens.",
+    "description": "Luna is resting after adding the visual north-star note for a quiet moonlit garden return direction.",
+    "whyItMatters": "Rest protects current behavior while future visual work starts from the moonlit sky, garden gate, lantern/path, and gentle return metaphor instead of broad redesign.",
     "value": "Rest"
   },
-  "nextSuggestedStep": "Human mobile-test Guided Return readability only: verify no overlapping text, no content hidden under actions, and no broken internal scroll before any broader project discussion."
+  "nextSuggestedStep": "Plan the first small garden-gate visual slice for the opening threshold."
 }
