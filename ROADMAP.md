@@ -12,7 +12,7 @@ Luna now has a concise visual direction note anchoring the finished look and fee
 
 ## Current Opening Threshold Slice
 
-The first small opening-threshold visual slice has been refined for mobile review, and a tiny follow-up copy cleanup removes the remaining visible dashboard framing from the prototype return link and current project trail. Luna remains at Rest. Next: human mobile comfort/readability check of the refined opening threshold only before any broader visual redesign.
+The first small opening-threshold visual slice has been refined again so the opening reads less like a project-summary card and more like a press-start threshold: moon/Luna presence, a small unfinished-thread hint, the garden gate, and Return gently. Luna remains at Rest. Next: human mobile comfort/readability check of the press-start opening threshold only before any broader visual redesign.
 
 ## Current v0.1 Direction
 

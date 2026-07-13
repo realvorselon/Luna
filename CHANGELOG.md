@@ -10,6 +10,9 @@
 
 ## 2026-07-13
 
+- Minimized the opening threshold project context card into a small “One unfinished thing is waiting.” hint so the first impression reads more like moon/Luna → gate → Return gently than a project summary.
+- Preserved the saved project name and next action display bindings in the markup, kept `.opening-gate` wrapping the real `Return gently` button, and left Shape this return, Open full overview, storage keys, guidance, and network-free behavior unchanged.
+
 ### Prototype Dashboard Framing Copy Cleanup
 
 - Reworded the visible prototype return link so it points back to Luna’s opening threshold instead of calling Luna a dashboard.
