@@ -1,12 +1,12 @@
-Luna is at Rest after planning the first opening-threshold visual slice. The current prototype behavior remains unchanged; the next implementation should translate only the opening threshold toward a moonlit press-start garden gate without broad redesign, new features, assets, storage keys, or guidance-engine changes.
+Luna is at Rest after implementing the first opening-threshold visual slice. The current opening now reads more like a moonlit press-start threshold with a small CSS-only garden-gate primary action, while existing behavior remains unchanged.
 
-Next suggested step: Implement the first small garden-gate opening threshold slice.
+Next suggested step: Human mobile comfort/readability check of the new opening threshold.
 
 # State
 
-Luna is at Rest after planning the first opening-threshold visual slice. The current prototype behavior remains unchanged, and future visual work should start with a narrow garden-gate press-start translation of the opening threshold while preserving full overview editing clarity, Shape this return, Apply → Undo, local-only storage, deterministic guidance, safe rendering, mobile comfort, reduced-motion behavior, and the complete Guided Return loop.
+Luna is at Rest after implementing the first narrow garden-gate press-start translation of the opening threshold while preserving full overview editing clarity, Shape this return, Apply → Undo, local-only storage, deterministic guidance, safe rendering, mobile comfort, reduced-motion behavior, and the complete Guided Return loop.
 
-Next suggested step: Implement the first small garden-gate opening threshold slice.
+Next suggested step: Human mobile comfort/readability check of the new opening threshold.
 
 ## Full Overview Editing Clarity — 2026-07-12
 
@@ -26,10 +26,11 @@ Luna is becoming a small, moonlit one-project return app. It begins with a real 
 
 ## Current Goal
 
-Rest after planning the first opening-threshold visual slice.
+Rest after implementing the first opening-threshold visual slice.
 
 ## Last Completed Run
 
+- 2026-07-13: Implemented the first small garden-gate opening threshold visual slice in `prototype.html`, foregrounding Luna/moon/title, making Return gently the central CSS-only gate action, and keeping Shape this return plus Open full overview quieter without changing behavior.
 - 2026-07-13: Added `OPENING_SLICE.md` as the first narrow opening-threshold visual implementation plan, defining a garden-gate press-start slice while keeping prototype behavior unchanged.
 - 2026-07-12: Added `DESIGN.md` as a concise visual north-star note for Luna’s moonlit garden return direction, anchoring future visual work around a quiet opening threshold, garden gate, lantern/path, small companion cues, and game-design attention guidance without gamification or behavior changes.
 - 2026-07-12: Completed a bounded v0.1 stabilization/coherence pass: cleaned generated Record and Rest punctuation, aligned return-path wording, preserved tested behavior, and extended static regression checks.
@@ -43,7 +44,7 @@ Rest after planning the first opening-threshold visual slice.
 
 ## Next Suggested Step
 
-Implement the first small garden-gate opening threshold slice.
+Human mobile comfort/readability check of the new opening threshold.
 
 ## Notes
 
