@@ -1,12 +1,12 @@
-Luna is at Rest after adding the visual north-star note for a quiet moonlit garden return direction. The current prototype behavior remains unchanged; future visual work should start from the moonlit sky → garden gate → lantern/path → gentle return metaphor instead of drifting toward dashboards, admin pages, or generic productivity surfaces.
+Luna is at Rest after planning the first opening-threshold visual slice. The current prototype behavior remains unchanged; the next implementation should translate only the opening threshold toward a moonlit press-start garden gate without broad redesign, new features, assets, storage keys, or guidance-engine changes.
 
-Next suggested step: Plan the first small garden-gate visual slice for the opening threshold.
+Next suggested step: Implement the first small garden-gate opening threshold slice.
 
 # State
 
-Luna is at Rest after adding a concise visual north-star note for the quiet moonlit garden return direction. The current prototype behavior remains unchanged, and future visual work should preserve the opening threshold, full overview editing clarity, Shape this return, Apply → Undo, local-only storage, deterministic guidance, safe rendering, mobile comfort, reduced-motion behavior, and complete Guided Return loop while translating the look one small slice at a time.
+Luna is at Rest after planning the first opening-threshold visual slice. The current prototype behavior remains unchanged, and future visual work should start with a narrow garden-gate press-start translation of the opening threshold while preserving full overview editing clarity, Shape this return, Apply → Undo, local-only storage, deterministic guidance, safe rendering, mobile comfort, reduced-motion behavior, and the complete Guided Return loop.
 
-Next suggested step: Plan the first small garden-gate visual slice for the opening threshold.
+Next suggested step: Implement the first small garden-gate opening threshold slice.
 
 ## Full Overview Editing Clarity — 2026-07-12
 
@@ -26,10 +26,11 @@ Luna is becoming a small, moonlit one-project return app. It begins with a real 
 
 ## Current Goal
 
-Rest after adding the visual north-star note for Luna’s moonlit garden return direction.
+Rest after planning the first opening-threshold visual slice.
 
 ## Last Completed Run
 
+- 2026-07-13: Added `OPENING_SLICE.md` as the first narrow opening-threshold visual implementation plan, defining a garden-gate press-start slice while keeping prototype behavior unchanged.
 - 2026-07-12: Added `DESIGN.md` as a concise visual north-star note for Luna’s moonlit garden return direction, anchoring future visual work around a quiet opening threshold, garden gate, lantern/path, small companion cues, and game-design attention guidance without gamification or behavior changes.
 - 2026-07-12: Completed a bounded v0.1 stabilization/coherence pass: cleaned generated Record and Rest punctuation, aligned return-path wording, preserved tested behavior, and extended static regression checks.
 - 2026-07-12: Made each visible Shape this return suggestion reversible during the current review session: Use this becomes Undo, Undo restores the exact previous field value through the existing input/display/localStorage/Guided Return update path, unrelated fields remain unchanged, and no undo history or new persistence key is added.
@@ -42,7 +43,7 @@ Rest after adding the visual north-star note for Luna’s moonlit garden return 
 
 ## Next Suggested Step
 
-Plan the first small garden-gate visual slice for the opening threshold.
+Implement the first small garden-gate opening threshold slice.
 
 ## Notes
 

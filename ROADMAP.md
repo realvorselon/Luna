@@ -1,6 +1,6 @@
 ## Visual North-Star Checkpoint
 
-Luna now has a concise visual direction note anchoring the finished look and feel as a quiet moonlit garden return app rather than a dashboard, Notion clone, or generic productivity surface. The next visual implementation should start by planning the first small garden-gate opening slice, not a broad redesign.
+Luna now has a concise visual direction note anchoring the finished look and feel as a quiet moonlit garden return app rather than a dashboard, Notion clone, or generic productivity surface. The next visual implementation should be the first narrow garden-gate opening threshold slice, not a broad redesign.
 
 ## Guided Return size-stability correction
 
