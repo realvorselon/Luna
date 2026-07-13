@@ -2,6 +2,14 @@
 
 ## 2026-07-13
 
+### Guided Return Contribution Clarity Slice
+
+- This was a focused Guided Return contribution clarity slice that made each existing answer feel like part of the final Return Card, so the middle of the flow feels less like filling boxes and more like Luna gathering a clear place to resume.
+- Added compact contribution cues to existing Guided Return answer spaces for Returning to, The thread, The lantern, Waiting outside the gate, and What changed.
+- Strengthened Choose so One Next Action reads as the lantern/resume point while preserving one action only.
+- Preserved the Rest soft landing, Return Card escaping, six-stage order, one-question Find your place behavior, opening buttons, Shape this return Apply → Undo, five existing localStorage keys, maxlengths, no-network/no-model boundary, and mobile comfort.
+- Set Luna back to Rest; next is: Human mobile test of whether each Guided Return stage feels like it contributes to the Return Card.
+
 ### Moonlit Atmosphere Slice
 
 - Added restrained CSS-only moonlit atmosphere to the opening threshold: softer night depth, subtle path light, and a warmer garden-gate focal point around the real Return gently button.
