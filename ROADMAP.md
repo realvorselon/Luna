@@ -10,7 +10,11 @@ Luna now has a concise visual direction note anchoring the finished look and fee
 
 # Roadmap
 
-## Current Luna First-Impression Clarity Slice
+## Current Moonlit Atmosphere Slice
+
+This was a focused moonlit atmosphere slice that made Luna’s opening and Guided Return shell feel more like one quiet return place while preserving the existing local-only flow, first-impression clarity, and Rest Return Card. The opening now has restrained moonlit gate/path depth around Return gently, and Guided Return continues the same quiet path atmosphere into the stage panel with Choose / One Next Action still reading as the lantern/resume point. Luna remains at Rest. Next: Human mobile test of whether Luna feels more like a quiet return place.
+
+## Previous Luna First-Impression Clarity Slice
 
 This was a focused Luna first-impression clarity slice that made the opening explain the practical payoff of Guided Return: bringing one unfinished thing back into view, finding the thread, choosing a lantern, and leaving with a Return Card. The opening now explains the practical Guided Return payoff before a user starts, while preserving the opening actions, six-stage flow, Rest Return Card behavior, five existing localStorage keys, local-only boundary, and calm moonlit visual direction. Luna remains at Rest. Next: Human mobile test of whether Luna’s opening explains why Guided Return helps.
 

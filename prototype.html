@@ -28,7 +28,10 @@
     body {
       margin: 0;
       font-family: system-ui, sans-serif;
-      background: linear-gradient(180deg, var(--night-deep) 0%, var(--night-indigo) 58%, #10182c 100%);
+      background:
+        radial-gradient(circle at 50% -10%, rgb(243 237 221 / 12%), transparent 34rem),
+        radial-gradient(ellipse at 50% 102%, rgb(223 200 137 / 7%), transparent 32rem),
+        linear-gradient(180deg, var(--night-deep) 0%, var(--night-indigo) 58%, #10182c 100%);
       color: var(--moon);
       line-height: 1.6;
     }
@@ -68,10 +71,21 @@
     }
 
     .luna-opening {
+      position: relative;
       min-height: min(720px, calc(100svh - 136px));
       display: grid;
       align-content: center;
       padding-block: 12px;
+    }
+
+    .luna-opening::before {
+      content: "";
+      position: absolute;
+      inset: 5% 10% auto;
+      height: min(38svh, 280px);
+      pointer-events: none;
+      background: radial-gradient(ellipse at 50% 0%, rgb(183 194 224 / 9%), transparent 70%);
+      opacity: 0.9;
     }
 
     .luna-mark {
@@ -100,10 +114,11 @@
       max-width: 680px;
       padding: clamp(24px, 5vw, 42px);
       overflow: hidden;
-      background: rgb(19 28 50 / 92%);
+      background:
+        linear-gradient(180deg, rgb(19 28 50 / 94%), rgb(13 21 40 / 94%));
       border: 1px solid rgb(196 205 238 / 18%);
       border-radius: 28px;
-      box-shadow: 0 16px 36px rgb(0 0 0 / 18%);
+      box-shadow: 0 16px 36px rgb(0 0 0 / 18%), inset 0 1px 0 rgb(255 255 255 / 4%);
     }
 
     .opening-threshold::before,
@@ -124,13 +139,13 @@
     }
 
     .opening-threshold::after {
-      inset: auto 14% 0;
-      height: 118px;
+      inset: auto 10% 0;
+      height: 154px;
       background:
         linear-gradient(90deg, transparent, rgb(223 200 137 / 18%), transparent) top / 100% 1px no-repeat,
-        linear-gradient(180deg, rgb(223 200 137 / 10%), transparent 72%);
-      clip-path: polygon(47% 0, 53% 0, 66% 100%, 34% 100%);
-      opacity: 0.5;
+        linear-gradient(180deg, rgb(223 200 137 / 12%), rgb(183 194 224 / 5%) 44%, transparent 78%);
+      clip-path: polygon(46% 0, 54% 0, 69% 100%, 31% 100%);
+      opacity: 0.58;
     }
 
     .opening-moonrise {
@@ -182,17 +197,18 @@
       gap: 10px;
       max-width: 620px;
       margin: 22px auto 0;
-      padding: 12px;
-      background: rgb(10 17 34 / 32%);
-      border: 1px solid rgb(223 200 137 / 16%);
-      border-radius: 20px;
+      padding: 10px;
+      background: rgb(10 17 34 / 20%);
+      border: 1px solid rgb(223 200 137 / 12%);
+      border-radius: 22px;
+      box-shadow: inset 0 1px 0 rgb(255 255 255 / 3%);
     }
 
     .opening-payoff-item {
       min-width: 0;
       padding: 12px;
-      background: rgb(25 35 60 / 58%);
-      border: 1px solid rgb(189 200 238 / 12%);
+      background: rgb(25 35 60 / 46%);
+      border: 1px solid rgb(189 200 238 / 10%);
       border-radius: 15px;
     }
 
@@ -299,8 +315,9 @@
       justify-self: center;
       min-width: min(100%, 236px);
       padding: 16px 24px;
-      background: rgb(47 58 89 / 96%);
-      border-color: rgb(223 200 137 / 48%);
+      background: linear-gradient(180deg, rgb(58 67 96 / 96%), rgb(42 52 82 / 96%));
+      border-color: rgb(223 200 137 / 52%);
+      box-shadow: 0 12px 26px rgb(0 0 0 / 18%), 0 0 0 5px rgb(223 200 137 / 5%);
     }
 
     .quiet-reference-button {
@@ -626,15 +643,39 @@
     }
 
     .guided-return-view {
+      position: relative;
       width: min(100%, 880px);
       min-width: 0;
       max-width: 100%;
       margin: 38px auto 0;
       padding: clamp(18px, 3vw, 28px);
-      background: rgb(13 21 40 / 96%);
+      overflow: hidden;
+      background:
+        linear-gradient(180deg, rgb(13 21 40 / 96%), rgb(12 19 36 / 96%));
       border: 1px solid rgb(152 166 214 / 14%);
       border-radius: 26px;
-      box-shadow: 0 16px 36px rgb(0 0 0 / 16%);
+      box-shadow: 0 16px 36px rgb(0 0 0 / 16%), inset 0 1px 0 rgb(255 255 255 / 4%);
+    }
+
+    .guided-return-view::before {
+      content: "";
+      position: absolute;
+      inset: 0 12% auto;
+      height: 120px;
+      pointer-events: none;
+      background: linear-gradient(180deg, rgb(183 194 224 / 8%), transparent 76%);
+      opacity: 0.75;
+    }
+
+    .guided-return-view::after {
+      content: "";
+      position: absolute;
+      inset: auto 16% 0;
+      height: 120px;
+      pointer-events: none;
+      background: linear-gradient(180deg, rgb(223 200 137 / 8%), transparent 74%);
+      clip-path: polygon(47% 0, 53% 0, 67% 100%, 33% 100%);
+      opacity: 0.5;
     }
 
     .guided-shell,
@@ -644,6 +685,8 @@
     }
 
     .guided-shell {
+      position: relative;
+      z-index: 1;
       display: grid;
       grid-template-rows: auto minmax(0, auto) auto;
       gap: 18px;
@@ -704,7 +747,7 @@
       min-block-size: clamp(420px, 48svh, 500px);
       overflow: visible;
       padding: clamp(18px, 3vw, 28px);
-      background: rgb(20 29 52 / 88%);
+      background: linear-gradient(180deg, rgb(20 29 52 / 90%), rgb(18 27 49 / 88%));
       border: 1px solid rgb(152 166 214 / 14%);
       border-radius: 22px;
       box-shadow: inset 0 1px 0 rgb(255 255 255 / 4%);
@@ -906,16 +949,21 @@
       box-shadow: inset 0 1px 0 rgb(255 255 255 / 4%);
     }
 
+    .guided-stage-panel[data-stage-tone="choose"] {
+      border-color: rgb(223 200 137 / 22%);
+      box-shadow: inset 0 1px 0 rgb(255 255 255 / 4%), 0 0 0 1px rgb(223 200 137 / 5%);
+    }
+
     .guided-stage-panel[data-stage-tone="set-aside"] {
-      background: rgb(20 29 52 / 88%);
+      background: linear-gradient(180deg, rgb(20 29 52 / 90%), rgb(18 27 49 / 88%));
     }
 
     .guided-stage-panel[data-stage-tone="record"] {
-      background: rgb(21 30 53 / 90%);
+      background: linear-gradient(180deg, rgb(21 30 53 / 90%), rgb(18 27 49 / 88%));
     }
 
     .guided-stage-panel[data-stage-tone="rest"] {
-      background: rgb(24 32 54 / 90%);
+      background: linear-gradient(180deg, rgb(24 32 54 / 90%), rgb(20 28 50 / 90%));
       border-color: rgb(223 200 137 / 16%);
     }
 

@@ -1,5 +1,16 @@
 # State
 
+## Moonlit Atmosphere Slice
+
+- This was a focused moonlit atmosphere slice that made Luna’s opening and Guided Return shell feel more like one quiet return place while preserving the existing local-only flow, first-impression clarity, and Rest Return Card.
+- The opening threshold now has softer night depth, a quieter path glow, and a warmer gate/lantern focal point around Return gently without adding features, screens, data, or behavior.
+- The Guided Return shell now carries the same restrained moonlit path atmosphere into the stage panel and keeps Choose / One Next Action as the lantern/resume point.
+- Status remains Rest; next suggested step is: “Human mobile test of whether Luna feels more like a quiet return place.”
+
+Luna is at Rest after a focused moonlit atmosphere pass. The same opening buttons, Guided Return stages, one-question Find your place behavior, answer spaces, Luna insight cards, Rest Return Card, five localStorage keys, maxlengths, safe rendering protections, reduced-motion protections, and no-network/no-model boundary remain preserved.
+
+Next suggested step: Human mobile test of whether Luna feels more like a quiet return place.
+
 ## Luna First-Impression Clarity Slice
 
 - This was a focused Luna first-impression clarity slice that made the opening explain the practical payoff of Guided Return: bringing one unfinished thing back into view, finding the thread, choosing a lantern, and leaving with a Return Card.
