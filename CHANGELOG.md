@@ -1,4 +1,11 @@
 - 2026-07-12: Added DESIGN.md as a concise visual north-star note for Luna’s quiet moonlit garden return direction, with no prototype, CSS, JavaScript, asset, storage, or behavior changes.
+### Guided Return Conversational Presentation Slice
+
+- Reframed Guided Return editable stages around direct Luna questions: what we are returning to, what would make returning easier, one visible move, what can wait, and what changed.
+- Reduced the form-like guided presentation with lighter inline question cards while preserving the full overview as the reference editing mode.
+- Preserved the six-stage flow, five existing localStorage keys, inline editing, Shape this return Apply → Undo, deterministic local insights, safe rendering, maxlengths, opening buttons, no-network/no-model boundary, mobile comfort, and reduced-motion behavior.
+- Set Luna back to Rest; next is a human mobile usability test of the conversational Guided Return flow.
+
 ### Guided Return Size-Stability Correction
 
 - Stabilized the Guided Return stage panel with practical desktop/mobile block sizing so Orient → Remember → Choose → Set Aside → Record → Rest feel like one stable frame.

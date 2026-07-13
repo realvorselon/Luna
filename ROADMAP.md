@@ -2,17 +2,17 @@
 
 Luna now has a concise visual direction note anchoring the finished look and feel as a quiet moonlit garden return app rather than a dashboard, Notion clone, or generic productivity surface. The next visual implementation should be the first narrow garden-gate opening threshold slice, not a broad redesign.
 
-## Guided Return Luna insight/coaching slice
+## Guided Return conversational presentation slice
 
-- Current focus is complete: Guided Return now adds a calm Luna insight card inside each relevant stage so the existing editable flow helps a new person understand what belongs there.
-- The insight remains local, deterministic, browser-only guidance from existing rules and simple heuristics; no fields, storage keys, AI/API/model/network behavior, dashboards, task systems, history, export, or visual redesign were added.
-- Luna is back at Rest; next is: Human mobile usability test of Luna insight inside Guided Return.
+- Current focus is complete: Guided Return now presents the existing editable flow as Luna asking one gentle question at a time.
+- The same six-stage flow, five saved local values, inline editing, deterministic insight, full overview editing, Shape this return Apply → Undo behavior, storage-key boundary, no-network/no-model behavior, mobile comfort, and reduced-motion protections remain preserved.
+- Luna is back at Rest; next is: Human mobile usability test of the conversational Guided Return flow.
 
 # Roadmap
 
 ## Current Opening Threshold Slice
 
-A Guided Return Luna insight/coaching slice made the existing editable flow less form-like by adding local deterministic stage guidance inside Find your place, Choose, Set Aside, Record, and Rest. The slice keeps Luna’s existing five values, inline editing, full overview editing, Shape this return Apply → Undo behavior, storage-key boundary, no-network/no-model behavior, mobile comfort, and reduced-motion protections. Luna remains at Rest. Next: Human mobile usability test of Luna insight inside Guided Return.
+A Guided Return conversational presentation slice made the existing editable local flow feel less like a form and more like Luna asking one gentle question at a time. The slice keeps Luna’s existing six-stage flow, five values, inline editing, full overview editing, Shape this return Apply → Undo behavior, storage-key boundary, no-network/no-model behavior, mobile comfort, and reduced-motion protections. Luna remains at Rest. Next: Human mobile usability test of the conversational Guided Return flow.
 
 ## Current v0.1 Direction
 

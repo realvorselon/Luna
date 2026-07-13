@@ -610,9 +610,9 @@
       "note": "The project is resting after a good run and ready for one gentle improvement."
     }
   ],
-  "currentGoal": "Rest after the Guided Return Luna insight/coaching slice.",
-  "lastCompletedRun": "2026-07-13: Completed a Guided Return Luna insight/coaching slice that made the existing editable flow less form-like by adding local deterministic stage guidance, while preserving the five-value local-only/no-network boundary.",
-  "nextStep": "Human mobile usability test of Luna insight inside Guided Return.",
+  "currentGoal": "Rest after the Guided Return conversational presentation slice.",
+  "lastCompletedRun": "2026-07-13: Completed a Guided Return conversational presentation slice that made the existing editable local flow feel less like a form and more like Luna asking one gentle question at a time, while preserving the five-value local-only/no-network boundary.",
+  "nextStep": "Human mobile usability test of the conversational Guided Return flow.",
   "dashboardGuide": [
     "Welcome starts the path to read through Record the Change before choosing more work.",
     "Status gives a quick snapshot of how the project is doing right now.",
@@ -685,8 +685,8 @@
   ],
   "nextAction": {
     "title": "Human mobile usability test",
-    "description": "Human mobile usability test of Luna insight inside Guided Return.",
-    "whyItMatters": "The new insight cards are deterministic and local in code, but a real mobile usability pass should confirm they make Guided Return feel less like a form while preserving comfortable editing.",
+    "description": "Human mobile usability test of the conversational Guided Return flow.",
+    "whyItMatters": "Guided Return now presents the same five saved local values as a gentle one-question-at-a-time exchange; a mobile human pass should confirm it feels guided without feeling like chat or a form.",
     "status": "Ready for human test"
   },
   "creativeSeed": {
@@ -755,9 +755,9 @@
   ],
   "currentMode": {
     "name": "Rest",
-    "description": "Luna is resting after a Guided Return Luna insight/coaching slice.",
-    "whyItMatters": "The existing editable flow now gives local stage guidance without adding fields, storage keys, or network/model behavior.",
+    "description": "Luna is resting after a Guided Return conversational presentation slice.",
+    "whyItMatters": "The existing editable local flow now feels more like Luna asking one gentle question at a time while preserving the five-value local-only/no-network boundary.",
     "value": "Rest"
   },
-  "nextSuggestedStep": "Human mobile usability test of Luna insight inside Guided Return."
+  "nextSuggestedStep": "Human mobile usability test of the conversational Guided Return flow."
 }

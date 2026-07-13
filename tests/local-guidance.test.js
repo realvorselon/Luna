@@ -125,6 +125,16 @@ for (const invitation of ['Name the thing you want to return to.', 'What are you
 }
 assert.deepEqual(guidedStageTitles, ['Find your place', 'Remember', 'Choose', 'Set Aside', 'Record', 'Rest'], 'Guided Return stage order should stay fixed');
 assert.equal(guidedStageTitles[0], 'Find your place', 'the first Guided Return stage should still say Find your place');
+
+for (const questionCopy of [
+  'What are we returning to?',
+  'What would make returning easier?',
+  'What is one small visible move?',
+  'What can wait while you return?',
+  'What changed, even a little?'
+]) {
+  assert(html.includes(questionCopy), `Guided Return conversational question copy should include: ${questionCopy}`);
+}
 assert(html.includes("${renderGuidedEditableField('projectName')}"), 'Find your place should include editable project name');
 assert(html.includes("${renderGuidedEditableField('currentGoal')}"), 'Find your place should include editable current goal');
 assert(html.includes("${renderGuidedEditableField('nextAction')}"), 'Choose should include editable One Next Action');
