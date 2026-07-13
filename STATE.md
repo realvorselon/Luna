@@ -1,11 +1,11 @@
-Luna is at Rest after a blocking bugfix restored prototype opening button behavior after the first-use invitation defaults pass, while preserving Guided Return inline editing and the one-project, local-only, no-network boundary.
+Luna is at Rest after a Guided Return Luna insight/coaching slice added local deterministic stage guidance inside the existing editable flow while preserving the five-value local-only/no-network boundary.
 
-Next suggested step: Human mobile smoke test of opening buttons and Guided Return entry.
+Next suggested step: Human mobile usability test of Luna insight inside Guided Return.
 # State
 
-Luna is at Rest after a blocking bugfix restored the live prototype opening buttons. The fix made the first-use invitation-default helpers defensive, removed the initialization-time reference that stopped listener wiring, preserved the five local Guided Return inline edits, and added a script-initialization/button-wiring regression check.
+Luna is at Rest after a Guided Return Luna insight/coaching slice made the existing editable flow less form-like. Each editable stage now shows local deterministic Luna insight that reflects blank, broad, list-like, or clear-enough entries without adding AI, network behavior, fields, or storage keys.
 
-Next suggested step: Human mobile smoke test of opening buttons and Guided Return entry.
+Next suggested step: Human mobile usability test of Luna insight inside Guided Return.
 
 ## Full Overview Editing Clarity — 2026-07-12
 
@@ -25,10 +25,11 @@ Luna is becoming a small, moonlit one-project return app. It begins with a real 
 
 ## Current Goal
 
-Rest after restoring prototype opening button behavior after the first-use invitation defaults pass.
+Rest after the Guided Return Luna insight/coaching slice.
 
 ## Last Completed Run
 
+- 2026-07-13: Completed a Guided Return Luna insight/coaching slice that made the existing editable flow less form-like by adding local deterministic stage guidance, while preserving the five-value local-only/no-network boundary.
 - 2026-07-13: Fixed the blocking prototype button regression after the first-use invitation defaults pass by making invitation-default formatting defensive, avoiding initialization-time helper references before display updaters exist, preserving Guided Return inline editing, and adding a lightweight button-wiring/script-initialization regression test.
 - 2026-07-13: Completed a first-use empty-state invitation copy pass that made Luna’s five default local values feel honest and usable as prompts, not fake project content, while preserving the existing fields, storage keys, Guided Return inline editing, Shape this return Apply → Undo, safe rendering, and no-network/no-new-behavior boundary.
 - 2026-07-13: Completed a Guided Return usability slice that made the existing five local values editable where they matter inside the flow, added a brief Rest summary, and preserved the one-project/local-only/no-network boundary, storage keys, input limits, Shape this return Apply → Undo behavior, safe rendering, mobile comfort, and stage order.
@@ -51,7 +52,7 @@ Rest after restoring prototype opening button behavior after the first-use invit
 
 ## Next Suggested Step
 
-Human mobile smoke test of opening buttons and Guided Return entry.
+Human mobile usability test of Luna insight inside Guided Return.
 
 ## Notes
 

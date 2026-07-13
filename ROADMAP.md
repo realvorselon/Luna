@@ -2,17 +2,17 @@
 
 Luna now has a concise visual direction note anchoring the finished look and feel as a quiet moonlit garden return app rather than a dashboard, Notion clone, or generic productivity surface. The next visual implementation should be the first narrow garden-gate opening threshold slice, not a broad redesign.
 
-## Guided Return inline editing usability slice
+## Guided Return Luna insight/coaching slice
 
-- Current focus is complete: Guided Return now lets the existing five local project values be edited where they matter inside the flow, without adding storage keys, task lists, project switching, or network behavior.
-- Rest now shows a small plain summary of the current return so the loop ends with enough context, not a report or history.
-- Luna is back at Rest; next is a human mobile usability test of editing inside the Guided Return flow.
+- Current focus is complete: Guided Return now adds a calm Luna insight card inside each relevant stage so the existing editable flow helps a new person understand what belongs there.
+- The insight remains local, deterministic, browser-only guidance from existing rules and simple heuristics; no fields, storage keys, AI/API/model/network behavior, dashboards, task systems, history, export, or visual redesign were added.
+- Luna is back at Rest; next is: Human mobile usability test of Luna insight inside Guided Return.
 
 # Roadmap
 
 ## Current Opening Threshold Slice
 
-A blocking bugfix restored the live prototype opening buttons after the first-use invitation defaults pass. The fix keeps Luna’s existing five local defaults and Guided Return inline editing, makes invitation-default formatting safe during initialization, and adds a lightweight regression check for script initialization/button wiring. No fields, storage keys, onboarding, tutorial, task system, history, backend, network/model behavior, or visual redesign were added. Luna remains at Rest. Next: Human mobile smoke test of opening buttons and Guided Return entry.
+A Guided Return Luna insight/coaching slice made the existing editable flow less form-like by adding local deterministic stage guidance inside Find your place, Choose, Set Aside, Record, and Rest. The slice keeps Luna’s existing five values, inline editing, full overview editing, Shape this return Apply → Undo behavior, storage-key boundary, no-network/no-model behavior, mobile comfort, and reduced-motion protections. Luna remains at Rest. Next: Human mobile usability test of Luna insight inside Guided Return.
 
 ## Current v0.1 Direction
 

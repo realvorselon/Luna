@@ -734,6 +734,27 @@
       font-size: 0.9rem;
     }
 
+    .luna-insight-card {
+      display: grid;
+      gap: 8px;
+      min-width: 0;
+      max-width: 100%;
+      padding: 14px 16px;
+      color: var(--moon-soft);
+      background: rgb(28 38 63 / 74%);
+      border: 1px solid rgb(223 200 137 / 18%);
+      border-radius: 18px;
+      box-shadow: inset 0 1px 0 rgb(255 255 255 / 5%);
+    }
+
+    .luna-insight-card .label {
+      color: var(--gold);
+    }
+
+    .luna-insight-card p {
+      margin: 0;
+    }
+
     .guided-position {
       margin-bottom: 10px;
       color: var(--periwinkle);
@@ -1289,6 +1310,69 @@
       return `The current goal is ${goal}. You only need enough context to choose a small next step.`;
     };
 
+
+    const getReturnGuidance = () => window.LunaReturnGuidance.buildReturnGuidance(getGuidanceContext());
+
+    const isRealUserEntry = (fieldKey, value) => {
+      const text = normalizeInvitationValue(value);
+      return Boolean(text) && !isInvitationDefault(fieldKey, text);
+    };
+
+    const renderLunaInsight = (stageKey) => `
+      <aside class="luna-insight-card" aria-label="Luna insight for this step">
+        <span class="label">Luna insight</span>
+        <p id="guided-${stageKey}-insight">${escapeHtml(getGuidedInsightText(stageKey))}</p>
+      </aside>
+    `;
+
+    const getGuidedInsightText = (stageKey) => {
+      const guidance = getReturnGuidance();
+      const projectNamed = isRealUserEntry('projectName', projectNameInput.value);
+      const goalNamed = isRealUserEntry('currentGoal', currentGoalInput.value);
+      const actionNamed = isRealUserEntry('nextAction', nextActionInput.value);
+      if (stageKey === 'place') {
+        if (!projectNamed || !goalNamed) {
+          return 'Start by naming one real thing Luna can hold. The project name can be one unfinished thing, not a whole life system; the goal can name what returning should make easier.';
+        }
+        if (guidance.goal.status === 'suggestion') {
+          return `${guidance.goal.reason} The project name can stay simple, and the goal can be just enough to make returning easier.`;
+        }
+        return 'That is enough to find your place. Luna can hold this as one unfinished thing with a clear return point.';
+      }
+      if (stageKey === 'choose') {
+        if (guidance.nextAction.status === 'suggestion') {
+          return guidance.nextAction.reason;
+        }
+        return 'One small action is enough. This looks clear enough to act as the lantern for this return.';
+      }
+      if (stageKey === 'setAside') {
+        if (guidance.setAside.status === 'suggestion') {
+          return `${guidance.setAside.reason} This field is only for one distraction, larger idea, or pressure that can wait.`;
+        }
+        return 'That can wait while you return. Naming it here is a boundary, not a backlog.';
+      }
+      if (stageKey === 'record') {
+        if (guidance.recordChange.status === 'suggestion') {
+          return `${guidance.recordChange.reason} This is not a log or report; one small note about what changed is enough.`;
+        }
+        return 'This note is enough to make returning easier later. It does not need to become a report.';
+      }
+      if (stageKey === 'rest') {
+        if (projectNamed && actionNamed) {
+          return 'The return is held clearly enough: Luna has one named thing and one visible next move. You can stop here.';
+        }
+        return 'You can still stop gently. The next return can start by naming the missing piece: one real thing Luna can hold, or one small visible next move.';
+      }
+      return guidance.contextMessage || guidance.allClearMessage;
+    };
+
+    const updateVisibleGuidedInsight = () => {
+      const visibleInsight = guidedStageBody.querySelector('[id^="guided-"][id$="-insight"]');
+      if (!visibleInsight) return;
+      const stageKey = visibleInsight.id.replace('guided-', '').replace('-insight', '');
+      visibleInsight.textContent = getGuidedInsightText(stageKey);
+    };
+
     const guidedEditableFields = {
       projectName: {
         label: 'Project name',
@@ -1362,6 +1446,7 @@
           if (guidedDisplay) {
             guidedDisplay.textContent = field.input.value.trim() || field.input.defaultValue;
           }
+          updateVisibleGuidedInsight();
         });
       });
     };
@@ -1371,6 +1456,7 @@
         title: 'Find your place',
         intro: 'Name the one thing you want to return to and what would help now.',
         render: () => `
+          ${renderLunaInsight('place')}
           <div class="guided-inline-edit" aria-label="Find your place editable project context">
             ${renderGuidedEditableField('projectName')}
             ${renderGuidedEditableField('currentGoal')}
@@ -1403,6 +1489,7 @@
             <h3 id="guided-next-action-display">${escapeHtml(getNextAction())}</h3>
             <p>Keep it small: one action is enough for this return.</p>
           </article>
+          ${renderLunaInsight('choose')}
           <div class="guided-inline-edit" aria-label="Choose editable next action">
             ${renderGuidedEditableField('nextAction')}
           </div>
@@ -1418,6 +1505,7 @@
             <h3 id="guided-set-aside-display">${escapeHtml(getSetAside())}</h3>
             <p>This can wait while you return.</p>
           </article>
+          ${renderLunaInsight('setAside')}
           <div class="guided-inline-edit" aria-label="Set Aside editable value">
             ${renderGuidedEditableField('setAside')}
           </div>
@@ -1433,6 +1521,7 @@
             <h3>One brief note is enough.</h3>
             <p id="guided-record-change-display">${escapeHtml(getRecordChange())}</p>
           </article>
+          ${renderLunaInsight('record')}
           <div class="guided-inline-edit" aria-label="Record editable change note">
             ${renderGuidedEditableField('recordChange')}
           </div>
@@ -1443,10 +1532,11 @@
         intro: 'Stop here if that is enough. The next step can wait for later.',
         tone: 'rest',
         render: () => `
+          ${renderLunaInsight('rest')}
           <article class="quiet-card rest-card">
             <span class="label">Rest</span>
             <h3>Rest after one small return.</h3>
-            <p>${escapeHtml(window.LunaReturnGuidance.buildReturnGuidance(getGuidanceContext()).restMessage)}</p>
+            <p>${escapeHtml(getReturnGuidance().restMessage)}</p>
           </article>
           <article class="quiet-card">
             <span class="label">Current return</span>

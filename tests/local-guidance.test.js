@@ -134,6 +134,12 @@ assert(html.includes('syncGuidedEditableFields();'), 'Guided Return inline contr
 assert(html.includes('field.input.value = guidedInput.value;'), 'Guided inline edits should update the existing overview input values');
 assert(html.includes('writeLocalValue(field.storageKey, guidedInput.value);'), 'Guided inline edits should save through the existing five storage keys');
 assert(html.includes('<span class="label">Current return</span>'), 'Rest should include a brief current-return summary');
+assert(html.includes('class="luna-insight-card"'), 'Guided Return should render Luna insight cards');
+assert(html.includes('aria-label="Luna insight for this step"'), 'Guided Return insights should be accessible labelled coaching regions');
+for (const copy of ['Start by naming one real thing Luna can hold', 'one unfinished thing, not a whole life system', 'One small action is enough', 'one distraction, larger idea, or pressure that can wait', 'This is not a log or report', 'The return is held clearly enough']) {
+  assert(html.includes(copy), `Guided Return insight copy should include: ${copy}`);
+}
+assert(html.includes('updateVisibleGuidedInsight();'), 'Guided inline edits should refresh visible Luna insight copy after typing');
 assert.equal((html.match(/StorageKey\s*=\s*'luna\.prototype\./g) || []).length, 5, 'only the five project storage keys should be declared');
 assert(!/suggestion.*StorageKey|guidance.*StorageKey|history.*StorageKey/i.test(html), 'no suggestion/history storage keys');
 
@@ -155,7 +161,8 @@ assert(html.includes('formatRestSummaryValue'), 'Rest summary should format invi
 assert(html.includes('Not named yet'), 'Rest summary should not pretend default project prompt is a real project name');
 assert(html.includes('createTextElement'));
 assert(html.includes('textContent = text'));
-assert(html.includes('escapeHtml(window.LunaReturnGuidance.buildReturnGuidance'));
+assert(html.includes('escapeHtml(getReturnGuidance().restMessage)'));
+assert(html.includes('const getReturnGuidance = () => window.LunaReturnGuidance.buildReturnGuidance(getGuidanceContext());'));
 
 
 const inlineScript = html.match(/<script>\n([\s\S]*?)\n  <\/script>\n<\/body>/)[1];
