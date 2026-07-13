@@ -3,6 +3,10 @@
   "statusHistory": [
     {
       "date": "2026-07-13",
+      "note": "2026-07-13: Removed the remaining visible dashboard framing from the prototype return link and current project trail so Luna points back to its opening threshold while preserving layout, CSS, JavaScript behavior, storage keys, and Guided Return behavior."
+    },
+    {
+      "date": "2026-07-13",
       "note": "2026-07-13: Refined the mobile opening threshold in prototype.html so the headline and project context are calmer, Return gently becomes the earlier press-start focus, and Shape this return plus Open full overview have safer bottom breathing room while preserving existing behavior."
     },
     {
@@ -582,8 +586,8 @@
       "note": "The project is resting after a good run and ready for one gentle improvement."
     }
   ],
-  "currentGoal": "Rest after refining the mobile opening threshold.",
-  "lastCompletedRun": "2026-07-13: Refined the mobile opening threshold in prototype.html so the headline and project context are calmer, Return gently becomes the earlier press-start focus, and Shape this return plus Open full overview have safer bottom breathing room while preserving existing behavior.",
+  "currentGoal": "Rest after removing visible dashboard framing from the current prototype copy.",
+  "lastCompletedRun": "2026-07-13: Removed the remaining visible dashboard framing from the prototype return link and current project trail so Luna points back to its opening threshold while preserving layout, CSS, JavaScript behavior, storage keys, and Guided Return behavior.",
   "nextStep": "Human mobile comfort/readability check of the refined opening threshold.",
   "dashboardGuide": [
     "Welcome starts the path to read through Record the Change before choosing more work.",
@@ -712,7 +716,7 @@
   ],
   "welcome": {
     "title": "Welcome to the Luna prototype",
-    "sentence": "This dashboard uses the Luna repo as its first example project: see what changed, choose one clear Next Action, notice what can wait, and rest before adding more."
+    "sentence": "Luna uses this repo as its first example project: see what changed, choose one clear Next Action, notice what can wait, and rest before adding more."
   },
   "ignoreForNow": [
     "Do not add another dashboard section until this return path still feels calm.",

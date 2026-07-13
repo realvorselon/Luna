@@ -10,6 +10,12 @@
 
 ## 2026-07-13
 
+### Prototype Dashboard Framing Copy Cleanup
+
+- Reworded the visible prototype return link so it points back to Luna’s opening threshold instead of calling Luna a dashboard.
+- Updated the current project trail wording in `STATE.md`, `ROADMAP.md`, and `project.json` to match the moonlit opening-threshold direction without changing layout, CSS, JavaScript behavior, storage keys, or Guided Return behavior.
+- Set Luna back to Rest; next remains human mobile comfort/readability review of the refined opening threshold.
+
 ### Opening Threshold Mobile Refinement
 
 - Refined only the `prototype.html` opening threshold so the mobile first impression is calmer and less dashboard-like.
@@ -433,7 +439,7 @@
 
 - Added `docs/PROTOTYPE_REST_CHECKPOINT.md` as a concise public-safe pause note after the first editable saved-and-clearable prototype slice was human tested.
 - Recorded that the prototype has one project state view with a calm return loop, editable project name and current goal, local browser saving for only those two fields, and one human-tested clear-local-edits control for those two local browser edits only.
-- Confirmed Current Mode, last completed run, Next Action, Ignore For Now, Record the Change, rest / next step, and every other card remain static and unsaved while the dashboard ↔ prototype reversible path and “Return to dashboard” link remain preserved.
+- Confirmed Current Mode, last completed run, Next Action, Ignore For Now, Record the Change, rest / next step, and every other card remain static and unsaved while the dashboard ↔ prototype reversible path and “Return to Luna” path remain preserved.
 - Updated `README.md`, `project.json`, `STATE.md`, and `ROADMAP.md` so the public trail rests before deciding whether to improve wording, returning flow, or the visible one-project loop, and before adding more persistence or prototype behavior.
 
 ### Clear Local Edits Read-Through
@@ -506,7 +512,7 @@
 ### Prototype Read-Through Note
 
 - Added `docs/PROTOTYPE_READ_THROUGH.md` as a concise public-safe read-through note after the static preview path was checked.
-- Recorded that the main dashboard to `prototype.html` click path feels calm, the static prototype page is coherent as a first usable one-project slice, and the “Return to dashboard” link should be preserved.
+- Recorded that the main dashboard to `prototype.html` click path feels calm, the static prototype page is coherent as a first usable one-project slice, and the return path to Luna should be preserved.
 - Updated `README.md`, `project.json`, `STATE.md`, and `ROADMAP.md` so the public trail rests before deciding the first editable field boundary or adding editable UI, forms, local storage, backend, account system, database, dashboard expansion, visual redesign, mode workflow, or multi-project system.
 
 ## 2026-07-09

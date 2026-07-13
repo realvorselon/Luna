@@ -12,7 +12,7 @@ Luna now has a concise visual direction note anchoring the finished look and fee
 
 ## Current Opening Threshold Slice
 
-The first small opening-threshold visual slice has been refined for mobile review: Luna’s opening now keeps the headline and project context quieter, brings Return gently forward as the press-start focus sooner, and gives Shape this return plus Open full overview more bottom breathing room. Luna remains at Rest. Next: human mobile comfort/readability check of the refined opening threshold only before any broader visual redesign.
+The first small opening-threshold visual slice has been refined for mobile review, and a tiny follow-up copy cleanup removes the remaining visible dashboard framing from the prototype return link and current project trail. Luna remains at Rest. Next: human mobile comfort/readability check of the refined opening threshold only before any broader visual redesign.
 
 ## Current v0.1 Direction
 
@@ -47,7 +47,7 @@ Protected scope remains one local project only. The guidance engine must stay br
 - Preserved the opening threshold, full overview reference/editing mode, existing editable values, localStorage keys, blank fallbacks, clear-local-edits behavior, mobile action layout, entrance behavior, panel-level Forward / Back motion, reduced-motion behavior, rapid-click protection, and transition cleanup.
 - Next: human mobile test the complete loop. If it passes, do one v0.1 stabilization and coherence pass.
 
-This roadmap is intentionally small. Luna is a public dashboard prototype right now, and its core is helping someone return to one small project, see where they left off, see what changed last, choose one clear Next Action, know what to ignore for now, record the change, and rest before adding more.
+This roadmap is intentionally small. Luna is a one-project return prototype right now, and its core is helping someone return to one small project, see where they left off, see what changed last, choose one clear Next Action, know what to ignore for now, record the change, and rest before adding more.
 
 ## Current Phase Direction
 
