@@ -3,6 +3,10 @@
   "statusHistory": [
     {
       "date": "2026-07-13",
+      "note": "This was a focused Guided Return contribution clarity slice that made each existing answer feel like part of the final Return Card, so the middle of the flow feels less like filling boxes and more like Luna gathering a clear place to resume."
+    },
+    {
+      "date": "2026-07-13",
       "note": "This was a focused moonlit atmosphere slice that made Luna’s opening and Guided Return shell feel more like one quiet return place while preserving the existing local-only flow, first-impression clarity, and Rest Return Card."
     },
     {
@@ -638,9 +642,9 @@
       "note": "The project is resting after a good run and ready for one gentle improvement."
     }
   ],
-  "currentGoal": "Rest after the Luna moonlit atmosphere slice.",
-  "lastCompletedRun": "Moonlit atmosphere slice: made Luna’s opening and Guided Return shell feel more like one quiet return place while preserving the existing local-only flow, first-impression clarity, and Rest Return Card.",
-  "nextStep": "Human mobile test of whether Luna feels more like a quiet return place.",
+  "currentGoal": "Rest after the Guided Return contribution clarity slice.",
+  "lastCompletedRun": "Guided Return contribution clarity slice: made each existing answer feel like part of the final Return Card so the middle of the flow feels less like filling boxes.",
+  "nextStep": "Human mobile test of whether each Guided Return stage feels like it contributes to the Return Card.",
   "dashboardGuide": [
     "Welcome starts the path to read through Record the Change before choosing more work.",
     "Status gives a quick snapshot of how the project is doing right now.",
@@ -655,6 +659,7 @@
     "Keep the implementation narrow: opening threshold visual/layout only, with no behavior expansion."
   ],
   "decisionLog": [
+    "2026-07-13: This was a focused Guided Return contribution clarity slice that made each existing answer feel like part of the final Return Card, so the middle of the flow feels less like filling boxes and more like Luna gathering a clear place to resume.",
     "2026-07-13: This was a focused moonlit atmosphere slice that made Luna’s opening and Guided Return shell feel more like one quiet return place while preserving the existing local-only flow, first-impression clarity, and Rest Return Card.",
     "2026-07-12: Completed the first full Guided Return loop as the second meaningful v0.1 vertical slice after the opening threshold; Set Aside stays not-a-backlog, Record stays brief, and Rest becomes a real stopping point before returning to Luna.",
     "2026-07-12: Human testing found the new Luna opening threshold passed strongly, but returning from Guided Return to the full overview left no direct route back to the Luna opening threshold; adding one secondary Return to Luna action completes the basic navigation loop without adding competing actions or changing persistence.",
@@ -713,9 +718,9 @@
     "Visit http://localhost:8000 in a browser to view the dashboard."
   ],
   "nextAction": {
-    "title": "Human mobile quiet return-place test",
-    "description": "Human mobile test of whether Luna feels more like a quiet return place.",
-    "whyItMatters": "The moonlit atmosphere slice is complete; a mobile human pass should confirm the opening and Guided Return shell feel like one quiet return place without crowding the local-only flow.",
+    "title": "Human mobile Return Card contribution test",
+    "description": "Human mobile test of whether each Guided Return stage feels like it contributes to the Return Card.",
+    "whyItMatters": "The contribution clarity slice is complete; a mobile human pass should confirm each Guided Return stage feels like it is gathering a useful Return Card piece without crowding the calm local-only flow.",
     "status": "Ready for human test"
   },
   "creativeSeed": {
@@ -784,9 +789,9 @@
   ],
   "currentMode": {
     "name": "Rest",
-    "description": "Luna is resting after the moonlit atmosphere slice.",
-    "whyItMatters": "The opening and Guided Return shell now feel more like one quiet moonlit return place while preserving the protected local-only flow and unchanged behavior.",
+    "description": "Luna is resting after the Guided Return contribution clarity slice.",
+    "whyItMatters": "The existing Guided Return stages now show how each answer contributes to the final Return Card while preserving the protected local-only flow and unchanged behavior.",
     "value": "Rest"
   },
-  "nextSuggestedStep": "Human mobile test of whether Luna feels more like a quiet return place."
+  "nextSuggestedStep": "Human mobile test of whether each Guided Return stage feels like it contributes to the Return Card."
 }

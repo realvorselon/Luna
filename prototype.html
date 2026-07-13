@@ -866,11 +866,16 @@
       border-color: rgb(244 209 122 / 46%);
     }
 
-    .guided-inline-helper {
+    .guided-inline-helper,
+    .guided-contribution-cue {
       margin: 0;
       color: rgb(199 209 232 / 76%);
       font-size: 0.88rem;
       line-height: 1.5;
+    }
+
+    .guided-contribution-cue {
+      color: rgb(244 232 196 / 86%);
     }
 
     .guided-question-card {
@@ -1667,6 +1672,7 @@
         storageKey: projectNameStorageKey,
         update: () => updateProjectNameDisplay(),
         helper: 'A short name is enough.',
+        contribution: 'This becomes Returning to.',
         guidedDisplaySelector: '#guided-project-name-display'
       },
       currentGoal: {
@@ -1675,6 +1681,7 @@
         storageKey: currentGoalStorageKey,
         update: () => updateCurrentGoalDisplay(),
         helper: 'Answer with what would help this return feel possible.',
+        contribution: 'This becomes The thread.',
         guidedDisplaySelector: '#guided-current-goal-display'
       },
       nextAction: {
@@ -1683,6 +1690,7 @@
         storageKey: nextActionStorageKey,
         update: () => updateNextActionDisplay(),
         helper: 'One concrete move is enough.',
+        contribution: 'This becomes The lantern: the place to begin when you come back.',
         guidedDisplaySelector: '#guided-next-action-display'
       },
       setAside: {
@@ -1691,6 +1699,7 @@
         storageKey: setAsideStorageKey,
         update: () => updateSetAsideDisplay(),
         helper: 'One thing can wait without becoming a list.',
+        contribution: 'This waits outside the gate.',
         guidedDisplaySelector: '#guided-set-aside-display'
       },
       recordChange: {
@@ -1699,6 +1708,7 @@
         storageKey: recordChangeStorageKey,
         update: () => updateRecordChangeDisplay(),
         helper: 'A few honest words are enough.',
+        contribution: 'This becomes What changed.',
         guidedDisplaySelector: '#guided-record-change-display'
       }
     };
@@ -1714,6 +1724,7 @@
           <div class="guided-answer-input-frame">
             <input id="${inputId}" type="text" value="${escapeHtml(field.input.value)}" autocomplete="off" maxlength="${field.input.getAttribute('maxlength')}" aria-describedby="${helperId}">
           </div>
+          <p class="guided-contribution-cue">${escapeHtml(field.contribution)}</p>
           <p class="guided-inline-helper" id="${helperId}">${escapeHtml(field.helper)} Luna will hold this locally.</p>
         </div>
       `;
@@ -1764,10 +1775,10 @@
     const guidedStages = [
       {
         title: 'Find your place',
-        intro: 'Answer one thing at a time.',
+        intro: 'Answer one thing at a time, and Luna will place each answer on the Return Card.',
         render: () => `
           <div class="guided-question-card">
-            <p class="guided-answer-note">One question at a time. Your words stay local to this browser.</p>
+            <p class="guided-answer-note">One question at a time. Each answer becomes a piece of the Return Card.</p>
             <div class="guided-inline-edit" aria-label="Find your place editable project context">
               ${renderGuidedEditableField(getGuidedPlaceFieldKey())}
             </div>
@@ -1792,42 +1803,42 @@
       },
       {
         title: 'Choose',
-        intro: 'Choose one small visible move.',
+        intro: 'Choose the lantern: one small visible move to resume from.',
         tone: 'choose',
         render: () => `
           <div class="guided-question-card">
             <div class="guided-inline-edit" aria-label="Choose editable next action">
               ${renderGuidedEditableField('nextAction')}
             </div>
-            <p class="guided-answer-note">This is the One Next Action Luna holds for this return.</p>
+            <p class="guided-answer-note">This One Next Action becomes the lantern: the resume point Luna will point you back to.</p>
           </div>
           ${renderLunaInsight('choose')}
         `
       },
       {
         title: 'Set Aside',
-        intro: 'Name one thing that can wait.',
+        intro: 'Name one thing Luna can keep outside the gate for now.',
         tone: 'set-aside',
         render: () => `
           <div class="guided-question-card">
             <div class="guided-inline-edit" aria-label="Set Aside editable value">
               ${renderGuidedEditableField('setAside')}
             </div>
-            <p class="guided-answer-note">This is a boundary, not a backlog.</p>
+            <p class="guided-answer-note">This waits outside the gate as a boundary, not a backlog.</p>
           </div>
           ${renderLunaInsight('setAside')}
         `
       },
       {
         title: 'Record',
-        intro: 'Record one small change.',
+        intro: 'Record the small change Luna should carry into the Return Card.',
         tone: 'record',
         render: () => `
           <div class="guided-question-card">
             <div class="guided-inline-edit" aria-label="Record editable change note">
               ${renderGuidedEditableField('recordChange')}
             </div>
-            <p class="guided-answer-note">A small note is enough. This is not a report.</p>
+            <p class="guided-answer-note">A small note is enough. It becomes What changed, not a report.</p>
           </div>
           ${renderLunaInsight('record')}
         `

@@ -10,6 +10,10 @@ Luna now has a concise visual direction note anchoring the finished look and fee
 
 # Roadmap
 
+## Current Guided Return Contribution Clarity Slice
+
+This was a focused Guided Return contribution clarity slice that made each existing answer feel like part of the final Return Card, so the middle of the flow feels less like filling boxes and more like Luna gathering a clear place to resume. Each editable Guided Return stage now quietly names the Return Card piece it is shaping, with Choose strengthened around the lantern/resume point. Luna remains at Rest. Next: Human mobile test of whether each Guided Return stage feels like it contributes to the Return Card.
+
 ## Current Moonlit Atmosphere Slice
 
 This was a focused moonlit atmosphere slice that made Luna’s opening and Guided Return shell feel more like one quiet return place while preserving the existing local-only flow, first-impression clarity, and Rest Return Card. The opening now has restrained moonlit gate/path depth around Return gently, and Guided Return continues the same quiet path atmosphere into the stage panel with Choose / One Next Action still reading as the lantern/resume point. Luna remains at Rest. Next: Human mobile test of whether Luna feels more like a quiet return place.

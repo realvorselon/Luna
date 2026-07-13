@@ -1,5 +1,15 @@
 # State
 
+## Guided Return Contribution Clarity Slice
+
+- This was a focused Guided Return contribution clarity slice that made each existing answer feel like part of the final Return Card, so the middle of the flow feels less like filling boxes and more like Luna gathering a clear place to resume.
+- Added small contribution cues for Returning to, The thread, The lantern, Waiting outside the gate, and What changed while preserving existing answer spaces and behavior.
+- Status remains Rest; next suggested step is: “Human mobile test of whether each Guided Return stage feels like it contributes to the Return Card.”
+
+Luna is at Rest after a focused Guided Return contribution clarity slice. The existing stages now more clearly show how each answer becomes part of the Rest Return Card without adding fields, storage keys, navigation changes, AI/API/model/network behavior, task lists, dashboards, or a redesign.
+
+Next suggested step: Human mobile test of whether each Guided Return stage feels like it contributes to the Return Card.
+
 ## Moonlit Atmosphere Slice
 
 - This was a focused moonlit atmosphere slice that made Luna’s opening and Guided Return shell feel more like one quiet return place while preserving the existing local-only flow, first-impression clarity, and Rest Return Card.
@@ -59,7 +69,7 @@ Luna is becoming a small, moonlit one-project return app. It begins with a real 
 
 ## Current Goal
 
-Rest after the Luna first-impression clarity slice.
+Rest after the Guided Return contribution clarity slice.
 
 ## Last Completed Run
 

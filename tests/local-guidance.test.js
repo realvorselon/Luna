@@ -161,6 +161,18 @@ assert(html.includes('guided-answer-space'), 'Guided Return should style editabl
 assert(html.includes('guided-answer-input-frame'), 'Guided Return answer spaces should wrap the real input elements');
 assert(html.includes('Your answer'), 'Guided Return answer-space copy should gently label the response area');
 assert(html.includes('Luna will hold this locally.'), 'Guided Return helper copy should keep the local-only boundary visible');
+
+for (const contributionCue of [
+  'This becomes Returning to.',
+  'This becomes The thread.',
+  'This becomes The lantern: the place to begin when you come back.',
+  'This waits outside the gate.',
+  'This becomes What changed.'
+]) {
+  assert(html.includes(contributionCue), `Guided Return contribution cue should include: ${contributionCue}`);
+}
+assert(html.includes('guided-contribution-cue'), 'Guided Return contribution cues should have a compact presentation class');
+assert(html.includes('This One Next Action becomes the lantern: the resume point Luna will point you back to.'), 'Choose should explicitly connect One Next Action to the lantern/resume point');
 assert(html.includes('field.input.value = guidedInput.value;'), 'Guided inline edits should update the existing overview input values');
 assert(html.includes('writeLocalValue(field.storageKey, guidedInput.value);'), 'Guided inline edits should save through the existing five storage keys');
 assert(html.includes('I have enough to hold this return.'), 'Rest should keep the enough-to-hold soft landing copy');
