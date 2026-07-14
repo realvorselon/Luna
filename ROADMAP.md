@@ -1,5 +1,10 @@
 # Roadmap
 
+## Transition Coherence Pass
+
+- This was a focused transition coherence pass that kept Luna’s existing local-only loop intact while making the opening, Guided Return stages, Rest, and Return to Luna feel more like one moonlit place gently changing focus.
+- Status remains Rest; next suggested step is: “Human mobile test of whether Luna’s loop feels continuous rather than page-like.”
+
 ## Current v0.1 Full-Loop Coherence Pass
 
 - Luna is at Rest after a focused v0.1 full-loop coherence pass.

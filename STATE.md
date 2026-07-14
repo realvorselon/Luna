@@ -1,5 +1,15 @@
 # State
 
+## Transition Coherence Pass
+
+- This was a focused transition coherence pass that kept Luna’s existing local-only loop intact while making the opening, Guided Return stages, Rest, and Return to Luna feel more like one moonlit place gently changing focus.
+- Kept the opening buttons, Guided Return stage order, receiving moments, compact mobile Held so far preview, full Rest Return Card, Return to Luna loop, full overview editing, Shape this return Apply → Undo, and Clear local edits intact.
+- Status remains Rest; next suggested step is: “Human mobile test of whether Luna’s loop feels continuous rather than page-like.”
+
+Luna is at Rest after a focused transition coherence pass. The existing local-only loop now uses softer fades and shared moonlit focus so the opening, Guided Return stages, Rest, and Return to Luna feel less page-like without adding features or storage.
+
+Next suggested step: Human mobile test of whether Luna’s loop feels continuous rather than page-like.
+
 ## v0.1 Full-Loop Coherence Pass
 
 - This was a focused v0.1 full-loop coherence pass that kept the existing local-only return flow intact while tightening the seams from opening threshold through Guided Return, Rest, and Return to Luna.

@@ -637,7 +637,8 @@
       display: none;
     }
 
-    .full-overview.is-yielding-to-guided {
+    .full-overview.is-yielding-to-guided,
+    .luna-opening.is-yielding-to-guided {
       animation: guidedOverviewYield 140ms ease-out both;
       pointer-events: none;
     }
@@ -728,14 +729,18 @@
       animation: guidedReturnArrive 180ms ease-out both;
     }
 
+    .guided-return-view.is-arriving-from-opening {
+      animation: guidedReturnArrive 200ms ease-out both;
+    }
+
     @keyframes guidedOverviewYield {
       from { opacity: 1; filter: none; }
       to { opacity: 0; filter: saturate(0.96); }
     }
 
     @keyframes guidedReturnArrive {
-      from { opacity: 0; }
-      to { opacity: 1; }
+      from { opacity: 0; filter: brightness(0.98); }
+      to { opacity: 1; filter: none; }
     }
 
     .guided-stage-panel {
@@ -777,6 +782,8 @@
     @media (prefers-reduced-motion: reduce) {
       .full-overview.is-yielding-to-guided,
       .guided-return-view.is-arriving-from-overview,
+      .guided-return-view.is-arriving-from-opening,
+      .luna-opening.is-yielding-to-guided,
       .guided-stage-panel.is-leaving-forward,
       .guided-stage-panel.is-leaving-back,
       .guided-stage-panel.is-entering-forward,
@@ -2475,7 +2482,8 @@
     const clearGuidedEntranceTransition = () => {
       window.clearTimeout(guidedEntranceTransitionTimer);
       fullOverview.classList.remove('is-yielding-to-guided');
-      guidedReturnView.classList.remove('is-arriving-from-overview');
+      lunaOpening.classList.remove('is-yielding-to-guided');
+      guidedReturnView.classList.remove('is-arriving-from-overview', 'is-arriving-from-opening');
       guidedEntranceTransitioning = false;
       beginGuidedReturnButton.disabled = false;
     };
@@ -2503,12 +2511,26 @@
       }
 
       if (fullOverview.hidden) {
-        lunaOpening.hidden = true;
-        guidedReturnView.hidden = false;
-        guidedReturnView.classList.add('is-arriving-from-overview');
         guidedEntranceTransitioning = true;
         beginGuidedReturnButton.disabled = true;
-        guidedEntranceTransitionTimer = window.setTimeout(finishGuidedEntrance, guidedEntranceFallbackMs);
+        lunaOpening.classList.add('is-yielding-to-guided');
+
+        const revealGuidedFromOpening = () => {
+          if (!guidedEntranceTransitioning) {
+            return;
+          }
+
+          window.clearTimeout(guidedEntranceTransitionTimer);
+          lunaOpening.hidden = true;
+          lunaOpening.classList.remove('is-yielding-to-guided');
+          guidedReturnView.hidden = false;
+          guidedReturnView.classList.add('is-arriving-from-opening');
+          guidedEntranceTransitionTimer = window.setTimeout(finishGuidedEntrance, guidedEntranceFallbackMs);
+        };
+
+        lunaOpening.addEventListener('animationend', revealGuidedFromOpening, { once: true });
+        guidedReturnView.addEventListener('animationend', finishGuidedEntrance, { once: true });
+        guidedEntranceTransitionTimer = window.setTimeout(revealGuidedFromOpening, 160);
         return;
       }
 
@@ -2524,6 +2546,7 @@
         window.clearTimeout(guidedEntranceTransitionTimer);
         fullOverview.hidden = true;
         fullOverview.classList.remove('is-yielding-to-guided');
+        lunaOpening.classList.remove('is-yielding-to-guided');
         guidedReturnView.hidden = false;
         guidedReturnView.classList.add('is-arriving-from-overview');
         guidedEntranceTransitionTimer = window.setTimeout(finishGuidedEntrance, guidedEntranceFallbackMs);
