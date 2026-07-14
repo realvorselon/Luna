@@ -1,8 +1,15 @@
-## Current Guided Return Connective Flow Slice
-
-This was a focused Guided Return connective-flow slice that made Luna carry each existing answer forward into the next question, so the path feels less like separate prompts and more like one continuous return. The slice adds only compact stage lead-ins using the existing five local values: returning to the named project leads into the thread question, holding the thread leads to choosing the lantern, choosing the lantern leads to setting something outside the gate, and setting something aside leads into the closing Record beat. Rest remains the soft landing and full Return Card. Luna remains at Rest. Next: Human mobile test of whether connective flow makes Guided Return feel like Luna is walking with the user.
-
 # State
+
+## Guided Return v0.1 Stabilization / Coherence Pass
+
+- This was a focused Guided Return v0.1 stabilization pass that cleaned up project trail structure, reduced copy/crowding risk, and preserved the current local-only return loop where Luna receives each answer, carries it forward, and gathers the pieces into a final Return Card.
+- Preserved the opening threshold, one-question-at-a-time Find your place flow, answer spaces, receiving moments, connective lead-ins, contribution cues, Luna insight cards, live “Held so far” preview before Rest, Rest as the full final Return Card, full overview editing, Shape this return Apply → Undo, five existing localStorage keys, maxlengths, safe rendering, reduced-motion protections, and no-network/no-model boundary.
+- Status remains Rest after the Guided Return connective-flow slice; next suggested step is: “Human mobile v0.1 Guided Return coherence test.”
+
+Luna is at Rest after a focused Guided Return v0.1 stabilization pass. Guided Return remains the same local-only loop: Luna receives each answer, carries it forward with compact connective lead-ins, keeps the active question primary, treats the live “Held so far” preview as secondary, and gathers the pieces into the final Rest Return Card.
+
+Next suggested step: Human mobile v0.1 Guided Return coherence test.
+
 
 ## Guided Return Receiving Moments Slice
 
@@ -93,10 +100,11 @@ Luna is becoming a small, moonlit one-project return app. It begins with a real 
 
 ## Current Goal
 
-Rest after the live Return Card preview slice.
+Rest after the Guided Return connective-flow slice.
 
 ## Last Completed Run
 
+- 2026-07-14: Guided Return connective-flow slice: Luna carries each existing answer forward into the next stage with compact local presentation copy, without adding fields, storage keys, AI/API/model/network behavior, stages, clicks, timers, animations, or navigation changes.
 - 2026-07-13: This was a focused Guided Return coherence pass that smoothed copy and presentation seams across the existing six-stage loop while preserving the one-question Find your place prototype, answer spaces, Rest soft landing, and five-value local-only/no-network boundary.
 - 2026-07-13: This was a focused Guided Return Rest soft-landing slice that made the ending feel less like a report and more like Luna gently holding one completed return, while preserving the six-stage flow, one-question Find your place prototype, answer spaces, and five-value local-only/no-network boundary.
 - 2026-07-13: Completed a focused Find your place one-question-at-a-time prototype that tested a less form-like Guided Return interaction while preserving the six-stage flow and five-value local-only/no-network boundary.
@@ -124,7 +132,7 @@ Rest after the live Return Card preview slice.
 
 ## Next Suggested Step
 
-Human mobile test of whether Luna’s opening explains why Guided Return helps.
+Human mobile v0.1 Guided Return coherence test.
 
 ## Notes
 
