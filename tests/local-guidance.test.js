@@ -88,21 +88,24 @@ const roadmap = fs.readFileSync('ROADMAP.md', 'utf8');
 const changelog = fs.readFileSync('CHANGELOG.md', 'utf8');
 const project = JSON.parse(fs.readFileSync('project.json', 'utf8'));
 assert(state.startsWith('# State'), 'STATE.md should begin with the # State heading');
+const transitionTrail = 'This was a focused transition coherence pass that kept Luna’s existing local-only loop intact while making the opening, Guided Return stages, Rest, and Return to Luna feel more like one moonlit place gently changing focus.';
+const transitionNextStep = 'Human mobile test of whether Luna’s loop feels continuous rather than page-like.';
 for (const trail of [state, roadmap, changelog]) {
-  assert(trail.includes('focused v0.1 full-loop coherence pass'), 'project trail should record the focused v0.1 full-loop coherence pass');
-  assert(trail.includes('opening threshold through Guided Return, Rest, and Return to Luna'), 'project trail should name the full loop seams');
+  assert(trail.includes('focused transition coherence pass'), 'project trail should record the focused transition coherence pass');
+  assert(trail.includes('opening, Guided Return stages, Rest, and Return to Luna'), 'project trail should name the continuous full loop seams');
+  assert(trail.includes('one moonlit place gently changing focus'), 'project trail should capture the presentation direction');
   assert(trail.includes('Rest'), 'project trail should keep Luna at Rest');
   assert(trail.includes('Guided Return mobile preview pass'), 'project trail should preserve the compact mobile Held so far preview context');
-  assert(trail.includes('Human full-loop mobile v0.1 readiness test.'), 'project trail should point to the next full-loop mobile readiness test');
+  assert(trail.includes(transitionNextStep), 'project trail should point to the next mobile continuity test');
 }
 assert.deepEqual(project.statusHistory[0], {
   date: '2026-07-14',
-  note: 'This was a focused v0.1 full-loop coherence pass that kept the existing local-only return flow intact while tightening the seams from opening threshold through Guided Return, Rest, and Return to Luna.'
+  note: transitionTrail
 }, 'new statusHistory entry should keep the existing object shape');
 assert.equal(project.currentMode.value, 'Rest');
-assert.equal(project.lastCompletedRun, 'This was a focused v0.1 full-loop coherence pass that kept the existing local-only return flow intact while tightening the seams from opening threshold through Guided Return, Rest, and Return to Luna.');
-assert.equal(project.nextStep, 'Human full-loop mobile v0.1 readiness test.');
-assert.equal(project.nextSuggestedStep, 'Human full-loop mobile v0.1 readiness test.');
+assert.equal(project.lastCompletedRun, transitionTrail);
+assert.equal(project.nextStep, transitionNextStep);
+assert.equal(project.nextSuggestedStep, transitionNextStep);
 assert(!/Math\.random\s*\(/.test(js), 'guidance must not use Math.random');
 assert(!/\bfetch\s*\(/.test(html + js), 'local guidance must not call fetch');
 assert(html.includes('Edit Luna’s current project'), 'overview should include a clear editing-area heading');
@@ -489,7 +492,8 @@ assertRuleContains('.edit-field input', ['background: rgb(35 45 72 / 96%)']);
 const guidedMotionCss = css.match(/\.guided-stage-panel\.is-leaving-forward[\s\S]*?@media \(prefers-reduced-motion: reduce\)/)[0];
 assert(guidedMotionCss.includes('guidedPanelFadeOut'), 'guided stage transitions should use calm fade-out classes');
 assert(guidedMotionCss.includes('guidedPanelFadeIn'), 'guided stage transitions should use calm fade-in classes');
-assert.doesNotMatch(guidedMotionCss, /translate[XY]?\s*\(\s*-?\d+(?:\.\d+)?px\s*\)/, 'guided stage transitions should not use directional pixel movement');
+assert.doesNotMatch(guidedMotionCss, /translate[XY]?\s*\(\s*-?\d+(?:\.\d+)?(?:px|rem|%)\s*\)/, 'guided stage transitions should not use directional movement');
+assert.doesNotMatch(css, /@keyframes[^{}]*(?:carousel|slide|bounce)|translateX|translate3d|translate\s*\(/i, 'transition classes/keyframes should not introduce sideways carousel, slide, or bounce motion');
 assert.doesNotMatch(guidedMotionCss, /guidedPanel(?:Leave|Enter)(?:Forward|Back)/, 'old directional guided stage keyframes should not remain');
 assertRuleContains('.guided-stage-panel', ['min-block-size: clamp(420px, 48svh, 500px)', 'will-change: opacity']);
 assert(css.includes('min-block-size: clamp(360px, 48svh, 480px)') && css.includes('min-height: auto'), 'mobile guided stage panel should keep a calm minimum without a rigid clipped frame');
@@ -497,9 +501,13 @@ assert(css.includes('.guided-actions {\n        gap: 8px;\n        margin: 0;\n 
 assert(css.includes('animation: none !important') && css.includes('transition: none !important') && css.includes('filter: none'), 'reduced motion should remove/minimize animation, transition, transform, and filter changes');
 assert(html.includes('const guidedStageMotionFallbackMs = 220;'));
 assert(html.includes('const guidedEntranceFallbackMs = 240;'));
+
+assert(css.includes('.luna-opening.is-yielding-to-guided'), 'opening should gently yield to Guided Return instead of disappearing as a hard swap');
+assert(css.includes('.guided-return-view.is-arriving-from-opening'), 'Guided Return should softly arrive from the opening threshold');
+assert(html.includes("lunaOpening.classList.add('is-yielding-to-guided');"), 'opening entrance should use the shared yield transition');
 assert(html.includes('if (guidedStageTransitioning || guidedStageMotionQuery.matches)'), 'rapid-click protection and reduced-motion immediate stage path should remain');
 assert(html.includes('clearGuidedStageTransition();') && html.includes('guidedStagePanel.classList.remove(...guidedStageMotionClasses)'), 'guided stage transition cleanup should remain');
 assert(html.includes('if (guidedEntranceTransitioning || !guidedReturnView.hidden)'), 'guided entrance rapid-click protection should remain');
-assert(html.includes('clearGuidedEntranceTransition();') && html.includes("guidedReturnView.classList.remove('is-arriving-from-overview')"), 'guided entrance transition cleanup should remain');
+assert(html.includes('clearGuidedEntranceTransition();') && html.includes("guidedReturnView.classList.remove('is-arriving-from-overview', 'is-arriving-from-opening')"), 'guided entrance transition cleanup should remain');
 
 console.log('local guidance tests passed');
