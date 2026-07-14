@@ -93,17 +93,17 @@ for (const trail of [state, roadmap, changelog]) {
   assert(trail.includes('Rest'), 'project trail should keep Luna at Rest');
   assert(trail.includes('Guided Return connective-flow slice'), 'project trail should preserve the latest completed connective-flow slice');
   assert(trail.includes('Human mobile v0.1 Guided Return coherence test'), 'project trail should preserve the prior human mobile v0.1 coherence test');
-  assert(trail.includes('Guided Return mobile hierarchy pass'), 'project trail should record the mobile hierarchy pass');
-  assert(trail.includes('Human mobile test of whether Guided Return now feels breathable while keeping Luna’s receiving moments alive.'), 'project trail should point to the next mobile hierarchy human mobile test');
+  assert(trail.includes('Guided Return mobile preview pass'), 'project trail should record the mobile preview pass');
+  assert(trail.includes('Human mobile test of whether the compact Held so far preview makes Guided Return feel breathable.'), 'project trail should point to the next compact mobile preview human mobile test');
 }
 assert.deepEqual(project.statusHistory[0], {
   date: '2026-07-14',
-  note: 'This was a focused Guided Return mobile hierarchy pass that kept Luna’s receiving moments primary while making Luna notes and the live Held so far preview much quieter on mobile, so the answer has more room to breathe.'
+  note: 'This was a focused Guided Return mobile preview pass that made the live Held so far area compact on mobile, keeping only the essential return thread visible while leaving the full five-part Return Card for Rest.'
 }, 'new statusHistory entry should keep the existing object shape');
 assert.equal(project.currentMode.value, 'Rest');
-assert.equal(project.lastCompletedRun, 'This was a focused Guided Return mobile hierarchy pass that kept Luna’s receiving moments primary while making Luna notes and the live Held so far preview much quieter on mobile, so the answer has more room to breathe.');
-assert.equal(project.nextStep, 'Human mobile test of whether Guided Return now feels breathable while keeping Luna’s receiving moments alive.');
-assert.equal(project.nextSuggestedStep, 'Human mobile test of whether Guided Return now feels breathable while keeping Luna’s receiving moments alive.');
+assert.equal(project.lastCompletedRun, 'This was a focused Guided Return mobile preview pass that made the live Held so far area compact on mobile, keeping only the essential return thread visible while leaving the full five-part Return Card for Rest.');
+assert.equal(project.nextStep, 'Human mobile test of whether the compact Held so far preview makes Guided Return feel breathable.');
+assert.equal(project.nextSuggestedStep, 'Human mobile test of whether the compact Held so far preview makes Guided Return feel breathable.');
 assert(!/Math\.random\s*\(/.test(js), 'guidance must not use Math.random');
 assert(!/\bfetch\s*\(/.test(html + js), 'local guidance must not call fetch');
 assert(html.includes('Edit Luna’s current project'), 'overview should include a clear editing-area heading');
@@ -237,11 +237,17 @@ assert(!/thinking|analyzing|remembering forever|generated AI/i.test(html), 'rece
 assert(html.includes('live-return-card-preview'), 'Guided Return should include a compact live Return Card preview during non-Rest stages');
 assert(html.includes('aria-label="Live Return Card preview"'), 'live Return Card preview should be labelled accessibly');
 assert(html.includes('<span class="label">Held so far</span>'), 'live Return Card preview should soften its heading to Held so far');
-assert(html.includes('A quiet preview of what Luna is holding.'), 'live Return Card preview should frame the held-thread purpose quietly without extra density');
+assert(html.includes('A quiet preview of what Luna is holding.'), 'desktop live Return Card preview should frame the held-thread purpose quietly without extra density');
+assert(html.includes('live-return-card-compact'), 'compact mobile Held so far preview should exist');
+assert(html.includes('data-live-return-card-compact-field="projectName"'), 'compact mobile preview should track projectName');
+assert(html.includes("<strong>Returning</strong> <span>${escapeHtml(formatRestSummaryValue('projectName', getProjectName()))}</span>"), 'compact mobile preview should emphasize Returning/projectName and safely escape initial render');
+assert(html.includes('data-live-return-card-compact-field="nextAction"'), 'compact mobile preview should track nextAction');
+assert(html.includes("<strong>Lantern</strong> <span>${escapeHtml(formatRestSummaryValue('nextAction', getNextAction()))}</span>"), 'compact mobile preview should emphasize Lantern/nextAction and safely escape initial render');
+assert(html.includes('+ 3 held for Rest'), 'compact mobile preview should include tiny held-for-Rest summary copy');
 for (const liveReturnCardLabel of ['Returning to', 'The thread', 'The lantern', 'Waiting outside the gate', 'What changed']) {
-  assert(html.includes(liveReturnCardLabel), `live Return Card preview should include label: ${liveReturnCardLabel}`);
+  assert(html.includes(liveReturnCardLabel), `desktop live Return Card preview and Rest Return Card should preserve label: ${liveReturnCardLabel}`);
 }
-assert(html.includes('const liveReturnCardRows = ['), 'live Return Card preview should be driven from one row list');
+assert(html.includes('const liveReturnCardRows = ['), 'desktop live Return Card preview should be driven from one row list');
 for (const livePreviewValue of [
   "['projectName', 'Returning to', getProjectName]",
   "['currentGoal', 'The thread', getCurrentGoal]",
@@ -251,8 +257,9 @@ for (const livePreviewValue of [
 ]) {
   assert(html.includes(livePreviewValue), `live Return Card preview should use existing value getter: ${livePreviewValue}`);
 }
-assert(html.includes('<strong>${escapeHtml(label)}</strong><span>${escapeHtml(formatRestSummaryValue(fieldKey, getValue()))}</span>'), 'live Return Card preview should safely escape formatted values');
+assert(html.includes('<strong>${escapeHtml(label)}</strong><span>${escapeHtml(formatRestSummaryValue(fieldKey, getValue()))}</span>'), 'desktop live Return Card preview should safely escape formatted values');
 assert(html.includes('updateLiveReturnCardPreview();'), 'Guided inline edits and stage rendering should refresh the live Return Card preview');
+assert(html.includes("if (compactValue) compactValue.textContent = formatRestSummaryValue(fieldKey, value);"), 'compact mobile preview live updates should use textContent');
 assert(html.includes("row.classList.toggle('has-live-lantern', isRealUserEntry('nextAction', value));"), 'live Return Card preview should emphasize the lantern only when nextAction is a real entry');
 assert(html.includes("isLantern && isRealUserEntry('nextAction', getValue()) ? ' has-live-lantern' : ''"), 'initial live Return Card render should include the lantern emphasis state when applicable');
 assert(!html.includes('${renderLiveReturnCardPreview()}\n          <article class="quiet-card rest-card rest-landing-card"'), 'Rest should not duplicate the compact live preview before the full Return Card');
@@ -433,7 +440,8 @@ assert.doesNotMatch(css, /\.live-return-card-preview\s*\{[\s\S]*?position\s*:\s*
 assert(css.includes('.live-return-card-preview {\n        gap: 4px;\n        padding: 5px 6px;'), 'mobile live preview should use ultra-light spacing and padding');
 assert(css.includes('background: rgb(10 17 34 / 8%)'), 'mobile live preview should use an ultra-light background');
 assert(css.includes('border-color: rgb(189 200 238 / 6%)'), 'mobile live preview should use an ultra-light border');
-assert(css.includes('.live-return-card-row {\n        padding: 3px 2px;\n        background: transparent;\n        border-color: transparent;'), 'mobile live preview rows should lose the row-box feeling without hiding content');
+assert(css.includes('.live-return-card-note,\n      .live-return-card-list {\n        display: none;'), 'mobile compact preview should not render all five full preview rows as visible row boxes');
+assert(css.includes('.live-return-card-compact {\n        display: grid;'), 'mobile compact preview should show the tiny summary strip');
 assertRuleContains('.edit-fields', ['min-width: 0', 'max-width: 100%']);
 assertRuleContains('.edit-field', ['min-width: 0', 'max-width: 100%']);
 assertRuleContains('.edit-field input', ['box-sizing: border-box', 'min-width: 0', 'max-width: 100%']);

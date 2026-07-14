@@ -2,9 +2,9 @@
 
 ## Current next step
 
-- Luna is at Rest after a focused Guided Return mobile hierarchy pass.
-- This was a focused Guided Return mobile hierarchy pass that kept Luna’s receiving moments primary while making Luna notes and the live Held so far preview much quieter on mobile, so the answer has more room to breathe.
-- Next suggested step: Human mobile test of whether Guided Return now feels breathable while keeping Luna’s receiving moments alive.
+- Luna is at Rest after a focused Guided Return mobile preview pass.
+- This was a focused Guided Return mobile preview pass that made the live Held so far area compact on mobile, keeping only the essential return thread visible while leaving the full five-part Return Card for Rest.
+- Next suggested step: Human mobile test of whether the compact Held so far preview makes Guided Return feel breathable.
 
 ## Current Guided Return v0.1 Stabilization / Coherence Pass
 

@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-07-14 — Guided Return mobile preview pass
+
+- This was a focused Guided Return mobile preview pass that made the live Held so far area compact on mobile, keeping only the essential return thread visible while leaving the full five-part Return Card for Rest.
+- Added a compact mobile Held so far summary that emphasizes Returning and Lantern, with a tiny Rest-held cue, while keeping the fuller live preview for desktop.
+- Preserved receiving moments, live textContent updates, safe escaping, stage order, navigation behavior, five localStorage keys, and the complete five-value Rest Return Card.
+- Status remains Rest; next suggested step is: “Human mobile test of whether the compact Held so far preview makes Guided Return feel breathable.”
+
 ## 2026-07-14 — Guided Return mobile hierarchy pass
 
 - This was a focused Guided Return mobile hierarchy pass that kept Luna’s receiving moments primary while making Luna notes and the live Held so far preview much quieter on mobile, so the answer has more room to breathe.
