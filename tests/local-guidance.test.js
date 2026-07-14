@@ -172,6 +172,21 @@ for (const contributionCue of [
   assert(html.includes(contributionCue), `Guided Return contribution cue should include: ${contributionCue}`);
 }
 assert(html.includes('guided-contribution-cue'), 'Guided Return contribution cues should have a compact presentation class');
+assert(html.includes('guided-flow-lead'), 'Guided Return should include compact connective flow lead-in copy');
+assert(html.includes('const getGuidedFlowLeadIn = (stageKey) => {'), 'connective flow copy should be deterministic local rendering');
+assert(html.includes("if (stageKey === 'currentGoal') return `Okay. We’re returning to ${project}. What would make returning easier?`;"), 'currentGoal connective copy should carry the current projectName value into the next question');
+for (const connectiveCopy of [
+  'We only need enough to find the thread.',
+  'I’m holding the thread. Now choose the lantern.',
+  'Good. That’s the lantern. What can wait outside the gate?',
+  'The gate is quieter now. What changed, even a little?'
+]) {
+  assert(html.includes(connectiveCopy), `Guided Return connective flow copy should include: ${connectiveCopy}`);
+}
+assert(html.includes('const renderGuidedFlowLeadIn = (stageKey) => `<p class="guided-flow-lead" data-guided-flow-lead="${stageKey}">${escapeHtml(getGuidedFlowLeadIn(stageKey))}</p>`;'), 'connective flow copy should escape user-rendered values in initial render');
+assert(html.includes("if (leadIn) leadIn.textContent = getGuidedFlowLeadIn(leadIn.getAttribute('data-guided-flow-lead'));"), 'connective flow copy live updates should render user values with textContent');
+assert(html.includes('updateGuidedFlowLeadIn();'), 'Guided inline edits should refresh connective flow copy when relevant local values change');
+
 assert(html.includes('This One Next Action becomes the lantern: the resume point Luna will point you back to.'), 'Choose should explicitly connect One Next Action to the lantern/resume point');
 
 assert(html.includes('guided-receiving-moment'), 'Guided Return editable answer spaces should include receiving/reflection moments');

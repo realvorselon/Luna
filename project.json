@@ -3,6 +3,10 @@
   "statusHistory": [
     {
       "date": "2026-07-14",
+      "note": "This was a focused Guided Return connective-flow slice that made Luna carry each existing answer forward into the next question, so the path feels less like separate prompts and more like one continuous return."
+    },
+    {
+      "date": "2026-07-14",
       "note": "This was a focused Guided Return receiving-moments slice that made Luna briefly reflect each existing answer as something she is holding, so the flow feels less like storing form fields and more like the user’s answers matter to Luna."
     },
     {
@@ -650,9 +654,9 @@
       "note": "The project is resting after a good run and ready for one gentle improvement."
     }
   ],
-  "currentGoal": "Make Guided Return feel alive enough that each existing answer appears received and held by Luna.",
-  "lastCompletedRun": "Guided Return receiving-moments slice: Luna briefly reflects each existing Guided Return answer as something she is holding, without adding fields, storage keys, AI/API/model/network behavior, or navigation changes.",
-  "nextStep": "Human mobile test of whether receiving moments make each answer feel like it matters to Luna.",
+  "currentGoal": "Make Guided Return feel continuous by carrying each existing answer into the next question.",
+  "lastCompletedRun": "Guided Return connective-flow slice: Luna carries each existing answer forward into the next stage with compact local presentation copy, without adding fields, storage keys, AI/API/model/network behavior, stages, clicks, timers, animations, or navigation changes.",
+  "nextStep": "Human mobile test of whether connective flow makes Guided Return feel like Luna is walking with the user.",
   "dashboardGuide": [
     "Welcome starts the path to read through Record the Change before choosing more work.",
     "Status gives a quick snapshot of how the project is doing right now.",
@@ -798,9 +802,9 @@
   ],
   "currentMode": {
     "name": "Rest",
-    "description": "Luna is resting after the Guided Return receiving-moments slice.",
-    "whyItMatters": "Guided Return now briefly reflects each existing editable answer as held by Luna while preserving the local-only five-value flow and calm Rest Return Card.",
+    "description": "Luna is resting after the Guided Return connective-flow slice.",
+    "whyItMatters": "Guided Return now carries each existing editable answer into the next question with compact connective copy while preserving the local-only five-value flow and calm Rest Return Card.",
     "value": "Rest"
   },
-  "nextSuggestedStep": "Human mobile test of whether receiving moments make each answer feel like it matters to Luna."
+  "nextSuggestedStep": "Human mobile test of whether connective flow makes Guided Return feel like Luna is walking with the user."
 }
