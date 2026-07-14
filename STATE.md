@@ -1,3 +1,7 @@
+## Current Guided Return Connective Flow Slice
+
+This was a focused Guided Return connective-flow slice that made Luna carry each existing answer forward into the next question, so the path feels less like separate prompts and more like one continuous return. The slice adds only compact stage lead-ins using the existing five local values: returning to the named project leads into the thread question, holding the thread leads to choosing the lantern, choosing the lantern leads to setting something outside the gate, and setting something aside leads into the closing Record beat. Rest remains the soft landing and full Return Card. Luna remains at Rest. Next: Human mobile test of whether connective flow makes Guided Return feel like Luna is walking with the user.
+
 # State
 
 ## Guided Return Receiving Moments Slice

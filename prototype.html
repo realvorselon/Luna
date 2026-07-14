@@ -903,10 +903,16 @@
       margin: 0;
     }
 
-    .guided-answer-note {
+    .guided-answer-note,
+    .guided-flow-lead {
       margin: 0;
       color: var(--silver);
       font-size: 0.9rem;
+    }
+
+    .guided-flow-lead {
+      overflow-wrap: anywhere;
+      color: rgb(244 232 196 / 88%);
     }
 
     .guided-place-controls {
@@ -1813,6 +1819,24 @@
       });
     };
 
+
+    const getGuidedFlowLeadIn = (stageKey) => {
+      const project = formatRestSummaryValue('projectName', getProjectName());
+      if (stageKey === 'currentGoal') return `Okay. We’re returning to ${project}. What would make returning easier?`;
+      if (stageKey === 'remember') return 'We only need enough to find the thread.';
+      if (stageKey === 'choose') return 'I’m holding the thread. Now choose the lantern.';
+      if (stageKey === 'setAside') return 'Good. That’s the lantern. What can wait outside the gate?';
+      if (stageKey === 'record') return 'The gate is quieter now. What changed, even a little?';
+      return 'Begin with the one thing you are returning to.';
+    };
+
+    const renderGuidedFlowLeadIn = (stageKey) => `<p class="guided-flow-lead" data-guided-flow-lead="${stageKey}">${escapeHtml(getGuidedFlowLeadIn(stageKey))}</p>`;
+
+    const updateGuidedFlowLeadIn = () => {
+      const leadIn = guidedStageBody.querySelector('[data-guided-flow-lead]');
+      if (leadIn) leadIn.textContent = getGuidedFlowLeadIn(leadIn.getAttribute('data-guided-flow-lead'));
+    };
+
     const getGuidedReceivingMoment = (fieldKey, value) => {
       const formattedValue = formatRestSummaryValue(fieldKey, value);
       if (fieldKey === 'projectName') return `Okay. We’re returning to ${formattedValue}.`;
@@ -1912,6 +1936,7 @@
             guidedDisplay.textContent = field.input.value.trim() || field.input.defaultValue;
           }
           updateGuidedReceivingMoment(fieldElement, fieldKey, field.input.value);
+          updateGuidedFlowLeadIn();
           updateVisibleGuidedInsight();
           updateLiveReturnCardPreview();
         });
@@ -1944,7 +1969,7 @@
         intro: 'Answer one thing at a time, and Luna will place each answer on the Return Card.',
         render: () => `
           <div class="guided-question-card">
-            <p class="guided-answer-note">One question at a time. Each answer becomes a piece of the Return Card.</p>
+            ${renderGuidedFlowLeadIn(getGuidedPlaceFieldKey() === 'currentGoal' ? 'currentGoal' : 'projectName')}
             <div class="guided-inline-edit" aria-label="Find your place editable project context">
               ${renderGuidedEditableField(getGuidedPlaceFieldKey())}
             </div>
@@ -1962,6 +1987,7 @@
         intro: 'Remember enough to continue, without making the project larger.',
         render: () => `
           <article class="quiet-card">
+            ${renderGuidedFlowLeadIn('remember')}
             <span class="label">Remember</span>
             <h3>${escapeHtml(formatRestSummaryValue('projectName', getProjectName()))}</h3>
             <p>${escapeHtml(formatRememberGoalLine())}</p>
@@ -1975,6 +2001,7 @@
         tone: 'choose',
         render: () => `
           <div class="guided-question-card">
+            ${renderGuidedFlowLeadIn('choose')}
             <div class="guided-inline-edit" aria-label="Choose editable next action">
               ${renderGuidedEditableField('nextAction')}
             </div>
@@ -1990,6 +2017,7 @@
         tone: 'set-aside',
         render: () => `
           <div class="guided-question-card">
+            ${renderGuidedFlowLeadIn('setAside')}
             <div class="guided-inline-edit" aria-label="Set Aside editable value">
               ${renderGuidedEditableField('setAside')}
             </div>
@@ -2005,6 +2033,7 @@
         tone: 'record',
         render: () => `
           <div class="guided-question-card">
+            ${renderGuidedFlowLeadIn('record')}
             <div class="guided-inline-edit" aria-label="Record editable change note">
               ${renderGuidedEditableField('recordChange')}
             </div>

@@ -2,6 +2,13 @@
 
 ## 2026-07-14
 
+### Guided Return Connective Flow Slice
+
+- This was a focused Guided Return connective-flow slice that made Luna carry each existing answer forward into the next question, so the path feels less like separate prompts and more like one continuous return.
+- Added compact connective lead-ins across Find your place, Remember, Choose, Set Aside, and Record so project name, thread, lantern, gate, and closing beat feel linked while Rest remains the full Return Card.
+- Preserved receiving moments, the lighter live “Held so far” preview before Rest, answer spaces, contribution cues, Luna insight cards, opening buttons, one-question Find your place behavior, stage order, safe escaping/textContent rendering, maxlengths, reduced-motion protections, Shape this return Apply → Undo, five existing localStorage keys, and the no-network/no-model boundary.
+- Set Luna back to Rest; next is: Human mobile test of whether connective flow makes Guided Return feel like Luna is walking with the user.
+
 ### Guided Return Receiving Moments Slice
 
 - This was a focused Guided Return receiving-moments slice that made Luna briefly reflect each existing answer as something she is holding, so the flow feels less like storing form fields and more like the user’s answers matter to Luna.
