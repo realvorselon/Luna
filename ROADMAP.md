@@ -10,6 +10,10 @@ Luna now has a concise visual direction note anchoring the finished look and fee
 
 # Roadmap
 
+## Current Live Return Card Preview Slice
+
+This was a focused live Return Card preview slice that made Guided Return show Luna gathering the same five return pieces in real time, so the middle of the flow feels less like filling boxes and more like building a clear place to resume. The preview stays secondary to the active Guided Return question, updates from the existing five local values, and lets Rest remain the full soft landing and final Return Card. Luna remains at Rest. Next: Human mobile test of whether the live Return Card preview makes Guided Return feel less form-like.
+
 ## Current Guided Return Contribution Clarity Slice
 
 This was a focused Guided Return contribution clarity slice that made each existing answer feel like part of the final Return Card, so the middle of the flow feels less like filling boxes and more like Luna gathering a clear place to resume. Each editable Guided Return stage now quietly names the Return Card piece it is shaping, with Choose strengthened around the lantern/resume point. Luna remains at Rest. Next: Human mobile test of whether each Guided Return stage feels like it contributes to the Return Card.

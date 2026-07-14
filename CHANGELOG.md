@@ -1,5 +1,15 @@
 # Changelog
 
+## 2026-07-14
+
+### Live Return Card Preview Slice
+
+- This was a focused live Return Card preview slice that made Guided Return show Luna gathering the same five return pieces in real time, so the middle of the flow feels less like filling boxes and more like building a clear place to resume.
+- Added a compact live Return Card preview during Guided Return before Rest, using the existing five local values and labels only.
+- Made the preview update through the existing Guided Return inline edit sync path, with safe escaped rendering and a restrained lantern emphasis when One Next Action has a real user value.
+- Preserved the Rest soft landing and full Return Card, six-stage order, one-question Find your place behavior, answer spaces, contribution cues, Luna insight cards, opening buttons, Shape this return Apply → Undo, five localStorage keys, maxlengths, reduced-motion protections, safe rendering, and no-network/no-model boundary.
+- Set Luna back to Rest; next is: Human mobile test of whether the live Return Card preview makes Guided Return feel less form-like.
+
 ## 2026-07-13
 
 ### Guided Return Contribution Clarity Slice
