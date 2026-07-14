@@ -1813,9 +1813,8 @@
       });
     };
 
-    const getGuidedReceivingMoment = (fieldKey) => {
-      const field = guidedEditableFields[fieldKey];
-      const formattedValue = formatRestSummaryValue(fieldKey, field.input.value);
+    const getGuidedReceivingMoment = (fieldKey, value) => {
+      const formattedValue = formatRestSummaryValue(fieldKey, value);
       if (fieldKey === 'projectName') return `Okay. We’re returning to ${formattedValue}.`;
       if (fieldKey === 'currentGoal') return 'I’m holding that as the thread.';
       if (fieldKey === 'nextAction') return `Good. That’s the lantern: ${formattedValue}.`;
@@ -1824,9 +1823,9 @@
       return 'I’m holding this locally.';
     };
 
-    const updateGuidedReceivingMoment = (fieldElement, fieldKey) => {
+    const updateGuidedReceivingMoment = (fieldElement, fieldKey, value) => {
       const receivingMoment = fieldElement.querySelector('[data-guided-receiving-moment]');
-      if (receivingMoment) receivingMoment.textContent = getGuidedReceivingMoment(fieldKey);
+      if (receivingMoment) receivingMoment.textContent = getGuidedReceivingMoment(fieldKey, value);
     };
 
     const guidedEditableFields = {
@@ -1889,7 +1888,7 @@
             <input id="${inputId}" type="text" value="${escapeHtml(field.input.value)}" autocomplete="off" maxlength="${field.input.getAttribute('maxlength')}" aria-describedby="${helperId}">
           </div>
           <p class="guided-contribution-cue">${escapeHtml(field.contribution)}</p>
-          <p class="guided-receiving-moment" data-guided-receiving-moment>${escapeHtml(getGuidedReceivingMoment(fieldKey))}</p>
+          <p class="guided-receiving-moment" data-guided-receiving-moment>${escapeHtml(getGuidedReceivingMoment(fieldKey, field.input.value))}</p>
           <p class="guided-inline-helper" id="${helperId}">${escapeHtml(field.helper)} Luna will hold this locally.</p>
         </div>
       `;
@@ -1912,7 +1911,7 @@
           if (guidedDisplay) {
             guidedDisplay.textContent = field.input.value.trim() || field.input.defaultValue;
           }
-          updateGuidedReceivingMoment(fieldElement, fieldKey);
+          updateGuidedReceivingMoment(fieldElement, fieldKey, field.input.value);
           updateVisibleGuidedInsight();
           updateLiveReturnCardPreview();
         });

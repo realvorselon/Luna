@@ -185,12 +185,12 @@ for (const receivingCopy of [
 ]) {
   assert(html.includes(receivingCopy), `Guided Return receiving copy should include: ${receivingCopy}`);
 }
-assert(html.includes('const getGuidedReceivingMoment = (fieldKey) => {'), 'receiving moments should be deterministic local rendering');
-assert(html.includes('formatRestSummaryValue(fieldKey, field.input.value)'), 'receiving moments should use existing field values with Rest fallback formatting');
-assert(html.includes('<p class="guided-receiving-moment" data-guided-receiving-moment>${escapeHtml(getGuidedReceivingMoment(fieldKey))}</p>'), 'receiving moments should escape user-rendered values in initial render');
-assert(html.includes('const updateGuidedReceivingMoment = (fieldElement, fieldKey) => {'), 'receiving moments should have a live update path');
-assert(html.includes('receivingMoment.textContent = getGuidedReceivingMoment(fieldKey);'), 'receiving moment live updates should render user values with textContent');
-assert(html.includes('updateGuidedReceivingMoment(fieldElement, fieldKey);'), 'Guided inline edits should refresh the active receiving moment');
+assert(html.includes('const getGuidedReceivingMoment = (fieldKey, value) => {'), 'receiving moments should be deterministic local rendering without depending on guidedEditableFields initialization');
+assert(html.includes('formatRestSummaryValue(fieldKey, value)'), 'receiving moments should format the passed current value with Rest fallback formatting');
+assert(html.includes('<p class="guided-receiving-moment" data-guided-receiving-moment>${escapeHtml(getGuidedReceivingMoment(fieldKey, field.input.value))}</p>'), 'receiving moments should escape user-rendered values in initial render');
+assert(html.includes('const updateGuidedReceivingMoment = (fieldElement, fieldKey, value) => {'), 'receiving moments should have a live update path that accepts the current value');
+assert(html.includes('receivingMoment.textContent = getGuidedReceivingMoment(fieldKey, value);'), 'receiving moment live updates should render user values with textContent');
+assert(html.includes('updateGuidedReceivingMoment(fieldElement, fieldKey, field.input.value);'), 'Guided inline edits should refresh the active receiving moment with the existing input value');
 assert(!/thinking|analyzing|remembering forever|generated AI/i.test(html), 'receiving copy should avoid false AI claims');
 
 assert(html.includes('live-return-card-preview'), 'Guided Return should include a compact live Return Card preview during non-Rest stages');

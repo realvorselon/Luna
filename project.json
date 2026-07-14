@@ -2,8 +2,8 @@
   "status": "Rest",
   "statusHistory": [
     {
-      "status": "Rest",
-      "note": "2026-07-14: This was a focused Guided Return receiving-moments slice that made Luna briefly reflect each existing answer as something she is holding, so the flow feels less like storing form fields and more like the user’s answers matter to Luna."
+      "date": "2026-07-14",
+      "note": "This was a focused Guided Return receiving-moments slice that made Luna briefly reflect each existing answer as something she is holding, so the flow feels less like storing form fields and more like the user’s answers matter to Luna."
     },
     {
       "date": "2026-07-14",
