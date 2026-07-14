@@ -2,6 +2,12 @@
 
 ## 2026-07-14
 
+### Guided Return v0.1 Stabilization / Coherence Pass
+
+- This was a focused Guided Return v0.1 stabilization pass that cleaned up project trail structure, reduced copy/crowding risk, and preserved the current local-only return loop where Luna receives each answer, carries it forward, and gathers the pieces into a final Return Card.
+- Kept receiving moments, connective lead-ins, active answer spaces, contribution cues, Luna insight cards, the secondary live “Held so far” preview before Rest, and Rest as the full final Return Card without adding product concepts, fields, storage keys, stages, navigation changes, network/model behavior, timers, animations, or extra click steps.
+- Set Luna back to Rest; next is: Human mobile v0.1 Guided Return coherence test.
+
 ### Guided Return Connective Flow Slice
 
 - This was a focused Guided Return connective-flow slice that made Luna carry each existing answer forward into the next question, so the path feels less like separate prompts and more like one continuous return.

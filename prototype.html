@@ -799,10 +799,10 @@
 
     .guided-answer-space {
       display: grid;
-      gap: 10px;
+      gap: 9px;
       min-width: 0;
       max-width: 100%;
-      padding: clamp(14px, 2.5vw, 18px);
+      padding: clamp(13px, 2.3vw, 17px);
       background: rgb(17 26 48 / 68%);
       border: 1px solid rgb(205 213 244 / 15%);
       border-radius: 20px;
@@ -881,8 +881,8 @@
 
     .guided-receiving-moment {
       overflow-wrap: anywhere;
-      padding: 8px 10px;
-      color: rgb(237 229 201 / 88%);
+      padding: 7px 9px;
+      color: rgb(237 229 201 / 86%);
       background: rgb(244 209 122 / 8%);
       border: 1px solid rgb(244 209 122 / 13%);
       border-radius: 12px;
@@ -907,12 +907,13 @@
     .guided-flow-lead {
       margin: 0;
       color: var(--silver);
-      font-size: 0.9rem;
+      font-size: 0.88rem;
+      line-height: 1.48;
     }
 
     .guided-flow-lead {
       overflow-wrap: anywhere;
-      color: rgb(244 232 196 / 88%);
+      color: rgb(244 232 196 / 82%);
     }
 
     .guided-place-controls {
@@ -1313,6 +1314,21 @@
       .guided-stage-body {
         gap: 12px;
         margin-top: 14px;
+      }
+
+      .guided-question-card {
+        gap: 10px;
+        padding: 13px;
+      }
+
+      .guided-answer-space {
+        gap: 8px;
+        padding: 12px;
+        border-radius: 17px;
+      }
+
+      .guided-receiving-moment {
+        padding: 7px 8px;
       }
 
       .live-return-card-preview {
@@ -2005,7 +2021,7 @@
             <div class="guided-inline-edit" aria-label="Choose editable next action">
               ${renderGuidedEditableField('nextAction')}
             </div>
-            <p class="guided-answer-note">This One Next Action becomes the lantern: the resume point Luna will point you back to.</p>
+            <p class="guided-answer-note">Begin here when you come back.</p>
           </div>
           ${renderLunaInsight('choose')}
           ${renderLiveReturnCardPreview()}
@@ -2021,7 +2037,7 @@
             <div class="guided-inline-edit" aria-label="Set Aside editable value">
               ${renderGuidedEditableField('setAside')}
             </div>
-            <p class="guided-answer-note">This waits outside the gate as a boundary, not a backlog.</p>
+            <p class="guided-answer-note">A boundary, not a backlog.</p>
           </div>
           ${renderLunaInsight('setAside')}
           ${renderLiveReturnCardPreview()}
@@ -2037,7 +2053,7 @@
             <div class="guided-inline-edit" aria-label="Record editable change note">
               ${renderGuidedEditableField('recordChange')}
             </div>
-            <p class="guided-answer-note">A small note is enough. It becomes What changed, not a report.</p>
+            <p class="guided-answer-note">A few honest words are enough.</p>
           </div>
           ${renderLunaInsight('record')}
           ${renderLiveReturnCardPreview()}

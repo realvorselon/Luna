@@ -3,6 +3,10 @@
   "statusHistory": [
     {
       "date": "2026-07-14",
+      "note": "This was a focused Guided Return v0.1 stabilization pass that cleaned up project trail structure, reduced copy/crowding risk, and preserved the current local-only return loop where Luna receives each answer, carries it forward, and gathers the pieces into a final Return Card."
+    },
+    {
+      "date": "2026-07-14",
       "note": "This was a focused Guided Return connective-flow slice that made Luna carry each existing answer forward into the next question, so the path feels less like separate prompts and more like one continuous return."
     },
     {
@@ -654,9 +658,9 @@
       "note": "The project is resting after a good run and ready for one gentle improvement."
     }
   ],
-  "currentGoal": "Make Guided Return feel continuous by carrying each existing answer into the next question.",
+  "currentGoal": "Rest after the Guided Return connective-flow slice.",
   "lastCompletedRun": "Guided Return connective-flow slice: Luna carries each existing answer forward into the next stage with compact local presentation copy, without adding fields, storage keys, AI/API/model/network behavior, stages, clicks, timers, animations, or navigation changes.",
-  "nextStep": "Human mobile test of whether connective flow makes Guided Return feel like Luna is walking with the user.",
+  "nextStep": "Human mobile v0.1 Guided Return coherence test.",
   "dashboardGuide": [
     "Welcome starts the path to read through Record the Change before choosing more work.",
     "Status gives a quick snapshot of how the project is doing right now.",
@@ -671,6 +675,7 @@
     "Keep the implementation narrow: opening threshold visual/layout only, with no behavior expansion."
   ],
   "decisionLog": [
+    "2026-07-14: This was a focused Guided Return v0.1 stabilization pass that cleaned up project trail structure, reduced copy/crowding risk, and preserved the current local-only return loop where Luna receives each answer, carries it forward, and gathers the pieces into a final Return Card.",
     "2026-07-14: This was a focused Guided Return receiving-moments slice that made Luna briefly reflect each existing answer as something she is holding, so the flow feels less like storing form fields and more like the user’s answers matter to Luna.",
     "2026-07-13: This was a focused Guided Return contribution clarity slice that made each existing answer feel like part of the final Return Card, so the middle of the flow feels less like filling boxes and more like Luna gathering a clear place to resume.",
     "2026-07-13: This was a focused moonlit atmosphere slice that made Luna’s opening and Guided Return shell feel more like one quiet return place while preserving the existing local-only flow, first-impression clarity, and Rest Return Card.",
@@ -731,9 +736,9 @@
     "Visit http://localhost:8000 in a browser to view the dashboard."
   ],
   "nextAction": {
-    "title": "Human mobile receiving-moments test",
-    "description": "Human mobile test of whether receiving moments make each answer feel like it matters to Luna.",
-    "whyItMatters": "The receiving-moments slice is complete; a mobile human pass should confirm the short local reflections make Guided Return feel less like filling boxes without crowding the active question.",
+    "title": "Human mobile v0.1 Guided Return coherence test",
+    "description": "Human mobile v0.1 Guided Return coherence test.",
+    "whyItMatters": "The connective-flow slice is complete and this stabilization pass preserved the current loop; a mobile human pass should confirm Guided Return feels coherent, calm, and intentionally designed without crowding the active question.",
     "status": "Ready for human test"
   },
   "creativeSeed": {
@@ -806,5 +811,5 @@
     "whyItMatters": "Guided Return now carries each existing editable answer into the next question with compact connective copy while preserving the local-only five-value flow and calm Rest Return Card.",
     "value": "Rest"
   },
-  "nextSuggestedStep": "Human mobile test of whether connective flow makes Guided Return feel like Luna is walking with the user."
+  "nextSuggestedStep": "Human mobile v0.1 Guided Return coherence test."
 }

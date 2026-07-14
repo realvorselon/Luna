@@ -1,18 +1,8 @@
-## Current Guided Return Connective Flow Slice
-
-This was a focused Guided Return connective-flow slice that made Luna carry each existing answer forward into the next question, so the path feels less like separate prompts and more like one continuous return. The slice adds only compact stage lead-ins using the existing five local values: returning to the named project leads into the thread question, holding the thread leads to choosing the lantern, choosing the lantern leads to setting something outside the gate, and setting something aside leads into the closing Record beat. Rest remains the soft landing and full Return Card. Luna remains at Rest. Next: Human mobile test of whether connective flow makes Guided Return feel like Luna is walking with the user.
-
-## Visual North-Star Checkpoint
-
-Luna now has a concise visual direction note anchoring the finished look and feel as a quiet moonlit garden return app rather than a dashboard, Notion clone, or generic productivity surface. The next visual implementation should be the first narrow garden-gate opening threshold slice, not a broad redesign.
-
-## Guided Return conversational presentation slice
-
-- Current focus is complete: Guided Return now presents the existing editable flow as Luna asking one gentle question at a time.
-- The same six-stage flow, five saved local values, inline editing, deterministic insight, full overview editing, Shape this return Apply → Undo behavior, storage-key boundary, no-network/no-model behavior, mobile comfort, and reduced-motion protections remain preserved.
-- Luna is back at Rest; next is: Human mobile usability test of the conversational Guided Return flow.
-
 # Roadmap
+
+## Current Guided Return v0.1 Stabilization / Coherence Pass
+
+This was a focused Guided Return v0.1 stabilization pass that cleaned up project trail structure, reduced copy/crowding risk, and preserved the current local-only return loop where Luna receives each answer, carries it forward, and gathers the pieces into a final Return Card. Luna remains at Rest after the Guided Return connective-flow slice. Next: Human mobile v0.1 Guided Return coherence test.
 
 ## Current Guided Return Receiving Moments Slice
 
@@ -40,7 +30,7 @@ This was a focused Guided Return Return Card slice that made Rest give the user 
 
 ## Current v0.1 Direction
 
-Luna has completed one bounded v0.1 stabilization and coherence pass after the recent human-tested slices. The next step is a human v0.1 readiness test on mobile through the complete flow: opening threshold → Shape this return → Apply/Undo → full overview → Guided Return → Rest → Return to Luna. If a blocking issue appears, fix only that issue; otherwise keep Luna at Rest.
+Luna remains at Rest after the Guided Return connective-flow slice and the focused v0.1 stabilization/coherence pass. The next suggested step is a Human mobile v0.1 Guided Return coherence test. If a blocking issue appears, fix only that issue; otherwise keep Luna at Rest.
 
 Protected scope remains one local project only. The guidance engine must stay browser-only with no API key, backend, account, cost, network call, persisted suggestion result, or suggestion-history key. The existing five project-edit storage keys remain the only persisted project values. Set Aside is one saved value, not a backlog. Record is one saved value, not a log. The opening threshold, Return gently action, navigation loop, panel motion, mobile treatment, full overview reference/editing mode, and six-stage shell should stay protected.
 
@@ -66,7 +56,7 @@ Protected scope remains one local project only. The guidance engine must stay br
 - Protect the complete guided sequence: Orient → Remember → Choose → Set Aside → Record → Rest.
 - Keep Ignore For Now intentionally not-a-backlog, Record intentionally brief and non-administrative, and Rest as a real stopping point.
 - Human testing found the opening threshold passed strongly and the basic navigation loop works.
-- Current next step: human mobile comfort/readability check of the new opening threshold, then resume the broader v0.1 readiness test only if the threshold feels calm and readable.
+- Current next step: Human mobile v0.1 Guided Return coherence test.
 
 ## Current Rest Checkpoint — First Complete Guided Loop
 

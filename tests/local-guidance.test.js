@@ -82,6 +82,21 @@ assert.doesNotMatch(result.restMessage, /<script/i);
 
 const html = fs.readFileSync('prototype.html', 'utf8');
 const js = fs.readFileSync('prototype-guidance.js', 'utf8');
+const state = fs.readFileSync('STATE.md', 'utf8');
+const roadmap = fs.readFileSync('ROADMAP.md', 'utf8');
+const changelog = fs.readFileSync('CHANGELOG.md', 'utf8');
+const project = JSON.parse(fs.readFileSync('project.json', 'utf8'));
+assert(state.startsWith('# State'), 'STATE.md should begin with the # State heading');
+for (const trail of [state, roadmap, changelog]) {
+  assert(trail.includes('Guided Return v0.1 stabilization pass'), 'project trail should record the v0.1 stabilization/coherence pass');
+  assert(trail.includes('Rest'), 'project trail should keep Luna at Rest');
+  assert(trail.includes('Guided Return connective-flow slice'), 'project trail should preserve the latest completed connective-flow slice');
+  assert(trail.includes('Human mobile v0.1 Guided Return coherence test'), 'project trail should point to the human mobile v0.1 coherence test');
+}
+assert.equal(project.currentMode.value, 'Rest');
+assert.equal(project.lastCompletedRun, 'Guided Return connective-flow slice: Luna carries each existing answer forward into the next stage with compact local presentation copy, without adding fields, storage keys, AI/API/model/network behavior, stages, clicks, timers, animations, or navigation changes.');
+assert.equal(project.nextStep, 'Human mobile v0.1 Guided Return coherence test.');
+assert.equal(project.nextSuggestedStep, 'Human mobile v0.1 Guided Return coherence test.');
 assert(!/Math\.random\s*\(/.test(js), 'guidance must not use Math.random');
 assert(!/\bfetch\s*\(/.test(html + js), 'local guidance must not call fetch');
 assert(html.includes('Edit Luna’s current project'), 'overview should include a clear editing-area heading');
@@ -161,6 +176,9 @@ assert(html.includes('guided-answer-space'), 'Guided Return should style editabl
 assert(html.includes('guided-answer-input-frame'), 'Guided Return answer spaces should wrap the real input elements');
 assert(html.includes('Your answer'), 'Guided Return answer-space copy should gently label the response area');
 assert(html.includes('Luna will hold this locally.'), 'Guided Return helper copy should keep the local-only boundary visible');
+for (const softenedNote of ['Begin here when you come back.', 'A boundary, not a backlog.', 'A few honest words are enough.']) {
+  assert(html.includes(softenedNote), `Guided Return should keep softened non-duplicative helper copy: ${softenedNote}`);
+}
 
 for (const contributionCue of [
   'This becomes Returning to.',
@@ -187,7 +205,7 @@ assert(html.includes('const renderGuidedFlowLeadIn = (stageKey) => `<p class="gu
 assert(html.includes("if (leadIn) leadIn.textContent = getGuidedFlowLeadIn(leadIn.getAttribute('data-guided-flow-lead'));"), 'connective flow copy live updates should render user values with textContent');
 assert(html.includes('updateGuidedFlowLeadIn();'), 'Guided inline edits should refresh connective flow copy when relevant local values change');
 
-assert(html.includes('This One Next Action becomes the lantern: the resume point Luna will point you back to.'), 'Choose should explicitly connect One Next Action to the lantern/resume point');
+assert(html.includes('Begin here when you come back.'), 'Choose should keep the lantern/resume point important without duplicating the contribution cue');
 
 assert(html.includes('guided-receiving-moment'), 'Guided Return editable answer spaces should include receiving/reflection moments');
 assert(html.includes('data-guided-receiving-moment'), 'receiving moments should be targetable for live updates');
