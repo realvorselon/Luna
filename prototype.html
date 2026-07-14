@@ -1014,6 +1014,34 @@
       font-size: 0.78rem;
     }
 
+    .live-return-card-compact {
+      display: none;
+      gap: 4px;
+      min-width: 0;
+    }
+
+    .live-return-card-compact-line,
+    .live-return-card-compact-more {
+      margin: 0;
+      min-width: 0;
+      overflow-wrap: anywhere;
+      color: rgb(235 239 255 / 72%);
+      font-size: 0.78rem;
+      line-height: 1.28;
+    }
+
+    .live-return-card-compact-line strong {
+      color: rgb(244 232 196 / 68%);
+      font-size: 0.6rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .live-return-card-compact-more {
+      color: rgb(197 206 224 / 56%);
+      font-size: 0.7rem;
+    }
+
     .live-return-card-list {
       display: grid;
       gap: 5px;
@@ -1395,37 +1423,28 @@
         font-size: 0.66rem;
       }
 
-      .live-return-card-note {
-        font-size: 0.72rem;
-        line-height: 1.25;
-      }
-
+      .live-return-card-note,
       .live-return-card-list {
-        gap: 2px;
+        display: none;
       }
 
-      .live-return-card-row {
-        padding: 3px 2px;
-        background: transparent;
-        border-color: transparent;
-        border-radius: 0;
+      .live-return-card-compact {
+        display: grid;
       }
 
-      .live-return-card-row strong {
+      .live-return-card-compact-line {
+        font-size: 0.76rem;
+        line-height: 1.24;
+      }
+
+      .live-return-card-compact-line strong {
         font-size: 0.56rem;
-        color: rgb(197 206 224 / 58%);
+        color: rgb(244 232 196 / 62%);
       }
 
-      .live-return-card-row span {
-        font-size: 0.74rem;
-        line-height: 1.22;
-        color: rgb(235 239 255 / 60%);
-      }
-
-      .live-return-card-lantern.has-live-lantern {
-        background: rgb(52 47 55 / 14%);
-        border-color: rgb(255 214 128 / 8%);
-        border-radius: 8px;
+      .live-return-card-compact-more {
+        font-size: 0.68rem;
+        line-height: 1.2;
       }
 
       .guided-actions {
@@ -1881,6 +1900,11 @@
       <aside class="live-return-card-preview" aria-label="Live Return Card preview">
         <span class="label">Held so far</span>
         <p class="live-return-card-note">A quiet preview of what Luna is holding.</p>
+        <div class="live-return-card-compact" aria-label="Compact held summary">
+          <p class="live-return-card-compact-line" data-live-return-card-compact-field="projectName"><strong>Returning</strong> <span>${escapeHtml(formatRestSummaryValue('projectName', getProjectName()))}</span></p>
+          <p class="live-return-card-compact-line" data-live-return-card-compact-field="nextAction"><strong>Lantern</strong> <span>${escapeHtml(formatRestSummaryValue('nextAction', getNextAction()))}</span></p>
+          <p class="live-return-card-compact-more">+ 3 held for Rest</p>
+        </div>
         <div class="live-return-card-list">
           ${liveReturnCardRows.map(([fieldKey, label, getValue]) => {
             const isLantern = fieldKey === 'nextAction';
@@ -1896,12 +1920,18 @@
       if (!preview) return;
       liveReturnCardRows.forEach(([fieldKey, , getValue]) => {
         const row = preview.querySelector(`[data-live-return-card-field="${fieldKey}"]`);
-        if (!row) return;
         const value = getValue();
-        const valueElement = row.querySelector('span');
-        if (valueElement) valueElement.textContent = formatRestSummaryValue(fieldKey, value);
-        if (fieldKey === 'nextAction') {
-          row.classList.toggle('has-live-lantern', isRealUserEntry('nextAction', value));
+        if (row) {
+          const valueElement = row.querySelector('span');
+          if (valueElement) valueElement.textContent = formatRestSummaryValue(fieldKey, value);
+          if (fieldKey === 'nextAction') {
+            row.classList.toggle('has-live-lantern', isRealUserEntry('nextAction', value));
+          }
+        }
+        const compactRow = preview.querySelector(`[data-live-return-card-compact-field="${fieldKey}"]`);
+        if (compactRow) {
+          const compactValue = compactRow.querySelector('span');
+          if (compactValue) compactValue.textContent = formatRestSummaryValue(fieldKey, value);
         }
       });
     };

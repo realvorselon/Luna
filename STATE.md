@@ -1,13 +1,13 @@
 # State
 
-## Guided Return Mobile Hierarchy Pass
+## Guided Return Mobile Preview Pass
 
-- This was a focused Guided Return mobile hierarchy pass that kept Luna’s receiving moments primary while making Luna notes and the live Held so far preview much quieter on mobile, so the answer has more room to breathe.
-- Status remains Rest; next suggested step is: “Human mobile test of whether Guided Return now feels breathable while keeping Luna’s receiving moments alive.”
+- This was a focused Guided Return mobile preview pass that made the live Held so far area compact on mobile, keeping only the essential return thread visible while leaving the full five-part Return Card for Rest.
+- Status remains Rest; next suggested step is: “Human mobile test of whether the compact Held so far preview makes Guided Return feel breathable.”
 
-Luna is at Rest after a focused Guided Return mobile hierarchy pass. Guided Return keeps receiving moments close to the active answer as the core alive signal, while Luna notes and the live “Held so far” preview become much quieter on mobile. The same local-only five-value flow, stages, navigation behavior, and Rest Return Card remain preserved.
+Luna is at Rest after a focused Guided Return mobile preview pass. Guided Return now keeps the live “Held so far” area compact on mobile, showing the essential Returning and Lantern thread before Rest while preserving receiving moments, desktop’s fuller preview, and the complete five-value Rest Return Card.
 
-Next suggested step: Human mobile test of whether Guided Return now feels breathable while keeping Luna’s receiving moments alive.
+Next suggested step: Human mobile test of whether the compact Held so far preview makes Guided Return feel breathable.
 
 ## Guided Return v0.1 Stabilization / Coherence Pass
 
