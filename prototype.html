@@ -867,7 +867,6 @@
     }
 
     .guided-inline-helper,
-    .guided-contribution-cue,
     .guided-receiving-moment {
       margin: 0;
       color: rgb(199 209 232 / 76%);
@@ -875,16 +874,13 @@
       line-height: 1.5;
     }
 
-    .guided-contribution-cue {
-      color: rgb(244 232 196 / 86%);
-    }
 
     .guided-receiving-moment {
       overflow-wrap: anywhere;
       padding: 7px 9px;
-      color: rgb(237 229 201 / 86%);
-      background: rgb(244 209 122 / 8%);
-      border: 1px solid rgb(244 209 122 / 13%);
+      color: rgb(237 229 201 / 88%);
+      background: rgb(244 209 122 / 7%);
+      border: 1px solid rgb(244 209 122 / 12%);
       border-radius: 12px;
     }
 
@@ -927,14 +923,14 @@
 
     .luna-insight-card {
       display: grid;
-      gap: 8px;
+      gap: 4px;
       min-width: 0;
       max-width: 100%;
-      padding: 13px 15px;
-      color: var(--moon-soft);
-      background: rgb(22 32 56 / 62%);
-      border: 1px solid rgb(223 200 137 / 14%);
-      border-radius: 18px;
+      padding: 10px 12px;
+      color: rgb(220 227 239 / 78%);
+      background: rgb(22 32 56 / 38%);
+      border: 1px solid rgb(223 200 137 / 9%);
+      border-radius: 15px;
       box-shadow: inset 0 1px 0 rgb(255 255 255 / 5%);
     }
 
@@ -992,11 +988,11 @@
 
     .live-return-card-preview {
       display: grid;
-      gap: 8px;
+      gap: 6px;
       min-width: 0;
       max-width: 100%;
       margin-top: 0;
-      padding: 10px;
+      padding: 8px;
       color: rgb(216 224 246 / 76%);
       background: rgb(10 17 34 / 18%);
       border: 1px solid rgb(189 200 238 / 10%);
@@ -1014,8 +1010,8 @@
     }
 
     .live-return-card-note {
-      color: rgb(197 206 224 / 66%);
-      font-size: 0.82rem;
+      color: rgb(197 206 224 / 62%);
+      font-size: 0.78rem;
     }
 
     .live-return-card-list {
@@ -1027,7 +1023,7 @@
       display: grid;
       gap: 1px;
       min-width: 0;
-      padding: 6px 8px;
+      padding: 5px 7px;
       background: rgb(25 35 60 / 24%);
       border: 1px solid rgb(189 200 238 / 6%);
       border-radius: 11px;
@@ -1035,7 +1031,7 @@
 
     .live-return-card-row strong {
       color: rgb(197 206 224 / 70%);
-      font-size: 0.65rem;
+      font-size: 0.61rem;
       letter-spacing: 0.08em;
       text-transform: uppercase;
     }
@@ -1043,8 +1039,8 @@
     .live-return-card-row span {
       overflow-wrap: anywhere;
       color: rgb(235 239 255 / 76%);
-      font-size: 0.84rem;
-      line-height: 1.34;
+      font-size: 0.8rem;
+      line-height: 1.3;
     }
 
     .live-return-card-lantern.has-live-lantern {
@@ -1737,7 +1733,7 @@
 
     const renderLunaInsight = (stageKey) => `
       <aside class="luna-insight-card" aria-label="Luna insight for this step">
-        <span class="label">Luna insight</span>
+        <span class="label">Luna note</span>
         <p id="guided-${stageKey}-insight">${escapeHtml(getGuidedInsightText(stageKey))}</p>
       </aside>
     `;
@@ -1750,7 +1746,7 @@
       if (stageKey === 'place') {
         const placeFieldKey = getGuidedPlaceFieldKey();
         if (placeFieldKey === 'projectName' && !projectNamed) {
-          return 'Name one unfinished thing for Luna to hold. It does not need to be a whole life system.';
+          return 'Name one unfinished thing. A short name is enough.';
         }
         if (placeFieldKey === 'currentGoal' && !goalNamed) {
           return 'Now name what would make returning easier. One small condition is enough.';
@@ -1767,17 +1763,17 @@
         if (guidance.nextAction.status === 'suggestion') {
           return guidance.nextAction.reason;
         }
-        return 'One small action is enough. This can be the lantern for this return.';
+        return 'One small action is enough. This is the lantern.';
       }
       if (stageKey === 'setAside') {
         if (guidance.setAside.status === 'suggestion') {
-          return `${guidance.setAside.reason} This field is only for one distraction, larger idea, or pressure that can wait.`;
+          return guidance.setAside.reason;
         }
         return 'That can wait. Naming it here is a boundary, not a backlog.';
       }
       if (stageKey === 'record') {
         if (guidance.recordChange.status === 'suggestion') {
-          return `${guidance.recordChange.reason} This is not a log or report; one small note about what changed is enough.`;
+          return guidance.recordChange.reason;
         }
         return 'This note is enough for later. It does not need to become a report.';
       }
@@ -1809,7 +1805,7 @@
     const renderLiveReturnCardPreview = () => `
       <aside class="live-return-card-preview" aria-label="Live Return Card preview">
         <span class="label">Held so far</span>
-        <p class="live-return-card-note">Luna is holding the pieces as they gather.</p>
+        <p class="live-return-card-note">A quiet preview of what Luna is holding.</p>
         <div class="live-return-card-list">
           ${liveReturnCardRows.map(([fieldKey, label, getValue]) => {
             const isLantern = fieldKey === 'nextAction';
@@ -1875,7 +1871,6 @@
         storageKey: projectNameStorageKey,
         update: () => updateProjectNameDisplay(),
         helper: 'A short name is enough.',
-        contribution: 'This becomes Returning to.',
         guidedDisplaySelector: '#guided-project-name-display'
       },
       currentGoal: {
@@ -1884,7 +1879,6 @@
         storageKey: currentGoalStorageKey,
         update: () => updateCurrentGoalDisplay(),
         helper: 'Answer with what would help this return feel possible.',
-        contribution: 'This becomes The thread.',
         guidedDisplaySelector: '#guided-current-goal-display'
       },
       nextAction: {
@@ -1893,7 +1887,6 @@
         storageKey: nextActionStorageKey,
         update: () => updateNextActionDisplay(),
         helper: 'One concrete move is enough.',
-        contribution: 'This becomes The lantern: the place to begin when you come back.',
         guidedDisplaySelector: '#guided-next-action-display'
       },
       setAside: {
@@ -1902,7 +1895,6 @@
         storageKey: setAsideStorageKey,
         update: () => updateSetAsideDisplay(),
         helper: 'One thing can wait without becoming a list.',
-        contribution: 'This waits outside the gate.',
         guidedDisplaySelector: '#guided-set-aside-display'
       },
       recordChange: {
@@ -1911,7 +1903,6 @@
         storageKey: recordChangeStorageKey,
         update: () => updateRecordChangeDisplay(),
         helper: 'A few honest words are enough.',
-        contribution: 'This becomes What changed.',
         guidedDisplaySelector: '#guided-record-change-display'
       }
     };
@@ -1927,9 +1918,8 @@
           <div class="guided-answer-input-frame">
             <input id="${inputId}" type="text" value="${escapeHtml(field.input.value)}" autocomplete="off" maxlength="${field.input.getAttribute('maxlength')}" aria-describedby="${helperId}">
           </div>
-          <p class="guided-contribution-cue">${escapeHtml(field.contribution)}</p>
           <p class="guided-receiving-moment" data-guided-receiving-moment>${escapeHtml(getGuidedReceivingMoment(fieldKey, field.input.value))}</p>
-          <p class="guided-inline-helper" id="${helperId}">${escapeHtml(field.helper)} Luna will hold this locally.</p>
+          <p class="guided-inline-helper" id="${helperId}">${escapeHtml(field.helper)}</p>
         </div>
       `;
     };
@@ -1982,7 +1972,7 @@
     const guidedStages = [
       {
         title: 'Find your place',
-        intro: 'Answer one thing at a time, and Luna will place each answer on the Return Card.',
+        intro: 'Answer one thing at a time. Luna keeps these five values locally in this browser.',
         render: () => `
           <div class="guided-question-card">
             ${renderGuidedFlowLeadIn(getGuidedPlaceFieldKey() === 'currentGoal' ? 'currentGoal' : 'projectName')}
