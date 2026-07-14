@@ -3,6 +3,10 @@
   "statusHistory": [
     {
       "date": "2026-07-14",
+      "note": "This was a focused Guided Return mobile preview pass that made the live Held so far area compact on mobile, keeping only the essential return thread visible while leaving the full five-part Return Card for Rest."
+    },
+    {
+      "date": "2026-07-14",
       "note": "This was a focused Guided Return mobile hierarchy pass that kept Luna’s receiving moments primary while making Luna notes and the live Held so far preview much quieter on mobile, so the answer has more room to breathe."
     },
     {
@@ -666,9 +670,9 @@
       "note": "The project is resting after a good run and ready for one gentle improvement."
     }
   ],
-  "currentGoal": "Rest after the Guided Return mobile hierarchy pass.",
-  "lastCompletedRun": "This was a focused Guided Return mobile hierarchy pass that kept Luna’s receiving moments primary while making Luna notes and the live Held so far preview much quieter on mobile, so the answer has more room to breathe.",
-  "nextStep": "Human mobile test of whether Guided Return now feels breathable while keeping Luna’s receiving moments alive.",
+  "currentGoal": "Rest after the Guided Return mobile preview pass.",
+  "lastCompletedRun": "This was a focused Guided Return mobile preview pass that made the live Held so far area compact on mobile, keeping only the essential return thread visible while leaving the full five-part Return Card for Rest.",
+  "nextStep": "Human mobile test of whether the compact Held so far preview makes Guided Return feel breathable.",
   "dashboardGuide": [
     "Welcome starts the path to read through Record the Change before choosing more work.",
     "Status gives a quick snapshot of how the project is doing right now.",
@@ -744,9 +748,9 @@
     "Visit http://localhost:8000 in a browser to view the dashboard."
   ],
   "nextAction": {
-    "title": "Human mobile Guided Return de-crowding test",
-    "description": "Human mobile test of whether Guided Return feels less crowded while keeping Luna’s receiving moments alive.",
-    "whyItMatters": "The mobile de-crowding pass protected Luna’s receiving moments while trimming repeated explanatory layers; a human mobile pass should confirm the active answer now feels primary without losing the alive receiving signal.",
+    "title": "Human mobile compact Held so far test",
+    "description": "Human mobile test of whether the compact Held so far preview makes Guided Return feel breathable.",
+    "whyItMatters": "The compact mobile preview should make Guided Return feel more breathable while still reassuring the user that Luna is holding the thread before Rest.",
     "status": "Ready for human test"
   },
   "creativeSeed": {
@@ -815,9 +819,9 @@
   ],
   "currentMode": {
     "name": "Rest",
-    "description": "Luna is resting after the Guided Return mobile hierarchy pass.",
-    "whyItMatters": "Guided Return now gives the active answer more room on mobile while keeping Luna’s receiving moments close and making Luna notes plus the live Held so far preview quieter.",
+    "description": "Luna is resting after the Guided Return mobile preview pass.",
+    "whyItMatters": "Guided Return now keeps the live Held so far area compact on mobile so Returning and Lantern stay visible without competing with the active answer or the full Rest Return Card.",
     "value": "Rest"
   },
-  "nextSuggestedStep": "Human mobile test of whether Guided Return now feels breathable while keeping Luna’s receiving moments alive."
+  "nextSuggestedStep": "Human mobile test of whether the compact Held so far preview makes Guided Return feel breathable."
 }
