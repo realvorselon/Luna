@@ -12,7 +12,7 @@ Luna now has a concise visual direction note anchoring the finished look and fee
 
 ## Current Live Return Card Preview Slice
 
-This was a focused live Return Card preview slice that made Guided Return show Luna gathering the same five return pieces in real time, so the middle of the flow feels less like filling boxes and more like building a clear place to resume. The preview stays secondary to the active Guided Return question, updates from the existing five local values, and lets Rest remain the full soft landing and final Return Card. Luna remains at Rest. Next: Human mobile test of whether the live Return Card preview makes Guided Return feel less form-like.
+This was a focused live Return Card preview de-crowding slice that kept the useful held-thread preview while making it lighter, smaller, and less competitive with the active Guided Return question. The preview is now framed as “Held so far,” uses lighter, tighter row treatment especially on mobile, updates from the existing five local values, and lets Rest remain the full soft landing and final Return Card. Luna remains at Rest. Next: Human mobile test of whether the lighter live preview feels useful without crowding the question.
 
 ## Current Guided Return Contribution Clarity Slice
 

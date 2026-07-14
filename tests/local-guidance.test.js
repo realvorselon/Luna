@@ -176,7 +176,8 @@ assert(html.includes('This One Next Action becomes the lantern: the resume point
 
 assert(html.includes('live-return-card-preview'), 'Guided Return should include a compact live Return Card preview during non-Rest stages');
 assert(html.includes('aria-label="Live Return Card preview"'), 'live Return Card preview should be labelled accessibly');
-assert(html.includes('Luna is holding the pieces as you name them.'), 'live Return Card preview should frame the held-thread purpose quietly');
+assert(html.includes('<span class="label">Held so far</span>'), 'live Return Card preview should soften its heading to Held so far');
+assert(html.includes('Luna is holding the pieces as they gather.'), 'live Return Card preview should frame the held-thread purpose quietly');
 for (const liveReturnCardLabel of ['Returning to', 'The thread', 'The lantern', 'Waiting outside the gate', 'What changed']) {
   assert(html.includes(liveReturnCardLabel), `live Return Card preview should include label: ${liveReturnCardLabel}`);
 }
@@ -358,10 +359,12 @@ assert(css.includes('.guided-shell,\n    .guided-app-shell') && css.includes('mi
 assertRuleContains('.guided-stage-panel', ['display: grid', 'grid-template-rows: auto auto auto minmax(0, auto)', 'min-width: 0', 'max-width: 100%', 'min-block-size: clamp(420px, 48svh, 500px)', 'overflow: visible']);
 assertRuleContains('.guided-stage-body', ['align-content: start', 'min-width: 0', 'max-width: 100%', 'min-block-size: 0', 'overflow: visible']);
 
-assertRuleContains('.live-return-card-preview', ['display: grid', 'max-width: 100%', 'background: rgb(10 17 34 / 24%)', 'border: 1px solid rgb(223 200 137 / 12%)']);
+assertRuleContains('.live-return-card-preview', ['display: grid', 'max-width: 100%', 'background: rgb(10 17 34 / 18%)', 'border: 1px solid rgb(189 200 238 / 10%)']);
 assertRuleContains('.live-return-card-row span', ['overflow-wrap: anywhere']);
-assertRuleContains('.live-return-card-lantern.has-live-lantern', ['border-color: rgb(255 214 128 / 24%)']);
+assertRuleContains('.live-return-card-lantern.has-live-lantern', ['border-color: rgb(255 214 128 / 16%)']);
 assert.doesNotMatch(css, /\.live-return-card-preview\s*\{[\s\S]*?position\s*:\s*(?:sticky|fixed|absolute)/, 'live Return Card preview should stay in normal flow');
+assert(css.includes('.live-return-card-preview {\n        gap: 6px;\n        padding: 8px;'), 'mobile live preview should use tighter spacing and padding');
+assert(css.includes('.live-return-card-row {\n        padding: 5px 7px;'), 'mobile live preview rows should be smaller without hiding content');
 assertRuleContains('.edit-fields', ['min-width: 0', 'max-width: 100%']);
 assertRuleContains('.edit-field', ['min-width: 0', 'max-width: 100%']);
 assertRuleContains('.edit-field input', ['box-sizing: border-box', 'min-width: 0', 'max-width: 100%']);

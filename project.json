@@ -3,7 +3,7 @@
   "statusHistory": [
     {
       "date": "2026-07-14",
-      "note": "This was a focused live Return Card preview slice that made Guided Return show Luna gathering the same five return pieces in real time, so the middle of the flow feels less like filling boxes and more like building a clear place to resume."
+      "note": "This was a focused live Return Card preview de-crowding slice that kept the useful held-thread preview while making it lighter, smaller, and less competitive with the active Guided Return question."
     },
     {
       "date": "2026-07-13",
@@ -646,9 +646,9 @@
       "note": "The project is resting after a good run and ready for one gentle improvement."
     }
   ],
-  "currentGoal": "Rest after the live Return Card preview slice.",
-  "lastCompletedRun": "Live Return Card preview slice: Guided Return now shows Luna gathering the same five return pieces in real time before Rest.",
-  "nextStep": "Human mobile test of whether the live Return Card preview makes Guided Return feel less form-like.",
+  "currentGoal": "Rest after the live Return Card preview de-crowding slice.",
+  "lastCompletedRun": "Live Return Card preview de-crowding slice: Guided Return still shows the existing five return pieces in real time before Rest, now as a lighter held-thread cue.",
+  "nextStep": "Human mobile test of whether the lighter live preview feels useful without crowding the question.",
   "dashboardGuide": [
     "Welcome starts the path to read through Record the Change before choosing more work.",
     "Status gives a quick snapshot of how the project is doing right now.",
@@ -793,9 +793,9 @@
   ],
   "currentMode": {
     "name": "Rest",
-    "description": "Luna is resting after the live Return Card preview slice.",
-    "whyItMatters": "Guided Return now shows the existing five return pieces being gathered in real time while preserving the protected local-only flow, unchanged navigation, and final Rest Return Card.",
+    "description": "Luna is resting after the live Return Card preview de-crowding slice.",
+    "whyItMatters": "Guided Return still shows the existing five return pieces being gathered in real time, now as a lighter held-thread cue that stays secondary to the active question.",
     "value": "Rest"
   },
-  "nextSuggestedStep": "Human mobile test of whether the live Return Card preview makes Guided Return feel less form-like."
+  "nextSuggestedStep": "Human mobile test of whether the lighter live preview feels useful without crowding the question."
 }
