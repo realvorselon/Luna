@@ -1,13 +1,13 @@
 # State
 
-## Guided Return Mobile De-crowding Pass
+## Guided Return Mobile Hierarchy Pass
 
-- This was a focused Guided Return mobile de-crowding pass that protected the receiving moments while trimming repeated explanatory copy, so the active answer feels primary and Luna’s response has more room to matter.
-- Status remains Rest; next suggested step is: “Human mobile test of whether Guided Return feels less crowded while keeping Luna’s receiving moments alive.”
+- This was a focused Guided Return mobile hierarchy pass that kept Luna’s receiving moments primary while making Luna notes and the live Held so far preview much quieter on mobile, so the answer has more room to breathe.
+- Status remains Rest; next suggested step is: “Human mobile test of whether Guided Return now feels breathable while keeping Luna’s receiving moments alive.”
 
-Luna is at Rest after a focused Guided Return mobile de-crowding pass. Guided Return keeps receiving moments close to the active answer, keeps connective lead-ins and the live “Held so far” preview secondary, removes repeated contribution cues, and represents the local-only boundary once instead of under every input.
+Luna is at Rest after a focused Guided Return mobile hierarchy pass. Guided Return keeps receiving moments close to the active answer as the core alive signal, while Luna notes and the live “Held so far” preview become much quieter on mobile. The same local-only five-value flow, stages, navigation behavior, and Rest Return Card remain preserved.
 
-Next suggested step: Human mobile test of whether Guided Return feels less crowded while keeping Luna’s receiving moments alive.
+Next suggested step: Human mobile test of whether Guided Return now feels breathable while keeping Luna’s receiving moments alive.
 
 ## Guided Return v0.1 Stabilization / Coherence Pass
 
