@@ -81,6 +81,7 @@ assert.match(result.nextAction.current, /<b>Open<\/b>/);
 assert.doesNotMatch(result.restMessage, /<script/i);
 
 const html = fs.readFileSync('prototype.html', 'utf8');
+const css = html.match(/<style>([\s\S]*?)<\/style>/)[1];
 const js = fs.readFileSync('prototype-guidance.js', 'utf8');
 const state = fs.readFileSync('STATE.md', 'utf8');
 const roadmap = fs.readFileSync('ROADMAP.md', 'utf8');
@@ -92,13 +93,17 @@ for (const trail of [state, roadmap, changelog]) {
   assert(trail.includes('Rest'), 'project trail should keep Luna at Rest');
   assert(trail.includes('Guided Return connective-flow slice'), 'project trail should preserve the latest completed connective-flow slice');
   assert(trail.includes('Human mobile v0.1 Guided Return coherence test'), 'project trail should preserve the prior human mobile v0.1 coherence test');
-  assert(trail.includes('Guided Return mobile de-crowding pass'), 'project trail should record the mobile de-crowding pass');
-  assert(trail.includes('Human mobile test of whether Guided Return feels less crowded while keeping Luna’s receiving moments alive.'), 'project trail should point to the next de-crowding human mobile test');
+  assert(trail.includes('Guided Return mobile hierarchy pass'), 'project trail should record the mobile hierarchy pass');
+  assert(trail.includes('Human mobile test of whether Guided Return now feels breathable while keeping Luna’s receiving moments alive.'), 'project trail should point to the next mobile hierarchy human mobile test');
 }
+assert.deepEqual(project.statusHistory[0], {
+  date: '2026-07-14',
+  note: 'This was a focused Guided Return mobile hierarchy pass that kept Luna’s receiving moments primary while making Luna notes and the live Held so far preview much quieter on mobile, so the answer has more room to breathe.'
+}, 'new statusHistory entry should keep the existing object shape');
 assert.equal(project.currentMode.value, 'Rest');
-assert.equal(project.lastCompletedRun, 'This was a focused Guided Return mobile de-crowding pass that protected the receiving moments while trimming repeated explanatory copy, so the active answer feels primary and Luna’s response has more room to matter.');
-assert.equal(project.nextStep, 'Human mobile test of whether Guided Return feels less crowded while keeping Luna’s receiving moments alive.');
-assert.equal(project.nextSuggestedStep, 'Human mobile test of whether Guided Return feels less crowded while keeping Luna’s receiving moments alive.');
+assert.equal(project.lastCompletedRun, 'This was a focused Guided Return mobile hierarchy pass that kept Luna’s receiving moments primary while making Luna notes and the live Held so far preview much quieter on mobile, so the answer has more room to breathe.');
+assert.equal(project.nextStep, 'Human mobile test of whether Guided Return now feels breathable while keeping Luna’s receiving moments alive.');
+assert.equal(project.nextSuggestedStep, 'Human mobile test of whether Guided Return now feels breathable while keeping Luna’s receiving moments alive.');
 assert(!/Math\.random\s*\(/.test(js), 'guidance must not use Math.random');
 assert(!/\bfetch\s*\(/.test(html + js), 'local guidance must not call fetch');
 assert(html.includes('Edit Luna’s current project'), 'overview should include a clear editing-area heading');
@@ -279,6 +284,10 @@ for (const copy of ['Name one unfinished thing. A short name is enough.', 'One s
 }
 assert(html.includes('updateVisibleGuidedInsight();'), 'Guided inline edits should refresh visible Luna insight copy after typing');
 assert(html.includes('<span class="label">Luna note</span>'), 'insight cards should use lighter Luna note framing');
+assert(css.includes('.luna-insight-card {\n        gap: 2px;\n        padding: 6px 8px;'), 'mobile Luna note should become a quieter line-like note with reduced spacing');
+assert(css.includes('background: rgb(22 32 56 / 14%)'), 'mobile Luna note should use a much lighter background');
+assert(css.includes('border-color: rgb(223 200 137 / 6%)'), 'mobile Luna note should use a much lighter border');
+assert(css.includes('.luna-insight-card p {\n        font-size: 0.8rem;\n        line-height: 1.32;'), 'mobile Luna note copy should read smaller and quieter');
 assert(!html.includes('This is not a log or report; one small note about what changed is enough.'), 'insight copy should be shortened to reduce crowding');
 assert.equal((html.match(/StorageKey\s*=\s*'luna\.prototype\./g) || []).length, 5, 'only the five project storage keys should be declared');
 assert(!/suggestion.*StorageKey|guidance.*StorageKey|history.*StorageKey/i.test(html), 'no suggestion/history storage keys');
@@ -394,7 +403,8 @@ assert.doesNotThrow(() => fakeElements.get('shape-return-button').listeners.clic
 fakeElements.get('luna-opening').hidden = false;
 assert.doesNotThrow(() => fakeElements.get('show-overview-button').listeners.click(), 'Open full overview click handler should not throw');
 
-const css = html.match(/<style>([\s\S]*?)<\/style>/)[1];
+assert(css.includes('background: rgb(244 209 122 / 7%)') && css.includes('border: 1px solid rgb(244 209 122 / 12%)'), 'receiving moments should keep distinct warm styling near answer spaces');
+assert(css.includes('.guided-receiving-moment {\n        padding: 6px 8px;\n        color: rgb(237 229 201 / 90%);'), 'mobile receiving moments should remain visually distinct near the answer while fitting the tighter hierarchy');
 const longUnbrokenNextAction = 'ReturnToLunaWithoutSpaces'.repeat(8).slice(0, 140);
 assert.equal(longUnbrokenNextAction.length, 140, 'regression value should fill the One Next Action maxlength with no spaces');
 const longActionGuidance = guidance.buildReturnGuidance({ ...base, nextAction: longUnbrokenNextAction });
@@ -420,8 +430,10 @@ assertRuleContains('.live-return-card-preview', ['display: grid', 'max-width: 10
 assertRuleContains('.live-return-card-row span', ['overflow-wrap: anywhere']);
 assertRuleContains('.live-return-card-lantern.has-live-lantern', ['border-color: rgb(255 214 128 / 16%)']);
 assert.doesNotMatch(css, /\.live-return-card-preview\s*\{[\s\S]*?position\s*:\s*(?:sticky|fixed|absolute)/, 'live Return Card preview should stay in normal flow');
-assert(css.includes('.live-return-card-preview {\n        gap: 6px;\n        padding: 8px;'), 'mobile live preview should use tighter spacing and padding');
-assert(css.includes('.live-return-card-row {\n        padding: 5px 7px;'), 'mobile live preview rows should be smaller without hiding content');
+assert(css.includes('.live-return-card-preview {\n        gap: 4px;\n        padding: 5px 6px;'), 'mobile live preview should use ultra-light spacing and padding');
+assert(css.includes('background: rgb(10 17 34 / 8%)'), 'mobile live preview should use an ultra-light background');
+assert(css.includes('border-color: rgb(189 200 238 / 6%)'), 'mobile live preview should use an ultra-light border');
+assert(css.includes('.live-return-card-row {\n        padding: 3px 2px;\n        background: transparent;\n        border-color: transparent;'), 'mobile live preview rows should lose the row-box feeling without hiding content');
 assertRuleContains('.edit-fields', ['min-width: 0', 'max-width: 100%']);
 assertRuleContains('.edit-field', ['min-width: 0', 'max-width: 100%']);
 assertRuleContains('.edit-field input', ['box-sizing: border-box', 'min-width: 0', 'max-width: 100%']);
@@ -469,7 +481,7 @@ assert.doesNotMatch(guidedMotionCss, /translate[XY]?\s*\(\s*-?\d+(?:\.\d+)?px\s*
 assert.doesNotMatch(guidedMotionCss, /guidedPanel(?:Leave|Enter)(?:Forward|Back)/, 'old directional guided stage keyframes should not remain');
 assertRuleContains('.guided-stage-panel', ['min-block-size: clamp(420px, 48svh, 500px)', 'will-change: opacity']);
 assert(css.includes('min-block-size: clamp(360px, 48svh, 480px)') && css.includes('min-height: auto'), 'mobile guided stage panel should keep a calm minimum without a rigid clipped frame');
-assert(css.includes('.guided-actions {\n        margin: 0;\n        padding: 14px 0 0;\n        background: transparent;'), 'mobile guided action area should remain in normal flow below content');
+assert(css.includes('.guided-actions {\n        gap: 8px;\n        margin: 0;\n        padding: 10px 0 0;\n        background: transparent;'), 'mobile guided action area should remain in normal flow below content with tighter spacing');
 assert(css.includes('animation: none !important') && css.includes('transition: none !important') && css.includes('filter: none'), 'reduced motion should remove/minimize animation, transition, transform, and filter changes');
 assert(html.includes('const guidedStageMotionFallbackMs = 220;'));
 assert(html.includes('const guidedEntranceFallbackMs = 240;'));

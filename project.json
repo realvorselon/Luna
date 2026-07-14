@@ -3,6 +3,10 @@
   "statusHistory": [
     {
       "date": "2026-07-14",
+      "note": "This was a focused Guided Return mobile hierarchy pass that kept Luna’s receiving moments primary while making Luna notes and the live Held so far preview much quieter on mobile, so the answer has more room to breathe."
+    },
+    {
+      "date": "2026-07-14",
       "note": "This was a focused Guided Return mobile de-crowding pass that protected the receiving moments while trimming repeated explanatory copy, so the active answer feels primary and Luna’s response has more room to matter."
     },
     {
@@ -662,9 +666,9 @@
       "note": "The project is resting after a good run and ready for one gentle improvement."
     }
   ],
-  "currentGoal": "Rest after the Guided Return mobile de-crowding pass.",
-  "lastCompletedRun": "This was a focused Guided Return mobile de-crowding pass that protected the receiving moments while trimming repeated explanatory copy, so the active answer feels primary and Luna’s response has more room to matter.",
-  "nextStep": "Human mobile test of whether Guided Return feels less crowded while keeping Luna’s receiving moments alive.",
+  "currentGoal": "Rest after the Guided Return mobile hierarchy pass.",
+  "lastCompletedRun": "This was a focused Guided Return mobile hierarchy pass that kept Luna’s receiving moments primary while making Luna notes and the live Held so far preview much quieter on mobile, so the answer has more room to breathe.",
+  "nextStep": "Human mobile test of whether Guided Return now feels breathable while keeping Luna’s receiving moments alive.",
   "dashboardGuide": [
     "Welcome starts the path to read through Record the Change before choosing more work.",
     "Status gives a quick snapshot of how the project is doing right now.",
@@ -811,9 +815,9 @@
   ],
   "currentMode": {
     "name": "Rest",
-    "description": "Luna is resting after the Guided Return mobile de-crowding pass.",
-    "whyItMatters": "Guided Return now keeps receiving moments close to the active answer, trims repeated explanatory copy, and keeps the live preview and insight cards secondary while preserving the local-only five-value flow.",
+    "description": "Luna is resting after the Guided Return mobile hierarchy pass.",
+    "whyItMatters": "Guided Return now gives the active answer more room on mobile while keeping Luna’s receiving moments close and making Luna notes plus the live Held so far preview quieter.",
     "value": "Rest"
   },
-  "nextSuggestedStep": "Human mobile test of whether Guided Return feels less crowded while keeping Luna’s receiving moments alive."
+  "nextSuggestedStep": "Human mobile test of whether Guided Return now feels breathable while keeping Luna’s receiving moments alive."
 }
