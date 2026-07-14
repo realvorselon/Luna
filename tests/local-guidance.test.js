@@ -174,6 +174,25 @@ for (const contributionCue of [
 assert(html.includes('guided-contribution-cue'), 'Guided Return contribution cues should have a compact presentation class');
 assert(html.includes('This One Next Action becomes the lantern: the resume point Luna will point you back to.'), 'Choose should explicitly connect One Next Action to the lantern/resume point');
 
+assert(html.includes('guided-receiving-moment'), 'Guided Return editable answer spaces should include receiving/reflection moments');
+assert(html.includes('data-guided-receiving-moment'), 'receiving moments should be targetable for live updates');
+for (const receivingCopy of [
+  'Okay. We’re returning to',
+  'I’m holding that as the thread.',
+  'Good. That’s the lantern:',
+  'I’ll keep that outside the gate for now.',
+  'I’ll carry that change into the Return Card.'
+]) {
+  assert(html.includes(receivingCopy), `Guided Return receiving copy should include: ${receivingCopy}`);
+}
+assert(html.includes('const getGuidedReceivingMoment = (fieldKey) => {'), 'receiving moments should be deterministic local rendering');
+assert(html.includes('formatRestSummaryValue(fieldKey, field.input.value)'), 'receiving moments should use existing field values with Rest fallback formatting');
+assert(html.includes('<p class="guided-receiving-moment" data-guided-receiving-moment>${escapeHtml(getGuidedReceivingMoment(fieldKey))}</p>'), 'receiving moments should escape user-rendered values in initial render');
+assert(html.includes('const updateGuidedReceivingMoment = (fieldElement, fieldKey) => {'), 'receiving moments should have a live update path');
+assert(html.includes('receivingMoment.textContent = getGuidedReceivingMoment(fieldKey);'), 'receiving moment live updates should render user values with textContent');
+assert(html.includes('updateGuidedReceivingMoment(fieldElement, fieldKey);'), 'Guided inline edits should refresh the active receiving moment');
+assert(!/thinking|analyzing|remembering forever|generated AI/i.test(html), 'receiving copy should avoid false AI claims');
+
 assert(html.includes('live-return-card-preview'), 'Guided Return should include a compact live Return Card preview during non-Rest stages');
 assert(html.includes('aria-label="Live Return Card preview"'), 'live Return Card preview should be labelled accessibly');
 assert(html.includes('<span class="label">Held so far</span>'), 'live Return Card preview should soften its heading to Held so far');

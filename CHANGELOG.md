@@ -2,6 +2,14 @@
 
 ## 2026-07-14
 
+### Guided Return Receiving Moments Slice
+
+- This was a focused Guided Return receiving-moments slice that made Luna briefly reflect each existing answer as something she is holding, so the flow feels less like storing form fields and more like the user’s answers matter to Luna.
+- Added compact deterministic receiving copy near editable Guided Return answer spaces for returning to the project, holding the thread, naming the lantern, keeping something outside the gate, and carrying the change into the Return Card.
+- Kept the receiving moments local and presentation-only: no new fields, no new storage keys, no AI/API/model/network behavior, no timers, no extra clicks, no stage changes, and no navigation changes.
+- Preserved answer spaces, contribution cues, Luna insight cards, the lighter live “Held so far” preview, Rest as the full Return Card, safe escaping, maxlengths, Shape this return Apply → Undo, reduced-motion protections, and the five existing localStorage keys.
+- Set Luna back to Rest; next is: Human mobile test of whether receiving moments make each answer feel like it matters to Luna.
+
 ### Live Return Card Preview Slice
 
 - This was a focused live Return Card preview de-crowding slice that kept the useful held-thread preview while making it lighter, smaller, and less competitive with the active Guided Return question.

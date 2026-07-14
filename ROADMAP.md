@@ -10,6 +10,10 @@ Luna now has a concise visual direction note anchoring the finished look and fee
 
 # Roadmap
 
+## Current Guided Return Receiving Moments Slice
+
+This was a focused Guided Return receiving-moments slice that made Luna briefly reflect each existing answer as something she is holding, so the flow feels less like storing form fields and more like the user’s answers matter to Luna. The receiving moments are compact, deterministic, local presentation only, update with existing Guided Return inline edits, and preserve the live “Held so far” preview plus Rest as the full final Return Card. Luna remains at Rest. Next: Human mobile test of whether receiving moments make each answer feel like it matters to Luna.
+
 ## Current Live Return Card Preview Slice
 
 This was a focused live Return Card preview de-crowding slice that kept the useful held-thread preview while making it lighter, smaller, and less competitive with the active Guided Return question. The preview is now framed as “Held so far,” uses lighter, tighter row treatment especially on mobile, updates from the existing five local values, and lets Rest remain the full soft landing and final Return Card. Luna remains at Rest. Next: Human mobile test of whether the lighter live preview feels useful without crowding the question.

@@ -2,6 +2,10 @@
   "status": "Rest",
   "statusHistory": [
     {
+      "status": "Rest",
+      "note": "2026-07-14: This was a focused Guided Return receiving-moments slice that made Luna briefly reflect each existing answer as something she is holding, so the flow feels less like storing form fields and more like the user’s answers matter to Luna."
+    },
+    {
       "date": "2026-07-14",
       "note": "This was a focused live Return Card preview de-crowding slice that kept the useful held-thread preview while making it lighter, smaller, and less competitive with the active Guided Return question."
     },
@@ -646,9 +650,9 @@
       "note": "The project is resting after a good run and ready for one gentle improvement."
     }
   ],
-  "currentGoal": "Rest after the live Return Card preview de-crowding slice.",
-  "lastCompletedRun": "Live Return Card preview de-crowding slice: Guided Return still shows the existing five return pieces in real time before Rest, now as a lighter held-thread cue.",
-  "nextStep": "Human mobile test of whether the lighter live preview feels useful without crowding the question.",
+  "currentGoal": "Make Guided Return feel alive enough that each existing answer appears received and held by Luna.",
+  "lastCompletedRun": "Guided Return receiving-moments slice: Luna briefly reflects each existing Guided Return answer as something she is holding, without adding fields, storage keys, AI/API/model/network behavior, or navigation changes.",
+  "nextStep": "Human mobile test of whether receiving moments make each answer feel like it matters to Luna.",
   "dashboardGuide": [
     "Welcome starts the path to read through Record the Change before choosing more work.",
     "Status gives a quick snapshot of how the project is doing right now.",
@@ -663,6 +667,7 @@
     "Keep the implementation narrow: opening threshold visual/layout only, with no behavior expansion."
   ],
   "decisionLog": [
+    "2026-07-14: This was a focused Guided Return receiving-moments slice that made Luna briefly reflect each existing answer as something she is holding, so the flow feels less like storing form fields and more like the user’s answers matter to Luna.",
     "2026-07-13: This was a focused Guided Return contribution clarity slice that made each existing answer feel like part of the final Return Card, so the middle of the flow feels less like filling boxes and more like Luna gathering a clear place to resume.",
     "2026-07-13: This was a focused moonlit atmosphere slice that made Luna’s opening and Guided Return shell feel more like one quiet return place while preserving the existing local-only flow, first-impression clarity, and Rest Return Card.",
     "2026-07-12: Completed the first full Guided Return loop as the second meaningful v0.1 vertical slice after the opening threshold; Set Aside stays not-a-backlog, Record stays brief, and Rest becomes a real stopping point before returning to Luna.",
@@ -722,9 +727,9 @@
     "Visit http://localhost:8000 in a browser to view the dashboard."
   ],
   "nextAction": {
-    "title": "Human mobile Return Card contribution test",
-    "description": "Human mobile test of whether each Guided Return stage feels like it contributes to the Return Card.",
-    "whyItMatters": "The contribution clarity slice is complete; a mobile human pass should confirm each Guided Return stage feels like it is gathering a useful Return Card piece without crowding the calm local-only flow.",
+    "title": "Human mobile receiving-moments test",
+    "description": "Human mobile test of whether receiving moments make each answer feel like it matters to Luna.",
+    "whyItMatters": "The receiving-moments slice is complete; a mobile human pass should confirm the short local reflections make Guided Return feel less like filling boxes without crowding the active question.",
     "status": "Ready for human test"
   },
   "creativeSeed": {
@@ -793,9 +798,9 @@
   ],
   "currentMode": {
     "name": "Rest",
-    "description": "Luna is resting after the live Return Card preview de-crowding slice.",
-    "whyItMatters": "Guided Return still shows the existing five return pieces being gathered in real time, now as a lighter held-thread cue that stays secondary to the active question.",
+    "description": "Luna is resting after the Guided Return receiving-moments slice.",
+    "whyItMatters": "Guided Return now briefly reflects each existing editable answer as held by Luna while preserving the local-only five-value flow and calm Rest Return Card.",
     "value": "Rest"
   },
-  "nextSuggestedStep": "Human mobile test of whether the lighter live preview feels useful without crowding the question."
+  "nextSuggestedStep": "Human mobile test of whether receiving moments make each answer feel like it matters to Luna."
 }

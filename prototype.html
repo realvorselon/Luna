@@ -867,7 +867,8 @@
     }
 
     .guided-inline-helper,
-    .guided-contribution-cue {
+    .guided-contribution-cue,
+    .guided-receiving-moment {
       margin: 0;
       color: rgb(199 209 232 / 76%);
       font-size: 0.88rem;
@@ -876,6 +877,15 @@
 
     .guided-contribution-cue {
       color: rgb(244 232 196 / 86%);
+    }
+
+    .guided-receiving-moment {
+      overflow-wrap: anywhere;
+      padding: 8px 10px;
+      color: rgb(237 229 201 / 88%);
+      background: rgb(244 209 122 / 8%);
+      border: 1px solid rgb(244 209 122 / 13%);
+      border-radius: 12px;
     }
 
     .guided-question-card {
@@ -1803,6 +1813,22 @@
       });
     };
 
+    const getGuidedReceivingMoment = (fieldKey) => {
+      const field = guidedEditableFields[fieldKey];
+      const formattedValue = formatRestSummaryValue(fieldKey, field.input.value);
+      if (fieldKey === 'projectName') return `Okay. We’re returning to ${formattedValue}.`;
+      if (fieldKey === 'currentGoal') return 'I’m holding that as the thread.';
+      if (fieldKey === 'nextAction') return `Good. That’s the lantern: ${formattedValue}.`;
+      if (fieldKey === 'setAside') return 'I’ll keep that outside the gate for now.';
+      if (fieldKey === 'recordChange') return 'I’ll carry that change into the Return Card.';
+      return 'I’m holding this locally.';
+    };
+
+    const updateGuidedReceivingMoment = (fieldElement, fieldKey) => {
+      const receivingMoment = fieldElement.querySelector('[data-guided-receiving-moment]');
+      if (receivingMoment) receivingMoment.textContent = getGuidedReceivingMoment(fieldKey);
+    };
+
     const guidedEditableFields = {
       projectName: {
         label: 'What are we returning to?',
@@ -1863,6 +1889,7 @@
             <input id="${inputId}" type="text" value="${escapeHtml(field.input.value)}" autocomplete="off" maxlength="${field.input.getAttribute('maxlength')}" aria-describedby="${helperId}">
           </div>
           <p class="guided-contribution-cue">${escapeHtml(field.contribution)}</p>
+          <p class="guided-receiving-moment" data-guided-receiving-moment>${escapeHtml(getGuidedReceivingMoment(fieldKey))}</p>
           <p class="guided-inline-helper" id="${helperId}">${escapeHtml(field.helper)} Luna will hold this locally.</p>
         </div>
       `;
@@ -1885,6 +1912,7 @@
           if (guidedDisplay) {
             guidedDisplay.textContent = field.input.value.trim() || field.input.defaultValue;
           }
+          updateGuidedReceivingMoment(fieldElement, fieldKey);
           updateVisibleGuidedInsight();
           updateLiveReturnCardPreview();
         });
