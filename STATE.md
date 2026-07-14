@@ -1,5 +1,15 @@
 # State
 
+## v0.1 Full-Loop Coherence Pass
+
+- This was a focused v0.1 full-loop coherence pass that kept the existing local-only return flow intact while tightening the seams from opening threshold through Guided Return, Rest, and Return to Luna.
+- Kept Return gently primary, Shape this return and Open full overview secondary, Guided Return as one calm path, Rest as the complete five-value Return Card, and the Return-to-Luna loop short and calm.
+- Status remains Rest; next suggested step is: “Human full-loop mobile v0.1 readiness test.”
+
+Luna is at Rest after a focused v0.1 full-loop coherence pass. The existing local-only return flow now reads more intentionally from opening threshold through Guided Return, Rest, and Return to Luna while preserving the compact mobile Held so far preview and receiving moments.
+
+Next suggested step: Human full-loop mobile v0.1 readiness test.
+
 ## Guided Return Mobile Preview Pass
 
 - This was a focused Guided Return mobile preview pass that made the live Held so far area compact on mobile, keeping only the essential return thread visible while leaving the full five-part Return Card for Rest.

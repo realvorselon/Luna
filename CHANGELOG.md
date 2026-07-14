@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-07-14 — v0.1 full-loop coherence pass
+
+- This was a focused v0.1 full-loop coherence pass that kept the existing local-only return flow intact while tightening the seams from opening threshold through Guided Return, Rest, and Return to Luna.
+- Tightened opening purpose copy, Guided Return shell wording, and the Return-to-Luna footer without changing navigation behavior or adding product concepts.
+- Preserved Return gently as primary, Shape this return and Open full overview as secondary, the six-stage Guided Return order, receiving moments, compact mobile Held so far preview, complete five-value Rest Return Card, five localStorage keys, safe escaping, no-network boundary, maxlengths, and reduced-motion protections.
+- Status remains Rest; next suggested step is: “Human full-loop mobile v0.1 readiness test.”
+
 ## 2026-07-14 — Guided Return mobile preview pass
 
 - This was a focused Guided Return mobile preview pass that made the live Held so far area compact on mobile, keeping only the essential return thread visible while leaving the full five-part Return Card for Rest.
