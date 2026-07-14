@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-07-14 — Guided Return mobile hierarchy pass
+
+- This was a focused Guided Return mobile hierarchy pass that kept Luna’s receiving moments primary while making Luna notes and the live Held so far preview much quieter on mobile, so the answer has more room to breathe.
+- Kept receiving moments visible near the active answer while tightening mobile spacing around the question card, answer space, Luna note, live “Held so far” preview, and navigation buttons.
+- Made Luna notes line-like and made the live “Held so far” preview an ultra-light summary strip on mobile without removing either system or duplicating the preview at Rest.
+- Status remains Rest; next suggested step is: “Human mobile test of whether Guided Return now feels breathable while keeping Luna’s receiving moments alive.”
+
 ## 2026-07-14 — Guided Return mobile de-crowding pass
 
 - This was a focused Guided Return mobile de-crowding pass that protected the receiving moments while trimming repeated explanatory copy, so the active answer feels primary and Luna’s response has more room to matter.
