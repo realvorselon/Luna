@@ -2,13 +2,13 @@
 
 ## Live Return Card Preview Slice
 
-- This was a focused live Return Card preview slice that made Guided Return show Luna gathering the same five return pieces in real time, so the middle of the flow feels less like filling boxes and more like building a clear place to resume.
-- Added a compact, quiet live Return Card preview during Guided Return before Rest, using only Returning to, The thread, The lantern, Waiting outside the gate, and What changed from the existing five local values.
-- Status remains Rest; next suggested step is: “Human mobile test of whether the live Return Card preview makes Guided Return feel less form-like.”
+- This was a focused live Return Card preview de-crowding slice that kept the useful held-thread preview while making it lighter, smaller, and less competitive with the active Guided Return question.
+- Softened the live preview framing to “Held so far,” tightened the preview and mobile row treatment, and kept the existing five-value live update path unchanged.
+- Status remains Rest; next suggested step is: “Human mobile test of whether the lighter live preview feels useful without crowding the question.”
 
-Luna is at Rest after a focused live Return Card preview slice. Guided Return now shows the same five pieces being held as the user answers, while Rest remains the full soft landing and final Return Card. No fields, storage keys, stages, navigation behavior, AI/API/model/network behavior, task lists, dashboards, or history were added.
+Luna is at Rest after a focused live Return Card preview de-crowding slice. Guided Return still shows the same five pieces being held as the user answers, but the preview now reads as a quieter held-thread cue instead of a competing card. No fields, storage keys, stages, navigation behavior, AI/API/model/network behavior, task lists, dashboards, or history were added.
 
-Next suggested step: Human mobile test of whether the live Return Card preview makes Guided Return feel less form-like.
+Next suggested step: Human mobile test of whether the lighter live preview feels useful without crowding the question.
 
 ## Guided Return Contribution Clarity Slice
 
