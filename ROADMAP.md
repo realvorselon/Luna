@@ -1,5 +1,11 @@
 # Roadmap
 
+## Current v0.1 Full-Loop Coherence Pass
+
+- Luna is at Rest after a focused v0.1 full-loop coherence pass.
+- This was a focused v0.1 full-loop coherence pass that kept the existing local-only return flow intact while tightening the seams from opening threshold through Guided Return, Rest, and Return to Luna.
+- Next suggested step: Human full-loop mobile v0.1 readiness test.
+
 ## Current next step
 
 - Luna is at Rest after a focused Guided Return mobile preview pass.

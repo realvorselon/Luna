@@ -89,21 +89,20 @@ const changelog = fs.readFileSync('CHANGELOG.md', 'utf8');
 const project = JSON.parse(fs.readFileSync('project.json', 'utf8'));
 assert(state.startsWith('# State'), 'STATE.md should begin with the # State heading');
 for (const trail of [state, roadmap, changelog]) {
-  assert(trail.includes('Guided Return v0.1 stabilization pass'), 'project trail should record the v0.1 stabilization/coherence pass');
+  assert(trail.includes('focused v0.1 full-loop coherence pass'), 'project trail should record the focused v0.1 full-loop coherence pass');
+  assert(trail.includes('opening threshold through Guided Return, Rest, and Return to Luna'), 'project trail should name the full loop seams');
   assert(trail.includes('Rest'), 'project trail should keep Luna at Rest');
-  assert(trail.includes('Guided Return connective-flow slice'), 'project trail should preserve the latest completed connective-flow slice');
-  assert(trail.includes('Human mobile v0.1 Guided Return coherence test'), 'project trail should preserve the prior human mobile v0.1 coherence test');
-  assert(trail.includes('Guided Return mobile preview pass'), 'project trail should record the mobile preview pass');
-  assert(trail.includes('Human mobile test of whether the compact Held so far preview makes Guided Return feel breathable.'), 'project trail should point to the next compact mobile preview human mobile test');
+  assert(trail.includes('Guided Return mobile preview pass'), 'project trail should preserve the compact mobile Held so far preview context');
+  assert(trail.includes('Human full-loop mobile v0.1 readiness test.'), 'project trail should point to the next full-loop mobile readiness test');
 }
 assert.deepEqual(project.statusHistory[0], {
   date: '2026-07-14',
-  note: 'This was a focused Guided Return mobile preview pass that made the live Held so far area compact on mobile, keeping only the essential return thread visible while leaving the full five-part Return Card for Rest.'
+  note: 'This was a focused v0.1 full-loop coherence pass that kept the existing local-only return flow intact while tightening the seams from opening threshold through Guided Return, Rest, and Return to Luna.'
 }, 'new statusHistory entry should keep the existing object shape');
 assert.equal(project.currentMode.value, 'Rest');
-assert.equal(project.lastCompletedRun, 'This was a focused Guided Return mobile preview pass that made the live Held so far area compact on mobile, keeping only the essential return thread visible while leaving the full five-part Return Card for Rest.');
-assert.equal(project.nextStep, 'Human mobile test of whether the compact Held so far preview makes Guided Return feel breathable.');
-assert.equal(project.nextSuggestedStep, 'Human mobile test of whether the compact Held so far preview makes Guided Return feel breathable.');
+assert.equal(project.lastCompletedRun, 'This was a focused v0.1 full-loop coherence pass that kept the existing local-only return flow intact while tightening the seams from opening threshold through Guided Return, Rest, and Return to Luna.');
+assert.equal(project.nextStep, 'Human full-loop mobile v0.1 readiness test.');
+assert.equal(project.nextSuggestedStep, 'Human full-loop mobile v0.1 readiness test.');
 assert(!/Math\.random\s*\(/.test(js), 'guidance must not use Math.random');
 assert(!/\bfetch\s*\(/.test(html + js), 'local guidance must not call fetch');
 assert(html.includes('Edit Luna’s current project'), 'overview should include a clear editing-area heading');
@@ -275,6 +274,10 @@ for (const returnCardLabel of ['Returning to', 'The thread', 'The lantern', 'Wai
   assert(html.includes(returnCardLabel), `Rest Return Card should include label: ${returnCardLabel}`);
 }
 assert(html.includes('return-card-lantern'), 'Rest should visually emphasize nextAction as the lantern/resume point');
+const returnToOpeningMatch = html.match(/<p class="footer-note"><a href="index.html">Return to Luna’s opening threshold<\/a>\.<\/p>/);
+assert(returnToOpeningMatch, 'Return-to-opening copy/link should remain present and short');
+assert(returnToOpeningMatch[0].length < 100, 'Return-to-opening footer copy should not be overly long on mobile');
+
 for (const escapedRestValue of [
   "${escapeHtml(formatRestSummaryValue('projectName', getProjectName()))}",
   "${escapeHtml(formatRestSummaryValue('currentGoal', getCurrentGoal()))}",
@@ -464,12 +467,13 @@ assertRuleContains('.opening-context', ['background: transparent', 'border: 0', 
 assertRuleContains('.opening-payoff-preview', ['grid-template-columns: repeat(3, minmax(0, 1fr))', 'border: 1px solid rgb(223 200 137 / 12%)']);
 assertRuleContains('.opening-payoff-item.is-lantern', ['border-color: rgb(223 200 137 / 26%)']);
 assertRuleContains('.opening-context-data', ['position: absolute', 'clip-path: inset(50%)']);
-assert(html.includes('Bring the loose pieces. Luna helps you leave with one clear place to resume.'), 'opening should explain that Return gently starts the guided path');
+assert(html.includes('Return gently to one unfinished thing and leave with one clear place to resume.'), 'opening should explain that Return gently starts the guided path');
 assert(html.includes('Find your place'), 'Guided Return copy should name the first step clearly');
 assert(html.includes('Begin with the one thing you are returning to.'), 'first Guided Return step should plainly explain its purpose');
 assert(html.includes('Bring one unfinished thing back into view.'), 'opening should clearly invite one unfinished thing');
-assert(html.includes('Luna turns scattered context into one small lantern for next time'), "opening should explain Luna's transformation from scattered context to a lantern");
+assert(html.includes('Luna helps you bring one unfinished thing back into view, choose one small place to resume'), "opening should explain Luna's return purpose and resume point");
 assert(html.includes('leave with a Return Card'), 'opening should name the practical Return Card payoff');
+assert(html.includes('One calm path: find your place, remember, choose, set aside, record, then rest.'), 'Guided Return shell should frame the stages as one calm path');
 assertRuleContains('.try-editing-card', ['background: rgb(25 34 58 / 94%)', 'border: 1px solid rgb(196 205 238 / 22%)']);
 assertRuleContains('.edit-field input', ['background: rgb(35 45 72 / 96%)', 'box-shadow: none']);
 assertRuleContains('.guided-return-view', ['linear-gradient(180deg, rgb(13 21 40 / 96%)', 'box-shadow: 0 16px 36px']);
