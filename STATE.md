@@ -1,5 +1,14 @@
 # State
 
+## Guided Return Mobile De-crowding Pass
+
+- This was a focused Guided Return mobile de-crowding pass that protected the receiving moments while trimming repeated explanatory copy, so the active answer feels primary and Luna’s response has more room to matter.
+- Status remains Rest; next suggested step is: “Human mobile test of whether Guided Return feels less crowded while keeping Luna’s receiving moments alive.”
+
+Luna is at Rest after a focused Guided Return mobile de-crowding pass. Guided Return keeps receiving moments close to the active answer, keeps connective lead-ins and the live “Held so far” preview secondary, removes repeated contribution cues, and represents the local-only boundary once instead of under every input.
+
+Next suggested step: Human mobile test of whether Guided Return feels less crowded while keeping Luna’s receiving moments alive.
+
 ## Guided Return v0.1 Stabilization / Coherence Pass
 
 - This was a focused Guided Return v0.1 stabilization pass that cleaned up project trail structure, reduced copy/crowding risk, and preserved the current local-only return loop where Luna receives each answer, carries it forward, and gathers the pieces into a final Return Card.
@@ -104,6 +113,7 @@ Rest after the Guided Return connective-flow slice.
 
 ## Last Completed Run
 
+- 2026-07-14: This was a focused Guided Return mobile de-crowding pass that protected the receiving moments while trimming repeated explanatory copy, so the active answer feels primary and Luna’s response has more room to matter.
 - 2026-07-14: Guided Return connective-flow slice: Luna carries each existing answer forward into the next stage with compact local presentation copy, without adding fields, storage keys, AI/API/model/network behavior, stages, clicks, timers, animations, or navigation changes.
 - 2026-07-13: This was a focused Guided Return coherence pass that smoothed copy and presentation seams across the existing six-stage loop while preserving the one-question Find your place prototype, answer spaces, Rest soft landing, and five-value local-only/no-network boundary.
 - 2026-07-13: This was a focused Guided Return Rest soft-landing slice that made the ending feel less like a report and more like Luna gently holding one completed return, while preserving the six-stage flow, one-question Find your place prototype, answer spaces, and five-value local-only/no-network boundary.

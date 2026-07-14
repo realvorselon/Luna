@@ -3,6 +3,10 @@
   "statusHistory": [
     {
       "date": "2026-07-14",
+      "note": "This was a focused Guided Return mobile de-crowding pass that protected the receiving moments while trimming repeated explanatory copy, so the active answer feels primary and Luna’s response has more room to matter."
+    },
+    {
+      "date": "2026-07-14",
       "note": "This was a focused Guided Return v0.1 stabilization pass that cleaned up project trail structure, reduced copy/crowding risk, and preserved the current local-only return loop where Luna receives each answer, carries it forward, and gathers the pieces into a final Return Card."
     },
     {
@@ -658,9 +662,9 @@
       "note": "The project is resting after a good run and ready for one gentle improvement."
     }
   ],
-  "currentGoal": "Rest after the Guided Return connective-flow slice.",
-  "lastCompletedRun": "Guided Return connective-flow slice: Luna carries each existing answer forward into the next stage with compact local presentation copy, without adding fields, storage keys, AI/API/model/network behavior, stages, clicks, timers, animations, or navigation changes.",
-  "nextStep": "Human mobile v0.1 Guided Return coherence test.",
+  "currentGoal": "Rest after the Guided Return mobile de-crowding pass.",
+  "lastCompletedRun": "This was a focused Guided Return mobile de-crowding pass that protected the receiving moments while trimming repeated explanatory copy, so the active answer feels primary and Luna’s response has more room to matter.",
+  "nextStep": "Human mobile test of whether Guided Return feels less crowded while keeping Luna’s receiving moments alive.",
   "dashboardGuide": [
     "Welcome starts the path to read through Record the Change before choosing more work.",
     "Status gives a quick snapshot of how the project is doing right now.",
@@ -736,9 +740,9 @@
     "Visit http://localhost:8000 in a browser to view the dashboard."
   ],
   "nextAction": {
-    "title": "Human mobile v0.1 Guided Return coherence test",
-    "description": "Human mobile v0.1 Guided Return coherence test.",
-    "whyItMatters": "The connective-flow slice is complete and this stabilization pass preserved the current loop; a mobile human pass should confirm Guided Return feels coherent, calm, and intentionally designed without crowding the active question.",
+    "title": "Human mobile Guided Return de-crowding test",
+    "description": "Human mobile test of whether Guided Return feels less crowded while keeping Luna’s receiving moments alive.",
+    "whyItMatters": "The mobile de-crowding pass protected Luna’s receiving moments while trimming repeated explanatory layers; a human mobile pass should confirm the active answer now feels primary without losing the alive receiving signal.",
     "status": "Ready for human test"
   },
   "creativeSeed": {
@@ -807,9 +811,9 @@
   ],
   "currentMode": {
     "name": "Rest",
-    "description": "Luna is resting after the Guided Return connective-flow slice.",
-    "whyItMatters": "Guided Return now carries each existing editable answer into the next question with compact connective copy while preserving the local-only five-value flow and calm Rest Return Card.",
+    "description": "Luna is resting after the Guided Return mobile de-crowding pass.",
+    "whyItMatters": "Guided Return now keeps receiving moments close to the active answer, trims repeated explanatory copy, and keeps the live preview and insight cards secondary while preserving the local-only five-value flow.",
     "value": "Rest"
   },
-  "nextSuggestedStep": "Human mobile v0.1 Guided Return coherence test."
+  "nextSuggestedStep": "Human mobile test of whether Guided Return feels less crowded while keeping Luna’s receiving moments alive."
 }
