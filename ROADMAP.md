@@ -1,5 +1,10 @@
 # Roadmap
 
+## Current next step
+
+- Luna is at Rest after a focused Guided Return mobile de-crowding pass.
+- Next suggested step: Human mobile test of whether Guided Return feels less crowded while keeping Luna’s receiving moments alive.
+
 ## Current Guided Return v0.1 Stabilization / Coherence Pass
 
 This was a focused Guided Return v0.1 stabilization pass that cleaned up project trail structure, reduced copy/crowding risk, and preserved the current local-only return loop where Luna receives each answer, carries it forward, and gathers the pieces into a final Return Card. Luna remains at Rest after the Guided Return connective-flow slice. Next: Human mobile v0.1 Guided Return coherence test.

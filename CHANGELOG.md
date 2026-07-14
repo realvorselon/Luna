@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-07-14 — Guided Return mobile de-crowding pass
+
+- This was a focused Guided Return mobile de-crowding pass that protected the receiving moments while trimming repeated explanatory copy, so the active answer feels primary and Luna’s response has more room to matter.
+- Removed repeated visible contribution cues and per-field local-only helper repetition from Guided Return answer spaces while preserving the active answer, receiving moments, connective lead-ins, local-only boundary, live preview, and Rest Return Card.
+- Lightened Luna insight cards and the live “Held so far” preview so they remain secondary on mobile.
+- Status remains Rest; next suggested step is: “Human mobile test of whether Guided Return feels less crowded while keeping Luna’s receiving moments alive.”
+
 ## 2026-07-14
 
 ### Guided Return v0.1 Stabilization / Coherence Pass
