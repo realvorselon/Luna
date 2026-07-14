@@ -1,7 +1,10 @@
 {
   "status": "Rest",
   "statusHistory": [
-    "2026-07-14: This was a focused Guided Return mobile hierarchy pass that kept Luna’s receiving moments primary while making Luna notes and the live Held so far preview much quieter on mobile, so the answer has more room to breathe.",
+    {
+      "date": "2026-07-14",
+      "note": "This was a focused Guided Return mobile hierarchy pass that kept Luna’s receiving moments primary while making Luna notes and the live Held so far preview much quieter on mobile, so the answer has more room to breathe."
+    },
     {
       "date": "2026-07-14",
       "note": "This was a focused Guided Return mobile de-crowding pass that protected the receiving moments while trimming repeated explanatory copy, so the active answer feels primary and Luna’s response has more room to matter."

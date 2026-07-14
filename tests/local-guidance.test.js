@@ -96,6 +96,10 @@ for (const trail of [state, roadmap, changelog]) {
   assert(trail.includes('Guided Return mobile hierarchy pass'), 'project trail should record the mobile hierarchy pass');
   assert(trail.includes('Human mobile test of whether Guided Return now feels breathable while keeping Luna’s receiving moments alive.'), 'project trail should point to the next mobile hierarchy human mobile test');
 }
+assert.deepEqual(project.statusHistory[0], {
+  date: '2026-07-14',
+  note: 'This was a focused Guided Return mobile hierarchy pass that kept Luna’s receiving moments primary while making Luna notes and the live Held so far preview much quieter on mobile, so the answer has more room to breathe.'
+}, 'new statusHistory entry should keep the existing object shape');
 assert.equal(project.currentMode.value, 'Rest');
 assert.equal(project.lastCompletedRun, 'This was a focused Guided Return mobile hierarchy pass that kept Luna’s receiving moments primary while making Luna notes and the live Held so far preview much quieter on mobile, so the answer has more room to breathe.');
 assert.equal(project.nextStep, 'Human mobile test of whether Guided Return now feels breathable while keeping Luna’s receiving moments alive.');
