@@ -173,6 +173,28 @@ for (const contributionCue of [
 }
 assert(html.includes('guided-contribution-cue'), 'Guided Return contribution cues should have a compact presentation class');
 assert(html.includes('This One Next Action becomes the lantern: the resume point Luna will point you back to.'), 'Choose should explicitly connect One Next Action to the lantern/resume point');
+
+assert(html.includes('live-return-card-preview'), 'Guided Return should include a compact live Return Card preview during non-Rest stages');
+assert(html.includes('aria-label="Live Return Card preview"'), 'live Return Card preview should be labelled accessibly');
+assert(html.includes('Luna is holding the pieces as you name them.'), 'live Return Card preview should frame the held-thread purpose quietly');
+for (const liveReturnCardLabel of ['Returning to', 'The thread', 'The lantern', 'Waiting outside the gate', 'What changed']) {
+  assert(html.includes(liveReturnCardLabel), `live Return Card preview should include label: ${liveReturnCardLabel}`);
+}
+assert(html.includes('const liveReturnCardRows = ['), 'live Return Card preview should be driven from one row list');
+for (const livePreviewValue of [
+  "['projectName', 'Returning to', getProjectName]",
+  "['currentGoal', 'The thread', getCurrentGoal]",
+  "['nextAction', 'The lantern', getNextAction]",
+  "['setAside', 'Waiting outside the gate', getSetAside]",
+  "['recordChange', 'What changed', getRecordChange]"
+]) {
+  assert(html.includes(livePreviewValue), `live Return Card preview should use existing value getter: ${livePreviewValue}`);
+}
+assert(html.includes('<strong>${escapeHtml(label)}</strong><span>${escapeHtml(formatRestSummaryValue(fieldKey, getValue()))}</span>'), 'live Return Card preview should safely escape formatted values');
+assert(html.includes('updateLiveReturnCardPreview();'), 'Guided inline edits and stage rendering should refresh the live Return Card preview');
+assert(html.includes("row.classList.toggle('has-live-lantern', isRealUserEntry('nextAction', value));"), 'live Return Card preview should emphasize the lantern only when nextAction is a real entry');
+assert(html.includes("isLantern && isRealUserEntry('nextAction', getValue()) ? ' has-live-lantern' : ''"), 'initial live Return Card render should include the lantern emphasis state when applicable');
+assert(!html.includes('${renderLiveReturnCardPreview()}\n          <article class="quiet-card rest-card rest-landing-card"'), 'Rest should not duplicate the compact live preview before the full Return Card');
 assert(html.includes('field.input.value = guidedInput.value;'), 'Guided inline edits should update the existing overview input values');
 assert(html.includes('writeLocalValue(field.storageKey, guidedInput.value);'), 'Guided inline edits should save through the existing five storage keys');
 assert(html.includes('I have enough to hold this return.'), 'Rest should keep the enough-to-hold soft landing copy');
@@ -335,6 +357,11 @@ assertRuleContains('.guided-shell', ['grid-template-rows: auto minmax(0, auto) a
 assert(css.includes('.guided-shell,\n    .guided-app-shell') && css.includes('min-width: 0') && css.includes('max-width: 100%'), 'guided shell/app shell containment rules should be present');
 assertRuleContains('.guided-stage-panel', ['display: grid', 'grid-template-rows: auto auto auto minmax(0, auto)', 'min-width: 0', 'max-width: 100%', 'min-block-size: clamp(420px, 48svh, 500px)', 'overflow: visible']);
 assertRuleContains('.guided-stage-body', ['align-content: start', 'min-width: 0', 'max-width: 100%', 'min-block-size: 0', 'overflow: visible']);
+
+assertRuleContains('.live-return-card-preview', ['display: grid', 'max-width: 100%', 'background: rgb(10 17 34 / 24%)', 'border: 1px solid rgb(223 200 137 / 12%)']);
+assertRuleContains('.live-return-card-row span', ['overflow-wrap: anywhere']);
+assertRuleContains('.live-return-card-lantern.has-live-lantern', ['border-color: rgb(255 214 128 / 24%)']);
+assert.doesNotMatch(css, /\.live-return-card-preview\s*\{[\s\S]*?position\s*:\s*(?:sticky|fixed|absolute)/, 'live Return Card preview should stay in normal flow');
 assertRuleContains('.edit-fields', ['min-width: 0', 'max-width: 100%']);
 assertRuleContains('.edit-field', ['min-width: 0', 'max-width: 100%']);
 assertRuleContains('.edit-field input', ['box-sizing: border-box', 'min-width: 0', 'max-width: 100%']);

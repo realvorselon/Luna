@@ -972,6 +972,73 @@
       border-color: rgb(223 200 137 / 16%);
     }
 
+
+    .live-return-card-preview {
+      display: grid;
+      gap: 10px;
+      min-width: 0;
+      max-width: 100%;
+      margin-top: 2px;
+      padding: 13px;
+      color: rgb(216 224 246 / 80%);
+      background: rgb(10 17 34 / 24%);
+      border: 1px solid rgb(223 200 137 / 12%);
+      border-radius: 18px;
+      box-shadow: inset 0 1px 0 rgb(255 255 255 / 3%);
+    }
+
+    .live-return-card-preview .label {
+      color: rgb(244 232 196 / 76%);
+    }
+
+    .live-return-card-preview p {
+      margin: 0;
+    }
+
+    .live-return-card-note {
+      color: rgb(197 206 224 / 72%);
+      font-size: 0.86rem;
+    }
+
+    .live-return-card-list {
+      display: grid;
+      gap: 7px;
+    }
+
+    .live-return-card-row {
+      display: grid;
+      gap: 2px;
+      min-width: 0;
+      padding: 8px 10px;
+      background: rgb(25 35 60 / 34%);
+      border: 1px solid rgb(189 200 238 / 8%);
+      border-radius: 13px;
+    }
+
+    .live-return-card-row strong {
+      color: rgb(197 206 224 / 76%);
+      font-size: 0.68rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .live-return-card-row span {
+      overflow-wrap: anywhere;
+      color: rgb(235 239 255 / 80%);
+      font-size: 0.9rem;
+      line-height: 1.42;
+    }
+
+    .live-return-card-lantern.has-live-lantern {
+      background: rgb(52 47 55 / 58%);
+      border-color: rgb(255 214 128 / 24%);
+    }
+
+    .live-return-card-lantern.has-live-lantern strong,
+    .live-return-card-lantern.has-live-lantern span {
+      color: rgb(244 232 196 / 90%);
+    }
+
     .guided-actions {
       display: grid;
       align-content: start;
@@ -1665,6 +1732,44 @@
       visibleInsight.textContent = getGuidedInsightText(stageKey);
     };
 
+
+    const liveReturnCardRows = [
+      ['projectName', 'Returning to', getProjectName],
+      ['currentGoal', 'The thread', getCurrentGoal],
+      ['nextAction', 'The lantern', getNextAction],
+      ['setAside', 'Waiting outside the gate', getSetAside],
+      ['recordChange', 'What changed', getRecordChange]
+    ];
+
+    const renderLiveReturnCardPreview = () => `
+      <aside class="live-return-card-preview" aria-label="Live Return Card preview">
+        <span class="label">Return Card preview</span>
+        <p class="live-return-card-note">Luna is holding the pieces as you name them.</p>
+        <div class="live-return-card-list">
+          ${liveReturnCardRows.map(([fieldKey, label, getValue]) => {
+            const isLantern = fieldKey === 'nextAction';
+            const lanternClass = isLantern && isRealUserEntry('nextAction', getValue()) ? ' has-live-lantern' : '';
+            return `<p class="live-return-card-row${isLantern ? ' live-return-card-lantern' : ''}${lanternClass}" data-live-return-card-field="${fieldKey}"><strong>${escapeHtml(label)}</strong><span>${escapeHtml(formatRestSummaryValue(fieldKey, getValue()))}</span></p>`;
+          }).join('')}
+        </div>
+      </aside>
+    `;
+
+    const updateLiveReturnCardPreview = () => {
+      const preview = guidedStageBody.querySelector('.live-return-card-preview');
+      if (!preview) return;
+      liveReturnCardRows.forEach(([fieldKey, , getValue]) => {
+        const row = preview.querySelector(`[data-live-return-card-field="${fieldKey}"]`);
+        if (!row) return;
+        const value = getValue();
+        const valueElement = row.querySelector('span');
+        if (valueElement) valueElement.textContent = formatRestSummaryValue(fieldKey, value);
+        if (fieldKey === 'nextAction') {
+          row.classList.toggle('has-live-lantern', isRealUserEntry('nextAction', value));
+        }
+      });
+    };
+
     const guidedEditableFields = {
       projectName: {
         label: 'What are we returning to?',
@@ -1748,6 +1853,7 @@
             guidedDisplay.textContent = field.input.value.trim() || field.input.defaultValue;
           }
           updateVisibleGuidedInsight();
+          updateLiveReturnCardPreview();
         });
       });
     };
@@ -1788,6 +1894,7 @@
             </div>
           </div>
           ${renderLunaInsight('place')}
+          ${renderLiveReturnCardPreview()}
         `
       },
       {
@@ -1799,6 +1906,7 @@
             <h3>${escapeHtml(formatRestSummaryValue('projectName', getProjectName()))}</h3>
             <p>${escapeHtml(formatRememberGoalLine())}</p>
           </article>
+          ${renderLiveReturnCardPreview()}
         `
       },
       {
@@ -1813,6 +1921,7 @@
             <p class="guided-answer-note">This One Next Action becomes the lantern: the resume point Luna will point you back to.</p>
           </div>
           ${renderLunaInsight('choose')}
+          ${renderLiveReturnCardPreview()}
         `
       },
       {
@@ -1827,6 +1936,7 @@
             <p class="guided-answer-note">This waits outside the gate as a boundary, not a backlog.</p>
           </div>
           ${renderLunaInsight('setAside')}
+          ${renderLiveReturnCardPreview()}
         `
       },
       {
@@ -1841,6 +1951,7 @@
             <p class="guided-answer-note">A small note is enough. It becomes What changed, not a report.</p>
           </div>
           ${renderLunaInsight('record')}
+          ${renderLiveReturnCardPreview()}
         `
       },
       {
@@ -2121,6 +2232,7 @@
       guidedStageBody.innerHTML = stage.render();
       syncGuidedEditableFields();
       syncGuidedPlaceControls();
+      updateLiveReturnCardPreview();
       restoreNextActionEditorToOverview();
 
       guidedBackButton.hidden = guidedStageIndex === 0;
