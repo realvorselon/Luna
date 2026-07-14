@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-07-14 — Opening Threshold Presentation Pass
+
+- This was a focused opening threshold presentation pass that made Luna’s first screen quieter and more ceremonial, reducing repeated explanation while keeping Return gently as the clear moonlit gate into the local-only return flow.
+- Reduced repeated opening explanation, made the three payoff items quieter and more path-like, and hid the redundant return-to-opening footer while already on the opening threshold.
+- Preserved Return gently as the primary gate, Shape this return and Open full overview, Guided Return behavior, receiving moments, compact mobile Held so far preview, full five-value Rest Return Card, the Return to Luna loop, five localStorage keys, safe rendering, no-network boundary, maxlengths, and reduced-motion protections.
+- Status remains Rest; next suggested step is: “Human mobile test of whether the opening threshold feels inviting without over-explaining.”
+
 ## 2026-07-14 — Transition Coherence Pass
 
 - This was a focused transition coherence pass that kept Luna’s existing local-only loop intact while making the opening, Guided Return stages, Rest, and Return to Luna feel more like one moonlit place gently changing focus.

@@ -88,12 +88,12 @@ const roadmap = fs.readFileSync('ROADMAP.md', 'utf8');
 const changelog = fs.readFileSync('CHANGELOG.md', 'utf8');
 const project = JSON.parse(fs.readFileSync('project.json', 'utf8'));
 assert(state.startsWith('# State'), 'STATE.md should begin with the # State heading');
-const transitionTrail = 'This was a focused transition coherence pass that kept Luna’s existing local-only loop intact while making the opening, Guided Return stages, Rest, and Return to Luna feel more like one moonlit place gently changing focus.';
-const transitionNextStep = 'Human mobile test of whether Luna’s loop feels continuous rather than page-like.';
+const transitionTrail = 'This was a focused opening threshold presentation pass that made Luna’s first screen quieter and more ceremonial, reducing repeated explanation while keeping Return gently as the clear moonlit gate into the local-only return flow.';
+const transitionNextStep = 'Human mobile test of whether the opening threshold feels inviting without over-explaining.';
 for (const trail of [state, roadmap, changelog]) {
-  assert(trail.includes('focused transition coherence pass'), 'project trail should record the focused transition coherence pass');
-  assert(trail.includes('opening, Guided Return stages, Rest, and Return to Luna'), 'project trail should name the continuous full loop seams');
-  assert(trail.includes('one moonlit place gently changing focus'), 'project trail should capture the presentation direction');
+  assert(trail.includes('focused opening threshold presentation pass'), 'project trail should record the focused opening threshold pass');
+  assert(trail.includes('opening threshold presentation pass'), 'project trail should name the focused opening threshold pass');
+  assert(trail.includes('quieter and more ceremonial'), 'project trail should capture the presentation direction');
   assert(trail.includes('Rest'), 'project trail should keep Luna at Rest');
   assert(trail.includes('Guided Return mobile preview pass'), 'project trail should preserve the compact mobile Held so far preview context');
   assert(trail.includes(transitionNextStep), 'project trail should point to the next mobile continuity test');
@@ -113,7 +113,7 @@ assert(html.includes('opening-moonrise'), 'opening threshold should foreground t
 assert(html.includes('opening-gate'), 'opening threshold should include the CSS-only garden-gate press-start direction');
 assert(html.includes('opening-payoff-preview'), 'opening should include a static payoff preview');
 assert(html.includes('aria-label="What Luna gives back"'), 'payoff preview should be labelled as what Luna gives back');
-for (const payoffCopy of ['Find the thread', 'Choose the lantern', 'Leave with a Return Card', 'Name one small resume point']) {
+for (const payoffCopy of ['Find the thread', 'Choose the lantern', 'Leave with a Return Card']) {
   assert(html.includes(payoffCopy), `opening payoff preview should include: ${payoffCopy}`);
 }
 const payoffPreviewMarkup = html.match(/<div class="opening-payoff-preview"[\s\S]*?<div class="opening-actions"/)[0];
@@ -277,9 +277,11 @@ for (const returnCardLabel of ['Returning to', 'The thread', 'The lantern', 'Wai
   assert(html.includes(returnCardLabel), `Rest Return Card should include label: ${returnCardLabel}`);
 }
 assert(html.includes('return-card-lantern'), 'Rest should visually emphasize nextAction as the lantern/resume point');
-const returnToOpeningMatch = html.match(/<p class="footer-note"><a href="index.html">Return to Luna’s opening threshold<\/a>\.<\/p>/);
-assert(returnToOpeningMatch, 'Return-to-opening copy/link should remain present and short');
-assert(returnToOpeningMatch[0].length < 100, 'Return-to-opening footer copy should not be overly long on mobile');
+const returnToOpeningMatch = html.match(/<p class="footer-note return-opening-footer" id="return-opening-footer" hidden><a href="index.html">Return to Luna’s opening threshold<\/a>\.<\/p>/);
+assert(returnToOpeningMatch, 'Return-to-opening copy/link should remain present but hidden on the opening threshold');
+assert(returnToOpeningMatch[0].length < 150, 'Return-to-opening footer copy should remain short');
+assert(html.includes('returnOpeningFooter.hidden = false;'), 'Return-to-opening loop should be visible after Guided Return or full overview');
+assert(html.includes('returnOpeningFooter.hidden = true;'), 'Return-to-opening footer should hide again on the opening threshold');
 
 for (const escapedRestValue of [
   "${escapeHtml(formatRestSummaryValue('projectName', getProjectName()))}",
@@ -467,14 +469,15 @@ assertRuleContains('.guided-control.opening-primary', ['min-width: min(100%, 236
 assert(css.includes('padding: 24px max(14px, env(safe-area-inset-left)) calc(80px + env(safe-area-inset-bottom)) max(14px, env(safe-area-inset-right))'), 'mobile opening should preserve bottom safe-area breathing room');
 assert(css.includes('font-size: clamp(1.72rem, 8.2vw, 2.28rem)'), 'mobile opening headline should be calmer than the desktop title scale');
 assertRuleContains('.opening-context', ['background: transparent', 'border: 0', 'opacity: 0.82']);
-assertRuleContains('.opening-payoff-preview', ['grid-template-columns: repeat(3, minmax(0, 1fr))', 'border: 1px solid rgb(223 200 137 / 12%)']);
-assertRuleContains('.opening-payoff-item.is-lantern', ['border-color: rgb(223 200 137 / 26%)']);
+assertRuleContains('.opening-payoff-preview', ['grid-template-columns: repeat(3, minmax(0, 1fr))', 'border-block: 1px solid rgb(223 200 137 / 12%)', 'background: transparent']);
+assertRuleContains('.opening-payoff-item', ['background: transparent', 'border: 0']);
+assertRuleContains('.opening-payoff-item.is-lantern', ['linear-gradient(180deg, rgb(223 200 137 / 8%)']);
 assertRuleContains('.opening-context-data', ['position: absolute', 'clip-path: inset(50%)']);
-assert(html.includes('Return gently to one unfinished thing and leave with one clear place to resume.'), 'opening should explain that Return gently starts the guided path');
+assert(html.includes('For one unfinished thing waiting in the moonlight.'), 'opening should keep the one-unfinished-thing invitation without repeating the full payoff');
 assert(html.includes('Find your place'), 'Guided Return copy should name the first step clearly');
 assert(html.includes('Begin with the one thing you are returning to.'), 'first Guided Return step should plainly explain its purpose');
 assert(html.includes('Bring one unfinished thing back into view.'), 'opening should clearly invite one unfinished thing');
-assert(html.includes('Luna helps you bring one unfinished thing back into view, choose one small place to resume'), "opening should explain Luna's return purpose and resume point");
+assert(html.includes('A quiet path to name one clear place to resume, then leave with a Return Card.'), "opening should explain Luna's resume point and Return Card payoff quietly");
 assert(html.includes('leave with a Return Card'), 'opening should name the practical Return Card payoff');
 assert(html.includes('One calm path: find your place, remember, choose, set aside, record, then rest.'), 'Guided Return shell should frame the stages as one calm path');
 assertRuleContains('.try-editing-card', ['background: rgb(25 34 58 / 94%)', 'border: 1px solid rgb(196 205 238 / 22%)']);

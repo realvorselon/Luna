@@ -1,5 +1,11 @@
 # State
 
+## Current Opening Threshold Presentation Pass
+
+- Luna is at Rest after a focused opening threshold presentation pass.
+- This was a focused opening threshold presentation pass that made Luna’s first screen quieter and more ceremonial, reducing repeated explanation while keeping Return gently as the clear moonlit gate into the local-only return flow.
+- Status remains Rest; next suggested step is: “Human mobile test of whether the opening threshold feels inviting without over-explaining.”
+
 ## Transition Coherence Pass
 
 - This was a focused transition coherence pass that kept Luna’s existing local-only loop intact while making the opening, Guided Return stages, Rest, and Return to Luna feel more like one moonlit place gently changing focus.

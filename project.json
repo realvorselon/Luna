@@ -3,6 +3,10 @@
   "statusHistory": [
     {
       "date": "2026-07-14",
+      "note": "This was a focused opening threshold presentation pass that made Luna’s first screen quieter and more ceremonial, reducing repeated explanation while keeping Return gently as the clear moonlit gate into the local-only return flow."
+    },
+    {
+      "date": "2026-07-14",
       "note": "This was a focused transition coherence pass that kept Luna’s existing local-only loop intact while making the opening, Guided Return stages, Rest, and Return to Luna feel more like one moonlit place gently changing focus."
     },
     {
@@ -678,9 +682,9 @@
       "note": "The project is resting after a good run and ready for one gentle improvement."
     }
   ],
-  "currentGoal": "Rest after the transition coherence pass.",
-  "lastCompletedRun": "This was a focused transition coherence pass that kept Luna’s existing local-only loop intact while making the opening, Guided Return stages, Rest, and Return to Luna feel more like one moonlit place gently changing focus.",
-  "nextStep": "Human mobile test of whether Luna’s loop feels continuous rather than page-like.",
+  "currentGoal": "Rest after the opening threshold presentation pass.",
+  "lastCompletedRun": "This was a focused opening threshold presentation pass that made Luna’s first screen quieter and more ceremonial, reducing repeated explanation while keeping Return gently as the clear moonlit gate into the local-only return flow.",
+  "nextStep": "Human mobile test of whether the opening threshold feels inviting without over-explaining.",
   "dashboardGuide": [
     "Welcome starts the path to read through Record the Change before choosing more work.",
     "Status gives a quick snapshot of how the project is doing right now.",
@@ -695,6 +699,7 @@
     "Keep the implementation narrow: opening threshold visual/layout only, with no behavior expansion."
   ],
   "decisionLog": [
+    "2026-07-14: This was a focused opening threshold presentation pass that made Luna’s first screen quieter and more ceremonial, reducing repeated explanation while keeping Return gently as the clear moonlit gate into the local-only return flow.",
     "2026-07-14: This was a focused transition coherence pass that kept Luna’s existing local-only loop intact while making the opening, Guided Return stages, Rest, and Return to Luna feel more like one moonlit place gently changing focus.",
     "2026-07-14: This was a focused Guided Return v0.1 stabilization pass that cleaned up project trail structure, reduced copy/crowding risk, and preserved the current local-only return loop where Luna receives each answer, carries it forward, and gathers the pieces into a final Return Card.",
     "2026-07-14: This was a focused Guided Return receiving-moments slice that made Luna briefly reflect each existing answer as something she is holding, so the flow feels less like storing form fields and more like the user’s answers matter to Luna.",
@@ -757,9 +762,9 @@
     "Visit http://localhost:8000 in a browser to view the dashboard."
   ],
   "nextAction": {
-    "title": "Human mobile continuity test",
-    "description": "Human mobile test of whether Luna’s loop feels continuous rather than page-like.",
-    "whyItMatters": "Luna should feel like one continuous moonlit place before more product work continues.",
+    "title": "Human mobile opening threshold test",
+    "description": "Human mobile test of whether the opening threshold feels inviting without over-explaining.",
+    "whyItMatters": "Luna’s first screen should feel inviting and clear before more product work continues.",
     "status": "Ready for human test"
   },
   "creativeSeed": {
@@ -828,9 +833,9 @@
   ],
   "currentMode": {
     "name": "Rest",
-    "description": "Luna is resting after a focused transition coherence pass.",
-    "whyItMatters": "The existing local-only loop now feels more continuous from opening through Guided Return, Rest, and Return to Luna without adding behavior, fields, storage keys, or product concepts.",
+    "description": "Luna is resting after a focused opening threshold presentation pass.",
+    "whyItMatters": "The opening threshold is quieter and more ceremonial while preserving the local-only return loop and clear Return gently gate.",
     "value": "Rest"
   },
-  "nextSuggestedStep": "Human mobile test of whether Luna’s loop feels continuous rather than page-like."
+  "nextSuggestedStep": "Human mobile test of whether the opening threshold feels inviting without over-explaining."
 }
