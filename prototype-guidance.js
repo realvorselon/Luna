@@ -1,11 +1,11 @@
 (function (root) {
   'use strict';
 
-  const fallbackProjectName = 'Name the thing you want to return to.';
-  const fallbackGoal = 'What are you trying to make easier?';
-  const fallbackNextAction = 'What is one small next step?';
-  const fallbackSetAside = 'What can wait while you return?';
-  const fallbackRecordChange = 'What changed, even a little?';
+  const fallbackProjectName = 'What do you want to come back to?';
+  const fallbackGoal = 'What feels hard to pick back up?';
+  const fallbackNextAction = 'What is the first small move?';
+  const fallbackSetAside = 'What do you not need to carry right now?';
+  const fallbackRecordChange = 'What is clearer now?';
 
   const voiceLibrary = {
     goalBlank: [
@@ -224,7 +224,7 @@
     return {
       title: 'When you return',
       cue: `When you come back, return to ${project} by starting with ${action}.${threadSentence} ${setAside} can wait outside the gate for now.`,
-      relief: 'The lantern is enough. You do not have to hold the whole thing at once.'
+      relief: 'Begin with the lantern. You do not have to carry the whole unfinished thing at once.'
     };
   };
 
