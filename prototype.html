@@ -2192,6 +2192,9 @@
       const placeBackButton = guidedStageBody.querySelector('[data-guided-place-back]');
       if (placeContinueButton) {
         placeContinueButton.addEventListener('click', () => {
+          if (guidedStageTransitioning || guidedTransitionPending) {
+            return;
+          }
           showGuidedReceivingTransition('projectName', 0, 1);
         });
       }
@@ -2223,19 +2226,27 @@
       </article>
     `;
 
+    const clearGuidedReceivingTransition = () => {
+      guidedTransitionPending = false;
+      guidedTransitionFieldKey = '';
+      guidedTransitionNextStageIndex = guidedStageIndex;
+      guidedTransitionNextPlaceStepIndex = guidedPlaceStepIndex;
+    };
+
     const showGuidedReceivingTransition = (fieldKey, nextStageIndex, nextPlaceStepIndex) => {
-      guidedTransitionPending = true;
       guidedTransitionFieldKey = fieldKey;
       guidedTransitionNextStageIndex = nextStageIndex;
       guidedTransitionNextPlaceStepIndex = nextPlaceStepIndex;
+      guidedTransitionPending = true;
       renderGuidedStage();
     };
 
     const finishGuidedReceivingTransition = () => {
-      guidedTransitionPending = false;
-      guidedStageIndex = guidedTransitionNextStageIndex;
-      guidedPlaceStepIndex = guidedTransitionNextPlaceStepIndex;
-      guidedTransitionFieldKey = '';
+      const nextStageIndex = guidedTransitionNextStageIndex;
+      const nextPlaceStepIndex = guidedTransitionNextPlaceStepIndex;
+      guidedStageIndex = nextStageIndex;
+      guidedPlaceStepIndex = nextPlaceStepIndex;
+      clearGuidedReceivingTransition();
       moveGuidedStage('forward');
     };
 
@@ -2635,7 +2646,7 @@
 
       guidedStageIndex = 0;
       guidedPlaceStepIndex = 0;
-      guidedTransitionPending = false;
+      clearGuidedReceivingTransition();
       renderGuidedStageContent();
 
       if (guidedStageMotionQuery.matches) {
@@ -2742,6 +2753,8 @@
       if (guidedStageTransitioning) {
         return;
       }
+
+      clearGuidedReceivingTransition();
 
       if (guidedStageIndex === 0 && guidedPlaceStepIndex > 0) {
         guidedPlaceStepIndex -= 1;
