@@ -263,6 +263,17 @@ assert(html.includes('Begin here when you come back.'), 'Choose should keep the 
 assert(html.includes('guidedTransitionPending'), 'Guided Return should track a deterministic receiving/interstitial state');
 assert(html.includes('guidedTransitionFieldKey'), 'Guided Return should remember which field Luna is receiving');
 assert(html.includes('guidedTransitionNextStageIndex'), 'Guided Return should remember which stage follows the receiving screen');
+assert(html.includes('const clearGuidedReceivingTransition = () => {'), 'Guided Return should have one explicit helper that clears receiving state');
+assert(html.includes('const showGuidedReceivingTransition = (fieldKey, nextStageIndex, nextPlaceStepIndex) => {'), 'Guided Return should have one explicit helper that starts receiving state');
+assert(html.includes('const finishGuidedReceivingTransition = () => {'), 'Guided Return should have one explicit helper that advances out of receiving state');
+assert(/const finishGuidedReceivingTransition = \(\) => \{[\s\S]*?const nextStageIndex = guidedTransitionNextStageIndex;[\s\S]*?const nextPlaceStepIndex = guidedTransitionNextPlaceStepIndex;[\s\S]*?guidedStageIndex = nextStageIndex;[\s\S]*?guidedPlaceStepIndex = nextPlaceStepIndex;[\s\S]*?clearGuidedReceivingTransition\(\);[\s\S]*?moveGuidedStage\('forward'\);[\s\S]*?\};/.test(html), 'receiving Continue should set the next indexes before clearing transition state and rendering once');
+assert(html.includes("showGuidedReceivingTransition('projectName', 0, 1);"), 'projectName Continue should produce projectName receiving before currentGoal appears');
+assert(/if \(guidedTransitionPending\) \{\s*finishGuidedReceivingTransition\(\);\s*return;\s*\}/.test(html), 'receiving Continue after projectName should finish receiving into currentGoal without re-running question routing');
+assert(html.includes("const fieldKey = guidedStageIndex === 0 ? 'currentGoal'"), 'currentGoal Continue should be routed as the second Find your place field');
+assert(html.includes("showGuidedReceivingTransition(fieldKey, guidedStageIndex + 1, guidedPlaceStepIndex);"), 'currentGoal Continue should produce receiving before Remember, and later fields should receive before their next stages');
+assert(html.includes('clearGuidedReceivingTransition();\n\n      if (guidedStageIndex === 0 && guidedPlaceStepIndex > 0)'), 'Back from normal Guided Return questions should clear stale receiving state before moving');
+const findYourPlaceRender = html.match(/title: 'Find your place',[\s\S]*?render: \(\) => `([\s\S]*?)`\n      \}/)[1];
+assert.equal((findYourPlaceRender.match(/>Continue<\/button>/g) || []).length, 1, 'Find your place step 1 should not render duplicate local Continue controls');
 assert(html.includes('guided-receiving-screen'), 'Guided Return should render a dedicated receiving/interstitial screen');
 assert(html.includes('Luna is holding this'), 'receiving screen should use calm holding language');
 assert(html.includes('Luna is placing your answer into the Return Card.'), 'receiving screen should explain local Return Card placement');
