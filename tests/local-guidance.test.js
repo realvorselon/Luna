@@ -111,12 +111,12 @@ const roadmap = fs.readFileSync('ROADMAP.md', 'utf8');
 const changelog = fs.readFileSync('CHANGELOG.md', 'utf8');
 const project = JSON.parse(fs.readFileSync('project.json', 'utf8'));
 assert(state.startsWith('# State'), 'STATE.md should begin with the # State heading');
-const transitionTrail = 'This was a focused plain-language purpose pass that replaced prototype-like placeholder language with clearer user-facing Luna copy, so the opening, Guided Return questions, receiving moments, and composed Rest card better explain that Luna helps turn one unfinished thing into one clear place to begin again.';
-const transitionNextStep = 'Human mobile test of whether Luna’s purpose is clear without feeling like a form.';
+const transitionTrail = 'This was a focused Guided Return response-transition pass that moved Luna’s answer-receiving moment out of the crowded question card and into a calm deterministic transition between questions, so the mobile flow feels more like Luna asks, receives, places the answer into the Return Card, and then continues.';
+const transitionNextStep = 'Human mobile test of whether the question → Luna receives → next question rhythm feels calmer and more alive.';
 for (const trailText of [state, roadmap, changelog]) {
-  assert(trailText.includes('plain-language purpose pass'), 'project trail should record the focused plain-language purpose pass');
-  assert(trailText.includes('prototype-like placeholder language'), 'project trail should name the placeholder-language problem');
-  assert(trailText.includes('one clear place to begin again'), 'project trail should capture Luna’s plain purpose');
+  assert(trailText.includes('Guided Return response-transition pass'), 'project trail should record the focused response-transition pass');
+  assert(trailText.includes('answer-receiving moment out of the crowded question card'), 'project trail should name the crowded question card problem');
+  assert(trailText.includes('asks, receives, places the answer into the Return Card'), 'project trail should capture the new Guided Return rhythm');
   assert(trailText.includes('Rest'), 'project trail should keep Luna at Rest');
   assert(trailText.includes('Guided Return mobile preview pass'), 'project trail should preserve the compact mobile Held so far preview context');
   assert(trailText.includes(transitionNextStep), 'project trail should point to the next purpose clarity test');
@@ -125,10 +125,10 @@ assert.deepEqual(project.statusHistory[0], {
   date: '2026-07-15',
   note: transitionTrail
 }, 'new statusHistory entry should keep the existing object shape');
-assert.equal(project.currentGoal, 'Rest after the plain-language purpose pass.');
+assert.equal(project.currentGoal, 'Rest after the Guided Return response-transition pass.');
 assert.equal(project.currentMode.value, 'Rest');
-assert.equal(project.currentMode.description, 'Luna is resting after a focused plain-language purpose pass.');
-assert.equal(project.currentMode.whyItMatters, 'The opening, Guided Return questions, receiving moments, and composed Rest card now explain Luna’s purpose more plainly: helping turn one unfinished thing into one clear place to begin again.');
+assert.equal(project.currentMode.description, 'Luna is resting after a focused Guided Return response-transition pass.');
+assert.equal(project.currentMode.whyItMatters, 'The Guided Return flow now separates asking from receiving, so each answer can be placed into the Return Card without crowding the question screen.');
 assert.equal(project.lastCompletedRun, transitionTrail);
 assert.equal(project.nextStep, transitionNextStep);
 assert.equal(project.nextSuggestedStep, transitionNextStep);
@@ -191,6 +191,9 @@ for (const oldInvitation of ['Name the thing you want to return to.', 'What are 
   assert(!js.includes(oldInvitation), `${oldInvitation} old placeholder-feeling wording should be removed from guidance defaults`);
 }
 assert.deepEqual(guidedStageTitles, ['Find your place', 'Remember', 'Choose', 'Set Aside', 'Record', 'Rest'], 'Guided Return stage order should stay fixed');
+assert(html.includes("showGuidedReceivingTransition('projectName', 0, 1);"), 'projectName receiving transition should advance to currentGoal inside Find your place');
+assert(html.includes("showGuidedReceivingTransition(fieldKey, guidedStageIndex + 1, guidedPlaceStepIndex);"), 'question Continue should pass through receiving before the next stage');
+assert(html.includes("guidedTransitionPending ? 'Continue'"), 'receiving interstitial should provide a manual Continue button');
 assert.equal(guidedStageTitles[0], 'Find your place', 'the first Guided Return stage should still say Find your place');
 
 for (const questionCopy of [
@@ -207,8 +210,8 @@ assert(html.includes("${renderGuidedEditableField(getGuidedPlaceFieldKey())}"), 
 assert(!html.includes("${renderGuidedEditableField('projectName')}\n              ${renderGuidedEditableField('currentGoal')}"), 'Find your place should not render both projectName and currentGoal inline fields at once by default');
 assert(html.includes('data-guided-place-continue'), 'Find your place should include a local internal Continue control');
 assert(html.includes('data-guided-place-back'), 'Find your place should include a local internal Back control');
-assert(html.includes('guidedBackButton.hidden = guidedStageIndex === 0;'), 'main back button should stay hidden inside Find your place so internal Back is not duplicated');
-assert(html.includes('guidedForwardButton.hidden = guidedStageIndex === 0 && guidedPlaceStepIndex === 0;'), 'main forward button should be hidden during the first internal Find your place question to avoid duplicate forward controls');
+assert(html.includes('guidedBackButton.hidden = guidedTransitionPending || guidedStageIndex === 0;'), 'main back button should stay hidden inside Find your place and receiving transitions');
+assert(html.includes("guidedForwardButton.textContent = guidedTransitionPending ? 'Continue'"), 'main forward button should become Continue during receiving transitions');
 assert(html.includes("${renderGuidedEditableField('nextAction')}"), 'Choose should include editable One Next Action');
 assert(html.includes("${renderGuidedEditableField('setAside')}"), 'Set Aside should include editable Set Aside / Ignore For Now');
 assert(html.includes("${renderGuidedEditableField('recordChange')}"), 'Record should include editable Record the Change');
@@ -253,26 +256,34 @@ assert(html.includes('updateGuidedFlowLeadIn();'), 'Guided inline edits should r
 
 assert(html.includes('Begin here when you come back.'), 'Choose should keep the lantern/resume point important without duplicating the contribution cue');
 
-assert(html.includes('guided-receiving-moment'), 'Guided Return editable answer spaces should include receiving/reflection moments');
-assert(html.includes('data-guided-receiving-moment'), 'receiving moments should be targetable for live updates');
+assert(html.includes('guidedTransitionPending'), 'Guided Return should track a deterministic receiving/interstitial state');
+assert(html.includes('guidedTransitionFieldKey'), 'Guided Return should remember which field Luna is receiving');
+assert(html.includes('guidedTransitionNextStageIndex'), 'Guided Return should remember which stage follows the receiving screen');
+assert(html.includes('guided-receiving-screen'), 'Guided Return should render a dedicated receiving/interstitial screen');
+assert(html.includes('Luna is holding this'), 'receiving screen should use calm holding language');
+assert(html.includes('Luna is placing your answer into the Return Card.'), 'receiving screen should explain local Return Card placement');
 for (const receivingCopy of [
   'Okay. Luna will help you come back to',
   'I’m holding why this is hard to pick back up.',
   'Good. Begin again with this:',
   'You do not need to carry that while you begin again.',
-  'I’ll put what is clearer into the Return Card.'
+  'I’ll put what is clearer into the Return Card.',
+  'I’m placing that at the top of your Return Card.',
+  'That becomes the thread Luna keeps warm.',
+  'That becomes the lantern.',
+  'I’ll keep it outside the gate for now.',
+  'Now Luna can hand you one place to begin again.'
 ]) {
   assert(html.includes(receivingCopy), `Guided Return receiving copy should include: ${receivingCopy}`);
 }
 assert(html.includes('const getGuidedReceivingMoment = (fieldKey, value) => {'), 'receiving moments should be deterministic local rendering without depending on guidedEditableFields initialization');
 assert(html.includes('formatRestSummaryValue(fieldKey, value)'), 'receiving moments should format the passed current value with Rest fallback formatting');
-assert(html.includes('<p class="guided-receiving-moment" data-guided-receiving-moment>${escapeHtml(getGuidedReceivingMoment(fieldKey, field.input.value))}</p>'), 'receiving moments should escape user-rendered values in initial render');
-assert(html.includes('const updateGuidedReceivingMoment = (fieldElement, fieldKey, value) => {'), 'receiving moments should have a live update path that accepts the current value');
-assert(html.includes('receivingMoment.textContent = getGuidedReceivingMoment(fieldKey, value);'), 'receiving moment live updates should render user values with textContent');
-assert(html.includes('updateGuidedReceivingMoment(fieldElement, fieldKey, field.input.value);'), 'Guided inline edits should refresh the active receiving moment with the existing input value');
-assert(!/thinking|analyzing|remembering forever|generated AI/i.test(html), 'receiving copy should avoid false AI claims');
+assert(!html.includes('<p class="guided-receiving-moment" data-guided-receiving-moment>${escapeHtml(getGuidedReceivingMoment(fieldKey, field.input.value))}</p>'), 'question screen should not duplicate the receiving moment under the input');
+assert(!html.includes('updateGuidedReceivingMoment(fieldElement, fieldKey, field.input.value);'), 'Guided inline edits should not maintain a duplicated inline receiving moment');
+assert(!/\b(?:AI|model|generating|thinking|analyzing|loading)\b/i.test(html.match(/const getGuidedReceivingMoment[\s\S]*?const guidedEditableFields/)[0]), 'receiving copy should avoid AI/network/random/loading language');
+assert(!/Math\.random\s*\(/.test(html), 'receiving flow must not use random thinking');
 
-assert(html.includes('live-return-card-preview'), 'Guided Return should include a compact live Return Card preview during non-Rest stages');
+assert(html.includes('live-return-card-preview'), 'Guided Return should keep live Return Card preview available outside crowded question cards');
 assert(html.includes('aria-label="Live Return Card preview"'), 'live Return Card preview should be labelled accessibly');
 assert(html.includes('<span class="label">Held so far</span>'), 'live Return Card preview should soften its heading to Held so far');
 assert(html.includes('A preview of the Return Card Luna is building.'), 'desktop live Return Card preview should frame the held-thread purpose quietly without extra density');
@@ -331,13 +342,16 @@ for (const escapedRestValue of [
 ]) {
   assert(html.includes(escapedRestValue), `Rest should preserve escaped current-return value: ${escapedRestValue}`);
 }
-assert(html.includes('class="luna-insight-card"'), 'Guided Return should render Luna insight cards');
+assert(html.includes('class="luna-insight-card"'), 'Guided Return keeps insight cards available for real suggestions/warnings');
 assert(html.includes('aria-label="Luna insight for this step"'), 'Guided Return insights should be accessible labelled coaching regions');
 for (const copy of ['Name the unfinished thing. A short name is enough.', 'One small move is enough. This is the lantern.', 'Luna has one unfinished thing and one visible next move']) {
   assert(html.includes(copy), `Guided Return insight copy should include: ${copy}`);
 }
 assert(html.includes('updateVisibleGuidedInsight();'), 'Guided inline edits should refresh visible Luna insight copy after typing');
-assert(html.includes('<span class="label">Luna note</span>'), 'insight cards should use lighter Luna note framing');
+assert(html.includes('<span class="label">Luna note</span>'), 'insight cards should use lighter Luna note framing when shown');
+assert(!html.includes("${renderLunaInsight('choose')}"), 'normal Choose question should not stack Luna note under every question');
+assert(!html.includes("${renderLunaInsight('setAside')}"), 'normal Set Aside question should not stack Luna note under every question');
+assert(!html.includes("${renderLunaInsight('record')}"), 'normal Record question should not stack Luna note under every question');
 assert(css.includes('.luna-insight-card {\n        gap: 2px;\n        padding: 6px 8px;'), 'mobile Luna note should become a quieter line-like note with reduced spacing');
 assert(css.includes('background: rgb(22 32 56 / 14%)'), 'mobile Luna note should use a much lighter background');
 assert(css.includes('border-color: rgb(223 200 137 / 6%)'), 'mobile Luna note should use a much lighter border');
@@ -457,8 +471,7 @@ assert.doesNotThrow(() => fakeElements.get('shape-return-button').listeners.clic
 fakeElements.get('luna-opening').hidden = false;
 assert.doesNotThrow(() => fakeElements.get('show-overview-button').listeners.click(), 'Open full overview click handler should not throw');
 
-assert(css.includes('background: rgb(244 209 122 / 7%)') && css.includes('border: 1px solid rgb(244 209 122 / 12%)'), 'receiving moments should keep distinct warm styling near answer spaces');
-assert(css.includes('.guided-receiving-moment {\n        padding: 6px 8px;\n        color: rgb(237 229 201 / 90%);'), 'mobile receiving moments should remain visually distinct near the answer while fitting the tighter hierarchy');
+assert(css.includes('.guided-receiving-screen'), 'receiving screen should have dedicated calm styling');
 const longUnbrokenNextAction = 'ReturnToLunaWithoutSpaces'.repeat(8).slice(0, 140);
 assert.equal(longUnbrokenNextAction.length, 140, 'regression value should fill the One Next Action maxlength with no spaces');
 const longActionGuidance = guidance.buildReturnGuidance({ ...base, nextAction: longUnbrokenNextAction });
