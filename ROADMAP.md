@@ -1,5 +1,12 @@
 # Roadmap
 
+## 2026-07-15 — Guided Return response-transition pass
+
+- This was a focused Guided Return response-transition pass that moved Luna’s answer-receiving moment out of the crowded question card and into a calm deterministic transition between questions, so the mobile flow feels more like Luna asks, receives, places the answer into the Return Card, and then continues.
+- Keep testing whether the question → Luna receives → next question rhythm feels calmer on mobile.
+- Status remains Rest; next suggested step is: “Human mobile test of whether the question → Luna receives → next question rhythm feels calmer and more alive.”
+
+
 ## 2026-07-15 — Plain-language purpose pass
 
 - This was a focused plain-language purpose pass that replaced prototype-like placeholder language with clearer user-facing Luna copy, so the opening, Guided Return questions, receiving moments, and composed Rest card better explain that Luna helps turn one unfinished thing into one clear place to begin again.

@@ -882,8 +882,7 @@
       border-color: rgb(244 209 122 / 46%);
     }
 
-    .guided-inline-helper,
-    .guided-receiving-moment {
+    .guided-inline-helper {
       margin: 0;
       color: rgb(199 209 232 / 76%);
       font-size: 0.88rem;
@@ -891,13 +890,20 @@
     }
 
 
-    .guided-receiving-moment {
-      overflow-wrap: anywhere;
-      padding: 7px 9px;
-      color: rgb(237 229 201 / 88%);
+    .guided-receiving-screen {
+      display: grid;
+      gap: 10px;
+      align-content: center;
+      min-block-size: 220px;
+      text-align: left;
       background: rgb(244 209 122 / 7%);
-      border: 1px solid rgb(244 209 122 / 12%);
-      border-radius: 12px;
+      border-color: rgb(244 209 122 / 14%);
+    }
+
+    .guided-receiving-screen h3,
+    .guided-receiving-screen p {
+      margin: 0;
+      overflow-wrap: anywhere;
     }
 
     .guided-question-card {
@@ -1471,11 +1477,9 @@
         padding: 11px 12px;
       }
 
-      .guided-receiving-moment {
-        padding: 6px 8px;
-        color: rgb(237 229 201 / 90%);
-        background: rgb(244 209 122 / 8%);
-        border-color: rgb(244 209 122 / 14%);
+      .guided-receiving-screen {
+        min-block-size: 180px;
+        padding: 16px;
       }
 
       .guided-inline-helper {
@@ -1853,6 +1857,10 @@
     let guidedEntranceTransitionTimer = 0;
     let guidedStageTransitioning = false;
     let guidedEntranceTransitioning = false;
+    let guidedTransitionPending = false;
+    let guidedTransitionFieldKey = '';
+    let guidedTransitionNextStageIndex = 0;
+    let guidedTransitionNextPlaceStepIndex = 0;
     let guidedStageTransitionResolve = null;
     const guidedStageMotionQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
     const guidedStageMotionFallbackMs = 220;
@@ -2149,7 +2157,6 @@
           <div class="guided-answer-input-frame">
             <input id="${inputId}" type="text" value="${escapeHtml(field.input.value)}" autocomplete="off" maxlength="${field.input.getAttribute('maxlength')}" aria-describedby="${helperId}">
           </div>
-          <p class="guided-receiving-moment" data-guided-receiving-moment>${escapeHtml(getGuidedReceivingMoment(fieldKey, field.input.value))}</p>
           <p class="guided-inline-helper" id="${helperId}">${escapeHtml(field.helper)}</p>
         </div>
       `;
@@ -2172,7 +2179,6 @@
           if (guidedDisplay) {
             guidedDisplay.textContent = field.input.value.trim() || field.input.defaultValue;
           }
-          updateGuidedReceivingMoment(fieldElement, fieldKey, field.input.value);
           updateGuidedFlowLeadIn();
           updateVisibleGuidedInsight();
           updateLiveReturnCardPreview();
@@ -2186,8 +2192,7 @@
       const placeBackButton = guidedStageBody.querySelector('[data-guided-place-back]');
       if (placeContinueButton) {
         placeContinueButton.addEventListener('click', () => {
-          guidedPlaceStepIndex = 1;
-          renderGuidedStage();
+          showGuidedReceivingTransition('projectName', 0, 1);
         });
       }
       if (placeBackButton) {
@@ -2198,6 +2203,40 @@
           }
         });
       }
+    };
+
+
+    const getGuidedReceivingPlacement = (fieldKey) => {
+      if (fieldKey === 'projectName') return 'I’m placing that at the top of your Return Card.';
+      if (fieldKey === 'currentGoal') return 'That becomes the thread Luna keeps warm.';
+      if (fieldKey === 'nextAction') return 'That becomes the lantern.';
+      if (fieldKey === 'setAside') return 'I’ll keep it outside the gate for now.';
+      if (fieldKey === 'recordChange') return 'Now Luna can hand you one place to begin again.';
+      return 'I’m carrying it into the Return Card.';
+    };
+
+    const renderGuidedReceivingTransition = () => `
+      <article class="quiet-card guided-receiving-screen" aria-label="Guided Return receiving step">
+        <span class="label">Luna is holding this</span>
+        <h3>${escapeHtml(getGuidedReceivingMoment(guidedTransitionFieldKey, guidedEditableFields[guidedTransitionFieldKey]?.input.value || ''))}</h3>
+        <p>${escapeHtml(getGuidedReceivingPlacement(guidedTransitionFieldKey))}</p>
+      </article>
+    `;
+
+    const showGuidedReceivingTransition = (fieldKey, nextStageIndex, nextPlaceStepIndex) => {
+      guidedTransitionPending = true;
+      guidedTransitionFieldKey = fieldKey;
+      guidedTransitionNextStageIndex = nextStageIndex;
+      guidedTransitionNextPlaceStepIndex = nextPlaceStepIndex;
+      renderGuidedStage();
+    };
+
+    const finishGuidedReceivingTransition = () => {
+      guidedTransitionPending = false;
+      guidedStageIndex = guidedTransitionNextStageIndex;
+      guidedPlaceStepIndex = guidedTransitionNextPlaceStepIndex;
+      guidedTransitionFieldKey = '';
+      moveGuidedStage('forward');
     };
 
     const guidedStages = [
@@ -2215,8 +2254,6 @@
               <button class="guided-control" type="button" data-guided-place-continue ${guidedPlaceStepIndex === 1 ? 'hidden' : ''}>Continue</button>
             </div>
           </div>
-          ${renderLunaInsight('place')}
-          ${renderLiveReturnCardPreview()}
         `
       },
       {
@@ -2244,8 +2281,6 @@
             </div>
             <p class="guided-answer-note">Begin here when you come back.</p>
           </div>
-          ${renderLunaInsight('choose')}
-          ${renderLiveReturnCardPreview()}
         `
       },
       {
@@ -2260,8 +2295,6 @@
             </div>
             <p class="guided-answer-note">A boundary, not a backlog.</p>
           </div>
-          ${renderLunaInsight('setAside')}
-          ${renderLiveReturnCardPreview()}
         `
       },
       {
@@ -2276,8 +2309,6 @@
             </div>
             <p class="guided-answer-note">A few clear words are enough.</p>
           </div>
-          ${renderLunaInsight('record')}
-          ${renderLiveReturnCardPreview()}
         `
       },
       {
@@ -2535,18 +2566,20 @@
     const renderGuidedStageContent = () => {
       const stage = guidedStages[guidedStageIndex];
       guidedPosition.textContent = `Stage ${guidedStageIndex + 1} of ${guidedStages.length}`;
-      guidedStageTitle.textContent = stage.title;
-      guidedStageIntro.textContent = stage.intro;
-      guidedStagePanel.dataset.stageTone = stage.tone || 'quiet';
-      guidedStageBody.innerHTML = stage.render();
-      syncGuidedEditableFields();
-      syncGuidedPlaceControls();
-      updateLiveReturnCardPreview();
+      guidedStageTitle.textContent = guidedTransitionPending ? 'Luna is holding this' : stage.title;
+      guidedStageIntro.textContent = guidedTransitionPending ? 'Luna is placing your answer into the Return Card.' : stage.intro;
+      guidedStagePanel.dataset.stageTone = guidedTransitionPending ? 'receiving' : (stage.tone || 'quiet');
+      guidedStageBody.innerHTML = guidedTransitionPending ? renderGuidedReceivingTransition() : stage.render();
+      if (!guidedTransitionPending) {
+        syncGuidedEditableFields();
+        syncGuidedPlaceControls();
+        updateLiveReturnCardPreview();
+      }
       restoreNextActionEditorToOverview();
 
-      guidedBackButton.hidden = guidedStageIndex === 0;
-      guidedForwardButton.hidden = guidedStageIndex === 0 && guidedPlaceStepIndex === 0;
-      guidedForwardButton.textContent = guidedStageIndex === guidedStages.length - 1 ? 'Return to Luna' : 'Forward';
+      guidedBackButton.hidden = guidedTransitionPending || guidedStageIndex === 0;
+      guidedForwardButton.hidden = !guidedTransitionPending && guidedStageIndex === 0 && guidedPlaceStepIndex === 0;
+      guidedForwardButton.textContent = guidedTransitionPending ? 'Continue' : (guidedStageIndex === guidedStages.length - 1 ? 'Return to Luna' : 'Continue');
     };
 
     const renderGuidedStage = () => {
@@ -2602,6 +2635,7 @@
 
       guidedStageIndex = 0;
       guidedPlaceStepIndex = 0;
+      guidedTransitionPending = false;
       renderGuidedStageContent();
 
       if (guidedStageMotionQuery.matches) {
@@ -2729,14 +2763,24 @@
         return;
       }
 
+      if (guidedTransitionPending) {
+        finishGuidedReceivingTransition();
+        return;
+      }
+
       if (guidedStageIndex === 0 && guidedPlaceStepIndex === 0) {
-        guidedPlaceStepIndex = 1;
-        renderGuidedStage();
+        showGuidedReceivingTransition('projectName', 0, 1);
         return;
       }
 
       if (guidedStageIndex === guidedStages.length - 1) {
         showLunaOpening();
+        return;
+      }
+
+      const fieldKey = guidedStageIndex === 0 ? 'currentGoal' : guidedStageIndex === 2 ? 'nextAction' : guidedStageIndex === 3 ? 'setAside' : guidedStageIndex === 4 ? 'recordChange' : '';
+      if (fieldKey) {
+        showGuidedReceivingTransition(fieldKey, guidedStageIndex + 1, guidedPlaceStepIndex);
         return;
       }
 

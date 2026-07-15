@@ -3,6 +3,10 @@
   "statusHistory": [
     {
       "date": "2026-07-15",
+      "note": "This was a focused Guided Return response-transition pass that moved Luna’s answer-receiving moment out of the crowded question card and into a calm deterministic transition between questions, so the mobile flow feels more like Luna asks, receives, places the answer into the Return Card, and then continues."
+    },
+    {
+      "date": "2026-07-15",
       "note": "This was a focused plain-language purpose pass that replaced prototype-like placeholder language with clearer user-facing Luna copy, so the opening, Guided Return questions, receiving moments, and composed Rest card better explain that Luna helps turn one unfinished thing into one clear place to begin again."
     },
     {
@@ -694,9 +698,9 @@
       "note": "The project is resting after a good run and ready for one gentle improvement."
     }
   ],
-  "currentGoal": "Rest after the plain-language purpose pass.",
-  "lastCompletedRun": "This was a focused plain-language purpose pass that replaced prototype-like placeholder language with clearer user-facing Luna copy, so the opening, Guided Return questions, receiving moments, and composed Rest card better explain that Luna helps turn one unfinished thing into one clear place to begin again.",
-  "nextStep": "Human mobile test of whether Luna’s purpose is clear without feeling like a form.",
+  "currentGoal": "Rest after the Guided Return response-transition pass.",
+  "lastCompletedRun": "This was a focused Guided Return response-transition pass that moved Luna’s answer-receiving moment out of the crowded question card and into a calm deterministic transition between questions, so the mobile flow feels more like Luna asks, receives, places the answer into the Return Card, and then continues.",
+  "nextStep": "Human mobile test of whether the question → Luna receives → next question rhythm feels calmer and more alive.",
   "dashboardGuide": [
     "Welcome starts the path to read through Record the Change before choosing more work.",
     "Status gives a quick snapshot of how the project is doing right now.",
@@ -845,9 +849,9 @@
   ],
   "currentMode": {
     "name": "Rest",
-    "description": "Luna is resting after a focused plain-language purpose pass.",
-    "whyItMatters": "The opening, Guided Return questions, receiving moments, and composed Rest card now explain Luna’s purpose more plainly: helping turn one unfinished thing into one clear place to begin again.",
-    "value": "Rest"
+    "value": "Rest",
+    "description": "Luna is resting after a focused Guided Return response-transition pass.",
+    "whyItMatters": "The Guided Return flow now separates asking from receiving, so each answer can be placed into the Return Card without crowding the question screen."
   },
-  "nextSuggestedStep": "Human mobile test of whether Luna’s purpose is clear without feeling like a form."
+  "nextSuggestedStep": "Human mobile test of whether the question → Luna receives → next question rhythm feels calmer and more alive."
 }
