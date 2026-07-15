@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-07-15 — Plain-language purpose pass
+
+- This was a focused plain-language purpose pass that replaced prototype-like placeholder language with clearer user-facing Luna copy, so the opening, Guided Return questions, receiving moments, and composed Rest card better explain that Luna helps turn one unfinished thing into one clear place to begin again.
+- Replaced placeholder-like invitations with clearer prompts and aligned Guided Return/Rest copy around Luna’s practical purpose while preserving existing behavior and constraints.
+- Status remains Rest; next suggested step is: “Human mobile test of whether Luna’s purpose is clear without feeling like a form.”
+
+
 ## 2026-07-15 — Rest composition pass
 
 - This was a focused Rest composition pass that reshaped Rest from several stacked panels into one composed Return Card artifact, keeping the deterministic return cue and all five local values while making Luna’s final handoff feel calmer and more useful on mobile.

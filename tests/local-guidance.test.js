@@ -13,14 +13,14 @@ const returnCue = guidance.buildReturnCue({
 assert.equal(returnCue.title, 'When you return');
 assert.equal(returnCue.cue, 'When you come back, return to Luna-forge by starting with check the Rest card. Keep close to the thread: make Rest useful. Extra polish ideas can wait outside the gate for now.');
 assert.match(returnCue.cue, /Extra polish ideas can wait outside the gate/);
-assert.equal(returnCue.relief, 'The lantern is enough. You do not have to hold the whole thing at once.');
+assert.equal(returnCue.relief, 'Begin with the lantern. You do not have to carry the whole unfinished thing at once.');
 
 const fallbackCue = guidance.buildReturnCue({
-  projectName: 'Name the thing you want to return to.',
-  currentGoal: 'What are you trying to make easier?',
-  nextAction: 'What is one small next step?',
-  setAside: 'What can wait while you return?',
-  recordChange: 'What changed, even a little?'
+  projectName: 'What do you want to come back to?',
+  currentGoal: 'What feels hard to pick back up?',
+  nextAction: 'What is the first small move?',
+  setAside: 'What do you not need to carry right now?',
+  recordChange: 'What is clearer now?'
 });
 assert.equal(fallbackCue.cue, 'When you come back, return to this return by starting with one small visible step. The extra noise can wait outside the gate for now.');
 assert.doesNotMatch(fallbackCue.cue, /Name the thing you want to return to|What is one small next step|What can wait while you return|What are you trying to make easier/);
@@ -111,15 +111,15 @@ const roadmap = fs.readFileSync('ROADMAP.md', 'utf8');
 const changelog = fs.readFileSync('CHANGELOG.md', 'utf8');
 const project = JSON.parse(fs.readFileSync('project.json', 'utf8'));
 assert(state.startsWith('# State'), 'STATE.md should begin with the # State heading');
-const transitionTrail = 'This was a focused Rest composition pass that reshaped Rest from several stacked panels into one composed Return Card artifact, keeping the deterministic return cue and all five local values while making Luna’s final handoff feel calmer and more useful on mobile.';
-const transitionNextStep = 'Human mobile test of whether the composed Rest card feels calmer and useful enough to return from.';
-for (const trail of [state, roadmap, changelog]) {
-  assert(trail.includes('Rest composition pass'), 'project trail should record the focused Rest composition pass');
-  assert(trail.includes('one composed Return Card artifact'), 'project trail should name the composed Return Card artifact direction');
-  assert(trail.includes('calmer and more useful on mobile'), 'project trail should capture the mobile Rest hierarchy direction');
-  assert(trail.includes('Rest'), 'project trail should keep Luna at Rest');
-  assert(trail.includes('Guided Return mobile preview pass'), 'project trail should preserve the compact mobile Held so far preview context');
-  assert(trail.includes(transitionNextStep), 'project trail should point to the next mobile composition test');
+const transitionTrail = 'This was a focused plain-language purpose pass that replaced prototype-like placeholder language with clearer user-facing Luna copy, so the opening, Guided Return questions, receiving moments, and composed Rest card better explain that Luna helps turn one unfinished thing into one clear place to begin again.';
+const transitionNextStep = 'Human mobile test of whether Luna’s purpose is clear without feeling like a form.';
+for (const trailText of [state, roadmap, changelog]) {
+  assert(trailText.includes('plain-language purpose pass'), 'project trail should record the focused plain-language purpose pass');
+  assert(trailText.includes('prototype-like placeholder language'), 'project trail should name the placeholder-language problem');
+  assert(trailText.includes('one clear place to begin again'), 'project trail should capture Luna’s plain purpose');
+  assert(trailText.includes('Rest'), 'project trail should keep Luna at Rest');
+  assert(trailText.includes('Guided Return mobile preview pass'), 'project trail should preserve the compact mobile Held so far preview context');
+  assert(trailText.includes(transitionNextStep), 'project trail should point to the next purpose clarity test');
 }
 assert.deepEqual(project.statusHistory[0], {
   date: '2026-07-15',
@@ -136,7 +136,7 @@ assert(html.includes('const getReturnCardSynthesis = () => window.LunaReturnGuid
 assert(html.includes('const renderComposedReturnCard = () => {'), 'Rest synthesis should render inside the composed Return Card artifact');
 assert(html.includes('${renderComposedReturnCard()}'), 'Rest should render one composed Return Card artifact');
 assert(html.includes('When you return'), 'synthesized Rest cue should use useful section title');
-assert((html + js).includes('The lantern is enough. You do not have to hold the whole thing at once.'), 'burden-reducing line remains present');
+assert((html + js).includes('Begin with the lantern. You do not have to carry the whole unfinished thing at once.'), 'burden-reducing line remains present');
 assert(html.includes('Edit Luna’s current project'), 'overview should include a clear editing-area heading');
 assert(html.includes('opening-moonrise'), 'opening threshold should foreground the Luna/moon title area');
 assert(html.includes('opening-gate'), 'opening threshold should include the CSS-only garden-gate press-start direction');
@@ -152,8 +152,8 @@ assert(/<div class="opening-gate">\s*<button class="guided-control opening-prima
 for (const openingAction of ['Return gently', 'Shape this return', 'Open full overview']) {
   assert(html.includes(openingAction), `${openingAction} should remain present`);
 }
-assert(html.includes('These five local prompts are invitations until you replace them with your own words. Changing them updates Luna’s opening, Shape this return, and Guided Return'), 'overview should explain what the editable context updates');
-assert(html.includes('stores the five values only in this browser'), 'overview should explain local-only storage');
+assert(html.includes('These five answers help Luna make a Return Card: what you are returning to, what feels hard, the first small move, what can wait, and what is clearer'), 'overview should explain what the editable context updates');
+assert(html.includes('They stay only in this browser.'), 'overview should explain local-only storage');
 for (const id of ['project-name-input', 'current-goal-input', 'next-action-input', 'set-aside-input', 'record-change-input']) {
   assert(html.includes(`id="${id}"`), `${id} should remain present`);
 }
@@ -179,19 +179,23 @@ assert.deepEqual(projectStorageKeys, [
 ], 'the existing five project-edit keys should remain the only saved project keys');
 assert(!/localStorage\.(?:setItem|removeItem)\(\s*['"]luna\.prototype\./.test(html), 'localStorage project edits should use the declared five key constants, not hidden extra key literals');
 const guidedStageTitles = [...html.matchAll(/title: '([^']+)'/g)].map((match) => match[1]);
-for (const invitation of ['Name the thing you want to return to.', 'What are you trying to make easier?', 'What is one small next step?', 'What can wait while you return?', 'What changed, even a little?']) {
+for (const invitation of ['What do you want to come back to?', 'What feels hard to pick back up?', 'What is the first small move?', 'What do you not need to carry right now?', 'What is clearer now?']) {
   assert(html.includes(invitation), `${invitation} invitation default should remain present`);
   assert(js.includes(invitation), `${invitation} guidance fallback should remain present`);
+}
+for (const oldInvitation of ['Name the thing you want to return to.', 'What are you trying to make easier?', 'What is one small next step?', 'What can wait while you return?', 'What changed, even a little?']) {
+  assert(!html.includes(oldInvitation), `${oldInvitation} old placeholder-feeling wording should be removed from visible prototype copy`);
+  assert(!js.includes(oldInvitation), `${oldInvitation} old placeholder-feeling wording should be removed from guidance defaults`);
 }
 assert.deepEqual(guidedStageTitles, ['Find your place', 'Remember', 'Choose', 'Set Aside', 'Record', 'Rest'], 'Guided Return stage order should stay fixed');
 assert.equal(guidedStageTitles[0], 'Find your place', 'the first Guided Return stage should still say Find your place');
 
 for (const questionCopy of [
-  'What are we returning to?',
-  'What would make returning easier?',
-  'What is one small visible move?',
-  'What can wait while you return?',
-  'What changed, even a little?'
+  'What do you want to come back to?',
+  'What feels hard to pick back up?',
+  'What is the first small move?',
+  'What do you not need to carry right now?',
+  'What is clearer now?'
 ]) {
   assert(html.includes(questionCopy), `Guided Return conversational question copy should include: ${questionCopy}`);
 }
@@ -214,8 +218,8 @@ assert(html.includes('guided-answer-space'), 'Guided Return should style editabl
 assert(html.includes('guided-answer-input-frame'), 'Guided Return answer spaces should wrap the real input elements');
 assert(html.includes('Your answer'), 'Guided Return answer-space copy should gently label the response area');
 assert(!html.includes('Luna will hold this locally.'), 'Guided Return should not repeat local-only helper copy under every answer');
-assert(html.includes('Answer one thing at a time. Luna keeps these five values locally in this browser.'), 'Guided Return should keep one compact local-only boundary near the opening stage');
-for (const softenedNote of ['Begin here when you come back.', 'A boundary, not a backlog.', 'A few honest words are enough.']) {
+assert(html.includes('Answer one thing at a time. Each answer helps Luna build the Return Card and stays in this browser.'), 'Guided Return should keep one compact local-only boundary near the opening stage');
+for (const softenedNote of ['Begin here when you come back.', 'A boundary, not a backlog.', 'A few clear words are enough.']) {
   assert(html.includes(softenedNote), `Guided Return should keep softened non-duplicative helper copy: ${softenedNote}`);
 }
 
@@ -231,12 +235,12 @@ for (const removedContributionCue of [
 assert(!html.includes('guided-contribution-cue'), 'Guided Return should remove the repeated contribution cue block from visible answer spaces');
 assert(html.includes('guided-flow-lead'), 'Guided Return should include compact connective flow lead-in copy');
 assert(html.includes('const getGuidedFlowLeadIn = (stageKey) => {'), 'connective flow copy should be deterministic local rendering');
-assert(html.includes("if (stageKey === 'currentGoal') return `Okay. We’re returning to ${project}. What would make returning easier?`;"), 'currentGoal connective copy should carry the current projectName value into the next question');
+assert(html.includes("if (stageKey === 'currentGoal') return `Okay. We’re returning to ${project}. What feels hard to pick back up?`;"), 'currentGoal connective copy should carry the current projectName value into the next question');
 for (const connectiveCopy of [
-  'We only need enough to find the thread.',
-  'I’m holding the thread. Now choose the lantern.',
-  'Good. That’s the lantern. What can wait outside the gate?',
-  'The gate is quieter now. What changed, even a little?'
+  'We only need enough to see why restarting has felt hard.',
+  'I’m holding the thread. Now choose the first small move.',
+  'Good. That’s the lantern. What do you not need to carry right now?',
+  'The gate is quieter now. What is clearer now?'
 ]) {
   assert(html.includes(connectiveCopy), `Guided Return connective flow copy should include: ${connectiveCopy}`);
 }
@@ -249,11 +253,11 @@ assert(html.includes('Begin here when you come back.'), 'Choose should keep the 
 assert(html.includes('guided-receiving-moment'), 'Guided Return editable answer spaces should include receiving/reflection moments');
 assert(html.includes('data-guided-receiving-moment'), 'receiving moments should be targetable for live updates');
 for (const receivingCopy of [
-  'Okay. We’re returning to',
-  'I’m holding that as the thread.',
-  'Good. That’s the lantern:',
-  'I’ll keep that outside the gate for now.',
-  'I’ll carry that change into the Return Card.'
+  'Okay. Luna will help you come back to',
+  'I’m holding why this is hard to pick back up.',
+  'Good. Begin again with this:',
+  'You do not need to carry that while you begin again.',
+  'I’ll put what is clearer into the Return Card.'
 ]) {
   assert(html.includes(receivingCopy), `Guided Return receiving copy should include: ${receivingCopy}`);
 }
@@ -268,7 +272,7 @@ assert(!/thinking|analyzing|remembering forever|generated AI/i.test(html), 'rece
 assert(html.includes('live-return-card-preview'), 'Guided Return should include a compact live Return Card preview during non-Rest stages');
 assert(html.includes('aria-label="Live Return Card preview"'), 'live Return Card preview should be labelled accessibly');
 assert(html.includes('<span class="label">Held so far</span>'), 'live Return Card preview should soften its heading to Held so far');
-assert(html.includes('A quiet preview of what Luna is holding.'), 'desktop live Return Card preview should frame the held-thread purpose quietly without extra density');
+assert(html.includes('A preview of the Return Card Luna is building.'), 'desktop live Return Card preview should frame the held-thread purpose quietly without extra density');
 assert(html.includes('live-return-card-compact'), 'compact mobile Held so far preview should exist');
 assert(html.includes('data-live-return-card-compact-field="projectName"'), 'compact mobile preview should track projectName');
 assert(html.includes("<strong>Returning</strong> <span>${escapeHtml(formatRestSummaryValue('projectName', getProjectName()))}</span>"), 'compact mobile preview should emphasize Returning/projectName and safely escape initial render');
@@ -296,7 +300,7 @@ assert(html.includes("isLantern && isRealUserEntry('nextAction', getValue()) ? '
 assert(!html.includes('${renderLiveReturnCardPreview()}\n          <article class="quiet-card rest-card rest-landing-card"'), 'Rest should not duplicate the compact live preview before the full Return Card');
 assert(html.includes('field.input.value = guidedInput.value;'), 'Guided inline edits should update the existing overview input values');
 assert(html.includes('writeLocalValue(field.storageKey, guidedInput.value);'), 'Guided inline edits should save through the existing five storage keys');
-assert(html.includes('I have enough to hold this return.'), 'Rest may keep a small arrival line that does not compete with the main artifact');
+assert(html.includes('Your Return Card is ready.'), 'Rest may keep a small arrival line that does not compete with the main artifact');
 assert(html.includes('return-card-artifact'), 'Rest should use one composed Return Card artifact');
 assert(html.includes('return-card-main-cue'), 'synthesized cue should be the main paragraph inside the artifact');
 assert(html.includes('return-card-lantern-focus'), 'Rest should emphasize The lantern/nextAction as the clearest resume point');
@@ -326,7 +330,7 @@ for (const escapedRestValue of [
 }
 assert(html.includes('class="luna-insight-card"'), 'Guided Return should render Luna insight cards');
 assert(html.includes('aria-label="Luna insight for this step"'), 'Guided Return insights should be accessible labelled coaching regions');
-for (const copy of ['Name one unfinished thing. A short name is enough.', 'One small action is enough. This is the lantern.', 'Luna has one named thing and one visible next move']) {
+for (const copy of ['Name the unfinished thing. A short name is enough.', 'One small move is enough. This is the lantern.', 'Luna has one unfinished thing and one visible next move']) {
   assert(html.includes(copy), `Guided Return insight copy should include: ${copy}`);
 }
 assert(html.includes('updateVisibleGuidedInsight();'), 'Guided inline edits should refresh visible Luna insight copy after typing');
@@ -505,13 +509,13 @@ assertRuleContains('.opening-payoff-preview', ['grid-template-columns: repeat(3,
 assertRuleContains('.opening-payoff-item', ['background: transparent', 'border: 0']);
 assertRuleContains('.opening-payoff-item.is-lantern', ['linear-gradient(180deg, rgb(223 200 137 / 8%)']);
 assertRuleContains('.opening-context-data', ['position: absolute', 'clip-path: inset(50%)']);
-assert(html.includes('For one unfinished thing waiting in the moonlight.'), 'opening should keep the one-unfinished-thing invitation without repeating the full payoff');
+assert(html.includes('For one unfinished thing you do not want to carry alone.'), 'opening should keep the one-unfinished-thing invitation without repeating the full payoff');
 assert(html.includes('Find your place'), 'Guided Return copy should name the first step clearly');
-assert(html.includes('Begin with the one thing you are returning to.'), 'first Guided Return step should plainly explain its purpose');
-assert(html.includes('Bring one unfinished thing back into view.'), 'opening should clearly invite one unfinished thing');
-assert(html.includes('A quiet path to name one clear place to resume, then leave with a Return Card.'), "opening should explain Luna's resume point and Return Card payoff quietly");
-assert(html.includes('leave with a Return Card'), 'opening should name the practical Return Card payoff');
-assert(html.includes('One calm path: find your place, remember, choose, set aside, record, then rest.'), 'Guided Return shell should frame the stages as one calm path');
+assert(html.includes('Start by naming the unfinished thing you want to return to.'), 'first Guided Return step should plainly explain its purpose');
+assert(html.includes('Come back to one unfinished thing.'), 'opening should clearly invite one unfinished thing');
+assert(html.includes('Luna helps turn scattered thoughts into one clear place to begin again.'), "opening should explain Luna's resume point and Return Card payoff quietly");
+assert(html.includes('Leave with a Return Card'), 'opening should name the practical Return Card payoff');
+assert(html.includes('Answer a few plain questions. Luna turns them into one Return Card.'), 'Guided Return shell should frame the stages as one calm path');
 assertRuleContains('.try-editing-card', ['background: rgb(25 34 58 / 94%)', 'border: 1px solid rgb(196 205 238 / 22%)']);
 assertRuleContains('.edit-field input', ['background: rgb(35 45 72 / 96%)', 'box-shadow: none']);
 assertRuleContains('.guided-return-view', ['linear-gradient(180deg, rgb(13 21 40 / 96%)', 'box-shadow: 0 16px 36px']);
