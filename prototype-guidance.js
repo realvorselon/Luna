@@ -201,6 +201,11 @@
     return Boolean(text) && !isFallback(text, fallback);
   };
 
+  const sentenceStart = (value) => {
+    const text = normalizeProjectText(value);
+    return text ? `${text.charAt(0).toUpperCase()}${text.slice(1)}` : text;
+  };
+
   const buildReturnCue = (context = {}) => {
     const project = realEntry(context.projectName, fallbackProjectName)
       ? stripTerminalPunctuation(context.projectName)
@@ -211,14 +216,14 @@
     const action = realEntry(context.nextAction, fallbackNextAction)
       ? stripTerminalPunctuation(context.nextAction)
       : 'one small visible step';
-    const setAside = realEntry(context.setAside, fallbackSetAside)
+    const setAside = sentenceStart(realEntry(context.setAside, fallbackSetAside)
       ? stripTerminalPunctuation(context.setAside)
-      : 'the extra noise';
-    const goalClause = goal ? `, keeping close to ${goal},` : '';
+      : 'the extra noise');
+    const threadSentence = goal ? ` Keep close to the thread: ${goal}.` : '';
 
     return {
       title: 'When you return',
-      cue: `When you come back, return to ${project}${goalClause} by starting with ${action}. ${setAside} can wait outside the gate for now.`,
+      cue: `When you come back, return to ${project} by starting with ${action}.${threadSentence} ${setAside} can wait outside the gate for now.`,
       relief: 'The lantern is enough. You do not have to hold the whole thing at once.'
     };
   };

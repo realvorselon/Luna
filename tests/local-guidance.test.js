@@ -11,9 +11,7 @@ const returnCue = guidance.buildReturnCue({
   recordChange: 'Added synthesis.'
 });
 assert.equal(returnCue.title, 'When you return');
-assert.match(returnCue.cue, /return to Luna-forge/);
-assert.match(returnCue.cue, /make Rest useful/);
-assert.match(returnCue.cue, /starting with check the Rest card/);
+assert.equal(returnCue.cue, 'When you come back, return to Luna-forge by starting with check the Rest card. Keep close to the thread: make Rest useful. Extra polish ideas can wait outside the gate for now.');
 assert.match(returnCue.cue, /Extra polish ideas can wait outside the gate/);
 assert.equal(returnCue.relief, 'The lantern is enough. You do not have to hold the whole thing at once.');
 
@@ -24,9 +22,7 @@ const fallbackCue = guidance.buildReturnCue({
   setAside: 'What can wait while you return?',
   recordChange: 'What changed, even a little?'
 });
-assert.match(fallbackCue.cue, /return to this return/);
-assert.match(fallbackCue.cue, /starting with one small visible step/);
-assert.match(fallbackCue.cue, /the extra noise can wait outside the gate/);
+assert.equal(fallbackCue.cue, 'When you come back, return to this return by starting with one small visible step. The extra noise can wait outside the gate for now.');
 assert.doesNotMatch(fallbackCue.cue, /Name the thing you want to return to|What is one small next step|What can wait while you return|What are you trying to make easier/);
 
 const base = {

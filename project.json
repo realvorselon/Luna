@@ -686,7 +686,7 @@
       "note": "The project is resting after a good run and ready for one gentle improvement."
     }
   ],
-  "currentGoal": "Rest after the opening threshold presentation pass.",
+  "currentGoal": "Rest after the v0.1 Return Script slice.",
   "lastCompletedRun": "This was a focused v0.1 Return Script slice that made Luna synthesize the five existing local answers into a useful “When you return” cue at Rest, so the Return Card feels like Luna shaped the user’s pieces into one clear place to begin instead of only repeating stored fields.",
   "nextStep": "Human mobile test of whether the Rest return cue feels useful enough to resume from.",
   "dashboardGuide": [
