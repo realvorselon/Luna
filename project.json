@@ -3,6 +3,10 @@
   "statusHistory": [
     {
       "date": "2026-07-14",
+      "note": "This was a focused v0.1 Return Script slice that made Luna synthesize the five existing local answers into a useful “When you return” cue at Rest, so the Return Card feels like Luna shaped the user’s pieces into one clear place to begin instead of only repeating stored fields."
+    },
+    {
+      "date": "2026-07-14",
       "note": "This was a focused opening threshold presentation pass that made Luna’s first screen quieter and more ceremonial, reducing repeated explanation while keeping Return gently as the clear moonlit gate into the local-only return flow."
     },
     {
@@ -682,9 +686,9 @@
       "note": "The project is resting after a good run and ready for one gentle improvement."
     }
   ],
-  "currentGoal": "Rest after the opening threshold presentation pass.",
-  "lastCompletedRun": "This was a focused opening threshold presentation pass that made Luna’s first screen quieter and more ceremonial, reducing repeated explanation while keeping Return gently as the clear moonlit gate into the local-only return flow.",
-  "nextStep": "Human mobile test of whether the opening threshold feels inviting without over-explaining.",
+  "currentGoal": "Rest after the v0.1 Return Script slice.",
+  "lastCompletedRun": "This was a focused v0.1 Return Script slice that made Luna synthesize the five existing local answers into a useful “When you return” cue at Rest, so the Return Card feels like Luna shaped the user’s pieces into one clear place to begin instead of only repeating stored fields.",
+  "nextStep": "Human mobile test of whether the Rest return cue feels useful enough to resume from.",
   "dashboardGuide": [
     "Welcome starts the path to read through Record the Change before choosing more work.",
     "Status gives a quick snapshot of how the project is doing right now.",
@@ -833,9 +837,9 @@
   ],
   "currentMode": {
     "name": "Rest",
-    "description": "Luna is resting after a focused opening threshold presentation pass.",
-    "whyItMatters": "The opening threshold is quieter and more ceremonial while preserving the local-only return loop and clear Return gently gate.",
+    "description": "Luna is resting after a focused v0.1 Return Script slice.",
+    "whyItMatters": "Rest now synthesizes the five existing local answers into one clear return cue without adding AI, network behavior, fields, stages, or storage keys.",
     "value": "Rest"
   },
-  "nextSuggestedStep": "Human mobile test of whether the opening threshold feels inviting without over-explaining."
+  "nextSuggestedStep": "Human mobile test of whether the Rest return cue feels useful enough to resume from."
 }

@@ -1,5 +1,11 @@
 # State
 
+## Current v0.1 Return Script Slice
+
+- Luna is at Rest after a focused v0.1 Return Script slice.
+- This was a focused v0.1 Return Script slice that made Luna synthesize the five existing local answers into a useful “When you return” cue at Rest, so the Return Card feels like Luna shaped the user’s pieces into one clear place to begin instead of only repeating stored fields.
+- Status remains Rest; next suggested step is: “Human mobile test of whether the Rest return cue feels useful enough to resume from.”
+
 ## Current Opening Threshold Presentation Pass
 
 - Luna is at Rest after a focused opening threshold presentation pass.

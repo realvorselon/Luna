@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-07-14 — v0.1 Return Script slice
+
+- This was a focused v0.1 Return Script slice that made Luna synthesize the five existing local answers into a useful “When you return” cue at Rest, so the Return Card feels like Luna shaped the user’s pieces into one clear place to begin instead of only repeating stored fields.
+- Added a deterministic local “When you return” cue at Rest that uses real project, thread, lantern, and gate values when present, falls back gracefully when fields are still invitations, and keeps the burden-reducing lantern line.
+- Preserved the full five-value Return Card, Guided Return stage order, receiving moments, compact mobile Held so far preview before Rest, opening buttons, Return to Luna loop, full overview editing, Shape this return Apply → Undo, Clear local edits, five localStorage keys, safe rendering, no-network/no-random boundaries, maxlengths, and reduced-motion protections.
+- Status remains Rest; next suggested step is: “Human mobile test of whether the Rest return cue feels useful enough to resume from.”
+
 ## 2026-07-14 — Opening Threshold Presentation Pass
 
 - This was a focused opening threshold presentation pass that made Luna’s first screen quieter and more ceremonial, reducing repeated explanation while keeping Return gently as the clear moonlit gate into the local-only return flow.

@@ -195,6 +195,39 @@
     return clear(current, voice('recordClear', seed), 'recordClear');
   };
 
+
+  const realEntry = (value, fallback) => {
+    const text = normalizeProjectText(value);
+    return Boolean(text) && !isFallback(text, fallback);
+  };
+
+  const sentenceStart = (value) => {
+    const text = normalizeProjectText(value);
+    return text ? `${text.charAt(0).toUpperCase()}${text.slice(1)}` : text;
+  };
+
+  const buildReturnCue = (context = {}) => {
+    const project = realEntry(context.projectName, fallbackProjectName)
+      ? stripTerminalPunctuation(context.projectName)
+      : 'this return';
+    const goal = realEntry(context.currentGoal, fallbackGoal)
+      ? stripTerminalPunctuation(context.currentGoal)
+      : '';
+    const action = realEntry(context.nextAction, fallbackNextAction)
+      ? stripTerminalPunctuation(context.nextAction)
+      : 'one small visible step';
+    const setAside = sentenceStart(realEntry(context.setAside, fallbackSetAside)
+      ? stripTerminalPunctuation(context.setAside)
+      : 'the extra noise');
+    const threadSentence = goal ? ` Keep close to the thread: ${goal}.` : '';
+
+    return {
+      title: 'When you return',
+      cue: `When you come back, return to ${project} by starting with ${action}.${threadSentence} ${setAside} can wait outside the gate for now.`,
+      relief: 'The lantern is enough. You do not have to hold the whole thing at once.'
+    };
+  };
+
   const buildReturnGuidance = (context) => {
     const projectName = normalizeProjectText(context.projectName, fallbackProjectName);
     const goal = assessGoal(context.currentGoal, projectName);
@@ -217,6 +250,6 @@
     };
   };
 
-  root.LunaReturnGuidance = { normalizeProjectText, stableTextHash, voiceLibrary, assessGoal, assessNextAction, assessSetAside, assessRecordChange, buildReturnGuidance };
+  root.LunaReturnGuidance = { normalizeProjectText, stableTextHash, voiceLibrary, assessGoal, assessNextAction, assessSetAside, assessRecordChange, buildReturnCue, buildReturnGuidance };
   if (typeof module !== 'undefined') module.exports = root.LunaReturnGuidance;
 })(typeof globalThis !== 'undefined' ? globalThis : window);
