@@ -2,6 +2,10 @@
   "status": "Rest",
   "statusHistory": [
     {
+      "date": "2026-07-15",
+      "note": "This was a focused Rest composition pass that reshaped Rest from several stacked panels into one composed Return Card artifact, keeping the deterministic return cue and all five local values while making Luna’s final handoff feel calmer and more useful on mobile."
+    },
+    {
       "date": "2026-07-14",
       "note": "This was a focused v0.1 Return Script slice that made Luna synthesize the five existing local answers into a useful “When you return” cue at Rest, so the Return Card feels like Luna shaped the user’s pieces into one clear place to begin instead of only repeating stored fields."
     },
@@ -687,8 +691,8 @@
     }
   ],
   "currentGoal": "Rest after the v0.1 Return Script slice.",
-  "lastCompletedRun": "This was a focused v0.1 Return Script slice that made Luna synthesize the five existing local answers into a useful “When you return” cue at Rest, so the Return Card feels like Luna shaped the user’s pieces into one clear place to begin instead of only repeating stored fields.",
-  "nextStep": "Human mobile test of whether the Rest return cue feels useful enough to resume from.",
+  "lastCompletedRun": "This was a focused Rest composition pass that reshaped Rest from several stacked panels into one composed Return Card artifact, keeping the deterministic return cue and all five local values while making Luna’s final handoff feel calmer and more useful on mobile.",
+  "nextStep": "Human mobile test of whether the composed Rest card feels calmer and useful enough to return from.",
   "dashboardGuide": [
     "Welcome starts the path to read through Record the Change before choosing more work.",
     "Status gives a quick snapshot of how the project is doing right now.",
@@ -841,5 +845,5 @@
     "whyItMatters": "Rest now synthesizes the five existing local answers into one clear return cue without adding AI, network behavior, fields, stages, or storage keys.",
     "value": "Rest"
   },
-  "nextSuggestedStep": "Human mobile test of whether the Rest return cue feels useful enough to resume from."
+  "nextSuggestedStep": "Human mobile test of whether the composed Rest card feels calmer and useful enough to return from."
 }

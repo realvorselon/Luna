@@ -1,5 +1,12 @@
 # Roadmap
 
+## 2026-07-15 — Rest composition pass
+
+- This was a focused Rest composition pass that reshaped Rest from several stacked panels into one composed Return Card artifact, keeping the deterministic return cue and all five local values while making Luna’s final handoff feel calmer and more useful on mobile.
+- Rest now presents one composed Return Card artifact with the synthesized “When you return” cue as the main paragraph, The lantern emphasized as the clearest resume point, the other four values held more quietly, and the relief line as the closing reassurance.
+- Status remains Rest; next suggested step is: “Human mobile test of whether the composed Rest card feels calmer and useful enough to return from.”
+
+
 ## Current v0.1 Return Script Slice
 
 - Luna is at Rest after a focused v0.1 Return Script slice.
