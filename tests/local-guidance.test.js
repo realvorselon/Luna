@@ -125,7 +125,10 @@ assert.deepEqual(project.statusHistory[0], {
   date: '2026-07-15',
   note: transitionTrail
 }, 'new statusHistory entry should keep the existing object shape');
+assert.equal(project.currentGoal, 'Rest after the plain-language purpose pass.');
 assert.equal(project.currentMode.value, 'Rest');
+assert.equal(project.currentMode.description, 'Luna is resting after a focused plain-language purpose pass.');
+assert.equal(project.currentMode.whyItMatters, 'The opening, Guided Return questions, receiving moments, and composed Rest card now explain Luna’s purpose more plainly: helping turn one unfinished thing into one clear place to begin again.');
 assert.equal(project.lastCompletedRun, transitionTrail);
 assert.equal(project.nextStep, transitionNextStep);
 assert.equal(project.nextSuggestedStep, transitionNextStep);
