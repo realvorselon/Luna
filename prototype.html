@@ -1169,70 +1169,116 @@
 
 
 
-    .return-cue-card {
-      gap: 12px;
-      background:
-        linear-gradient(180deg, rgb(223 200 137 / 10%), rgb(28 38 64 / 88%));
-      border-color: rgb(223 200 137 / 24%);
+
+    .rest-arrival-line {
+      margin: 0;
+      color: rgb(216 224 246 / 72%);
+      font-size: 0.94rem;
     }
 
-    .return-cue-card h3 {
+    .return-card-artifact {
+      gap: 16px;
+      padding: clamp(18px, 4vw, 28px);
+      background:
+        linear-gradient(180deg, rgb(223 200 137 / 12%), rgb(28 38 64 / 90%));
+      border-color: rgb(223 200 137 / 26%);
+      box-shadow: 0 18px 44px rgb(3 7 18 / 26%);
+    }
+
+    .return-card-artifact h3 {
       max-width: 34rem;
       color: #fbf4e2;
+      font-size: clamp(1.18rem, 3vw, 1.62rem);
     }
 
-    .return-cue-card p {
-      max-width: 42rem;
-      color: rgb(235 239 255 / 82%);
+    .return-card-main-cue {
+      max-width: 43rem;
+      color: rgb(235 239 255 / 88%);
+      font-size: clamp(1rem, 2.4vw, 1.16rem);
+      line-height: 1.65;
     }
 
-    .return-cue-relief {
-      margin-top: 2px;
-      color: rgb(244 232 196 / 86%);
-      font-weight: 650;
+    .return-card-lantern-focus {
+      display: grid;
+      gap: 5px;
+      min-width: 0;
+      padding: 14px 16px;
+      background: rgb(38 42 58 / 88%);
+      border: 1px solid rgb(255 214 128 / 32%);
+      border-radius: 20px;
+      box-shadow: inset 0 1px 0 rgb(255 255 255 / 6%);
+    }
+
+    .return-card-lantern-focus strong,
+    .return-card-lantern-focus span {
+      color: var(--lantern);
+    }
+
+    .return-card-lantern-focus strong {
+      font-size: 0.76rem;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+    }
+
+    .return-card-lantern-focus span {
+      overflow-wrap: anywhere;
+      font-size: clamp(1rem, 2.4vw, 1.18rem);
+      font-weight: 700;
+    }
+
+    .return-card-held-details {
+      display: grid;
+      gap: 10px;
+      padding-top: 2px;
+    }
+
+    .return-card-held-details .label {
+      color: rgb(189 200 238 / 70%);
     }
 
     .return-card-list {
       display: grid;
-      gap: 10px;
-      margin-top: 2px;
+      gap: 8px;
+      margin-top: 0;
     }
 
     .return-card-row {
       display: grid;
       gap: 4px;
       min-width: 0;
-      padding: 10px 12px;
-      background: rgb(9 16 31 / 22%);
-      border: 1px solid rgb(189 200 238 / 10%);
-      border-radius: 16px;
+      padding: 9px 11px;
+      background: rgb(9 16 31 / 16%);
+      border: 1px solid rgb(189 200 238 / 8%);
+      border-radius: 14px;
     }
 
     .return-card-row strong {
-      color: var(--silver);
-      font-size: 0.74rem;
+      color: rgb(189 200 238 / 72%);
+      font-size: 0.72rem;
       letter-spacing: 0.08em;
       text-transform: uppercase;
     }
 
     .return-card-row span {
       overflow-wrap: anywhere;
-      color: rgb(235 239 255 / 84%);
+      color: rgb(235 239 255 / 76%);
     }
 
     .return-card-lantern {
-      background: rgb(38 42 58 / 88%);
-      border-color: rgb(255 214 128 / 28%);
+      border-color: rgb(255 214 128 / 14%);
+      background: rgb(38 42 58 / 34%);
     }
 
     .return-card-lantern strong,
     .return-card-lantern span {
-      color: var(--lantern);
+      color: rgb(244 232 196 / 82%);
     }
 
-    .return-card-cue {
-      margin-top: 2px;
-      color: rgb(244 232 196 / 88%);
+    .return-card-cue-relief {
+      margin-top: 0;
+      color: rgb(244 232 196 / 84%);
+      font-size: 0.94rem;
+      font-weight: 650;
     }
 
     .return-path {
@@ -1942,14 +1988,28 @@
 
     const getReturnCardSynthesis = () => window.LunaReturnGuidance.buildReturnCue(getGuidanceContext());
 
-    const renderReturnSynthesis = () => {
+    const renderComposedReturnCard = () => {
       const synthesis = getReturnCardSynthesis();
       return `
-          <article class="quiet-card rest-card return-cue-card" aria-label="When you return">
+          <article class="quiet-card rest-card return-card-artifact" aria-label="When you return composed Return Card">
             <span class="label">${escapeHtml(synthesis.title)}</span>
             <h3>Begin here.</h3>
-            <p>${escapeHtml(synthesis.cue)}</p>
-            <p class="return-cue-relief">${escapeHtml(synthesis.relief)}</p>
+            <p class="return-card-main-cue">${escapeHtml(synthesis.cue)}</p>
+            <div class="return-card-lantern-focus" aria-label="The lantern resume point">
+              <strong>The lantern</strong>
+              <span>${escapeHtml(formatRestSummaryValue('nextAction', getNextAction()))}</span>
+            </div>
+            <div class="return-card-held-details" aria-label="Held Return Card details">
+              <span class="label">Held details</span>
+              <div class="return-card-list">
+                <p class="return-card-row"><strong>Returning to</strong><span>${escapeHtml(formatRestSummaryValue('projectName', getProjectName()))}</span></p>
+                <p class="return-card-row"><strong>The thread</strong><span>${escapeHtml(formatRestSummaryValue('currentGoal', getCurrentGoal()))}</span></p>
+                <p class="return-card-row return-card-lantern"><strong>The lantern</strong><span>${escapeHtml(formatRestSummaryValue('nextAction', getNextAction()))}</span></p>
+                <p class="return-card-row"><strong>Waiting outside the gate</strong><span>${escapeHtml(formatRestSummaryValue('setAside', getSetAside()))}</span></p>
+                <p class="return-card-row"><strong>What changed</strong><span>${escapeHtml(formatRestSummaryValue('recordChange', getRecordChange()))}</span></p>
+              </div>
+            </div>
+            <p class="return-card-cue-relief">${escapeHtml(synthesis.relief)}</p>
           </article>
       `;
     };
@@ -2225,26 +2285,8 @@
         intro: 'You reached Rest. You can stop here.',
         tone: 'rest',
         render: () => `
-          <article class="quiet-card rest-card rest-landing-card">
-            <span class="label">Rest</span>
-            <h3>I have enough to hold this return.</h3>
-            <p>You can stop here. Luna will keep the thread warm until you come back.</p>
-          </article>
-          ${renderLunaInsight('rest')}
-          ${renderReturnSynthesis()}
-          <article class="quiet-card rest-held-words return-card">
-            <span class="label">Return Card</span>
-            <h3>A small place to resume.</h3>
-            <p>Luna gathered the thread into one held point.</p>
-            <div class="return-card-list">
-              <p class="return-card-row"><strong>Returning to</strong><span>${escapeHtml(formatRestSummaryValue('projectName', getProjectName()))}</span></p>
-              <p class="return-card-row"><strong>The thread</strong><span>${escapeHtml(formatRestSummaryValue('currentGoal', getCurrentGoal()))}</span></p>
-              <p class="return-card-row return-card-lantern"><strong>The lantern</strong><span>${escapeHtml(formatRestSummaryValue('nextAction', getNextAction()))}</span></p>
-              <p class="return-card-row"><strong>Waiting outside the gate</strong><span>${escapeHtml(formatRestSummaryValue('setAside', getSetAside()))}</span></p>
-              <p class="return-card-row"><strong>What changed</strong><span>${escapeHtml(formatRestSummaryValue('recordChange', getRecordChange()))}</span></p>
-            </div>
-            <p class="return-card-cue">When you come back, begin with the lantern.</p>
-          </article>
+          <p class="rest-arrival-line">I have enough to hold this return.</p>
+          ${renderComposedReturnCard()}
         `
       }
     ];
