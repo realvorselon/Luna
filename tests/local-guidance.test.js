@@ -111,18 +111,18 @@ const roadmap = fs.readFileSync('ROADMAP.md', 'utf8');
 const changelog = fs.readFileSync('CHANGELOG.md', 'utf8');
 const project = JSON.parse(fs.readFileSync('project.json', 'utf8'));
 assert(state.startsWith('# State'), 'STATE.md should begin with the # State heading');
-const transitionTrail = 'This was a focused v0.1 Return Script slice that made Luna synthesize the five existing local answers into a useful “When you return” cue at Rest, so the Return Card feels like Luna shaped the user’s pieces into one clear place to begin instead of only repeating stored fields.';
-const transitionNextStep = 'Human mobile test of whether the Rest return cue feels useful enough to resume from.';
+const transitionTrail = 'This was a focused Rest composition pass that reshaped Rest from several stacked panels into one composed Return Card artifact, keeping the deterministic return cue and all five local values while making Luna’s final handoff feel calmer and more useful on mobile.';
+const transitionNextStep = 'Human mobile test of whether the composed Rest card feels calmer and useful enough to return from.';
 for (const trail of [state, roadmap, changelog]) {
-  assert(trail.includes('focused opening threshold presentation pass'), 'project trail should record the focused opening threshold pass');
-  assert(trail.includes('opening threshold presentation pass'), 'project trail should name the focused opening threshold pass');
-  assert(trail.includes('quieter and more ceremonial'), 'project trail should capture the presentation direction');
+  assert(trail.includes('Rest composition pass'), 'project trail should record the focused Rest composition pass');
+  assert(trail.includes('one composed Return Card artifact'), 'project trail should name the composed Return Card artifact direction');
+  assert(trail.includes('calmer and more useful on mobile'), 'project trail should capture the mobile Rest hierarchy direction');
   assert(trail.includes('Rest'), 'project trail should keep Luna at Rest');
   assert(trail.includes('Guided Return mobile preview pass'), 'project trail should preserve the compact mobile Held so far preview context');
-  assert(trail.includes(transitionNextStep), 'project trail should point to the next mobile continuity test');
+  assert(trail.includes(transitionNextStep), 'project trail should point to the next mobile composition test');
 }
 assert.deepEqual(project.statusHistory[0], {
-  date: '2026-07-14',
+  date: '2026-07-15',
   note: transitionTrail
 }, 'new statusHistory entry should keep the existing object shape');
 assert.equal(project.currentMode.value, 'Rest');
@@ -131,10 +131,10 @@ assert.equal(project.nextStep, transitionNextStep);
 assert.equal(project.nextSuggestedStep, transitionNextStep);
 assert(!/Math\.random\s*\(/.test(js), 'guidance must not use Math.random');
 assert(!/\bfetch\s*\(/.test(html + js), 'local guidance must not call fetch');
-assert(html.includes('return-cue-card'), 'Rest includes a synthesized return cue section');
+assert(!html.includes('return-cue-card'), 'Rest should no longer render a separate synthesized cue card panel');
 assert(html.includes('const getReturnCardSynthesis = () => window.LunaReturnGuidance.buildReturnCue(getGuidanceContext());'), 'Rest synthesis should use deterministic local guidance helper');
-assert(html.includes('const renderReturnSynthesis = () => {'), 'Rest synthesis should render locally');
-assert(html.includes('${renderReturnSynthesis()}'), 'Rest should include synthesized cue before the full Return Card');
+assert(html.includes('const renderComposedReturnCard = () => {'), 'Rest synthesis should render inside the composed Return Card artifact');
+assert(html.includes('${renderComposedReturnCard()}'), 'Rest should render one composed Return Card artifact');
 assert(html.includes('When you return'), 'synthesized Rest cue should use useful section title');
 assert((html + js).includes('The lantern is enough. You do not have to hold the whole thing at once.'), 'burden-reducing line remains present');
 assert(html.includes('Edit Luna’s current project'), 'overview should include a clear editing-area heading');
@@ -296,12 +296,15 @@ assert(html.includes("isLantern && isRealUserEntry('nextAction', getValue()) ? '
 assert(!html.includes('${renderLiveReturnCardPreview()}\n          <article class="quiet-card rest-card rest-landing-card"'), 'Rest should not duplicate the compact live preview before the full Return Card');
 assert(html.includes('field.input.value = guidedInput.value;'), 'Guided inline edits should update the existing overview input values');
 assert(html.includes('writeLocalValue(field.storageKey, guidedInput.value);'), 'Guided inline edits should save through the existing five storage keys');
-assert(html.includes('I have enough to hold this return.'), 'Rest should keep the enough-to-hold soft landing copy');
-assert(html.includes('You can stop here. Luna will keep the thread warm until you come back.'), 'Rest should include short soft-landing permission copy');
-assert(html.includes('<span class="label">Return Card</span>'), 'Rest should include Return Card framing');
-assert(html.includes('A small place to resume.'), 'Rest Return Card should feel like a useful held return point');
-assert(html.includes('Luna gathered the thread into one held point.'), 'Rest Return Card should say Luna gathered the words into a return point');
-assert(html.includes('When you come back, begin with the lantern.'), 'Rest should include a clear resume cue');
+assert(html.includes('I have enough to hold this return.'), 'Rest may keep a small arrival line that does not compete with the main artifact');
+assert(html.includes('return-card-artifact'), 'Rest should use one composed Return Card artifact');
+assert(html.includes('return-card-main-cue'), 'synthesized cue should be the main paragraph inside the artifact');
+assert(html.includes('return-card-lantern-focus'), 'Rest should emphasize The lantern/nextAction as the clearest resume point');
+assert(html.includes('Held details'), 'the other Return Card values should be quiet held details inside the same artifact');
+assert(html.includes('return-card-cue-relief'), 'relief line should close the same composed artifact');
+assert(!html.includes('You can stop here. Luna will keep the thread warm until you come back.'), 'Rest should remove redundant soft-landing panel copy');
+assert(!html.includes("${renderLunaInsight('rest')}"), 'Rest should not add a separate Luna note card competing with the artifact');
+assert(!html.includes('rest-held-words return-card'), 'Rest should not render a second separate full Return Card panel');
 for (const returnCardLabel of ['Returning to', 'The thread', 'The lantern', 'Waiting outside the gate', 'What changed']) {
   assert(html.includes(returnCardLabel), `Rest Return Card should include label: ${returnCardLabel}`);
 }
