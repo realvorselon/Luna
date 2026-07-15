@@ -1167,6 +1167,31 @@
       color: rgb(216 224 246 / 78%);
     }
 
+
+
+    .return-cue-card {
+      gap: 12px;
+      background:
+        linear-gradient(180deg, rgb(223 200 137 / 10%), rgb(28 38 64 / 88%));
+      border-color: rgb(223 200 137 / 24%);
+    }
+
+    .return-cue-card h3 {
+      max-width: 34rem;
+      color: #fbf4e2;
+    }
+
+    .return-cue-card p {
+      max-width: 42rem;
+      color: rgb(235 239 255 / 82%);
+    }
+
+    .return-cue-relief {
+      margin-top: 2px;
+      color: rgb(244 232 196 / 86%);
+      font-weight: 650;
+    }
+
     .return-card-list {
       display: grid;
       gap: 10px;
@@ -1914,6 +1939,21 @@
     };
 
 
+
+    const getReturnCardSynthesis = () => window.LunaReturnGuidance.buildReturnCue(getGuidanceContext());
+
+    const renderReturnSynthesis = () => {
+      const synthesis = getReturnCardSynthesis();
+      return `
+          <article class="quiet-card rest-card return-cue-card" aria-label="When you return">
+            <span class="label">${escapeHtml(synthesis.title)}</span>
+            <h3>Begin here.</h3>
+            <p>${escapeHtml(synthesis.cue)}</p>
+            <p class="return-cue-relief">${escapeHtml(synthesis.relief)}</p>
+          </article>
+      `;
+    };
+
     const liveReturnCardRows = [
       ['projectName', 'Returning to', getProjectName],
       ['currentGoal', 'The thread', getCurrentGoal],
@@ -2191,6 +2231,7 @@
             <p>You can stop here. Luna will keep the thread warm until you come back.</p>
           </article>
           ${renderLunaInsight('rest')}
+          ${renderReturnSynthesis()}
           <article class="quiet-card rest-held-words return-card">
             <span class="label">Return Card</span>
             <h3>A small place to resume.</h3>

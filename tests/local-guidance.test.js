@@ -2,6 +2,33 @@ const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const guidance = require('../prototype-guidance.js');
 
+
+const returnCue = guidance.buildReturnCue({
+  projectName: 'Luna-forge',
+  currentGoal: 'make Rest useful',
+  nextAction: 'check the Rest card',
+  setAside: 'Extra polish ideas',
+  recordChange: 'Added synthesis.'
+});
+assert.equal(returnCue.title, 'When you return');
+assert.match(returnCue.cue, /return to Luna-forge/);
+assert.match(returnCue.cue, /make Rest useful/);
+assert.match(returnCue.cue, /starting with check the Rest card/);
+assert.match(returnCue.cue, /Extra polish ideas can wait outside the gate/);
+assert.equal(returnCue.relief, 'The lantern is enough. You do not have to hold the whole thing at once.');
+
+const fallbackCue = guidance.buildReturnCue({
+  projectName: 'Name the thing you want to return to.',
+  currentGoal: 'What are you trying to make easier?',
+  nextAction: 'What is one small next step?',
+  setAside: 'What can wait while you return?',
+  recordChange: 'What changed, even a little?'
+});
+assert.match(fallbackCue.cue, /return to this return/);
+assert.match(fallbackCue.cue, /starting with one small visible step/);
+assert.match(fallbackCue.cue, /the extra noise can wait outside the gate/);
+assert.doesNotMatch(fallbackCue.cue, /Name the thing you want to return to|What is one small next step|What can wait while you return|What are you trying to make easier/);
+
 const base = {
   projectName: 'Luna',
   currentGoal: 'Clarify the opening threshold.',
@@ -88,8 +115,8 @@ const roadmap = fs.readFileSync('ROADMAP.md', 'utf8');
 const changelog = fs.readFileSync('CHANGELOG.md', 'utf8');
 const project = JSON.parse(fs.readFileSync('project.json', 'utf8'));
 assert(state.startsWith('# State'), 'STATE.md should begin with the # State heading');
-const transitionTrail = 'This was a focused opening threshold presentation pass that made Luna’s first screen quieter and more ceremonial, reducing repeated explanation while keeping Return gently as the clear moonlit gate into the local-only return flow.';
-const transitionNextStep = 'Human mobile test of whether the opening threshold feels inviting without over-explaining.';
+const transitionTrail = 'This was a focused v0.1 Return Script slice that made Luna synthesize the five existing local answers into a useful “When you return” cue at Rest, so the Return Card feels like Luna shaped the user’s pieces into one clear place to begin instead of only repeating stored fields.';
+const transitionNextStep = 'Human mobile test of whether the Rest return cue feels useful enough to resume from.';
 for (const trail of [state, roadmap, changelog]) {
   assert(trail.includes('focused opening threshold presentation pass'), 'project trail should record the focused opening threshold pass');
   assert(trail.includes('opening threshold presentation pass'), 'project trail should name the focused opening threshold pass');
@@ -108,6 +135,12 @@ assert.equal(project.nextStep, transitionNextStep);
 assert.equal(project.nextSuggestedStep, transitionNextStep);
 assert(!/Math\.random\s*\(/.test(js), 'guidance must not use Math.random');
 assert(!/\bfetch\s*\(/.test(html + js), 'local guidance must not call fetch');
+assert(html.includes('return-cue-card'), 'Rest includes a synthesized return cue section');
+assert(html.includes('const getReturnCardSynthesis = () => window.LunaReturnGuidance.buildReturnCue(getGuidanceContext());'), 'Rest synthesis should use deterministic local guidance helper');
+assert(html.includes('const renderReturnSynthesis = () => {'), 'Rest synthesis should render locally');
+assert(html.includes('${renderReturnSynthesis()}'), 'Rest should include synthesized cue before the full Return Card');
+assert(html.includes('When you return'), 'synthesized Rest cue should use useful section title');
+assert((html + js).includes('The lantern is enough. You do not have to hold the whole thing at once.'), 'burden-reducing line remains present');
 assert(html.includes('Edit Luna’s current project'), 'overview should include a clear editing-area heading');
 assert(html.includes('opening-moonrise'), 'opening threshold should foreground the Luna/moon title area');
 assert(html.includes('opening-gate'), 'opening threshold should include the CSS-only garden-gate press-start direction');
