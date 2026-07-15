@@ -2578,7 +2578,7 @@
       restoreNextActionEditorToOverview();
 
       guidedBackButton.hidden = guidedTransitionPending || guidedStageIndex === 0;
-      guidedForwardButton.hidden = false;
+      guidedForwardButton.hidden = !guidedTransitionPending && guidedStageIndex === 0 && guidedPlaceStepIndex === 0;
       guidedForwardButton.textContent = guidedTransitionPending ? 'Continue' : (guidedStageIndex === guidedStages.length - 1 ? 'Return to Luna' : 'Continue');
     };
 

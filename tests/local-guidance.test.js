@@ -126,6 +126,7 @@ assert.deepEqual(project.statusHistory[0], {
   note: transitionTrail
 }, 'new statusHistory entry should keep the existing object shape');
 assert.equal(project.currentGoal, 'Rest after the Guided Return response-transition pass.');
+assert.equal(project.currentMode.name, 'Rest');
 assert.equal(project.currentMode.value, 'Rest');
 assert.equal(project.currentMode.description, 'Luna is resting after a focused Guided Return response-transition pass.');
 assert.equal(project.currentMode.whyItMatters, 'The Guided Return flow now separates asking from receiving, so each answer can be placed into the Return Card without crowding the question screen.');
@@ -211,7 +212,10 @@ assert(!html.includes("${renderGuidedEditableField('projectName')}\n            
 assert(html.includes('data-guided-place-continue'), 'Find your place should include a local internal Continue control');
 assert(html.includes('data-guided-place-back'), 'Find your place should include a local internal Back control');
 assert(html.includes('guidedBackButton.hidden = guidedTransitionPending || guidedStageIndex === 0;'), 'main back button should stay hidden inside Find your place and receiving transitions');
+assert(html.includes('guidedForwardButton.hidden = !guidedTransitionPending && guidedStageIndex === 0 && guidedPlaceStepIndex === 0;'), 'main forward button should hide only on the first Find your place question to avoid duplicate Continue controls');
+assert(!html.includes('guidedForwardButton.hidden = false;'), 'main forward button should not stay visible on the first Find your place question');
 assert(html.includes("guidedForwardButton.textContent = guidedTransitionPending ? 'Continue'"), 'main forward button should become Continue during receiving transitions');
+assert(!/guidedForwardButton\.hidden\s*=\s*guidedStageIndex === 0/.test(html), 'main forward button should show on currentGoal and later stages instead of hiding across all Find your place');
 assert(html.includes("${renderGuidedEditableField('nextAction')}"), 'Choose should include editable One Next Action');
 assert(html.includes("${renderGuidedEditableField('setAside')}"), 'Set Aside should include editable Set Aside / Ignore For Now');
 assert(html.includes("${renderGuidedEditableField('recordChange')}"), 'Record should include editable Record the Change');

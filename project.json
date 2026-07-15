@@ -848,6 +848,7 @@
     "Then rest before adding another dashboard section, feature, or planning note."
   ],
   "currentMode": {
+    "name": "Rest",
     "value": "Rest",
     "description": "Luna is resting after a focused Guided Return response-transition pass.",
     "whyItMatters": "The Guided Return flow now separates asking from receiving, so each answer can be placed into the Return Card without crowding the question screen."
