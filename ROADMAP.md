@@ -1,5 +1,11 @@
 # Roadmap
 
+## 2026-07-16 — Guided Return de-clutter pass
+
+- This was a focused Guided Return de-clutter pass that protected the simpler inline-response flow by keeping question screens focused on one question, one answer, one small Luna response, and one next action, while leaving the gathered summary for Rest.
+- Luna is at Rest after a focused Guided Return de-clutter pass.
+- Next suggested step: Human mobile test of whether Guided Return question screens feel clean, quiet, and focused before Rest gathers the answers.
+
 ## 2026-07-16 — Guided Return flow simplification pass
 
 - This was a focused Guided Return flow simplification pass that removed separate receiving interstitials and replaced them with small inline Luna responses, so each question screen now holds the ask, answer, response, and next step without adding extra screens.
