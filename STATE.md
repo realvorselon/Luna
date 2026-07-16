@@ -1,10 +1,10 @@
 # State
 
-## 2026-07-16 — Guided Return visual foundation pass
+## 2026-07-16 — Guided Return flow simplification pass
 
-- This was a focused Guided Return visual foundation pass that made the active question and receiving moments feel more like one moonlit return space instead of stacked form panels, while preserving the local-only six-stage flow and Return Card behavior.
-- Luna is at Rest after a focused Guided Return visual foundation pass.
-- Next suggested step: Human mobile test of whether Guided Return now feels like one calm moonlit return space.
+- This was a focused Guided Return flow simplification pass that removed separate receiving interstitials and replaced them with small inline Luna responses, so each question screen now holds the ask, answer, response, and next step without adding extra screens.
+- Luna is at Rest after a focused Guided Return flow simplification pass.
+- Next suggested step: Human mobile test of whether Guided Return feels lighter with inline Luna responses and no between-question screens.
 
 ## 2026-07-16 — Guided Return hierarchy polish pass
 
