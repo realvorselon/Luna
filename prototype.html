@@ -2220,7 +2220,7 @@
 
     const renderGuidedReceivingTransition = () => `
       <article class="quiet-card guided-receiving-screen" aria-label="Guided Return receiving step">
-        <span class="label">Luna is holding this</span>
+        <span class="label">Return Card</span>
         <h3>${escapeHtml(getGuidedReceivingMoment(guidedTransitionFieldKey, guidedEditableFields[guidedTransitionFieldKey]?.input.value || ''))}</h3>
         <p>${escapeHtml(getGuidedReceivingPlacement(guidedTransitionFieldKey))}</p>
       </article>
@@ -2576,8 +2576,8 @@
 
     const renderGuidedStageContent = () => {
       const stage = guidedStages[guidedStageIndex];
-      guidedPosition.textContent = `Stage ${guidedStageIndex + 1} of ${guidedStages.length}`;
-      guidedStageTitle.textContent = guidedTransitionPending ? 'Luna is holding this' : stage.title;
+      guidedPosition.textContent = guidedTransitionPending ? 'Luna is receiving' : `Stage ${guidedStageIndex + 1} of ${guidedStages.length}`;
+      guidedStageTitle.textContent = guidedTransitionPending ? 'Luna is receiving this' : stage.title;
       guidedStageIntro.textContent = guidedTransitionPending ? 'Luna is placing your answer into the Return Card.' : stage.intro;
       guidedStagePanel.dataset.stageTone = guidedTransitionPending ? 'receiving' : (stage.tone || 'quiet');
       guidedStageBody.innerHTML = guidedTransitionPending ? renderGuidedReceivingTransition() : stage.render();
