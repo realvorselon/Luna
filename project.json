@@ -2,6 +2,10 @@
   "status": "Rest",
   "statusHistory": [
     {
+      "date": "2026-07-16",
+      "note": "This was a focused Guided Return hierarchy polish pass that made receiving screens feel like intentional between-question moments instead of repeated stages, reduced duplicate “holding” language, clarified where each answer goes in the Return Card, and hid opening-threshold scaffolding during Guided Return."
+    },
+    {
       "date": "2026-07-15",
       "note": "This was a focused Guided Return response-transition pass that moved Luna’s answer-receiving moment out of the crowded question card and into a calm deterministic transition between questions, so the mobile flow feels more like Luna asks, receives, places the answer into the Return Card, and then continues."
     },
@@ -698,9 +702,9 @@
       "note": "The project is resting after a good run and ready for one gentle improvement."
     }
   ],
-  "currentGoal": "Rest after the Guided Return response-transition pass.",
-  "lastCompletedRun": "This was a focused Guided Return response-transition pass that moved Luna’s answer-receiving moment out of the crowded question card and into a calm deterministic transition between questions, so the mobile flow feels more like Luna asks, receives, places the answer into the Return Card, and then continues.",
-  "nextStep": "Human mobile test of whether the question → Luna receives → next question rhythm feels calmer and more alive.",
+  "currentGoal": "Rest after the Guided Return hierarchy polish pass.",
+  "lastCompletedRun": "This was a focused Guided Return hierarchy polish pass that made receiving screens feel like intentional between-question moments instead of repeated stages, reduced duplicate “holding” language, clarified where each answer goes in the Return Card, and hid opening-threshold scaffolding during Guided Return.",
+  "nextStep": "Human mobile test of whether receiving screens now feel calm and intentional on mobile.",
   "dashboardGuide": [
     "Welcome starts the path to read through Record the Change before choosing more work.",
     "Status gives a quick snapshot of how the project is doing right now.",
@@ -715,6 +719,7 @@
     "Keep the implementation narrow: opening threshold visual/layout only, with no behavior expansion."
   ],
   "decisionLog": [
+    "2026-07-16: This was a focused Guided Return hierarchy polish pass that made receiving screens feel like intentional between-question moments instead of repeated stages, reduced duplicate “holding” language, clarified where each answer goes in the Return Card, and hid opening-threshold scaffolding during Guided Return.",
     "2026-07-14: This was a focused opening threshold presentation pass that made Luna’s first screen quieter and more ceremonial, reducing repeated explanation while keeping Return gently as the clear moonlit gate into the local-only return flow.",
     "2026-07-14: This was a focused transition coherence pass that kept Luna’s existing local-only loop intact while making the opening, Guided Return stages, Rest, and Return to Luna feel more like one moonlit place gently changing focus.",
     "2026-07-14: This was a focused Guided Return v0.1 stabilization pass that cleaned up project trail structure, reduced copy/crowding risk, and preserved the current local-only return loop where Luna receives each answer, carries it forward, and gathers the pieces into a final Return Card.",
@@ -850,8 +855,8 @@
   "currentMode": {
     "name": "Rest",
     "value": "Rest",
-    "description": "Luna is resting after a focused Guided Return response-transition pass.",
-    "whyItMatters": "The Guided Return flow now separates asking from receiving, so each answer can be placed into the Return Card without crowding the question screen."
+    "description": "Luna is resting after a focused Guided Return hierarchy polish pass.",
+    "whyItMatters": "Guided Return now gives question, receiving, and Rest screens clearer jobs so the mobile flow feels calmer."
   },
-  "nextSuggestedStep": "Human mobile test of whether the question → Luna receives → next question rhythm feels calmer and more alive."
+  "nextSuggestedStep": "Human mobile test of whether receiving screens now feel calm and intentional on mobile."
 }
