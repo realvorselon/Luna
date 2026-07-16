@@ -274,8 +274,11 @@ assert(html.includes("showGuidedReceivingTransition(fieldKey, guidedStageIndex +
 assert(html.includes('clearGuidedReceivingTransition();\n\n      if (guidedStageIndex === 0 && guidedPlaceStepIndex > 0)'), 'Back from normal Guided Return questions should clear stale receiving state before moving');
 const findYourPlaceRender = html.match(/title: 'Find your place',[\s\S]*?render: \(\) => `([\s\S]*?)`\n      \}/)[1];
 assert.equal((findYourPlaceRender.match(/>Continue<\/button>/g) || []).length, 1, 'Find your place step 1 should not render duplicate local Continue controls');
+assert(html.includes('guidedPosition.textContent = guidedTransitionPending ? \'Luna is receiving\' : `Stage ${guidedStageIndex + 1} of ${guidedStages.length}`;'), 'normal question screens should keep Stage X of 6 while receiving screens use a transition label');
+assert(html.includes('guidedStageTitle.textContent = guidedTransitionPending ? \'Luna is receiving this\' : stage.title;'), 'receiving screens should use a calm transition title instead of repeating the question stage title');
 assert(html.includes('guided-receiving-screen'), 'Guided Return should render a dedicated receiving/interstitial screen');
-assert(html.includes('Luna is holding this'), 'receiving screen should use calm holding language');
+assert(html.includes('<span class="label">Return Card</span>'), 'receiving screen should use a quiet Return Card label instead of repeating holding language');
+assert.equal((html.match(/Luna is holding this/g) || []).length, 0, 'receiving screen should avoid duplicate Luna is holding this labels');
 assert(html.includes('Luna is placing your answer into the Return Card.'), 'receiving screen should explain local Return Card placement');
 for (const receivingCopy of [
   'Okay. Luna will help you come back to',
