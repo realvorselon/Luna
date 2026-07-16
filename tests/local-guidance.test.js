@@ -113,28 +113,30 @@ const project = JSON.parse(fs.readFileSync('project.json', 'utf8'));
 assert(state.startsWith('# State'), 'STATE.md should begin with the # State heading');
 const transitionTrail = 'This was a focused Guided Return response-transition pass that moved Luna’s answer-receiving moment out of the crowded question card and into a calm deterministic transition between questions, so the mobile flow feels more like Luna asks, receives, places the answer into the Return Card, and then continues.';
 const hierarchyTrail = 'This was a focused Guided Return hierarchy polish pass that made receiving screens feel like intentional between-question moments instead of repeated stages, reduced duplicate “holding” language, clarified where each answer goes in the Return Card, and hid opening-threshold scaffolding during Guided Return.';
-const hierarchyNextStep = 'Human mobile test of whether receiving screens now feel calm and intentional on mobile.';
+const visualTrail = 'This was a focused Guided Return visual foundation pass that made the active question and receiving moments feel more like one moonlit return space instead of stacked form panels, while preserving the local-only six-stage flow and Return Card behavior.';
+const visualNextStep = 'Human mobile test of whether Guided Return now feels like one calm moonlit return space.';
 for (const trailText of [state, roadmap, changelog]) {
-  assert(trailText.includes('Guided Return hierarchy polish pass'), 'project trail should record the focused hierarchy polish pass');
-  assert(trailText.includes('intentional between-question moments instead of repeated stages'), 'project trail should name the receiving hierarchy problem');
-  assert(trailText.includes('hid opening-threshold scaffolding during Guided Return'), 'project trail should capture the footer hierarchy polish');
+  assert(trailText.includes('Guided Return visual foundation pass'), 'project trail should record the focused visual foundation pass');
+  assert(trailText.includes('one moonlit return space instead of stacked form panels'), 'project trail should name the visual foundation problem');
+  assert(trailText.includes('local-only six-stage flow and Return Card behavior'), 'project trail should preserve the behavior boundary');
   assert(trailText.includes('Rest'), 'project trail should keep Luna at Rest');
+  assert(trailText.includes('Guided Return hierarchy polish pass'), 'project trail should preserve the hierarchy polish context');
   assert(trailText.includes('Guided Return response-transition pass'), 'project trail should preserve the response-transition context');
   assert(trailText.includes(transitionTrail), 'project trail should preserve the previous response-transition run');
-  assert(trailText.includes(hierarchyNextStep), 'project trail should point to the hierarchy polish human test');
+  assert(trailText.includes(visualNextStep), 'project trail should point to the visual foundation human test');
 }
 assert.deepEqual(project.statusHistory[0], {
   date: '2026-07-16',
-  note: hierarchyTrail
+  note: visualTrail
 }, 'new statusHistory entry should keep the existing object shape');
-assert.equal(project.currentGoal, 'Rest after the Guided Return hierarchy polish pass.');
+assert.equal(project.currentGoal, 'Rest after the Guided Return visual foundation pass.');
 assert.equal(project.currentMode.name, 'Rest');
 assert.equal(project.currentMode.value, 'Rest');
-assert.equal(project.currentMode.description, 'Luna is resting after a focused Guided Return hierarchy polish pass.');
-assert.equal(project.currentMode.whyItMatters, 'Guided Return now gives question, receiving, and Rest screens clearer jobs so the mobile flow feels calmer.');
-assert.equal(project.lastCompletedRun, hierarchyTrail);
-assert.equal(project.nextStep, hierarchyNextStep);
-assert.equal(project.nextSuggestedStep, hierarchyNextStep);
+assert.equal(project.currentMode.description, 'Luna is resting after a focused Guided Return visual foundation pass.');
+assert.equal(project.currentMode.whyItMatters, 'Guided Return now feels more like one moonlit return space while preserving the local-only six-stage flow.');
+assert.equal(project.lastCompletedRun, visualTrail);
+assert.equal(project.nextStep, visualNextStep);
+assert.equal(project.nextSuggestedStep, visualNextStep);
 assert(!/Math\.random\s*\(/.test(js), 'guidance must not use Math.random');
 assert(!/\bfetch\s*\(/.test(html + js), 'local guidance must not call fetch');
 assert(!html.includes('return-cue-card'), 'Rest should no longer render a separate synthesized cue card panel');
@@ -494,6 +496,11 @@ fakeElements.get('luna-opening').hidden = false;
 assert.doesNotThrow(() => fakeElements.get('show-overview-button').listeners.click(), 'Open full overview click handler should not throw');
 
 assert(css.includes('.guided-receiving-screen'), 'receiving screen should have dedicated calm styling');
+assertRuleContains('.guided-question-card', ['padding: 0', 'background: transparent', 'border: 0'], 'question card should avoid nested card framing');
+assertRuleContains('.guided-answer-space', ['background: rgb(17 26 48 / 46%)', 'border: 1px solid rgb(205 213 244 / 9%)'], 'answer space should be integrated and quiet');
+assertRuleContains('.guided-answer-space-kicker', ['color: rgb(211 221 255 / 58%)'], 'Your answer label should be visually quiet');
+assertRuleContains('.guided-receiving-screen', ['justify-items: center', 'text-align: center', 'radial-gradient(ellipse at 50% 45%, rgb(244 209 122 / 12%)'], 'receiving screen should feel centered and lantern-lit');
+assertRuleContains('.guided-primary-actions .guided-control:not([hidden])', ['border-color: rgb(244 209 122 / 48%)', '0 0 0 5px rgb(223 200 137 / 5%)'], 'Continue should keep primary lantern hierarchy');
 const longUnbrokenNextAction = 'ReturnToLunaWithoutSpaces'.repeat(8).slice(0, 140);
 assert.equal(longUnbrokenNextAction.length, 140, 'regression value should fill the One Next Action maxlength with no spaces');
 const longActionGuidance = guidance.buildReturnGuidance({ ...base, nextAction: longUnbrokenNextAction });
@@ -512,7 +519,7 @@ function assertRuleContains(selector, properties) {
 assertRuleContains('.guided-return-view', ['min-width: 0', 'max-width: 100%']);
 assertRuleContains('.guided-shell', ['grid-template-rows: auto minmax(0, auto) auto']);
 assert(css.includes('.guided-shell,\n    .guided-app-shell') && css.includes('min-width: 0') && css.includes('max-width: 100%'), 'guided shell/app shell containment rules should be present');
-assertRuleContains('.guided-stage-panel', ['display: grid', 'grid-template-rows: auto auto auto minmax(0, auto)', 'min-width: 0', 'max-width: 100%', 'min-block-size: clamp(420px, 48svh, 500px)', 'overflow: visible']);
+assertRuleContains('.guided-stage-panel', ['display: grid', 'grid-template-rows: auto auto auto minmax(0, auto)', 'width: min(100%, 680px)', 'min-width: 0', 'max-width: 100%', 'min-block-size: clamp(420px, 48svh, 500px)', 'overflow: visible']);
 assertRuleContains('.guided-stage-body', ['align-content: start', 'min-width: 0', 'max-width: 100%', 'min-block-size: 0', 'overflow: visible']);
 
 assertRuleContains('.live-return-card-preview', ['display: grid', 'max-width: 100%', 'padding: 8px', 'background: rgb(10 17 34 / 18%)', 'border: 1px solid rgb(189 200 238 / 10%)']);
@@ -556,14 +563,14 @@ assert(html.includes('Leave with a Return Card'), 'opening should name the pract
 assert(html.includes('Answer a few plain questions. Luna turns them into one Return Card.'), 'Guided Return shell should frame the stages as one calm path');
 assertRuleContains('.try-editing-card', ['background: rgb(25 34 58 / 94%)', 'border: 1px solid rgb(196 205 238 / 22%)']);
 assertRuleContains('.edit-field input', ['background: rgb(35 45 72 / 96%)', 'box-shadow: none']);
-assertRuleContains('.guided-return-view', ['linear-gradient(180deg, rgb(13 21 40 / 96%)', 'box-shadow: 0 16px 36px']);
+assertRuleContains('.guided-return-view', ['radial-gradient(ellipse at 50% 12%, rgb(183 194 224 / 7%)', 'linear-gradient(180deg, rgb(13 21 40 / 96%)', 'box-shadow: 0 18px 42px']);
 assertRuleContains('.guided-return-view::before', ['linear-gradient(180deg, rgb(183 194 224 / 8%)', 'pointer-events: none']);
 assertRuleContains('.guided-return-view::after', ['clip-path: polygon(47% 0, 53% 0, 67% 100%, 33% 100%)', 'pointer-events: none']);
 assertRuleContains('.guided-shell', ['position: relative', 'z-index: 1']);
-assertRuleContains('.guided-stage-panel', ['linear-gradient(180deg, rgb(20 29 52 / 90%)']);
+assertRuleContains('.guided-stage-panel', ['width: min(100%, 680px)', 'radial-gradient(ellipse at 50% 12%, rgb(244 209 122 / 6%)', 'linear-gradient(180deg, rgb(20 29 52 / 90%)']);
 assertRuleContains('.guided-stage-panel[data-stage-tone="choose"]', ['border-color: rgb(223 200 137 / 22%)']);
-assert.doesNotMatch(css, /\.try-editing-card\s*\{[\s\S]*?radial-gradient[\s\S]*?\}/, 'editing panel should not use radial glow gradients');
-assert.doesNotMatch(css, /\.guided-return-view\s*\{[\s\S]*?radial-gradient[\s\S]*?\}/, 'guided shell should not use radial glow gradients');
+assertRuleContains('.try-editing-card', ['background: rgb(25 34 58 / 94%)', 'border: 1px solid rgb(196 205 238 / 22%)']);
+assertRuleContains('.guided-shell-header', ['justify-items: center', 'text-align: center', 'border-bottom: 0']);
 assertRuleContains('.edit-field input', ['background: rgb(35 45 72 / 96%)']);
 
 const guidedMotionCss = css.match(/\.guided-stage-panel\.is-leaving-forward[\s\S]*?@media \(prefers-reduced-motion: reduce\)/)[0];

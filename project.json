@@ -3,6 +3,10 @@
   "statusHistory": [
     {
       "date": "2026-07-16",
+      "note": "This was a focused Guided Return visual foundation pass that made the active question and receiving moments feel more like one moonlit return space instead of stacked form panels, while preserving the local-only six-stage flow and Return Card behavior."
+    },
+    {
+      "date": "2026-07-16",
       "note": "This was a focused Guided Return hierarchy polish pass that made receiving screens feel like intentional between-question moments instead of repeated stages, reduced duplicate “holding” language, clarified where each answer goes in the Return Card, and hid opening-threshold scaffolding during Guided Return."
     },
     {
@@ -702,9 +706,9 @@
       "note": "The project is resting after a good run and ready for one gentle improvement."
     }
   ],
-  "currentGoal": "Rest after the Guided Return hierarchy polish pass.",
-  "lastCompletedRun": "This was a focused Guided Return hierarchy polish pass that made receiving screens feel like intentional between-question moments instead of repeated stages, reduced duplicate “holding” language, clarified where each answer goes in the Return Card, and hid opening-threshold scaffolding during Guided Return.",
-  "nextStep": "Human mobile test of whether receiving screens now feel calm and intentional on mobile.",
+  "currentGoal": "Rest after the Guided Return visual foundation pass.",
+  "lastCompletedRun": "This was a focused Guided Return visual foundation pass that made the active question and receiving moments feel more like one moonlit return space instead of stacked form panels, while preserving the local-only six-stage flow and Return Card behavior.",
+  "nextStep": "Human mobile test of whether Guided Return now feels like one calm moonlit return space.",
   "dashboardGuide": [
     "Welcome starts the path to read through Record the Change before choosing more work.",
     "Status gives a quick snapshot of how the project is doing right now.",
@@ -855,8 +859,8 @@
   "currentMode": {
     "name": "Rest",
     "value": "Rest",
-    "description": "Luna is resting after a focused Guided Return hierarchy polish pass.",
-    "whyItMatters": "Guided Return now gives question, receiving, and Rest screens clearer jobs so the mobile flow feels calmer."
+    "description": "Luna is resting after a focused Guided Return visual foundation pass.",
+    "whyItMatters": "Guided Return now feels more like one moonlit return space while preserving the local-only six-stage flow."
   },
-  "nextSuggestedStep": "Human mobile test of whether receiving screens now feel calm and intentional on mobile."
+  "nextSuggestedStep": "Human mobile test of whether Guided Return now feels like one calm moonlit return space."
 }
