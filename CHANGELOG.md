@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-07-16
+
+### Visible-language cleanup pass
+
+- This was a focused visible-language cleanup pass that replaced prototype-like labels with plainer Luna-facing questions and a simpler “Start here next time” final handoff, while preserving the simplified inline-response flow and the same five saved values.
+- Updated opening, question, overview, and final handoff copy without changing saved values, local-only behavior, navigation order, storage keys, or the simplified inline-response flow.
+- Next suggested step: Human mobile test of whether the plainer Luna-facing language feels warm, clear, and less like a project-management form.
+
 ## 2026-07-16 — Guided Return de-clutter pass
 
 - This was a focused Guided Return de-clutter pass that protected the simpler inline-response flow by keeping question screens focused on one question, one answer, one small Luna response, and one next action, while leaving the gathered summary for Rest.

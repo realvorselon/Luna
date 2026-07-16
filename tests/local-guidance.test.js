@@ -10,17 +10,17 @@ const returnCue = guidance.buildReturnCue({
   setAside: 'Extra polish ideas',
   recordChange: 'Added synthesis.'
 });
-assert.equal(returnCue.title, 'When you return');
+assert.equal(returnCue.title, 'Start here next time');
 assert.equal(returnCue.cue, 'When you come back, return to Luna-forge by starting with check the Rest card. Keep close to the thread: make Rest useful. Extra polish ideas can wait outside the gate for now.');
 assert.match(returnCue.cue, /Extra polish ideas can wait outside the gate/);
-assert.equal(returnCue.relief, 'Begin with the lantern. You do not have to carry the whole unfinished thing at once.');
+assert.equal(returnCue.relief, 'Luna kept the thread warm so you do not have to hold everything at once.');
 
 const fallbackCue = guidance.buildReturnCue({
-  projectName: 'What do you want to come back to?',
-  currentGoal: 'What feels hard to pick back up?',
-  nextAction: 'What is the first small move?',
-  setAside: 'What do you not need to carry right now?',
-  recordChange: 'What is clearer now?'
+  projectName: 'What are you coming back to?',
+  currentGoal: 'What makes it hard to restart?',
+  nextAction: 'What is the first small step?',
+  setAside: 'What can wait for now?',
+  recordChange: 'What should Luna remember for next time?'
 });
 assert.equal(fallbackCue.cue, 'When you come back, return to this return by starting with one small visible step. The extra noise can wait outside the gate for now.');
 assert.doesNotMatch(fallbackCue.cue, /Name the thing you want to return to|What is one small next step|What can wait while you return|What are you trying to make easier/);
@@ -112,13 +112,13 @@ const changelog = fs.readFileSync('CHANGELOG.md', 'utf8');
 const project = JSON.parse(fs.readFileSync('project.json', 'utf8'));
 assert(state.startsWith('# State'), 'STATE.md should begin with the # State heading');
 const transitionTrail = 'This was a focused Guided Return response-transition pass that moved Luna’s answer-receiving moment out of the crowded question card and into a calm deterministic transition between questions, so the mobile flow feels more like Luna asks, receives, places the answer into the Return Card, and then continues.';
-const hierarchyTrail = 'This was a focused Guided Return hierarchy polish pass that made receiving screens feel like intentional between-question moments instead of repeated stages, reduced duplicate “holding” language, clarified where each answer goes in the Return Card, and hid opening-threshold scaffolding during Guided Return.';
+const hierarchyTrail = 'This was a focused Guided Return hierarchy polish pass that made receiving screens feel like intentional between-question moments instead of repeated stages, reduced duplicate “holding” language, clarified where each answer goes in the Return Card, and hid opening-threshold scaffolding during A gentle return.';
 const simplificationTrail = 'This was a focused Guided Return flow simplification pass that removed separate receiving interstitials and replaced them with small inline Luna responses, so each question screen now holds the ask, answer, response, and next step without adding extra screens.';
 const simplificationNextStep = 'Human mobile test of whether Guided Return feels lighter with inline Luna responses and no between-question screens.';
-const declutterTrail = 'This was a focused Guided Return de-clutter pass that protected the simpler inline-response flow by keeping question screens focused on one question, one answer, one small Luna response, and one next action, while leaving the gathered summary for Rest.';
-const declutterNextStep = 'Human mobile test of whether Guided Return question screens feel clean, quiet, and focused before Rest gathers the answers.';
+const declutterTrail = 'This was a focused visible-language cleanup pass that replaced prototype-like labels with plainer Luna-facing questions and a simpler “Start here next time” final handoff, while preserving the simplified inline-response flow and the same five saved values.';
+const declutterNextStep = 'Human mobile test of whether the plainer Luna-facing language feels warm, clear, and less like a project-management form.';
 for (const trailText of [state, roadmap, changelog]) {
-  assert(trailText.includes('Guided Return de-clutter pass'), 'project trail should record the focused de-clutter pass');
+  assert(trailText.includes('visible-language cleanup pass'), 'project trail should record the focused de-clutter pass');
   assert(trailText.includes(declutterTrail), 'project trail should include the de-clutter summary wording');
   assert(trailText.includes('Guided Return flow simplification pass'), 'project trail should preserve the focused flow simplification pass');
   assert(trailText.includes('removed separate receiving interstitials'), 'project trail should name the removed interstitial problem');
@@ -134,38 +134,51 @@ assert.deepEqual(project.statusHistory[0], {
   date: '2026-07-16',
   note: declutterTrail
 }, 'new statusHistory entry should keep the existing object shape');
-assert.equal(project.currentGoal, 'Rest after the Guided Return de-clutter pass.');
+assert.equal(project.currentGoal, 'Rest after the visible-language cleanup pass.');
 assert.equal(project.currentMode.name, 'Rest');
 assert.equal(project.currentMode.value, 'Rest');
-assert.equal(project.currentMode.description, 'Luna is resting after a focused Guided Return de-clutter pass.');
-assert.equal(project.currentMode.whyItMatters, 'Guided Return question screens now stay focused on the current answer, while Rest gathers the five answers into the final handoff.');
+assert.equal(project.currentMode.description, 'Luna is resting after a focused visible-language cleanup pass.');
+assert.equal(project.currentMode.whyItMatters, 'The app now asks plainer Luna-facing questions and ends with a simpler place to start next time while preserving the same saved values and inline-response flow.');
 assert.equal(project.lastCompletedRun, declutterTrail);
 assert.equal(project.nextStep, declutterNextStep);
 assert.equal(project.nextSuggestedStep, declutterNextStep);
+
+const visiblePrototypeText = html
+  .replace(/<style>[\s\S]*?<\/style>/g, '')
+  .replace(/<script>[\s\S]*?<\/script>/g, '')
+  .replace(/<[^>]+>/g, ' ')
+  .replace(/\s+/g, ' ');
+for (const reducedVisibleTerm of ['opening threshold', 'Current goal', 'One Next Action', 'Set Aside / Ignore For Now', 'Record the Change', 'artifact']) {
+  assert(!visiblePrototypeText.includes(reducedVisibleTerm), `${reducedVisibleTerm} should be removed from visible prototype copy`);
+}
+for (const finalLabel of ['Coming back to', 'Why it felt hard', 'First step', 'Can wait', 'Remember for next time']) {
+  assert(html.includes(finalLabel), `final summary should use plain label: ${finalLabel}`);
+}
+
 assert(!/Math\.random\s*\(/.test(js), 'guidance must not use Math.random');
 assert(!/\bfetch\s*\(/.test(html + js), 'local guidance must not call fetch');
 assert(!html.includes('return-cue-card'), 'Rest should no longer render a separate synthesized cue card panel');
 assert(html.includes('const getReturnCardSynthesis = () => window.LunaReturnGuidance.buildReturnCue(getGuidanceContext());'), 'Rest synthesis should use deterministic local guidance helper');
 assert(html.includes('const renderComposedReturnCard = () => {'), 'Rest synthesis should render inside the composed Return Card artifact');
 assert(html.includes('${renderComposedReturnCard()}'), 'Rest should render one composed Return Card artifact');
-assert(html.includes('When you return'), 'synthesized Rest cue should use useful section title');
-assert((html + js).includes('Begin with the lantern. You do not have to carry the whole unfinished thing at once.'), 'burden-reducing line remains present');
-assert(html.includes('Edit Luna’s current project'), 'overview should include a clear editing-area heading');
+assert(html.includes('Start here next time'), 'final handoff should use plain section title');
+assert((html + js).includes('Luna kept the thread warm so you do not have to hold everything at once.'), 'burden-reducing line remains present');
+assert(html.includes('Edit Luna’s saved pieces'), 'overview should include a clear editing-area heading');
 assert(html.includes('opening-moonrise'), 'opening threshold should foreground the Luna/moon title area');
 assert(html.includes('opening-gate'), 'opening threshold should include the CSS-only garden-gate press-start direction');
 assert(html.includes('opening-payoff-preview'), 'opening should include a static payoff preview');
 assert(html.includes('aria-label="What Luna gives back"'), 'payoff preview should be labelled as what Luna gives back');
-for (const payoffCopy of ['Find the thread', 'Choose the lantern', 'Leave with a Return Card']) {
+for (const payoffCopy of ['Find the thread', 'Choose the first step', 'Leave with a place to start']) {
   assert(html.includes(payoffCopy), `opening payoff preview should include: ${payoffCopy}`);
 }
 const payoffPreviewMarkup = html.match(/<div class="opening-payoff-preview"[\s\S]*?<div class="opening-actions"/)[0];
 assert(!/<input|<button|id="opening-payoff/i.test(payoffPreviewMarkup), 'payoff preview should be static explanatory copy, not new user data');
 assert(!html.includes('<div class="opening-gate" aria-hidden="true"></div>'), 'opening gate should not be an empty aria-hidden decorative sibling');
 assert(/<div class="opening-gate">\s*<button class="guided-control opening-primary" type="button" id="begin-guided-return-button">Return gently<\/button>\s*<\/div>/.test(html), 'opening gate should wrap the real Return gently button');
-for (const openingAction of ['Return gently', 'Shape this return', 'Open full overview']) {
+for (const openingAction of ['Return gently', 'Answer a few questions', 'Edit the saved pieces']) {
   assert(html.includes(openingAction), `${openingAction} should remain present`);
 }
-assert(html.includes('These five answers help Luna make a Return Card: what you are returning to, what feels hard, the first small move, what can wait, and what is clearer'), 'overview should explain what the editable context updates');
+assert(html.includes('These five answers help Luna keep one clear place to begin again'), 'overview should explain what the editable context updates');
 assert(html.includes('They stay only in this browser.'), 'overview should explain local-only storage');
 for (const id of ['project-name-input', 'current-goal-input', 'next-action-input', 'set-aside-input', 'record-change-input']) {
   assert(html.includes(`id="${id}"`), `${id} should remain present`);
@@ -192,7 +205,7 @@ assert.deepEqual(projectStorageKeys, [
 ], 'the existing five project-edit keys should remain the only saved project keys');
 assert(!/localStorage\.(?:setItem|removeItem)\(\s*['"]luna\.prototype\./.test(html), 'localStorage project edits should use the declared five key constants, not hidden extra key literals');
 const guidedStageTitles = [...html.matchAll(/title: '([^']+)'/g)].map((match) => match[1]);
-for (const invitation of ['What do you want to come back to?', 'What feels hard to pick back up?', 'What is the first small move?', 'What do you not need to carry right now?', 'What is clearer now?']) {
+for (const invitation of ['What are you coming back to?', 'What makes it hard to restart?', 'What is the first small step?', 'What can wait for now?', 'What should Luna remember for next time?']) {
   assert(html.includes(invitation), `${invitation} invitation default should remain present`);
   assert(js.includes(invitation), `${invitation} guidance fallback should remain present`);
 }
@@ -200,20 +213,20 @@ for (const oldInvitation of ['Name the thing you want to return to.', 'What are 
   assert(!html.includes(oldInvitation), `${oldInvitation} old placeholder-feeling wording should be removed from visible prototype copy`);
   assert(!js.includes(oldInvitation), `${oldInvitation} old placeholder-feeling wording should be removed from guidance defaults`);
 }
-assert.deepEqual(guidedStageTitles, ['Find your place', 'Remember', 'Choose', 'Set Aside', 'Record', 'Rest'], 'Guided Return stage order should stay fixed');
+assert.deepEqual(guidedStageTitles, ['Find your place', 'Remember', 'Choose', 'Set Aside', 'Record', 'Rest'], 'A gentle return stage order should stay fixed');
 assert(!html.includes("showGuidedReceivingTransition('projectName', 0, 1);"), 'projectName Continue should no longer route through a receiving interstitial');
 assert(!html.includes('showGuidedReceivingTransition(fieldKey, guidedStageIndex + 1, guidedPlaceStepIndex);'), 'question Continue should no longer pass through receiving before the next stage');
 assert(!html.includes("guidedTransitionPending ? 'Continue'"), 'receiving interstitial should no longer provide a manual Continue button');
-assert.equal(guidedStageTitles[0], 'Find your place', 'the first Guided Return stage should still say Find your place');
+assert.equal(guidedStageTitles[0], 'Find your place', 'the first A gentle return stage should still say Find your place');
 
 for (const questionCopy of [
-  'What do you want to come back to?',
-  'What feels hard to pick back up?',
-  'What is the first small move?',
-  'What do you not need to carry right now?',
-  'What is clearer now?'
+  'What are you coming back to?',
+  'What makes it hard to restart?',
+  'What is the first small step?',
+  'What can wait for now?',
+  'What should Luna remember for next time?'
 ]) {
-  assert(html.includes(questionCopy), `Guided Return conversational question copy should include: ${questionCopy}`);
+  assert(html.includes(questionCopy), `A gentle return conversational question copy should include: ${questionCopy}`);
 }
 assert(html.includes("const guidedPlaceSteps = ['projectName', 'currentGoal'];"), 'Find your place should define only the existing project name and current goal internal steps');
 assert(html.includes('${renderGuidedEditableField(getGuidedPlaceFieldKey())}'), 'Find your place should render only the active internal editable field');
@@ -224,42 +237,42 @@ assert(html.includes('guidedBackButton.hidden = guidedStageIndex === 0;'), 'main
 assert(html.includes('guidedForwardButton.hidden = guidedStageIndex === 0 && guidedPlaceStepIndex === 0;'), 'main forward button should hide only on the first Find your place question to avoid duplicate Continue controls');
 assert(!html.includes('guidedForwardButton.hidden = false;'), 'main forward button should not stay visible on the first Find your place question');
 assert(html.includes("guidedForwardButton.textContent = guidedStageIndex === guidedStages.length - 1 ? 'Return to Luna'"), 'main forward button should simplify labels without receiving state');
-assert(html.includes("${renderGuidedEditableField('nextAction')}"), 'Choose should include editable One Next Action');
-assert(html.includes("${renderGuidedEditableField('setAside')}"), 'Set Aside should include editable Set Aside / Ignore For Now');
-assert(html.includes("${renderGuidedEditableField('recordChange')}"), 'Record should include editable Record the Change');
+assert(html.includes("${renderGuidedEditableField('nextAction')}"), 'Choose should include editable First step');
+assert(html.includes("${renderGuidedEditableField('setAside')}"), 'Set Aside should include editable Can wait');
+assert(html.includes("${renderGuidedEditableField('recordChange')}"), 'Record should include editable Remember for next time');
 for (const guidedField of ['projectName', 'currentGoal', 'nextAction', 'setAside', 'recordChange']) {
   assert(html.includes('data-guided-field="${fieldKey}"'), 'Guided editable renderer should preserve data-guided-field binding');
 }
 assert(html.includes('<input id="${inputId}" type="text"'), 'Guided editable fields should remain real text inputs');
-assert(html.includes('syncGuidedEditableFields();'), 'Guided Return inline controls should sync through existing fields');
-assert(html.includes('guided-answer-space'), 'Guided Return should style editable responses as calm answer spaces');
-assert(html.includes('guided-answer-input-frame'), 'Guided Return answer spaces should wrap the real input elements');
-assert(!html.includes('Your answer'), 'Guided Return should remove extra form-like answer kicker copy');
-assert(!html.includes('Luna will hold this locally.'), 'Guided Return should not repeat local-only helper copy under every answer');
-assert(html.includes('Answer a few plain questions. Luna turns them into one Return Card.'), 'Guided Return should keep one compact shell framing line');
+assert(html.includes('syncGuidedEditableFields();'), 'A gentle return inline controls should sync through existing fields');
+assert(html.includes('guided-answer-space'), 'A gentle return should style editable responses as calm answer spaces');
+assert(html.includes('guided-answer-input-frame'), 'A gentle return answer spaces should wrap the real input elements');
+assert(!html.includes('Your answer'), 'A gentle return should remove extra form-like answer kicker copy');
+assert(!html.includes('Luna will hold this locally.'), 'A gentle return should not repeat local-only helper copy under every answer');
+assert(html.includes('Answer a few plain questions. Luna keeps one clear place to start again.'), 'A gentle return should keep one compact shell framing line');
 for (const removedHelperNote of ['Begin here when you come back.', 'A boundary, not a backlog.', 'A few clear words are enough.']) {
-  assert(!html.includes(removedHelperNote), `Guided Return should remove extra question-card helper copy: ${removedHelperNote}`);
+  assert(!html.includes(removedHelperNote), `A gentle return should remove extra question-card helper copy: ${removedHelperNote}`);
 }
 
 for (const removedContributionCue of [
-  'This becomes Returning to.',
-  'This becomes The thread.',
-  'This becomes The lantern: the place to begin when you come back.',
-  'This becomes What changed.'
+  'This becomes Coming back to.',
+  'This becomes Why it felt hard.',
+  'This becomes First step: the place to begin when you come back.',
+  'This becomes Remember for next time.'
 ]) {
-  assert(!html.includes(removedContributionCue), `Guided Return should remove repeated contribution cue: ${removedContributionCue}`);
+  assert(!html.includes(removedContributionCue), `A gentle return should remove repeated contribution cue: ${removedContributionCue}`);
 }
-assert(!html.includes('guided-contribution-cue'), 'Guided Return should remove the repeated contribution cue block from visible answer spaces');
-assert(html.includes('guided-flow-lead'), 'Guided Return should include compact connective flow lead-in copy');
+assert(!html.includes('guided-contribution-cue'), 'A gentle return should remove the repeated contribution cue block from visible answer spaces');
+assert(html.includes('guided-flow-lead'), 'A gentle return should include compact connective flow lead-in copy');
 assert(html.includes('const getGuidedFlowLeadIn = (stageKey) => {'), 'connective flow copy should be deterministic local rendering');
-assert(html.includes("if (stageKey === 'currentGoal') return `Okay. We’re returning to ${project}. What feels hard to pick back up?`;"), 'currentGoal connective copy should carry the current projectName value into the next question');
+assert(html.includes("if (stageKey === 'currentGoal') return `Okay. We’re returning to ${project}. What makes it hard to restart?`;"), 'currentGoal connective copy should carry the current projectName value into the next question');
 for (const connectiveCopy of [
   'We only need enough to see why restarting has felt hard.',
   'I’m holding the thread. Now choose the first small move.',
-  'Good. That’s the lantern. What do you not need to carry right now?',
-  'The gate is quieter now. What is clearer now?'
+  'Good. That’s the lantern. What can wait for now?',
+  'The gate is quieter now. What should Luna remember for next time?'
 ]) {
-  assert(html.includes(connectiveCopy), `Guided Return connective flow copy should include: ${connectiveCopy}`);
+  assert(html.includes(connectiveCopy), `A gentle return connective flow copy should include: ${connectiveCopy}`);
 }
 assert(html.includes('const renderGuidedFlowLeadIn = (stageKey) => `<p class="guided-flow-lead" data-guided-flow-lead="${stageKey}">${escapeHtml(getGuidedFlowLeadIn(stageKey))}</p>`;'), 'connective flow copy should escape user-rendered values in initial render');
 assert(html.includes("if (leadIn) leadIn.textContent = getGuidedFlowLeadIn(leadIn.getAttribute('data-guided-flow-lead'));"), 'connective flow copy live updates should render user values with textContent');
@@ -280,7 +293,7 @@ for (const obsoleteReceivingPiece of [
   'Between questions',
   'Placing this into your Return Card'
 ]) {
-  assert(!html.includes(obsoleteReceivingPiece), `Guided Return should remove obsolete receiving UI/state: ${obsoleteReceivingPiece}`);
+  assert(!html.includes(obsoleteReceivingPiece), `A gentle return should remove obsolete receiving UI/state: ${obsoleteReceivingPiece}`);
 }
 const findYourPlaceRender = html.match(/title: 'Find your place',[\s\S]*?render: \(\) => `([\s\S]*?)`\n      \}/)[1];
 assert.equal((findYourPlaceRender.match(/>Next<\/button>/g) || []).length, 1, 'Find your place step 1 should render one simple local Next control');
@@ -296,7 +309,7 @@ for (const inlineCopy of [
   'I’ll keep that for next time.',
   'I’ll hold that here.'
 ]) {
-  assert(html.includes(inlineCopy), `Guided Return inline Luna response copy should include: ${inlineCopy}`);
+  assert(html.includes(inlineCopy), `A gentle return inline Luna response copy should include: ${inlineCopy}`);
 }
 assert(html.includes('const getGuidedInlineResponse = (fieldKey) => {'), 'inline Luna responses should be deterministic local rendering');
 assert(html.includes('class="guided-inline-response" data-guided-inline-response="${fieldKey}"'), 'question screen should render the inline Luna response under the answer');
@@ -305,31 +318,31 @@ assert(css.includes('font-size: 0.84rem;'), 'inline Luna response should be smal
 assert(!/\b(?:AI|model|generating|thinking|analyzing|loading)\b/i.test(html.match(/const getGuidedInlineResponse[\s\S]*?const guidedEditableFields/)[0]), 'inline response copy should avoid AI/network/random/loading language');
 assert(!/Math\.random\s*\(/.test(html), 'inline response flow must not use random thinking');
 
-assert(!html.includes('live-return-card-preview'), 'Guided Return question flow should not show a live Return Card preview');
-assert(!html.includes('Held so far'), 'Guided Return question flow should not show Held so far summary copy');
+assert(!html.includes('live-return-card-preview'), 'A gentle return question flow should not show a live Return Card preview');
+assert(!html.includes('Held so far'), 'A gentle return question flow should not show Held so far summary copy');
 assert(!html.includes('A preview of the Return Card Luna is building.'), 'question flow should leave gathered summary for Rest');
 assert(!html.includes('live-return-card-compact'), 'question flow should not show a compact gathered preview');
 assert(!html.includes('updateLiveReturnCardPreview();'), 'Guided inline edits should not maintain a question-flow summary preview');
 assert(html.includes('field.input.value = guidedInput.value;'), 'Guided inline edits should update the existing overview input values');
 assert(html.includes('writeLocalValue(field.storageKey, guidedInput.value);'), 'Guided inline edits should save through the existing five storage keys');
-assert(html.includes('Your Return Card is ready.'), 'Rest may keep a small arrival line that does not compete with the main artifact');
+assert(html.includes('Start here next time.'), 'Rest may keep a small arrival line that does not compete with the main artifact');
 assert(html.includes('return-card-artifact'), 'Rest should use one composed Return Card artifact');
 assert(html.includes('return-card-main-cue'), 'synthesized cue should be the main paragraph inside the artifact');
-assert(html.includes('return-card-lantern-focus'), 'Rest should emphasize The lantern/nextAction as the clearest resume point');
-assert(html.includes('Held details'), 'the other Return Card values should be quiet held details inside the same artifact');
+assert(html.includes('return-card-lantern-focus'), 'Rest should emphasize First step/nextAction as the clearest resume point');
+assert(html.includes('Saved pieces'), 'the other Return Card values should be quiet held details inside the same artifact');
 assert(html.includes('return-card-cue-relief'), 'relief line should close the same composed artifact');
 assert(!html.includes('You can stop here. Luna will keep the thread warm until you come back.'), 'Rest should remove redundant soft-landing panel copy');
 assert(!html.includes("${renderLunaInsight('rest')}"), 'Rest should not add a separate Luna note card competing with the artifact');
 assert(!html.includes('rest-held-words return-card'), 'Rest should not render a second separate full Return Card panel');
-for (const returnCardLabel of ['Returning to', 'The thread', 'The lantern', 'Waiting outside the gate', 'What changed']) {
+for (const returnCardLabel of ['Coming back to', 'Why it felt hard', 'First step', 'Can wait', 'Remember for next time']) {
   assert(html.includes(returnCardLabel), `Rest Return Card should include label: ${returnCardLabel}`);
 }
 assert(html.includes('return-card-lantern'), 'Rest should visually emphasize nextAction as the lantern/resume point');
-const returnToOpeningMatch = html.match(/<p class="footer-note return-opening-footer" id="return-opening-footer" hidden><a href="index.html">Return to Luna’s opening threshold<\/a>\.<\/p>/);
+const returnToOpeningMatch = html.match(/<p class="footer-note return-opening-footer" id="return-opening-footer" hidden><a href="index.html">Return to Luna’s opening<\/a>\.<\/p>/);
 assert(returnToOpeningMatch, 'Return-to-opening copy/link should remain present but hidden on the opening threshold');
 assert(returnToOpeningMatch[0].length < 150, 'Return-to-opening footer copy should remain short');
 assert(html.includes('returnOpeningFooter.hidden = false;'), 'Return-to-opening loop should be visible in the full overview');
-assert(/const showGuidedReturn = \(\) => \{[\s\S]*?returnOpeningFooter\.hidden = true;[\s\S]*?\};/.test(html), 'Return-to-opening footer should stay hidden during Guided Return');
+assert(/const showGuidedReturn = \(\) => \{[\s\S]*?returnOpeningFooter\.hidden = true;[\s\S]*?\};/.test(html), 'Return-to-opening footer should stay hidden during A gentle return');
 assert(html.includes('returnOpeningFooter.hidden = true;'), 'Return-to-opening footer should hide again on the opening threshold');
 
 for (const escapedRestValue of [
@@ -341,10 +354,10 @@ for (const escapedRestValue of [
 ]) {
   assert(html.includes(escapedRestValue), `Rest should preserve escaped current-return value: ${escapedRestValue}`);
 }
-assert(html.includes('class="luna-insight-card"'), 'Guided Return keeps insight cards available for real suggestions/warnings');
-assert(html.includes('aria-label="Luna insight for this step"'), 'Guided Return insights should be accessible labelled coaching regions');
+assert(html.includes('class="luna-insight-card"'), 'A gentle return keeps insight cards available for real suggestions/warnings');
+assert(html.includes('aria-label="Luna insight for this step"'), 'A gentle return insights should be accessible labelled coaching regions');
 for (const copy of ['Name the unfinished thing. A short name is enough.', 'One small move is enough. This is the lantern.', 'Luna has one unfinished thing and one visible next move']) {
-  assert(html.includes(copy), `Guided Return insight copy should include: ${copy}`);
+  assert(html.includes(copy), `A gentle return insight copy should include: ${copy}`);
 }
 assert(html.includes('updateVisibleGuidedInsight();'), 'Guided inline edits should refresh visible Luna insight copy after typing');
 assert(html.includes('<span class="label">Luna note</span>'), 'insight cards should use lighter Luna note framing when shown');
@@ -386,8 +399,8 @@ for (const id of ['begin-guided-return-button', 'shape-return-button', 'show-ove
   assert(inlineScript.includes(`document.querySelector('#${id}')`), `${id} should be queried during initialization`);
 }
 assert(inlineScript.includes("beginGuidedReturnButton.addEventListener('click', showGuidedReturn);"), 'Return gently listener should be attached during initialization');
-assert(inlineScript.includes("shapeReturnButton.addEventListener('click', showLocalGuidance);"), 'Shape this return listener should be attached during initialization');
-assert(inlineScript.includes("showOverviewButton.addEventListener('click', showFullOverviewFromOpening);"), 'Open full overview listener should be attached during initialization');
+assert(inlineScript.includes("shapeReturnButton.addEventListener('click', showLocalGuidance);"), 'Answer a few questions listener should be attached during initialization');
+assert(inlineScript.includes("showOverviewButton.addEventListener('click', showFullOverviewFromOpening);"), 'Edit the saved pieces listener should be attached during initialization');
 assert(!inlineScript.includes('update: updateProjectNameDisplay,'), 'Guided editable field config should not read updateProjectNameDisplay before it is initialized');
 assert(inlineScript.includes('const normalizeInvitationValue = (value) => (value ?? \'\').toString().trim();'), 'invitation default formatting should safely normalize missing values');
 assert(inlineScript.includes('if (typeof defaultValue !== \'string\') return false;'), 'invitation default checks should guard unknown field keys');
@@ -466,9 +479,9 @@ for (const id of ['begin-guided-return-button', 'shape-return-button', 'show-ove
 }
 assert.doesNotThrow(() => fakeElements.get('begin-guided-return-button').listeners.click(), 'Return gently click handler should not throw');
 fakeElements.get('luna-opening').hidden = false;
-assert.doesNotThrow(() => fakeElements.get('shape-return-button').listeners.click(), 'Shape this return click handler should not throw');
+assert.doesNotThrow(() => fakeElements.get('shape-return-button').listeners.click(), 'Answer a few questions click handler should not throw');
 fakeElements.get('luna-opening').hidden = false;
-assert.doesNotThrow(() => fakeElements.get('show-overview-button').listeners.click(), 'Open full overview click handler should not throw');
+assert.doesNotThrow(() => fakeElements.get('show-overview-button').listeners.click(), 'Edit the saved pieces click handler should not throw');
 
 assert(!css.includes('.guided-receiving-screen'), 'receiving screen styling should be removed with the interstitial UI');
 assert(css.includes('.guided-inline-response'), 'inline Luna response should have dedicated quiet styling');
@@ -479,9 +492,9 @@ assert(!css.includes('.guided-inline-helper'), 'removed inline helper should not
 assertRuleContains('.guided-inline-response', ['font-size: 0.84rem', 'color: rgb(244 209 122 / 74%)', 'overflow-wrap: anywhere'], 'inline Luna response should feel quiet and line-like');
 assertRuleContains('.guided-primary-actions .guided-control:not([hidden])', ['border-color: rgb(244 209 122 / 48%)', '0 0 0 5px rgb(223 200 137 / 5%)'], 'Next should keep primary lantern hierarchy');
 const longUnbrokenNextAction = 'ReturnToLunaWithoutSpaces'.repeat(8).slice(0, 140);
-assert.equal(longUnbrokenNextAction.length, 140, 'regression value should fill the One Next Action maxlength with no spaces');
+assert.equal(longUnbrokenNextAction.length, 140, 'regression value should fill the First step maxlength with no spaces');
 const longActionGuidance = guidance.buildReturnGuidance({ ...base, nextAction: longUnbrokenNextAction });
-assert.equal(longActionGuidance.nextAction.current, longUnbrokenNextAction, 'long unbroken One Next Action remains available to render and wrap');
+assert.equal(longActionGuidance.nextAction.current, longUnbrokenNextAction, 'long unbroken First step remains available to render and wrap');
 assert.doesNotMatch(css, /body[^{]*{[^}]*overflow-x\s*:\s*hidden/i, 'do not hide page overflow as the only mobile fix');
 
 function assertRuleContains(selector, properties) {
@@ -525,12 +538,12 @@ assertRuleContains('.opening-payoff-item', ['background: transparent', 'border: 
 assertRuleContains('.opening-payoff-item.is-lantern', ['linear-gradient(180deg, rgb(223 200 137 / 8%)']);
 assertRuleContains('.opening-context-data', ['position: absolute', 'clip-path: inset(50%)']);
 assert(html.includes('For one unfinished thing you do not want to carry alone.'), 'opening should keep the one-unfinished-thing invitation without repeating the full payoff');
-assert(html.includes('Find your place'), 'Guided Return copy should name the first step clearly');
-assert(html.includes('Start by naming the unfinished thing you want to return to.'), 'first Guided Return step should plainly explain its purpose');
-assert(html.includes('Come back to one unfinished thing.'), 'opening should clearly invite one unfinished thing');
-assert(html.includes('Luna helps turn scattered thoughts into one clear place to begin again.'), "opening should explain Luna's resume point and Return Card payoff quietly");
-assert(html.includes('Leave with a Return Card'), 'opening should name the practical Return Card payoff');
-assert(html.includes('Answer a few plain questions. Luna turns them into one Return Card.'), 'Guided Return shell should frame the stages as one calm path');
+assert(html.includes('Find your place'), 'A gentle return copy should name the first step clearly');
+assert(html.includes('Start by naming the unfinished thing you want to return to.'), 'first A gentle return step should plainly explain its purpose');
+assert(html.includes('Come back gently.'), 'opening should clearly invite one unfinished thing');
+assert(html.includes('Luna helps you turn scattered thoughts into one clear place to start again.'), "opening should explain Luna's resume point and Return Card payoff quietly");
+assert(html.includes('Leave with a place to start'), 'opening should name the practical Return Card payoff');
+assert(html.includes('Answer a few plain questions. Luna keeps one clear place to start again.'), 'A gentle return shell should frame the stages as one calm path');
 assertRuleContains('.try-editing-card', ['background: rgb(25 34 58 / 94%)', 'border: 1px solid rgb(196 205 238 / 22%)']);
 assertRuleContains('.edit-field input', ['background: rgb(35 45 72 / 96%)', 'box-shadow: none']);
 assertRuleContains('.guided-return-view', ['radial-gradient(ellipse at 50% 12%, rgb(183 194 224 / 7%)', 'linear-gradient(180deg, rgb(13 21 40 / 96%)', 'box-shadow: 0 18px 42px']);
@@ -556,8 +569,8 @@ assert(css.includes('animation: none !important') && css.includes('transition: n
 assert(html.includes('const guidedStageMotionFallbackMs = 220;'));
 assert(html.includes('const guidedEntranceFallbackMs = 240;'));
 
-assert(css.includes('.luna-opening.is-yielding-to-guided'), 'opening should gently yield to Guided Return instead of disappearing as a hard swap');
-assert(css.includes('.guided-return-view.is-arriving-from-opening'), 'Guided Return should softly arrive from the opening threshold');
+assert(css.includes('.luna-opening.is-yielding-to-guided'), 'opening should gently yield to A gentle return instead of disappearing as a hard swap');
+assert(css.includes('.guided-return-view.is-arriving-from-opening'), 'A gentle return should softly arrive from the opening threshold');
 assert(html.includes("lunaOpening.classList.add('is-yielding-to-guided');"), 'opening entrance should use the shared yield transition');
 assert(html.includes('if (guidedStageTransitioning || guidedStageMotionQuery.matches)'), 'rapid-click protection and reduced-motion immediate stage path should remain');
 assert(html.includes('clearGuidedStageTransition();') && html.includes('guidedStagePanel.classList.remove(...guidedStageMotionClasses)'), 'guided stage transition cleanup should remain');
