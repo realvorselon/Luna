@@ -3,6 +3,10 @@
   "statusHistory": [
     {
       "date": "2026-07-16",
+      "note": "This was a focused visible-language cleanup pass that replaced prototype-like labels with plainer Luna-facing questions and a simpler “Start here next time” final handoff, while preserving the simplified inline-response flow and the same five saved values."
+    },
+    {
+      "date": "2026-07-16",
       "note": "This was a focused Guided Return de-clutter pass that protected the simpler inline-response flow by keeping question screens focused on one question, one answer, one small Luna response, and one next action, while leaving the gathered summary for Rest."
     },
     {
@@ -714,9 +718,9 @@
       "note": "The project is resting after a good run and ready for one gentle improvement."
     }
   ],
-  "currentGoal": "Rest after the Guided Return de-clutter pass.",
-  "lastCompletedRun": "This was a focused Guided Return de-clutter pass that protected the simpler inline-response flow by keeping question screens focused on one question, one answer, one small Luna response, and one next action, while leaving the gathered summary for Rest.",
-  "nextStep": "Human mobile test of whether Guided Return question screens feel clean, quiet, and focused before Rest gathers the answers.",
+  "currentGoal": "Rest after the visible-language cleanup pass.",
+  "lastCompletedRun": "This was a focused visible-language cleanup pass that replaced prototype-like labels with plainer Luna-facing questions and a simpler “Start here next time” final handoff, while preserving the simplified inline-response flow and the same five saved values.",
+  "nextStep": "Human mobile test of whether the plainer Luna-facing language feels warm, clear, and less like a project-management form.",
   "dashboardGuide": [
     "Welcome starts the path to read through Record the Change before choosing more work.",
     "Status gives a quick snapshot of how the project is doing right now.",
@@ -868,8 +872,8 @@
   "currentMode": {
     "name": "Rest",
     "value": "Rest",
-    "description": "Luna is resting after a focused Guided Return de-clutter pass.",
-    "whyItMatters": "Guided Return question screens now stay focused on the current answer, while Rest gathers the five answers into the final handoff."
+    "description": "Luna is resting after a focused visible-language cleanup pass.",
+    "whyItMatters": "The app now asks plainer Luna-facing questions and ends with a simpler place to start next time while preserving the same saved values and inline-response flow."
   },
-  "nextSuggestedStep": "Human mobile test of whether Guided Return question screens feel clean, quiet, and focused before Rest gathers the answers."
+  "nextSuggestedStep": "Human mobile test of whether the plainer Luna-facing language feels warm, clear, and less like a project-management form."
 }

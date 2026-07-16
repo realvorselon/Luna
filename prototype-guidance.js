@@ -1,11 +1,11 @@
 (function (root) {
   'use strict';
 
-  const fallbackProjectName = 'What do you want to come back to?';
-  const fallbackGoal = 'What feels hard to pick back up?';
-  const fallbackNextAction = 'What is the first small move?';
-  const fallbackSetAside = 'What do you not need to carry right now?';
-  const fallbackRecordChange = 'What is clearer now?';
+  const fallbackProjectName = 'What are you coming back to?';
+  const fallbackGoal = 'What makes it hard to restart?';
+  const fallbackNextAction = 'What is the first small step?';
+  const fallbackSetAside = 'What can wait for now?';
+  const fallbackRecordChange = 'What should Luna remember for next time?';
 
   const voiceLibrary = {
     goalBlank: [
@@ -22,7 +22,7 @@
     goalBroad: [
       'That goal is broad enough to pull in extra work; the first clause gives the return a smaller edge.',
       'Luna is only trimming the doorway, not deciding the whole project.',
-      'A narrower line is easier to hold at the opening threshold.',
+      'A narrower line is easier to hold when you come back.',
       'This keeps the goal return-sized instead of turning it into a plan.'
     ],
     goalLong: [
@@ -47,7 +47,7 @@
       'A smaller action is easier to return to than a broad command.'
     ],
     actionMultiple: [
-      'One Next Action works best as one action, not a sequence.',
+      'The first step works best as one action, not a sequence.',
       'This looks like more than one move; keeping the first one protects the lantern.',
       'A list can wait. The return only needs the first visible action.',
       'This trims the action back to one thing you can find again.'
@@ -63,7 +63,7 @@
       'Leaving something unnamed can invite it back in; this keeps the boundary simple.'
     ],
     setAsideMultiple: [
-      'Set Aside stays calmer as one value rather than a backlog.',
+      'What can wait stays calmer as one value rather than a backlog.',
       'This looks like several things; keeping the first protects the boundary.',
       'One thing can wait clearly. A list can start to feel like another project.'
     ],
@@ -222,9 +222,9 @@
     const threadSentence = goal ? ` Keep close to the thread: ${goal}.` : '';
 
     return {
-      title: 'When you return',
+      title: 'Start here next time',
       cue: `When you come back, return to ${project} by starting with ${action}.${threadSentence} ${setAside} can wait outside the gate for now.`,
-      relief: 'Begin with the lantern. You do not have to carry the whole unfinished thing at once.'
+      relief: 'Luna kept the thread warm so you do not have to hold everything at once.'
     };
   };
 
