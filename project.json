@@ -3,6 +3,10 @@
   "statusHistory": [
     {
       "date": "2026-07-16",
+      "note": "This was a focused Guided Return flow simplification pass that removed separate receiving interstitials and replaced them with small inline Luna responses, so each question screen now holds the ask, answer, response, and next step without adding extra screens."
+    },
+    {
+      "date": "2026-07-16",
       "note": "This was a focused Guided Return visual foundation pass that made the active question and receiving moments feel more like one moonlit return space instead of stacked form panels, while preserving the local-only six-stage flow and Return Card behavior."
     },
     {
@@ -706,9 +710,9 @@
       "note": "The project is resting after a good run and ready for one gentle improvement."
     }
   ],
-  "currentGoal": "Rest after the Guided Return visual foundation pass.",
-  "lastCompletedRun": "This was a focused Guided Return visual foundation pass that made the active question and receiving moments feel more like one moonlit return space instead of stacked form panels, while preserving the local-only six-stage flow and Return Card behavior.",
-  "nextStep": "Human mobile test of whether Guided Return now feels like one calm moonlit return space.",
+  "currentGoal": "Rest after the Guided Return flow simplification pass.",
+  "lastCompletedRun": "This was a focused Guided Return flow simplification pass that removed separate receiving interstitials and replaced them with small inline Luna responses, so each question screen now holds the ask, answer, response, and next step without adding extra screens.",
+  "nextStep": "Human mobile test of whether Guided Return feels lighter with inline Luna responses and no between-question screens.",
   "dashboardGuide": [
     "Welcome starts the path to read through Record the Change before choosing more work.",
     "Status gives a quick snapshot of how the project is doing right now.",
@@ -859,8 +863,8 @@
   "currentMode": {
     "name": "Rest",
     "value": "Rest",
-    "description": "Luna is resting after a focused Guided Return visual foundation pass.",
-    "whyItMatters": "Guided Return now feels more like one moonlit return space while preserving the local-only six-stage flow."
+    "description": "Luna is resting after a focused Guided Return flow simplification pass.",
+    "whyItMatters": "Guided Return now keeps each question, answer, inline Luna response, and next step together without extra screens."
   },
-  "nextSuggestedStep": "Human mobile test of whether Guided Return now feels like one calm moonlit return space."
+  "nextSuggestedStep": "Human mobile test of whether Guided Return feels lighter with inline Luna responses and no between-question screens."
 }
