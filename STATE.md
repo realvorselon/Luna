@@ -1,5 +1,12 @@
 # State
 
+## 2026-07-16 — Guided Return hierarchy polish pass
+
+- This was a focused Guided Return hierarchy polish pass that made receiving screens feel like intentional between-question moments instead of repeated stages, reduced duplicate “holding” language, clarified where each answer goes in the Return Card, and hid opening-threshold scaffolding during Guided Return.
+- Luna is at Rest after a focused Guided Return hierarchy polish pass.
+- Status remains Rest; next suggested step is: “Human mobile test of whether receiving screens now feel calm and intentional on mobile.”
+
+
 ## 2026-07-15 — Guided Return response-transition pass
 
 - This was a focused Guided Return response-transition pass that moved Luna’s answer-receiving moment out of the crowded question card and into a calm deterministic transition between questions, so the mobile flow feels more like Luna asks, receives, places the answer into the Return Card, and then continues.

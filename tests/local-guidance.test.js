@@ -112,27 +112,29 @@ const changelog = fs.readFileSync('CHANGELOG.md', 'utf8');
 const project = JSON.parse(fs.readFileSync('project.json', 'utf8'));
 assert(state.startsWith('# State'), 'STATE.md should begin with the # State heading');
 const transitionTrail = 'This was a focused Guided Return response-transition pass that moved Luna’s answer-receiving moment out of the crowded question card and into a calm deterministic transition between questions, so the mobile flow feels more like Luna asks, receives, places the answer into the Return Card, and then continues.';
-const transitionNextStep = 'Human mobile test of whether the question → Luna receives → next question rhythm feels calmer and more alive.';
+const hierarchyTrail = 'This was a focused Guided Return hierarchy polish pass that made receiving screens feel like intentional between-question moments instead of repeated stages, reduced duplicate “holding” language, clarified where each answer goes in the Return Card, and hid opening-threshold scaffolding during Guided Return.';
+const hierarchyNextStep = 'Human mobile test of whether receiving screens now feel calm and intentional on mobile.';
 for (const trailText of [state, roadmap, changelog]) {
-  assert(trailText.includes('Guided Return response-transition pass'), 'project trail should record the focused response-transition pass');
-  assert(trailText.includes('answer-receiving moment out of the crowded question card'), 'project trail should name the crowded question card problem');
-  assert(trailText.includes('asks, receives, places the answer into the Return Card'), 'project trail should capture the new Guided Return rhythm');
+  assert(trailText.includes('Guided Return hierarchy polish pass'), 'project trail should record the focused hierarchy polish pass');
+  assert(trailText.includes('intentional between-question moments instead of repeated stages'), 'project trail should name the receiving hierarchy problem');
+  assert(trailText.includes('hid opening-threshold scaffolding during Guided Return'), 'project trail should capture the footer hierarchy polish');
   assert(trailText.includes('Rest'), 'project trail should keep Luna at Rest');
-  assert(trailText.includes('Guided Return mobile preview pass'), 'project trail should preserve the compact mobile Held so far preview context');
-  assert(trailText.includes(transitionNextStep), 'project trail should point to the next purpose clarity test');
+  assert(trailText.includes('Guided Return response-transition pass'), 'project trail should preserve the response-transition context');
+  assert(trailText.includes(transitionTrail), 'project trail should preserve the previous response-transition run');
+  assert(trailText.includes(hierarchyNextStep), 'project trail should point to the hierarchy polish human test');
 }
 assert.deepEqual(project.statusHistory[0], {
-  date: '2026-07-15',
-  note: transitionTrail
+  date: '2026-07-16',
+  note: hierarchyTrail
 }, 'new statusHistory entry should keep the existing object shape');
-assert.equal(project.currentGoal, 'Rest after the Guided Return response-transition pass.');
+assert.equal(project.currentGoal, 'Rest after the Guided Return hierarchy polish pass.');
 assert.equal(project.currentMode.name, 'Rest');
 assert.equal(project.currentMode.value, 'Rest');
-assert.equal(project.currentMode.description, 'Luna is resting after a focused Guided Return response-transition pass.');
-assert.equal(project.currentMode.whyItMatters, 'The Guided Return flow now separates asking from receiving, so each answer can be placed into the Return Card without crowding the question screen.');
-assert.equal(project.lastCompletedRun, transitionTrail);
-assert.equal(project.nextStep, transitionNextStep);
-assert.equal(project.nextSuggestedStep, transitionNextStep);
+assert.equal(project.currentMode.description, 'Luna is resting after a focused Guided Return hierarchy polish pass.');
+assert.equal(project.currentMode.whyItMatters, 'Guided Return now gives question, receiving, and Rest screens clearer jobs so the mobile flow feels calmer.');
+assert.equal(project.lastCompletedRun, hierarchyTrail);
+assert.equal(project.nextStep, hierarchyNextStep);
+assert.equal(project.nextSuggestedStep, hierarchyNextStep);
 assert(!/Math\.random\s*\(/.test(js), 'guidance must not use Math.random');
 assert(!/\bfetch\s*\(/.test(html + js), 'local guidance must not call fetch');
 assert(!html.includes('return-cue-card'), 'Rest should no longer render a separate synthesized cue card panel');
@@ -237,7 +239,6 @@ for (const removedContributionCue of [
   'This becomes Returning to.',
   'This becomes The thread.',
   'This becomes The lantern: the place to begin when you come back.',
-  'This waits outside the gate.',
   'This becomes What changed.'
 ]) {
   assert(!html.includes(removedContributionCue), `Guided Return should remove repeated contribution cue: ${removedContributionCue}`);
@@ -274,23 +275,25 @@ assert(html.includes("showGuidedReceivingTransition(fieldKey, guidedStageIndex +
 assert(html.includes('clearGuidedReceivingTransition();\n\n      if (guidedStageIndex === 0 && guidedPlaceStepIndex > 0)'), 'Back from normal Guided Return questions should clear stale receiving state before moving');
 const findYourPlaceRender = html.match(/title: 'Find your place',[\s\S]*?render: \(\) => `([\s\S]*?)`\n      \}/)[1];
 assert.equal((findYourPlaceRender.match(/>Continue<\/button>/g) || []).length, 1, 'Find your place step 1 should not render duplicate local Continue controls');
-assert(html.includes('guidedPosition.textContent = guidedTransitionPending ? \'Luna is receiving\' : `Stage ${guidedStageIndex + 1} of ${guidedStages.length}`;'), 'normal question screens should keep Stage X of 6 while receiving screens use a transition label');
-assert(html.includes('guidedStageTitle.textContent = guidedTransitionPending ? \'Luna is receiving this\' : stage.title;'), 'receiving screens should use a calm transition title instead of repeating the question stage title');
+assert(html.includes('guidedPosition.textContent = guidedTransitionPending ? \'Between questions\' : `Stage ${guidedStageIndex + 1} of ${guidedStages.length}`;'), 'normal question screens should keep Stage X of 6 while receiving screens use Between questions');
+assert(html.includes('guidedStageTitle.textContent = guidedTransitionPending ? \'Placing this into your Return Card\' : stage.title;'), 'receiving screens should use one clear transition title instead of repeating the question stage title');
 assert(html.includes('guided-receiving-screen'), 'Guided Return should render a dedicated receiving/interstitial screen');
 assert(html.includes('<span class="label">Return Card</span>'), 'receiving screen should use a quiet Return Card label instead of repeating holding language');
 assert.equal((html.match(/Luna is holding this/g) || []).length, 0, 'receiving screen should avoid duplicate Luna is holding this labels');
-assert(html.includes('Luna is placing your answer into the Return Card.'), 'receiving screen should explain local Return Card placement');
+assert(html.includes("guidedStageIntro.textContent = guidedTransitionPending ? '' : stage.intro;"), 'receiving screen should avoid redundant stage intro copy');
+assert(!html.includes('Luna is placing your answer into the Return Card.'), 'receiving screen should remove redundant placement intro copy');
 for (const receivingCopy of [
   'Okay. Luna will help you come back to',
   'I’m holding why this is hard to pick back up.',
   'Good. Begin again with this:',
   'You do not need to carry that while you begin again.',
   'I’ll put what is clearer into the Return Card.',
-  'I’m placing that at the top of your Return Card.',
-  'That becomes the thread Luna keeps warm.',
-  'That becomes the lantern.',
-  'I’ll keep it outside the gate for now.',
-  'Now Luna can hand you one place to begin again.'
+  'This becomes: Returning to.',
+  'This becomes: The thread.',
+  'This becomes: The lantern.',
+  'This waits outside the gate.',
+  'This becomes: What is clearer.',
+  'This goes into the Return Card.'
 ]) {
   assert(html.includes(receivingCopy), `Guided Return receiving copy should include: ${receivingCopy}`);
 }
@@ -348,7 +351,8 @@ assert(html.includes('return-card-lantern'), 'Rest should visually emphasize nex
 const returnToOpeningMatch = html.match(/<p class="footer-note return-opening-footer" id="return-opening-footer" hidden><a href="index.html">Return to Luna’s opening threshold<\/a>\.<\/p>/);
 assert(returnToOpeningMatch, 'Return-to-opening copy/link should remain present but hidden on the opening threshold');
 assert(returnToOpeningMatch[0].length < 150, 'Return-to-opening footer copy should remain short');
-assert(html.includes('returnOpeningFooter.hidden = false;'), 'Return-to-opening loop should be visible after Guided Return or full overview');
+assert(html.includes('returnOpeningFooter.hidden = false;'), 'Return-to-opening loop should be visible in the full overview');
+assert(/const showGuidedReturn = \(\) => \{[\s\S]*?returnOpeningFooter\.hidden = true;[\s\S]*?\};/.test(html), 'Return-to-opening footer should stay hidden during Guided Return');
 assert(html.includes('returnOpeningFooter.hidden = true;'), 'Return-to-opening footer should hide again on the opening threshold');
 
 for (const escapedRestValue of [

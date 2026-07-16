@@ -2210,12 +2210,12 @@
 
 
     const getGuidedReceivingPlacement = (fieldKey) => {
-      if (fieldKey === 'projectName') return 'I’m placing that at the top of your Return Card.';
-      if (fieldKey === 'currentGoal') return 'That becomes the thread Luna keeps warm.';
-      if (fieldKey === 'nextAction') return 'That becomes the lantern.';
-      if (fieldKey === 'setAside') return 'I’ll keep it outside the gate for now.';
-      if (fieldKey === 'recordChange') return 'Now Luna can hand you one place to begin again.';
-      return 'I’m carrying it into the Return Card.';
+      if (fieldKey === 'projectName') return 'This becomes: Returning to.';
+      if (fieldKey === 'currentGoal') return 'This becomes: The thread.';
+      if (fieldKey === 'nextAction') return 'This becomes: The lantern.';
+      if (fieldKey === 'setAside') return 'This waits outside the gate.';
+      if (fieldKey === 'recordChange') return 'This becomes: What is clearer.';
+      return 'This goes into the Return Card.';
     };
 
     const renderGuidedReceivingTransition = () => `
@@ -2576,9 +2576,9 @@
 
     const renderGuidedStageContent = () => {
       const stage = guidedStages[guidedStageIndex];
-      guidedPosition.textContent = guidedTransitionPending ? 'Luna is receiving' : `Stage ${guidedStageIndex + 1} of ${guidedStages.length}`;
-      guidedStageTitle.textContent = guidedTransitionPending ? 'Luna is receiving this' : stage.title;
-      guidedStageIntro.textContent = guidedTransitionPending ? 'Luna is placing your answer into the Return Card.' : stage.intro;
+      guidedPosition.textContent = guidedTransitionPending ? 'Between questions' : `Stage ${guidedStageIndex + 1} of ${guidedStages.length}`;
+      guidedStageTitle.textContent = guidedTransitionPending ? 'Placing this into your Return Card' : stage.title;
+      guidedStageIntro.textContent = guidedTransitionPending ? '' : stage.intro;
       guidedStagePanel.dataset.stageTone = guidedTransitionPending ? 'receiving' : (stage.tone || 'quiet');
       guidedStageBody.innerHTML = guidedTransitionPending ? renderGuidedReceivingTransition() : stage.render();
       if (!guidedTransitionPending) {
@@ -2653,7 +2653,7 @@
         lunaOpening.hidden = true;
         fullOverview.hidden = true;
         guidedReturnView.hidden = false;
-        returnOpeningFooter.hidden = false;
+        returnOpeningFooter.hidden = true;
         guidedStageTitle.focus({ preventScroll: true });
         return;
       }
@@ -2672,7 +2672,7 @@
           lunaOpening.hidden = true;
           lunaOpening.classList.remove('is-yielding-to-guided');
           guidedReturnView.hidden = false;
-          returnOpeningFooter.hidden = false;
+          returnOpeningFooter.hidden = true;
           guidedReturnView.classList.add('is-arriving-from-opening');
           guidedEntranceTransitionTimer = window.setTimeout(finishGuidedEntrance, guidedEntranceFallbackMs);
         };
@@ -2697,7 +2697,7 @@
         fullOverview.classList.remove('is-yielding-to-guided');
         lunaOpening.classList.remove('is-yielding-to-guided');
         guidedReturnView.hidden = false;
-        returnOpeningFooter.hidden = false;
+        returnOpeningFooter.hidden = true;
         guidedReturnView.classList.add('is-arriving-from-overview');
         guidedEntranceTransitionTimer = window.setTimeout(finishGuidedEntrance, guidedEntranceFallbackMs);
       };
