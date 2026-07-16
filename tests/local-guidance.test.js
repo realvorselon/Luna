@@ -115,28 +115,33 @@ const transitionTrail = 'This was a focused Guided Return response-transition pa
 const hierarchyTrail = 'This was a focused Guided Return hierarchy polish pass that made receiving screens feel like intentional between-question moments instead of repeated stages, reduced duplicate “holding” language, clarified where each answer goes in the Return Card, and hid opening-threshold scaffolding during Guided Return.';
 const simplificationTrail = 'This was a focused Guided Return flow simplification pass that removed separate receiving interstitials and replaced them with small inline Luna responses, so each question screen now holds the ask, answer, response, and next step without adding extra screens.';
 const simplificationNextStep = 'Human mobile test of whether Guided Return feels lighter with inline Luna responses and no between-question screens.';
+const declutterTrail = 'This was a focused Guided Return de-clutter pass that protected the simpler inline-response flow by keeping question screens focused on one question, one answer, one small Luna response, and one next action, while leaving the gathered summary for Rest.';
+const declutterNextStep = 'Human mobile test of whether Guided Return question screens feel clean, quiet, and focused before Rest gathers the answers.';
 for (const trailText of [state, roadmap, changelog]) {
-  assert(trailText.includes('Guided Return flow simplification pass'), 'project trail should record the focused flow simplification pass');
+  assert(trailText.includes('Guided Return de-clutter pass'), 'project trail should record the focused de-clutter pass');
+  assert(trailText.includes(declutterTrail), 'project trail should include the de-clutter summary wording');
+  assert(trailText.includes('Guided Return flow simplification pass'), 'project trail should preserve the focused flow simplification pass');
   assert(trailText.includes('removed separate receiving interstitials'), 'project trail should name the removed interstitial problem');
   assert(trailText.includes('small inline Luna responses'), 'project trail should name the inline response replacement');
   assert(trailText.includes('Rest'), 'project trail should keep Luna at Rest');
   assert(trailText.includes('Guided Return hierarchy polish pass'), 'project trail should preserve the hierarchy polish context');
   assert(trailText.includes('Guided Return response-transition pass'), 'project trail should preserve the response-transition context');
   assert(trailText.includes(transitionTrail), 'project trail should preserve the previous response-transition run');
-  assert(trailText.includes(simplificationNextStep), 'project trail should point to the flow simplification human test');
+  assert(trailText.includes(declutterNextStep), 'project trail should point to the de-clutter human test');
+  assert(trailText.includes(simplificationNextStep), 'project trail should preserve the flow simplification human test');
 }
 assert.deepEqual(project.statusHistory[0], {
   date: '2026-07-16',
-  note: simplificationTrail
+  note: declutterTrail
 }, 'new statusHistory entry should keep the existing object shape');
-assert.equal(project.currentGoal, 'Rest after the Guided Return flow simplification pass.');
+assert.equal(project.currentGoal, 'Rest after the Guided Return de-clutter pass.');
 assert.equal(project.currentMode.name, 'Rest');
 assert.equal(project.currentMode.value, 'Rest');
-assert.equal(project.currentMode.description, 'Luna is resting after a focused Guided Return flow simplification pass.');
-assert.equal(project.currentMode.whyItMatters, 'Guided Return now keeps each question, answer, inline Luna response, and next step together without extra screens.');
-assert.equal(project.lastCompletedRun, simplificationTrail);
-assert.equal(project.nextStep, simplificationNextStep);
-assert.equal(project.nextSuggestedStep, simplificationNextStep);
+assert.equal(project.currentMode.description, 'Luna is resting after a focused Guided Return de-clutter pass.');
+assert.equal(project.currentMode.whyItMatters, 'Guided Return question screens now stay focused on the current answer, while Rest gathers the five answers into the final handoff.');
+assert.equal(project.lastCompletedRun, declutterTrail);
+assert.equal(project.nextStep, declutterNextStep);
+assert.equal(project.nextSuggestedStep, declutterNextStep);
 assert(!/Math\.random\s*\(/.test(js), 'guidance must not use Math.random');
 assert(!/\bfetch\s*\(/.test(html + js), 'local guidance must not call fetch');
 assert(!html.includes('return-cue-card'), 'Rest should no longer render a separate synthesized cue card panel');
@@ -213,7 +218,7 @@ for (const questionCopy of [
 assert(html.includes("const guidedPlaceSteps = ['projectName', 'currentGoal'];"), 'Find your place should define only the existing project name and current goal internal steps');
 assert(html.includes('${renderGuidedEditableField(getGuidedPlaceFieldKey())}'), 'Find your place should render only the active internal editable field');
 assert(!html.includes("${renderGuidedEditableField('projectName')}\n              ${renderGuidedEditableField('currentGoal')}"), 'Find your place should not render both projectName and currentGoal inline fields at once by default');
-assert(html.includes('data-guided-place-continue'), 'Find your place should include a local internal Continue control');
+assert(html.includes('data-guided-place-continue'), 'Find your place should include one local internal Next control');
 assert(html.includes('data-guided-place-back'), 'Find your place should include a local internal Back control');
 assert(html.includes('guidedBackButton.hidden = guidedStageIndex === 0;'), 'main back button should stay hidden inside Find your place');
 assert(html.includes('guidedForwardButton.hidden = guidedStageIndex === 0 && guidedPlaceStepIndex === 0;'), 'main forward button should hide only on the first Find your place question to avoid duplicate Continue controls');
@@ -229,11 +234,11 @@ assert(html.includes('<input id="${inputId}" type="text"'), 'Guided editable fie
 assert(html.includes('syncGuidedEditableFields();'), 'Guided Return inline controls should sync through existing fields');
 assert(html.includes('guided-answer-space'), 'Guided Return should style editable responses as calm answer spaces');
 assert(html.includes('guided-answer-input-frame'), 'Guided Return answer spaces should wrap the real input elements');
-assert(html.includes('Your answer'), 'Guided Return answer-space copy should gently label the response area');
+assert(!html.includes('Your answer'), 'Guided Return should remove extra form-like answer kicker copy');
 assert(!html.includes('Luna will hold this locally.'), 'Guided Return should not repeat local-only helper copy under every answer');
-assert(html.includes('Answer one thing at a time. Each answer helps Luna build the Return Card and stays in this browser.'), 'Guided Return should keep one compact local-only boundary near the opening stage');
-for (const softenedNote of ['Begin here when you come back.', 'A boundary, not a backlog.', 'A few clear words are enough.']) {
-  assert(html.includes(softenedNote), `Guided Return should keep softened non-duplicative helper copy: ${softenedNote}`);
+assert(html.includes('Answer a few plain questions. Luna turns them into one Return Card.'), 'Guided Return should keep one compact shell framing line');
+for (const removedHelperNote of ['Begin here when you come back.', 'A boundary, not a backlog.', 'A few clear words are enough.']) {
+  assert(!html.includes(removedHelperNote), `Guided Return should remove extra question-card helper copy: ${removedHelperNote}`);
 }
 
 for (const removedContributionCue of [
@@ -260,7 +265,7 @@ assert(html.includes('const renderGuidedFlowLeadIn = (stageKey) => `<p class="gu
 assert(html.includes("if (leadIn) leadIn.textContent = getGuidedFlowLeadIn(leadIn.getAttribute('data-guided-flow-lead'));"), 'connective flow copy live updates should render user values with textContent');
 assert(html.includes('updateGuidedFlowLeadIn();'), 'Guided inline edits should refresh connective flow copy when relevant local values change');
 
-assert(html.includes('Begin here when you come back.'), 'Choose should keep the lantern/resume point important without duplicating the contribution cue');
+assert(!html.includes('Begin here when you come back.'), 'Choose should avoid extra helper lines competing with the question');
 
 for (const obsoleteReceivingPiece of [
   'guidedTransitionPending',
@@ -278,7 +283,7 @@ for (const obsoleteReceivingPiece of [
   assert(!html.includes(obsoleteReceivingPiece), `Guided Return should remove obsolete receiving UI/state: ${obsoleteReceivingPiece}`);
 }
 const findYourPlaceRender = html.match(/title: 'Find your place',[\s\S]*?render: \(\) => `([\s\S]*?)`\n      \}/)[1];
-assert.equal((findYourPlaceRender.match(/>Continue<\/button>/g) || []).length, 1, 'Find your place step 1 should not render duplicate local Continue controls');
+assert.equal((findYourPlaceRender.match(/>Next<\/button>/g) || []).length, 1, 'Find your place step 1 should render one simple local Next control');
 assert(html.includes("guidedPlaceStepIndex = 1;\n          moveGuidedStage('forward');"), 'projectName Continue should advance directly to currentGoal');
 assert(html.includes("if (guidedStageIndex === 0 && guidedPlaceStepIndex === 0) {\n        guidedPlaceStepIndex = 1;\n        moveGuidedStage('forward');"), 'main projectName routing should advance directly to currentGoal if used');
 assert(html.includes("guidedStageIndex += 1;\n      moveGuidedStage('forward');"), 'currentGoal and later Continue should advance directly to the next stage');
@@ -300,35 +305,11 @@ assert(css.includes('font-size: 0.84rem;'), 'inline Luna response should be smal
 assert(!/\b(?:AI|model|generating|thinking|analyzing|loading)\b/i.test(html.match(/const getGuidedInlineResponse[\s\S]*?const guidedEditableFields/)[0]), 'inline response copy should avoid AI/network/random/loading language');
 assert(!/Math\.random\s*\(/.test(html), 'inline response flow must not use random thinking');
 
-assert(html.includes('live-return-card-preview'), 'Guided Return should keep live Return Card preview available outside crowded question cards');
-assert(html.includes('aria-label="Live Return Card preview"'), 'live Return Card preview should be labelled accessibly');
-assert(html.includes('<span class="label">Held so far</span>'), 'live Return Card preview should soften its heading to Held so far');
-assert(html.includes('A preview of the Return Card Luna is building.'), 'desktop live Return Card preview should frame the held-thread purpose quietly without extra density');
-assert(html.includes('live-return-card-compact'), 'compact mobile Held so far preview should exist');
-assert(html.includes('data-live-return-card-compact-field="projectName"'), 'compact mobile preview should track projectName');
-assert(html.includes("<strong>Returning</strong> <span>${escapeHtml(formatRestSummaryValue('projectName', getProjectName()))}</span>"), 'compact mobile preview should emphasize Returning/projectName and safely escape initial render');
-assert(html.includes('data-live-return-card-compact-field="nextAction"'), 'compact mobile preview should track nextAction');
-assert(html.includes("<strong>Lantern</strong> <span>${escapeHtml(formatRestSummaryValue('nextAction', getNextAction()))}</span>"), 'compact mobile preview should emphasize Lantern/nextAction and safely escape initial render');
-assert(html.includes('+ 3 held for Rest'), 'compact mobile preview should include tiny held-for-Rest summary copy');
-for (const liveReturnCardLabel of ['Returning to', 'The thread', 'The lantern', 'Waiting outside the gate', 'What changed']) {
-  assert(html.includes(liveReturnCardLabel), `desktop live Return Card preview and Rest Return Card should preserve label: ${liveReturnCardLabel}`);
-}
-assert(html.includes('const liveReturnCardRows = ['), 'desktop live Return Card preview should be driven from one row list');
-for (const livePreviewValue of [
-  "['projectName', 'Returning to', getProjectName]",
-  "['currentGoal', 'The thread', getCurrentGoal]",
-  "['nextAction', 'The lantern', getNextAction]",
-  "['setAside', 'Waiting outside the gate', getSetAside]",
-  "['recordChange', 'What changed', getRecordChange]"
-]) {
-  assert(html.includes(livePreviewValue), `live Return Card preview should use existing value getter: ${livePreviewValue}`);
-}
-assert(html.includes('<strong>${escapeHtml(label)}</strong><span>${escapeHtml(formatRestSummaryValue(fieldKey, getValue()))}</span>'), 'desktop live Return Card preview should safely escape formatted values');
-assert(html.includes('updateLiveReturnCardPreview();'), 'Guided inline edits and stage rendering should refresh the live Return Card preview');
-assert(html.includes("if (compactValue) compactValue.textContent = formatRestSummaryValue(fieldKey, value);"), 'compact mobile preview live updates should use textContent');
-assert(html.includes("row.classList.toggle('has-live-lantern', isRealUserEntry('nextAction', value));"), 'live Return Card preview should emphasize the lantern only when nextAction is a real entry');
-assert(html.includes("isLantern && isRealUserEntry('nextAction', getValue()) ? ' has-live-lantern' : ''"), 'initial live Return Card render should include the lantern emphasis state when applicable');
-assert(!html.includes('${renderLiveReturnCardPreview()}\n          <article class="quiet-card rest-card rest-landing-card"'), 'Rest should not duplicate the compact live preview before the full Return Card');
+assert(!html.includes('live-return-card-preview'), 'Guided Return question flow should not show a live Return Card preview');
+assert(!html.includes('Held so far'), 'Guided Return question flow should not show Held so far summary copy');
+assert(!html.includes('A preview of the Return Card Luna is building.'), 'question flow should leave gathered summary for Rest');
+assert(!html.includes('live-return-card-compact'), 'question flow should not show a compact gathered preview');
+assert(!html.includes('updateLiveReturnCardPreview();'), 'Guided inline edits should not maintain a question-flow summary preview');
 assert(html.includes('field.input.value = guidedInput.value;'), 'Guided inline edits should update the existing overview input values');
 assert(html.includes('writeLocalValue(field.storageKey, guidedInput.value);'), 'Guided inline edits should save through the existing five storage keys');
 assert(html.includes('Your Return Card is ready.'), 'Rest may keep a small arrival line that does not compete with the main artifact');
@@ -493,9 +474,10 @@ assert(!css.includes('.guided-receiving-screen'), 'receiving screen styling shou
 assert(css.includes('.guided-inline-response'), 'inline Luna response should have dedicated quiet styling');
 assertRuleContains('.guided-question-card', ['padding: 0', 'background: transparent', 'border: 0'], 'question card should avoid nested card framing');
 assertRuleContains('.guided-answer-space', ['background: rgb(17 26 48 / 46%)', 'border: 1px solid rgb(205 213 244 / 9%)'], 'answer space should be integrated and quiet');
-assertRuleContains('.guided-answer-space-kicker', ['color: rgb(211 221 255 / 58%)'], 'Your answer label should be visually quiet');
+assert(!css.includes('.guided-answer-space-kicker'), 'removed answer kicker should not keep dead styling');
+assert(!css.includes('.guided-inline-helper'), 'removed inline helper should not keep dead styling');
 assertRuleContains('.guided-inline-response', ['font-size: 0.84rem', 'color: rgb(244 209 122 / 74%)', 'overflow-wrap: anywhere'], 'inline Luna response should feel quiet and line-like');
-assertRuleContains('.guided-primary-actions .guided-control:not([hidden])', ['border-color: rgb(244 209 122 / 48%)', '0 0 0 5px rgb(223 200 137 / 5%)'], 'Continue should keep primary lantern hierarchy');
+assertRuleContains('.guided-primary-actions .guided-control:not([hidden])', ['border-color: rgb(244 209 122 / 48%)', '0 0 0 5px rgb(223 200 137 / 5%)'], 'Next should keep primary lantern hierarchy');
 const longUnbrokenNextAction = 'ReturnToLunaWithoutSpaces'.repeat(8).slice(0, 140);
 assert.equal(longUnbrokenNextAction.length, 140, 'regression value should fill the One Next Action maxlength with no spaces');
 const longActionGuidance = guidance.buildReturnGuidance({ ...base, nextAction: longUnbrokenNextAction });
@@ -517,15 +499,8 @@ assert(css.includes('.guided-shell,\n    .guided-app-shell') && css.includes('mi
 assertRuleContains('.guided-stage-panel', ['display: grid', 'grid-template-rows: auto auto auto minmax(0, auto)', 'width: min(100%, 680px)', 'min-width: 0', 'max-width: 100%', 'min-block-size: clamp(420px, 48svh, 500px)', 'overflow: visible']);
 assertRuleContains('.guided-stage-body', ['align-content: start', 'min-width: 0', 'max-width: 100%', 'min-block-size: 0', 'overflow: visible']);
 
-assertRuleContains('.live-return-card-preview', ['display: grid', 'max-width: 100%', 'padding: 8px', 'background: rgb(10 17 34 / 18%)', 'border: 1px solid rgb(189 200 238 / 10%)']);
-assertRuleContains('.live-return-card-row span', ['overflow-wrap: anywhere']);
-assertRuleContains('.live-return-card-lantern.has-live-lantern', ['border-color: rgb(255 214 128 / 16%)']);
-assert.doesNotMatch(css, /\.live-return-card-preview\s*\{[\s\S]*?position\s*:\s*(?:sticky|fixed|absolute)/, 'live Return Card preview should stay in normal flow');
-assert(css.includes('.live-return-card-preview {\n        gap: 4px;\n        padding: 5px 6px;'), 'mobile live preview should use ultra-light spacing and padding');
-assert(css.includes('background: rgb(10 17 34 / 8%)'), 'mobile live preview should use an ultra-light background');
-assert(css.includes('border-color: rgb(189 200 238 / 6%)'), 'mobile live preview should use an ultra-light border');
-assert(css.includes('.live-return-card-note,\n      .live-return-card-list {\n        display: none;'), 'mobile compact preview should not render all five full preview rows as visible row boxes');
-assert(css.includes('.live-return-card-compact {\n        display: grid;'), 'mobile compact preview should show the tiny summary strip');
+assert(!css.includes('.live-return-card-preview'), 'live Return Card preview styles should be removed from question flow');
+assert(!css.includes('.live-return-card-row'), 'live Return Card preview row styles should be removed');
 assertRuleContains('.edit-fields', ['min-width: 0', 'max-width: 100%']);
 assertRuleContains('.edit-field', ['min-width: 0', 'max-width: 100%']);
 assertRuleContains('.edit-field input', ['box-sizing: border-box', 'min-width: 0', 'max-width: 100%']);

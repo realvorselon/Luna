@@ -832,15 +832,6 @@
       box-shadow: inset 0 1px 0 rgb(255 255 255 / 3%);
     }
 
-    .guided-answer-space-kicker {
-      margin: 0;
-      color: rgb(211 221 255 / 58%);
-      font-size: 0.76rem;
-      font-weight: 760;
-      letter-spacing: 0.09em;
-      text-transform: uppercase;
-    }
-
     .guided-inline-field {
       display: grid;
       gap: 10px;
@@ -887,13 +878,6 @@
       outline: 2px solid rgb(244 209 122 / 72%);
       outline-offset: 3px;
       border-color: rgb(244 209 122 / 46%);
-    }
-
-    .guided-inline-helper {
-      margin: 0;
-      color: rgb(199 209 232 / 76%);
-      font-size: 0.88rem;
-      line-height: 1.5;
     }
 
     .guided-inline-response {
@@ -1005,101 +989,6 @@
       border-color: rgb(223 200 137 / 16%);
     }
 
-
-    .live-return-card-preview {
-      display: grid;
-      gap: 6px;
-      min-width: 0;
-      max-width: 100%;
-      margin-top: 0;
-      padding: 8px;
-      color: rgb(216 224 246 / 76%);
-      background: rgb(10 17 34 / 18%);
-      border: 1px solid rgb(189 200 238 / 10%);
-      border-radius: 16px;
-      box-shadow: inset 0 1px 0 rgb(255 255 255 / 2%);
-    }
-
-    .live-return-card-preview .label {
-      color: rgb(244 232 196 / 70%);
-      font-size: 0.72rem;
-    }
-
-    .live-return-card-preview p {
-      margin: 0;
-    }
-
-    .live-return-card-note {
-      color: rgb(197 206 224 / 62%);
-      font-size: 0.78rem;
-    }
-
-    .live-return-card-compact {
-      display: none;
-      gap: 4px;
-      min-width: 0;
-    }
-
-    .live-return-card-compact-line,
-    .live-return-card-compact-more {
-      margin: 0;
-      min-width: 0;
-      overflow-wrap: anywhere;
-      color: rgb(235 239 255 / 72%);
-      font-size: 0.78rem;
-      line-height: 1.28;
-    }
-
-    .live-return-card-compact-line strong {
-      color: rgb(244 232 196 / 68%);
-      font-size: 0.6rem;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-    }
-
-    .live-return-card-compact-more {
-      color: rgb(197 206 224 / 56%);
-      font-size: 0.7rem;
-    }
-
-    .live-return-card-list {
-      display: grid;
-      gap: 5px;
-    }
-
-    .live-return-card-row {
-      display: grid;
-      gap: 1px;
-      min-width: 0;
-      padding: 5px 7px;
-      background: rgb(25 35 60 / 24%);
-      border: 1px solid rgb(189 200 238 / 6%);
-      border-radius: 11px;
-    }
-
-    .live-return-card-row strong {
-      color: rgb(197 206 224 / 70%);
-      font-size: 0.61rem;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-    }
-
-    .live-return-card-row span {
-      overflow-wrap: anywhere;
-      color: rgb(235 239 255 / 76%);
-      font-size: 0.8rem;
-      line-height: 1.3;
-    }
-
-    .live-return-card-lantern.has-live-lantern {
-      background: rgb(52 47 55 / 38%);
-      border-color: rgb(255 214 128 / 16%);
-    }
-
-    .live-return-card-lantern.has-live-lantern strong,
-    .live-return-card-lantern.has-live-lantern span {
-      color: rgb(244 232 196 / 82%);
-    }
 
     .guided-actions {
       display: grid;
@@ -1488,12 +1377,6 @@
         line-height: 1.32;
       }
 
-      .guided-inline-helper {
-        font-size: 0.8rem;
-        line-height: 1.35;
-        color: rgb(199 209 232 / 58%);
-      }
-
       .luna-insight-card {
         gap: 2px;
         padding: 6px 8px;
@@ -1512,45 +1395,6 @@
       .luna-insight-card p {
         font-size: 0.8rem;
         line-height: 1.32;
-      }
-
-      .live-return-card-preview {
-        gap: 4px;
-        padding: 5px 6px;
-        color: rgb(216 224 246 / 58%);
-        background: rgb(10 17 34 / 8%);
-        border-color: rgb(189 200 238 / 6%);
-        border-radius: 10px;
-        box-shadow: none;
-      }
-
-      .live-return-card-preview .label {
-        color: rgb(244 232 196 / 56%);
-        font-size: 0.66rem;
-      }
-
-      .live-return-card-note,
-      .live-return-card-list {
-        display: none;
-      }
-
-      .live-return-card-compact {
-        display: grid;
-      }
-
-      .live-return-card-compact-line {
-        font-size: 0.76rem;
-        line-height: 1.24;
-      }
-
-      .live-return-card-compact-line strong {
-        font-size: 0.56rem;
-        color: rgb(244 232 196 / 62%);
-      }
-
-      .live-return-card-compact-more {
-        font-size: 0.68rem;
-        line-height: 1.2;
       }
 
       .guided-actions {
@@ -2024,54 +1868,6 @@
       `;
     };
 
-    const liveReturnCardRows = [
-      ['projectName', 'Returning to', getProjectName],
-      ['currentGoal', 'The thread', getCurrentGoal],
-      ['nextAction', 'The lantern', getNextAction],
-      ['setAside', 'Waiting outside the gate', getSetAside],
-      ['recordChange', 'What changed', getRecordChange]
-    ];
-
-    const renderLiveReturnCardPreview = () => `
-      <aside class="live-return-card-preview" aria-label="Live Return Card preview">
-        <span class="label">Held so far</span>
-        <p class="live-return-card-note">A preview of the Return Card Luna is building.</p>
-        <div class="live-return-card-compact" aria-label="Compact held summary">
-          <p class="live-return-card-compact-line" data-live-return-card-compact-field="projectName"><strong>Returning</strong> <span>${escapeHtml(formatRestSummaryValue('projectName', getProjectName()))}</span></p>
-          <p class="live-return-card-compact-line" data-live-return-card-compact-field="nextAction"><strong>Lantern</strong> <span>${escapeHtml(formatRestSummaryValue('nextAction', getNextAction()))}</span></p>
-          <p class="live-return-card-compact-more">+ 3 held for Rest</p>
-        </div>
-        <div class="live-return-card-list">
-          ${liveReturnCardRows.map(([fieldKey, label, getValue]) => {
-            const isLantern = fieldKey === 'nextAction';
-            const lanternClass = isLantern && isRealUserEntry('nextAction', getValue()) ? ' has-live-lantern' : '';
-            return `<p class="live-return-card-row${isLantern ? ' live-return-card-lantern' : ''}${lanternClass}" data-live-return-card-field="${fieldKey}"><strong>${escapeHtml(label)}</strong><span>${escapeHtml(formatRestSummaryValue(fieldKey, getValue()))}</span></p>`;
-          }).join('')}
-        </div>
-      </aside>
-    `;
-
-    const updateLiveReturnCardPreview = () => {
-      const preview = guidedStageBody.querySelector('.live-return-card-preview');
-      if (!preview) return;
-      liveReturnCardRows.forEach(([fieldKey, , getValue]) => {
-        const row = preview.querySelector(`[data-live-return-card-field="${fieldKey}"]`);
-        const value = getValue();
-        if (row) {
-          const valueElement = row.querySelector('span');
-          if (valueElement) valueElement.textContent = formatRestSummaryValue(fieldKey, value);
-          if (fieldKey === 'nextAction') {
-            row.classList.toggle('has-live-lantern', isRealUserEntry('nextAction', value));
-          }
-        }
-        const compactRow = preview.querySelector(`[data-live-return-card-compact-field="${fieldKey}"]`);
-        if (compactRow) {
-          const compactValue = compactRow.querySelector('span');
-          if (compactValue) compactValue.textContent = formatRestSummaryValue(fieldKey, value);
-        }
-      });
-    };
-
 
     const getGuidedFlowLeadIn = (stageKey) => {
       const project = formatRestSummaryValue('projectName', getProjectName());
@@ -2105,7 +1901,6 @@
         input: projectNameInput,
         storageKey: projectNameStorageKey,
         update: () => updateProjectNameDisplay(),
-        helper: 'A short name is enough.',
         guidedDisplaySelector: '#guided-project-name-display'
       },
       currentGoal: {
@@ -2113,7 +1908,6 @@
         input: currentGoalInput,
         storageKey: currentGoalStorageKey,
         update: () => updateCurrentGoalDisplay(),
-        helper: 'Say what makes restarting feel hard.',
         guidedDisplaySelector: '#guided-current-goal-display'
       },
       nextAction: {
@@ -2121,7 +1915,6 @@
         input: nextActionInput,
         storageKey: nextActionStorageKey,
         update: () => updateNextActionDisplay(),
-        helper: 'One visible move is enough.',
         guidedDisplaySelector: '#guided-next-action-display'
       },
       setAside: {
@@ -2129,7 +1922,6 @@
         input: setAsideInput,
         storageKey: setAsideStorageKey,
         update: () => updateSetAsideDisplay(),
-        helper: 'Name one thing you do not need to carry right now.',
         guidedDisplaySelector: '#guided-set-aside-display'
       },
       recordChange: {
@@ -2137,7 +1929,6 @@
         input: recordChangeInput,
         storageKey: recordChangeStorageKey,
         update: () => updateRecordChangeDisplay(),
-        helper: 'A few clear words are enough.',
         guidedDisplaySelector: '#guided-record-change-display'
       }
     };
@@ -2145,15 +1936,12 @@
     const renderGuidedEditableField = (fieldKey) => {
       const field = guidedEditableFields[fieldKey];
       const inputId = `guided-${fieldKey}-input`;
-      const helperId = `${inputId}-helper`;
       return `
         <div class="guided-inline-field guided-answer-space" data-guided-field="${fieldKey}">
-          <p class="guided-answer-space-kicker">Your answer</p>
           <label for="${inputId}">${escapeHtml(field.label)}</label>
           <div class="guided-answer-input-frame">
-            <input id="${inputId}" type="text" value="${escapeHtml(field.input.value)}" autocomplete="off" maxlength="${field.input.getAttribute('maxlength')}" aria-describedby="${helperId}">
+            <input id="${inputId}" type="text" value="${escapeHtml(field.input.value)}" autocomplete="off" maxlength="${field.input.getAttribute('maxlength')}">
           </div>
-          <p class="guided-inline-helper" id="${helperId}">${escapeHtml(field.helper)}</p>
           <p class="guided-inline-response" data-guided-inline-response="${fieldKey}">${escapeHtml(getGuidedInlineResponse(fieldKey))}</p>
         </div>
       `;
@@ -2178,7 +1966,6 @@
           }
           updateGuidedFlowLeadIn();
           updateVisibleGuidedInsight();
-          updateLiveReturnCardPreview();
         });
       });
     };
@@ -2213,13 +2000,12 @@
         intro: 'Answer one thing at a time. Each answer helps Luna build the Return Card and stays in this browser.',
         render: () => `
           <div class="guided-question-card">
-            ${renderGuidedFlowLeadIn(getGuidedPlaceFieldKey() === 'currentGoal' ? 'currentGoal' : 'projectName')}
             <div class="guided-inline-edit" aria-label="Find your place editable project context">
               ${renderGuidedEditableField(getGuidedPlaceFieldKey())}
             </div>
             <div class="guided-place-controls" role="group" aria-label="Find your place question navigation">
               <button class="guided-control" type="button" data-guided-place-back ${guidedPlaceStepIndex === 0 ? 'hidden' : ''}>Back</button>
-              <button class="guided-control" type="button" data-guided-place-continue ${guidedPlaceStepIndex === 1 ? 'hidden' : ''}>Continue</button>
+              <button class="guided-control" type="button" data-guided-place-continue ${guidedPlaceStepIndex === 1 ? 'hidden' : ''}>Next</button>
             </div>
           </div>
         `
@@ -2234,7 +2020,6 @@
             <h3>${escapeHtml(formatRestSummaryValue('projectName', getProjectName()))}</h3>
             <p>${escapeHtml(formatRememberGoalLine())}</p>
           </article>
-          ${renderLiveReturnCardPreview()}
         `
       },
       {
@@ -2243,11 +2028,9 @@
         tone: 'choose',
         render: () => `
           <div class="guided-question-card">
-            ${renderGuidedFlowLeadIn('choose')}
             <div class="guided-inline-edit" aria-label="Choose editable next action">
               ${renderGuidedEditableField('nextAction')}
             </div>
-            <p class="guided-answer-note">Begin here when you come back.</p>
           </div>
         `
       },
@@ -2257,11 +2040,9 @@
         tone: 'set-aside',
         render: () => `
           <div class="guided-question-card">
-            ${renderGuidedFlowLeadIn('setAside')}
             <div class="guided-inline-edit" aria-label="Set Aside editable value">
               ${renderGuidedEditableField('setAside')}
             </div>
-            <p class="guided-answer-note">A boundary, not a backlog.</p>
           </div>
         `
       },
@@ -2271,11 +2052,9 @@
         tone: 'record',
         render: () => `
           <div class="guided-question-card">
-            ${renderGuidedFlowLeadIn('record')}
             <div class="guided-inline-edit" aria-label="Record editable change note">
               ${renderGuidedEditableField('recordChange')}
             </div>
-            <p class="guided-answer-note">A few clear words are enough.</p>
           </div>
         `
       },
@@ -2540,7 +2319,6 @@
       guidedStageBody.innerHTML = stage.render();
       syncGuidedEditableFields();
       syncGuidedPlaceControls();
-      updateLiveReturnCardPreview();
       restoreNextActionEditorToOverview();
 
       guidedBackButton.hidden = guidedStageIndex === 0;

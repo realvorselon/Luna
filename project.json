@@ -3,6 +3,10 @@
   "statusHistory": [
     {
       "date": "2026-07-16",
+      "note": "This was a focused Guided Return de-clutter pass that protected the simpler inline-response flow by keeping question screens focused on one question, one answer, one small Luna response, and one next action, while leaving the gathered summary for Rest."
+    },
+    {
+      "date": "2026-07-16",
       "note": "This was a focused Guided Return flow simplification pass that removed separate receiving interstitials and replaced them with small inline Luna responses, so each question screen now holds the ask, answer, response, and next step without adding extra screens."
     },
     {
@@ -710,9 +714,9 @@
       "note": "The project is resting after a good run and ready for one gentle improvement."
     }
   ],
-  "currentGoal": "Rest after the Guided Return flow simplification pass.",
-  "lastCompletedRun": "This was a focused Guided Return flow simplification pass that removed separate receiving interstitials and replaced them with small inline Luna responses, so each question screen now holds the ask, answer, response, and next step without adding extra screens.",
-  "nextStep": "Human mobile test of whether Guided Return feels lighter with inline Luna responses and no between-question screens.",
+  "currentGoal": "Rest after the Guided Return de-clutter pass.",
+  "lastCompletedRun": "This was a focused Guided Return de-clutter pass that protected the simpler inline-response flow by keeping question screens focused on one question, one answer, one small Luna response, and one next action, while leaving the gathered summary for Rest.",
+  "nextStep": "Human mobile test of whether Guided Return question screens feel clean, quiet, and focused before Rest gathers the answers.",
   "dashboardGuide": [
     "Welcome starts the path to read through Record the Change before choosing more work.",
     "Status gives a quick snapshot of how the project is doing right now.",
@@ -727,6 +731,7 @@
     "Keep the implementation narrow: opening threshold visual/layout only, with no behavior expansion."
   ],
   "decisionLog": [
+    "2026-07-16: This was a focused Guided Return de-clutter pass that protected the simpler inline-response flow by keeping question screens focused on one question, one answer, one small Luna response, and one next action, while leaving the gathered summary for Rest.",
     "2026-07-16: This was a focused Guided Return hierarchy polish pass that made receiving screens feel like intentional between-question moments instead of repeated stages, reduced duplicate “holding” language, clarified where each answer goes in the Return Card, and hid opening-threshold scaffolding during Guided Return.",
     "2026-07-14: This was a focused opening threshold presentation pass that made Luna’s first screen quieter and more ceremonial, reducing repeated explanation while keeping Return gently as the clear moonlit gate into the local-only return flow.",
     "2026-07-14: This was a focused transition coherence pass that kept Luna’s existing local-only loop intact while making the opening, Guided Return stages, Rest, and Return to Luna feel more like one moonlit place gently changing focus.",
@@ -863,8 +868,8 @@
   "currentMode": {
     "name": "Rest",
     "value": "Rest",
-    "description": "Luna is resting after a focused Guided Return flow simplification pass.",
-    "whyItMatters": "Guided Return now keeps each question, answer, inline Luna response, and next step together without extra screens."
+    "description": "Luna is resting after a focused Guided Return de-clutter pass.",
+    "whyItMatters": "Guided Return question screens now stay focused on the current answer, while Rest gathers the five answers into the final handoff."
   },
-  "nextSuggestedStep": "Human mobile test of whether Guided Return feels lighter with inline Luna responses and no between-question screens."
+  "nextSuggestedStep": "Human mobile test of whether Guided Return question screens feel clean, quiet, and focused before Rest gathers the answers."
 }
