@@ -1,5 +1,12 @@
 # Roadmap
 
+## 2026-07-16 — Guided Return visual foundation pass
+
+- This was a focused Guided Return visual foundation pass that made the active question and receiving moments feel more like one moonlit return space instead of stacked form panels, while preserving the local-only six-stage flow and Return Card behavior.
+- Keep testing whether Guided Return has one centered ritual space, one clear question or receiving moment, and one obvious lantern action on mobile.
+- Status remains Rest; next suggested step is: “Human mobile test of whether Guided Return now feels like one calm moonlit return space.”
+
+
 ## 2026-07-16 — Guided Return hierarchy polish pass
 
 - This was a focused Guided Return hierarchy polish pass that made receiving screens feel like intentional between-question moments instead of repeated stages, reduced duplicate “holding” language, clarified where each answer goes in the Return Card, and hid opening-threshold scaffolding during Guided Return.

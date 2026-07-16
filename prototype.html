@@ -661,10 +661,11 @@
       padding: clamp(18px, 3vw, 28px);
       overflow: hidden;
       background:
+        radial-gradient(ellipse at 50% 12%, rgb(183 194 224 / 7%), transparent 28rem),
         linear-gradient(180deg, rgb(13 21 40 / 96%), rgb(12 19 36 / 96%));
-      border: 1px solid rgb(152 166 214 / 14%);
-      border-radius: 26px;
-      box-shadow: 0 16px 36px rgb(0 0 0 / 16%), inset 0 1px 0 rgb(255 255 255 / 4%);
+      border: 1px solid rgb(152 166 214 / 10%);
+      border-radius: 30px;
+      box-shadow: 0 18px 42px rgb(0 0 0 / 14%), inset 0 1px 0 rgb(255 255 255 / 3%);
     }
 
     .guided-return-view::before {
@@ -699,7 +700,7 @@
       z-index: 1;
       display: grid;
       grid-template-rows: auto minmax(0, auto) auto;
-      gap: 18px;
+      gap: 16px;
       min-height: min(640px, calc(100svh - 128px));
     }
 
@@ -708,8 +709,10 @@
       min-width: 0;
       max-width: 100%;
       gap: 8px;
-      padding: 2px 2px 14px;
-      border-bottom: 1px solid rgb(174 190 226 / 13%);
+      justify-items: center;
+      padding: 2px 2px 8px;
+      text-align: center;
+      border-bottom: 0;
     }
 
     .guided-shell-kicker {
@@ -729,8 +732,8 @@
     }
 
     .guided-shell-note {
-      max-width: 620px;
-      margin: 0;
+      max-width: 540px;
+      margin: 0 auto;
       color: var(--silver);
     }
 
@@ -754,17 +757,21 @@
 
     .guided-stage-panel {
       align-self: stretch;
+      justify-self: center;
+      width: min(100%, 680px);
       display: grid;
       grid-template-rows: auto auto auto minmax(0, auto);
       min-width: 0;
       max-width: 100%;
       min-block-size: clamp(420px, 48svh, 500px);
       overflow: visible;
-      padding: clamp(18px, 3vw, 28px);
-      background: linear-gradient(180deg, rgb(20 29 52 / 90%), rgb(18 27 49 / 88%));
-      border: 1px solid rgb(152 166 214 / 14%);
-      border-radius: 22px;
-      box-shadow: inset 0 1px 0 rgb(255 255 255 / 4%);
+      padding: clamp(22px, 4vw, 34px);
+      background:
+        radial-gradient(ellipse at 50% 12%, rgb(244 209 122 / 6%), transparent 22rem),
+        linear-gradient(180deg, rgb(20 29 52 / 90%), rgb(18 27 49 / 88%));
+      border: 1px solid rgb(152 166 214 / 10%);
+      border-radius: 26px;
+      box-shadow: 0 14px 32px rgb(0 0 0 / 10%), inset 0 1px 0 rgb(255 255 255 / 4%);
       will-change: opacity;
     }
 
@@ -818,16 +825,16 @@
       gap: 9px;
       min-width: 0;
       max-width: 100%;
-      padding: clamp(13px, 2.3vw, 17px);
-      background: rgb(17 26 48 / 68%);
-      border: 1px solid rgb(205 213 244 / 15%);
-      border-radius: 20px;
-      box-shadow: inset 0 1px 0 rgb(255 255 255 / 5%);
+      padding: clamp(14px, 2.6vw, 20px);
+      background: rgb(17 26 48 / 46%);
+      border: 1px solid rgb(205 213 244 / 9%);
+      border-radius: 22px;
+      box-shadow: inset 0 1px 0 rgb(255 255 255 / 3%);
     }
 
     .guided-answer-space-kicker {
       margin: 0;
-      color: rgb(211 221 255 / 74%);
+      color: rgb(211 221 255 / 58%);
       font-size: 0.76rem;
       font-weight: 760;
       letter-spacing: 0.09em;
@@ -857,9 +864,9 @@
       display: grid;
       min-width: 0;
       max-width: 100%;
-      padding: 7px;
-      background: rgb(8 15 31 / 44%);
-      border: 1px solid rgb(212 220 247 / 13%);
+      padding: 5px;
+      background: rgb(8 15 31 / 28%);
+      border: 1px solid rgb(212 220 247 / 8%);
       border-radius: 18px;
     }
 
@@ -868,8 +875,8 @@
       min-height: 48px;
       padding: 13px 14px;
       color: var(--moon);
-      background: rgb(42 53 82 / 78%);
-      border: 1px solid rgb(217 225 250 / 26%);
+      background: rgb(34 45 74 / 70%);
+      border: 1px solid rgb(217 225 250 / 18%);
       border-radius: 13px;
       box-shadow: inset 0 1px 0 rgb(255 255 255 / 4%);
       font: inherit;
@@ -895,9 +902,11 @@
       gap: 10px;
       align-content: center;
       min-block-size: 220px;
-      text-align: left;
-      background: rgb(244 209 122 / 7%);
-      border-color: rgb(244 209 122 / 14%);
+      justify-items: center;
+      text-align: center;
+      background: radial-gradient(ellipse at 50% 45%, rgb(244 209 122 / 12%), rgb(244 209 122 / 4%) 58%, transparent 100%);
+      border-color: rgb(244 209 122 / 10%);
+      box-shadow: inset 0 1px 0 rgb(255 255 255 / 3%), 0 0 0 1px rgb(244 209 122 / 3%);
     }
 
     .guided-receiving-screen h3,
@@ -911,9 +920,9 @@
       gap: 12px;
       min-width: 0;
       max-width: 100%;
-      padding: clamp(14px, 2.4vw, 20px);
-      background: rgb(14 22 40 / 38%);
-      border: 1px solid rgb(189 200 238 / 12%);
+      padding: 0;
+      background: transparent;
+      border: 0;
       border-radius: 20px;
     }
 
@@ -1110,8 +1119,9 @@
       min-width: 0;
       max-width: 100%;
       min-block-size: 0;
-      padding-top: 16px;
-      border-top: 1px solid rgb(174 190 226 / 13%);
+      justify-items: center;
+      padding-top: 12px;
+      border-top: 0;
     }
 
     .guided-primary-actions,
@@ -1121,6 +1131,12 @@
       gap: 10px;
       min-width: 0;
       max-width: 100%;
+    }
+
+    .guided-primary-actions .guided-control:not([hidden]) {
+      background: linear-gradient(180deg, rgb(91 75 54 / 96%), rgb(55 48 57 / 96%));
+      border-color: rgb(244 209 122 / 48%);
+      box-shadow: 0 10px 24px rgb(0 0 0 / 16%), 0 0 0 5px rgb(223 200 137 / 5%);
     }
 
     .overview-return-luna {
@@ -1433,8 +1449,9 @@
       .guided-stage-panel {
         min-height: 0;
         min-block-size: clamp(360px, 48svh, 480px);
-        padding: 16px;
-        border-radius: 18px;
+        width: 100%;
+        padding: 18px 14px;
+        border-radius: 20px;
       }
 
       .guided-stage-body {
@@ -1443,10 +1460,10 @@
       }
 
       .guided-question-card {
-        gap: 8px;
-        padding: 10px;
-        background: rgb(14 22 40 / 28%);
-        border-color: rgb(189 200 238 / 9%);
+        gap: 10px;
+        padding: 0;
+        background: transparent;
+        border-color: transparent;
         border-radius: 16px;
       }
 
@@ -1461,9 +1478,9 @@
       }
 
       .guided-answer-space {
-        gap: 6px;
-        padding: 10px;
-        border-color: rgb(205 213 244 / 18%);
+        gap: 7px;
+        padding: 12px;
+        border-color: rgb(205 213 244 / 10%);
         border-radius: 15px;
       }
 
@@ -1478,8 +1495,8 @@
       }
 
       .guided-receiving-screen {
-        min-block-size: 180px;
-        padding: 16px;
+        min-block-size: 220px;
+        padding: 18px 14px;
       }
 
       .guided-inline-helper {
