@@ -2,6 +2,10 @@
   "status": "Rest",
   "statusHistory": [
     {
+      "date": "2026-07-18",
+      "note": "This was a focused Guided Return path-language pass that replaced visible step/stage framing with calmer path markers, so Luna feels more like a moonlit return path than a task wizard while preserving the same simplified local flow."
+    },
+    {
       "date": "2026-07-16",
       "note": "This was a focused visible-language cleanup pass that replaced prototype-like labels with plainer Luna-facing questions and a simpler “Start here next time” final handoff, while preserving the simplified inline-response flow and the same five saved values."
     },
@@ -718,9 +722,9 @@
       "note": "The project is resting after a good run and ready for one gentle improvement."
     }
   ],
-  "currentGoal": "Rest after the visible-language cleanup pass.",
-  "lastCompletedRun": "This was a focused visible-language cleanup pass that replaced prototype-like labels with plainer Luna-facing questions and a simpler “Start here next time” final handoff, while preserving the simplified inline-response flow and the same five saved values.",
-  "nextStep": "Human mobile test of whether the plainer Luna-facing language feels warm, clear, and less like a project-management form.",
+  "currentGoal": "Rest after the Guided Return path-language pass.",
+  "lastCompletedRun": "This was a focused Guided Return path-language pass that replaced visible step/stage framing with calmer path markers, so Luna feels more like a moonlit return path than a task wizard while preserving the same simplified local flow.",
+  "nextStep": "Human mobile test of whether the visible Guided Return language now feels like walking a quiet path instead of completing a task wizard.",
   "dashboardGuide": [
     "Welcome starts the path to read through Record the Change before choosing more work.",
     "Status gives a quick snapshot of how the project is doing right now.",
@@ -872,8 +876,8 @@
   "currentMode": {
     "name": "Rest",
     "value": "Rest",
-    "description": "Luna is resting after a focused visible-language cleanup pass.",
-    "whyItMatters": "The app now asks plainer Luna-facing questions and ends with a simpler place to start next time while preserving the same saved values and inline-response flow."
+    "description": "Luna is resting after a focused Guided Return path-language pass.",
+    "whyItMatters": "The app now uses calmer path markers instead of visible step/stage framing while preserving the same simplified local flow."
   },
-  "nextSuggestedStep": "Human mobile test of whether the plainer Luna-facing language feels warm, clear, and less like a project-management form."
+  "nextSuggestedStep": "Human mobile test of whether the visible Guided Return language now feels like walking a quiet path instead of completing a task wizard."
 }

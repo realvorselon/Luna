@@ -115,10 +115,10 @@ const transitionTrail = 'This was a focused Guided Return response-transition pa
 const hierarchyTrail = 'This was a focused Guided Return hierarchy polish pass that made receiving screens feel like intentional between-question moments instead of repeated stages, reduced duplicate “holding” language, clarified where each answer goes in the Return Card, and hid opening-threshold scaffolding during A gentle return.';
 const simplificationTrail = 'This was a focused Guided Return flow simplification pass that removed separate receiving interstitials and replaced them with small inline Luna responses, so each question screen now holds the ask, answer, response, and next step without adding extra screens.';
 const simplificationNextStep = 'Human mobile test of whether Guided Return feels lighter with inline Luna responses and no between-question screens.';
-const declutterTrail = 'This was a focused visible-language cleanup pass that replaced prototype-like labels with plainer Luna-facing questions and a simpler “Start here next time” final handoff, while preserving the simplified inline-response flow and the same five saved values.';
-const declutterNextStep = 'Human mobile test of whether the plainer Luna-facing language feels warm, clear, and less like a project-management form.';
+const declutterTrail = 'This was a focused Guided Return path-language pass that replaced visible step/stage framing with calmer path markers, so Luna feels more like a moonlit return path than a task wizard while preserving the same simplified local flow.';
+const declutterNextStep = 'Human mobile test of whether the visible Guided Return language now feels like walking a quiet path instead of completing a task wizard.';
 for (const trailText of [state, roadmap, changelog]) {
-  assert(trailText.includes('visible-language cleanup pass'), 'project trail should record the focused de-clutter pass');
+  assert(trailText.includes('Guided Return path-language pass'), 'project trail should record the focused path-language pass');
   assert(trailText.includes(declutterTrail), 'project trail should include the de-clutter summary wording');
   assert(trailText.includes('Guided Return flow simplification pass'), 'project trail should preserve the focused flow simplification pass');
   assert(trailText.includes('removed separate receiving interstitials'), 'project trail should name the removed interstitial problem');
@@ -131,14 +131,14 @@ for (const trailText of [state, roadmap, changelog]) {
   assert(trailText.includes(simplificationNextStep), 'project trail should preserve the flow simplification human test');
 }
 assert.deepEqual(project.statusHistory[0], {
-  date: '2026-07-16',
+  date: '2026-07-18',
   note: declutterTrail
 }, 'new statusHistory entry should keep the existing object shape');
-assert.equal(project.currentGoal, 'Rest after the visible-language cleanup pass.');
+assert.equal(project.currentGoal, 'Rest after the Guided Return path-language pass.');
 assert.equal(project.currentMode.name, 'Rest');
 assert.equal(project.currentMode.value, 'Rest');
-assert.equal(project.currentMode.description, 'Luna is resting after a focused visible-language cleanup pass.');
-assert.equal(project.currentMode.whyItMatters, 'The app now asks plainer Luna-facing questions and ends with a simpler place to start next time while preserving the same saved values and inline-response flow.');
+assert.equal(project.currentMode.description, 'Luna is resting after a focused Guided Return path-language pass.');
+assert.equal(project.currentMode.whyItMatters, 'The app now uses calmer path markers instead of visible step/stage framing while preserving the same simplified local flow.');
 assert.equal(project.lastCompletedRun, declutterTrail);
 assert.equal(project.nextStep, declutterNextStep);
 assert.equal(project.nextSuggestedStep, declutterNextStep);
@@ -213,11 +213,16 @@ for (const oldInvitation of ['Name the thing you want to return to.', 'What are 
   assert(!html.includes(oldInvitation), `${oldInvitation} old placeholder-feeling wording should be removed from visible prototype copy`);
   assert(!js.includes(oldInvitation), `${oldInvitation} old placeholder-feeling wording should be removed from guidance defaults`);
 }
-assert.deepEqual(guidedStageTitles, ['Find your place', 'Remember', 'Choose', 'Set Aside', 'Record', 'Rest'], 'A gentle return stage order should stay fixed');
+assert.deepEqual(guidedStageTitles, ['What are you coming back to?', 'Pick up the thread', 'Choose the lantern', 'Leave this outside', 'Keep this for next time', 'Start here next time'], 'Guided Return visible titles should read as path markers while internal stage order stays fixed');
+assert(!/Stage \d+ of 6|Step \d+ of 6/.test(html), 'Guided Return should remove visible stage/step counters');
+for (const placeLabel of ['At the gate', 'Finding the thread', 'The thread', 'The lantern', 'Outside the gate', 'For next time', 'Resting place']) {
+  assert(html.includes(placeLabel), `Guided Return should include path/place label: ${placeLabel}`);
+}
+assert(html.includes("guidedPosition.textContent = typeof stage.placeLabel === 'function' ? stage.placeLabel() : stage.placeLabel;"), 'Guided Return position text should render path/place labels instead of numeric counters');
 assert(!html.includes("showGuidedReceivingTransition('projectName', 0, 1);"), 'projectName Continue should no longer route through a receiving interstitial');
 assert(!html.includes('showGuidedReceivingTransition(fieldKey, guidedStageIndex + 1, guidedPlaceStepIndex);'), 'question Continue should no longer pass through receiving before the next stage');
 assert(!html.includes("guidedTransitionPending ? 'Continue'"), 'receiving interstitial should no longer provide a manual Continue button');
-assert.equal(guidedStageTitles[0], 'Find your place', 'the first A gentle return stage should still say Find your place');
+assert.equal(guidedStageTitles[0], 'What are you coming back to?', 'the first Guided Return title should stay plain and question-like');
 
 for (const questionCopy of [
   'What are you coming back to?',
@@ -249,7 +254,7 @@ assert(html.includes('guided-answer-space'), 'A gentle return should style edita
 assert(html.includes('guided-answer-input-frame'), 'A gentle return answer spaces should wrap the real input elements');
 assert(!html.includes('Your answer'), 'A gentle return should remove extra form-like answer kicker copy');
 assert(!html.includes('Luna will hold this locally.'), 'A gentle return should not repeat local-only helper copy under every answer');
-assert(html.includes('Answer a few plain questions. Luna keeps one clear place to start again.'), 'A gentle return should keep one compact shell framing line');
+assert(html.includes('Walk through a few plain questions. Luna keeps one clear place to start again.'), 'Guided Return should keep one compact path-framed shell line');
 for (const removedHelperNote of ['Begin here when you come back.', 'A boundary, not a backlog.', 'A few clear words are enough.']) {
   assert(!html.includes(removedHelperNote), `A gentle return should remove extra question-card helper copy: ${removedHelperNote}`);
 }
@@ -295,7 +300,7 @@ for (const obsoleteReceivingPiece of [
 ]) {
   assert(!html.includes(obsoleteReceivingPiece), `A gentle return should remove obsolete receiving UI/state: ${obsoleteReceivingPiece}`);
 }
-const findYourPlaceRender = html.match(/title: 'Find your place',[\s\S]*?render: \(\) => `([\s\S]*?)`\n      \}/)[1];
+const findYourPlaceRender = html.match(/title: 'What are you coming back to\?',[\s\S]*?render: \(\) => `([\s\S]*?)`\n      \}/)[1];
 assert.equal((findYourPlaceRender.match(/>Next<\/button>/g) || []).length, 1, 'Find your place step 1 should render one simple local Next control');
 assert(html.includes("guidedPlaceStepIndex = 1;\n          moveGuidedStage('forward');"), 'projectName Continue should advance directly to currentGoal');
 assert(html.includes("if (guidedStageIndex === 0 && guidedPlaceStepIndex === 0) {\n        guidedPlaceStepIndex = 1;\n        moveGuidedStage('forward');"), 'main projectName routing should advance directly to currentGoal if used');
@@ -538,12 +543,12 @@ assertRuleContains('.opening-payoff-item', ['background: transparent', 'border: 
 assertRuleContains('.opening-payoff-item.is-lantern', ['linear-gradient(180deg, rgb(223 200 137 / 8%)']);
 assertRuleContains('.opening-context-data', ['position: absolute', 'clip-path: inset(50%)']);
 assert(html.includes('For one unfinished thing you do not want to carry alone.'), 'opening should keep the one-unfinished-thing invitation without repeating the full payoff');
-assert(html.includes('Find your place'), 'A gentle return copy should name the first step clearly');
+assert(html.includes('At the gate'), 'Guided Return copy should name the first path place clearly');
 assert(html.includes('Start by naming the unfinished thing you want to return to.'), 'first A gentle return step should plainly explain its purpose');
 assert(html.includes('Come back gently.'), 'opening should clearly invite one unfinished thing');
 assert(html.includes('Luna helps you turn scattered thoughts into one clear place to start again.'), "opening should explain Luna's resume point and Return Card payoff quietly");
 assert(html.includes('Leave with a place to start'), 'opening should name the practical Return Card payoff');
-assert(html.includes('Answer a few plain questions. Luna keeps one clear place to start again.'), 'A gentle return shell should frame the stages as one calm path');
+assert(html.includes('Walk through a few plain questions. Luna keeps one clear place to start again.'), 'Guided Return shell should frame the stages as one calm path');
 assertRuleContains('.try-editing-card', ['background: rgb(25 34 58 / 94%)', 'border: 1px solid rgb(196 205 238 / 22%)']);
 assertRuleContains('.edit-field input', ['background: rgb(35 45 72 / 96%)', 'box-shadow: none']);
 assertRuleContains('.guided-return-view', ['radial-gradient(ellipse at 50% 12%, rgb(183 194 224 / 7%)', 'linear-gradient(180deg, rgb(13 21 40 / 96%)', 'box-shadow: 0 18px 42px']);

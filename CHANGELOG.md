@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-07-18
+
+### Guided Return path-language pass
+
+- This was a focused Guided Return path-language pass that replaced visible step/stage framing with calmer path markers, so Luna feels more like a moonlit return path than a task wizard while preserving the same simplified local flow.
+- Replaced the visible Guided Return counter with path/place labels and retitled the visible markers while preserving the same local storage keys, internal order, inline Luna responses, and Rest Return Card behavior.
+- Next suggested step: Human mobile test of whether the visible Guided Return language now feels like walking a quiet path instead of completing a task wizard.
+
 ## 2026-07-16
 
 ### Visible-language cleanup pass

@@ -1481,12 +1481,12 @@
     <section class="guided-return-view" id="guided-return-view" aria-labelledby="guided-shell-title" hidden>
       <div class="guided-shell">
         <div class="guided-shell-header">
-          <p class="guided-shell-kicker">A gentle return</p>
+          <p class="guided-shell-kicker">Moonlit return path</p>
           <h2 class="guided-shell-title" id="guided-shell-title">One place to begin again</h2>
-          <p class="guided-shell-note">Answer a few plain questions. Luna keeps one clear place to start again.</p>
+          <p class="guided-shell-note">Walk through a few plain questions. Luna keeps one clear place to start again.</p>
         </div>
         <div class="guided-stage-panel" id="guided-stage-panel" aria-labelledby="guided-stage-title">
-          <p class="guided-position" id="guided-position">Step 1 of 6</p>
+          <p class="guided-position" id="guided-position">At the gate</p>
           <h2 id="guided-stage-title" tabindex="-1">Find your place</h2>
           <p class="path-note" id="guided-stage-intro">Start by naming the unfinished thing you want to return to.</p>
           <div class="guided-stage-body" id="guided-stage-body"></div>
@@ -1622,13 +1622,13 @@
       <section aria-labelledby="loop-order">
       <h2 id="loop-order">The gentle return path</h2>
       <p class="path-note">Move through the same small loop each time, from finding your place to resting, without turning the project into a bigger system.</p>
-      <div class="return-path" aria-label="Return path steps">
-        <span>Find your place</span>
-        <span>Remember</span>
-        <span>Choose</span>
-        <span>Set Aside</span>
-        <span>Record</span>
-        <span>Rest</span>
+      <div class="return-path" aria-label="Return path places">
+        <span>At the gate</span>
+        <span>The thread</span>
+        <span>The lantern</span>
+        <span>Outside the gate</span>
+        <span>For next time</span>
+        <span>Resting place</span>
       </div>
       <ol>
         <li>Find your place with the what you are coming back to and why it feels hard.</li>
@@ -1996,8 +1996,9 @@
 
     const guidedStages = [
       {
-        title: 'Find your place',
-        intro: 'Answer one thing at a time. Each answer helps Luna build the Return Card and stays in this browser.',
+        title: 'What are you coming back to?',
+        intro: 'Answer one thing at a time. Each answer helps Luna keep the thread and stays in this browser.',
+        placeLabel: () => guidedPlaceStepIndex === 0 ? 'At the gate' : 'Finding the thread',
         render: () => `
           <div class="guided-question-card">
             <div class="guided-inline-edit" aria-label="Find your place answer">
@@ -2011,20 +2012,22 @@
         `
       },
       {
-        title: 'Remember',
+        title: 'Pick up the thread',
         intro: 'Remember only what helps you see where to begin again.',
+        placeLabel: 'The thread',
         render: () => `
           <article class="quiet-card">
             ${renderGuidedFlowLeadIn('remember')}
-            <span class="label">Remember</span>
+            <span class="label">The thread</span>
             <h3>${escapeHtml(formatRestSummaryValue('projectName', getProjectName()))}</h3>
             <p>${escapeHtml(formatRememberGoalLine())}</p>
           </article>
         `
       },
       {
-        title: 'Choose',
+        title: 'Choose the lantern',
         intro: 'Choose the first small step to begin with next time.',
+        placeLabel: 'The lantern',
         tone: 'choose',
         render: () => `
           <div class="guided-question-card">
@@ -2035,8 +2038,9 @@
         `
       },
       {
-        title: 'Set Aside',
+        title: 'Leave this outside',
         intro: 'Name one thing that can wait for now.',
+        placeLabel: 'Outside the gate',
         tone: 'set-aside',
         render: () => `
           <div class="guided-question-card">
@@ -2047,8 +2051,9 @@
         `
       },
       {
-        title: 'Record',
+        title: 'Keep this for next time',
         intro: 'Name what Luna should remember for next time.',
+        placeLabel: 'For next time',
         tone: 'record',
         render: () => `
           <div class="guided-question-card">
@@ -2059,8 +2064,9 @@
         `
       },
       {
-        title: 'Rest',
+        title: 'Start here next time',
         intro: 'Luna kept the thread warm so you do not have to hold everything at once.',
+        placeLabel: 'Resting place',
         tone: 'rest',
         render: () => `
           <p class="rest-arrival-line">Start here next time.</p>
@@ -2312,7 +2318,7 @@
 
     const renderGuidedStageContent = () => {
       const stage = guidedStages[guidedStageIndex];
-      guidedPosition.textContent = `Step ${guidedStageIndex + 1} of ${guidedStages.length}`;
+      guidedPosition.textContent = typeof stage.placeLabel === 'function' ? stage.placeLabel() : stage.placeLabel;
       guidedStageTitle.textContent = stage.title;
       guidedStageIntro.textContent = stage.intro;
       guidedStagePanel.dataset.stageTone = stage.tone || 'quiet';

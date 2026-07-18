@@ -1,5 +1,11 @@
 # Roadmap
 
+## 2026-07-18 — Guided Return path-language pass
+
+- This was a focused Guided Return path-language pass that replaced visible step/stage framing with calmer path markers, so Luna feels more like a moonlit return path than a task wizard while preserving the same simplified local flow.
+- Luna is at Rest after a focused Guided Return path-language pass.
+- Next suggested step: Human mobile test of whether the visible Guided Return language now feels like walking a quiet path instead of completing a task wizard.
+
 ## 2026-07-16 — Visible-language cleanup pass
 
 - This was a focused visible-language cleanup pass that replaced prototype-like labels with plainer Luna-facing questions and a simpler “Start here next time” final handoff, while preserving the simplified inline-response flow and the same five saved values.
