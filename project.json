@@ -722,9 +722,9 @@
       "note": "The project is resting after a good run and ready for one gentle improvement."
     }
   ],
-  "currentGoal": "Rest after the Guided Return path-language pass.",
-  "lastCompletedRun": "This was a focused Guided Return path-language pass that replaced visible step/stage framing with calmer path markers, so Luna feels more like a moonlit return path than a task wizard while preserving the same simplified local flow.",
-  "nextStep": "Human mobile test of whether the visible Guided Return language now feels like walking a quiet path instead of completing a task wizard.",
+  "currentGoal": "Rest after the README front-door cleanup.",
+  "lastCompletedRun": "This was a documentation-only README front-door cleanup that put Luna’s public purpose, return path, and strict local-only boundaries before its recent implementation trail.",
+  "nextStep": "Human mobile feel-check of whether the Guided Return language feels like walking a quiet path instead of completing a task wizard.",
   "dashboardGuide": [
     "Welcome starts the path to read through Record the Change before choosing more work.",
     "Status gives a quick snapshot of how the project is doing right now.",
@@ -804,9 +804,9 @@
     "Visit http://localhost:8000 in a browser to view the dashboard."
   ],
   "nextAction": {
-    "title": "Human mobile opening threshold test",
-    "description": "Human mobile test of whether the opening threshold feels inviting without over-explaining.",
-    "whyItMatters": "Luna’s first screen should feel inviting and clear before more product work continues.",
+    "title": "Human mobile Guided Return feel-check",
+    "description": "Human mobile feel-check of whether the Guided Return language feels like walking a quiet path instead of completing a task wizard.",
+    "whyItMatters": "The path-language pass should feel warm and non-procedural on a phone before more product work continues.",
     "status": "Ready for human test"
   },
   "creativeSeed": {
@@ -876,8 +876,8 @@
   "currentMode": {
     "name": "Rest",
     "value": "Rest",
-    "description": "Luna is resting after a focused Guided Return path-language pass.",
-    "whyItMatters": "The app now uses calmer path markers instead of visible step/stage framing while preserving the same simplified local flow."
+    "description": "Luna is resting after a documentation-only README front-door cleanup.",
+    "whyItMatters": "The public front door now leads with Luna’s one-project return purpose and boundaries, while recent Guided Return progress remains available as supporting context."
   },
-  "nextSuggestedStep": "Human mobile test of whether the visible Guided Return language now feels like walking a quiet path instead of completing a task wizard."
+  "nextSuggestedStep": "Human mobile feel-check of whether the Guided Return language feels like walking a quiet path instead of completing a task wizard."
 }
