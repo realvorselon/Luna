@@ -1,5 +1,11 @@
 # Roadmap
 
+## 2026-07-22 — README front-door cleanup
+
+- This was a documentation-only front-door cleanup: `README.md` now opens with Luna’s public purpose as a small, moonlit one-project return app, followed by Return gently → Guided Return → Rest → Start here next time.
+- The README now states the five-value, local-browser-only boundary plainly: no backend, account, sync, database, network/model behavior, task list, backlog, or project-management form. Philosophy Garden remains optional supporting reflection.
+- Luna is at Rest. Next suggested step: Human mobile feel-check of whether the Guided Return language feels like walking a quiet path instead of completing a task wizard.
+
 ## 2026-07-18 — Guided Return path-language pass
 
 - This was a focused Guided Return path-language pass that replaced visible step/stage framing with calmer path markers, so Luna feels more like a moonlit return path than a task wizard while preserving the same simplified local flow.

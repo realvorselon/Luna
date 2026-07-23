@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-07-22
+
+### README front-door cleanup
+
+- Reorganized `README.md` so it opens with Luna’s calm one-project return purpose rather than regression or fix history.
+- Made the core return path and local-only boundaries easy to find; kept Philosophy Garden optional and recent Guided Return progress supporting rather than leading.
+- Status remains Rest. Next suggested step: Human mobile feel-check of whether the Guided Return language feels like walking a quiet path instead of completing a task wizard.
+
 ## 2026-07-18
 
 ### Guided Return path-language pass
