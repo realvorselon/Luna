@@ -1,5 +1,12 @@
 # State
 
+## 2026-08-03 — Opening threshold moonlit-path pass
+
+- This was one restrained visual-emotional pass on the existing opening threshold: three soft pools of silver and lantern light now recede beneath the gate, suggesting a short moonlit path toward “Return gently.”
+- Kept the opening readable and comfortable on narrow screens, with a shorter, quieter path treatment on mobile and no new animation.
+- Preserved “Return gently” as the primary action, the Guided Return and Rest behavior, all five localStorage keys, and Luna’s local-only boundary.
+- Luna is at Rest. Next suggested step: Human mobile feel-check of whether the quiet path makes the opening more inviting without becoming busy.
+
 ## 2026-07-22 — README front-door cleanup
 
 - This was a documentation-only front-door cleanup: `README.md` now opens with Luna’s public purpose as a small, moonlit one-project return app, followed by Return gently → Guided Return → Rest → Start here next time.
