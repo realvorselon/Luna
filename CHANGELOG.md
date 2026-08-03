@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-08-03
+
+### Opening threshold moonlit-path pass
+
+- Refined the existing CSS-only opening path with three soft, receding pools of silver and lantern light beneath the gate, gently drawing the eye toward the primary “Return gently” action.
+- Kept the accent static and restrained, reduced its height and opacity on narrow screens, and added no images, dependencies, fields, screens, navigation, or behavior.
+- Preserved the Guided Return sequence, Rest behavior, five existing localStorage keys, and local-only/no-network boundary. Luna remains at Rest.
+
 ## 2026-07-22
 
 ### README front-door cleanup

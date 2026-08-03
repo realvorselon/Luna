@@ -2,6 +2,10 @@
   "status": "Rest",
   "statusHistory": [
     {
+      "date": "2026-08-03",
+      "note": "This was a restrained opening-threshold moonlit-path pass that added three soft, receding pools of silver and lantern light beneath the gate while preserving the existing local-only return flow."
+    },
+    {
       "date": "2026-07-18",
       "note": "This was a focused Guided Return path-language pass that replaced visible step/stage framing with calmer path markers, so Luna feels more like a moonlit return path than a task wizard while preserving the same simplified local flow."
     },
@@ -722,9 +726,9 @@
       "note": "The project is resting after a good run and ready for one gentle improvement."
     }
   ],
-  "currentGoal": "Rest after the README front-door cleanup.",
-  "lastCompletedRun": "This was a documentation-only README front-door cleanup that put Luna’s public purpose, return path, and strict local-only boundaries before its recent implementation trail.",
-  "nextStep": "Human mobile feel-check of whether the Guided Return language feels like walking a quiet path instead of completing a task wizard.",
+  "currentGoal": "Rest after the opening threshold moonlit-path pass.",
+  "lastCompletedRun": "This was a restrained opening-threshold visual pass that added three soft, receding pools of silver and lantern light beneath the gate without changing Luna’s behavior.",
+  "nextStep": "Human mobile feel-check of whether the quiet path makes the opening more inviting without becoming busy.",
   "dashboardGuide": [
     "Welcome starts the path to read through Record the Change before choosing more work.",
     "Status gives a quick snapshot of how the project is doing right now.",
@@ -739,6 +743,7 @@
     "Keep the implementation narrow: opening threshold visual/layout only, with no behavior expansion."
   ],
   "decisionLog": [
+    "2026-08-03: Refined the existing CSS-only opening path with three soft pools of silver and lantern light, keeping Return gently primary and preserving the local-only behavior and storage boundary.",
     "2026-07-16: This was a focused Guided Return de-clutter pass that protected the simpler inline-response flow by keeping question screens focused on one question, one answer, one small Luna response, and one next action, while leaving the gathered summary for Rest.",
     "2026-07-16: This was a focused Guided Return hierarchy polish pass that made receiving screens feel like intentional between-question moments instead of repeated stages, reduced duplicate “holding” language, clarified where each answer goes in the Return Card, and hid opening-threshold scaffolding during Guided Return.",
     "2026-07-14: This was a focused opening threshold presentation pass that made Luna’s first screen quieter and more ceremonial, reducing repeated explanation while keeping Return gently as the clear moonlit gate into the local-only return flow.",
@@ -804,9 +809,9 @@
     "Visit http://localhost:8000 in a browser to view the dashboard."
   ],
   "nextAction": {
-    "title": "Human mobile Guided Return feel-check",
-    "description": "Human mobile feel-check of whether the Guided Return language feels like walking a quiet path instead of completing a task wizard.",
-    "whyItMatters": "The path-language pass should feel warm and non-procedural on a phone before more product work continues.",
+    "title": "Human mobile opening feel-check",
+    "description": "Human mobile feel-check of whether the quiet path makes the opening more inviting without becoming busy.",
+    "whyItMatters": "The restrained path accent should support the moonlit-gate invitation while keeping the primary action readable and comfortable on a phone.",
     "status": "Ready for human test"
   },
   "creativeSeed": {
@@ -876,8 +881,8 @@
   "currentMode": {
     "name": "Rest",
     "value": "Rest",
-    "description": "Luna is resting after a documentation-only README front-door cleanup.",
-    "whyItMatters": "The public front door now leads with Luna’s one-project return purpose and boundaries, while recent Guided Return progress remains available as supporting context."
+    "description": "Luna is resting after the opening threshold moonlit-path pass.",
+    "whyItMatters": "The opening now offers a slightly more magical invitation while keeping Luna’s behavior and local-only boundaries unchanged."
   },
-  "nextSuggestedStep": "Human mobile feel-check of whether the Guided Return language feels like walking a quiet path instead of completing a task wizard."
+  "nextSuggestedStep": "Human mobile feel-check of whether the quiet path makes the opening more inviting without becoming busy."
 }

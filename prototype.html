@@ -142,10 +142,13 @@
       inset: auto 10% 0;
       height: 154px;
       background:
+        radial-gradient(ellipse at 50% 82%, rgb(223 200 137 / 19%) 0 7%, transparent 24%),
+        radial-gradient(ellipse at 50% 48%, rgb(220 227 239 / 13%) 0 5%, transparent 20%),
+        radial-gradient(ellipse at 50% 20%, rgb(223 200 137 / 12%) 0 4%, transparent 17%),
         linear-gradient(90deg, transparent, rgb(223 200 137 / 18%), transparent) top / 100% 1px no-repeat,
         linear-gradient(180deg, rgb(223 200 137 / 12%), rgb(183 194 224 / 5%) 44%, transparent 78%);
       clip-path: polygon(46% 0, 54% 0, 69% 100%, 31% 100%);
-      opacity: 0.58;
+      opacity: 0.68;
     }
 
     .opening-moonrise {
@@ -1243,6 +1246,12 @@
       .opening-threshold {
         padding: 20px 16px 22px;
         border-radius: 24px;
+      }
+
+      .opening-threshold::after {
+        inset-inline: 4%;
+        height: 132px;
+        opacity: 0.56;
       }
 
       .opening-title {

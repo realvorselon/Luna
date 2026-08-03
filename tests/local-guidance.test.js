@@ -117,6 +117,7 @@ const simplificationTrail = 'This was a focused Guided Return flow simplificatio
 const simplificationNextStep = 'Human mobile test of whether Guided Return feels lighter with inline Luna responses and no between-question screens.';
 const declutterTrail = 'This was a focused Guided Return path-language pass that replaced visible step/stage framing with calmer path markers, so Luna feels more like a moonlit return path than a task wizard while preserving the same simplified local flow.';
 const declutterNextStep = 'Human mobile test of whether the visible Guided Return language now feels like walking a quiet path instead of completing a task wizard.';
+const openingPathTrail = 'This was a restrained opening-threshold moonlit-path pass that added three soft, receding pools of silver and lantern light beneath the gate while preserving the existing local-only return flow.';
 for (const trailText of [state, roadmap, changelog]) {
   assert(trailText.includes('Guided Return path-language pass'), 'project trail should record the focused path-language pass');
   assert(trailText.includes(declutterTrail), 'project trail should include the de-clutter summary wording');
@@ -131,17 +132,17 @@ for (const trailText of [state, roadmap, changelog]) {
   assert(trailText.includes(simplificationNextStep), 'project trail should preserve the flow simplification human test');
 }
 assert.deepEqual(project.statusHistory[0], {
-  date: '2026-07-18',
-  note: declutterTrail
+  date: '2026-08-03',
+  note: openingPathTrail
 }, 'new statusHistory entry should keep the existing object shape');
-assert.equal(project.currentGoal, 'Rest after the Guided Return path-language pass.');
+assert.equal(project.currentGoal, 'Rest after the opening threshold moonlit-path pass.');
 assert.equal(project.currentMode.name, 'Rest');
 assert.equal(project.currentMode.value, 'Rest');
-assert.equal(project.currentMode.description, 'Luna is resting after a focused Guided Return path-language pass.');
-assert.equal(project.currentMode.whyItMatters, 'The app now uses calmer path markers instead of visible step/stage framing while preserving the same simplified local flow.');
-assert.equal(project.lastCompletedRun, declutterTrail);
-assert.equal(project.nextStep, declutterNextStep);
-assert.equal(project.nextSuggestedStep, declutterNextStep);
+assert.equal(project.currentMode.description, 'Luna is resting after the opening threshold moonlit-path pass.');
+assert.equal(project.currentMode.whyItMatters, 'The opening now offers a slightly more magical invitation while keeping Luna’s behavior and local-only boundaries unchanged.');
+assert.equal(project.lastCompletedRun, 'This was a restrained opening-threshold visual pass that added three soft, receding pools of silver and lantern light beneath the gate without changing Luna’s behavior.');
+assert.equal(project.nextStep, 'Human mobile feel-check of whether the quiet path makes the opening more inviting without becoming busy.');
+assert.equal(project.nextSuggestedStep, project.nextStep);
 
 const visiblePrototypeText = html
   .replace(/<style>[\s\S]*?<\/style>/g, '')
